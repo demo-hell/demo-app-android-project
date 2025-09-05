@@ -31,22 +31,22 @@ repositories {
     }
     maven { url 'https://jitpack.io' }
     maven { url "https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android/repository" }
-    // maven {        // For the DexGuard Gradle plugin jar.
-    //     credentials {
-    //         username = "maven"
-    //         password = "${dexguardMavenToken}"
-    //     }
-    //     url = uri("https://maven.guardsquare.com")
-    //     // Only search for artifacts with groupId "com.guardsquare.*",
-    //     // supported since gradle 5.1.
-    //     content {
-    //         includeGroupByRegex("com\\.guardsquare.*")
-    //     }
-    //     authentication {
-    //         basic(BasicAuthentication)
-    //     }
+    maven {        // For the DexGuard Gradle plugin jar.
+        credentials {
+            username = "maven"
+            password = "${dexguardMavenToken}"
+        }
+        url = uri("https://maven.guardsquare.com")
+        // Only search for artifacts with groupId "com.guardsquare.*",
+        // supported since gradle 5.1.
+        content {
+            includeGroupByRegex("com\\.guardsquare.*")
+        }
+        authentication {
+            basic(BasicAuthentication)
+        }
 
-    // }
+    }
     maven {
         url 'https://identify-maven.stoneage.com.br'
     }
