@@ -15,21 +15,21 @@ buildscript {
         maven {
             url = uri("${projectDir}/DexGuard/lib")
         }
-        // maven {        // For the DexGuard Gradle plugin jar.
-        //     credentials {
-        //         username = "maven"
-        //         password = "${dexguardMavenToken}"
-        //     }
-        //     url = uri("https://maven.guardsquare.com")
-        //     // Only search for artifacts with groupId "com.guardsquare.*",
-        //     // supported since gradle 5.1.
-        //     content {
-        //         includeGroupByRegex("com\\.guardsquare.*")
-        //     }
-        //     authentication {
-        //         basic(BasicAuthentication)
-        //     }
-        // }
+        maven {        // For the DexGuard Gradle plugin jar.
+            credentials {
+                username = "maven"
+                password = "${dexguardMavenToken}"
+            }
+            url = uri("https://maven.guardsquare.com")
+            // Only search for artifacts with groupId "com.guardsquare.*",
+            // supported since gradle 5.1.
+            content {
+                includeGroupByRegex("com\\.guardsquare.*")
+            }
+            authentication {
+                basic(BasicAuthentication)
+            }
+        }
     }
 
     dependencies {
@@ -47,7 +47,7 @@ buildscript {
         classpath 'me.moallemi.gradle:advanced-build-version:2.0.1'
         classpath 'com.google.firebase:firebase-appdistribution-gradle:4.0.0'
         //DexGuard
-        // classpath("com.guardsquare:dexguard-gradle-plugin:1.3.26")
+        classpath("com.guardsquare:dexguard-gradle-plugin:1.3.26")
 
         //Datadog
         classpath("com.datadoghq:dd-sdk-android-gradle-plugin:1.7.0")
