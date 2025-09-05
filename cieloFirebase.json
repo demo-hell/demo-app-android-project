@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cielo-app-ece45",
+  "private_key_id": "092d9d38ec0439ecc850c1aa567b88e9b715c989",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3mrB5d1erW9Fm\n45PJ8d2EijxUKcT/Du1whsCylKX7QoK2Tar4ud/0Bc0BpSVUTjlheurod0c9DDDs\n/IHk221wprNlIDGEQEi2gynihpsj4rjLpZJCKzvV/d/L/jA8BLnouoMhOpG2SKSO\nqn2Y5GdzbjIQfIOaa2d2i7uiqrwdtgYYMBFHZ6624WrrdYMwn8fXVd7KZqT1LnwI\nuWtYvVAHIs5hNOcnUewBmG7UiXoJ6RkdfwN7w0xf/1+NUpi70yR87rJeNNIFFAT8\nsf3wr+gicUFJ4C4ITmGIyOYyiwfxWa8hjWTAwFtYa8blX93FC/fBg2/mMkCSVheB\nA+8NqqvTAgMBAAECggEAB0pgLuKQm6BQvKoqvdPEfQp+129f1X+X6WZLE+GX2atM\nGhsUFT5O6JdWYEtYznPbZBsyZWVfHHXLIjiV8SrOugYUjN5uDkH94Sls1K7i+Ct8\n37FFESrlpwX8CKig7QaEWfvApeV30GoqsUjkey65S48Y89NN59LTT+oVMEy2nY4B\n4pT7/Pi3zKsHex67t3d27kzZ/Sl2jzLBNLLOqdPvrVoDGcyMCTCNgiUmd2sZ4prA\n7ZlNPQ1vPgrRouqw6zjs35LeEWiqUO5xBBAbDflY9ljKQNIaMbxYoB9B3QvTDPjG\nwfHBt60EKmapLzxwfLIUoTA6k6TDSNIKL1W5vGhgUQKBgQDhywFHxS1Pv03hhfwT\n8CeDf/Y0AmFS6uiNW2vT7fPzq5WvDAO+H0FE2vEfzHE4L9UDLs5VEZsxCVlvF1wP\nHfU60hVGd2q9BH4CT7h9z7THY+/V0G2W3d+7URGw0PdW8XRNpwMAvRU9ifnauAnu\nK4gSKxR5abjwxar7bo/LniZBGwKBgQDQKsw6BO3st7+5dBP+udg1FXPFu/mLCBP8\nCz+N2GGG/ZHdiibIIICIdJlHkJ0hMChlg7P59pmqheTlogjqr9GjtSvT9AfKBBXv\nBFnUQ0500VocIB9dgI3Us746K+255/FX5fqq9uf1oQvieycz/RQlRjUkeMz4BqTY\nlX7jDbkjqQKBgQDShgYGlejejx8dZGCZcnRVHo0/Bu0Zc58qlY/fBOFNU7F3ibs/\nnEKt4XmqzWLPIYH5ur11AbpyKSZy9xPFoIgStOhTUGp8HGEk5JG+9Fe5BQwMjo5v\neSXur/LPqrbDINPwxwR8vs+8FhaZALl5kKsJTZOEdLeT/qmiTv7Ruf4u+wKBgDbg\noXhGJmb6RevhAwhq++l6n0uoc2/IkGQonveI7KUGofaSXgjyMJBIlMP+Br5iELQ6\nVS73aKlApQg4gDtGYHDU6Rn2QjtqelHJhtjjaYJ4UlYJzdr7ceh5/hMd04zn7YLr\nmPqLHrltXFG3f60/8Zil+oqD4h0cu0ZxmsLGsmEJAoGAKK9AORSFt28WtsomdgI7\nS7aRCxiHsG6/7QSX3iCMC0/foxov2cqz1ZLYAsx4hHRSk9Ra6cXXLrh0osiPj+Jg\nW5UBBuYt/m/uLpD/M82ok2/PsKVy3O6+pIjHdMoWTCjOLeCvgecBFesNMhZ258ky\n7Uq8g/6GLJEVl2RLqBrWcMA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-app-distribution-admi@cielo-app-ece45.iam.gserviceaccount.com",
+  "client_id": "113716127888310052535",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-app-distribution-admi%40cielo-app-ece45.iam.gserviceaccount.com"
+}
