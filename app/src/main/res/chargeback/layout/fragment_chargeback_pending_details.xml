@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/containerActions">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/Heading_500_20"
+                android:id="@+id/tvTitle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:text="@string/chargeback_details_pending_title"
+                android:textColor="@color/brand_600"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/Label_700_Bold_12"
+                android:id="@+id/tvLabelAmount"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:paddingVertical="@dimen/dimen_2dp"
+                android:textColor="@color/cloud_400"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                android:text="@string/chargeback_disputed_amount" />
+
+            <TextView
+                style="@style/Label_700_Bold_24"
+                android:id="@+id/tvAmount"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/brand_500"
+                app:layout_constraintEnd_toEndOf="@+id/tvLabelAmount"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelAmount"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelAmount"
+                tools:text="R$ 1.000.000,00" />
+
+            <TextView
+                style="@style/Label_700_Bold_12"
+                android:id="@+id/tvLabelExpirationDate"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:paddingVertical="@dimen/dimen_2dp"
+                android:textColor="@color/cloud_400"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+                android:text="@string/chargeback_expiration_date" />
+
+            <br.com.cielo.libflue.label.CieloTagLabel
+                android:id="@+id/ctlExpirationDate"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                app:backgroundShape="@drawable/background_status_chargeback_success_100"
+                app:layout_constraintEnd_toEndOf="@+id/tvLabelExpirationDate"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelExpirationDate"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelExpirationDate"
+                app:tagIcon="@drawable/ic_warning"
+                app:textStyleFormat="@style/Label_100_regular_14_success_500"
+                tools:text="Em 3 dias" />
+
+            <TextView
+                style="@style/Paragraph_200_regular_12_display_400"
+                android:id="@+id/tvExpirationDateTip"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                app:layout_constraintEnd_toEndOf="@+id/ctlExpirationDate"
+                app:layout_constraintStart_toStartOf="@+id/ctlExpirationDate"
+                app:layout_constraintTop_toBottomOf="@+id/ctlExpirationDate"
+                tools:text="@string/chargeback_expiration_date_tip" />
+
+            <TextView
+                android:id="@+id/tvLinkAttachmentDocSender"
+                style="@style/Heading_300_regular_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpirationDateTip"
+                app:layout_constraintStart_toStartOf="@+id/tvSubtitleInfo"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:textColor="@color/brand_400"
+                android:textStyle="bold"
+                android:text="@string/chargeback_see_document_attachment_sender"
+                android:drawablePadding="@dimen/dimen_4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:drawableRightCompat="@drawable/ic_chargeback_file_text_check"
+                app:drawableTint="@color/brand_400"
+                />
+
+            <TextView
+                style="@style/Heading_400_Bold_14"
+                android:id="@+id/tvSubtitleInfo"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:textColor="@color/cloud_500"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvLinkAttachmentDocSender"
+                android:text="@string/chargeback_general_information" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_24dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="@+id/tvSubtitleInfo"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtitleInfo"
+                tools:ignore="RtlSymmetry"
+                tools:itemCount="3"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_chargeback_info" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerMoreInfo"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:background="@drawable/background_radius8dp_stroke_gray_204986"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvSubtitleInfo"
+                app:layout_constraintStart_toStartOf="@+id/tvSubtitleInfo"
+                app:layout_constraintTop_toBottomOf="@+id/rvInfo">
+
+                <TextView
+                    android:id="@+id/tvMoreInfoTitle"
+                    style="@style/Label_400_Regular_16"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:text="@string/chargeback_more_info_title"
+                    android:textColor="@color/cloud_500"
+                    app:layout_constraintEnd_toStartOf="@+id/ivArrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMoreInfoContent"
+                    style="@style/Label_400_Regular_12"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:lineSpacingExtra="@dimen/dimen_4sp"
+                    android:text="@string/chargeback_more_info_content"
+                    app:layout_constraintEnd_toStartOf="@+id/ivArrow"
+                    app:layout_constraintStart_toStartOf="@+id/tvMoreInfoTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMoreInfoTitle" />
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/chargeback_more_info_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_end"
+                    app:tint="@color/color_C5CED7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nestedScrollView">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            style="@style/Heading_400_bold_16"
+            android:id="@+id/btnAccept"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/cielo_white_button_view_selector"
+            android:foreground="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_400"
+            android:text="@string/chargeback_details_accept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/dividerVertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <View
+            android:id="@+id/dividerVertical"
+            android:layout_width="@dimen/dimen_1dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintStart_toEndOf="@id/btnAccept"
+            app:layout_constraintEnd_toStartOf="@id/btnDecline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            style="@style/Heading_400_bold_16"
+            android:id="@+id/btnDecline"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/cielo_white_button_view_selector"
+            android:foreground="?attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_400"
+            android:text="@string/chargeback_details_decline"
+            app:layout_constraintStart_toEndOf="@id/dividerVertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

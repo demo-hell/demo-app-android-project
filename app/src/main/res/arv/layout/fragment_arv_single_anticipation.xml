@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".arv.presentation.anticipation.ArvSingleAnticipationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_simulate_detached_anticipation_title"
+            style="@style/Heading_600_20_display_brand_600"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/simulate_detached_anticipation"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_detached_anticipation_subtitle"
+            style="@style/Label_100_ubuntu_regular_16_cloud_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/detached_anticipation_details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_simulate_detached_anticipation_title"
+            tools:ignore="TextContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_schedule_anticipation_title"
+            style="@style/Label_700_Bold_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/detached_anticipation_schedule_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_detached_anticipation_subtitle" />
+
+        <RadioGroup
+            android:id="@+id/RBNegotiationType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_schedule_anticipation_title">
+
+            <RadioButton
+                android:id="@+id/RBCielo"
+                style="@style/medium_montserrat_16_cloud_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cielo_blue_outline_selector"
+                android:button="@null"
+                android:drawableEnd="@drawable/custom_circle_radio_button"
+                android:minHeight="@dimen/dimen_56dp"
+                android:padding="@dimen/dimen_12dp"
+                android:text="@string/arv_cielo_receivables" />
+
+            <RadioButton
+                android:id="@+id/RBMarket"
+                style="@style/medium_montserrat_16_cloud_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:background="@drawable/cielo_blue_outline_selector"
+                android:button="@null"
+                android:drawableEnd="@drawable/custom_circle_radio_button"
+                android:minHeight="@dimen/dimen_56dp"
+                android:padding="@dimen/dimen_12dp"
+                android:text="@string/arv_market_receivables" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:background="@color/display_50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/RBNegotiationType" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_container_select_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                style="@style/Label_700_Bold_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:text="@string/detached_anticipation_period_need"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_select_month_label"
+                style="@style/Label_100_ubuntu_regular_16_cloud_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/detached_anticipation_select_last_months_period_message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                tools:ignore="TextContrastCheck" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_calendar_single_anticipation"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_24dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_select_month_label"
+                app:layout_constraintVertical_bias="0"
+                app:shimmer_auto_start="true"
+                app:shimmer_base_alpha="1"
+                app:shimmer_highlight_alpha="0"
+                shimmer:duration="200">
+
+                <include layout="@layout/loading_shimmer_calendar_type" />
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_container_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_select_month_label">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_container_date_in_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:background="@drawable/background_stroke_cloud_200_8dp_radius"
+                    android:contentDescription="@string/accessibility_arv_single_initDate_button"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/cl_container_calendar"
+                    app:layout_constraintStart_toStartOf="@+id/cl_container_calendar"
+                    app:layout_constraintTop_toTopOf="@+id/cl_container_calendar">
+
+                    <ImageView
+                        android:id="@+id/iv_calendar_icon"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:layout_marginBottom="@dimen/dimen_12dp"
+                        android:importantForAccessibility="no"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_calendar_blue" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_start_date_calendar"
+                        style="@style/label_16_display_400_montserrat_semi_bold"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_calendar_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_calendar_icon"
+                        app:layout_constraintTop_toTopOf="@+id/iv_calendar_icon"
+                        tools:ignore="TextContrastCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_container_date_until_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@drawable/background_stroke_cloud_200_8dp_radius"
+                    android:contentDescription="@string/accessibility_arv_single_endDate_button"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_container_date_in_card">
+
+                    <ImageView
+                        android:id="@+id/iv_calendar_icon_until"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:layout_marginBottom="@dimen/dimen_12dp"
+                        android:importantForAccessibility="no"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_calendar_blue" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_end_date_calendar"
+                        style="@style/label_16_display_400_montserrat_semi_bold"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_calendar_icon_until"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_calendar_icon_until"
+                        app:layout_constraintTop_toTopOf="@+id/iv_calendar_icon_until"
+                        tools:ignore="TextContrastCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toBottomOf="@id/cl_container_date_until_card">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/monthSelectChipGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:singleLine="true"
+                        app:selectionRequired="true"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip24Months"
+                            style="@style/ARVChipMonthChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_16dp"
+                            android:checked="true"
+                            android:text="@string/arv_24_months_label" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip12Months"
+                            style="@style/ARVChipMonthChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arv_12_months_label" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip6Months"
+                            style="@style/ARVChipMonthChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arv_6_months_label" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip3Months"
+                            style="@style/ARVChipMonthChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arv_3_months_label" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip1Month"
+                            style="@style/ARVChipMonthChoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/arv_1_month_label"
+                            android:layout_marginEnd="@dimen/dimen_16dp"/>
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </HorizontalScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_detached_anticipation_gross_value_label"
+                style="@style/Label_100_ubuntu_regular_16_cloud_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_40dp"
+                android:text="@string/detached_anticipation_gross_value_available"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_container_calendar"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_container_value_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginBottom="@dimen/dimen_48dp"
+                android:background="@drawable/background_stroke_cloud_200_8dp_radius"
+                app:layout_constraintBottom_toTopOf="@+id/bt_simulate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detached_anticipation_gross_value_label">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_detached_anticipation_gross_value"
+                    style="@style/Paragraph_600_ubuntu_regular_24_brand_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginVertical="@dimen/dimen_16dp"
+                    app:layout_constraintBottom_toTopOf="@id/divider_line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/not_available_value_information"
+                    layout="@layout/not_avaliable_value_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginVertical="@dimen/dimen_16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@id/divider_line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@color/cloud_200"
+                    app:layout_constraintBottom_toTopOf="@id/bt_simulate_value"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/bt_simulate_value"
+                    style="@style/semi_bold_montserrat_14_brand_400_spacing_minus_3"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:background="@color/transparent"
+                    android:drawableEnd="@drawable/ic_chevron_right_24_brand_400"
+                    android:drawableTint="@color/brand_400"
+                    android:gravity="start"
+                    android:paddingVertical="@dimen/dimen_20dp"
+                    android:text="@string/simulate_detached_anticipation_value"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider_line" />
+
+                <Button
+                    android:id="@+id/bt_simulate_value_disabled"
+                    style="@style/semi_bold_montserrat_14_cloud_300_spacing_negative_3"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:background="@color/transparent"
+                    android:drawableTint="@color/cloud_200"
+                    android:gravity="start"
+                    android:paddingVertical="@dimen/dimen_20dp"
+                    android:text="@string/simulate_detached_anticipation_value"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/divider_line" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerAnticipationType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginBottom="@dimen/dimen_62dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/bt_simulate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detached_anticipation_gross_value_label"
+                app:layout_constraintVertical_bias="0"
+                app:shimmer_auto_start="true"
+                app:shimmer_base_alpha="1"
+                app:shimmer_highlight_alpha="0"
+                shimmer:duration="200">
+
+                <include layout="@layout/loading_shimmer_value_single_anticipation" />
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <br.com.cielo.libflue.button.v2.CieloButton
+                android:id="@+id/bt_simulate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:text="@string/anticipation_value_period_label_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <include
+                android:id="@+id/errorInclude"
+                layout="@layout/layout_new_generic_error_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_14dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeStablishmentNumberInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    tools:showIn="@layout/fragment_new_login">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutNewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_ec_hint"
+        android:theme="@style/TextInputHintStyle"
+        android:textColorHint="@color/white">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/textInputEditNewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape_login"
+            android:importantForAutofill="noExcludeDescendants"
+            style="@style/TextInputEditCieloStyle"
+            android:imeOptions="actionDone"
+            android:inputType="text|textEmailAddress"
+            android:maxLines="1"
+            android:textSize="15sp"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imageEcNumberInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textInputLayoutNewLogin"
+        android:layout_alignBottom="@+id/textInputLayoutNewLogin"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/ic_info_white"
+        android:layout_alignRight="@+id/textInputLayoutNewLogin"
+        android:layout_marginRight="10dp" />
+
+
+</RelativeLayout>

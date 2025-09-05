@@ -1,0 +1,96 @@
+image: $REGISTER/mobile:0.0.6-cielo
+
+before_script:
+  - export GRADLE_USER_HOME=$(pwd)/.gradle
+  - chmod +x ./gradle
+  - echo $SIGN_KEYSTORE | base64 --decode > $SIGN_KEYSTORE_FILE
+  - echo $FIREBASE_KEYSTORE | base64 --decode > $FIREBASE_KEYSTORE_FILE
+  - java -version
+#  - echo $CI_MERGE_REQUEST_ID
+#  - echo $CI_MERGE_REQUEST_IID
+#  - echo $CI_MERGE_REQUEST_LABELS
+#  - echo $CI_MERGE_REQUEST_TARGET_BRANCH_NAME
+#  - echo $CI_MERGE_REQUEST_TITLE
+#  - echo $CI_COMMIT_BRANCH
+#  - echo $CI_COMMIT_DESCRIPTION
+#  - echo $CI_COMMIT_REF_NAME
+#  - echo $CI_CONCURRENT_ID
+#  - echo $CI_JOB_ID
+#  - echo $CI_PIPELINE_ID
+
+cache:
+  key: ${CI_PROJECT_ID}
+  paths:
+    - .gradle/
+
+stages:
+  - obfuscate
+  - unittest
+  - quality
+  - deploy
+
+obfuscate:
+  stage: obfuscate
+  script:
+    - fastlane obfuscateApk
+    - cp app/build/outputs/apk/dev/release/app-dev-release-protected.apk app-dev-release-protected.apk
+  artifacts:
+    paths:
+      - app-dev-release-protected.apk
+      - /builds/dig/app/mobile/android/cielo-app-android/app/build/outputs/apk/dev/release/app-dev-release-protected.apk
+  only:
+    - develop
+    - /^release.*$/
+    - /^epic.*$/
+    - release/6.1.5_FASTLANE
+    - ci/sonarqube
+    - feature/tap_evolution
+
+unittest:
+  stage: unittest
+  script:
+    - fastlane test
+  artifacts:
+    paths:
+      - build/
+  only:
+    - ci/sonarqube
+    - merge_requests
+
+quality:
+  stage: quality
+  script:
+    - ./gradlew jacocoTestDevHomologUnitTestReport sonarqube
+  artifacts:
+    paths:
+      - /builds/dig/app/mobile/android/cielo-app-android/app/build/outputs/
+      - /builds/dig/app/mobile/android/cielo-app-android/app/build/intermediates/javac/
+      - /builds/dig/app/mobile/android/cielo-app-android/app/build/tmp/kotlin-classes/
+  dependencies:
+    - obfuscate
+  only:
+    - ci/sonarqube
+    - develop
+    - /^release.*$/
+
+deploy:
+  stage: deploy
+  script:
+     - export COMMIT_MESSAGE="$(git log -1 --pretty=%B)"
+     - export COMMIT_HASH="$(git rev-parse --short HEAD)"
+     - export RELEASE_NOTES_TAGS="${CI_COMMIT_BRANCH},${COMMIT_HASH},${CI_PIPELINE_ID}"
+     - ./gradlew appDistributionUploadDevHomolog
+     - export PLATFORM=android
+     - export PLATFORM_IMAGE_URL=http://s2.glbimg.com/VD9XgaIKvSsGQCXNttt1lZHHY9o=/695x0/s.glbimg.com/po/tt2/f/original/2015/09/28/android.jpg
+  artifacts:
+    paths:
+      - /builds/dig/app/mobile/android/cielo-app-android/app/build/outputs/apk/dev/release/app-dev-release-protected.apk
+  dependencies:
+    - obfuscate
+    - quality
+  only:
+    - ci/sonarqube
+    - develop
+    - /^release.*$/
+    - /^epic.*$/
+    - feature/tap_evolution

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="impersonate_title_bs_logout_error">Acesse novamente a sua conta e troque de estabelecimento</string>
+    <string name="impersonate_message_bs_logout_error"><![CDATA[Para trocar de estabelecimento, acesse novamente a sua conta e volte para <b>tentar acessar o Link de pagamento de novo mais tarde</b>, combinado?]]></string>
+    <string name="impersonate_label_second_button_bs_logout_error">Sair da conta</string>
+    <string name="impersonate_title_default">Troque de estabelecimento</string>
+
+</resources>

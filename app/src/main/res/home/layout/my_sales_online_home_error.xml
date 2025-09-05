@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/dimen_20dp">
+
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/ic_02_alert" />
+
+    <TextView
+        android:id="@+id/tvErrorInfo"
+        style="@style/Paragraph_300_regular_14_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivError"
+        android:text="@string/text_error_load_sales"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/btTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Label_300_Alternate_14_brand_400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvErrorInfo"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        android:text="@string/bt_reload"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:drawableEnd="@drawable/ic_refresh_new"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

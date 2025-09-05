@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight=".4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="4.6"
+        android:id="@+id/vf_balcao"
+        >
+
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progress_balcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_grey_F2F4F8"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="4.3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                tools:layout_editor_absoluteX="35dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/component_br_setinha" />
+
+                    <TextView
+                        style="@style/Heading_500_Bold_18_display_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_weight="0.55"
+                        android:text="@string/text_registro_recebiveis"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <TextView
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_first_termo"
+                        android:textSize="@dimen/dimen_14dp" />
+
+                    <TextView
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:text="@string/text_second_termo"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <include layout="@layout/component_sanfona_cpf" />
+
+                    <include layout="@layout/component_br_checkbox" />
+
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10dp">
+
+                <br.com.cielo.libflue.button.CieloRegularBlueButton
+                    android:id="@+id/btnFollowOfTerm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/esqueci_usuario_button_enviar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Error Elegibilidade-->
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorLayoutBR"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            app:cieloErrorTitle="@string/text_title_error_br"
+            app:cieloErrorMessage="@string/text_subtitle_error_br"
+            app:cieloErrorButtonLabel="@string/incomint_fast_cancellation_back_button"
+            app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Error Url-->
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorHandlerUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cieloErrorTitle="@string/text_title_generic_error"
+            app:cieloErrorMessage="@string/text_user_loan_register_error_message"
+            app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+            app:cieloErrorButtonLabel="@string/meus_recebimentos_dialog_fechar"/>
+
+        <!-- Error FeatureToogle-->
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorToggle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cieloErrorTitle="@string/error_maintenance_title"
+            app:cieloErrorMessage="@string/error_maintenance_content"
+            app:cieloErrorContentImage="@drawable/img_maintenance_mfa"
+            app:cieloErrorButtonLabel="@string/meus_recebimentos_dialog_fechar"/>
+
+
+    </ViewFlipper>
+
+
+
+</LinearLayout>

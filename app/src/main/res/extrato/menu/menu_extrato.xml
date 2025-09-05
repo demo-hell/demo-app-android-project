@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionMoreOptions"
+        android:icon="@drawable/ic_menu_more_vertical"
+        android:title="@string/text_more_options"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/actionFilterBrandsAndPaymentMethods"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/text_canceled_sells_label"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_extrato_help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/extrato_menu_help"
+        app:showAsAction="ifRoom" />
+
+</menu>

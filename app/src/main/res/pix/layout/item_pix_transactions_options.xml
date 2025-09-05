@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/radioGroupTransactionType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbAllTransactions"
+            style="@style/Paragraph_400_regular_16_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_selector_radio_button"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/txt_pix_extract_filter_option_transaction" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/display_200" />
+
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbTransfers"
+            style="@style/Paragraph_400_regular_16_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_selector_radio_button"
+            android:layoutDirection="rtl"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/txt_pix_extract_filter_option_transfers" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/display_200" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbQrCode"
+            style="@style/Paragraph_400_regular_16_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_selector_radio_button"
+            android:layoutDirection="rtl"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/txt_pix_extract_filter_option_qr_code" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbReturns"
+            style="@style/Paragraph_400_regular_16_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_selector_radio_button"
+            android:layoutDirection="rtl"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/txt_pix_extract_filter_option_returns"
+            android:visibility="gone" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

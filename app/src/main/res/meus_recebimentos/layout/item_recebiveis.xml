@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/meus_recebimentos_recebiveis_linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/meus_recebimentos_recebiveis_name"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:paddingBottom="6dp"
+                android:text="@string/meus_recebimentos_recebiveis_de_venda"
+                android:textColor="@color/gray_light"
+                android:textSize="12sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/meus_recebimentos_recebiveis_amount"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:text="@string/meus_recebimentos_valor_generico_positivo"
+                android:textSize="12sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_arrow" />
+
+        </LinearLayout>
+    </LinearLayout>

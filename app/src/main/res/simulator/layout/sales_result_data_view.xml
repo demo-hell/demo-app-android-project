@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llSimulatedValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            style="@style/Paragraph_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sales_simulator_simulated_value" />
+
+        <TextView
+            android:id="@+id/tvSimulatedValue"
+            style="@style/Paragraph_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="R$ 1.000,00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@color/grey_C5CED7" />
+
+    <LinearLayout
+        android:id="@+id/llTypeOfSale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sales_simulator_simulated_sales_type" />
+
+        <TextView
+            android:id="@+id/tvSaleType"
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="Crédito parcelado" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@color/grey_C5CED7" />
+
+    <LinearLayout
+        android:id="@+id/llInstallments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sales_simulator_installments" />
+
+        <TextView
+            android:id="@+id/installmentType"
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="Loja" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@color/grey_C5CED7" />
+
+    <LinearLayout
+        android:id="@+id/llFlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sales_simulator_brand" />
+
+        <TextView
+            android:id="@+id/tvBrandName"
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="Visa" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@color/grey_C5CED7" />
+
+    <LinearLayout
+        android:id="@+id/llReceiptDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sales_simulator_receipt_period" />
+
+        <TextView
+            android:id="@+id/tvReceiptDeadline"
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="14 dias" />
+    </LinearLayout>
+</LinearLayout>

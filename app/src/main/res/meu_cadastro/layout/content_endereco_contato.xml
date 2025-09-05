@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_meu_cadastro_cadastro_enderecos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            tools:ignore="UnusedAttribute">
+
+            <ImageView
+                android:id="@+id/imageview_meu_cadastro_maps"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/map"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                    android:id="@+id/btn_endereco_fisico"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:elevation="4dp"
+                    android:padding="2dp"
+                    android:text="@string/botao_endereco_fisico"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="16sp"
+                    app:typeface="Museo700-Regular.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                    android:id="@+id/btn_endereco_contato"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_shape"
+                    android:padding="2dp"
+                    android:text="@string/botao_endereco_contato"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="16sp"
+                    app:typeface="Museo700-Regular.ttf" />
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_meu_cadastro_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageview_meu_cadastro_maps"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_meu_cadastro_endereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/typefaceTextView15"
+        style="@style/TextGrey12spNormal"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/global_account_choose_title"
+        android:textColor="@color/black_000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typefaceTextView15"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+            android:id="@+id/button_dados_bancario"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/segment_shape_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/global_account_choose_digital_account_button"
+            android:textAllCaps="false"
+            android:textColor="@drawable/segment_color_left"
+            android:textSize="12dp"
+            app:typeface="Museo700-Regular.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+            android:id="@+id/button_dados_digital"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/segment_shape_rigth"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/global_account_choose_digital_button"
+            android:textAllCaps="false"
+            android:textColor="@drawable/segment_color_rigth"
+            android:textSize="12sp"
+            app:typeface="Museo700-Regular.ttf" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_20dp">
+
+    <LinearLayout
+        android:id="@+id/containerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="false"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/medium_montserrat_14"
+            android:textColor="@color/neutral_main"
+            tools:text="Valor" />
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:clickable="false"
+            android:textAppearance="@style/semi_bold_montserrat_16_cloud_0_spacing_4"
+            android:textColor="@color/neutral_800"
+            android:drawablePadding="@dimen/dimen_4dp"
+            tools:text="R$ 100,00" />
+
+        <TextView
+            android:id="@+id/tvCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:textAppearance="@style/medium_montserrat_12_cloud_400"
+            android:lineSpacingExtra="@dimen/dimen_2sp"
+            android:visibility="gone"
+            tools:text="Sua transação será debitada na data agendada"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</FrameLayout>

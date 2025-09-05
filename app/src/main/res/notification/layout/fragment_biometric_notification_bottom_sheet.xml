@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:background="@drawable/background_white_bottomsheet"
+        app:layout_constraintHeight_min="@dimen/dimen_362dp"
+        app:layout_constraintHeight_max="@dimen/dimen_362dp"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imv_close"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close_black"
+            android:contentDescription="@string/text_close" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvTitle"
+            android:layout_width="@dimen/dimen_72dp"
+            android:layout_height="@dimen/dimen_72dp"
+            android:background="@drawable/ic_content_symbol_info_purple_600_72_dp"
+            android:contentDescription="@string/close"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/bold_montserrat_20_cloud_800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:layout_marginStart="@dimen/dimen_18dp"
+            android:layout_marginEnd="@dimen/dimen_18dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/enable_biometric_title"
+            app:layout_constraintTop_toBottomOf="@+id/imvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubTitle"
+            style="@style/regular_montserrat_16_cloud_600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:layout_marginStart="@dimen/dimen_18dp"
+            android:layout_marginEnd="@dimen/dimen_18dp"
+            android:text="@string/enable_biometric_subtitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintBottom_toTopOf="@+id/btnNotEnable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNotEnable"
+            style="@style/semibold_montserrat_16_constrast_1000"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44dp"
+            android:background="@drawable/cielo_button_view_state_disabled_surface_neutral"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:text="@string/enable_biometric_no"
+            app:layout_constraintBottom_toTopOf="@id/btnEnableNow"
+            />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btnEnableNow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:text="@string/enable_biometric_now"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ViewFlipper
+        android:id="@+id/vf_extrato"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Loading -->
+        <ProgressBar
+            android:id="@+id/progress_balcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints" />
+
+        <!-- content -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_meus_recebimentos_visao_sumarizada">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/labelRangeDateView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detalhes do dia:"
+                        android:textColor="@color/black_000000"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:typeface="MuseoSans-700.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/rangeDateView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_4dp"
+                        android:textColor="@color/black_000000"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:typeface="MuseoSans-700.ttf"
+                        tools:text="23/03/2019 - 23/03/2020" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_2dp"
+                    android:alpha="0.2"
+                    android:background="@color/gray_light"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@id/progressBarLoadingMore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tvAmountEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_200dp"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:text="@string/tv_list_empty_negotiations_extrato"
+                android:textColor="@color/color_5A646E"
+                android:textSize="@dimen/dimen_14sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ProgressBar
+                android:id="@+id/progressBarLoadingMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/recyclerView"
+                app:layout_constraintStart_toStartOf="@id/recyclerView">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_grey_F2F4F8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_16dp"
+                    android:paddingRight="@dimen/dimen_16dp">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ubuntu"
+                        android:gravity="left"
+                        android:text="@string/extrato_detail_total"
+                        android:textColor="@color/color_017CEB"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/totalExtratoDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16dp"
+                        android:text="@string/meus_recebimentos_valores_lancamentos"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/color_017CEB"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Error Url-->
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorHandlerUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cieloErrorButtonLabel="@string/meus_recebimentos_dialog_fechar"
+            app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+            app:cieloErrorMessage="@string/text_message_generic_error"
+            app:cieloErrorTitle="@string/text_title_generic_error" />
+
+    </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

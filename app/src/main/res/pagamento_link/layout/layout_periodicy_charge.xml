@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutRecurrentSale"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_20dp"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPeriodicyTitle"
+        style="@style/Heading_400_Bold_16_display_500"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/text_view_sale_identify_sale_periodicy_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutPeriodicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/bg_flui_rounded_border"
+        android:paddingHorizontal="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutPeriodicy">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewFrequency"
+            style="@style/regular_ubuntu_16_cloud_300"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/text_view_sale_identify_sale_periodicy_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/imageViewDate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_arrow_down_tax" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/bold_montserrat_16_cloud_500_spacing_0"
+        android:id="@+id/textViewDateTitle"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:lineSpacingExtra="@dimen/dimen_2sp"
+        android:text="@string/text_view_sale_identify_sale_date_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutFinalDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/background_stroke_gray"
+        android:paddingHorizontal="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewPeriodicyTitle">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewChargeDate"
+            style="@style/regular_ubuntu_16_cloud_300"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/text_view_sale_identify_sale_date_select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/imageViewArrowDown"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewArrowDown"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_calendar"
+            android:importantForAccessibility="no" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suporteTecnico.presentation.fragment.ResumeOpenTicketFragment">
+
+    <TextView
+        android:id="@+id/tvTitleResumeOpenTicket"
+        style="@style/bold_montserrat_20_cloud_800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="@string/review_informations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:fillViewport="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleResumeOpenTicket">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvContainerScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/scrollView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/scrollView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvContainerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleAddress"
+                    style="@style/bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_address_label"
+                    app:layout_constraintStart_toStartOf="@id/cvContainerAddress"
+                    app:layout_constraintTop_toTopOf="@id/cvContainerAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAddress"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleAddress"
+                    tools:text="Alameda Xingu, nº 512, 24º Andar, Alphaville, São Paulo - CEP 12345678" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvChangeAddress"
+                    style="@style/semibold_montserrat_16_brand_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/change_address"
+                    app:layout_constraintStart_toStartOf="@id/tvAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputField
+                    android:id="@+id/inputFacade"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:hint="@string/facade_name"
+                    android:inputType="text"
+                    app:endIconType="clear_text"
+                    app:layout_constraintStart_toStartOf="@id/tvChangeAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvChangeAddress" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputField
+                    android:id="@+id/inputReferencePoint"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:hint="@string/reference_point"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    app:endIconType="clear_text"
+                    app:layout_constraintStart_toStartOf="@id/inputFacade"
+                    app:layout_constraintTop_toBottomOf="@id/inputFacade" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/viewSeparatorContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_marginVertical="@dimen/dimen_4dp"
+                android:background="@color/cloud_100"
+                app:layout_constraintEnd_toEndOf="@id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="@id/cvContainerScroll"
+                app:layout_constraintTop_toBottomOf="@id/cvContainerAddress" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvContainerContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewSeparatorContact">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvContactInformation"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_information"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputField
+                    android:id="@+id/inputPhone"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_22dp"
+                    android:layout_marginBottom="@dimen/dimen_17dp"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    app:endIconType="clear_text"
+                    app:layout_constraintStart_toStartOf="@id/tvContactInformation"
+                    app:layout_constraintTop_toBottomOf="@id/tvContactInformation"
+                    app:startIcon="@drawable/ic_communication_phone_white_24_dp" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputField
+                    android:id="@+id/inputContactName"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:hint="@string/hint_nome_contato"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    app:endIconType="clear_text"
+                    app:layout_constraintStart_toStartOf="@id/inputPhone"
+                    app:layout_constraintTop_toBottomOf="@id/inputPhone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/viewSeparatorBottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_marginVertical="@dimen/dimen_4dp"
+                android:background="@color/cloud_100"
+                app:layout_constraintEnd_toEndOf="@id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="@id/cvContainerScroll"
+                app:layout_constraintTop_toBottomOf="@id/cvContainerContact" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvContainerBusinessHour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewSeparatorBottom">
+
+                <TextView
+                    android:id="@+id/tvBusinessHour"
+                    style="@style/bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/business_hours"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/cvContainerBusinessHour" />
+
+                <br.com.cielo.libflue.field.CieloSelectField
+                    android:id="@+id/btnBusinessHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_16dp"
+                    android:hint="@string/select_business_hour"
+                    app:icon="@drawable/ic_date_time_calendar_24_dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/cvContainerBusinessHour"
+                    app:layout_constraintTop_toBottomOf="@id/tvBusinessHour" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <br.com.cielo.libflue.button.v2.CieloButton
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_16dp"
+                android:text="@string/confirm"
+                app:buttonEnabled="false"
+                app:layout_constraintBottom_toBottomOf="@id/cvContainerScroll"
+                app:layout_constraintEnd_toEndOf="@+id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="@id/cvContainerScroll"
+                app:layout_constraintTop_toBottomOf="@+id/cvContainerBusinessHour" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/frame_progress"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/errorInclude"
+        layout="@layout/layout_generic_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.cielo.libflue.loading.TokenLoadingViewFlui
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <br.com.cielo.libflue.screen.HandlerViewFluiV2
+        android:id="@+id/customHandlerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:backImage="@drawable/ic_direction_arrow_left"
+        app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+        app:headerImage="@drawable/ic_symbol_close_brand_400_24_dp"
+        app:isShowContainerButton="true"
+        app:labelColorButtonContained="@color/white"
+        app:labelColorButtonOutlined="@color/brand_400"
+        app:message="@string/commons_generic_error_message"
+        app:messageStyle="@style/medium_montserrat_16_cloud_400"
+        app:title="@string/commons_generic_error_title"
+        app:titleStyle="@style/bold_montserrat_20_cloud_600_spacing_8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

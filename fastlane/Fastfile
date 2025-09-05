@@ -1,0 +1,70 @@
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+# fastlane_version "2.68.0"k j
+
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+
+default_platform :android
+
+# Fastfile actions accept additional configuration, but
+# don't worry, fastlane will prompt you for required
+# info which you can add here later
+
+desc "Building Release Aab"
+lane :releaseAab do |options|
+    gradle(task: "clean")
+    taskCmd = ":app:bundleStoreRelease"
+    gradle(task: taskCmd)
+    createDirectory()
+    apkDir = "../app/build/outputs/bundle/storeRelease/app-store-release.aab"
+    obfuscatedApkDir = "../app/build/outputs/bundle/storeRelease/app-store-release-protected.aab"
+end
+
+desc "Building Homolog"
+lane :releaseApk do |options|
+    taskCmd = "assembleDevHomolog --no-daemon --stacktrace"
+    gradle(task: taskCmd)
+    createDirectory()
+    apkDir = "../app/build/outputs/apk/dev/homolog/app-dev-homolog.apk"
+    obfuscatedApkDir = "../app/build/outputs/apkdev/homolog/app-dev-release-protected.apk"
+end
+
+desc "Building Aplply dexguard"
+lane :obfuscateApk do |options|
+    taskCmd = "dexguardApkDevRelease"
+    gradle(task: taskCmd)
+    createDirectory()
+    apkDir = "../app/build/outputs/apk/dev/release/app-dev-release-protected.apk"
+    obfuscatedApkDir = "../app/build/outputs/apkdev/release/app-dev-release-protected.apk"
+end
+
+
+desc "Running Unit Test"
+lane :test do |options|
+    taskCmd = "testDevHomologUnitTest"
+    gradle(task: taskCmd)
+end
+
+def createDirectory()
+    path = "../app/build/mappings"
+    Dir.mkdir(path) unless File.exists?(path)
+end
+
+def getFlavorType(flavor)
+    if flavor == "store"
+        "Store"
+    else
+        if flavor == "dev"
+            "Dev"
+        else
+            if flavor == "tienv"
+                "Tienv"
+            else
+                    UI.user_error!("WRONG FLAVOR TYPE")
+            end
+        end
+    end
+end

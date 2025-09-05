@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_21dp"
+        android:paddingEnd="@dimen/dimen_48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/id_onboarding_pictures_select_doc_title"
+        android:textColor="@color/brand_600"
+        app:layout_constraintTop_toBottomOf="@id/btBackArrow" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDocType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/clRGButton"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/img_rg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRGButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/background_border_blue"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/clUniqueRGButton"
+        app:layout_constraintTop_toBottomOf="@id/ivDocType"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRGIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_credential_doc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRGTitle"
+            style="@style/Paragraph_400_regular_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_rg_title"
+            app:layout_constraintBottom_toTopOf="@+id/tvRGDesc"
+            app:layout_constraintEnd_toStartOf="@+id/rbRG"
+            app:layout_constraintStart_toEndOf="@id/ivRGIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRGDesc"
+            style="@style/Paragraph_200_regular_12_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_rg_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbRG"
+            app:layout_constraintStart_toStartOf="@id/tvRGTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvRGTitle" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbRG"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:button="@drawable/selector_radio_button"
+            android:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUniqueRGButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:background="@drawable/rounded_outline_display_200"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/clCNHButton"
+        app:layout_constraintTop_toBottomOf="@id/clRGButton"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUniqueRGIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_credential_doc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUniqueRGTitle"
+            style="@style/Paragraph_400_regular_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_unique_rg_title"
+            app:layout_constraintBottom_toTopOf="@+id/tvUniqueRGDesc"
+            app:layout_constraintEnd_toStartOf="@+id/rbUniqueRG"
+            app:layout_constraintStart_toEndOf="@id/ivUniqueRGIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUniqueRGDesc"
+            style="@style/Paragraph_200_regular_12_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_unique_rg_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbUniqueRG"
+            app:layout_constraintStart_toStartOf="@id/tvUniqueRGTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvUniqueRGTitle" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbUniqueRG"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:button="@drawable/selector_radio_button"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCNHButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:background="@drawable/rounded_outline_display_200"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/clUniqueRGButton"
+        app:layout_constraintBottom_toTopOf="@id/clRneButton"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCNHIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_credential_doc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCNHTitle"
+            style="@style/Paragraph_400_regular_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_cnh_title"
+            app:layout_constraintBottom_toTopOf="@+id/tvCNHDesc"
+            app:layout_constraintEnd_toStartOf="@+id/rbCNH"
+            app:layout_constraintStart_toEndOf="@id/ivCNHIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCNHDesc"
+            style="@style/Paragraph_200_regular_12_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_cnh_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbCNH"
+            app:layout_constraintStart_toStartOf="@id/tvCNHTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvCNHTitle" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbCNH"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:button="@drawable/selector_radio_button"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:background="@drawable/rounded_outline_display_200"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/clCNHButton"
+        app:layout_constraintBottom_toTopOf="@id/btNext"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRneIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_credential_doc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRneTitle"
+            style="@style/regular_ubuntu_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_rne_title"
+            app:layout_constraintBottom_toTopOf="@+id/tvRneDesc"
+            app:layout_constraintEnd_toStartOf="@+id/rbRne"
+            app:layout_constraintStart_toEndOf="@id/ivRneIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRneDesc"
+            style="@style/regular_ubuntu_12_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_pictures_select_doc_rne_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbRne"
+            app:layout_constraintStart_toStartOf="@id/tvRneTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvRneTitle" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbRne"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:button="@drawable/selector_radio_button"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btNext"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/text_next_label"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

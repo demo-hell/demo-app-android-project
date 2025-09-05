@@ -1,0 +1,163 @@
+/**
+ * Retorna todas as tasks cielo
+ */
+task cieloTasks() {
+    doFirst {
+        println ''
+        println '------------------- Cielo Task  ------------------'
+        println ''
+
+        tasks.findAll { task ->
+            if (task != null) {
+                if (task.name.startsWith("cielo")) {
+                    println task.name
+                }
+            }
+        }
+    }
+    doLast {
+        println ''
+        println '--------------------------------------------------'
+        println ''
+    }
+}
+
+configure(cieloTasks) {
+    group = gradle.groupCielo
+    description = 'Retorna todas as tasks'
+}
+
+
+/**
+ * Move o apk da pasta .../outputs/apk para a pasta ./apks
+ * e deleta builds de desenvolvimento
+ */
+task cieloMoveApks(type: Copy) {
+    doFirst {
+        println ''
+        println "--- Movendo APK para pasta ../apks/${getDate()} ---"
+        println ''
+    }
+
+    from("$buildDir/outputs/apk") {
+        exclude '**/*mock*.apk', '**/*dev*.apk'
+    }
+    into "../apks/${getDate()}"
+
+    doLast {
+        println ''
+        println '---APK movido com sucesso ---'
+        println ''
+    }
+}
+
+
+configure(cieloTasks) {
+    group = gradle.groupCielo
+    description = 'Move apk para pasta'
+}
+
+/**
+ * Deleta pasta APKs
+ */
+task cieloDeleteApks(type: Delete) {
+    delete "../apks"
+    doLast {
+        println ''
+        println '--- Pasta deletada ---'
+        println ''
+    }
+}
+
+configure(cieloDeleteApks) {
+    group = gradle.groupCielo
+    description = 'Deleta pasta apks'
+}
+
+/**
+ * Deleta pasta APKs
+ */
+task cieloDeleteDS_Store(type: Delete) {
+
+    fileTree('src/main/res').visit { FileVisitDetails details ->
+
+        if (details.directory) {
+            delete file("src/main/res/${details.path}/.DS_Store")
+            println "--- Apagando arquivo src/main/res/${details.path}/.DS_Store ---"
+        }
+    }
+
+}
+
+configure(cieloDeleteDS_Store) {
+    group = gradle.groupCielo
+    description = 'Deleta pasta DS_Store'
+}
+
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format("dd-MM-yyyy HH'h'mm")
+    return formattedDate
+}
+
+task cieloBuild() {
+    doFirst {
+        println ''
+        println '------------------- Iniciando Cielo Build  ------------------'
+        println ''
+    }
+
+    cieloBuild.finalizedBy build
+    build.finalizedBy cieloMoveApks
+}
+
+configure(cieloBuild) {
+    group = gradle.groupCielo
+    description = 'Roda o build com uma sequencia de tasks de configuracao e testes'
+}
+
+
+// ./gradlew tt -Pcoverage
+if (project.hasProperty("coverage")) {
+    cieloBuild.dependsOn javaCodeCoverage
+    javaCodeCoverage.finalizedBy cieloBuild
+}
+
+
+/**
+ * Envia apk de Homolog para Beta
+ */
+task cieloBeta(){
+//    cieloBeta.finalizedBy crashlyticsUploadDistributionStoreHomolog
+//    assembleHomolog.finalizedBy crashlyticsUploadDistributionStoreHomolog
+//    cieloBeta.finalizedBy assembleHomolog
+    doFirst {
+        println ''
+        println '------------------- Enviando apk para o Beta ------------------'
+        println ''
+    }
+}
+
+configure(cieloBeta) {
+    group = gradle.groupCielo
+    description = 'Envia apk para o Beta do Fabric'
+}
+
+/**
+ * Rodar todos os testes Unitarios e de Interface
+ */
+task cieloTest(dependsOn: 'testStoreMockUnitTest'){
+    doFirst {
+        println ''
+        println '------------------- Iniciando Testes ------------------'
+        println ''
+    }
+
+}
+
+
+configure(cieloTest ) {
+    group = gradle.groupCielo
+    description = 'Rodam os testes unitários e de interface'
+}

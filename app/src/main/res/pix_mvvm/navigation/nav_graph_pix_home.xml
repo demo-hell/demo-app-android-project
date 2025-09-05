@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_home"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/pixOnboardingHomeFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.home.ui.PixOnboardingHomeFragment"
+        android:label="PixOnboardingHome"
+        tools:layout="@layout/fragment_base_onboarding">
+
+        <action
+            android:id="@+id/action_pixOnboardingHomeFragment_to_pixHomeFragment"
+            app:destination="@id/pixHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixOnboardingHomeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixHomeFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.home.ui.PixHomeFragment"
+        android:label="PixHome"
+        tools:layout="@layout/fragment_pix_home">
+
+        <argument
+            android:name="PREPAID_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.meusCartoes.domains.entities.PrepaidResponse"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pixHomeFragment_to_pixInsertKeyFragment"
+            app:destination="@id/pixInsertKeyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixHomeFragment_to_pixSelectBankFragment"
+            app:destination="@id/pixSelectBankFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixHomeFragment_to_pixFreeMovementAccountManagementFragment"
+            app:destination="@id/pixFreeMovementAccountManagementFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <!-- TODO: DAQUI PARA BAIXO SÃO AS ROTAS LEGADAS QUE SERÃO MIGRADAS -->
+
+    <fragment
+        android:id="@+id/myCreditCardsFragment"
+        android:name="br.com.mobicare.cielo.meusCartoes.presentation.ui.fragment.MyCreditCardsFragment"
+        android:label="MyCreditCardsFragment"
+        tools:layout="@layout/fragment_my_credit_cards">
+
+        <argument
+            android:name="IS_FINISH_CARD_ARGS"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixFreeMovementAccountManagementFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.home.account.PixFreeMovementAccountManagementFragment"
+        android:label="PixFreeMovementAccountManagementFragment"
+        tools:layout="@layout/fragment_free_movement_account_management">
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="java.lang.Double" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixSelectBankFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.agency.selectBank.PixSelectBankFragment"
+        android:label="PixSelectBank"
+        tools:layout="@layout/fragment_pix_select_bank">
+
+        <argument
+            android:name="PIX_IS_TRUSTED_DESTINATION_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_pixSelectBankFragment_to_pixSelectAccountTypeFragment"
+            app:destination="@id/pixSelectAccountTypeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixSelectAccountTypeFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.agency.PixSelectAccountTypeFragment"
+        android:label="PixSelectAccountType"
+        tools:layout="@layout/fragment_pix_select_account_type">
+
+        <argument
+            android:name="PIX_BANK_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.model.PixBank" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_IS_TRUSTED_DESTINATION_ARGS"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_pixSelectAccountTypeFragment_to_pixInsertAccountDataFragment"
+            app:destination="@id/pixInsertAccountDataFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixInsertAccountDataFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.agency.PixInsertAccountDataFragment"
+        android:label="PixInsertAccountData"
+        tools:layout="@layout/fragment_pix_insert_account_data">
+
+        <argument
+            android:name="PIX_PAYEE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ManualPayee" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_IS_TRUSTED_DESTINATION_ARGS"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_pixInsertAccountDataFragment_to_pixInsertDocumentDataFragment"
+            app:destination="@id/pixInsertDocumentDataFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixInsertDocumentDataFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.agency.PixInsertDocumentDataFragment"
+        android:label="PixInsertAccountData"
+        tools:layout="@layout/fragment_pix_insert_document_data">
+
+        <argument
+            android:name="PIX_PAYEE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ManualPayee" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_IS_TRUSTED_DESTINATION_ARGS"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_pixInsertDocumentDataFragment_to_pixInsertRecipientDataFragment"
+            app:destination="@id/pixInsertRecipientDataFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixInsertRecipientDataFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.agency.PixInsertRecipientDataFragment"
+        android:label="PixInsertAccountData"
+        tools:layout="@layout/fragment_pix_insert_recipient_data">
+
+        <argument
+            android:name="PIX_PAYEE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ManualPayee" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_IS_TRUSTED_DESTINATION_ARGS"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_pixInsertRecipientDataFragment_to_pixMyLimitsAddNewTrustedDestinationFragment"
+            app:destination="@id/pixMyLimitsAddNewTrustedDestinationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixInsertRecipientDataFragment_to_pixTransferSummaryFragment"
+            app:destination="@id/pixTransferSummaryFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixInsertKeyFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.key.PixInsertKeyFragment"
+        android:label="PixInsertKeyFragment"
+        tools:layout="@layout/fragment_pix_insert_key">
+
+        <argument
+            android:name="PIX_TYPE_KEY_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.enums.PixKeyTypeEnum" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_IS_TRUSTED_DESTINATION_ARGS"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_pixInsertKeyFragment_to_pixTransferSummaryFragment"
+            app:destination="@id/pixTransferSummaryFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixInsertKeyFragment_to_pixSelectBankFragment"
+            app:destination="@id/pixSelectBankFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixInsertKeyFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixInsertKeyFragment_to_pixMyLimitsAddNewTrustedDestinationFragment"
+            app:destination="@id/pixMyLimitsAddNewTrustedDestinationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferSummaryFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.summary.PixTransferSummaryFragment"
+        android:label="PixTransferSummaryFragment"
+        tools:layout="@layout/fragment_pix_transfer_summary">
+
+        <argument
+            android:name="PIX_KEY_INFORMATION_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ValidateKeyResponse"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_PAYEE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ManualPayee"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pixTransferSummaryFragment_to_pixHomeFragment"
+            app:destination="@id/pixHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixHomeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixTransferSummaryFragment_to_pixTransferReceiptFragment"
+            app:destination="@id/pixTransferReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixTransferSummaryFragment_to_pixTransferScheduledReceiptFragment"
+            app:destination="@id/pixTransferScheduledReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.receipt.PixTransferReceiptFragment"
+        android:label="PixTransferReceiptFragment"
+        tools:layout="@layout/fragment_pix_transfer_receipt">
+
+        <argument
+            android:name="PIX_GO_BACK_TO_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSACTION_CODE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_ID_END_TO_END_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSFER_DETAILS_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.TransferDetailsResponse" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferScheduledReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.receipt.PixScheduledTransactionReceiptFragment"
+        android:label="PixScheduledTransactionReceiptFragment"
+        tools:layout="@layout/fragment_pix_scheduled_transaction_receipt">
+
+        <argument
+            android:name="PIX_EXTRACT_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.SchedulingDetailResponse"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_SCHEDULING_CODE_ARGS"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_GO_BACK_TO_ARGS"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixMyLimitsAddNewTrustedDestinationFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.mylimits.trusteddestinations.add.PixMyLimitsAddNewTrustedDestinationFragment"
+        android:label="PixMyLimitsAddNewTrustedDestinationFragment"
+        tools:layout="@layout/fragment_pix_my_limits_add_new_trusted_destination">
+
+        <argument
+            android:name="PIX_PAYEE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ManualPayee"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_KEY_INFORMATION_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ValidateKeyResponse"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_IS_KEY_ARGS"
+            app:argType="boolean" />
+
+    </fragment>
+
+</navigation>

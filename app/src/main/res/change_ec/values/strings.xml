@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="change_ec_text_title">Meus estabelecimentos</string>
+    <string name="change_ec_text_title_ecs">Selecione o estabelecimento que deseja visualizar</string>
+    <string name="change_ec_item_text_grupo">Grupo de pagamento</string>
+    <string name="change_ec_item_text_individual">Individual</string>
+    <string name="change_ec_item_text_visao">Visualização atual</string>
+    <string name="change_ec_text_search">Buscar por Nº de estabelecimento ou nome</string>
+    <string name="change_ec_text_otp_pending">O estabelecimento requer validação de segurança</string>
+    <string name="change_ec_text_otp_blocked">Este acesso está temporariamente bloqueado</string>
+
+    <string name="change_ec_search_hint">Buscar por Nº de estabelecimento ou nome</string>
+    <string name="change_ec_add_ec">Adicionar estabelecimento</string>
+    <string name="change_ec_btn_back">Voltar</string>
+</resources>

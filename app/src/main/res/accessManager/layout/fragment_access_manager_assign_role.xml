@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".accessManager.assignRole.AccessManagerAssignRoleFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_21dp"
+        android:paddingEnd="@dimen/dimen_48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/access_manager_assign_role_admin_title"
+        android:textColor="@color/brand_600"
+        app:layout_constraintTop_toBottomOf="@id/btBackArrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubtitle"
+        style="@style/Paragraph_400_regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        android:text="@string/access_manager_assign_role_admin_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivUsersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_21dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:srcCompat="@drawable/ic_users" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUsersCount"
+        style="@style/Label_200_Bold_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:textColor="@color/display_400"
+        app:layout_constraintBottom_toBottomOf="@id/ivUsersCount"
+        app:layout_constraintStart_toEndOf="@id/ivUsersCount"
+        app:layout_constraintTop_toTopOf="@id/ivUsersCount"
+        tools:text="0/60" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSelectAll"
+        style="@style/Label_300_Alternate_14_brand_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:paddingHorizontal="@dimen/dimen_24dp"
+        android:text="@string/access_manager_assign_role_select_all"
+        android:textColor="@drawable/text_color_brand_400_selector"
+        android:translationZ="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivUsersCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivUsersCount" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toTopOf="@id/btNext"
+        app:layout_constraintTop_toBottomOf="@id/ivUsersCount"
+        tools:listitem="@layout/card_access_manager_user_item" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btNext"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/access_manager_assign_role_assign"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearSuccessMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/buttonEndAction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageSuccessLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="66dp"
+                android:minWidth="66dp"
+                android:tint="@color/green_14da9e"
+                app:srcCompat="@drawable/ic_success" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textSuccessTitle"
+                style="@style/TextGreen16spTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                tools:text="Cartão desbloqueado com sucesso!" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textSuccessDescription"
+                style="@style/TextGrey14spNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="41dp"
+                android:gravity="center"
+                tools:text="Seu cartão já está ativo. Agora você já pode começar a comprar!" />
+        </LinearLayout>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonEndAction"
+            style="@style/ButtonShapedPurpleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="42dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:padding="15dp"
+            app:fb_text="Começar a usar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

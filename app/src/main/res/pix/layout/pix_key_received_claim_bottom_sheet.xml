@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/ic_drag_bottom_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/Heading_500_Bold_18_display_500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bs_details_portability_requested"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_data_register_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:paddingVertical="@dimen/dimen_16dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivKeyType"
+                    android:layout_width="@dimen/dimen_22dp"
+                    android:layout_height="@dimen/dimen_22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/container_text_data_register_key"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/container_text_data_register_key"
+                    tools:srcCompat="@drawable/ic_email_pix_16dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/container_text_data_register_key"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivKeyType"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvKeyName"
+                        style="@style/Paragraph_400_regular_16_display_500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Chave aleatória" />
+
+                    <TextView
+                        android:id="@+id/tvKeyValue"
+                        style="@style/Paragraph_300_bold_14_display_600"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_2dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvKeyName"
+                        tools:text="d8cadd08-88db-4bc7-a9c3-b844e6147a95" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerMainKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/background_status_my_keys_pix_success_100"
+                android:padding="@dimen/dimen_16dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/container_data_register_key">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ic_sign_key"
+                    android:layout_width="@dimen/dimen_12dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_money_sign" />
+
+                <TextView
+                    android:id="@+id/tv_title_type_key_register_key2"
+                    style="@style/Paragraph_200_regular_12_success_500"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_14dp"
+                    android:text="@string/bs_details_your_main_pix_key"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ic_sign_key"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/viewDivider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/color_C5CED7"
+                app:layout_constraintTop_toBottomOf="@+id/container_data_register_key" />
+
+            <TextView
+                android:id="@+id/tvDeadline"
+                style="@style/Paragraph_300_regular_14_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintTop_toBottomOf="@id/viewDivider"
+                tools:text="Você tem até o dia 04/08/2021 para confirmar este pedido e tirar esta chave da Cielo e liberar para outra instituição financeira." />
+
+            <br.com.cielo.libflue.button.CieloRegularWhiteButton
+                android:id="@+id/btReleaseKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:text="@string/text_button_release_key"
+                app:layout_constraintTop_toBottomOf="@id/tvDeadline" />
+
+            <br.com.cielo.libflue.button.CieloRegularBlueButton
+                android:id="@+id/btKeepKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/text_button_keep_key"
+                app:layout_constraintTop_toBottomOf="@id/btReleaseKey" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

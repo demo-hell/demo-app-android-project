@@ -1,0 +1,340 @@
+ext {
+    ankoVersion = "0.10.8"
+    icepickVersion = "0.4"
+    fancyButtonsVersion = "1.9.1"
+    hawkVersion = "2.0.1"
+    transitionsEverywhereVersion = "1.8.0"
+    inputMaskVersion = "6.1.0"
+    rxBiometricVersion = "0.1.0"
+    androidBiometricVersion = "1.1.0"
+    tinkVersion = "1.3.0-rc1"
+    androidXVersion = "1.6.1"
+    androidXMaterialDesignVersion = "1.8.0"
+    androidXCardView = "1.0.0"
+    androidXRecyclerView = "1.2.1"
+    androidXConstraintLayoutVersion = "2.1.4"
+    autoSizeTextViewVersion = "0.2.1"
+    ahNavigationBottomVersion = "2.3.4"
+    navigationVersion = "2.1.0"
+    lottieVersion = "6.0.1"
+    shimmerVersion = "0.5.0"
+    androidXCoreKtx = "1.9.0"
+    androidExtensionsVersion = "1.1.0"
+    sthetoVersion = "1.5.1"
+    androidXPreferenceVersion = "1.1.1"
+    circleProgressViewVersion = "1.4"
+    roundCornerProgressBarVersion = "2.1.2"
+    viewPager2 = "1.0.0"
+    circleImageView = "3.1.0"
+    cameraXVersion = "1.1.0-rc02"
+    identifySdk = "1.18.0"
+    viewModelVersion = "2.5.1"
+    coroutinesVersion = "1.6.4"
+    datadog_version = '1.19.0'
+    jjwtJacksonVersion = "0.11.2"
+    jacksonVersion = "2.8.5"
+}
+
+dependencies {
+    implementation fileTree(include: '*.jar', dir: 'libs')
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    storeImplementation 'br.com.allowme.android:allowme-contextual:1.6.3'
+    devImplementation 'br.com.allowme.android:allowme-contextual:1.6.3-homolog'
+
+    implementation 'com.github.masc3d:android-signaturepad:b60f117e'
+    implementation 'com.google.mlkit:object-detection:17.0.0'
+    implementation 'com.guardsquare:dexguard-runtime:9.3.26'
+
+    implementation "com.datadoghq:dd-sdk-android:$datadog_version"
+    implementation 'com.salesforce.marketingcloud:marketingcloudsdk:8.0.9'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+    implementation "androidx.security:security-crypto:1.1.0-alpha06"
+
+    implementation "de.hdodenhof:circleimageview:$circleImageView"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation "androidx.core:core-ktx:$androidXCoreKtx"
+
+    implementation "com.facebook.stetho:stetho:$sthetoVersion"
+    implementation "com.facebook.stetho:stetho-urlconnection:$sthetoVersion"
+
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+    implementation "androidx.collection:collection-ktx:$androidExtensionsVersion"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$viewModelVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$viewModelVersion"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$viewModelVersion"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+
+    //Design
+    implementation "com.google.android.material:material:$androidXMaterialDesignVersion"
+    implementation "androidx.cardview:cardview:$androidXCardView"
+    implementation "androidx.recyclerview:recyclerview:$androidXRecyclerView"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    implementation "androidx.preference:preference:$androidXPreferenceVersion"
+    implementation "com.akexorcist:round-corner-progress-bar:$roundCornerProgressBarVersion"
+
+    implementation "org.jetbrains.anko:anko-commons:$ankoVersion"
+    implementation 'com.github.barteksc:android-pdf-viewer:3.1.0-beta.1'
+    implementation 'com.otaliastudios:zoomlayout:1.9.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+
+    // RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
+    implementation("io.reactivex.rxjava2:rxkotlin:2.4.0")
+
+    // Button
+    implementation "com.github.medyo:fancybuttons:$fancyButtonsVersion"
+    implementation "com.github.tinsukE:icekick:$icepickVersion"
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    implementation "com.orhanobut:hawk:$hawkVersion"
+
+    implementation "com.redmadrobot:input-mask-android:$inputMaskVersion"
+
+    // Codigo de Barras
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.3.0@aar'
+
+    //RXBinding
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //swiper
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    //Permission
+    implementation 'com.karumi:dexter:4.1.0'
+    //Circle indicator
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+
+    //Koin
+    implementation 'org.koin:koin-android:1.0.1'
+    implementation 'org.koin:koin-androidx-scope:1.0.1'
+    implementation 'org.koin:koin-androidx-viewmodel:1.0.1'
+
+    //animations
+    implementation 'com.daimajia.androidanimations:library:2.2@aar'
+
+    //parsear o json no kotlin
+    implementation 'com.beust:klaxon:0.30'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "androidx.constraintlayout:constraintlayout:$androidXConstraintLayoutVersion"
+    implementation "com.github.FlyingPumba:SimpleRatingBar:v0.1.5"
+    implementation "me.zhanghai.android.materialprogressbar:library:1.6.1"
+    implementation "br.com.concrete:canarinho:2.0.0"
+
+    //Fingerprint library
+    implementation "com.google.crypto.tink:tink-android:$tinkVersion"
+    implementation "androidx.biometric:biometric:$androidBiometricVersion"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation("com.aurelhubert:ahbottomnavigation:$ahNavigationBottomVersion")
+
+    //Shimmer layout library
+    implementation "com.facebook.shimmer:shimmer:$shimmerVersion"
+
+    // ViewPager2
+    implementation "androidx.viewpager2:viewpager2:$viewPager2"
+
+    implementation 'com.appsflyer:af-android-sdk:6.13.0'
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+
+    // Compose
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.compiler:compiler:$compose_version"
+    implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "androidx.compose.foundation:foundation:$compose_version"
+    implementation "androidx.compose.material:material-icons-core:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+    implementation "androidx.compose.material3:material3:1.0.0"
+
+    implementation 'androidx.activity:activity-compose:1.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0'
+
+    implementation 'com.google.accompanist:accompanist-insets:0.22.0-rc'
+    implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
+
+    // Barcode
+    implementation 'com.google.mlkit:barcode-scanning:17.2.0'
+
+    //camerax
+    implementation "androidx.camera:camera-core:$cameraXVersion"
+    implementation "androidx.camera:camera-camera2:$cameraXVersion"
+    implementation "androidx.camera:camera-lifecycle:$cameraXVersion"
+    implementation "androidx.camera:camera-view:$cameraXVersion"
+
+    implementation(files('libs/libflue-release.aar'))
+    implementation(files('libs/cielo-chart-lib-release.aar'))
+
+    //aar
+    implementation(files('libs/AkamaiBMP-3.3.1.aar'))
+
+    //Tap on Phone SDK
+    storeImplementation(files('libs/top-sdk.aar'))
+    storeImplementation(files('libs/top-sdk-utils.aar'))
+    storeImplementation(files('libs/top-sdk-reader-utils.aar'))
+    storeImplementation(files('libs/pp-conecta.aar'))
+
+    devImplementation(files('libs/top-sdk-homolog.aar'))
+    devImplementation(files('libs/top-sdk-utils-homolog.aar'))
+    devImplementation(files('libs/top-sdk-reader-utils-homolog.aar'))
+    devImplementation(files('libs/pp-conecta-homolog.aar'))
+
+    implementation group: 'org.bouncycastle', name: 'bcprov-jdk18on', version: '1.73'
+
+    // Brand kernels
+    //mastercard
+    implementation(files('libs/top-sdk-2-core-2.0.3.jar'))
+    //visa branding
+    implementation(files('libs/top-sdk-3-branding-1.0.6.aar'))
+    // visa
+    implementation(files('libs/top-sdk-3-core-2.22.aar'))
+    //amex
+    implementation(files('libs/top-sdk-4-core-1.0.18.aar'))
+
+    implementation 'com.discover.sdk:core:COR1.1.4-releaseCandidate'
+    implementation 'com.discover.sdk:card-reader:TOOK2.3.2-releaseCandidate'
+
+    //Tap on Phone SDK required implementations
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'net.danlew:android.joda:2.9.9.4'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.android.gms:play-services-safetynet:17.0.0'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'com.google.android.play:integrity:1.2.0'
+    implementation 'com.madgag.spongycastle:core:1.58.0.0'
+    implementation 'com.madgag.spongycastle:prov:1.58.0.0'
+
+    api "io.jsonwebtoken:jjwt-api:$jjwtJacksonVersion"
+    runtimeOnly "io.jsonwebtoken:jjwt-impl:$jjwtJacksonVersion"
+    runtimeOnly("io.jsonwebtoken:jjwt-orgjson:$jjwtJacksonVersion") {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    implementation "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.2'
+
+    // Test
+    implementation 'androidx.fragment:fragment-testing:1.5.6'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.5.1'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-web:3.5.1'
+
+    androidTestImplementation 'org.hamcrest:hamcrest-library:1.3'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    androidTestImplementation 'com.squareup.okhttp3:mockwebserver:4.6.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.18.3'
+
+    androidTestImplementation "com.linkedin.testbutler:test-butler-library:1.4.0"
+    androidTestImplementation "com.github.andrzejchm.RESTMock:android:0.3.2"
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2')
+    androidTestImplementation('androidx.test.espresso:espresso-contrib:3.5.1')
+
+    androidTestImplementation 'com.google.code.findbugs:jsr305:3.0.2'
+
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'org.mockito:mockito-core:3.12.1'
+
+    testImplementation 'io.mockk:mockk:1.12.3'
+    testImplementation 'com.squareup.okhttp3:mockwebserver:4.6.0'
+    testImplementation 'com.google.truth:truth:1.1.3'
+
+    testImplementation 'androidx.test.ext:junit:1.1.5'
+    testImplementation 'androidx.test:core:1.5.0'
+    testImplementation 'org.koin:koin-test:2.0.1'
+    testImplementation 'org.robolectric:robolectric:4.5.1'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'androidx.arch.core:core-testing:2.2.0'
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
+
+    testImplementation 'com.nhaarman:mockito-kotlin:1.6.0'
+
+    debugImplementation "androidx.compose.ui:ui-tooling:1.3.3"
+
+    // Pinch and zoom image
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    // Pinch and zoom image
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    implementation "identify-android:identify-sdk:$identifySdk"
+
+    implementation('io.unico:capture:5.20.0'){
+        exclude group: "io.unico.security", module: "dexguard-runtime"
+        exclude group: "org.bouncycastle", module: "bcprov-jdk15on"
+    }
+
+    implementation 'com.otaliastudios:zoomlayout:1.9.0'
+
+    // TODO remove after migrating to allowme V2
+    implementation "com.google.android.gms:play-services-ads:22.1.0"
+    // TODO rremove after migrating to allowme V2
+    implementation "com.google.android.gms:play-services-ads-lite:22.1.0"
+
+    implementation 'commons-codec:commons-codec:1.15'
+
+    implementation(files('libs/cieloframeworkwebview.aar'))
+
+    implementation 'com.github.corouteam:GlideToVectorYou:2.0.0'
+
+    implementation 'com.google.android.play:review-ktx:2.0.1'
+
+    implementation 'com.github.Dimezis:BlurView:version-2.0.5'
+}
+
+sonarqube {
+    androidVariant "devHomolog"
+    properties {
+        def libraries = project.android.sdkDirectory.getPath() + "/platforms/android-28/android.jar"
+
+        property "sonar.sources", "src/main/java"
+        property "sonar.binaries", "build/intermediates/javac/devHomolog"
+        property "sonar.libraries", libraries
+        property "sonar.java.binaries", "build/intermediates/javac/devHomolog"
+        property "sonar.java.libraries", libraries
+
+        property "sonar.tests", "src/test/java, src/androidTest/java"
+        property "sonar.java.test.binaries", "build/intermediates/javac/devHomolog"
+        property "sonar.java.test.libraries", libraries
+
+        property "sonar.jacoco.reportPath", "build/jacoco/testDevHomologUnitTest.exec"
+
+        property "sonar.junit.reportsPath", "build/test-results/testDevHomologUnitTest"
+        property "sonar.android.lint.report", "build/outputs/lint-results.xml"
+
+        property "sonar.java.coveragePlugin", "jacoco"
+        property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/jacocoTestDevHomologUnitTestReport/jacocoTestDevHomologUnitTestReport.xml"
+    }
+}

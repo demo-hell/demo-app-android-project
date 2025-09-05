@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="onboard_first_access_title">
+        <item>Olá, esse é o App Cielo</item>
+        <item>Extrato</item>
+        <item>Serviços e produtos</item>
+        <item>Tudo para a sua máquina</item>
+        <item>Só mais um pouquinho</item>
+    </string-array>
+    <string-array name="onboard_first_access">
+        <item>Esse é um espaço totalmente dedicado a gestão do seu negócio. Muito em breve todas as funções serão liberadas.</item>
+        <item>Consulte todas as vendas que realizou.
+            \nVeja os valores dos seus recebimentos.
+            \nConsulte transações em tempo real.</item>
+        <item>Fique por dentro de dados sobre o seu estabelecimento com o Cielo Farol
+            \nVenda com o Cielo Link de Pagamento e muito mais!</item>
+        <item>Peça mais máquinas, solicite bobinas, adesivos e manutenção. Consulte taxas contratadas e acompanhe o seu plano.</item>
+        <item>Em breve você terá acesso a tudo isso e muito mais. Qualquer dúvida ligue na nossa Central de Relacionamento</item>
+    </string-array>
+</resources>

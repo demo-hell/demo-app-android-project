@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_coil"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="32dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dc_iv_brand"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_marginTop="32dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_appicon"
+            tools:ignore="MissingConstraints" />
+
+        <ProgressBar
+            android:id="@+id/progress_dc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:indeterminate="true"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/dc_tv_name_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black_263238"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dc_iv_brand"
+            app:typeface="MuseoSans-500.ttf"
+            tools:ignore="MissingConstraints"
+            tools:text="Banco do Brasil"/>
+
+        <include
+            android:id="@+id/ll_main_descriptions"
+            layout="@layout/item_tipo_conta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dc_tv_name_bank"/>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/dc_tv_name_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/item_dc_bandeiras"
+            android:textColor="@color/title_black"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_main_descriptions"
+            app:typeface="MuseoSans-500.ttf"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dc_brands"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="@id/dc_tv_name_brand"
+            app:layout_constraintTop_toBottomOf="@+id/dc_tv_name_brand"
+            app:layout_constraintEnd_toStartOf="@+id/tv_validador_dc"
+            app:layout_constraintBottom_toTopOf="@id/constraint_view_item_bandeira"/>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tv_validador_dc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/item_dc_qtd_brand"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_dc_brands"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rv_dc_brands"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_view_item_bandeira"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_dc_brands"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tv_link_flag_transfer"
+                style="@style/Text14sp500Blue00aeef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/color_017CEB"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_12sp"
+                android:text="@string/item_dc_transferir_bandeiras"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+

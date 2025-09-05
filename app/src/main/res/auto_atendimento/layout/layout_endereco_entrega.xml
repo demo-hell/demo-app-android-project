@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    app:cardCornerRadius="@dimen/dimen_6dp"
+    app:cardElevation="@dimen/dimen_0dp"
+    app:strokeColor="@color/color_C5CED7"
+    app:strokeWidth="@dimen/dimen_1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:orientation="vertical">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço de Entrega"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_14sp"
+            app:typeface="Museo700-Regular.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="Endereço"
+            android:textColor="@color/color_5A646E"
+            android:textSize="12sp"
+            android:fontFamily="@font/ubuntu_bold" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/enderecoEntregaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/color_231F20"
+            android:textSize="@dimen/dimen_14sp"
+            app:fontFamily="@font/ubuntu_bold"
+            tools:text="Alameda Xingú, 512 3º Andar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_21dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bairro"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:fontFamily="@font/ubuntu_bold" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/bairroText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textColor="@color/color_231F20"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:fontFamily="@font/ubuntu_bold"
+                    tools:text="Alphaville" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cep"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:fontFamily="@font/ubuntu_bold" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/cepText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textColor="@color/color_231F20"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    tools:text="06417-777" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_21dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cidade"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:fontFamily="@font/ubuntu_bold" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/cidadeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textColor="@color/color_231F20"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:fontFamily="@font/ubuntu_bold"
+                    tools:text="@string/barueri" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_12sp"
+                    android:fontFamily="@font/ubuntu_bold" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/estadoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textColor="@color/color_231F20"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:fontFamily="@font/ubuntu_bold"
+                    tools:text="@string/sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="Periodo para entrega"
+            android:textColor="@color/color_5A646E"
+            android:textSize="@dimen/dimen_12sp"
+            android:fontFamily="@font/ubuntu_bold" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/periodoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/color_231F20"
+            android:textSize="@dimen/dimen_14sp"
+            app:fontFamily="@font/ubuntu_bold"
+            tools:text="Seg à Sex - 10:00 às 22:00" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_nome_fachada"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:textColor="@color/color_5A646E"
+            android:textSize="@dimen/dimen_12sp"
+            android:fontFamily="@font/ubuntu_bold" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/nomeDaFachadaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/color_231F20"
+            android:textSize="@dimen/dimen_14sp"
+            app:fontFamily="@font/ubuntu_bold"
+            tools:text="Casa do silencioso" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_ponto_referencia"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:textColor="@color/color_5A646E"
+            android:textSize="@dimen/dimen_12sp"
+            android:fontFamily="@font/ubuntu_bold" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/pontoDeReferenciaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/color_231F20"
+            android:textSize="@dimen/dimen_14sp"
+            android:fontFamily="@font/ubuntu_bold"
+            tools:text="Próximo a mercearia do Jão" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

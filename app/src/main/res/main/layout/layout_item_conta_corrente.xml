@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bandeiraImageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contaCorrenteTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nomeBancoTextView"
+        app:srcCompat="@drawable/ic_generic_brand" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nomeBancoTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/ubuntu"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bandeiraImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Banco do Brasil" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Agência: "
+        android:fontFamily="@font/ubuntu"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintStart_toEndOf="@+id/bandeiraImageView"
+        app:layout_constraintTop_toBottomOf="@+id/nomeBancoTextView"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/agenciaTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/appCompatTextView7"
+        app:layout_constraintTop_toBottomOf="@+id/nomeBancoTextView"
+        tools:text="04132" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Conta: "
+        android:fontFamily="@font/ubuntu"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintStart_toEndOf="@+id/bandeiraImageView"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView7"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contaCorrenteTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/agenciaTextView"
+        tools:text="004132-5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

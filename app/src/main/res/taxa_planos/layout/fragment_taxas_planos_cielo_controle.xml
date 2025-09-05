@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4f8f9">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            >
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:text="Cielo Controle"
+                android:textColor="@color/color_34454f"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:typeface="Museo700-Regular.ttf" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="O que você vende é o que você recebe"
+                android:textColor="@color/color_34454f"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/open_sans_bold"
+                app:typeface="normal" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Faturamento atual"
+                        android:textColor="@color/color_233038"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:typeface="Museo700-Regular.ttf" />
+
+                    <ProgressBar
+                        android:id="@+id/pbView"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="20dp"
+                        android:max="100"
+                        android:progress="50"
+                        android:progressDrawable="@drawable/progressbar_orange_drawable" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/valorFaturamentoAtualText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="R$ 7.853,41"
+                        android:textColor="@color/color_f98f25"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/open_sans_bold"
+                        app:typeface="normal" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/typefaceTextView30"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Detalhes da franquia"
+                android:textColor="@color/color_233038"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:typeface="Museo700-Regular.ttf" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Franquia contratada"
+                        android:textColor="@color/color_233038"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/open_sans"
+                        app:typeface="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/valorFranquiaContratadaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="R$ 10.000,00"
+                        android:textColor="@color/color_34454f"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/open_sans_bold"
+                        app:typeface="normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_f4f8f9"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="4dp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Faturamento excedente"
+                        android:textColor="@color/color_233038"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/open_sans"
+                        app:typeface="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/valorFaturamentExcedenteText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="R$ 2.146,59"
+                        android:textColor="@color/color_34454f"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/open_sans_bold"
+                        app:typeface="normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_f4f8f9"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="4dp"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tarifa do excedente*"
+                        android:textColor="@color/color_233038"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/open_sans"
+                        app:typeface="normal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/valorTarifaExcedenteText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="R$ 0,00"
+                        android:textColor="@color/color_34454f"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/open_sans_bold"
+                        app:typeface="normal" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:text="*O valor demonstrado é referente ao mês anterior"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="@dimen/dimen_12sp"
+                android:textColor="@color/display_500"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/include_error"
+        layout="@layout/fragment_receba_mais_failure"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/shimmerLoading"
+        layout="@layout/frame_progress"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

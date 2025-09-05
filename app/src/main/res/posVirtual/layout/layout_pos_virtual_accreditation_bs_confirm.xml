@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_32dp">
+
+    <TextView
+        android:id="@+id/tvCieloTap"
+        style="@style/regular_montserrat_16_cloud_400_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Cielo Tap: Receba em 2 dias úteis." />
+
+    <TextView
+        android:id="@+id/tvSuperLink"
+        style="@style/regular_montserrat_16_cloud_400_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        tools:text="Super Link: Após 2 meses consecutivos de faturamento com a Cielo, você passa a receber em 2 dias úteis." />
+
+    <TextView
+        android:id="@+id/tvQRCodePix"
+        style="@style/regular_montserrat_16_cloud_400_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        tools:text="QR Code Pix: Receba na hora." />
+
+</LinearLayout>

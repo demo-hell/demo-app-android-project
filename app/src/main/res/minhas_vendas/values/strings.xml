@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="error_cancel_sem_saldo_titulo">Sem saldo</string>
+    <string name="error_cancel_sem_saldo_msg">A venda selecionada não possui saldo para cancelamento.</string>
+
+    <string name="error_cancel_error">Ocorreu um erro</string>
+    <string name="error_cancel_error_msg">Infelizmente não conseguimos realizar sua solicitação de cancelamento.</string>
+
+    <!-- tutorial -->
+    <string name="titulo_tutorial_01">Cancele suas vendas no app</string>
+    <string name="subtitulo_tutorial_01">Na palma da suas mãos, sem precisar ligar, veja como a seguir</string>
+
+    <string name="titulo_tutorial_02">É arrastar pro lado</string>
+    <string name="subtitulo_tutorial_02">Escolha uma venda realizada no dia anterior ou em outro período e arraste para o lado. Você pode cancelar integral ou parcialmente</string>
+
+    <string name="titulo_tutorial_03">Consulte seus cancelamentos</string>
+    <string name="subtitulo_tutorial_03">Você também pode consultar os status dos seus cancelamentos direto no seu App</string>
+
+    <string name="next_cancel_tutorial">Próximo</string>
+    <string name="topbar_tutorial_cancel">Novidades</string>
+    <string name="text_cancel_tutorial_title">Tutorial cancelamento</string>
+    <string name="text_title_canceled_details">Detalhes do cancelamento</string>
+    <string name="text_canceled_data_label">Dados da solicitação</string>
+
+    <string name="text_canceled_request_label">Data da solicitação</string>
+    <string name="text_canceled_status_label">Status</string>
+
+    <string name="text_canceled_sale_data_label">Dados da venda</string>
+
+    <string name="text_canceled_sale_cancel_date_label">Data</string>
+
+    <string name="text_canceled_sale_payment_type_label">Forma de pagamento</string>
+    <string name="text_canceled_sale_transaction_value_label">Valor da venda</string>
+    <string name="text_canceled_sale_cancel_request_value_accepted_label">Valor do cancelamento</string>
+    <string name="text_canceled_sale_stablishment_number_label">Nº do estabelecimento</string>
+
+    <string name="text_canceled_sale_id_label">ID</string>
+    <string name="text_canceled_sale_authorization_code_label">Código de autorização</string>
+
+    <string name="text_canceled_sale_nsu_label">NSU</string>
+
+    <string name="text_canceled_sale_brand_type_label">Bandeira</string>
+    <string name="text_canceled_sale_tax_label">Taxa</string>
+    <string name="text_canceled_sale_net_amount_label">Valor líquido</string>
+    <string name="text_canceled_sale_payment_required_label">Previsão do pagamento</string>
+
+    <string name="text_apply_filters_label">Aplicar filtros</string>
+    <string name="text_clear_filters_label">Limpar filtros</string>
+    <string name="text_more_filters_title">Mais Filtros</string>
+
+    <string name="text_label_amount_filter">Valor da venda</string>
+    <string name="text_hint_amount_initial_filter">Mínimo</string>
+    <string name="text_hint_amount_final_filter">Máximo</string>
+
+    <string name="text_outer_filter">Outros filtros</string>
+    <string name="text_outer_nsu_doc_filter">NSU/DOC</string>
+    <string name="text_outer_cancel_amount_filter">NSU/DOC</string>
+    <string name="text_outer_code_filter">Código de autorização</string>
+    <string name="text_outer_card_number_filter">4 últimos dígitos do cartão</string>
+    <string name="text_outer_operation_summary_filter">Resumo da operação</string>
+    <string name="text_outer_tid_filter">TID</string>
+
+    <string name="text_outer_operation_code_filter">Número da operação</string>
+    <string name="text_outer_code_sales_filter">Código da venda</string>
+    <string name="text_outer_machine_number_filter">Número da máquina</string>
+
+    <string name="text_error_amount_filter">O valor máximo deve ser maior que o valor mínimo</string>
+
+    <string name="text_empty_transactions_heading">Não há vendas nesse período :(</string>
+    <string name="text_empty_transactions_description">Não identificamos nenhuma transação durante este período.</string>
+    <string name="label_button_empty_transactions">Atualizar</string>
+
+    <string name="text_your_day_sales">Suas vendas do dia %s</string>
+    <string name="description_button_empty_transactions">Atualizar, botão</string>
+    <string name="description_filter_button">Abrir filtro</string>
+    <string name="description_select_sales_de">Selecionar vendas de %s</string>
+    <string name="description_select_sales_dos">Selecionar vendas dos %s</string>
+    <string name="description_clear_filter_button">Limpar filtros, botão</string>
+    <string name="description_action_clear_filter">Filtro limpo</string>
+    <string name="description_apply_filter_button">Aplicar filtros, botão</string>
+    <string name="description_action_apply_filter">Filtro aplicado com sucesso</string>
+    <string name="description_select_filter_date">Selecionar vendas</string>
+    <string name="description_bottomsheet_more_filters">Mais filtros, aqui você poderá filtrar por formas de pagamentos ou por bandeiras</string>
+    <string name="description_focused_flag_card">Bandeira %s</string>
+    <string name="description_focused_selected_flag_card">Bandeira %s, selecionada</string>
+    <string name="description_focused_unselected_flag_card">Bandeira %s, não selecionada</string>
+    <string name="description_focused_selected_payment_method">Forma de pagamento %s, selecionada</string>
+    <string name="description_focused_unselected_payment_method">Forma de pagamento %s, não selecionada</string>
+    <string name="description_card_my_sales">Acessar detalhes, botão</string>
+    <string name="dialog_unable_cancel">Não é possível cancelar esta venda no momento</string>
+    <string name="text_try_again">Tente novamente mais tarde.</string>
+    <string name="text_aproved">Aprovado</string>
+
+    <string name="text_request_channel">Canal de solicitação</string>
+    <string name="text_canceled_status">Status cancelamento</string>
+    <string name="text_canceled_situation">Situação:</string>
+    <string name="text_canceled_sale_obs_review">Todas as solicitações passam primeiro por esta etapa de análise. Geralmente o tempo de processamento é de até 5 dias.</string>
+    <string name="text_canceled_sale_obs_reversed">Esta solicitação foi suspensa pelo demandante. Este processo leva, em média, 02 (dois) dias para conclusão.</string>
+    <string name="text_empty_canceled_sales">Não há solicitações de cancelamento para este período. Por favor, refine sua busca.</string>
+    <string name="txt_sale_has_been_cancelled">Já há um cancelamento em processamento para esta venda. Aguarde mais alguns instantes e consulte o status do pedido em <b>Vendas Canceladas.</b></string>
+</resources>

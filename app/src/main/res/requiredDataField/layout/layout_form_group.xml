@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_24dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/bold_montserrat_14_cloud_500"
+        android:id="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        tools:text="CPF/CNPJ" />
+
+    <br.com.cielo.libflue.inputtext.CieloInputText
+        android:id="@+id/etField"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:textAppearance="@style/regular_ubuntu_16_cloud_400"
+        tools:hint="Digite o número" />
+
+    <TextView
+        style="@style/regular_ubuntu_12"
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:textColor="@color/danger_400"
+        android:visibility="gone"
+        tools:text="CPF inválido. Por favor, digite novamente."
+        tools:visibility="visible" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

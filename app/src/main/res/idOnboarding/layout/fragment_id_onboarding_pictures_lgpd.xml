@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_21dp"
+        android:paddingEnd="@dimen/dimen_48dp"
+        android:contentDescription="@string/back"
+        app:srcCompat="@drawable/ic_left_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:srcCompat="@drawable/img_take_document_picture"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/btBackArrow"
+        app:layout_constraintBottom_toTopOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textColor="@color/brand_600"
+        android:textAlignment="center"
+        android:text="@string/id_onboarding_pictures_lgpd_title"
+        app:layout_constraintBottom_toTopOf="@id/tvMessage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        style="@style/Paragraph_400_Regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_8sp"
+        android:textAlignment="center"
+        android:text="@string/id_onboarding_pictures_lgpd_message"
+        app:layout_constraintBottom_toTopOf="@id/constraintLinkGroup" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLinkGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_corners_solid_gray_8dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_21dp"
+        app:layout_constraintBottom_toTopOf="@id/btNext">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLgpdLinkMessage"
+            style="@style/Paragraph_200_Bold_12_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/id_onboarding_pictures_lgpd_link_message"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ibCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            android:paddingVertical="@dimen/dimen_24dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_check_circle_white_unselected"
+            app:layout_constraintTop_toBottomOf="@id/tvLgpdLinkMessage"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btLgpdLink"
+            style="@style/Heading_300_regular_14"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0dp"
+            android:background="@color/transparent"
+            android:text="@string/id_onboarding_pictures_lgpd_link"
+            android:textColor="@color/brand_400"
+            android:textAlignment="textStart"
+            android:drawableEnd="@drawable/ic_small_file_outline"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:paddingEnd="@dimen/dimen_100dp"
+            app:layout_constraintTop_toTopOf="@id/ibCheck"
+            app:layout_constraintBottom_toBottomOf="@id/ibCheck"
+            app:layout_constraintStart_toEndOf="@id/ibCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btNext"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/text_next_label"
+        android:textColor="@android:color/white"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

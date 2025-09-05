@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="StepCheckView">
+        <attr name="currentStep" format="integer" />
+        <attr name="stepsTitles" format="reference" />
+    </declare-styleable>
+</resources>

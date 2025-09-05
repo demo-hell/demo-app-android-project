@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_receive_automatic"
+    app:startDestination="@id/receiveAutomaticRouterFragment">
+
+    <fragment
+        android:id="@+id/receiveAutomaticRouterFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.presentation.router.ReceiveAutomaticRouterFragment"
+        android:label="ReceiveAutomaticRouterFragment">
+        <action
+            android:id="@+id/action_receiveAutomaticRouterFragment_to_receiveAutomaticOnBoardingFragment"
+            app:destination="@id/receiveAutomaticOnBoarding"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/receiveAutomaticRouterFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_receiveAutomaticRouterFragment_to_receiveAutomaticHomeFragment"
+            app:destination="@id/receiveAutomaticHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_from_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_from_right"
+            app:popUpTo="@id/receiveAutomaticRouterFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiveAutomaticOnBoarding"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.presentation.onboarding.ReceiveAutomaticOnBoardingFragment"
+        android:label="fragment_get_fast_intro"
+        tools:layout="@layout/fragment_receive_automatic_onboarding">
+        <action
+            android:id="@+id/action_getFastIntroFragment_to_receiveAutomaticHomeFragment"
+            app:destination="@id/receiveAutomaticHomeFragment"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_from_right"
+            app:popUpTo="@id/receiveAutomaticOnBoarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiveAutomaticHomeFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.presentation.home.ReceiveAutomaticHomeFragment"
+        android:label="fragment_get_fast_home"
+        tools:layout="@layout/fragment_receive_automatic_home">
+
+        <action
+            android:id="@+id/action_receiveAutomaticHomeFragment_to_receiveAutomaticDetailsFragment"
+            app:destination="@id/receiveAutomaticDetailsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/receiveAutomaticDetailsFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.presentation.details.ReceiveAutomaticDetailsFragment"
+        android:label="ReceiveAutomaticDetailsFragment"
+        tools:layout="@layout/fragment_receive_automatic_details">
+        <action
+            android:id="@+id/action_receiveAutomaticDetailsFragment_to_receiveAutomaticConfirmationFragment"
+            app:destination="@id/receiveAutomaticConfirmationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+        <argument
+            android:name="SELECTED_TYPE"
+            app:argType="string" />
+        <argument
+            android:name="ARGS_OFFERS"
+            app:argType="br.com.mobicare.cielo.newRecebaRapido.domain.model.Offer[]" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receiveAutomaticConfirmationFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.presentation.details.ReceiveAutomaticConfirmationFragment"
+        android:label="ReceiveAutomaticConfirmationFragment"
+        tools:layout="@layout/fragment_receive_automatic_confirmation">
+        <action
+            android:id="@+id/action_receiveAutomaticConfirmationFragment_to_receiveAutomaticEndFragment"
+            app:destination="@id/receiveAutomaticEndFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <argument
+            android:name="ARGS_OFFERS"
+            app:argType="br.com.mobicare.cielo.newRecebaRapido.domain.model.Offer[]" />
+        <argument
+            android:name="ARGS_OFFER_SUMMARY"
+            app:argType="br.com.mobicare.cielo.newRecebaRapido.domain.model.GeneralOfferSummary" />
+        <argument
+            android:name="ARGS_CREDIT_OFFER"
+            app:argType="br.com.mobicare.cielo.newRecebaRapido.domain.model.CreditOfferItem"
+            app:nullable="true" />
+        <argument
+            android:name="ARGS_INSTALLMENT_OFFER"
+            app:argType="br.com.mobicare.cielo.newRecebaRapido.domain.model.InstallmentOfferItem"
+            app:nullable="true" />
+        <argument
+            android:name="ARGS_PLAN_SUMMARY"
+            app:argType="br.com.mobicare.cielo.newRecebaRapido.domain.model.SelectedPlanSummary" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receiveAutomaticEndFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.presentation.details.ReceiveAutomaticEndFragment"
+        android:label="fragment_receive_automatic_end"
+        tools:layout="@layout/fragment_receive_automatic_end">
+        <argument
+            android:name="TRANSACTION_TYPE"
+            app:argType="string" />
+        <argument
+            android:name="PERIODICITY"
+            app:argType="string" />
+        <argument
+            android:name="WEEKDAY"
+            app:argType="string" />
+        <argument
+            android:name="MONTHDAY"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

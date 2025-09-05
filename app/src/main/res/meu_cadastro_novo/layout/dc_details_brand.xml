@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    style="@style/TextBlack24spTitle"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="left|center"
+                    android:text="Ver banco"
+                    android:textColor="#2b2f33"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:typeface="Museo300-Regular.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/dc_btn_banner_close"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_icon_close" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfe5f5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/dc_iv_brand"
+                android:visibility="invisible"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_marginTop="93dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_appicon"
+                tools:ignore="MissingConstraints" />
+
+            <ProgressBar
+                android:id="@+id/progress_dc"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="visible"
+                android:layout_marginTop="93dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/dc_tv_name_bank"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="82dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="BANCO BRADESCO S/A"
+                android:textColor="@color/black_263238"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dc_iv_brand"
+                app:typeface="MuseoSans-500.ttf"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+            <include
+                android:id="@+id/ll_main_descriptions"
+                layout="@layout/item_tipo_conta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dc_tv_name_bank"/>
+            
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:background="#dfe5f5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_main_descriptions" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/dc_tv_name_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="Bandeiras"
+                android:textColor="@color/title_black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/view3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view3"
+                app:layout_constraintTop_toBottomOf="@+id/view3"
+                app:typeface="MuseoSans-500.ttf"
+                tools:ignore="MissingConstraints" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dc_brands"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/dc_tv_name_brand"
+                app:layout_constraintTop_toBottomOf="@+id/dc_tv_name_brand"
+                tools:listitem="@layout/item_dados_conta_brand"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/dc_btn_close"
+                style="@style/ButtonShapedPurpleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="15dp"
+                app:fb_text="Fechar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:typeface="Museo700-Regular.ttf"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

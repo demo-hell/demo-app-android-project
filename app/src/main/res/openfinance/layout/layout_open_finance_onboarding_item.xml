@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/iv_open_finance_onboarding_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            tools:srcCompat="@drawable/ic_opf_onboarding" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_open_finance_onboarding_item"
+            style="@style/bold_montserrat_18_display_500"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            tools:text="@string/to_know_opf_onboarding" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_subtitle_open_finance_onboarding_item"
+            style="@style/regular_ubuntu_16_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:textAlignment="center"
+            tools:text="@string/to_know_opf_onboarding_desc" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

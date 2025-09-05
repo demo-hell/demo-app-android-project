@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_dc">Autorizações</string>
+    <string name="btn_validar_mais_tarde">Validar mais tarde</string>
+    <string name="btn_continuar">Continuar</string>
+
+
+    <string name="text_title_dc_bottom_sheet">Temos uma informação</string>
+    <string name="text_title_dc_bottom_sheet_01">importante para você.</string>
+    <string name="text_body_dc_bottom_sheet">O seu contrato de credenciamento foi atualizado para contemplar a autorização para a realização de débitos no seu domicílio bancário, nos termos da Resolução CMN nº 4.790/20 e Circular BCB nº 4.022/20. Você pode consultá-lo a qualquer momento no site Cielo em Taxas e Planos.\n\nE não se preocupe: a autorização possui prazo indeterminado e poderá ser cancelada a qualquer momento.\n\nAs informações sobre a sua autorização está em Outros > Autorizações.</string>
+    <string name="text_body_dc_bottom_sheet_01">Outros > Autorizações</string>
+    <string name="txt_dc_not_register">Veja mais detalhes do termo de autorização</string>
+
+    <string name="text_debito_conta">Débito em conta</string>
+    <string name="text_debito_conta_01">Permite que a Cielo realize débitos nas contas, agências e instituições de sua titularidade.\n\nA quitação refere-se a cobrança de valores sobre aluguel, tarifas de produtos e serviços, cancelamentos e contestações, dentre outros serviços contratados na Cielo.</string>
+
+    <string name="text_termo_autorizacao">Termo de autorização</string>
+    <string name="text_termo_autorizacao_01">Autorizo, expressamente a CIELO a realizar débitos nas contas, agências e instituições de minha titularidade selecionadas, referente a cobrança de valores relativos a aluguel, tarifas de produtos e serviços, cancelamentos e contestações, dentre outros, nos termos do artigo 3° da Resolução nº 4.790 de 25 de março de 2020 e da Circular nº 4.022 de 03 de junho de 2020, ambas do Banco Central do Brasil. Estou ciente também que a autorização terá vigência por tempo indeterminado.</string>
+    <string name="termo_aceito_dc">Declaro ciência ao termo de autorização citado acima, com as devidas regulamentações.</string>
+    <string name="document_dc">O débito em conta será autorizado para as contas do CNPJ/CPF: </string>
+
+    <string name="title_get_banks">" Contas cadastradas disponíveis:"</string>
+    <string name="txt_name_bank">Conta Digital</string>
+    <string name="txt_name_agencia">Agência:</string>
+    <string name="txt_name_agencia_value">04312</string>
+    <string name="txt_name_conta">Conta:</string>
+    <string name="txt_name_conta_value">004132-5</string>
+    <string name="banner_termo_information">As cobranças de valores são relativos à tarifa de:  \n\n• Tarifa de credenciamento \n• Manutenção cadastral \n• Emissão e envio de extrato em papel \n• Conectividade \n• Liquidação \n• Devolução de terminal \n• Aluguel de terminal \n• Plano Cielo \n• Multas \n• Tarifas operacionais \n• Chargeback \n• Contratação de aquisição de recebíveis por meio da Central de Relacionamento \n• Envio de bobina emergencial \n• Cancelamento de transação \n• Transação sem a presença do cartão \n• Liquidação em ciclo extraordinário \n• Solicitação de pré-autorização \n• Tarifas de produtos (Cielo Promo, Cielo Farol, Cielo controle e seu excedente, entre outros) \n• Sinistro de equipamento e dívida referente à créditos recebidos incorretamente</string>
+    <string name="banner_title_termo_information">Débito em conta</string>
+
+    <string name="banner_sucess_title_dc">Sua autorização foi realizada com sucesso!</string>
+    <string name="banner_sucess_remocao_title_dc">Sua autorização foi removida com sucesso!</string>
+    <string name="banner_error_title_dc">Tivemos um problema ao carregar seus dados.</string>
+    <string name="banner_error_subtitle_dc">Verifique sua conexão e tente novamente.</string>
+
+    <string name="text_debito_conta_history_subtitle">Informações referente a esse estabelecimento conforme Resolução CMN nº 4.790/20 e Circular BCB nº 4.022/20.</string>
+    <string name="txt_estabelecimento_dc">CPF/CPNJ</string>
+    <string name="txt_estabelecimento_dc_value">1234567890</string>
+    <string name="txt_status_dc_value">Removido</string>
+    <string name="txt_status_dc">Status</string>
+
+    <string name="txt_historico_subtitle_01">Histórico de autorizações</string>
+    <string name="txt_date_authorization_value">09/10/2020</string>
+    <string name="txt_historico_subtitle_02">Histórico de revogações</string>
+    <string name="txt_remove_history_dc">Remover autorização</string>
+    <string name="txt_info_history_dc">Seu estabelecimento está pendente de  autorização para débito em conta.</string>
+
+    <string name="txt_bn_title_watting">Sua autorização para o débito em conta foi enviada!</string>
+    <string name="txt_bn_subtitle_watting">Estamos analisando seus dados, em breve você receberá uma confirmação</string>
+
+    <string name="tv_dc_history_title">Débito em conta</string>
+    <string name="tv_dc_history_title_02">O que é Débito em Conta?</string>
+    <string name="text_debito_conta_history_subtitle_02">Permite que a Cielo realize débitos em contas correntes de sua titularidade cadastradas na Cielo. A quitação refere-se a cobrança de valores sobre aluguel, tarifas de produtos e serviços, cancelamentos e contestações, dentre outros serviços contratados.</string>
+
+    <string name="btn_remover">Remover</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="dialog_title_dc">Remover autorização</string>
+    <string name="dialog_msg_dc">Deseja realmente remover a autorização de débito em conta do seu estabelecimento?</string>
+    <string name="btn_ok_entendi">Ver atualizações</string>
+
+    <string name="txt_go_to_token">Ir para o Token</string>
+    <string name="txt_token_use_required_title">É necessária a utilização do Token</string>
+    <string name="txt_feature_not_active_for_establishment">No momento, essa funcionalidade não está ativa para uso no seu estabelecimento</string>
+    <string name="txt_security_token_enable_subtitle">Para prosseguir, é necessário que o token de segurança tenha sido habilitado. Habilite-o para que você possa transacionar.</string>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AccessManagerRoleGroupCard">
+        <attr name="cardType" format="enum">
+            <enum name="NONE" value="0"/>
+            <enum name="ADMIN" value="1"/>
+            <enum name="ADMIN_DESC" value="2"/>
+            <enum name="READER" value="3"/>
+            <enum name="READER_DESC" value="4"/>
+            <enum name="EXPIRED" value="5"/>
+            <enum name="ANALYST" value="6"/>
+            <enum name="ANALYST_DESC" value="7"/>
+            <enum name="FOREIGN" value="8"/>
+            <enum name="TECHNICAL" value="9"/>
+            <enum name="TECHNICAL_DESC" value="10"/>
+            <enum name="CUSTOM" value="11"/>
+            <enum name="CUSTOM_DESC" value="12"/>
+        </attr>
+    </declare-styleable>
+</resources>

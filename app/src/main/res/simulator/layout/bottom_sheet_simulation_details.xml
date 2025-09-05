@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_32dp">
+
+    <TextView
+        android:id="@+id/tvBrandLabel"
+        style="@style/medium_montserrat_12_cloud_600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/sales_simulator_brand"/>
+
+    <ImageView
+        android:id="@+id/ivBrandIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        tools:src="@drawable/ic_mastercard_brand"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBrandLabel"/>
+
+    <TextView
+        android:id="@+id/tvBrand"
+        style="@style/bold_montserrat_16_neutral_600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBrandIcon"
+        app:layout_constraintStart_toEndOf="@+id/ivBrandIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivBrandIcon"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        tools:text="Mastercard" />
+
+    <TextView
+        android:id="@+id/tvSellTypeLabel"
+        style="@style/medium_montserrat_12_cloud_600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBrand"
+        android:text="@string/sales_simulator_simulated_sales_type"/>
+
+    <ImageView
+        android:id="@+id/ivSellTypeIcon"
+        android:layout_width="@dimen/dimen_16dp"
+        android:layout_height="16dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_cielo_machine_cloud_300_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSellTypeLabel"/>
+
+    <TextView
+        android:id="@+id/tvSellType"
+        style="@style/bold_montserrat_16"
+        android:textColor="@color/neutral_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSellTypeIcon"
+        app:layout_constraintStart_toEndOf="@+id/ivSellTypeIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivSellTypeIcon"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        tools:text="Crédito à vista" />
+
+    <TextView
+        android:id="@+id/tvReceiveTermLabel"
+        style="@style/medium_montserrat_12_cloud_600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSellType"
+        android:text="@string/sales_simulator_receipt_period"/>
+
+    <ImageView
+        android:id="@+id/ivReceiveTermIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_calendar_pix_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvReceiveTermLabel"
+        android:tint="@color/neutral_main"/>
+
+    <TextView
+        android:id="@+id/tvReceivingTerm"
+        style="@style/bold_montserrat_16_neutral_600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivReceiveTermIcon"
+        app:layout_constraintStart_toEndOf="@+id/ivReceiveTermIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivReceiveTermIcon"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        tools:text="1 dia útil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

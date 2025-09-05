@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/containerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        tools:ignore="InefficientWeight">
+
+        <br.com.cielo.libflue.field.TextFieldFlui
+            android:id="@+id/tfAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="12"
+            app:isShowHintTop="true"
+            app:isShowPrefix="true"
+            app:isShowErrorIcon="true"
+            app:hintTopTextStyle="@style/bold_montserrat_20"
+            app:textHintTopColor="@color/cloud_800"
+            app:prefixTextStyle="@style/medium_montserrat_24_cloud_800"
+            app:textStyle="@style/medium_montserrat_40_cloud_800"
+            app:maskTextField="money"
+            app:errorType="danger"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

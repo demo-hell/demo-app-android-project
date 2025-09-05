@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/meus_recebimentos_item_banco"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_meus_recebimentos_item_banco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/meus_recebimentos_nome_banco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:text="@string/meus_recebimentos_nome_banco"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:maxLines="1"
+                        app:typeface="MuseoSans-700.ttf" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/meus_recebimentos_agencia"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="left"
+                    android:text="@string/meus_recebimentos_agencia"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/meus_recebimentos_valor_deposito_banco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/meus_recebimentos_valor_depositado"
+                    android:textColor="@color/color_017CEB"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/meus_recebimentos_conta"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:gravity="left"
+                    android:text="@string/meus_recebimentos_conta"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/meus_recebimentos_item_card_divisioria"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.2"
+        android:background="@color/gray_light" />
+
+</LinearLayout>

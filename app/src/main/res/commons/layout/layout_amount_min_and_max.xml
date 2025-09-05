@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLabelAmount"
+            style="@style/Paragraph_400_regular_16_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_19dp"
+            android:text="@string/text_label_amount_filter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/textViewAmountInitial"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:digits="1234567890.,"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textSize="@dimen/dimen_16sp"
+            android:hint="@string/text_hint_amount_initial_filter"
+            android:background="@drawable/date_border_4dp"
+            android:textColor="@color/color_353A40"
+            app:errorEnabled="true"
+            app:layout_constraintHorizontal_weight="3"
+            app:layout_constraintEnd_toStartOf="@+id/textViewAmountFinal"
+            app:layout_constraintStart_toStartOf="@+id/textViewLabelAmount"
+            app:layout_constraintTop_toBottomOf="@id/textViewLabelAmount"
+            app:typeface="MuseoSans-500.ttf" />
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/textViewAmountFinal"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:digits="1234567890.,"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="noExcludeDescendants"
+            android:maxLines="1"
+            android:hint="@string/text_hint_amount_final_filter"
+            android:background="@drawable/date_border_4dp"
+            android:textColor="@color/color_353A40"
+            android:textSize="@dimen/dimen_16sp"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="3"
+            app:layout_constraintStart_toEndOf="@+id/textViewAmountInitial"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelAmount"
+            app:typeface="MuseoSans-500.ttf" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/text_error_amount_filter"
+            android:textColor="@color/red_DC392A"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewAmountInitial"
+            app:layout_constraintTop_toBottomOf="@id/textViewAmountFinal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/layout_time_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp">
+
+        <View
+            android:id="@+id/view_item_extrato_time_line_top_vertical"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.2"
+            android:visibility="visible"
+            android:background="@color/gray_light"/>
+
+        <ImageView
+            android:id="@+id/imageview_item_extrato_timeline_circle"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_below="@+id/view_item_extrato_time_line_top_vertical"
+            android:contentDescription="@null"
+            android:background="@drawable/ic_drag_bottom_sheet"
+            android:backgroundTint="@color/green_43B977"/>
+
+        <View
+            android:id="@+id/view_item_extrato_time_line_vertical"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_below="@+id/imageview_item_extrato_timeline_circle"
+            android:layout_centerInParent="true"
+            android:alpha="0.2"
+            android:visibility="visible"
+            android:background="@color/gray_light" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_date_negociation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    tools:text="24/09/2021"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="match_parent">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_value_negociation"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    tools:text="R$ 150,00"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:textColor="@color/display_400"
+                    android:textSize="@dimen/dimen_12sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

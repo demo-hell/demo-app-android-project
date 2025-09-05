@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_register_title">Atualização cadastral</string>
+    <string name="update_register">Atualize o seu cadastro</string>
+    <string name="update_register_info">Para que você tenha acesso total ao app,\n
+        precisamos atualizar seus dados cadastrais.\nLigue na nossa central de ajuda:</string>
+    <string name="update_register_phone_number">4002 5472 (capitais e regiões metropolitanas)</string>
+    <string name="update_register_phone_number_0800">0800 570 8472 (demais localidades)</string>
+    <string name="update_register_freedom_for_you">Após isso, o app estará liberado para você!</string>
+    <string name="onboard_first_accesses_wellcome">Boas-vindas</string>
+    <string name="onboard_first_accesses_ok">OK</string>
+
+    <string name="new_device_detected_bs_title">Faça a selfie para liberar o acesso</string>
+    <string name="new_device_detected_bs_subtitle">Verificamos que esse device ainda não foi verificado, faça a selfie para liberar o acesso ao dispositivo da conta</string>
+    <string name="new_device_detected_bs_button_try_later">Fazer mais tarde</string>
+    <string name="new_device_detected_bs_success_title">Dispositivo configurado com sucesso</string>
+    <string name="new_device_detected_bs_success_message">A partir de agora você pode realizar suas operações com mais segurança</string>
+    <string name="new_device_allow_me_error_title_1">Ocorreu um erro no cadastro do seu novo device</string>
+    <string name="new_device_allow_me_error_title_2">Ocorreu um erro no cadastro do seu novo device.</string>
+    <string name="new_device_allow_me_error_title_3">Ocorreu um erro no cadastro do seu novo device!</string>
+    <string name="new_device_allow_me_error_subtitle"><![CDATA[Não foi possível continuar com esse processo, <b>siga as orientações que enviamos para o seu e-mail</b><br/> para continuar o processo]]></string>
+
+    <string name="new_login_bs_close_sdk_title">Tem certeza que deseja sair?</string>
+    <string name="new_login_bs_close_sdk_message">Para confirmar as alterações feitas, você precisa realizar uma validação com uma selfie sua.</string>
+    <string name="new_login_bs_close_sdk_button2">Continuar validação</string>
+    <string name="new_login_bs_generic_error_sdk_title">Será necessário refazer o fluxo de validação.</string>
+    <string name="new_login_bs_generic_error_sdk_message">Algo deu errado. Para continuar, refaça o fluxo de validação biométrica facial.</string>
+    <string name="new_login_bs_generic_error_sdk_button">Fazer validação novamente</string>
+    <string name="new_login_bs_permission_error_sdk_title">Você não liberou o acesso à câmera.</string>
+    <string name="new_login_bs_permission_error_sdk_message">Não é possível continuar sem essa permissão. Você pode liberar o acesso dentro das configurações do celular.</string>
+    <string name="new_login_bs_generic_api_error_sdk_title">Não foi possível continuarmos.</string>
+    <string name="new_login_bs_generic_api_error_sdk_message">Algo deu errado. Para continuar, refaça o fluxo de validação biométrica facial ou tente novamente mais tarde.</string>
+    <string name="new_login_bs_success_title">Alteração concluida!</string>
+    <string name="new_login_bs_success_message">Alteração feita com sucesso. Por favor, entre novamente no app para a confirmação da alteração.</string>
+    <string name="new_login_bs_error_title">Tivemos algum problema na validação </string>
+    <string name="new_login_bs_error_message">Clique em tentar novamente para refazer o fluxo.</string>
+    <string name="new_login_bs_selfie_rejected_title">Não conseguimos validar sua foto</string>
+    <string name="new_login_bs_selfie_rejected_message"><![CDATA[Infelizmente não foi possível validar sua foto, <b>retorne para o login e troque a sua senha para validar a sua identidade.</b><br/>]]></string>
+    <string name="new_login_bs_selfie_rejected_button">Voltar para o login</string>
+</resources>

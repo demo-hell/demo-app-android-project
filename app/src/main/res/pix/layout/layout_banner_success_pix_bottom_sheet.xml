@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_4dp"
+        android:background="@drawable/ic_drag_bottom_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_banner_success_pix"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/txt_title_banner_success_pix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="@dimen/dimen_250dp"
+        app:layout_constraintHeight_min="@dimen/dimen_40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_ilustra" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/txt_title_banner_success_pix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/banner_success_title_pix"
+        android:textColor="@color/blue_0774E7"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_pix"
+        app:layout_constraintTop_toBottomOf="@+id/iv_banner_success_pix" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_pix"
+        style="@style/Paragraph_300_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:text="@string/banner_pix_success_subtitle"
+        app:layout_constraintBottom_toTopOf="@+id/container_action_btn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_banner_success_pix" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_action_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/link_access_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/dimen_10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_pix_access_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tv_pix_access_contact"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_pix_access_contact"
+                app:srcCompat="@drawable/ic_circle_arrow_blue" />
+
+            <TextView
+                android:id="@+id/tv_pix_access_contact"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:text="@string/txt_link_authorization"
+                android:textColor="@color/blue_0774E7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_pix_access_contact"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/followOfTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/text_close"
+            android:background="@color/blue_0774E7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/link_access_contact" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:background="@color/white"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBiometricImage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_220dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_91_troca_de_aparelho_token_instalado" />
+
+            <TextView
+                android:id="@+id/tvBiometricTitle"
+                style="@style/Heading_700_bold_20_brand_600"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dimen_3sp"
+                android:text="@string/biometric_success_title"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivBiometricImage" />
+
+            <TextView
+                android:id="@+id/tvBiometricMessage"
+                style="@style/Paragraph_400_regular_16_display_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_24dp"
+                android:lineSpacingExtra="@dimen/dimen_6sp"
+                android:text="@string/biometric_success_message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBiometricTitle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/biometricSelfieInfo"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_32dp"
+                android:background="@drawable/background_status_biometric_light_blue_alert_100"
+                android:paddingHorizontal="@dimen/dimen_16dp"
+                android:paddingVertical="@dimen/dimen_11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBiometricMessage">
+
+                <ImageView
+                    android:id="@+id/ivIconInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_info"
+                    app:tint="@color/brand_600" />
+
+                <TextView
+                    android:id="@+id/tvInfoText"
+                    style="@style/Paragraph_200_regular_12_display_400"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:lineSpacingExtra="@dimen/dimen_4sp"
+                    android:text="@string/biometric_success_alert_message"
+                    android:textColor="@color/brand_600"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivIconInfo"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/color_cloud_200"
+        app:layout_constraintBottom_toTopOf="@id/btFinish" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btFinish"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/biometric_success_finish_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

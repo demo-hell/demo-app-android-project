@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/im_aguardando_aprovacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/icon_ampulheta"/>
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/tv_aguardando_aprovacao_title"
+        style="@style/TextPurple20spTitleValue_700"
+        android:layout_marginTop="24dp"
+        tools:text="O seu contrato ainda está sendo gerado."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/tv_aguardando_aprovacao_subtitle"
+        style="@style/TextPurple16spTitleValue_500"
+        tools:text="Você pode atualizar esta tela a qualquer momento para verificar o retorno da sua contratação."
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/buttonInfoAction"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        tools:text="Atualizar"
+        android:text="Atualizar"
+        style="@style/ButtonShapedPurpleStyle"
+        android:layout_width="219dp"
+        android:layout_height="48dp" />
+
+</LinearLayout>

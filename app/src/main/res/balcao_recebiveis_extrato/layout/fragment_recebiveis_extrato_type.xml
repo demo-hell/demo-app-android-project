@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_grey_F2F4F8">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContentLayout"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/content_amount"
+                layout="@layout/item_amount_recebiveis_extrato"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/titleBanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_14dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/title_accounts_banks_inserted"
+                android:textColor="@color/color_5A646E"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_amount" />
+
+            <include
+                android:id="@+id/content_bancos"
+                layout="@layout/content_recebiveis_bancos"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleBanks" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/titleLastNegotiations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_14dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/title_last_negotiations"
+                android:textColor="@color/color_5A646E"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_bancos" />
+
+            <include
+                layout="@layout/item_list_negotiations_extrato_last"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_12dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:layout_marginEnd="@dimen/dimen_12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleLastNegotiations" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressViewLastNegotiations"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:cieloErrorButtonLabel="@string/text_error_update"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorMessage="@string/msg_erro_load_last_negotiations"
+        app:cieloErrorTitle="@string/title_erro_load_last_negotiations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/negotiationEmpity"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorMessage="@string/msg_erro_negotiation_empity"
+        app:cieloErrorTitle="@string/title_erro_negotiation_empity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

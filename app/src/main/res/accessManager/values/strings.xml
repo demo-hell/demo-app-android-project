@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="access_manager_home_title">Seus usuários cadastrados</string>
+    <string name="access_manager_home_desc">Aqui em gestão de acessos, é possível visualizar os seus usuários cadastrados e atribuir usuários que estão sem perfil definido.</string>
+    <string name="access_manager_home_loading">Buscando usuários</string>
+    <string name="access_manager_home_error">Não foi possível carregar os usuários</string>
+    <string name="access_manager_home_empty">Nenhum usuário para atribuir acessos</string>
+
+    <!-- RoleGroupCard -->
+    <string name="access_manager_role_group_card_no_role_title">Usuários sem perfil</string>
+    <string name="access_manager_role_group_card_no_role_subtitle">Atribua um perfil para seus usuários.</string>
+    <string name="access_manager_role_group_card_no_role_detail_name">Usuários sem perfil atribuido</string>
+    <string name="access_manager_role_group_card_admin_title">Usuários administradores</string>
+    <string name="access_manager_role_group_card_admin_subtitle">Veja todos os seus usuários administradores.</string>
+    <string name="access_manager_role_group_card_admin_subtitle_desc"><![CDATA[Os usuários <b>administradores</b> conseguem realizar operações, consultar os dados do dia a dia do estabelecimento e ajudar na gestão de acessos.]]></string>
+    <string name="access_manager_role_group_card_admin_detail_name">Usuários administradores</string>
+    <string name="access_manager_role_group_card_reader_title">Usuários visualizadores</string>
+    <string name="access_manager_role_group_card_analyst_title">Usuários analistas</string>
+    <string name="access_manager_role_group_card_expired_title">Reenviar convites</string>
+    <string name="access_manager_role_group_card_foreign_title">Aprovação de usuário</string>
+    <string name="access_manager_role_group_card_technical_title">Usuários técnicos</string>
+    <string name="access_manager_role_group_card_custom_title">Usuários Personalizados</string>
+    <string name="access_manager_role_group_card_expired_detail_name">Reenvie os convites que estão expirados.</string>
+    <string name="access_manager_role_group_card_reader_subtitle">Veja todos os seus usuários visualizadores.</string>
+    <string name="access_manager_role_group_card_analyst_subtitle">Veja todos os seus usuários analistas.</string>
+    <string name="access_manager_role_group_card_expired_subtitle">Gerencie os seus convites disponíveis para reenvio.</string>
+    <string name="access_manager_role_group_card_foreign_subtitle">Veja todos os usuários que você precisa aprovar!</string>
+    <string name="access_manager_role_group_card_technical_subtitle">Veja todos os seus usuários técnicos.</string>
+    <string name="access_manager_role_group_card_technical_subtitle_desc">Perfil técnico destinado para gerenciamento de segurança das chaves do e-commerce.</string>
+    <string name="access_manager_role_group_card_custom_subtitle">Veja todos os seus usuários personalizados.</string>
+    <string name="access_manager_role_group_card_custom_subtitle_desc"><![CDATA[Perfil <b>personalizado</b> que se ajusta a necessidade do seu estabelecimento.]]></string>
+    <string name="access_manager_role_group_card_reader_subtitle_desc"><![CDATA[Os usuários <b>visualizadores</b> conseguem ver dados básicos do dia a dia, essa permissão não permite alterações no estabelecimento]]></string>
+    <string name="access_manager_role_group_card_analyst_subtitle_desc"><![CDATA[Os usuários <b>analistas</b> conseguem realizar operações e consultar os dados do dia a dia do estabelecimento. Essa permissão não permite alterações na gestão de acessos.]]></string>
+    <string name="access_manager_role_group_card_reader_detail_name">Usuários visualizadores</string>
+    <string name="access_manager_role_group_card_analyst_detail_name">Usuários analistas</string>
+    <string name="access_manager_role_group_card_technical_detail_name">Usuários técnicos</string>
+    <string name="access_manager_role_group_card_custom_detail_name">Usuários personalizados</string>
+    <string name="access_manager_role_group_card_foreign_detail_name">Usuários pendentes de aprovação</string>
+    <string name="access_manager_role_group_card_foreign_empty_list">No momento, você não possui nenhum usuário para aprovação</string>
+    <plurals name="access_manager_custom_profile_total_quantitiy">
+        <item quantity="one"> • %d Usuário</item>
+        <item quantity="other"> • %d Usuários</item>
+    </plurals>
+    <plurals name="access_manager_role_group_card_detail_count">
+        <item quantity="one">Você tem %d usuário</item>
+        <item quantity="other">Você tem %d usuários</item>
+    </plurals>
+    <plurals name="access_manager_role_expired_group_card_detail_count">
+        <item quantity="one">%d pessoa com convite expirado</item>
+        <item quantity="other">%d pessoas com convites expirados</item>
+    </plurals>
+
+    <string name="access_manager_assigned_users_admin_title">Usuários administradores</string>
+    <string name="access_manager_assigned_users_admin_desc">Aqui estão todos os seus usuários administradores e seus status.</string>
+    <string name="access_manager_assigned_users_reader_title">Usuários visualizadores</string>
+    <string name="access_manager_assigned_users_reader_desc">Aqui estão todos os seus usuários visualizadores e seus status.</string>
+    <string name="access_manager_assigned_users_analyst_title">Usuários analistas</string>
+    <string name="access_manager_assigned_users_analyst_desc">Aqui estão todos os seus usuários analistas e seus status.</string>
+    <string name="access_manager_assigned_users_technical_title">Usuários técnicos</string>
+    <string name="access_manager_assigned_users_technical_desc">Aqui estão todos os seus usuários técnicos e seus status.</string>
+    <string name="access_manager_assigned_users_custom_title">Usuários de %s</string>
+    <string name="access_manager_assigned_users_custom_desc">Aqui estão todos os seus usuários do seu perfil personalizado e seus status.</string>
+    <string name="access_manager_assigned_users_active">Ativo</string>
+    <string name="access_manager_assigned_users_pending">Em criação</string>
+    <string name="access_manager_assigned_users_blocked">Bloqueado</string>
+    <string name="access_manager_assigned_users_cpf_number_and_status_x">CPF: %1$s - %2$s</string>
+    <string name="access_manager_assigned_users_attorney_cpf_number_and_status_x">Procurador | CPF: %1$s - %2$s</string>
+
+    <string name="access_manager_custom_profiles_empty_users_title">Esse perfil ainda não possuí nenhum usuário para visualizar!</string>
+    <string name="access_manager_custom_profiles_empty_users_message">Adicione um usuário dentro desse perfil para ter acesso.</string>
+    <string name="access_manager_custom_profiles_title_error">Não foi possível prosseguirmos com essas informações</string>
+    <string name="access_manager_custom_profiles_title_error_empty">Você não possuí nenhum perfil personalizado!</string>
+    <string name="access_manager_custom_profiles_message_error_empty">Para ter acesso a essa página é necessário ter criado pelo menos um perfil personalizado.</string>
+
+    <string name="access_manager_custom_profiles_title">Consulte as funções dos seus perfis personalizados!</string>
+    <string name="access_manager_custom_profiles_subtitle">Perfil que se ajusta a necessidade do seu estabelecimento.</string>
+    <string name="access_manager_custom_profiles_detail_title">Resumo das funcionalidades</string>
+    <string name="access_manager_custom_profiles_detail_subtitle">Verifique os dados e funcionalidades selecionadas antes de confirmar o usuário.</string>
+    <string name="access_manager_custom_profiles_detail_funcitions_read">Funcionalidades selecionadas para visualizar:</string>
+    <string name="access_manager_custom_profiles_detail_funcitions_read_desc">Solesp • Recebíveis • Resumo: Lançamentos</string>
+    <string name="access_manager_custom_profiles_detail_funcitions_read_write">Funcionalidades selecionadas para visualizar e executar:</string>
+    <string name="access_manager_custom_profiles_detail_funcitions_read_write_desc">Vendas de hoje • Meus cancelamentos • Contestação (Chargeback) • Solesp • Recebíveis • Resumo: Lançamentos</string>
+    <string name="access_manager_custom_profiles_detail_funcitions_free">Acesso liberado para todos os usuários:</string>
+    <string name="access_manager_custom_profiles_detail_funcitions_free_desc">Taxas e planos • Página de serviços</string>
+    <string name="access_manager_select_profile_title">Veja todos os perfis que você possui.</string>
+    <string name="access_manager_select_profile_subtitle">Selecione o perfil que você deseja fazer a alteração.</string>
+    <string name="access_manager_select_profile">Selecionar perfil</string>
+    <string name="access_manager_see_users">Ver usuários desse perfil</string>
+    <string name="access_manager_see_details_profile">Ver detalhes desse perfil</string>
+
+    <string name="access_manager_select_role_title">Qual perfil de usuário você deseja atribuir?</string>
+
+    <string name="access_manager_assign_role_admin_title">Atribua seus usuários administradores</string>
+    <string name="access_manager_assign_role_admin_subtitle">Selecione os usuários que você quer que sejam administradores.</string>
+    <string name="access_manager_assign_role_reader_title">Atribua seus usuários visualizadores</string>
+    <string name="access_manager_assign_role_reader_subtitle">Selecione os usuários que você quer que sejam visualizadores.</string>
+    <string name="access_manager_assign_role_analyst_title">Selecione os usuários que você quer atribuir</string>
+    <string name="access_manager_assign_role_analyst_subtitle">Os usuários selecionados serão atribuídos ao perfil analista</string>
+    <string name="access_manager_assign_role_technical_title">Atribua seus usuários técnicos</string>
+    <string name="access_manager_assign_role_technical_subtitle">Selecione os usuários que você quer que sejam técnicos..</string>
+    <string name="access_manager_assign_role_select_all">Selecionar todos</string>
+    <string name="access_manager_assign_role_clear_all">Limpar selecionados</string>
+    <string name="access_manager_assign_role_cpf_number_x">CPF: %1$s</string>
+    <string name="access_manager_assign_role_assign">Atribuir</string>
+
+    <string name="access_manager_admins">administrador</string>
+    <string name="access_manager_readers">visualizador</string>
+    <string name="access_manager_analyst">analista</string>
+    <string name="access_manager_technical">técnico</string>
+
+    <plurals name="access_manager_assign_role_assign_success_title_plurals">
+        <item quantity="one">Parabéns! %1$d usuário foi atribuído como %2$s!</item>
+        <item quantity="other">Parabéns! %1$d usuários foram atribuídos como %2$ses!</item>
+    </plurals>
+    <plurals name="access_manager_assign_role_assign_success_title_plurals_analyst">
+        <item quantity="one">Parabéns! %1$d usuário foi atribuído como %2$s!</item>
+        <item quantity="other">Parabéns! %1$d usuários foram atribuídos como %2$ss!</item>
+    </plurals>
+
+    <plurals name="access_manager_assign_role_assign_success_message_plurals">
+        <item quantity="one"><![CDATA[Tudo certo! Enviamos um link de acesso para esse <b>usuário %2$s</b>.<br/><br/>Lembrando que os usuários que não tiverem um perfil atribuído, irão perder o acesso ao App Cielo Gestão.]]></item>
+        <item quantity="other"><![CDATA[Tudo certo! Enviamos um link de acesso para esses <b>%1$d usuários %2$ses</b>.<br/><br/>Lembrando que os usuários que não tiverem um perfi atribuído, irão perder o acesso ao App Cielo Gestão.]]></item>
+    </plurals>
+    <plurals name="access_manager_assign_role_assign_success_message_plurals_analyst">
+        <item quantity="one"><![CDATA[Tudo certo! Enviamos um link de acesso para esse <b>usuário %2$s</b>.<br/><br/>Lembrando que os usuários que não tiverem um perfil atribuído, irão perder o acesso ao App Cielo Gestão.]]></item>
+        <item quantity="other"><![CDATA[Tudo certo! Enviamos um link de acesso para esses <b>%1$d usuários %2$ss</b>.<br/><br/>Lembrando que os usuários que não tiverem um perfi atribuído, irão perder o acesso ao App Cielo Gestão.]]></item>
+    </plurals>
+    <string name="access_manager_assign_role_assign_success_button">Ir para gestão de acessos</string>
+
+    <string name="access_manager_no_permission_dialog_title">Seu perfil não possui acesso a essa funcionalidade</string>
+    <string name="access_manager_no_permission_dialog_message">Caso você precise acessar, solicite ao administrador do estabelecimento para alterar o seu perfil.
+        \nO administrador deve acessar o botão “Outros” na tela inicial do app, ir em "Gestão de acessos” e localizar o seu nome para fazer a alteração.</string>
+
+    <!-- AddUser -->
+    <string name="access_manager_addUser_title">Qual o e-mail do novo usuário?</string>
+    <string name="access_manager_addUser_desc">Insira o e-mail do usuário que terá acesso. Enviaremos um e-mail de confirmação para ele.</string>
+    <string name="access_manager_addUser">Adicionar usuário</string>
+
+    <string name="access_manager_addUser_cpf_title">Qual o CPF do novo usuário?</string>
+    <string name="access_manager_addUser_cpf_desc">Insira o CPF da pessoa que será adicionada.</string>
+
+    <string name="access_manager_addUser_option_foreign_title">O usuário a ser adicionado é brasileiro?</string>
+    <string name="access_manager_addUser_option_foreign_desc">Precisamos saber se essa pessoa é brasileira ou de outra nacionalidade.</string>
+    <string name="access_manager_addUser_option_brazilian">Sim, o usuário é brasileiro</string>
+    <string name="access_manager_addUser_option_foreign">Não, o usuário é estrangeiro</string>
+
+    <string name="access_manager_choice_of_nationality_title">Informe a nacionalidade do usuário estrangeiro</string>
+    <string name="access_manager_nationality_user_title">Nacionalidade do usuário</string>
+    <string name="access_manager_nationality_user_subtitle">Se necessário, você pode editar.</string>
+    <string name="access_manager_nationality_title_bottom_sheet">Informe a nacionalidade do usuário estrangeiro</string>
+    <string name="access_manager_nationality_title_error_dialog_title">Houve um erro ao carregar os seus dados</string>
+    <string name="access_manager_nationality_title_error_dialog_message">Não foi possível carregar os seus dados no momento, por favor, tente novamente mais tarde.</string>
+    <string name="access_manager_nationality_filter_list_error">Não encontramos resultado para ”%s”. Tente outro país.</string>
+    <string name="access_manager_cpf_foreign_title">Qual o CPF do usuário estrangeiro?</string>
+    <string name="access_manager_cpf_foreign_subtitle">Se não tiver, marque a opção abaixo do campo.</string>
+    <string name="access_manager_cpf_foreign_description">O usuário estrangeiro não possui CPF.</string>
+    <string name="access_manager_cpf_foreign_description_checked">O usuário estrangeiro não possui CPF., Marcado</string>
+    <string name="access_manager_cpf_foreign_description_unchecked">O usuário estrangeiro não possui CPF., Desmarcado</string>
+
+    <string name="access_manager_addUser_type_title">Qual permissão será dada a esse novo usuário?</string>
+    <string name="access_manager_addUser_type_desc">Precisamos saber qual vai ser o acesso desse novo usuário</string>
+    <string name="access_manager_addUser_type">Próximo</string>
+
+    <string name="access_manager_addUser_establishment_title">Confira os estabelecimentos que o %s terá acesso</string>
+    <string name="access_manager_addUser_establishment_desc"><![CDATA[Liberaremos o acesso a todos os estabelecimentos abaixo, que estão vinculados ao <b>CNPJ: %s</b>.]]></string>
+    <string name="access_manager_addUser_establishment">Próximo</string>
+
+    <string name="access_manager_role_group_card_description_admin_title">Administrador</string>
+    <string name="access_manager_role_group_card_description_reader_title">Visualizador</string>
+    <string name="access_manager_role_group_card_description_analyst_title">Analista</string>
+    <string name="access_manager_role_group_card_description_technical_title">Técnico</string>
+    <string name="access_manager_role_group_card_description_custom_title">Personalizado</string>
+    <string name="access_manager_role_group_card_admin_description_subtitle"><![CDATA[ <b>Administrador</b><br/><b>Todos os acessos liberados:</b><br/>Gestão e consulta das permissões do Open Finance • Gestão de acessos • Consulta e alteração de dados cadastrais • Alteração de domicílio bancário • Cancelamento de vendas • Link de Pagamento • Solicitação de materiais • Extratos • Manutenção de maquininhas e muito mais.]]></string>
+    <string name="access_manager_role_group_card_reader_description_subtitle"><![CDATA[<b>Visualizador</b><br/><b>Acesso a funções básicas:</b><br/>Consulta de extratos • Dados cadastrais • Solicitação de materiais • Manutenção de maquininhas
+]]></string>
+    <string name="access_manager_role_group_card_technical_description_subtitle"><![CDATA[<b>Técnico</b><br/>Perfil destinado para gerenciamento de segurança das chaves do e-commerce.]]></string>
+    <string name="access_manager_role_group_card_technical_description_subtitle_selected"><![CDATA[<b><font color=#0774E7>Técnico</font></b><br/><b>Perfil destinado para gerenciamento de segurança das chaves do e-commerce.]]></string>
+
+    <string name="access_manager_role_group_card_admin_description_subtitle_selected"><![CDATA[ <b><font color=#0774E7>Administrador</font></b><br/><b>Todos os acessos liberados:</b><br/>Gestão e consulta das permissões do Open Finance • Gestão de acessos • Consulta e alteração de dados cadastrais • Alteração de domicílio bancário • Cancelamento de vendas • Link de Pagamento • Solicitação de materiais • Extratos • Manutenção de maquininhas e muito mais.]]></string>
+    <string name="access_manager_role_group_card_reader_description_subtitle_selected"><![CDATA[<b><font color=#0774E7>Visualizador</font></b><br/><b>Acesso a funções básicas:</b><br/>Consulta de extratos • Dados cadastrais • Solicitação de materiais • Manutenção de maquininhas
+]]></string>
+    <string name="access_manager_role_group_card_analyst_description_subtitle_selected"><![CDATA[<b><font color=#0774E7>Analista</font></b><br/><b>Acesso completo no App e site, exceto à Gestão de Acessos.]]></string>
+    <string name="access_manager_role_group_card_analyst_description_subtitle"><![CDATA[<b>Analista</b><br/>Acesso completo no App e site, exceto à Gestão de Acessos.]]></string>
+    <string name="select_establishment_title">MARCO AURELIO</string>
+
+    <string name="invalid_email">E-mail inválido. Revise o e-mail digitado.</string>
+
+    <string name="invalid_cpf">CPF inválido. Revise o CPF digitado.</string>
+    <string name="invalid_cpf_validate">Esse CPF já está cadastrado na sua lista de usuários. Altere o perfil desta pessoa em gestão de acessos, caso seja necessário.</string>
+    <string name="resend_invites_screen">Ir para o reenvio de convites</string>
+    <string name="duplicated_invite">Convite duplicado</string>
+    <string name="bottom_sheet_duplicated_invite_mensage"><![CDATA[Identificamos que você já enviou um convite para o CPF <b>%s</b>. Para enviar um novo convite, acesse o reenvio de convites.]]></string>
+    <string name="bottom_sheet_technical_invite_mensage"><![CDATA[Esse perfil terá acesso <b>apenas ao gerenciamento de chaves.</b><br/>Deseja continuar com a atribuição?]]></string>
+    <string name="select_other_role">Selecionar outro perfil</string>
+
+    <string name="account_created_sucess_message">Vamos ao próximo passo? Na próxima tela, informe seu CPF ou e-mail e a senha que você acabou de criar.</string>
+    <string name="access_manager_account_created_sucess_title">Você criou sua senha!</string>
+    <string name="access_manager_no_connection_title">Parece que você ficou sem internet</string>
+    <string name="access_manager_verify_connection">Verifique sua conexão e tente de novo.</string>
+    <string name="access_manager_update">Atualizar</string>
+    <string name="access_manager_invite_expired_title">Esse convite expirou. Você precisa de um novo convite para continuar</string>
+    <string name="access_manager_invite_expired_message">Acesse seu e-mail para finalizar o credenciamento com um novo convite.</string>
+    <string name="access_manager_access_account">Acessar conta</string>
+    <string name="access_manager_receive_a_new_invite">Receber novo convite</string>
+    <string name="access_manager_why_update">Por que preciso atualizar?</string>
+    <string name="access_manager_no_permission_forbidden_admin_title">Você não possui acesso a essa funcionalidade</string>
+
+    <string name="access_manager_no_permission_otp_dialog_title">Atualize seus dados cadastrais para poder acessar essa área</string>
+    <string name="access_manager_no_permission_otp_dialog_message">É necessário atualizar seus dados cadastrais. Não se preocupe, vamos te guiar durante todo o processo!</string>
+    <string name="btn_bs_send_photo">Enviar fotos</string>
+
+    <string name="assigned_user_bs_subtitle_admin">Usuário administrador - %s</string>
+    <string name="assigned_user_bs_subtitle_reader">Usuário leitor - %s</string>
+    <string name="assigned_user_bs_subtitle_analyst">Usuário analista - %s</string>
+    <string name="assigned_user_bs_subtitle_technical">Usuário técnico  - %s</string>
+    <string name="assigned_user_bs_subtitle_custom">Usuário personalizado  - %s</string>
+    <string name="assigned_user_bs_info_cnpj">Associado a Raíz do CNPJ: %s do EC Matriz todas as permissões disponíveis.</string>
+    <string name="assigned_user_bs_info_cpf">Associado ao CPF: %s do EC Matriz todas as permissões disponíveis.</string>
+
+    <string name="assigned_user_remove_reason_1">Não é mais funcionário desta empresa</string>
+    <string name="assigned_user_remove_reason_2">Não necessita ter mais acesso a esta conta</string>
+    <string name="assigned_user_remove_reason_3">Não reconheço este usuário</string>
+    <string name="assigned_user_remove_title">Selecione por qual o motivo você deseja remover este usuário:</string>
+    <string name="assigned_user_remove_message_cnpj">O usuário %s será removido da raiz do CNPJ %s e não terá mais acesso a esta conta.</string>
+    <string name="assigned_user_remove_message_cpf">O usuário %s será removido do CPF %s e não terá mais acesso a esta conta.</string>
+    <string name="assigned_user_remove_message_confirm">Após selecionar o motivo, você quer mesmo remover este usuário?</string>
+    <string name="assigned_users_success_toast">Usuário removido com sucesso</string>
+    <string name="remove_user">Remover usuário</string>
+    <string name="assigned_user_bs_profile_type">Tipo de perfil</string>
+    <string name="assigned_user_bs_assign_role_success">Tipo de perfil alterado com sucesso</string>
+    <string name="assigned_user_bs_remove_select_a_reason">Por favor, selecione um motivo</string>
+    <string name="assigned_user_bs_error_title">Não foi possível finalizar o processamento desta solicitação</string>
+    <string name="assigned_user_bs_error">Pedimos desculpas, ocorreu um erro no processamento. Por favor, tente novamente.</string>
+
+    <string name="access_manager_resend_invite">Reenviar convite</string>
+    <string name="access_manager_resend_invite_title">Solicitações de usuários que precisam de aprovação.</string>
+    <string name="access_manager_resend_invite_loading_message">Reenviando</string>
+    <string name="access_manager_delete_invite">Excluir convite</string>
+    <string name="access_manager_delete_invite_loading_message">Excluindo</string>
+    <string name="access_manager_delete_alert_message">Você tem certeza que deseja excluir esse convite?</string>
+    <string name="access_manager_delete_button">Sim, continuar</string>
+
+    <string name="access_manager_generic_error_title">Não foi possível finalizar o processamento desta solicitação</string>
+    <string name="access_manager_generic_error_message_default">Pedimos desculpas, ocorreu um erro no processamento. Por favor, tente novamente.</string>
+
+    <plurals name="access_resend_invite_success_title">
+        <item quantity="one">O convite foi reenviado com sucesso!</item>
+        <item quantity="other">%1$d convites foram reenviados com sucesso!</item>
+    </plurals>
+
+    <plurals name="access_delete_invite_success_message">
+        <item quantity="one">Convite excluído com sucesso</item>
+        <item quantity="other">Convites excluídos com sucesso</item>
+    </plurals>
+
+    <plurals name="access_resend_invite_success_message">
+        <item quantity="one">Solicite para a pessoa que você reenviou o convite, que verifique o e-mail, caixa de entrada e lixo eletrônico. É importante seguir as orientações enviadas no e-mail.</item>
+        <item quantity="other">Solicite para as pessoas que você reenviou os convites, que verifiquem os e-mails, caixa de entrada e lixo eletrônico. É importante seguir as orientações enviadas no e-mail.</item>
+    </plurals>
+
+    <string name="access_manager_resend_invite_user_admin">Usuário administrador</string>
+    <string name="access_manager_resend_invite_user_reader">Usuário visualizador</string>
+    <string name="access_manager_resend_invite_user_analyst">Usuário analista</string>
+    <string name="access_manager_resend_invite_user_technical">Usuário técnico</string>
+    <string name="access_manager_resend_invite_user_custom">Usuário %s</string>
+    <string name="access_manager_resend_invite_no_invites_message">Pedimos desculpas mas ocorreu um erro no sistema e não conseguimos carregar a lista de convites expirados. Por favor, tente recarregar.</string>
+    <string name="cnpj_label">CNPJ:</string>
+    <string name="n_do_ec">Nº do EC:</string>
+
+    <string name="invite_success_title">Convite enviado com sucesso</string>
+    <string name="invite_success_subtitle">Aguarde a pessoa convidada aceitar e se vincular ao estabelecimento %s. O convite expira em 24h.</string>
+    <string name="invite_success_bt1">Voltar para gestão de acessos</string>
+    <string name="invite_success_bt2">Adicionar outro usuário</string>
+    <string name="mask_cnpj">/****-**.</string>
+    <string name="mask_cpf">-**.</string>
+    <string name="addUser">Adicionar usuário</string>
+
+    <string name="access_manager_create_password">Crie sua senha de 6 dígitos para acessar os canais digitais Cielo</string>
+    <string name="access_manager_password_tips">Para uma senha segura, não utilize: Sua data de nascimento e CPF, dígitos repetidos, contínuos, espelhados e não faça desenhos de teclado numérico.</string>
+    <string name="access_manager_type_password">Digite e crie a sua senha:</string>
+    <string name="access_manager_create_password_hint">Criar senha</string>
+    <string name="access_manager_password_six_digits">Sua senha deve conter 6 dígitos.</string>
+    <string name="access_manager_type_confirmation">Repita a senha criada:</string>
+    <string name="access_manager_repeat_password">Repetir senha</string>
+    <string name="access_manager_terms">Termos</string>
+    <string name="access_manager_read_terms">Leia e aceite os termos de uso e condições da Cielo</string>
+    <string name="access_manager_check_terms">Após a leitura dos termos, toque na caixa de seleção para nos indicar o seu aceite para prosseguir:</string>
+    <string name="access_manager_terms_and_conditions">Termos de uso e condições gerais</string>
+    <string name="access_manager_read_and_accept">Li e aceito os termos e condições</string>
+    <string name="access_manager_welcome_title">Hora de criar sua conta!</string>
+    <string name="access_manager_welcome_message">Para acessar os Canais Digitais Cielo com seu perfil %s, precisamos criar sua senha e confirmar alguns dados.\n\nVamos lá?</string>
+    <string name="access_manager_welcome_do_later">Fazer mais tarde</string>
+    <string name="access_manager_go">Criar conta Cielo</string>
+    <string name="access_manager_whats_your_cpf">Qual é o seu CPF?</string>
+    <string name="access_manager_information_needed_message">Precisamos dessa informação para identificação da sua conta.</string>
+    <string name="access_manager_user_data">Dados do usuário</string>
+    <string name="access_manager_cpf">CPF</string>
+    <string name="access_manager_e_mail">E-mail</string>
+    <string name="access_manager_verify_your_data">Verifique se os seus dados pessoais estão corretos</string>
+    <string name="access_manager_verify_your_data_informative">Caso os dados estejam incorretos, solicite a pessoa administradora do estabelecimento para adicionar novamente seu usuário.</string>
+    <string name="access_manager_invite_legacy_user_message"><![CDATA[Para aceitar o convite, prossiga inserindo o <b>seu e-mail, cpf ou número do estabelecimento</b> no login e clique em <b>continuar.</b> Vamos lá?]]></string>
+    <string name="access_manager_invite_legacy_user_title">Você está a poucos passos de se vincular a um estabelecimento</string>
+    <string name="access_manager_loading">Carregando</string>
+    <string name="access_manager_creating_user">Criando usuário</string>
+
+    <string name="access_manager_foreign_name_user">Informe o seu nome completo</string>
+    <string name="access_manager_foreign_name_user_subtitle">Preencha o seu nome completo como está no seu documento, sem abreviações.</string>
+
+    <string name="access_manager_answer_invitation_title">O estabelecimento está aguardando a sua resposta</string>
+    <string name="access_manager_answer_invitation_message">O estabelecimento %s te adicionou para ter o acesso de %s. Aceite para finalizar o vínculo.</string>
+    <string name="access_manager_answer_invitation_btn_accept">Aceitar convite</string>
+    <string name="access_manager_answer_invitation_btn_accept_later">Aceitar mais tarde</string>
+
+    <string name="access_manager_answer_invitation_bs_accept_later_title">Tudo bem. Lembrando que a partir da data e hora do recebimento do convite, ele expira em até 24h</string>
+    <string name="access_manager_answer_invitation_bs_accept_later_new_user_message">Para aceitar depois, volte ao e-mail recebido  com o convite, mas até lá, você não conseguirá criar a sua conta Cielo. Quer mesmo aceitar depois?</string>
+    <string name="access_manager_answer_invitation_bs_accept_later_legacy_user_message">Para aceitar depois, volte ao e-mail recebido  com o convite. Quer mesmo aceitar depois?</string>
+    <string name="access_manager_answer_invitation_bs_accept_later_btn_accept">Aceitar agora</string>
+    <string name="access_manager_answer_invitation_bs_accept_later_btn_accept_later">Aceitar depois</string>
+
+    <string name="access_manager_answer_accept_invitate_title"><![CDATA[<b>Deseja aceitar o convite vinculado ao %s ?</b>]]></string>
+    <string name="access_manager_answer_accept_invitate_message">Verificamos que você não possui EC vinculado, confirme para aceitar o convite.</string>
+    <string name="access_manager_answer_accept_invitate_no">Não desejo aceitar convite</string>
+    <string name="access_manager_answer_accept_invitate_yes">Sim, desejo aceitar convite</string>
+
+    <string name="access_manager_accept_invitate_success_title"><![CDATA[<b>Muito bem, o convite foi aceito com sucesso!</b>]]></string>
+    <string name="access_manager_accept_invitate_success_message">Para continuar e ter acesso ao EC, faça o login com o seu usuário!</string>
+
+    <string name="access_manager_confirm_decline_title"><![CDATA[<b>Você tem certeza que deseja recusar o convite?</b>]]></string>
+    <string name="access_manager_confirm_decline_message">Caso você recusar o convite, será necessário fazer o processo novamente.</string>
+
+    <string name="access_manager_decline_invitate_success_title"><![CDATA[<b>Convite recusado</b>]]></string>
+    <string name="access_manager_decline_invitate_success_message">O convite foi recusado. Será necessário outro convite para conseguir dar prosseguimento no fluxo.</string>
+
+    <string name="access_manager_generic_error_token_title"><![CDATA[<b>Ops, parece que tivemos um problema!</b>]]></string>
+    <string name="access_manager_generic_error_token_message">Vamos resolver tudo por aqui e você pode tentar novamente mais tarde, combinado?</string>
+
+    <string name="access_manager_user_accepted_title">Tudo pronto, você já pode aproveitar as funcionalidades do seu perfil!</string>
+    <string name="access_manager_user_accepted_message">Seu login e senha continuam sendo os mesmos nos Canais Digitais Cielo.</string>
+    <string name="access_manager_user_accepted_message_show_onboarding">Você possui o perfil %s. Agora, precisamos validar alguns dados para que você aproveite as funcionalidades do app. Não se preocupe, é bem rápido, vamos lá?</string>
+    <string name="cpf_label">CPF:</string>
+    <string name="cpf_label_title">CPF</string>
+    <string name="cnpj_label_title">CNPJ</string>
+    <string name="admin_rb">Administrador</string>
+    <string name="reader_rb">Visualizador</string>
+    <string name="analyst_rb">Analista</string>
+    <string name="technical_rb">Técnico</string>
+    <string name="custom_rb">Personalizado</string>
+    <string name="customProfile_rb">Perfil Personalizado</string>
+    <string name="save_changes">Salvar alteração</string>
+    <string name="change_profile">Alterar perfil</string>
+    <string name="select_custom_profile">Selecionar perfil personalizado</string>
+
+    <string name="access_manager_add_user_error_email_restricted">O domínio do e-mail (%s) informado não está autorizado para acessar esse estabelecimento.</string>
+
+    <string name="access_manager_foreign_list_title">Aprovação de usuário estrangeiro</string>
+    <string name="access_manager_foreign_list_subtitle">Solicitações de usuários que precisam de aprovação.</string>
+    <string name="access_manager_foreign_list_item_subtitle"><![CDATA[Permissão do usuário <b>%s</b>]]></string>
+    <string name="access_manager_foreign_detail_title">Você confirma a veracidade das informações abaixo?</string>
+    <string name="access_manager_foreign_detail_permission">Permissão</string>
+    <string name="access_manager_foreign_detail_email">E-mail</string>
+    <string name="access_manager_foreign_detail_error_message"><![CDATA[Parece que tivemos algum problema por aqui. Vamos resolver isso e você pode voltar para <b>tentar de novo mais tarde</b>, combinado?]]></string>
+    <string name="access_manager_foreign_detail_approve_bs_title">Confirmar aprovação?</string>
+    <string name="access_manager_foreign_detail_approve_bs_message">Assim que você confirmar, o usuário aprovado terá um perfil %s atribuído. </string>
+    <string name="access_manager_foreign_detail_reprove_bs_title">Rejeitar usuário?</string>
+    <string name="access_manager_foreign_detail_reprove_bs_message">Você tem certeza que deseja rejeitar esse usuário?</string>
+    <string name="access_manager_foreign_detail_success_aproved_title">Conta aprovada com sucesso!</string>
+    <string name="access_manager_foreign_detail_success_reproved_title">Conta reprovada!</string>
+    <string name="access_manager_foreign_detail_success_approved_message">Tudo certo! A conta do usuário estrangeiro foi aprovada!</string>
+    <string name="access_manager_foreign_detail_success_declined_message">A conta do usuário estrangeiro foi reprovada!</string>
+    <string name="access_manager_foreign_detail_success_button1">Voltar para usuários pendentes</string>
+
+    <string name="access_manager_batch_profile_change_title">Alteração de perfil dos usuários selecionados</string>
+    <string name="access_manager_batch_profile_change_subtitle">Antes de continuar, confirme os usuários selecionados para a troca de perfil.</string>
+    <string name="access_manager_batch_profile_change_bs_title">Tem certeza que você deseja excluir esse usuário da troca de perfil?</string>
+    <string name="access_manager_batch_profile_change_bs_subtitle">Ao confirmar, o perfil atual do usuário não terá nenhuma alteração.</string>
+    <string name="access_manager_batch_profile_change_snackbar">Usuário removido com sucesso!</string>
+    <string name="batch_profile_change_bs_title">Selecione o perfil que você deseja alterar</string>
+    <string name="batch_profile_change_bs_subtitle">Todos os usuários selecionados anteriormente passarão a ter o perfil escolhido.</string>
+    <string name="batch_profile_change_error_bs_title">Não foi possível prosseguirmos com essas informações</string>
+    <string name="batch_profile_change_error_bs_subtitle">Pedimos desculpas, ocorreu um erro no processamento. Por favor, tente novamente.</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/rounded_border_gray"
+    android:gravity="center"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentTypeNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_353A40"
+        android:fontFamily="@font/ubuntu"
+        tools:text="Débito à vista"/>
+
+</LinearLayout>

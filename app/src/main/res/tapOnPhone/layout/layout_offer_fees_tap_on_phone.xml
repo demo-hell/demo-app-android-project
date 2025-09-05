@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:minHeight="@dimen/dimen_108dp"
+    android:padding="@dimen/dimen_16dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <include layout="@layout/layout_offer_fees_tap_on_phone_shimmer" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/feesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPercentage"
+            android:layout_width="@dimen/dimen_32dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_light_payments_percentage" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDebitTaxLabel"
+            style="@style/Label_300_Regular_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/tap_on_phone_debit_label"
+            app:layout_constraintStart_toEndOf="@+id/ivPercentage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDebitTax"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDebitTaxLabel"
+            app:layout_constraintStart_toEndOf="@+id/tvDebitTaxLabel"
+            app:layout_constraintTop_toTopOf="@+id/tvDebitTaxLabel"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="1,35%" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCreditTaxLabel"
+            style="@style/Label_300_Regular_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/tap_on_phone_credit_label"
+            app:layout_constraintStart_toEndOf="@+id/ivPercentage"
+            app:layout_constraintTop_toBottomOf="@id/tvDebitTaxLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCreditTax"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvCreditTaxLabel"
+            app:layout_constraintStart_toEndOf="@+id/tvCreditTaxLabel"
+            app:layout_constraintTop_toTopOf="@id/tvCreditTaxLabel"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="2,35%" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTermLabel"
+            style="@style/Label_300_Regular_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/tap_on_phone_receive_term"
+            app:layout_constraintStart_toEndOf="@+id/ivPercentage"
+            app:layout_constraintTop_toBottomOf="@id/tvCreditTaxLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTerm"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvTermLabel"
+            app:layout_constraintStart_toEndOf="@+id/tvTermLabel"
+            app:layout_constraintTop_toTopOf="@id/tvTermLabel"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="2 dias" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvErrorMessage"
+            style="@style/Label_300_Regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/tap_on_phone_offer_error_title"
+            app:layout_constraintStart_toEndOf="@id/ivPercentage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTryAgainMessage"
+            style="@style/Label_300_Regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:text="@string/tap_on_phone_try_again"
+            app:layout_constraintTop_toBottomOf="@id/tvErrorMessage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivPercentage" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/offerErrorGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="ivPercentage, tvErrorMessage, tvTryAgainMessage"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/offerContentGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="ivPercentage, tvDebitTaxLabel, tvDebitTax, tvCreditTaxLabel,
+        tvCreditTax, tvTermLabel, tvTerm"
+            tools:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

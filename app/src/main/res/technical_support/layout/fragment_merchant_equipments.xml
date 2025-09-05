@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suporteTecnico.presentation.fragment.MerchantEquipmentsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerOpenTicket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTitleEquipament"
+            style="@style/bold_montserrat_20_cloud_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/title_equipament"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputFieldSearch
+            android:id="@+id/filterLogicNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:hint="@string/logic_number"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleEquipament" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEquipaments"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filterLogicNumber" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerNotFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterLogicNumber">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvEmptyState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_10_erro" />
+
+            <TextView
+                android:id="@+id/tvNotFound"
+                style="@style/Paragraph_400_regular_16_display_500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/label_not_found"
+                app:layout_constraintTop_toBottomOf="@id/imvEmptyState"
+                tools:layout_editor_absoluteX="@dimen/dimen_16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/frame_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/errorInclude"
+        layout="@layout/layout_generic_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

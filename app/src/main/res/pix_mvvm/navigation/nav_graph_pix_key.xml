@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_key"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/pixInsertAllKeysFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.key.ui.PixInsertAllKeysFragment"
+        android:label="PixInsertAllKeysFragment"
+        tools:layout="@layout/fragment_pix_insert_all_keys">
+
+        <argument
+            android:name="KEY_TYPE_ARGS"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_pixInsertAllKeysFragment_to_pixTransferAmountFragment"
+            app:destination="@id/pixTransferAmountFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixInsertAllKeysFragment_to_pixBankAccountSearchFragment"
+            app:destination="@id/pixBankAccountSearchFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixBankAccountSearchFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.key.ui.bankAccount.PixBankAccountSearchFragment"
+        android:label="PixBankAccountSearchFragment"
+        tools:layout="@layout/fragment_pix_bank_account_search">
+
+        <action
+            android:id="@+id/action_pixBankAccountSearchFragment_to_pixBankAccountTypeFragment"
+            app:destination="@id/pixBankAccountTypeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixBankAccountTypeFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.key.ui.bankAccount.PixBankAccountTypeFragment"
+        android:label="PixBankAccountTypeFragment"
+        tools:layout="@layout/fragment_pix_bank_account_type">
+
+        <action
+            android:id="@+id/action_pixBankAccountTypeFragment_to_pixBankAccountDataFragment"
+            app:destination="@id/pixBankAccountDataFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixBankAccountDataFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.key.ui.bankAccount.PixBankAccountDataFragment"
+        android:label="PixBankAccountDataFragment"
+        tools:layout="@layout/fragment_pix_bank_account_data">
+
+        <action
+            android:id="@+id/action_pixBankAccountDataFragment_to_pixBankAccountDocumentFragment"
+            app:destination="@id/pixBankAccountDocumentFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixBankAccountDocumentFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.key.ui.bankAccount.PixBankAccountDocumentFragment"
+        android:label="PixBankAccountDocumentFragment"
+        tools:layout="@layout/fragment_pix_bank_account_document">
+
+        <action
+            android:id="@+id/action_pixBankAccountDocumentFragment_to_pixBankAccountRecipientFragment"
+            app:destination="@id/pixBankAccountRecipientFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixBankAccountRecipientFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.key.ui.bankAccount.PixBankAccountRecipientFragment"
+        android:label="PixBankAccountRecipientFragment"
+        tools:layout="@layout/fragment_pix_bank_account_recipient">
+
+        <action
+            android:id="@+id/action_pixBankAccountRecipientFragment_to_pixTransferAmountFragment"
+            app:destination="@id/pixTransferAmountFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferAmountFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.transfer.ui.PixTransferAmountFragment"
+        android:label="PixTransferAmountFragment"
+        tools:layout="@layout/fragment_base_insert_amount_v2">
+
+        <argument
+            android:name="PIX_VALIDATE_KEY"
+            app:argType="br.com.mobicare.cielo.pixMVVM.domain.model.PixValidateKey"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_BANK_ACCOUNT_STORE"
+            app:argType="br.com.mobicare.cielo.pixMVVM.presentation.key.models.PixBankAccountStore"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pixTransferAmountFragment_to_pixTransferReviewFragment"
+            app:destination="@id/pixTransferReviewFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferReviewFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.transfer.ui.PixTransferReviewFragment"
+        android:label="PixTransferReviewFragment"
+        tools:layout="@layout/fragment_pix_transfer_review">
+
+        <action
+            android:id="@+id/action_pixTransferReviewFragment_to_pixTransferSentReceiptFragment"
+            app:destination="@id/pixTransferSentReceiptFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/pixBankAccountSearchFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixTransferReviewFragment_to_pixTransferRecurrenceFragment"
+            app:destination="@id/pixTransferRecurrenceFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferSentReceiptFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.transfer.ui.PixTransferSentReceiptFragment"
+        android:label="PixTransferSentReceiptFragment"
+        tools:layout="@layout/fragment_pix_transfer_sent_receipt" />
+
+    <fragment
+        android:id="@+id/pixTransferRecurrenceFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.transfer.ui.PixTransferRecurrenceFragment"
+        android:label="PixTransferRecurrenceFragment"
+        tools:layout="@layout/fragment_pix_transfer_recurrence"/>
+
+</navigation>

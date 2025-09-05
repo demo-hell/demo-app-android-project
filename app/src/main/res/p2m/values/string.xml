@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_p2m_sales_today">Comece a vender pelo \nWhatsApp hoje!</string>
+    <string name="title_p2m_sales_today_description">Habilite o seu estabelecimento para vender via WhatsApp e impulsione seus negócios no app de mensagens favorito dos brasilerios!</string>
+    <string name="title_p2m_link_more_info">Conheça mais sobre a parceria</string>
+    <string name="title_p2m_link_more_info_accessibility">Conheça mais sobre a parceria, botão</string>
+    <string name="terms_privacy_accessibility">Politica de privacidade, botão </string>
+    <string name="accept_terms_privacy_accessibility">Li e aceito os termos e condições, botão</string>
+    <string name="btn_checked_two_days_accessibility">Selecionado card 2 dias com Recebimento Automático</string>
+    <string name="btn_not_checked_two_days_accessibility">Não selecionado card 2 dias com Recebimento Automático</string>
+    <string name="btn_checked_thirty_days_accessibility">Selecionado card 30 dias sem Recebimento Automático</string>
+    <string name="btn_not_checked_thirty_days_accessibility">Não selecionado card 30 dias sem Recebimento Automático</string>
+    <string name="title_p2m_btn2">Ver oferta</string>
+    <string name="p2m_choose_period_time_title">Escolha o prazo de recebimento das vendas por WhatsApp</string>
+    <string name="p2m_choose_period_time_description">Você no controle dos seus recebimentos!</string>
+    <string name="p2m_choose_period_time_two_days"><![CDATA[Receba em 2 dias <font color=#6D7783>(com Recebimento Automático)</font>]]></string>
+    <string name="p2m_choose_period_time_thirty_days"><![CDATA[Receba em 30 dias <font color=#6D7783>(sem Recebimento Automático)</font>]]></string>
+    <string name="p2m_tax_period_debit"><![CDATA[Débito: <b>%s&#37</b>]]></string>
+    <string name="p2m_tax_period_credit_spots_rr"><![CDATA[Crédito à vista: <b>%s&#37</b>]]></string>
+    <string name="p2m_tax_period_credit_spots"><![CDATA[Crédito à vista: <b>%s&#37</b>]]></string>
+    <string name="p2m_receipt_deadline_one_day">Prazo de recebimento: 1 dia útil</string>
+    <string name="p2m_receipt_deadline_two_days">Prazo de recebimento: 2 dias úteis</string>
+    <string name="p2m_receipt_deadline_thirty_days">Prazo de recebimento: 30 dias</string>
+    <string name="p2m_info_tax_months">Após %s da contratação os valores são atualizados para:</string>
+    <string name="p2m_info_tax_debit"><![CDATA[Débito: <b>%s</b>&#37]]></string>
+    <string name="p2m_info_tax_credit_two_days"><![CDATA[Crédito à vista: <b>%s&#37</b> (Recebimento em 2 dias úteis)]]></string>
+    <string name="p2m_info_tax_credit_thirty_days"><![CDATA[Crédito à vista: <b>%s&#37</b> (Recebimento em 30 dias)]]></string>
+    <string name="p2m_btn_next">Próximo</string>
+    <string name="p2m_error">Pedimos desculpas, ocorreu um erro para carregar os prazos.</string>
+    <string name="p2m_title_terms">Termos e condições de uso</string>
+    <string name="p2m_terms_description">Leia e aceite os termos de aditivo ao contrato de adesão Cielo para concluir a habilitação</string>
+    <string name="p2m_terms_policy_privacy">Politica de privacidade</string>
+    <string name="text_p2m_terms_cielo">Li e aceito os termos e condições</string>
+    <string name="btn_send_terms_p2m">Concluir habilitação</string>
+    <string name="p2m_title_end_registration">Finalize o cadastro no WhatsApp Business e venda agora!</string>
+    <string name="p2m_details_end_registration">Tudo certo por aqui! Para você começar a vender entre no WhatsApp Business e vincule seu cadastro da Cielo no aplicativo!</string>
+    <string name="btn_open_whatsapp_p2m">Abrir WhatsApp Business</string>
+    <string name="btn_error">Voltar</string>
+    <string name="btn_two_error">Tentar Novamente</string>
+    <string name="p2m_load_wait">Aguarde…</string>
+    <string name="p2m_finish">Finalizando…</string>
+    <string name="p2m_all_right">Tudo certo!</string>
+
+</resources>

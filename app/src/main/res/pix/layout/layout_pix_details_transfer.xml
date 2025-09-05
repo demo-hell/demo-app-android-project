@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llInstitutionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Label_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_pix_summary_transfer_destination_bank" />
+
+        <TextView
+            android:id="@+id/tvInstitutionName"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:singleLine="true"
+            tools:text="Nu Pagamentos S.A." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAccountType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Label_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/account_type" />
+
+        <TextView
+            android:id="@+id/tvAccountType"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="Conta corrente" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAgencyNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Label_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/db_tv_agencia" />
+
+        <TextView
+            android:id="@+id/tvAgencyNumber"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="0001" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTvAccountWithDigit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Label_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_account_with_digit" />
+
+        <TextView
+            android:id="@+id/tvAccountWithDigit"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="60126-9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCpfOrCnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCpforCnpjTitle"
+            style="@style/Label_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mcn_text_field_owner_cpf" />
+
+        <TextView
+            android:id="@+id/tvCpfOrCnpjNumber"
+            style="@style/Label_300_Bold_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="962.222.962-42" />
+
+    </LinearLayout>
+</LinearLayout>

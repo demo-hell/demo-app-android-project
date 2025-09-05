@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textActivationTitle"
+            style="@style/TextBlack24spTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:textColor="@color/black"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_pg_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="51dp"
+            android:theme="@style/TextInputHintPrepago"
+            app:layout_constraintTop_toBottomOf="@+id/textActivationTitle"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="@dimen/dimen_0dp">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/textInputEditName"
+                style="@style/TextInputEditPrepago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape_bank_account"
+                android:hint="@string/text_my_cards_ed_name"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:maxLength="60"
+                android:maxLines="1"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCpfCnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:theme="@style/TextInputHintPrepago"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="@dimen/dimen_0dp">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/textInputEditCpfCnpj"
+                style="@style/TextInputEditPrepago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape_bank_account"
+                android:hint="@string/text_my_cards_ed_cpf_cnpj"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="number"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayoutCpfCnpj"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="58dp"
+            android:theme="@style/TextInputHintPrepago"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCpfCnpj">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/textInputEditDescription"
+                style="@style/TextInputEditPrepago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape_bank_account"
+                android:hint="@string/text_my_cards_ed_description"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:maxLength="60"
+                android:maxLines="1"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonTransferIndentifyNext"
+            style="@style/ButtonShapedPurpleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="131dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="43dp"
+            app:fb_text="@string/btn_my_cards_step2_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDescription"
+            />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

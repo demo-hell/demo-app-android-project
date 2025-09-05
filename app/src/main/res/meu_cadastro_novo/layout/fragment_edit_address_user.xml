@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardRoundedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textAddressLabel"
+                style="@style/Text16sp700Blue005195"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:text="@string/text_address_stablishment_label" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCepAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginEnd="@dimen/dimen_21dp"
+                android:hint="@string/text_address_cep_label"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:textColorHint="@color/grey_cecece"
+                android:theme="@style/TextHint_12sp_500Sans_cecece"
+                app:hintTextAppearance="@style/Text12sp500Greycecece">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextCepAddress"
+                    style="@style/Text14sp500Black263238"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutAddresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_21dp"
+                android:hint="@string/text_user_addresses_label"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:textColorHint="@color/grey_cecece"
+                android:theme="@style/TextHint_12sp_500Sans_cecece"
+                app:hintTextAppearance="@style/Text12sp500Greycecece">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextAddresses"
+                    style="@style/Text14sp500Black263238"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="80"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutAddressNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_21dp"
+                android:hint="@string/text_user_address_number"
+                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:textColorHint="@color/grey_cecece"
+                android:theme="@style/TextHint_12sp_500Sans_cecece"
+                app:hintTextAppearance="@style/Text12sp500Greycecece">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextAddressNumber"
+                    style="@style/Text14sp500Black263238"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutAddressComplement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_21dp"
+                android:hint="@string/text_user_address_complement_label"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:textColorHint="@color/grey_cecece"
+                android:theme="@style/TextHint_12sp_500Sans_cecece"
+                app:hintTextAppearance="@style/Text12sp500Greycecece">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextAddressComplement"
+                    style="@style/Text14sp500Black263238"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="120"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutAddressNeighborhood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_21dp"
+                android:hint="@string/text_user_address_neighborhood_label"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:textColorHint="@color/grey_cecece"
+                android:theme="@style/TextHint_12sp_500Sans_cecece"
+                app:hintTextAppearance="@style/Text12sp500Greycecece">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextAddressNeighborhood"
+                    style="@style/Text14sp500Black263238"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutAddressCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_21dp"
+                android:hint="@string/text_user_address_city_label"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:textColorHint="@color/grey_cecece"
+                android:theme="@style/TextHint_12sp_500Sans_cecece"
+                app:hintTextAppearance="@style/Text12sp500Greycecece">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextAddressCity"
+                    style="@style/Text14sp500Black263238"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutAddressState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_21dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_21dp"
+                android:hint="@string/text_user_address_state_label"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:paddingBottom="@dimen/dimen_5dp"
+                android:textColorHint="@color/grey_cecece"
+                android:theme="@style/TextHint_12sp_500Sans_cecece"
+                app:hintTextAppearance="@style/Text12sp500Greycecece">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextAddressState"
+                    style="@style/Text14sp500Black263238"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/bold_montserrat_16_display_500_spacing_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_8dp"
+                android:layout_marginBottom="@dimen/dimen_25dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/adress_type"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutAddressState" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clTypeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:padding="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:background="@drawable/background_gray_c5ced7">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clCorrespondence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCorrespondence"
+                        style="@style/regular_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_16dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:text="@string/text_user_address_correspondence"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toStartOf="@id/cbCorrespondence"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cbCorrespondence"
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginBottom="@dimen/dimen_16dp"
+                        android:background="@drawable/regular_checkbox_default"
+                        android:button="@null"
+                        android:focusable="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0"/>
+
+                    <View
+                        android:id="@+id/viewCorrespondence"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:background="@color/grey_C5CED7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cbCorrespondence"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clContract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clCorrespondence">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvContract"
+                        style="@style/regular_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/dimen_16dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:text="@string/text_user_address_contract"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toStartOf="@id/cbContract"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cbContract"
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_marginBottom="@dimen/dimen_16dp"
+                        android:background="@drawable/regular_checkbox_disabled"
+                        android:button="@null"
+                        android:focusable="false"
+                        android:enabled="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0"/>
+
+                    <View
+                        android:id="@+id/viewContract"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:background="@color/grey_C5CED7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cbContract"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clPointSale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clContract">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPointSale"
+                        style="@style/regular_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/dimen_16dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:text="@string/text_user_address_point_sale"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toStartOf="@id/cbPointSale"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cbPointSale"
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_marginBottom="@dimen/dimen_16dp"
+                        android:background="@drawable/regular_checkbox_default"
+                        android:button="@null"
+                        android:focusable="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0"/>
+
+                    <View
+                        android:id="@+id/viewPointSale"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:background="@color/grey_C5CED7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cbPointSale"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clSupplies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clPointSale">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSupplies"
+                        style="@style/regular_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:text="@string/text_user_address_supplies"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toStartOf="@id/cbSupplies"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cbSupplies"
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:background="@drawable/regular_checkbox_default"
+                        android:button="@null"
+                        android:focusable="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTypeAddressError"
+                style="@style/regular_montserrat_12_red_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:drawablePadding="@dimen/dimen_4dp"
+                android:text="@string/text_user_address_save_updates"
+                app:drawableStartCompat="@drawable/ic_close_round_16dp_danger_400"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>

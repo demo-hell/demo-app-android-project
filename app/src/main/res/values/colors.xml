@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" >
+    <color name="primary" tools:override="true">@color/colorPrimary</color>
+    <color name="secondary" tools:override="true">@color/colorAccent</color>
+    <color name="success" tools:override="true">@color/success_400</color>
+</resources>

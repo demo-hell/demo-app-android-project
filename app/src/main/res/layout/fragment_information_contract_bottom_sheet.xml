@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_title"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:background="@drawable/ic_drag_bottom_sheet"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_title_receive_more"
+            style="@style/styleTextViewItemReceiveMoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/title_receive_more_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_title" />
+
+        <ImageView
+            android:id="@+id/image_view_status_receive_more"
+            style="@style/styleTextViewItemReceiveMoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_title_receive_more"
+            app:layout_constraintStart_toEndOf="@id/text_title_receive_more"
+            app:layout_constraintTop_toBottomOf="@+id/view_title"
+            app:srcCompat="@drawable/ic_ellipse_8dp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_9dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title_receive_more" />
+
+        <TextView
+            android:id="@+id/text_title_condition_credit"
+            style="@style/styleTextViewResumeReceiveMoreTitle16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_condition_credit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_line" />
+
+
+        <TextView
+            android:id="@+id/text_title_total"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/text_total_title_item_receive_more_other_information"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_condition_credit" />
+
+        <TextView
+            android:id="@+id/text_title_total_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_total"
+            tools:text="R$ 20.000,00 (percentual total de 35,40% a.a)" />
+
+        <TextView
+            android:id="@+id/text_title_parcel"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/text_parcel_title_item_receive_more_other_information"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_total_value" />
+
+        <TextView
+            android:id="@+id/text_title_parcel_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_parcel"
+            tools:text="12x de 4.399,89 (2,69% de juros a.m)" />
+
+
+        <TextView
+            android:id="@+id/text_title_opening_fee"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_opening_fee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_parcel_value" />
+
+        <TextView
+            android:id="@+id/text_title_opening_fee_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_opening_fee"
+            tools:text="R$ 27,00" />
+
+        <TextView
+            android:id="@+id/text_title_contract_date"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/text_receive_more_resume_contract_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_opening_fee_value" />
+
+        <TextView
+            android:id="@+id/text_title_contract_date_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_contract_date"
+            tools:text="08/03/2021" />
+
+        <TextView
+            android:id="@+id/text_title_due_date"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:visibility="gone"
+            android:text="@string/title_item_receive_more_due_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_contract_date_value" />
+
+        <TextView
+            android:id="@+id/text_title_due_date_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_due_date"
+            tools:text="06 de cada mês" />
+
+        <TextView
+            android:id="@+id/text_title_first_parcel"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_first_parcel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_due_date_value" />
+
+        <TextView
+            android:id="@+id/text_title_first_parcel_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_first_parcel"
+            tools:text="06/01/2021" />
+
+        <View
+            android:id="@+id/view_line_second"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title_first_parcel_value" />
+
+        <TextView
+            android:id="@+id/text_title_other_information"
+            style="@style/styleTextViewResumeReceiveMoreTitle16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_18dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_other_information"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_line_second" />
+
+        <TextView
+            android:id="@+id/text_title_code"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_establishment_code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_other_information" />
+
+        <TextView
+            android:id="@+id/text_title_code_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_code"
+            tools:text="2012432209" />
+
+        <TextView
+            android:id="@+id/text_title_document"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_document"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_code_value" />
+
+        <TextView
+            android:id="@+id/text_title_document_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_document"
+            tools:text="34321230000174" />
+
+        <TextView
+            android:id="@+id/text_title_financial_partner"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_financial_partner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_document_value" />
+
+        <TextView
+            android:id="@+id/text_financial_partner_value"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_financial_partner"
+            tools:text="BNDES - 2013919810" />
+
+
+        <TextView
+            android:id="@+id/text_title_bank"
+            style="@style/styleTextViewResumeReceiveMoreTitle14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/title_item_receive_more_bank_receive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_financial_partner_value" />
+
+        <TextView
+            android:id="@+id/text_bank_name"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_bank"
+            tools:text="Banco do Brasil S.A" />
+
+        <TextView
+            android:id="@+id/text_agency_number"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_bank_name"
+            tools:text="Agência: 1342" />
+
+        <TextView
+            android:id="@+id/text_account_number"
+            style="@style/styleTextViewResumeReceiveMoreSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_agency_number"
+            tools:text="Conta: 1122990-4" />
+
+        <ImageView
+            android:id="@+id/image_view_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_account_number"
+            app:layout_constraintBottom_toBottomOf="@id/text_information"
+            app:srcCompat="@drawable/ic_info" />
+
+        <TextView
+            android:id="@+id/text_information"
+            style="@style/styleTextViewInformationReceiveMore"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/rm_cc_credit_parcel_desc_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view_info"
+            app:layout_constraintTop_toBottomOf="@id/text_account_number" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/btn_close"
+            style="@style/styleTypeFaceReceiveMoreClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_information" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

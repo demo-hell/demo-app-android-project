@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@drawable/back_actionbar_layers">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_height="?attr/actionBarSize" >
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/technicalSolutionActionbarTitle"
+            android:layout_width="wrap_content"
+            app:typeface="MuseoSans-700.ttf"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView-->
+<!--            android:id="@+id/technicalSolutionActionbarTitle"-->
+<!--            style="bold"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:ellipsize="end"-->
+<!--            android:maxLines="1"-->
+<!--            android:layout_marginEnd="40dp"-->
+<!--            android:layout_marginRight="40dp"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:text="Minha máquina não liga"-->
+<!--             />-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageCloseTechnicalSolutionsActivity"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginEnd="6dp"-->
+<!--        app:srcCompat="@drawable/close"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="16dp" />-->
+
+</RelativeLayout>

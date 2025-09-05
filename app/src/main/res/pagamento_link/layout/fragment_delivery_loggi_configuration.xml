@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dimen_16dp"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:layout_marginEnd="@dimen/dimen_16dp">
+
+    <ScrollView
+        android:id="@+id/scrollDeliveryLogginConfigurationContent"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textLoggiObjectDetailsTitle"
+                style="@style/TextTitleStyleMontserrat16spBlack353A40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_loggi_object_details_title"
+                tools:text="@string/text_loggi_object_details_title" />
+
+            <TextView
+                android:id="@+id/textLoggiObjectSubtitle"
+                style="@style/TextTitleStyleUbuntu12spBlack353A40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:paddingEnd="15dp"
+                android:scrollHorizontally="false"
+                android:text="@string/text_loggi_object_details_subtitle"
+                tools:text="@string/text_loggi_object_details_subtitle" />
+
+
+            <br.com.cielo.libflue.button.CieloRadioGroup
+                android:id="@+id/cieloRadioGrouploggiObjectDimensions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <br.com.cielo.libflue.button.CieloRegularTextOutlineSelectRadioButton
+                    android:id="@+id/radioButtonSmallObjectDimensions"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Opção 1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="P = 10cm x 10cm x 10cm" />
+
+                <br.com.cielo.libflue.button.CieloRegularTextOutlineSelectRadioButton
+                    android:id="@+id/radioButtonMediumObjectDimensions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Opção 2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioButtonSmallObjectDimensions"
+                    tools:layout_editor_absoluteX="@dimen/dimen_0dp"
+                    tools:text="M = 15cm x 15cm x 15cm" />
+
+                <br.com.cielo.libflue.button.CieloRegularTextOutlineSelectRadioButton
+                    android:id="@+id/radioButtonBigObjectDimensions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Opção 2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioButtonMediumObjectDimensions"
+                    tools:layout_editor_absoluteX="@dimen/dimen_0dp"
+                    tools:text="G = 30cm x 30cm x 30cm" />
+
+            </br.com.cielo.libflue.button.CieloRadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Qual o peso do produto?"
+                android:textSize="16sp" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/weightTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:inputType="number"
+                app:hint="Peso em gramas" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorHandlerCieloDeliveryConfigurationLink"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorTitle="@string/text_title_generic_error"
+        app:cieloErrorMessage="@string/text_message_generic_error"
+        app:cieloErrorButtonLabel="@string/text_try_again_label"/>
+
+    <include
+        android:id="@+id/frameDeliveryLoggiProgres"
+        layout="@layout/frame_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

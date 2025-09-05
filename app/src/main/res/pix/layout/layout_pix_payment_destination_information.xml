@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_name_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:text="@string/text_pix_summary_transfer_destination_to"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_name"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_user_pix_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_name_title"
+        tools:text="Temporal Tintas" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_key_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_transfer_destination_document_CNPJ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_name" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_destination_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_destination_key"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_destination_key"
+        app:srcCompat="@drawable/ic_cnh_pix_16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_key"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_destination_key"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_key_title"
+        tools:text="114.888.686/0001-21" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_bank_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_transfer_destination_bank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_key" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_bank"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_bank_pix_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_bank_title"
+        tools:text="Cielo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_agency_and_account"
+        style="@style/Label_300_regular_14_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_28dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:fontFamily="@font/ubuntu"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_bank"
+        tools:text="Ag: 0001 | Conta: 60126-9"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTypedKeyTitle"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_typed_key_to_transfer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_agency_and_account" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTypedKeyValue"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_bank_pix_16dp"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTypedKeyTitle"
+        tools:text="962.222.962-42" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/typedKeyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:constraint_referenced_ids="tvTypedKeyTitle,tvTypedKeyValue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

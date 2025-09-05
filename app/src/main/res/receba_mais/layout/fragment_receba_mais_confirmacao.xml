@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_main"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <br.com.mobicare.cielo.commons.ui.widget.StepCheckView
+                    android:id="@+id/stepCheckConfirmation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:stepsTitles="@array/array_text_steps_titles"
+                    app:currentStep="1"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"/>
+
+                <include
+                    android:id="@+id/include_contatos"
+                    layout="@layout/include_condicao_credito" />
+
+                <include
+                    android:id="@+id/include_meus_dados"
+                    layout="@layout/include_meus_dados"/>
+
+                <include
+                    android:id="@+id/include_contrato"
+                    layout="@layout/include_contrato"/>
+
+            </LinearLayout>
+
+            <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+                android:id="@+id/errorHandlerCieloUserLoanConfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cieloErrorTitle="@string/text_title_generic_error"
+                app:cieloErrorMessage="@string/text_user_loan_register_error_message"
+                app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+                app:cieloErrorButtonLabel="@string/meus_recebimentos_dialog_fechar"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Loading -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progress_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/frame_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_danger_outside"
+        android:layout_width="@dimen/dimen_100dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:elevation="@dimen/dimen_0dp"
+        app:cardElevation="@dimen/dimen_0dp"
+        app:cardBackgroundColor="@color/danger_50"
+        app:cardCornerRadius="@dimen/dimen_50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_danger_inside"
+        android:layout_width="@dimen/dimen_70dp"
+        android:layout_height="@dimen/dimen_70dp"
+        android:elevation="@dimen/dimen_2dp"
+        app:cardElevation="@dimen/dimen_0dp"
+        app:cardBackgroundColor="@color/color_interface_danger_100"
+        app:cardCornerRadius="@dimen/dimen_50dp"
+        app:layout_constraintEnd_toEndOf="@id/cv_danger_outside"
+        app:layout_constraintStart_toStartOf="@id/cv_danger_outside"
+        app:layout_constraintTop_toTopOf="@id/cv_danger_outside"
+        app:layout_constraintBottom_toBottomOf="@id/cv_danger_outside"/>
+
+    <ImageView
+        android:id="@+id/iv_error"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:contentDescription="@string/error_title_generic"
+        android:elevation="@dimen/dimen_2dp"
+        android:src="@drawable/ic_error_around_danger_400"
+        app:layout_constraintBottom_toBottomOf="@id/cv_danger_inside"
+        app:layout_constraintEnd_toEndOf="@id/cv_danger_inside"
+        app:layout_constraintStart_toStartOf="@id/cv_danger_inside"
+        app:layout_constraintTop_toTopOf="@+id/cv_danger_inside"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/tv_title_generic"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        style="@style/bold_montserrat_18_center_cloud_800"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/error_title_generic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_danger_outside" />
+
+    <TextView
+        android:id="@+id/tv_message_generic"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        style="@style/regular_montserrat_18_center_cloud_800"
+        android:text="@string/error_message_generic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cv_bt_container"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_generic" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_bt_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white_80"
+        app:cardElevation="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:paddingHorizontal="@dimen/dimen_16dp">
+
+            <br.com.cielo.libflue.button.CieloRegularBlueButton
+                android:id="@+id/bt_refresh"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/cielo_500"
+                android:text="@string/label_try_again"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

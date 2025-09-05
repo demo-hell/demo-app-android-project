@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<br.com.cielo.libflue.screen.HandlerViewFluiV2
+    android:id="@+id/customHandlerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    app:illustration="@drawable/ic_90_phone_attention"
+    app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+    app:isShowContainerButton="true"
+    app:labelColorButtonContained="@color/white"
+    app:labelColorButtonOutlined="@color/brand_400"
+    app:titleStyle="@style/bold_montserrat_20_cloud_600_spacing_8" />
+</LinearLayout>

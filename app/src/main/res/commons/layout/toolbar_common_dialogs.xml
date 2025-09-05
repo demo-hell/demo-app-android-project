@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    app:contentInsetEnd="@dimen/dimen_0dp"
+    app:contentInsetLeft="@dimen/dimen_0dp"
+    app:contentInsetRight="@dimen/dimen_0dp"
+    app:contentInsetStart="@dimen/dimen_0dp"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    tools:showIn="@layout/closable_fullscreen_dialog">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black_1a2328"
+            style="@style/TextBlack16spTitle"
+            android:layout_marginLeft="16dp" />
+
+
+        <ImageButton
+            android:id="@+id/btnRight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|end"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_symbol_close_brand_400_24_dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/grey_dfe5f5" />
+
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

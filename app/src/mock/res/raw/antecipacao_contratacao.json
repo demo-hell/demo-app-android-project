@@ -1,0 +1,15 @@
+{
+  "loose":{
+    "success":true,
+    "message":"Você antecipou R$ 5.800,00 a um preço de 6,99%. O valor de R$ 5.605,70 será depositado em sua conta no próximo dia útil."
+  },
+  "scheduled":{
+    "success":true,
+    "message":"Você também programou as suas próximas antecipações e receberá o valor disponível em sua conta diariamente pelo preço promocional de 3,35% no primeiro mês, e de 6,99% nos meses subsequentes.",
+    "isStored": false
+  },
+  "cancelDetails":"O cancelamento desta operação deverá se realizado junto a Central de Antecipação de Vendas até às 14:00. Se o seu banco de recebimento for Bradesco o cancelamento deve ser realizado até às 10:00.",
+  "errorMessages":[
+
+  ]
+}

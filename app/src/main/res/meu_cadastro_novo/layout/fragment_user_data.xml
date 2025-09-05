@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardUserInformation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_23dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userInformationTitle"
+                    style="@style/bold_ubuntu_12_brand_600_spacing_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/user_data_information_title"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/spacer"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@color/display_100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userInformationTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_21dp"
+                    android:text="@string/nome"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spacer" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nameLabel"
+                    tools:text="Nik" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cpfLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_14dp"
+                    android:text="@string/cpf_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nameText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cpfText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cpfLabel"
+                    tools:text="888.999.333-98" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/emailLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_14dp"
+                    android:text="@string/text_login_email_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cpfText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/emailText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/emailLabel"
+                    tools:text="nikniknik@cielo.com" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phoneLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_14dp"
+                    android:text="@string/hint_celular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/emailText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/phoneText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/phoneLabel"
+                    tools:text="(11) 97777-7777" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/passwordLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_14dp"
+                    android:text="@string/hint_senha"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/phoneText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/passwordText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="********"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/passwordLabel" />
+
+                <br.com.cielo.libflue.button.CieloLargeBlueButton
+                    android:id="@+id/btChangeData"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginVertical="@dimen/dimen_16dp"
+                    android:text="@string/user_data_information_button_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/passwordText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardAdditionalInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_23dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardUserInformation">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userInformationAdditionalTitle"
+                    style="@style/bold_ubuntu_12_brand_600_spacing_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/user_data_additional_information_title"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/spacer2"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@color/display_100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userInformationAdditionalTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/communicationLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_21dp"
+                    android:text="@string/user_data_additional_information_communication_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spacer2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/communicationText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/communicationLabel"
+                    tools:text="Não informado" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/contactLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_14dp"
+                    android:text="@string/user_data_additional_information_contact_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/communicationText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/contactText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/contactLabel"
+                    tools:text="Não informado" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/pcdLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_14dp"
+                    android:text="@string/user_data_additional_information_pcd_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/contactText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/pcdText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pcdLabel"
+                    tools:text="Não informado" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/contactTimeLabel"
+                    style="@style/regular_ubuntu_12_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_14dp"
+                    android:text="@string/user_data_additional_information_contact_hour_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pcdText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/contactTimeText"
+                    style="@style/medium_montserrat_12_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/contactTimeLabel"
+                    tools:text="Não informado" />
+
+                <br.com.cielo.libflue.button.CieloLargeBlueButton
+                    android:id="@+id/btChangeAdditionalData"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginVertical="@dimen/dimen_16dp"
+                    android:text="@string/user_data_information_button_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/contactTimeText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardUserProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_23dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardAdditionalInfo">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userProfileTitle"
+                    style="@style/bold_ubuntu_12_brand_600_spacing_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/user_data_profile_title"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/spacer3"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@color/display_100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userProfileTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/profileLabel"
+                    style="@style/bold_ubuntu_12_brand_500_spacing_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/user_data_profile"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spacer3" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginVertical="@dimen/dimen_16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profileLabel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:srcCompat="@drawable/ic_user_cloud_400_24_dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/profileText"
+                    style="@style/bold_ubuntu_16_cloud_400_spacing_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_12dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/icProfile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/icProfile"
+                    app:layout_constraintTop_toTopOf="@id/icProfile"
+                    tools:text="Administrador" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardUserDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_23dp"
+                android:layout_marginBottom="@dimen/dimen_29dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardUserProfile">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userDeleteTitle"
+                    style="@style/bold_ubuntu_12_brand_500_spacing_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/user_data_delete_title"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userDeleteText"
+                    style="@style/regular_ubuntu_14_display_400_spacing_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/user_data_delete_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userDeleteTitle" />
+
+                <br.com.cielo.libflue.button.CieloRegularSecondaryButton
+                    android:id="@+id/btCallCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/text_call_center_action"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/userDeleteText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/progressView"
+        layout="@layout/frame_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/errorView"
+        layout="@layout/fragment_receba_mais_failure"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

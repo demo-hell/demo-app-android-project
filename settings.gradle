@@ -1,0 +1,14 @@
+plugins {
+    id "com.gradle.enterprise" version "3.12.6"
+}
+
+buildCache {
+    local {
+        enabled = true
+        directory = new File(rootDir, 'build-cache')
+        removeUnusedEntriesAfterDays = 30
+    }
+}
+include ':app'
+
+gradle.ext.groupCielo = "CIELO"

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_24dp"
+    android:paddingTop="@dimen/dimen_32dp"
+    android:paddingRight="@dimen/dimen_24dp"
+    android:background="@drawable/background_white_arround">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/typefaceTextView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/conta_digital_step01_title"
+        android:textColor="@color/color_353A40"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/typefaceTextView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/conta_digital_step01_subtitle"
+        android:textColor="@color/color_353A40"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/typefaceTextView33"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/typefaceTextView33"
+        app:layout_constraintTop_toBottomOf="@+id/typefaceTextView33" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_white_arround"
+        android:backgroundTint="@color/color_f2faab"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/typefaceTextView34"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/typefaceTextView34"
+        app:layout_constraintTop_toBottomOf="@+id/typefaceTextView34"
+        tools:ignore="UnusedAttribute">
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/txt_cnpj_or_cpj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/conta_digital_cpnj"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/txt_cpnj_cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_7sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            tools:text="00.000.000/0001-00" />
+    </LinearLayout>
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/buttonContract"
+        style="@style/Label_400_Alternate_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/dimen_16sp"
+        android:background="@drawable/background_ripple_blue"
+        android:text="@string/conta_digital_step01_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout18"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout18"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout18" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

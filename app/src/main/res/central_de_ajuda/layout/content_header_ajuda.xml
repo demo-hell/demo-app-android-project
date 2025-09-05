@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+
+        <br.com.mobicare.cielo.commons.ui.widget.MenuItemLayout
+            android:id="@+id/menuItemMerchant"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+
+        <br.com.mobicare.cielo.commons.ui.widget.MenuItemLayout
+            android:id="@+id/menuItemUser"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <br.com.mobicare.cielo.commons.ui.widget.MenuItemLayout
+            android:id="@+id/menuItemPwd"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <br.com.mobicare.cielo.commons.ui.widget.MenuItemLayout
+            android:id="@+id/menuItemLayoutTechnicalSupport"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!-- Dúvidas Gerais -->
+
+        <br.com.mobicare.cielo.commons.ui.widget.MenuItemLayout
+            android:id="@+id/menuItemGeneralQuestions"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

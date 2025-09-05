@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_button_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_8dp_radius_stroke_cloud_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="false"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_tax"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <br.com.cielo.libflue.flextag.CieloFlexTag
+                android:id="@+id/tag_plan_advantage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_8dp"
+                android:text="@string/receive_auto_label_more_advantage_plan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:clickable="false"
+                app:tagType="success" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_label_type_sales"
+                style="@style/regular_montserrat_16_cloud_500_spacing_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/receive_auto_label_installment_and_cash_sales"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tag_plan_advantage" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_radio_button_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:importantForAccessibility="yes"
+                android:contentDescription="@string/receive_auto_bt_more_info"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_label_type_sales"
+                app:layout_constraintBottom_toBottomOf="@id/tv_label_type_sales"
+                app:srcCompat="@drawable/ic_info_brand_400_16_dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_tax_credit_cash"
+                style="@style/regular_montserrat_14_cloud_300_spacing_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_type_sales"
+                tools:text="@string/receive_auto_tax_cash_sales"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_tax_installment"
+                style="@style/regular_montserrat_14_cloud_300_spacing_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tax_credit_cash"
+                tools:text="@string/receive_auto_tax_installment_sales"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOfferValidity"
+                style="@style/regular_montserrat_12"
+                android:textColor="@color/color_neutral_soft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tax_installment"
+                android:visibility="gone"
+                tools:text="Oferta e condições válidas [por X meses]. Após esse período, suas taxas serão alteradas."
+                tools:visibility="visible"/>
+
+            <View
+                android:id="@+id/vw_divide_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@color/cloud_200"
+                app:layout_constraintTop_toBottomOf="@id/tvOfferValidity" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_see_more_details_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:layout_marginBottom="@dimen/dimen_12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vw_divide_card">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_see_more_details_plan"
+                    style="@style/semi_bold_montserrat_14_brand_400_spacing_minus_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/receive_auto_see_more_details_of_plan"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_chevron_right_details_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_see_more_details_plan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv_see_more_details_plan"
+                    android:contentDescription="@string/receive_auto_bt_see_more_details_plan"
+                    app:srcCompat="@drawable/ic_chevron_right_24_brand_400" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_container_shimmer"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_type_sales">
+
+                <include
+                    android:id="@+id/include_shimmer_item_three_lines"
+                    layout="@layout/shimmer_item_home_three_lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_container_shimmer_two"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-10dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_type_sales">
+
+                <include
+                    android:id="@+id/include_shimmer_item_two_lines"
+                    layout="@layout/shimmer_item_home_two_lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

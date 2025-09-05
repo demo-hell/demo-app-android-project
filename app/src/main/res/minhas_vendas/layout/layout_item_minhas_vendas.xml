@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_mv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_shape"
+    android:backgroundTint="@color/white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_82dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBrandType"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/master_3x" />
+
+        <View
+            android:id="@+id/lineBottomView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/color_EAEEF3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tvTime"
+            style="@style/Paragraph_200_regular_12_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:textColor="@color/color_cloud_400"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintStart_toEndOf="@+id/ivBrandType"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="14:31" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tvPaymentType"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_18dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dimen_5sp"
+            android:maxLines="1"
+            android:textColor="@color/color_cloud_600"
+            app:layout_constraintBottom_toTopOf="@+id/lineBottomView"
+            app:layout_constraintEnd_toStartOf="@+id/tvValue"
+            app:layout_constraintStart_toEndOf="@+id/ivBrandType"
+            tools:text="Parcelado" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tvStatus"
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_5sp"
+            android:textColor="@color/success_400"
+            app:layout_constraintEnd_toStartOf="@+id/icArrowRight"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Aprovada" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tvValue"
+            style="@style/Paragraph_300_bold_14_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_18dp"
+            android:lineSpacingExtra="@dimen/dimen_4sp"
+            android:textColor="@color/color_cloud_600"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toTopOf="@+id/lineBottomView"
+            app:layout_constraintEnd_toStartOf="@+id/icArrowRight"
+            tools:text="R$ 1,50" />
+
+        <ImageView
+            android:id="@+id/icArrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_card_my_sales"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow"
+            app:tint="@color/color_cloud_400" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_extract"
+    app:startDestination="@id/pixExtractRouterFragment">
+
+    <fragment
+        android:id="@+id/pixExtractRouterFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.router.PixExtractRouterFragment"
+        android:label="pixExtractRouterFragment"
+        tools:layout="@layout/fragment_pix_extract_router">
+
+        <action
+            android:id="@+id/action_pixExtractRouterFragment_to_pixExtractFragment"
+            app:destination="@id/pixExtractFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixExtractRouterFragment_to_pixOnboardingExtractFragment"
+            app:destination="@id/pixOnboardingExtractFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixOnboardingExtractFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.onboarding.PixOnboardingExtractFragment"
+        android:label="fragment_pix_onboarding_extract"
+        tools:layout="@layout/fragment_pix_onboarding_extract">
+
+        <action
+            android:id="@+id/action_pixOnboardingExtractFragment_to_PixExtractFragment"
+            app:destination="@+id/pixExtractFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixExtractFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.home.PixExtractFragment"
+        android:label="fragment_pix_extract"
+        tools:layout="@layout/fragment_pix_extract">
+
+        <action
+            android:id="@+id/action_pixExtractFragment_to_pixTransitoryAccountManagementFragment"
+            app:destination="@+id/pixTransitoryAccountManagementFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixExtractFragment_to_pixExtractDetailFragment"
+            app:destination="@id/pixExtractDetailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixExtractFragment_to_pixExtractFilterFragment"
+            app:destination="@id/pixExtractFilterFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixExtractFilterFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.filter.PixExtractFilterBottomSheetFragment"
+        android:label="fragment_pix_extract_filter"
+        tools:layout="@layout/fragment_pix_extract_filter"/>
+
+    <fragment
+        android:id="@+id/pixExtractDetailFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.detail.PixExtractDetailFragment"
+        android:label="fragment_pix_extract_detail"
+        tools:layout="@layout/fragment_pix_extract_detail">
+
+        <argument
+            android:name="PIX_IS_A_REVERSAL_TRANSACTION_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_EXTRACT_RECEIPT_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.PixExtractReceipt"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_pixExtractDetailFragment_to_pixTransferReceiptFragment"
+            app:destination="@+id/pixTransferReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixExtractDetailFragment_to_pixExtractFragment"
+            app:destination="@id/pixExtractFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixExtractFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixExtractDetailFragment_to_pixTransferScheduledReceiptFragment"
+            app:destination="@id/pixTransferScheduledReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixExtractDetailFragment_to_pixReversalFragment"
+            app:destination="@id/pixReversalFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixExtractDetailFragment_to_pixReversalReceiptFragment"
+            app:destination="@id/pixReversalReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixExtractDetailFragment"/>
+
+        <action
+            android:id="@+id/action_pixExtractDetailFragment_to_pixExtractDetailFragment"
+            app:destination="@id/pixExtractDetailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.receipt.PixTransferReceiptFragment"
+        android:label="PixTransferReceiptFragment"
+        tools:layout="@layout/fragment_pix_transfer_receipt">
+
+        <argument
+            android:name="PIX_GO_BACK_TO_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSACTION_CODE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_ID_END_TO_END_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSFER_DETAILS_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.TransferDetailsResponse"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferScheduledReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.receipt.PixScheduledTransactionReceiptFragment"
+        android:label="PixScheduledTransactionReceiptFragment"
+        tools:layout="@layout/fragment_pix_scheduled_transaction_receipt">
+
+        <argument
+            android:name="PIX_EXTRACT_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.SchedulingDetailResponse"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_SCHEDULING_CODE_ARGS"
+            app:argType="string"
+            app:nullable="true"/>
+
+        <argument
+            android:name="PIX_GO_BACK_TO_ARGS"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransitoryAccountManagementFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.account.management.PixTransitoryAccountManagementFragment"
+        android:label="fragment_pix_transitory_account_management"
+        tools:layout="@layout/fragment_transitory_account_management">
+
+        <action
+            android:id="@+id/action_pixTransitoryAccountManagementFragment_to_PixExtractFragment"
+            app:destination="@+id/pixExtractFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/pixReversalFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.reversal.PixReversalFragment"
+        android:label="PixReversalFragment"
+        tools:layout="@layout/fragment_pix_reversal">
+
+        <argument
+            android:name="PIX_BACK_TO_HOME_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_TRANSACTION_CODE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_ID_END_TO_END_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSFER_DETAILS_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.TransferDetailsResponse" />
+
+        <argument
+            android:name="PIX_REVERSAL_RECEIPTS_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ReversalReceiptsResponse" />
+
+        <action
+            android:id="@+id/action_pixReversalFragment_to_pixReversalReceiptFragment"
+            app:destination="@id/pixReversalReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixReversalReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.reversal.receipt.PixReversalReceiptFragment"
+        android:label="PixReversalReceiptFragment"
+        tools:layout="@layout/fragment_pix_reversal_receipt">
+
+        <argument
+            android:name="PIX_TRANSACTION_CODE_ARGS"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

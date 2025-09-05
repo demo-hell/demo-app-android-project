@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_16dp">
+
+    <br.com.cielo.libflue.button.v2.CieloButton
+        android:id="@+id/btIDoNotWant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        tools:text="Não quero mudar meu plano"
+        app:buttonType="outlined"
+        app:layout_constraintBottom_toTopOf="@id/btIDoWant"/>
+
+    <br.com.cielo.libflue.button.v2.CieloButton
+        android:id="@+id/btIDoWant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        tools:text="Quero receber em 1 dia"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_event_tracking"
+    app:startDestination="@id/mainTabFragment">
+
+    <fragment
+        android:id="@+id/mainTabFragment"
+        android:name="br.com.mobicare.cielo.eventTracking.presentation.ui.MainTabFragment"
+        android:label="fragment_main_tab"
+        tools:layout="@layout/fragment_main_tab">
+        <action
+            android:id="@+id/action_mainTabFragment_to_machineRequestDetailsFragment"
+            app:destination="@id/machineRequestDetailsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right">
+            <argument
+                android:name="machineRequestItem"
+                android:defaultValue="@null"
+                app:argType="br.com.mobicare.cielo.eventTracking.domain.model.MachineRequest"
+                app:nullable="true" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/machineRequestDetailsFragment"
+        android:name="br.com.mobicare.cielo.eventTracking.presentation.ui.machineRequestDetails.MachineRequestDetailsFragment"
+        android:label="MachineRequestDetailsFragment"
+        tools:layout="@layout/machine_request_details_fragment">
+        <argument
+            android:name="machineRequestItem"
+            android:defaultValue="@null"
+            app:argType="br.com.mobicare.cielo.eventTracking.domain.model.MachineRequest"
+            app:nullable="true" />
+    </fragment>
+</navigation>

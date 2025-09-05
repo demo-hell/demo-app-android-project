@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/display_50">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_112dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/ajuda_header_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/vw_shimmer_square"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle"
+                android:layout_width="@dimen/dimen_186dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle2"
+                android:layout_width="@dimen/dimen_223dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_112dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/ajuda_header_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container">
+
+        <View
+            android:id="@+id/vw_shimmer_square2"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle3"
+                android:layout_width="@dimen/dimen_186dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle4"
+                android:layout_width="@dimen/dimen_223dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_112dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/ajuda_header_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container2">
+
+        <View
+            android:id="@+id/vw_shimmer_square3"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle5"
+                android:layout_width="@dimen/dimen_186dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle6"
+                android:layout_width="@dimen/dimen_223dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_112dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/ajuda_header_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container3">
+
+        <View
+            android:id="@+id/vw_shimmer_square4"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle7"
+                android:layout_width="@dimen/dimen_186dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle8"
+                android:layout_width="@dimen/dimen_223dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_112dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/ajuda_header_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container4">
+
+        <View
+            android:id="@+id/vw_shimmer_square5"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle9"
+                android:layout_width="@dimen/dimen_186dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vw_shimmer_rectangle10"
+                android:layout_width="@dimen/dimen_223dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_pg_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_welcome_notification"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="0.4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="start|center"
+                    android:text="@string/tv_name_toolbar"
+                    android:textColor="@color/display_500"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <LinearLayout
+                    android:id="@+id/btn_close"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_icon_close" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfe5f5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScrollView"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:visibility="visible"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@id/bottomLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/productNameTextView"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/display_500"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Camiseta infantil - P" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/priceTextView"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/display_500"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_trash"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productNameTextView"
+                    tools:text="Valor da venda: R$ 40,00" />
+
+                <LinearLayout
+                    android:id="@+id/btn_trash"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productNameTextView"
+                    tools:ignore="MissingConstraints,Orientation">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        app:srcCompat="@drawable/ic_outline_trash"
+                        tools:layout_editor_absoluteX="281dp"
+                        tools:layout_editor_absoluteY="38dp" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_link_sucess"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="24dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/priceTextView"
+                    app:srcCompat="@drawable/ic_link_gerado_1"/>
+
+                <TextView
+                    android:id="@+id/textViewLinkSucess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/link_gerado"
+                    android:textColor="@color/green_00d088"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_link_sucess" />
+
+                <TextView
+                    android:id="@+id/textViewCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/text_view_copy_and_paste_super_link"
+                    android:textColor="@color/black_5A646E"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLinkSucess" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="232dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/background_grey_arround"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCopy"
+                    tools:ignore="MissingConstraints">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/link_value"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_12dp"
+                        android:gravity="center"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="clo.br/12345"
+                        android:textColor="@color/display_400"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/imageViewCopy"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageViewCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_10dp"
+                        android:paddingRight="@dimen/dimen_8dp"
+                        android:paddingBottom="@dimen/dimen_10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_copy" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/warningTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+                    android:visibility="gone"
+                    tools:text="Ononononono ononon ononono noononon oonon o n o nono ononon ononononon " />
+
+                <include
+                    layout="@layout/fragment_pagamento_por_link_gerado_text_explanation" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="#dfe5f5"
+                app:layout_constraintBottom_toTopOf="@+id/btn_zap"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <LinearLayout
+                android:id="@+id/btn_zap"
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/blue_arround_border_8dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_share"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_share"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/ic_zap"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_share"
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="47dp"
+                android:background="@drawable/blue_arround_border_8dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_zap"
+                app:layout_constraintEnd_toStartOf="@+id/btn_copy"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_zap"
+                app:layout_constraintTop_toTopOf="@+id/btn_zap"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    app:srcCompat="@drawable/ic_sr_pg"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_copy"
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/blue_arround_border_8dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_share"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_share"
+                app:layout_constraintTop_toTopOf="@+id/btn_share"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    app:srcCompat="@drawable/ic_documents"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorView"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:visibility="gone"
+            app:cieloErrorButtonLabel="@string/text_try_again_label"
+            app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+            app:cieloErrorMessage="@string/text_message_generic_error"
+            app:cieloErrorTitle="@string/text_title_generic_error"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/frame_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_welcome_notification"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/frame_progress_include"
+                layout="@layout/frame_progress"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <br.com.cielo.libflue.card.CieloCardInformation
+        android:id="@+id/tv_my_limits_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardInformationType="information"
+        app:cardText="@string/text_pix_my_limit_info"
+        app:textColor="@color/brand_400"
+        app:imgIcon="@drawable/ic_info_alert_600_24_dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

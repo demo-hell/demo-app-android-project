@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_jump">PULAR</string>
+    <string name="onboarding_next">PRÓXIMO</string>
+    <string name="access_app">ACESSAR O APP</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dimen_20dp">
+
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_02_alert" />
+
+    <TextView
+        android:id="@+id/tvErrorInfo"
+        style="@style/Label_100_regular_14_cloud_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:gravity="center"
+        android:text="@string/anticipation_history_error_title"
+        app:layout_constraintTop_toBottomOf="@id/ivError" />
+
+    <TextView
+        android:id="@+id/btTryAgain"
+        style="@style/Label_300_Alternate_14_brand_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:text="@string/bt_reload"
+        android:textStyle="bold"
+        app:drawableEndCompat="@drawable/ic_refresh_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvErrorInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

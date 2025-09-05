@@ -1,0 +1,254 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/grey_99000000">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/nestedScrollView"
+            app:layout_constraintStart_toStartOf="@id/nestedScrollView"
+            app:layout_constraintTop_toTopOf="@id/nestedScrollView"
+            android:padding="@dimen/dimen_16dp"
+            android:background="@drawable/background_welcome_notification">
+
+            <View
+                android:id="@+id/viewDivider"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_4dp"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:background="@drawable/ic_drag_bottom_sheet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/Heading_700_bold_16"
+                android:id="@+id/tvTitle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:textColor="@color/display_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+                app:layout_constraintEnd_toStartOf="@+id/ibClose"
+                android:text="@string/chargeback_more_info_bottom_sheet_title" />
+
+            <ImageButton
+                android:id="@+id/ibClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/text_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                app:srcCompat="@drawable/ic_close"
+                app:tint="@color/cloud_400" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelDate"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                android:text="@string/chargeback_more_info_bottom_sheet_date" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValueDate"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/display_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelDate"
+                tools:text="17/11/2022" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelAuthorizationCode"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValueDate"
+                android:text="@string/chargeback_more_info_bottom_sheet_authorization_code" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValueAuthorizationCode"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/display_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelAuthorizationCode"
+                tools:text="123456789" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelPaymentMethod"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValueAuthorizationCode"
+                android:text="@string/chargeback_more_info_bottom_sheet_payment_method" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValuePaymentMethod"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/display_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelPaymentMethod"
+                tools:text="Crédito à vista" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelBankCard"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValuePaymentMethod"
+                android:text="@string/chargeback_more_info_bottom_sheet_bank_card" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValueBankCard"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/display_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelBankCard"
+                tools:text="Final 1234" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelTerminal"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValueBankCard"
+                android:text="@string/chargeback_more_info_bottom_sheet_terminal" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValueTerminal"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/display_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelTerminal"
+                tools:text="1234567890" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelNsu"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValueTerminal"
+                android:text="@string/chargeback_more_info_bottom_sheet_nsu_doc" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValueNsu"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/display_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelNsu"
+                tools:text="1234567" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelTid"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValueNsu"
+                android:text="@string/chargeback_more_info_bottom_sheet_tid" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValueTid"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/display_400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelTid"
+                tools:text="1234567890" />
+
+            <TextView
+                style="@style/Label_400_Regular_12"
+                android:id="@+id/tvLabelCardBrand"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvValueTid"
+                android:text="@string/chargeback_more_info_bottom_sheet_card_brand" />
+
+            <TextView
+                style="@style/Label_700_Bold_16"
+                android:id="@+id/tvValueCardBrand"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:textColor="@color/display_400"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                app:drawableStartCompat="@drawable/ic_mastercard_brand"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelCardBrand"
+                tools:text="Mastercard" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

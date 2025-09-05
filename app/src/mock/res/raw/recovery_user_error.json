@@ -1,0 +1,5 @@
+{
+  "message": "Infelizmente não conseguimos completar sua requisição. Por favor, tente novamente.",
+  "title": "Atenção",
+  "code": "internal.server.error"
+}

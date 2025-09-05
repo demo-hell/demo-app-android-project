@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_router"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/pixRouterFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.router.ui.PixRouterFragment"
+        android:label="PixRouterFragment"
+        tools:layout="@layout/fragment_pix_router">
+
+        <action
+            android:id="@+id/action_pixRouterFragment_to_pixTermOnboardingFragment"
+            app:destination="@id/pixTermOnboardingFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixRouterFragment_to_pixBlockPennyDropFragment"
+            app:destination="@id/pixBlockPennyDropFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixRouterFragment"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <!--    TODO: DAQUI PARA BAIXO SÃO AS ROTAS LEGADAS QUE SERÃO MIGRADAS -->
+
+    <fragment
+        android:id="@+id/pixTermFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.terms.PixTermFragment"
+        android:label="PixTermFragment"
+        tools:layout="@layout/fragment_pix_term">
+
+        <argument
+            android:name="IS_PARTNER_ARGS"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTermOnboardingFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.terms.onboarding.PixTermOnboardingFragment"
+        android:label="PixTermOnboardingFragment"
+        tools:layout="@layout/fragment_pix_term_onboarding">
+
+        <action
+            android:id="@+id/action_pixTermOnboardingFragment_to_pixTermFragment"
+            app:destination="@id/pixTermFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <argument
+            android:name="IS_PARTNER_ARGS"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixBlockPennyDropFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.router.ui.PixBlockPennyDropFragment"
+        android:label="PixBlockPennyDropFragment"
+        tools:layout="@layout/fragment_pix_block_penny_drop" />
+
+    <fragment
+        android:id="@+id/pixTransitoryAccountManagementFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.account.management.PixTransitoryAccountManagementFragment"
+        android:label="PixTransitoryAccountManagementFragment"
+        tools:layout="@layout/fragment_transitory_account_management">
+
+        <argument
+            android:name="PIX_RETURN_FRAGMENT_WHEN_FINISHED_OPERATION"
+            app:argType="boolean" />
+
+    </fragment>
+
+</navigation>

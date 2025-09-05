@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        android:visibility="gone"
+        tools:text="Saldo disponível: R$ 1.439,00"
+        tools:visibility="visible" />
+
+    <br.com.cielo.libflue.button.CieloLargeBlueButton
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="@string/confirmar" />
+
+</LinearLayout>

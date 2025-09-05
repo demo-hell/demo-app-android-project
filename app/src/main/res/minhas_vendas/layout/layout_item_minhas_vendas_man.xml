@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/swipeRevealUserSells"
+    android:layout_height="wrap_content">
+
+
+    <include
+        android:id="@+id/layout_options_delete"
+        layout="@layout/layout_option_delete" />
+
+    <include
+        android:id="@+id/layout_item_minhas_vendas"
+        layout="@layout/layout_item_minhas_vendas" />
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

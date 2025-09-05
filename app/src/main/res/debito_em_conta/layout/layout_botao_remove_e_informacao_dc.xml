@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/layout_botao_remove_dc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_remove" />
+
+        <TextView
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="@string/txt_remove_history_dc"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen_16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_botao_information_dc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_info"
+            app:tint="@color/red" />
+
+        <TextView
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="@string/txt_info_history_dc"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen_16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

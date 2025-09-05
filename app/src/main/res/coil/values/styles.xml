@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextItemChosen" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_00aeef</item>
+        <item name="android:textSize">14sp</item>
+        <item name="typeface">fonts/MuseoSans-500.ttf</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

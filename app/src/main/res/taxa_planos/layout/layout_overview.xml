@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutOverView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_overview"
+        android:padding="@dimen/dimen_16dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewFranchiseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/text_view_franchise_label"
+            android:textColor="@color/blue_017CEB"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewFranchiseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textColor="@color/blue_017CEB"
+            android:textSize="@dimen/dimen_28sp"
+            tools:text="R$ 125,00" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOverviewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center"
+            android:text="@string/text_view_overview_info_fee_and_plans"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_14sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

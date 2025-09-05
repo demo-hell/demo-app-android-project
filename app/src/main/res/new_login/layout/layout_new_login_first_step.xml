@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/firstStepContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:isScrollContainer="false"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_button"
+            android:enabled="false"
+            android:contentDescription="@string/button_identifier"/>
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/buttonCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:text="@string/create_account_login"
+            app:buttonType="outlined"
+            android:contentDescription="@string/button_identifier"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVersionApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/regular_montserrat_12"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            tools:text="Versão 4.10.1 (103)"
+            android:textColor="@color/color_8A99A8" />
+    </LinearLayout>
+</merge>

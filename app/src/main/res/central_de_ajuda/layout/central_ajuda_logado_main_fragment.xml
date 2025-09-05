@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_central_ajuda"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/layout_central_ajuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            style="@style/Heading_500_Bold_18_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/central_ajuda_main_title" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            style="@style/Paragraph_300_Regular_14_Display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:text="@string/central_ajuda_main_subtitle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/questionSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/shape_solid_white_border_color_c5ced7"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_mearchant_search"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/ubuntu"
+            android:hint="@string/central_ajuda_hint_text"
+            android:lineSpacingExtra="@dimen/dimen_8sp"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingEnd="@dimen/dimen_16dp"
+            android:textColorHint="@color/color_8A99A8"
+            android:textSize="@dimen/dimen_14sp"
+            android:theme="@style/InputHintCentralAjuda" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            style="@style/TextBlue16sp700Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/cl_categories_title" />
+
+        <FrameLayout
+            android:id="@+id/fragment_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            style="@style/TextBlue16sp700Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/cl_common_questions_title" />
+
+        <FrameLayout
+            android:id="@+id/frameMostFrequentQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp" />
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textTechnicalSupportV2"
+            style="@style/TextBlue16sp700Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/text_technical_support_v2_title" />
+
+        <FrameLayout
+            android:id="@+id/frameTechnicalSupportV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp" />
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/text_view_central_atendimento"
+            style="@style/TextBlue16sp700Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/cl_service_channels_title" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp">
+
+                <FrameLayout
+                    android:id="@+id/fragment_chat"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_whatsApp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/fragment_chat"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_gerente_virtual"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/fragment_whatsApp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            style="@style/TextBlue16sp700Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/cl_contact_title" />
+
+        <FrameLayout
+            android:id="@+id/fragment_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

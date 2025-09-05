@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_tap_on_phone"
+    app:startDestination="@id/tapOnPhoneFragment">
+
+    <fragment
+        android:id="@+id/tapOnPhoneFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.router.TapOnPhoneFragment"
+        android:label="TapOnPhoneFragment"
+        tools:layout="@layout/fragment_tap_on_phone">
+
+        <action
+            android:id="@+id/action_tapOnPhoneFragment_to_tapOnPhoneEnableNFCFragment"
+            app:destination="@id/tapOnPhoneEnableNFCFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneFragment_to_tapOnPhoneDeveloperModeIsEnableFragment"
+            app:destination="@id/tapOnPhoneDeveloperModeIsEnableFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneFragment_to_tapOnPhoneTerminalReadyFragment"
+            app:destination="@id/tapOnPhoneTerminalReadyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneFragment_to_tapOnPhoneSaleValueFragment"
+            app:destination="@id/tapOnPhoneSaleValueFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneFragment_to_tapOnPhoneOnboardingFragment"
+            app:destination="@id/tapOnPhoneOnboardingFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneFragment_to_tapOnPhoneImpersonateFragment"
+            app:destination="@id/tapOnPhoneImpersonateFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneFragment"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="POS_VIRTUAL_FLOW_ARGS"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneEnableNFCFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.terminal.nfc.TapOnPhoneEnableNFCFragment"
+        android:label="TapOnPhoneEnableNFCFragment"
+        tools:layout="@layout/fragment_tap_on_phone_enable_nfc">
+
+        <argument
+            android:name="DEVICE_TAP_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneTerminalResponse"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneEnableNFCFragment_to_tapOnPhoneDeveloperModeIsEnableFragment"
+            app:destination="@id/tapOnPhoneDeveloperModeIsEnableFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneEnableNFCFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneTerminalReadyFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.terminal.ready.TapOnPhoneTerminalReadyFragment"
+        android:label="TapOnPhoneTerminalReadyFragment"
+        tools:layout="@layout/fragment_tap_on_phone_terminal_ready">
+
+        <argument
+            android:name="DEVICE_TAP_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneTerminalResponse"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneTerminalReadyFragment_to_tapOnPhoneSaleValueFragment"
+            app:destination="@id/tapOnPhoneSaleValueFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneTerminalReadyFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneSaleValueFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.sale.value.TapOnPhoneSaleValueFragment"
+        android:label="TapOnPhoneSaleValueFragment"
+        tools:layout="@layout/fragment_tap_on_phone_sale_value">
+
+        <argument
+            android:name="DEVICE_TAP_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneTerminalResponse"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneSaleValueFragment_to_tapOnPhoneSelectPaymentTypeFragment"
+            app:destination="@id/tapOnPhoneChoosePaymentTypeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneChoosePaymentTypeFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.sale.type.TapOnPhoneChoosePaymentTypeFragment"
+        android:label="TapOnPhoneChoosePaymentTypeFragment"
+        tools:layout="@layout/fragment_tap_on_phone_choose_payment_type">
+
+        <argument
+            android:name="DEVICE_TAP_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneTerminalResponse"
+            app:nullable="true" />
+
+        <argument
+            android:name="TOP_SALE_VALUE_ARGS"
+            app:argType="java.math.BigDecimal" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneChoosePaymentTypeFragment_to_tapOnPhoneEnableNFCFragment"
+            app:destination="@id/tapOnPhoneEnableNFCFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneChoosePaymentTypeFragment_to_tapOnPhoneDeveloperModeIsEnableFragment"
+            app:destination="@id/tapOnPhoneDeveloperModeIsEnableFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneChoosePaymentTypeFragment_to_tapOnPhonePaymentReceiptFragment"
+            app:destination="@id/tapOnPhonePaymentReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneInstallmentFeesFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.accreditation.fees.TapOnPhoneInstallmentFeesFragment"
+        android:label="tapOnPhoneInstallmentFeesFragment"
+        tools:layout="@layout/fragment_tap_on_phone_installments_fees">
+
+        <argument
+            android:name="BRAND_RATE_LIST_ARGS"
+            app:argType="br.com.mobicare.cielo.component.requiredDataField.data.model.response.Brand[]" />
+
+        <argument
+            android:name="SETTLEMENT_TIMING_ARGS"
+            app:argType="integer" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneOnboardingFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.accreditation.onboarding.TapOnPhoneOnboardingFragment"
+        android:label="TapOnPhoneOboardingFragment"
+        tools:layout="@layout/fragment_tap_on_phone_accreditation_onboarding">
+
+        <action
+            android:id="@+id/action_tapOnPhoneOnboardingFragment_to_tapOnPhoneAccreditationOfferFragment"
+            app:destination="@id/tapOnPhoneAccreditationOfferFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneAccreditationOfferFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.accreditation.offer.TapOnPhoneAccreditationOfferFragment"
+        android:label="TapOnPhoneAccreditationOfferFragment"
+        tools:layout="@layout/fragment_offer_tap_on_phone">
+
+        <action
+            android:id="@+id/action_tapOnPhoneAccreditationOfferFragment_to_tapOnPhoneTermAndConditionFragment"
+            app:destination="@id/tapOnPhoneTermAndConditionFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneAccreditationOfferFragment_to_tapOnPhoneInstallmentFeesFragment"
+            app:destination="@id/tapOnPhoneInstallmentFeesFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <include app:graph="@navigation/nav_graph_term_view" />
+
+    <fragment
+        android:id="@+id/tapOnPhoneTermAndConditionFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.accreditation.term.TapOnPhoneTermAndConditionFragment"
+        android:label="TapOnPhoneTermAndConditionFragment"
+        tools:layout="@layout/fragment_tap_on_phone_term_and_condition">
+
+        <argument
+            android:name="OFFER_ARGS"
+            app:argType="br.com.mobicare.cielo.component.requiredDataField.data.model.response.OfferResponse" />
+
+        <argument
+            android:name="ACCOUNT_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneAccount" />
+
+        <argument
+            android:name="SESSION_ID_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneTermAndConditionFragment_to_termViewFragment"
+            app:destination="@id/nav_graph_term_view"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right">
+
+            <argument android:name="TERM_ARGS" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneImpersonateFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.impersonate.TapOnPhoneImpersonateFragment"
+        android:label="TapOnPhoneImpersonateFragment"
+        tools:layout="@layout/fragment_tap_on_phone_impersonate">
+
+        <argument
+            android:name="TOP_ELIGIBILITY_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneEligibilityResponse" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhonePaymentReceiptFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.sale.receipt.TapOnPhonePaymentReceiptFragment"
+        android:label="TapOnPhonePaymentReceiptFragment"
+        tools:layout="@layout/fragment_tap_on_phone_payment_receipt">
+
+        <argument
+            android:name="DEVICE_TAP_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneTerminalResponse"
+            app:nullable="true" />
+
+        <argument
+            android:name="TRANSACTION_RECEIPT_TAP_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TransactionReceiptData" />
+
+        <action
+            android:id="@+id/action_tapOnPhonePaymentReceiptFragment_to_tapOnPhoneSaleValueFragment"
+            app:destination="@id/tapOnPhoneSaleValueFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhonePaymentReceiptFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tapOnPhoneDeveloperModeIsEnableFragment"
+        android:name="br.com.mobicare.cielo.tapOnPhone.presentation.terminal.developerMode.TapOnPhoneDeveloperModeIsEnableFragment"
+        android:label="tapOnPhoneDeveloperModeIsEnableFragment"
+        tools:layout="@layout/fragment_tap_on_phone_developer_mode_is_enable">
+
+        <argument
+            android:name="DEVICE_TAP_ARGS"
+            app:argType="br.com.mobicare.cielo.tapOnPhone.domain.model.TapOnPhoneTerminalResponse"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneDeveloperModeIsEnableFragment_to_tapOnPhoneEnableNFCFragment"
+            app:destination="@id/tapOnPhoneEnableNFCFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneDeveloperModeIsEnableFragment_to_tapOnPhoneSaleValueFragment"
+            app:destination="@id/tapOnPhoneSaleValueFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneDeveloperModeIsEnableFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_tapOnPhoneDeveloperModeIsEnableFragment_to_tapOnPhoneTerminalReadyFragment"
+            app:destination="@id/tapOnPhoneTerminalReadyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/tapOnPhoneDeveloperModeIsEnableFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:ignore="Overdraw"
+    android:orientation="horizontal">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/meus_recebimentos_lancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/textview_extrato_footer_amount"
+        android:gravity="left"
+        android:text="@string/meus_recebimentos_detalhe_valor_liquido_total"
+        android:textColor="@color/purple"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/meus_recebimentos_lancamentos_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/meus_recebimentos_valores_lancamentos"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/green"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray_light"
+        android:layout_alignParentTop="true"
+        android:alpha="0.2"/>
+
+
+
+
+</RelativeLayout>

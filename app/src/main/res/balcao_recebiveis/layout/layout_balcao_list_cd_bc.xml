@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical">
+        <View
+            android:layout_width="24dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="0.03"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_drag_bottom_sheet"/>
+
+        <TextView
+            android:id="@+id/name_bt_items"
+            style="@style/Heading_500_Bold_18_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="0.25"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/title_bc_cr"
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_weight="4.8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:layout_weight="5"
+                android:background="@drawable/background_welcome_notification"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_itens"
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_weight="4.8"
+                    android:text="@string/banner_not_knowledge_register"
+                    android:textSize="@dimen/dimen_16dp"
+                    tools:listitem="@layout/item_rv_list_bc"
+                    />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

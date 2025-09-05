@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dimen_56dp"
+    android:paddingTop="@dimen/dimen_16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/regular_montserrat_16_cloud_500_spacing_4"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Gerdau São José" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        style="@style/regular_ubuntu_12_cloud_400_spacing_2"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="21450097865 - 07.359.641/0001-98" />
+
+    <ImageView
+        android:id="@+id/ivChevron"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chevron_right_24_cloud_200" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@color/cloud_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

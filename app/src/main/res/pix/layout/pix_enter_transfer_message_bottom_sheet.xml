@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".pix.ui.transfer.message.PixEnterTransferMessageBottomSheet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_16dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:background="@drawable/ic_drag_bottom_sheet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_enter_message_pix"
+            style="@style/label_18_display_500_montserrat_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/text_pix_enter_message_title"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/container_enter_message_pix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@drawable/custom_edit_text"
+            android:baselineAlignedChildIndex="0"
+            android:minHeight="@dimen/dimen_80dp"
+            android:padding="@dimen/dimen_8dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="60"
+            app:counterTextColor="@color/display_300"
+            app:hintEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/title_enter_message_pix">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_enter_message_pix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@null"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="top"
+                android:hint="@string/text_pix_enter_message_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxLength="60"
+                android:minHeight="@dimen/dimen_40dp"
+                android:textColor="@color/display_500"
+                android:textColorHint="@color/display_300"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btn_save_message_pix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@color/blue_0774E7"
+            android:text="@string/text_pix_enter_message_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_enter_message_pix"
+            app:layout_constraintVertical_bias="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

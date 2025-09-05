@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".turboRegistration.presentation.address.AddressFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/address_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:paddingBottom="@dimen/dimen_90dp">
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/input_cep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_zip_code"
+                app:endIconType="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_search_cep"
+                style="@style/semi_bold_montserrat_14"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:background="@drawable/cielo_white_button_view_selector"
+                android:gravity="end|center_vertical"
+                android:padding="@dimen/dimen_0dp"
+                android:text="@string/hint_dont_know_zip"
+                android:textColor="@color/cielo_500"
+                android:textSize="@dimen/dimen_12sp"
+                app:icon="@drawable/ic_external_link"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/cielo_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_cep"
+                app:theme="@style/Theme.MaterialComponents.Light.Dialog" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/input_address"
+                style="@style/TextInputLayoutCieloCommonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_address"
+                android:inputType="text"
+                app:endIconType="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bt_search_cep" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/input_number"
+                style="@style/TextInputLayoutCieloCommonStyle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:hint="@string/hint_number"
+                android:inputType="number"
+                android:maxLength="10"
+                app:endIconType="none"
+                app:layout_constraintEnd_toStartOf="@id/digit_guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_address" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cb_no_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/label_no_number"
+                android:textColor="@color/cloud_800"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/digit_guideline"
+                app:layout_constraintTop_toTopOf="@+id/input_number"
+                tools:checked="true" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/input_complement"
+                style="@style/TextInputLayoutCieloCommonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:hint="@string/hint_complement"
+                android:inputType="text"
+                app:endIconType="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_number" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/input_neighborhood"
+                style="@style/TextInputLayoutCieloCommonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:hint="@string/text_neighbor"
+                app:endIconType="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_complement" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/input_city"
+                style="@style/TextInputLayoutCieloCommonStyle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16sp"
+                android:hint="@string/hint_city"
+                android:inputType="text"
+                app:endIconType="none"
+                app:layout_constraintEnd_toStartOf="@id/input_state"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_neighborhood" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/input_state"
+                style="@style/TextInputLayoutCieloCommonStyle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:hint="@string/hint_state"
+                android:inputType="textCapCharacters"
+                android:maxLength="2"
+                app:endIconType="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@id/input_city"
+                app:layout_constraintTop_toBottomOf="@id/input_neighborhood" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/digit_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <include
+                android:id="@+id/progress_layout"
+                layout="@layout/layout_loading_mask"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:elevation="@dimen/dimen_8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white_80"
+        app:cardElevation="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_16dp">
+
+            <br.com.cielo.libflue.button.v2.CieloButton
+                android:id="@+id/bt_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_continue"
+                android:textSize="@dimen/dimen_16sp"
+                app:buttonEnabled="false"
+                app:buttonType="filled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

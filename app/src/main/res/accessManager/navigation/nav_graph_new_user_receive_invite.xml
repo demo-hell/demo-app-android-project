@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_new_user_receive_invite"
+    app:startDestination="@id/inviteLoadFragment">
+
+    <fragment
+        android:id="@+id/inviteLoadFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.create.InviteLoadFragment"
+        android:label="InviteLoadFragment"
+        tools:layout="@layout/fragment_invite_load_details">
+
+        <argument
+            android:name="INVITE_TOKEN_ARGS"
+            android:defaultValue="" />
+
+        <deepLink
+            app:action="ACTION_VIEW"
+            app:uri="minhaconta2.cielo.com.br/invite/{INVITE_TOKEN_ARGS}" />
+
+        <!-- TODO remove before goes to prod -->
+        <deepLink
+            app:action="ACTION_VIEW"
+            app:uri="digitalhml.hdevelo.com.br/invite/{INVITE_TOKEN_ARGS}" />
+
+        <action
+            android:id="@+id/action_InviteLoadFragment_to_inviteNewUserAcceptFragment"
+            app:destination="@id/inviteNewUserAcceptFragment"
+            app:popUpTo="@id/nav_graph_new_user_receive_invite"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_InviteLoadFragment_to_inviteLegacyUserAcceptFragment"
+            app:destination="@id/inviteLegacyUserWelcomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inviteNewUserAcceptFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.create.InviteNewUserAcceptFragment"
+        android:label="InviteNewUserAcceptFragment"
+        tools:layout="@layout/fragment_invite_new_user_accept">
+
+        <argument
+            android:name="INVITE_TOKEN_ARGS" />
+        <argument
+            android:name="INVITE_DETAILS_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.invite.receive.domain.InviteDetails" />
+
+        <action
+            android:id="@+id/action_inviteAcceptFragment_to_verifyUserDataFragment"
+            app:destination="@id/verifyUserDataFragment" />
+        <action
+            android:id="@+id/action_inviteNewUserAcceptFragment_to_inviteForeignNameFragment"
+            app:destination="@id/inviteForeignNameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inviteLegacyUserWelcomeFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.legacy.invite.welcome.InviteLegacyUserWelcomeFragment"
+        android:label="InviteLegacyUserAcceptFragment"
+        tools:layout="@layout/fragment_invite_legacy_user_welcome">
+
+        <argument
+            android:name="INVITE_TOKEN_ARGS" />
+        <argument
+            android:name="INVITE_DETAILS_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.invite.receive.domain.InviteDetails" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyUserDataFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.create.InvitationVerifyUserDataFragment"
+        android:label="VerifyUserDataFragment"
+        tools:layout="@layout/fragment_invite_account_create_verify_user_data">
+
+        <argument
+            android:name="INVITE_TOKEN_ARGS" />
+
+        <argument
+            android:name="INVITE_DETAILS_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.invite.receive.domain.InviteDetails" />
+
+        <action
+            android:id="@+id/action_verifyUserDataFragment_to_termAcceptFragment"
+            app:destination="@id/termAcceptFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordCreateFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.create.PasswordUserCreateFragment"
+        tools:layout="@layout/fragment_password_create">
+
+        <argument
+            android:name="INVITE_TOKEN_ARGS" />
+
+        <argument
+            android:name="INVITE_DETAILS_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.invite.receive.domain.InviteDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/termAcceptFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.create.TermAcceptFragment"
+        android:label="TermAcceptFragment"
+        tools:layout="@layout/fragment_term_and_condition">
+        <action
+            android:id="@+id/action_termAcceptFragment_to_pdfViewFragment"
+            app:destination="@id/pdfViewFragment" />
+        <action
+            android:id="@+id/action_termAcceptFragment_to_PasswordCreateFragment"
+            app:destination="@id/passwordCreateFragment" />
+
+        <argument
+            android:name="INVITE_TOKEN_ARGS" />
+
+        <argument
+            android:name="INVITE_DETAILS_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.invite.receive.domain.InviteDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pdfViewFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.create.PdfViewFragment"
+        android:label="PdfViewFragment"
+        tools:layout="@layout/fragment_pdf_view">
+
+        <argument
+            android:name="PDF_ARGS" />
+
+        <argument
+            android:name="INVITE_DETAILS_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.invite.receive.domain.InviteDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inviteForeignNameFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.create.InviteForeignNameFragment"
+        android:label="InviteForeignNameFragment"
+        tools:layout="@layout/fragment_invite_foreign_user">
+
+        <argument
+            android:name="INVITE_TOKEN_ARGS" />
+        <argument
+            android:name="INVITE_DETAILS_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.invite.receive.domain.InviteDetails" />
+        <action
+            android:id="@+id/action_inviteForeignNameFragment_to_verifyUserDataFragment"
+            app:destination="@id/verifyUserDataFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+</navigation>

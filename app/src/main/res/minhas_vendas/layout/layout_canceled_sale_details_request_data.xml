@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_solid_white_border_display_200"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingVertical="@dimen/dimen_12dp">
+
+    <LinearLayout
+        android:id="@+id/rowRequestDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtRequestDateLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_request_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtRequestDateValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="21/10/2022" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowRequestChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowRequestDate">
+
+        <TextView
+            android:id="@+id/txtRequestChannelLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_request_channel"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtRequestChannelValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="Site" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowCanceledStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowRequestChannel">
+
+        <TextView
+            android:id="@+id/txtCanceledStatusLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_status"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtCanceledStatusValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="Efetivado" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRequestSituationLabel"
+        style="@style/Paragraph_300_Regular_14_display_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:paddingBottom="@dimen/dimen_4dp"
+        android:text="@string/text_canceled_situation"
+        android:textColor="@color/color_cloud_400"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rowCanceledStatus" />
+
+    <TextView
+        android:id="@+id/txtRequestSituationValue"
+        style="@style/Paragraph_300_Regular_14_display_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_cloud_600"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtRequestSituationLabel"
+        tools:text="Cancelamento aprovado com sucesso" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_view_sales_unit_more_detail">Consultar mais detalhes do total negociado</string>
+    <string name="text_view_sales_unit_negotiated_label">Valor total negociado</string>
+    <string name="text_view_sales_unit_fee">Taxa %d</string>
+    <string name="text_view_bottosheet_title_receivable">Detalhes da operação</string>
+
+    <string-array name="unit_sales_content_item_title_array">
+        <item>Data da negociação</item>
+        <item>Data de pagamento original</item>
+        <item>CPF/CNPJ</item>
+        <item>Instituição financeira negociada</item>
+        <item>Bandeira</item>
+        <item>Arranjo de pagamento</item>
+        <item>Valor bruto</item>
+        <item>Valor líquido</item>
+        <item>Tava efetiva</item>
+    </string-array>
+
+    <string-array name="receivable_content_item_title_array">
+        <item>Número da operação</item>
+        <item>CPF / CNPJ/  Raiz</item>
+        <item>Previsão de pagamento</item>
+        <item>Prazo médio</item>
+        <item>Valor bruto</item>
+        <item>Valor líquido</item>
+        <item>Taxa nominal</item>
+    </string-array>
+
+    <string name="title_balcao_recebiveis_extrato">Negociações</string>
+    <string name="title_balcao_unit_sales">Detalhes da operação</string>
+    <string name="title_negociacoes_recebiveis">Negociações</string>
+    <string name="filter_calendar_init">Data inicial</string>
+    <string name="filter_calendar_end">Data final</string>
+
+    <string name="type_amount_title_receviceis">Valor total negociado</string>
+    <string name="see_more">Ver mais</string>
+    <string name="title_accounts_banks_inserted">Contas cadastradas</string>
+    <string name="title_last_negotiations">Últimas negociações</string>
+
+    <string name="title_erro_never_negotiation">Você ainda não fez nenhuma negociação </string>
+    <string name="txt_erro_msg_zero_negotiation"> Assim que você negociar algum recebível ele aparecerá aqui :)</string>
+
+    <string name="tx_las_negotiations_empity">Você ainda não efetuou nenhuma negociação\nAssim que negociar algum recebível ele\naparecerá aqui :)</string>
+    <string name="txt_negotiations_amount_empity">Você ainda não efetuou nenhuma negociação</string>
+    <string name="tv_list_empty_negotiations_extrato">Não há resultados para sua pesquisa.\n\nPor favor escolha novos filtros e tente novamente</string>
+
+    <string name="tv_list_empty_negotiations_bank">Você não possui conta(s) cadastrada(s) no período selecionado.</string>
+
+    <string name="extrato_detail_total">Total</string>
+
+    <string name="title_erro_load_last_negotiations">Tivemos um problema para\ncarregar seus dados</string>
+    <string name="msg_erro_load_last_negotiations">Verifique sua conexão e tente novamente.</string>
+
+    <string name="title_erro_negotiation_empity">Você ainda não fez nenhuma negociação </string>
+    <string name="msg_erro_negotiation_empity">Assim que você negociar algum recebível ele\naparecerá aqui :)</string>
+
+    <string name="title_tela_details_negociations">Negociações %s</string>
+
+    <string name="filter_title_topbar">Filtros</string>
+    <string name="filter_title">Detalhes</string>
+    <string name="filter_status_solicitacao">Status da solicitação</string>
+    <string name="filter_value">Valor</string>
+    <string name="filter_et_cpf_cnpj">CPF / CNPJ / Raiz</string>
+    <string name="filter_et_operation_number">Número da operação</string>
+    <string name="filter_et_valor_bruto_init">Valor bruto (início)</string>
+    <string name="filter_et_valor_bruto_final">Valor bruto (fim)</string>
+    <string name="filter_title_operations_topbar">Data de pagamento original*</string>
+    <string name="filter_et_select_date">Selecione uma data</string>
+    <string name="filter_brand">Bandeiras</string>
+    <string name="filter_modality_title">Modalidade</string>
+    <string name="filter_status_contract">Status da contratação</string>
+
+    <string name="title_name_taxa">Taxa</string>
+
+    <string name="text_receivables_agency">Agência: %s</string>
+    <string name="text_receivables_account">Conta: %s</string>
+
+</resources>

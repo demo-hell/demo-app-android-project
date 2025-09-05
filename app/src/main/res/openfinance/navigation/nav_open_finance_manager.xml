@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_open_finance_manager"
+    app:startDestination="@id/openFinanceManagerFragment">
+
+    <fragment
+        android:id="@+id/openFinanceManagerFragment"
+        android:name="br.com.mobicare.cielo.openFinance.presentation.manager.OpenFinanceManagerFragment"
+        android:label="OpenFinanceManagerFragment"
+        tools:layout="@layout/open_finance_manager_fragment">
+        <action
+            android:id="@+id/action_openFinanceManagerFragment_to_openFinanceSharedDataFragment"
+            app:destination="@id/openFinanceSharedDataFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/openFinanceSharedDataFragment"
+        android:name="br.com.mobicare.cielo.openFinance.presentation.manager.sharedData.OpenFinanceSharedDataFragment"
+        android:label="OpenFinanceSharedDataFragment"
+        tools:layout="@layout/open_finance_shared_data_fragment">
+        <argument
+            android:name="@string/flow_conclusion"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_openFinanceSharedDataFragment_to_consentDetailFragment"
+            app:destination="@id/consentDetailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/consentDetailFragment"
+        android:name="br.com.mobicare.cielo.openFinance.presentation.manager.sharedData.consentDetail.ConsentDetailFragment"
+        android:label="ConsentDetailFragment"
+        tools:layout="@layout/open_finance_consent_detail">
+        <argument
+            android:name="@string/consent_id"
+            app:argType="string" />
+        <argument
+            android:name="@string/bank"
+            app:argType="string" />
+        <argument
+            android:name="@string/flow_conclusion"
+            app:argType="boolean" />
+    </fragment>
+</navigation>

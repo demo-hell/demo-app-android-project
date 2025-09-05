@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="biometric_home_title">%s, para acessar essa funcionalidade, autorize a instalação do token</string>
+    <string name="biometric_home_subtitle">Para a sua segurança, é necessário validar a sua identidade e a instalação do token de segurança para você ter acesso completo à sua conta nesse celular.</string>
+    <string name="biometric_home_selfie">Para concluir a instalação, precisamos que você envie uma foto (selfie) do seu rosto. Vamos lá?</string>
+    <string name="biometric_home_selfie_info">A confirmação por foto é necessária para liberar o acesso completo da sua conta nesse celular. Se preferir, você pode enviar as fotos depois, mas o seu acesso será limitado. </string>
+    <string name="biometric_home_button_continue_with_limited_access">Continuar com acesso limitado</string>
+    <string name="biometric_home_button_authorize_installation">Autorizar instalação</string>
+    <string name="biometric_home_bs_title">Houve um erro na validação da foto do seu rosto</string>
+    <string name="biometric_home_bs_message">Por favor, tente novamente enviar a foto do seu rosto. Atente-se as dicas para uma boa selfie.</string>
+    <string name="biometric_success_title">Pronto! Seu dispositivo está seguro para acessar sua conta</string>
+    <string name="biometric_success_message">Esse celular está pronto para realizar qualquer operação com tranquilidade e segurança.</string>
+    <string name="biometric_success_alert_message"><![CDATA[<b>O token de segurança pode ser instalado apenas em um único celular</b>, portanto, ele foi desinstalado no seu outro aparelho.]]></string>
+    <string name="biometric_success_finish_button">Concluir</string>
+
+    <!-- Pictures Selfie Guide -->
+    <string name="biometric_token_pictures_selfie_guide_title">Valide a sua identidade</string>
+    <string name="biometric_token_pictures_selfie_guide_subtitle">Para sua segurança, precisamos fazer seu reconhecimento facial.\n\nSiga as dicas abaixo e capriche na selfie!</string>
+    <string name="biometric_token_pictures_selfie_guide_glasses">Retire os óculos e outros acessórios como: boné, capuz ou gorro</string>
+    <string name="biometric_token_pictures_selfie_guide_document"><![CDATA[A pessoa na selfie precisa ser a <b>mesma pessoa</b> do documento enviado. ]]></string>
+    <string name="biometric_token_pictures_selfie_guide_sun">Escolha um ambiente bem iluminado com o fundo neutro</string>
+    <string name="biometric_token_pictures_selfie_guide_position">Segure o celular na altura dos seus olhos e encaixe o rosto no local que vai ser indicado na tela</string>
+    <string name="biometric_token_pictures_selfie_guide_privacy"><![CDATA[Entenda como tratamos seus dados pessoais em nossa <b><font color=#0774E7>Politica de Privacidade da Cielo</font></b>]]></string>
+    <string name="biometric_token_open_camera">Abrir câmera</string>
+    <string name="biometric_token_validate_photo">Validando foto</string>
+    <string name="biometric_token_installing_token">Instalando token</string>
+    <string name="biometric_token_selfie_security_primary_text">Entenda como tratamos seus dados pessoais em nossa</string>
+    <string name="biometric_token_selfie_security_secondary_text">Política de Privacidade da Cielo</string>
+
+    <!-- Change Password -->
+    <string name="biometric_token_change_password_error_default_message">Parece que tivemos algum problema por aqui</string>
+    <string name="biometric_token_change_password_success_title">Senha alterada com sucesso</string>
+    <string name="biometric_token_change_password_success_message">Agora você pode acessar os canais digitais da Cielo.</string>
+    <string name="biometric_token_password_bottom_sheet_error">BottomSheetPasswordError</string>
+    <string name="biometric_token_password_bottom_sheet_success">BottomSheetPasswordSuccess</string>
+</resources>

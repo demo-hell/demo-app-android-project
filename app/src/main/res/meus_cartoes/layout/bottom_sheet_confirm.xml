@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        >
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/typefaceTextView9"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/text_my_cards_bottom_sheet_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:theme="@style/TextBlack24spTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCvv"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:theme="@style/TextInputHintBottonSheet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typefaceTextView9"
+            tools:ignore="MissingConstraints">
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/textInputEditCvv"
+                style="@style/TextInputEditBottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_my_cards_bottom_sheet_cvv"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf"
+                app:disableCopyToClipboard="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textMsgCvc"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:maxWidth="330dp"
+            android:maxLines="2"
+            android:text="@string/text_my_cards_bottom_sheet_cvc_alert"
+            android:textColor="#4a4a4a"
+            android:textSize="10sp"
+            android:theme="@style/TextInputEditPrepago"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCvv"
+            app:typeface="MuseoSans-500.ttf"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutExpirationDt"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:theme="@style/TextInputHintBottonSheet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMsgCvc">
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/textInputEditExpirationDt"
+                style="@style/TextInputEditBottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_my_cards_bottom_sheet_date"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="number"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf"
+                app:disableCopyToClipboard="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textMsgDate"
+            style="@style/TextInputEditPrepago"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="10sp"
+            android:text="@string/text_my_cards_bottom_sheet_date_alert"
+            android:textColor="#4a4a4a"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutExpirationDt"
+            app:layout_constraintVertical_bias="0.0"
+            app:typeface="MuseoSans-500.ttf"
+            tools:ignore="MissingConstraints" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonTransferConfirm"
+            style="@style/ButtonShapedPurpleStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textMsgDate"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="21dp"
+            android:padding="15dp"
+            app:fb_text="@string/text_transfer_confirm_label"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMsgDate"
+            />
+
+
+        <include
+            android:id="@+id/frameProgressTransactionConfirm"
+            layout="@layout/frame_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMsgDate"
+            android:layout_marginBottom="20dp"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

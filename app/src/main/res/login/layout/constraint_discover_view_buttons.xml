@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:minHeight="156dp"
+    android:layout_height="wrap_content">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/buttonLoginNext"
+        style="@style/ButtonShapedPurpleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Próximo"
+        app:fb_disabledTextColor="@color/transparent_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/buttonForgetMerchantId"
+        style="@style/ButtonShapedTransparentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="40dp"
+        android:text="Preciso de ajuda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoginNext"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

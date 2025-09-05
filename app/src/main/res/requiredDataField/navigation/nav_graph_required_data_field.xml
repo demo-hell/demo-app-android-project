@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_required_data_field"
+    app:startDestination="@id/requiredDataFieldFragment">
+
+    <fragment
+        android:id="@+id/requiredDataFieldFragment"
+        android:name="br.com.mobicare.cielo.component.requiredDataField.presentation.ui.RequiredDataFieldFragment"
+        android:label="RequiredDataField"
+        tools:layout="@layout/fragment_required_data_field">
+
+        <argument
+            android:name="REQUIRED_DATA_ARG"
+            app:argType="br.com.mobicare.cielo.component.requiredDataField.presentation.model.UiRequiredDataField"/>
+
+    </fragment>
+
+</navigation>

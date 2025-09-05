@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <br.com.cielo.libflue.radio.CieloLinearRadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <br.com.cielo.libflue.radio.CieloCardRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="CC"
+            android:text="@string/pix_key_bank_account_type_checking_account" />
+
+        <br.com.cielo.libflue.radio.CieloCardRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:tag="SA"
+            android:text="@string/pix_key_bank_account_type_savings_account" />
+
+        <br.com.cielo.libflue.radio.CieloCardRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:tag="PA"
+            android:text="@string/pix_key_bank_account_type_payment_account" />
+
+    </br.com.cielo.libflue.radio.CieloLinearRadioGroup>
+
+    <TextView
+        android:id="@+id/tvBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        tools:text="Instituição: Banco Bradesco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

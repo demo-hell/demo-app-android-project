@@ -1,0 +1,38 @@
+//apply plugin: 'jacoco-android'
+apply plugin: "com.hiya.jacoco-android"
+
+task javaCodeCoverage(type: JacocoReport, dependsOn: 'testDevHomologUnitTest') {
+
+    //cleaning up the JiBx classes to jacoco will not cause problems for CareDiscovery
+    doFirst {
+        delete fileTree (dir: "${buildDir}/classes", include: "**/JiBX_*.class")
+    }
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+
+//    executionData = fileTree(dir: 'build/jacoco', include: '**/*.exec')
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+        csv.enabled = false
+    }
+
+    def excludes = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', '**/RecyclerViewMatcher.class', '**/TimeUtils.class', 'android/**/*.*', 'androidx/**/*.*', '**/*$*.class'
+                    ,'**/*Robot*.class',
+                    '**/splash/**',]
+
+
+    def javaDebugTree = fileTree(dir: "${buildDir}/intermediates/javac/devHomolog", excludes: excludes)
+    //we use "debug" build type for test coverage (can be other)
+    def kotlinDebugTree = fileTree(dir: "${buildDir}/tmp/kotlin-classes/devHomolog", excludes: excludes)
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories.from = files([mainSrc])
+    classDirectories.from = files([javaDebugTree, kotlinDebugTree]) // we need to target both java and kotlin build folder
+    executionData.from = fileTree(dir: "$buildDir", includes: [
+            "jacoco/testDevHomologUnitTest.exec", //we use "debug" build type for test coverage (can be other)
+            "outputs/code-coverage/connected/*coverage.ec"
+    ])
+
+}

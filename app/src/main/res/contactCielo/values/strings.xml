@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contact_cielo_envie_duvidas_via_whatsapp">Alguma dúvida? Nos mande uma mensagem via WhatsApp:</string>
+
+    <string name="contact_cielo_onboard_whatsapp_desc">Animação heartbeat circular</string>
+    <string name="contact_cielo_temos_uma_novidade_para_voce"><![CDATA[<b>Temos uma novidade para você! </b>]]></string>
+    <string name="contact_cielo_facilitamos_o_acesso_ao_contato_whatsapp">Facilitamos o acesso do nosso contato no WhatsApp. Inserimos um atalho na tela de início do App, venha conferir com a gente.</string>
+    <string name="contact_cielo_conferir">Conferir</string>
+
+    <string name="contact_cielo_virtual_manager_title">Gerente Virtual (das 9h às 17h)</string>
+    <string name="contact_cielo_virtual_manager_description">Precisa falar sobre assuntos comerciais? Contate agora o Gerente Virtual.</string>
+    <string name="contact_cielo_virtual_manager_whatsapp_number">5511948034240</string>
+    <string name="contact_cielo_virtual_manager_content_name">gerente_virtual</string>
+
+    <string name="contact_cielo_general_doubts_title">Dúvidas gerais</string>
+    <string name="contact_cielo_general_doubts_description">Tire suas dúvidas, faça elogios ou resolva um problema.</string>
+    <string name="contact_cielo_general_doubts_whatsapp_number">551130035525</string>
+    <string name="contact_cielo_general_doubts_content_name">duvidas_gerais</string>
+
+</resources>

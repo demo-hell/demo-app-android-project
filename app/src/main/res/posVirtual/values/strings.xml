@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pos_virtual">POS Virtual</string>
+
+    <string name="pos_virtual_error_message_generic"><![CDATA[Vamos resolver isso e você pode voltar para <b>tentar de novo mais tarde</b>, combinado?]]></string>
+
+    <string name="txt_title_pos_virtual_onboarding_page_one">Venda com seu celular</string>
+    <string name="txt_description_pos_virtual_onboarding_page_one">Aceite pagamentos por aproximação com o Cielo Tap, venda com QR Code Pix ou envie links de pagamento com o Link de Pagamento. Mais opções para você e seus clientes!</string>
+    <string name="txt_title_pos_virtual_onboarding_page_two">Vender e receber com Cielo Tap é rápido e prático</string>
+    <string name="txt_description_pos_virtual_onboarding_page_two">Venda por aproximação com seu celular Android na versão 10 ou superior, com tecnologia NFC. Exclusivo para as bandeiras Elo, Mastercard e Visa.</string>
+    <string name="txt_title_pos_virtual_onboarding_page_three">Crie links de pagamento com o Link de Pagamento</string>
+    <string name="txt_description_pos_virtual_onboarding_page_three">Venda online nas redes sociais, por e-mail ou WhatsApp. O link de pagamento é seguro, fácil de criar e de pagar!</string>
+    <string name="txt_title_pos_virtual_onboarding_page_four">Venda com QR Code Pix com rapidez e segurança</string>
+    <string name="txt_description_pos_virtual_onboarding_page_four">Funciona nas vendas presenciais e online. Seu cliente paga com o celular, é simples como tirar uma foto!</string>
+    <string name="label_button_jump_pos_virtual_onboarding_">Pular</string>
+    <string name="label_button_next_pos_virtual_onboarding">Próximo</string>
+    <string name="label_button_start_pos_virtual_onboarding">Vamos começar!</string>
+
+    <string name="txt_title_pos_virtual_home">Como você deseja vender hoje?</string>
+    <string name="txt_item_cielo_tap_pos_virtual_home_title">Cielo Tap</string>
+    <string name="txt_item_cielo_tap_pos_virtual_home_subtitle">Venda por aproximação ou com leitor de cartão.</string>
+    <string name="content_description_item_cielo_tap_pos_virtual_home">Cielo Tap, botão. Venda por aproximação com o seu celular.</string>
+    <string name="txt_item_qr_code_pix_pos_virtual_home_title">QR Code Pix</string>
+    <string name="txt_item_qr_code_pix_pos_virtual_home_subtitle">Gere cobranças através do QR Code Pix.</string>
+    <string name="content_description_item_qr_code_pix_pos_virtual_home">QR Code Pix, botão. Gere cobranças através do QR Code Pix.</string>
+    <string name="txt_item_payment_link_pos_virtual_home_title">Link de Pagamento</string>
+    <string name="txt_item_payment_link_pos_virtual_home_subtitle">Crie um link de cobrança para seus clientes.</string>
+    <string name="content_description_item_payment_link_pos_virtual_home">Link de Pagamento, botão. Crie um link de cobrança para seus clientes.</string>
+
+    <string name="txt_title_pos_virtual_qr_code_pix_insert_amount">Qual o valor da venda?</string>
+    <string name="txt_label_button_pos_virtual_qr_code_pix_insert_amount">Gerar QR Code Pix</string>
+
+    <string name="txt_title_pos_virtual_qr_code_view">Mostre ou compartilhe o QR Code Pix</string>
+    <string name="txt_label_pos_virtual_qr_code_view_amount">Valor</string>
+    <string name="txt_label_pos_virtual_qr_code_view_name">Nome</string>
+    <string name="txt_label_pos_virtual_qr_code_view_doc">Documento</string>
+    <string name="content_description_pos_virtual_qr_code_view_copy_code">Copiar código, botão.</string>
+    <string name="content_description_pos_virtual_qr_code_view_share_code">Compartilhar código, botão</string>
+
+    <string name="pos_virtual_eligibility_pending_title">Falta pouco para você vender pelo celular</string>
+    <string name="pos_virtual_eligibility_pending_message">Sua solicitação está em andamento. Vamos te avisar por e-mail quando estiver tudo pronto!</string>
+    <string name="pos_virtual_eligibility_canceled_title">A funcionalidade Vender está desativada na sua conta</string>
+    <string name="pos_virtual_eligibility_canceled_message">Esta funcionalidade foi desativada por você via Central de Atendimento. Ligue para central para contratar e reativar este serviço.</string>
+
+    <string name="pos_virtual_text_success">Habilitado</string>
+    <string name="pos_virtual_text_pending">Habilitação em análise</string>
+    <string name="pos_virtual_text_canceled">Habilitação cancelada</string>
+    <string name="pos_virtual_text_failed">Falha na habilitação</string>
+    <string name="pos_virtual_home_title_pending">Habilitação em andamento:</string>
+    <string name="pos_virtual_home_unavailable_option">Opção indisponível</string>
+    <string name="pos_virtual_home_logic_number_not_found">Número lógico não encontrado</string>
+
+    <string name="pos_virtual_share_qr_code_title">Como você deseja compartilhar o QR Code Pix?</string>
+    <string name="pos_virtual_share_qr_code_button_image">Compartilhar como imagem</string>
+    <string name="pos_virtual_share_qr_code_button_code">Compartilhar código</string>
+
+    <string name="pos_virtual_request_details_title">Detalhes da solicitação</string>
+    <string name="pos_virtual_request_details_description">Consulte o andamento da habilitação deste serviço.</string>
+    <string name="pos_virtual_request_details_description_notify_by_email">Avisaremos por e-mail quando estiver tudo pronto.</string>
+    <string name="pos_virtual_request_details_label_service">Serviço aguardando habilitação</string>
+    <string name="pos_virtual_request_details_label_status">Status</string>
+    <string name="pos_virtual_request_details_title_general_information">Informações gerais</string>
+    <string name="pos_virtual_request_details_label_merchant_number">Número do EC/estabelecimento</string>
+    <string name="pos_virtual_request_details_label_request_date">Data da solicitação</string>
+    <string name="pos_virtual_request_details_text_rehabilitate_service">Para reabilitar este serviço, entre em contato com a Central de Atendimento.</string>
+    <string name="pos_virtual_request_details_status_pending">Em análise</string>
+    <string name="pos_virtual_request_details_status_canceled">A habilitação foi cancelada</string>
+    <string name="pos_virtual_request_details_status_failed">Falha na habilitação</string>
+
+    <string name="pos_virtual_accreditation_title">Soluções completas para você vender com seu celular</string>
+    <string name="pos_virtual_accreditation_label_card_rates_debit"><![CDATA[Débito: <b>%s</b>]]></string>
+    <string name="pos_virtual_accreditation_label_card_rates_credit"><![CDATA[Crédito: <b>%s</b>]]></string>
+    <string name="pos_virtual_accreditation_label_card_rates_rate"><![CDATA[Taxa: <b>%s</b>]]></string>
+    <string name="pos_virtual_accreditation_label_tag_card_rates_receive_on_time">Instantâneo</string>
+    <string name="pos_virtual_accreditation_label_tag_card_rates_receive_two_days">Receba em 1 dia útil</string>
+    <string name="pos_virtual_accreditation_label_tag_card_rates_receive_two_days_with_asterisk">Receba em 1 dia útil*</string>
+    <string name="pos_virtual_accreditation_label_tag_card_rates_receive_thirty_days">Receba em 30 dias úteis</string>
+    <string name="pos_virtual_accreditation_error_title_offers">Parece que tivemos algum problema por aqui</string>
+    <string name="pos_virtual_accreditation_error_message_offers">Pedimos desculpas, ocorreu um erro para exibir as informações. Por favor, tente carregar novamente.</string>
+    <string name="pos_virtual_accreditation_error_message_card_change_bank">Pedimos desculpas, ocorreu um erro para carregar o seu domicílio. Por favor, recarregar.</string>
+    <string name="pos_virtual_accreditation_label_bottom_card_rates">Ver taxas por parcelas</string>
+    <string name="pos_virtual_accreditation_message_automatic_receipt">* O recebimento em até 1 dia útil ocorrerá por meio da habilitação do Recebimento Automático em 1 dia. Caso não tenha interesse, o serviço poderá ser cancelado pelos canais de atendimento.</string>
+    <string name="pos_virtual_accreditation_alert_automatic_receipt">* Você precisa atingir dois meses consecutivos de faturamento com o Link de Pagamento para começar a receber em 1 dia útil.</string>
+    <string name="pos_virtual_accreditation_title_automatic_receipt">Deseja contratar o Recebimento Automático em 1 dia*?</string>
+    <string name="pos_virtual_accreditation_description_automatic_receipt">Receba suas vendas em menos tempo e melhore seu fluxo de caixa.</string>
+    <string name="pos_virtual_accreditation_label_check_box_automatic_receipt">Quero contratar</string>
+    <string name="pos_virtual_accreditation_content_description_check_box_automatic_receipt_checked">Contratar Recebimento automático em 1 dia, botão de opção selecionado.</string>
+    <string name="pos_virtual_accreditation_content_description_check_box_automatic_receipt_not_checked">Contratar Recebimento automático em 1 dia, botão de opção não selecionado.</string>
+    <string name="pos_virtual_accreditation_label_change_bank">Domicílio bancário para recebimento:</string>
+    <string name="pos_virtual_accreditation_label_change_bank_agency_number"><![CDATA[Agência: <b>%s</b>]]></string>
+    <string name="pos_virtual_accreditation_label_change_bank_account_number"><![CDATA[Conta: <b>%s</b>]]></string>
+    <string name="pos_virtual_accreditation_title_bs_change_bank">Selecione uma conta bancária para recebimento</string>
+    <string name="pos_virtual_accreditation_description_terms">Ao contratar essas soluções, você concorda com os termos de credenciamento.</string>
+    <string name="pos_virtual_accreditation_label_button_terms">Acessar termos e condições</string>
+    <string name="pos_virtual_accreditation_error_message_terms">Pedimos desculpas, ocorreu um erro para exibir os termos e condições de credenciamento.</string>
+    <string name="pos_virtual_accreditation_content_decription_button_terms">Acessar termos e condições, botão</string>
+    <string name="pos_virtual_accreditation_title_bs_terms">Termos e condições</string>
+    <string name="pos_virtual_accreditation_label_button_understand">Entendi</string>
+    <string name="pos_virtual_accreditation_label_button_change_bank">Alterar domicílio</string>
+    <string name="pos_virtual_accreditation_label_button_confirm">Confirmar</string>
+    <string name="pos_virtual_accreditation_label_button_hire">Contratar</string>
+    <string name="pos_virtual_accreditation_label_button_reload">Recarregar</string>
+    <string name="pos_virtual_accreditation_content_description_button_reload_">Recarregar, botão</string>
+    <string name="pos_virtual_accreditation_title_bs_confirm">Confirme os prazos de recebimento antes de continuar</string>
+    <string name="pos_virtual_accreditation_content_bs_confirm_cielo_tap_is_accepted_rr"><![CDATA[<b>Cielo Tap:</b> 1 dia útil no Débito; 1 dia útil no Crédito à Vista; 1 dia útil no Crédito Parcelado.]]></string>
+    <string name="pos_virtual_accreditation_content_bs_confirm_super_link_is_accepted_rr"><![CDATA[<b>Link de Pagamento:</b> Após 2 meses consecutivos de faturamento com a Cielo, as vendas no Crédito à Vista e Parcelado você recebe em 1 dia útil.]]></string>
+    <string name="pos_virtual_accreditation_content_bs_confirm_qr_code_pix_is_accepted_rr"><![CDATA[<b>QR Code Pix:</b> Receba na hora.]]></string>
+    <string name="pos_virtual_accreditation_content_bs_confirm_cielo_tap_is_not_accept_rr"><![CDATA[<b>Cielo Tap:</b> 1 dia útil no Débito; 30 dias úteis no Crédito à Vista; No vencimento de cada parcela no Crédito Parcelado.]]></string>
+    <string name="pos_virtual_accreditation_content_bs_confirm_super_link_is_not_accept_rr"><![CDATA[<b>Link de Pagamento:</b> Você tem o mesmo prazo do Cielo Tap.]]></string>
+    <string name="pos_virtual_accreditation_content_bs_confirm_qr_code_pix_is_not_accept_rr"><![CDATA[<b>QR Code Pix:</b> Receba na hora.]]></string>
+
+    <string name="pos_virtual_accreditation_bs_unavailable_error_title">Agradecemos o seu interesse nesta funcionalidade</string>
+    <string name="pos_virtual_accreditation_bs_unavailable_error_message">No momento, este serviço não está disponível para o seu estabelecimento.</string>
+    <string name="pos_virtual_accreditation_bs_suspect_error_message">Para contratar este serviço, entre em contato com a central de atendimento para regularizar seu cadastro.</string>
+    <string name="pos_virtual_accreditation_bs_success_confirm_hire_title">Agora é só esperar</string>
+    <string name="pos_virtual_accreditation_bs_success_confirm_hire_message"><![CDATA[Em até 5 dias úteis você poderá vender pelo celular. Vamos te avisar por e-mail quando estiver tudo pronto! Seu número de solicitação é <b>%s</b>]]></string>
+    <string name="pos_virtual_accreditation_bs_error_confirm_hire_change_bank_message"><![CDATA[Para contratar este serviço, será necessário <b>alterar o domicílio bancário para recebimento.</b>]]></string>
+
+    <string name="pos_virtual_rates_details_title">Taxas por parcelas do %s</string>
+    <string name="pos_virtual_rates_details_title_receipt_of_sales">Recebimento das vendas:</string>
+    <string name="pos_virtual_rates_details_period_debit"><![CDATA[Débito: <b>em 1 dia útil</b>]]></string>
+    <string name="pos_virtual_rates_details_period_cash_credit_rr_enabled"><![CDATA[Crédito à Vista: <b>em 1 dia útil</b>]]></string>
+    <string name="pos_virtual_rates_details_period_cash_credit_rr_disabled"><![CDATA[Crédito à Vista: <b>em 30 dias úteis</b>]]></string>
+    <string name="pos_virtual_rates_details_period_installment_cash_rr_enabled"><![CDATA[Crédito parcelado: <b>em 1 dia útil</b>]]></string>
+    <string name="pos_virtual_rates_details_period_installment_cash_rr_disabled"><![CDATA[Crédito parcelado: <b>no vencimento de cada parcela</b>]]></string>
+    <string name="pos_virtual_rates_details_title_card_rr_disabled">Contrate o Recebimento Automático em 1 dia útil</string>
+    <string name="pos_virtual_rates_details_title_card_rr_enabled">Sobre o recebimento em 1 dia útil</string>
+    <string name="pos_virtual_rates_details_description_card_rr_disabled">Diminua o prazo de recebimento das vendas no crédito ao contratar o Recebimento Automático em 1 dia na tela anterior.</string>
+    <string name="pos_virtual_rates_details_description_card_rr_enabled_cielo_tap">O recebimento em até 1 dia útil ocorrerá por meio da contratação do Recebimento Automático em 1 dia.</string>
+    <string name="pos_virtual_rates_details_description_card_rr_enabled_payment_link">Você precisa atingir dois meses consecutivos de faturamento com o Link de Pagamento para começar a receber em 1 dia útil. Esse recebimento ocorrerá por meio da contratação do Recebimento Automático em 1 dia.</string>
+    <string name="pos_virtual_rates_details_label_button_open_help_center">O que é o Recebimento Automático?</string>
+    <string name="pos_virtual_rates_details_content_description_label_button_open_help_center">O que é Recebimento Automático? Botão</string>
+    <string name="pos_virtual_rates_details_card_text_debit">Débito</string>
+    <string name="pos_virtual_rates_details_card_text_in_cash">À vista</string>
+    <string name="pos_virtual_rates_details_card_text_in_installment">Em %dx</string>
+    <string name="pos_virtual_rates_details_card_text_rate">%s%%</string>
+    <string name="pos_virtual_rates_details_title_faq_automatic_receipt">Recebimento Automático</string>
+
+    <string name="pos_virtual_accreditation_content_description_loading_infos">Carregando informações, aguarde um momento.</string>
+    <string name="pos_virtual_accreditation_rates_details_content_description_open_rates">Expandir parcelas da bandeira %s, botão</string>
+    <string name="pos_virtual_accreditation_rates_details_content_description_close_rates">Fechar parcelas da bandeira %s, botão</string>
+
+    <string name="pos_virtual_qr_code_insert_amount_title_bs_impossible_create_qr_code">Não foi possível criar o QR Code</string>
+    <string name="pos_virtual_qr_code_insert_amount_message_bs_time_out">Pedimos desculpas, ocorreu um erro na criação deste QR Code. Por favor, tente novamente.</string>
+    <string name="pos_virtual_qr_code_insert_amount_message_bs_invalid_amount">Não é possível criar um QR Code sem valor definido para Saque e Troco. Por favor, tente criar novamente uma cobrança com valor definido.</string>
+    <string name="pos_virtual_qr_code_insert_amount_message_bs_other_errors"><![CDATA[Não é possível criar um QR Code para Saque e Troco. Vamos resolver isso e você pode voltar para <b>tentar de novo mais tarde</b>, combinado?]]></string>
+    <string name="pos_virtual_qr_code_insert_amount_title_bs_limit_exceeded">Valor acima do limite para criação do QR Code</string>
+
+    <string name="pos_virtual_impersonating_subtitle">Para acessar o POS Virtual, troque de estabelecimento</string>
+
+    <string name="pos_virtual_home_label_button_see_rates_and_plans">Ver taxas e planos</string>
+
+</resources>

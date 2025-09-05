@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".simulator.simulation.presentation.simulation.SalesSimulationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/tv_title_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/text_simulator_title"
+            android:textColor="@color/display_600"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_sale_value_simulator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tv_sale_value_simulator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_sale_value_simulator"
+            app:srcCompat="@drawable/ic_money_circle" />
+
+        <TextView
+            android:id="@+id/tv_sale_value_simulator"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/text_simulator_sale_value"
+            android:textColor="@color/display_500"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_sale_value_simulator"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_simulator" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_sales_value_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/bg_flui_rounded_border"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sale_value_simulator">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_prefix_sales_value_simulator"
+                style="@style/Label_600_regular_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_12sp"
+                android:text="@string/cifrao"
+                android:textColor="@color/display_300"
+                app:layout_constraintBottom_toBottomOf="@id/edit_text_sales_value_simulator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/edit_text_sales_value_simulator" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/edit_text_sales_value_simulator"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/ubuntu"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:padding="@dimen/dimen_12sp"
+                android:text="@string/text_simulator_sale_value_hint"
+                android:textAlignment="textEnd"
+                android:textColor="@color/display_500"
+                android:textSize="@dimen/dimen_20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_prefix_sales_value_simulator"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_error_sales_value"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:textColor="@color/red_DC392A"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_sales_value_simulator"
+            tools:text="@string/text_simulator_select_error_maximum" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_sale_type_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@drawable/background_text_input_simulator"
+            android:padding="@dimen/dimen_8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_error_sales_value">
+
+            <TextView
+                android:id="@+id/tv_title_sales_type_simulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/text_simulator_sale_type"
+                android:textColor="@color/display_300"
+                android:textSize="@dimen/dimen_10sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_sales_type_simulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/text_simulator_sale_type_credit"
+                android:textColor="@color/display_400"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_sales_type_simulator" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_question_fees_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/text_simulator_installment_fees"
+            android:textColor="@color/display_500"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toBottomOf="@+id/container_sale_type_simulator" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_question_fees_simulator">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+                android:id="@+id/radio_button_store_simulator"
+                style="@style/Label_400_Alternate_16_display_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_42dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_tab_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/text_simulator_installment_store"
+                android:textAllCaps="false"
+                android:textColor="@drawable/radio_button_color_listener" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+                android:id="@+id/radio_button_client_simulator"
+                style="@style/Label_400_Alternate_16_display_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_42dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_tab_right"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/text_simulator_installment_client"
+                android:textAllCaps="false"
+                android:textColor="@drawable/radio_button_color_listener" />
+
+        </RadioGroup>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_choose_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_text_input_simulator"
+            android:paddingHorizontal="@dimen/dimen_8dp"
+            android:paddingVertical="@dimen/dimen_14dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_simulator">
+
+            <TextView
+                android:id="@+id/tv_choose_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/text_simulator_sale_type_credit"
+                android:textColor="@color/display_400"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_information_fees_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/text_simulator_fees_store"
+            android:textColor="@color/display_400"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintTop_toBottomOf="@+id/container_choose_product" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_select_brand_simulator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@drawable/bg_flui_rounded_border"
+            android:padding="@dimen/dimen_8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_information_fees_simulator">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_text_brand_simulator"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iv_select_brand_simulator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_hint_select_brand_simulator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:paddingBottom="@dimen/dimen_4dp"
+                    android:text="@string/text_simulator_select_brand"
+                    android:textColor="@color/display_400"
+                    android:textSize="@dimen/dimen_10sp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_select_brand_simulator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/text_simulator_select_brand"
+                    android:textColor="@color/display_500"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_hint_select_brand_simulator" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/iv_select_brand_simulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/container_text_brand_simulator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/container_text_brand_simulator"
+                app:layout_constraintTop_toTopOf="@id/container_text_brand_simulator"
+                app:srcCompat="@drawable/ic_arrow_down_tax" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="postecipado_title">Faturamento atual do plano Postecipado</string>
+    <string name="see_my_plan">Acompanhar meu plano</string>
+
+    <string name="goal_100_percent_achieved_completed_message"><![CDATA[Você atingiu a sua meta! Esse mês o valor do <b>seu aluguel será de R$ %s.</b>]]></string>
+    <string name="goal_50_percent_achieved_message"><![CDATA[Você atingiu a sua meta! Esse mês você terá <b>%s%% de desconto em seu aluguel.</b>]]></string>
+    <string name="goal_100_percent_achieved_discount_message">Você atingiu a sua meta! Esse mês você terá desconto em seus aluguéis.</string>
+    <string name="goal_100_percent_achieved_partial_message">Você atingiu a sua meta! Esse mês você terá isenção em seus aluguéis.</string>
+
+    <plurals name="current_goal_status_message">
+        <item quantity="one">Hoje é dia %1$s, falta %2$d dia para você atingir a sua meta.</item>
+        <item quantity="other">Hoje é dia %1$s, faltam %2$d dias para você atingir a sua meta.</item>
+    </plurals>
+
+    <string name="lack_of_reaching_the_goal">Falta para bater a meta</string>
+    <string name="revenue_target">Meta de faturamento</string>
+    <string name="period_to_reach_the_goal">Período para bater a meta: %s a %s</string>
+</resources>

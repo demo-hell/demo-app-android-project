@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_select_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/bold_montserrat_16_display_500_spacing_0"
+        android:text="@string/p2m_choose_period_time_two_days"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_button_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_brand_400_stroke_2_dp_radius_8_dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_select_tax">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_tax"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_radio_button_select"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_debit_p2m"
+                style="@style/regular_ubuntu_16_cloud_400_spacing_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/p2m_tax_period_debit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_deadline_debit_p2m"
+                style="@style/regular_ubuntu_14_cloud_300_spacing_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/p2m_receipt_deadline_one_day"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_debit_p2m" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_credit_p2m"
+                style="@style/regular_ubuntu_16_cloud_400_spacing_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/p2m_tax_period_debit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_deadline_debit_p2m" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_deadline_credit_p2m"
+                style="@style/regular_ubuntu_14_cloud_300_spacing_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/p2m_receipt_deadline_one_day"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_credit_p2m" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_radio_button_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="@id/container_tax"
+            app:layout_constraintTop_toTopOf="@id/container_tax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_regular_selected_radio_button_brand_400_24_dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/container_tax"
+            app:layout_constraintTop_toTopOf="@id/container_tax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_regular_radio_button_cloud_200_24_dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

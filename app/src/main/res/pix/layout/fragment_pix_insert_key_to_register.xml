@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".pix.ui.keys.myKeys.register.insert.PixInsertKeyToRegisterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/tv_title_new_key"
+            style="@style/label_18_display_500_montserrat_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/text_pix_create_key_phone_title" />
+
+        <TextView
+            android:id="@+id/tv_subtitle_new_key"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_new_key"
+            tools:text="@string/text_pix_create_key_phone_subtitle" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_transfer_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_new_key">
+
+            <br.com.cielo.libflue.inputtext.CieloInputText
+                android:id="@+id/input_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                app:hint="@string/text_pix_insert_key_transfer_hint_phone"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <br.com.cielo.libflue.inputtext.CieloInputText
+                android:id="@+id/input_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:visibility="gone"
+                app:hint="@string/text_pix_insert_key_transfer_hint_email"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

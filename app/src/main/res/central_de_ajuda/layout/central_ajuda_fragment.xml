@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_central_ajuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_central_ajuda"
+            tools:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants">
+
+            <!-- Header -->
+            <include
+                android:id="@+id/content_central_ajuda_header"
+                layout="@layout/content_header_ajuda" />
+
+            <!-- Gestor comercial -->
+            <include
+                android:id="@+id/content_central_ajuda_gestor_comercial"
+                layout="@layout/content_gestor_comercial" />
+
+            <!-- Telefones úteis -->
+            <include
+                android:id="@+id/content_central_ajuda_telefones_uteis"
+                layout="@layout/content_telefones_uteis" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_central_ajuda_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <include
+        android:id="@+id/linearHelpCenterError"
+        layout="@layout/content_error"
+        tools:visibility="visible"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+

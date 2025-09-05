@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_solesp"
+    app:startDestination="@id/solespStartFragment">
+
+    <fragment
+        android:id="@+id/solespStartFragment"
+        android:name="br.com.mobicare.cielo.solesp.ui.start.SolespStartFragment"
+        android:label="SolespStartFragment">
+
+        <action
+            android:id="@+id/action_solespStartFragment_to_solespSelectTypeInfoFragment"
+            app:destination="@id/solespSelectTypeInfoFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/solespSelectTypeInfoFragment"
+        android:name="br.com.mobicare.cielo.solesp.ui.selectTypeInfo.SolespSelectTypeInfoFragment"
+        android:label="SolespSelectTypeInfoFragment">
+
+        <action
+            android:id="@+id/action_solespSelectTypeInfoFragment_to_solespSelectPeriodFragment"
+            app:destination="@id/solespSelectPeriodFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/solespSelectPeriodFragment"
+        android:name="br.com.mobicare.cielo.solesp.ui.selectPeriod.SolespSelectPeriodFragment"
+        android:label="SolespSelectPeriodFragment">
+
+        <action
+            android:id="@+id/action_solespSelectPeriodFragment_to_solespInfoSendFragment"
+            app:destination="@id/solespInfoSendFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <argument
+            android:name="SOLESP_MODEL_ARGS"
+            app:argType="br.com.mobicare.cielo.solesp.model.SolespModel" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/solespInfoSendFragment"
+        android:name="br.com.mobicare.cielo.solesp.ui.infoSend.SolespInfoSendFragment"
+        android:label="SolespInfoSendFragment">
+
+        <argument
+            android:name="SOLESP_MODEL_ARGS"
+            app:argType="br.com.mobicare.cielo.solesp.model.SolespModel" />
+
+    </fragment>
+
+</navigation>

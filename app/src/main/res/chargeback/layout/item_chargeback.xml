@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_chargeback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:background="@drawable/background_item_chargeback_cloud_0"
+    app:cardCornerRadius="@dimen/dimen_8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_value_chargeback"
+        style="@style/Label_100_ubuntu_bold_16_brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="R$ 1.000.000,00" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_value_chargeback"
+        app:srcCompat="@drawable/ic_mastercard_regular"
+        android:importantForAccessibility="yes"/>
+
+    <br.com.cielo.libflue.label.CieloTagLabel
+        android:id="@+id/tl_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginVertical="@dimen/dimen_14dp"
+        app:layout_constraintBottom_toBottomOf="@id/ic_card_logo"
+        app:layout_constraintEnd_toStartOf="@id/iv_chevron_right"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/ic_card_logo"
+        app:layout_constraintTop_toTopOf="@id/ic_card_logo"
+        app:tagIcon="@drawable/ic_check_rounded"
+        app:textStyleFormat="@style/Label_100_regular_14_success_500"
+        tools:text="Recusado" />
+
+    <ImageView
+        android:id="@+id/iv_chevron_right"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="@id/tl_status_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_value_chargeback"
+        app:srcCompat="@drawable/ic_chevron_right_gray"
+        android:contentDescription="@string/chargeback_accessibility_button_details" />
+
+    <View
+        android:id="@+id/vw_divide_card_chargeback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@color/color_cloud_200"
+        app:layout_constraintTop_toBottomOf="@id/ic_card_logo" />
+
+    <ImageView
+        android:id="@+id/iv_establishment_icon"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        app:layout_constraintStart_toStartOf="@id/vw_divide_card_chargeback"
+        app:layout_constraintTop_toTopOf="@id/vw_divide_card_chargeback"
+        app:srcCompat="@drawable/ic_store_gray"
+        android:importantForAccessibility="no"/>
+
+    <TextView
+        android:id="@+id/tv_establishment_code"
+        style="@style/Label_100_regular_14_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_establishment_icon"
+        app:layout_constraintStart_toEndOf="@id/iv_establishment_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_establishment_icon"
+        tools:text="1234567890" />
+
+    <ImageView
+        android:id="@+id/iv_icon_case"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_establishment_code"
+        app:layout_constraintStart_toEndOf="@id/tv_establishment_code"
+        app:layout_constraintTop_toTopOf="@id/tv_establishment_code"
+        app:srcCompat="@drawable/ic_file_text"
+        android:importantForAccessibility="no"/>
+
+    <TextView
+        android:id="@+id/tv_case_code"
+        style="@style/Label_100_regular_14_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icon_case"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_icon_case"
+        app:layout_constraintTop_toTopOf="@id/iv_icon_case"
+        tools:text="1111111111" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_status_pending_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="@id/card_chargeback"
+        app:layout_constraintStart_toStartOf="@id/iv_establishment_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_establishment_icon">
+
+        <ImageView
+            android:id="@+id/iv_icon_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flag"
+            android:importantForAccessibility="no"/>
+
+        <TextView
+            android:id="@+id/tv_status_pending"
+            style="@style/Label_100_regular_14_cloud_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            tools:text="Teste" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_status_treated_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/card_chargeback"
+        app:layout_constraintTop_toBottomOf="@id/iv_establishment_icon">
+
+        <ImageView
+            android:id="@+id/iv_icon_flag_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_small_active"
+            android:importantForAccessibility="no"/>
+
+        <TextView
+            android:id="@+id/tv_status_treated"
+            style="@style/Label_100_regular_14_success_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            tools:text="Em análise com o Emissor"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

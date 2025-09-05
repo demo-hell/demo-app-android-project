@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        android:text="@string/pix_key_bank_account_search_not_found"
+        android:visibility="gone" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_100dp"
+        app:indicatorColor="@color/brand_400"
+        android:indeterminate="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>
+

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_fidelidade_help"
+        android:title="@string/extrato_menu_help"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_menu_logado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/content_menu_header"
+                layout="@layout/menu_logado_header" />
+
+            <LinearLayout
+                android:id="@+id/layout_item_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_inicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_inicio"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_minhas_vendas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_minhas_vendas"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_recebimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_meus_recebimentos"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_meus_cancelamentos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_meus_cancelamentos"
+                    android:textColor="@drawable/menu_text_color"
+                    android:visibility="gone"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_simulador_receba_mais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:padding="16dp"
+                    android:text="@string/menu_receba_mais_simulacao"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_antecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_meus_antecipe"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_auto_atendimento"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_auto_atendimento"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_farol"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_farol"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_produtos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:padding="16dp"
+                    android:text="@string/menu_meus_produtos"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_fidelidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:padding="16dp"
+                    android:text="@string/menu_meus_fidelidade"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textLinkPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/text_menu_link_payment"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.2"
+                    android:background="@color/gray_light" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_cadastro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_meu_cadastro"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_taxa_plano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_taxa_plano"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_meus_cartoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:visibility="gone"
+                    android:text="@string/menu_meus_cartoes"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_ajuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_central_ajuda"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_notificacoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_notificacoes"
+                    android:visibility="gone"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.2"
+                    android:background="@color/gray_light" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_menu_opniao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_menu_opniao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/menu_opniao"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_arrow_link" />
+
+                </RelativeLayout>
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_sobre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_sobre"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_menu_cielo_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:paddingBottom="16dp">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_menu_cielo_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="@string/menu_cielo_mobile"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textview_menu_cielo_mobile"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/menu_cielo_mobile_description"
+                        android:textColor="@color/gray_light"
+                        android:textSize="12sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginTop="12dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_arrow_link" />
+
+                </RelativeLayout>
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_menu_sair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button_shape"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="@string/menu_sair"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_menu_lista_ec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

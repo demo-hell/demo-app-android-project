@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_legacy_user_receive_invite"
+    app:startDestination="@id/inviteLegacyUserAcceptFragment">
+
+    <fragment
+        android:id="@+id/inviteLegacyUserAcceptFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.legacy.invite.accept.InviteLegacyUserAcceptFragment"
+        android:label="InviteLegacyUserAcceptFragment"
+        tools:layout="@layout/fragment_invite_legacy_user_accept">
+        <action
+            android:id="@+id/action_inviteLegacyUserAcceptFragment_to_inviteLegacyUserAcceptedFragment"
+            app:destination="@id/inviteLegacyUserAcceptedFragment" />
+        <argument
+            android:name="PENDING_INVITE_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.model.PendingInviteItem" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inviteLegacyUserAcceptedFragment"
+        android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.legacy.invite.accept.InviteLegacyUserAcceptedFragment"
+        android:label="InviteLegacyUserAcceptedFragment"
+        tools:layout="@layout/fragment_invite_legacy_user_accepted">
+        <argument
+            android:name="PENDING_INVITE_ARGS"
+            app:argType="br.com.mobicare.cielo.accessManager.model.PendingInviteItem" />
+        <argument
+            android:name="ONBOARDING_REQUIRED_ARGS"
+            app:argType="boolean" />
+    </fragment>
+
+</navigation>

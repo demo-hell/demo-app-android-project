@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/toolbarTechnicalSupportProblem"
+        layout="@layout/toolbar_main" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTechnicalSupportNewItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"/>
+
+    <include
+        android:id="@+id/frameTechnicalItemsProgress"
+        layout="@layout/frame_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/errorTechnicalItems"
+        layout="@layout/content_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

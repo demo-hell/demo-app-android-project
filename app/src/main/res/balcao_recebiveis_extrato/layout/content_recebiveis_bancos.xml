@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_meus_recebimentos_bancos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_5dp">
+
+        <ProgressBar
+            android:id="@+id/loadingReceivablesBankAccounts"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listRecebimentosBancos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:visibility="gone"/>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tvAmountEmptyBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/dimen_40dp"
+            android:paddingBottom="@dimen/dimen_40dp"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/tv_list_empty_negotiations_bank"
+            android:textColor="@color/color_5A646E"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <include
+            android:id="@+id/layoutBankCardError"
+            android:layout_height="@dimen/dimen_150dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:visibility="gone"
+            layout="@layout/layout_card_error_extrato" />
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f4f8f9"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16dp"
+    tools:context="br.com.mobicare.cielo.pagamentoLink.delivery.address.CollectAddressFragment">
+
+    <TextView
+        android:id="@+id/titleCollectAddressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/address_text_view_phone"
+        android:focusable="true"
+        android:textColor="@color/black_353A40"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <FrameLayout
+        android:id="@+id/phoneNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/background_white_arround"
+        android:padding="@dimen/dimen_16dp">
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hint="@string/address_phone_hint"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/address_title"
+        android:textColor="@color/black_353A40"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/background_white_arround"
+            android:padding="@dimen/dimen_16dp">
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/zipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hint="@string/address_zipcode_hint"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintOthers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/zipCode">
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/inputAddressType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:hint="@string/address_address_type"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <View
+                    android:id="@+id/viewAddressType"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_0dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_down"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/addressTypeOthers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:hint="@string/address_address_type_others"
+                android:visibility="gone"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintOthers" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:hint="@string/address_address_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addressTypeOthers" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/number"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_6dp"
+                app:hint="@string/address_number_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/complement"
+                app:layout_constraintTop_toBottomOf="@id/address" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/complement"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:hint="@string/address_complement_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintLeft_toRightOf="@id/number"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/address" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/neighborhood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:hint="@string/address_neighborhood_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/number" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/city"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_6dp"
+                app:hint="@string/address_city_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/state"
+                app:layout_constraintTop_toBottomOf="@id/neighborhood" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/state"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:hint="@string/address_state_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                app:layout_constraintLeft_toRightOf="@id/city"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/neighborhood" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".pix.ui.mylimits.trusteddestinations.add.PixMyLimitsAddNewTrustedDestinationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/dimen_16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_summary_trusted_destination"
+            style="@style/label_18_display_500_montserrat_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/pix_text_my_limits_add_new_trusted_destination_subtitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_trusted_destination_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+            android:padding="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_summary_trusted_destination">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_trusted_destination_information_title"
+                style="@style/label_12_brand_600_ubuntu_bold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:text="@string/text_pix_my_limits_trusted_detail_data"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/container_destination_information"
+                layout="@layout/layout_pix_payment_destination_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_trusted_destination_information_title" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@color/display_200"
+                app:layout_constraintTop_toBottomOf="@+id/container_destination_information" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_limit_trusted_destination_title"
+                style="@style/label_12_brand_600_ubuntu_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/pix_text_my_limits_add_new_trusted_destination_limit_title"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_value_title"
+                style="@style/label_12_display_400_ubuntu_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:text="@string/text_pix_summary_transfer_value_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_limit_trusted_destination_title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_value"
+                style="@style/label_14_brand_400_ubuntu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:drawableEnd="@drawable/ic_edit_16dp"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:text="@string/text_pix_enter_amount_value_zero"
+                android:textSize="@dimen/dimen_24sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_value_title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_greater_than_zero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:drawableStart="@drawable/ic_alert_16dp"
+                android:drawablePadding="@dimen/dimen_9dp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_2sp"
+                android:text="@string/pix_text_my_limits_add_new_trusted_destination_greater_than_zero"
+                android:textColor="@color/alert_500"
+                android:textSize="@dimen/dimen_12sp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tv_value" />
+
+            <include
+                android:id="@+id/container_informative"
+                layout="@layout/layout_pix_informative_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_greater_than_zero" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_cancel"
+            style="@style/light_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:layout_marginBottom="@dimen/dimen_2dp"
+            android:text="@string/pix_text_my_limits_add_new_trusted_destination_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_trusted_destination_information"
+            app:layout_constraintVertical_bias="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

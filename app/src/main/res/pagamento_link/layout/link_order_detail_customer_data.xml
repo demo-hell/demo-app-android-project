@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Heading_400_Bold_16_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/link_detail_customer_label" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/background_card_cielo_default"
+            android:padding="@dimen/dimen_12dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCostomerLabel"
+                style="@style/payment_link_order_details_label"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:text="@string/link_detail_customer_content_client"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textViewCustomerName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCustomerName"
+                style="@style/payment_link_order_details_data"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                app:layout_constraintLeft_toRightOf="@id/textViewCostomerLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Gilson Ferreira" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewPhoneLabel"
+                style="@style/payment_link_order_details_label"
+                android:text="@string/link_detail_customer_content_phone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textViewPhoneData"
+                app:layout_constraintTop_toBottomOf="@id/textViewCostomerLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewPhoneData"
+                style="@style/payment_link_order_details_data"
+                app:layout_constraintLeft_toRightOf="@id/textViewPhoneLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewCustomerName"
+                tools:text="(11) 91234-5678" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEmailLabel"
+                style="@style/payment_link_order_details_label"
+                android:gravity="end"
+                android:text="@string/link_detail_customer_content_email"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textViewEmailData"
+                app:layout_constraintTop_toBottomOf="@id/textViewPhoneLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEmailData"
+                style="@style/payment_link_order_details_data"
+                app:layout_constraintLeft_toRightOf="@id/textViewEmailLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewPhoneData"
+                tools:text="gferreira@gmail.com" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewAddressLabel"
+                style="@style/payment_link_order_details_label"
+                android:text="@string/link_detail_customer_content_address"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textViewAddressData"
+                app:layout_constraintTop_toBottomOf="@id/textViewEmailLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewAddressData"
+                style="@style/payment_link_order_details_data"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/textViewAddressLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewEmailData"
+                tools:text="Rua das Olimpiadas, 434 - Vila Olímpia, 00030-030 São Paulo - SP" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

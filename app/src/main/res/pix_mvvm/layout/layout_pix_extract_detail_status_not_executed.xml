@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16dp">
+
+   <LinearLayout
+       android:id="@+id/containerAlert"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="@dimen/dimen_16dp"
+       android:orientation="horizontal"
+       android:background="@color/red_100">
+
+       <ImageView
+           android:id="@+id/ivPending"
+           android:layout_width="@dimen/dimen_24dp"
+           android:layout_height="@dimen/dimen_24dp"
+           android:layout_marginTop="@dimen/dimen_4dp"
+           android:src="@drawable/ic_error_around_danger_400"
+           app:tint="@color/red_600"
+           android:importantForAccessibility="no" />
+
+       <TextView
+           android:id="@+id/tvErrorMessage"
+           android:layout_width="@dimen/dimen_0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_marginStart="@dimen/dimen_16dp"
+           android:textAppearance="@style/medium_montserrat_14"
+           android:textColor="@color/contrast_1000"
+           android:lineSpacingExtra="@dimen/dimen_3sp"
+           android:text="@string/pix_extract_detail_status_error_description"
+           tools:ignore="InefficientWeight" />
+
+   </LinearLayout>
+
+    <include
+        layout="@layout/include_pix_extract_detail_status_content"
+        android:id="@+id/includeContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp" />
+
+    <include
+        layout="@layout/include_pix_extract_detail_status_info"
+        android:id="@+id/includeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp" />
+
+</LinearLayout>

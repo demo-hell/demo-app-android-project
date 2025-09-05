@@ -1,0 +1,24 @@
+{
+  "pages":[
+    {
+      "title": "Acompanhe suas vendas",
+      "subtitle": "Acesse seu extrato em tempo real e consulte suas vendas. Você ainda pode visualizar e enviar os seus comprovantes para seus clientes."
+    },
+    {
+      "title": "Veja seu histórico de vendas",
+      "subtitle": "Você ainda pode olhar no detalhe todas as suas vendas e consultar seu histórico dentro do extrato."
+    },
+    {
+      "title": "Saiba quando irá receber",
+      "subtitle": "Navegue pelo gráfico de seus recebimentos e veja os valores a receber em cada conta bancária."
+    },
+    {
+      "title": "Confira seus dados cadastrais",
+      "subtitle": "Veja seu cadastro e consulte soluções, produtos contratados, bandeiras habilitadas e taxas."
+    },
+    {
+      "title": "Central de Ajuda",
+      "subtitle": "Resolva tudo da sua máquina e tire suas dúvidas no chat online dentro da Central de Ajuda. Tudo fácil de acessar em um único lugar."
+    }
+  ]
+}

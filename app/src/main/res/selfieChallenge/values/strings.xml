@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selfie_challenge_title">Vamos tirar uma foto do seu rosto?</string>
+    <string name="selfie_challenge_subtitle">Siga as dicas abaixo e capriche na selfie! Essa foto será usada apenas para confirmar a sua identidade.</string>
+    <string name="selfie_challenge_glasses">Retire os óculos e outros acessórios como boné, capuz ou gorro</string>
+    <string name="selfie_challenge_sun">Escolha um ambiente bem iluminado e com uma parede neutra ao fundo</string>
+    <string name="selfie_challenge_position">Segure o celular na altura dos seus olhos e encaixe  o rosto no local que vai ser indicado na tela</string>
+    <string name="selfie_challenge_privacy"><![CDATA[Entenda como tratamos seus dados pessoais em nossa <b><font color=#0774E7>Politica de Privacidade da Cielo</font></b>]]></string>
+    <string name="selfie_challenge_button">Abrir câmera</string>
+    <string name="selfie_challenge_unico_error_message">Ocorreu um erro ao tentar abrir a câmera</string>
+    <string name="selfie_challenge_permission_title">Tem certeza que deseja negar o acesso a câmera?</string>
+    <string name="selfie_challenge_permission_message">Atenção! Para dar continuidade no processo, é necessário habilitar a câmera.</string>
+    <string name="selfie_challenge_permission_not_enable">Não desejo habilitar</string>
+    <string name="selfie_challenge_permission_enable">Acessar ajustes para habilitar</string>
+    <string name="selfie_challenge_selfie_error_message">Não foi possível capturar sua selfie agora. Por favor, tente novamente mais tarde</string>
+    <string name="selfie_challenge_bs_alert_title">Tem certeza que deseja negar o acesso a câmera?</string>
+    <string name="selfie_challenge_bs_alert_subtitle">Atenção! Para dar continuidade no processo, é necessário habilitar a câmera do seu dispositivo.</string>
+    <string name="selfie_challenge_bs_alert_button_cancel">Não desejo habilitar</string>
+    <string name="selfie_challenge_bs_alert_button_confirm">Acessar ajustes para habilitar</string>
+
+    <!-- StoneAge SDK -->
+    <string name="selfie_challenge_unknown_error_message">Parece que tivemos algum problema por aqui. Vamos resolver isso e você pode voltar para tentar de novo mais tarde, combinado?</string>
+    <string name="selfie_challenge_error_title">Não conseguimos validar sua foto</string>
+    <string name="selfie_challenge_image_not_good_message">A imagem enviada está com a qualidade muito baixa, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_no_face_detected_message">Nenhum rosto foi detectado na foto enviada, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_too_many_faces_message">Foi encontrado mais de um rosto na foto enviada, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_wearing_hat_message">Detectamos que você está usando boné na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_wearing_glasses_message">Detectamos que você está usando óculos na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_wearing_mask_message">Detectamos que você está usando máscara na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_face_not_centered_message">Centralize o seu rosto na área demarcada e tente novamente.</string>
+    <string name="selfie_challenge_face_too_far_message">Rosto muito distante da câmera, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_face_is_smiling_message">Detectamos que você está sorrindo na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_face_too_close_message">Rosto muito próximo da câmera, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_face_too_bright_message">Ambiente muito claro, não conseguimos detectar o seu rosto, siga as instruções e tente novamente.</string>
+    <string name="selfie_challenge_face_too_dark_message">Ambiente muito escuro, não conseguimos detectar o seu rosto, siga as instruções e tente novamente.</string>
+</resources>

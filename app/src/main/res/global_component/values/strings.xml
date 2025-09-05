@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="global_account_choose_title">Selecione o tipo de conta</string>
+    <string name="global_account_choose_digital_account_button">Bancária</string>
+    <string name="global_account_choose_digital_button">Conta Digital</string>
+
+    <string name="global_account_profile_choose_title">Perfil da conta</string>
+    <string name="global_account_profile_choose_physics_hint">Pessoa Física</string>
+    <string name="global_account_profile_choose_legal_hint">Pessoa Jurídica</string>
+
+    <string name="global_establishment_number_short_hint">Nº do estabelecimento</string>
+    <string name="global_series_number_hint">Número de série</string>
+
+</resources>

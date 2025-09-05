@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorHandlerCieloUserLoan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cieloErrorButtonLabel="@string/text_close"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorMessage="@string/text_user_loan_register_error_message"
+        app:cieloErrorTitle="@string/text_title_generic_error" />
+
+    <include
+        android:id="@+id/frameUserLoanProgress"
+        layout="@layout/frame_progress"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scrollUserLoanSimulation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linearUserLoanSimulationContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/linearLoanSimulationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageSimulationIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    app:srcCompat="@drawable/ic_user_loan_simulation" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textLoanSimulationTitle"
+                    style="@style/TextBlack16spTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/text_simulation_title_label"
+                    tools:text="Simule agora" />
+
+            </LinearLayout>
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textLoanSimulationDescription"
+                style="@style/Text12spGrey707070"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_user_loan_description_template"
+                tools:text="@string/text_user_loan_description_template" />
+
+            <FrameLayout
+                android:id="@+id/frameLoanSimulationContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

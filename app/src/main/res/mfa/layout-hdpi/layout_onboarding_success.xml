@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_99000000">
+
+        <LinearLayout
+            android:id="@+id/content_constrant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_welcome_notification"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="0.35"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/txt_toobar_name"
+                        style="@style/TxtToobarNameNormal"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="Confirmação de envio"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/btn_close"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_icon_close"
+                            android:visibility="invisible"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="0.01"
+                android:background="@color/color_grey_B8B8B8"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="4.6"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25"
+                tools:ignore="MissingConstraints">
+
+
+                <ImageView
+                    android:id="@+id/img_bottom_sheet"
+                    android:layout_width="@dimen/dimen_180dp"
+                    android:layout_height="@dimen/dimen_180dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/ic_img_verify_bank_account_successful" />
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/txt_title"
+                    style="@style/TxtTitleBlueBold"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/text_title_verify_your_bank_account"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_bottom_sheet"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/txt_subtitle"
+                    style="@style/TxtSubtitleBlackNormal"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/text_onboarding_success_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_title"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textViewSubtitleSecond"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/text_onboarding_success_text_subtitle"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/dimen_12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_subtitle" />
+
+                <br.com.cielo.libflue.button.CieloRegularBlueButton
+                    android:id="@+id/buttonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/ok"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

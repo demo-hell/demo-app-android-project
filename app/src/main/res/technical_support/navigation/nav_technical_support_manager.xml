@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_technical_support_manager"
+    app:startDestination="@id/requestSupportWithoutMachineFragment">
+
+    <fragment
+        android:id="@+id/requestSupportWithoutMachineFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.RequestSupportWithoutMachineFragment"
+        android:label="fragment_request_support_without_machine"
+        tools:layout="@layout/fragment_request_support_without_machine">
+
+        <action
+            android:id="@+id/action_requestSupportWithoutMachineFragment_to_requestTicketSupportFragment"
+            app:destination="@id/requestTicketSupportFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/requestSupportWithoutMachineFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/requestTicketSupportFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.RequestTicketSupportFragment"
+        android:label="fragment_request_ticket_support"
+        tools:layout="@layout/fragment_request_ticket_support">
+
+        <action
+            android:id="@+id/action_requestTicketSupportFragment_to_merchantEquipamentsFragment"
+            app:destination="@id/merchantEquipamentsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/requestTicketSupportFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/merchantEquipamentsFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.MerchantEquipmentsFragment"
+        android:label="fragment_merchant_equipaments"
+        tools:layout="@layout/fragment_merchant_equipments">
+        <action
+            android:id="@+id/action_merchantEquipmentsFragment_to_problemListFragment"
+            app:destination="@id/problemListFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/merchantEquipamentsFragment" />
+        <action
+            android:id="@+id/action_merchantEquipmentsFragment_to_helpAboutMachineFragment"
+            app:destination="@id/helpAboutMachineFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/merchantEquipamentsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/helpAboutMachineFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.HelpAboutMachineFragment"
+        android:label="fragment_help_about_machine"
+        tools:layout="@layout/fragment_help_about_machine" />
+
+    <fragment
+        android:id="@+id/problemListFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.ProblemListFragment"
+        android:label="fragment_problem_list"
+        tools:layout="@layout/fragment_problem_list">
+
+        <argument
+            android:name="requestTicket"
+            app:argType="br.com.mobicare.cielo.suporteTecnico.data.OpenTicket" />
+        <action
+            android:id="@+id/action_problemListFragment_to_centralOpenTicketFragment"
+            app:destination="@id/centralOpenTicketFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/problemListFragment" />
+        <action
+            android:id="@+id/action_problemListFragment_to_resumeOpenTicketFragment"
+            app:destination="@id/resumeOpenTicketFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/problemListFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/centralOpenTicketFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.CentralOpenTicketFragment"
+        android:label="fragment_central_open_ticket"
+        tools:layout="@layout/fragment_central_open_ticket" />
+
+    <fragment
+        android:id="@+id/resumeOpenTicketFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.ResumeOpenTicketFragment"
+        android:label="fragment_resume_open_ticket"
+        tools:layout="@layout/fragment_resume_open_ticket">
+
+        <argument
+            android:name="requestTicket"
+            app:argType="br.com.mobicare.cielo.suporteTecnico.data.OpenTicket" />
+
+        <argument
+            android:name="problemSelected"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resumeOpenTicketFragment_to_reviewInformationTicketFragment"
+            app:destination="@id/reviewInformationTicketFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/resumeOpenTicketFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/reviewInformationTicketFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.ReviewInformationTicketFragment"
+        android:label="fragment_review_information_ticket"
+        tools:layout="@layout/fragment_review_information_ticket">
+
+        <argument
+            android:name="requestTicket"
+            app:argType="br.com.mobicare.cielo.suporteTecnico.data.OpenTicket" />
+
+        <argument
+            android:name="problemSelected"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_reviewInformationTicketFragment_to_requestSuccessfullyOpenedFragment"
+            app:destination="@id/requestSuccessfullyOpenedFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/reviewInformationTicketFragment"  />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/requestSuccessfullyOpenedFragment"
+        android:name="br.com.mobicare.cielo.suporteTecnico.presentation.fragment.RequestSuccessfullyOpenedFragment"
+        android:label="RequestSuccessfullyOpenedFragment"
+        tools:layout="@layout/fragment_request_successfully_opened">
+
+    <argument
+        android:name="OrderReplacementResponse"
+        app:argType="br.com.mobicare.cielo.orders.domain.OrderReplacementResponse"
+        />
+
+    </fragment>
+
+</navigation>

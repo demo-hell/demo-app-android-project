@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="flex_tag_without_update">Sem atualização</string>
+    <string name="flex_tag_in_transit">Em trânsito</string>
+    <string name="flex_tag_attended">Atendido</string>
+    <string name="flex_tag_unrealized">Não realizado</string>
+    <string name="flex_tag_rescheduled">Reagendado</string>
+    <string name="flex_tag_in_resolution">Em resolução</string>
+
+
+    <string name="attended_date">Atendido em</string>
+    <string name="attended_date_point">Atendido em:</string>
+    <string name="resolution_date_point">Data da resolução:</string>
+    <string name="estimated">Previsão:</string>
+    <string name="solution_deadline">Prazo p/ resolução:</string>
+    <string name="request_date">Data da solicitação:</string>
+    <string name="request_date_point">Data da solicitação:</string>
+    <string name="request_type">Tipo de solicitação</string>
+    <string name="request_type_point">Tipo de solicitação:</string>
+    <string name="my_requests_subtitle_string">Acompanhe o status das suas solicitações.</string>
+    <string name="my_requests_title_string">Minhas solicitações</string>
+    <string name="tab_title_maquinas">Maquininhas</string>
+    <string name="tab_title_chamados">Chamados</string>
+    <string name="request_protocol">Protocolo:</string>
+    <string name="machine_model">Modelo</string>
+    <string name="machine_logical_number">Número lógico</string>
+    <string name="new_equipment_data_title">Dados do novo equipamento</string>
+    <string name="request_search">Buscar</string>
+
+    <string name="machine_request_details_title">Detalhes da solicitação</string>
+    <string name="estimated_attendance">Previsão do atendimento</string>
+    <string name="machine_establishment">Estabelecimento</string>
+    <string name="machine_contact_data">Dados para contato</string>
+    <string name="machine_mode">Modalidade</string>
+    <string name="need_help_with_machine">Precisa de ajuda com alguma maquininha?</string>
+    <string name="machine_diagnostic_explain">Faça um diagnóstico remoto que podem ser realizadas por você.</string>
+    <string name="machine_open_technical_support_title">Abrir suporte técnico</string>
+    <string name="machine_detail_contact">%s\n%s</string>
+    <string name="machine_logical_number_value">ID %s</string>
+
+    <string name="my_request_filter_status_finished">Finalizado</string>
+    <string name="my_request_filter_status_opened">Em aberto</string>
+    <string name="my_request_filter_request_date_title">Data da solicitação</string>
+    <string name="my_request_filter_request_type_title">Tipo da solicitação</string>
+    <string name="my_request_filter_request_status_title">Visualizar apenas chamados</string>
+    <string name="my_requests_error_title_string">Pedimos desculpas mas ocorreu um erro para carregar essa área. Tente recarregar ou volte mais tarde.</string>
+    <string name="request_machine">Solicitar Maquininha</string>
+    <string name="request_materials">Solicitar Materiais</string>
+    <string name="my_requests_nothing_yet_desc_string">Deseja realizar alguma solicitação? Acesse:</string>
+    <string name="my_requests_nothing_yet_string">Olá. Por enquanto você não fez nenhum pedido de maquininhas.</string>
+    <string name="my_calls_nothing_yet_string">Olá. Por enquanto você não abriu nenhum outro chamado.</string>
+    <string name="my_requests_nothing_yet_filtered_string">Olá. Não encontramos nenhuma solicitação com a combinação de filtros. O que deseja fazer?</string>
+    <string name="my_calls_request_string">Olá. Não encontramos nenhuma solicitação com base nos termos da busca. Tente escrever outros termos.</string>
+    <string name="five_days_to_remove">Os dados e informações do equipamento removido, tem o prazo de 5 dias para sair dos canais digitais.</string>
+    <string name="tab_title_machines">Maquininhas</string>
+    <string name="tab_title_calls">Chamados</string>
+    <string name="text_until_one_working_day">Até 1 dia útil</string>
+
+
+    <string-array name="filter_events_status">
+        <item>@string/my_request_filter_status_opened</item>
+        <item>@string/my_request_filter_status_finished</item>
+    </string-array>
+
+    <string-array name="filter_request_date">
+        <item>Ver tudo</item>
+        <item>Hoje</item>
+        <item>Ontem</item>
+        <item>Últimos 7 dias</item>
+        <item>Últimos 30 dias</item>
+        <item>Últimos 90 dias</item>
+    </string-array>
+
+    <string-array name="filter_machine_request_type">
+        <item>Todos os tipos</item>
+        <item>Entrega/Instalação</item>
+        <item>Desinstalação</item>
+        <item>Manutenção (Visita Técnica)</item>
+        <item>Troca de tecnologia</item>
+    </string-array>
+
+    <string name="clean">Limpar</string>
+    <string name="clean_last_filter">Limpar último filtro aplicado</string>
+    <string name="clean_all_filter">Limpar todos os filtros</string>
+    <string name="back_to_begin">Voltar para o início</string>
+    <string name="apply">Aplicar</string>
+
+    <string name="machine_images_are_illustrative">*As imagens das maquininhas são meramente ilustrativas</string>
+
+    <plurals name="my_calls_deadline">
+        <item quantity="one">%d dia útil</item>
+        <item quantity="other">%d dias úteis</item>
+    </plurals>
+</resources>

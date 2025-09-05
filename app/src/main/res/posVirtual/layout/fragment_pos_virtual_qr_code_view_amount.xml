@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_8dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <TextView
+        style="@style/regular_montserrat_center_20_brand_600_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_title_pos_virtual_qr_code_view"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivQrCodeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_48dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/qr_code_image_content_description"
+        android:importantForAccessibility="yes"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/tvShowQrCode"
+        app:srcCompat="@drawable/img_qr_code_not_found" />
+
+    <TextView
+        android:id="@+id/tvQRCodeString"
+        style="@style/semi_bold_montserrat_14_brand_400_spacing_minus_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_14dp"
+        android:layout_marginTop="@dimen/dimen_26dp"
+        android:contentDescription="@string/content_description_pos_virtual_qr_code_view_copy_code"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAlignment="center"
+        app:drawableEndCompat="@drawable/ic_actions_copy_brand_400_16_dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00020101021226720014br.gov.b-cb.pix" />
+
+    <TextView
+        android:id="@+id/tvShareQRCode"
+        style="@style/semi_bold_montserrat_14_brand_400_spacing_minus_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_34dp"
+        android:contentDescription="@string/content_description_pos_virtual_qr_code_view_share_code"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:gravity="center"
+        android:text="@string/share"
+        android:textAlignment="center"
+        app:drawableEndCompat="@drawable/ic_multimidia_share_brand_400_16_dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/includeQrCodeDetails"
+        layout="@layout/layout_pos_virtual_qr_code_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25dp" />
+
+</LinearLayout>

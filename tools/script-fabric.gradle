@@ -1,0 +1,15 @@
+// release notes
+ext.betaDistributionReleaseNotes="Build gerado automaticamente"
+// add testers
+ext.betaDistributionEmails="benhur.souza@m4u.com.br, benhur.quintino@gmail.com"
+// add group aliases
+//ext.betaDistributionGroupAliases="my-best-testers"
+//
+//task cieloBeta() {
+//    finalizedBy ':app:crashlyticsUploadDistributionRelease'
+//}
+//
+//configure(cieloRelease) {
+//    group = gradle.groupCielo
+//    description = 'Envia release para o Beta'
+//}

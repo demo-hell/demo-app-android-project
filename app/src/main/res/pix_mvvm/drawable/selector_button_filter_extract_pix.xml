@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/background_cielo_opacity_12_stroke_1_5_dp_cielo_opacity_32_radius_8_dp" android:state_selected="true" />
+    <item android:drawable="@drawable/background_white_stroke_1_5_dp_border_neutral_radius_8_dp" android:state_selected="false" />
+</selector>

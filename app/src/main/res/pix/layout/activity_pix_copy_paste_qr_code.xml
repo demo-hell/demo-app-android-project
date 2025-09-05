@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCopyPasteLabel"
+        style="@style/Heading_500_18_display_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="@string/pix_copy_paste_screen_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etQrCodeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@drawable/custom_edit_text"
+        android:baselineAlignedChildIndex="0"
+        android:minHeight="@dimen/dimen_272dp"
+        android:padding="@dimen/dimen_8dp"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/tvCopyPasteLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:background="@null"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="top"
+            android:hint="@string/pix_copy_paste_screen_hint"
+            android:imeOptions="actionGo|actionDone"
+            android:inputType="textMultiLine"
+            android:minHeight="@dimen/dimen_272dp"
+            android:textColor="@color/display_500"
+            android:textColorHint="@color/display_300"
+            android:textSize="@dimen/dimen_16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvPasteCode"
+        style="@style/label_16_brand_400_montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pix_paste_qr_code"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etQrCodeLayout" />
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/btnCopyPasteNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@color/blue_0774E7"
+        android:enabled="false"
+        android:text="@string/text_next_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_E6FFFFFF"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/dimen_150dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_centerInParent="true"
+            android:theme="@style/progress_bar_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

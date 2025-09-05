@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mcn_text_title_section_address">ENDEREÇOS</string>
+
+    <string name="mcn_text_title_section_establishment">DADOS DO ESTABELECIMENTO</string>
+    <string name="mcn_text_field_trading_name">Nome Fantasia</string>
+    <string name="mcn_text_field_number_establishment">Nº do estabelecimento</string>
+    <string name="mcn_text_field_status_register">Status do cadastro</string>
+    <string name="mcn_text_field_block_debit_payment">Bloqueio de pagamento de débito</string>
+    <string name="mcn_text_field_date_open">Data de Abertura</string>
+    <string name="mcn_text_field_company_name">Razão Social</string>
+    <string name="mcn_text_field_cnpj">CNPJ</string>
+    <string name="mcn_text_field_mcc">Mcc</string>
+    <string name="mcn_text_field_last_date_sale">Data da última venda</string>
+    <string name="mcn_text_field_branch_activity">Ramo de atividade</string>
+
+    <string name="mcn_text_title_section_owner">DADOS DO PROPRIETÁRIO</string>
+    <string name="mcn_text_field_owner_name">Nome:</string>
+    <string name="mcn_text_field_owner_cpf">CPF</string>
+    <string name="mcn_text_field_owner_date_birth">Data de nascimento</string>
+    <string name="mcn_text_field_owner_phone">Telefone</string>
+    <string name="mcn_text_field_owner_email">E-mail</string>
+
+
+    <string name="mcn_text_title_section_contact">DADOS DE CONTATO</string>
+    <string name="mcn_text_field_contact_email">E-mail</string>
+    <string name="mcn_text_field_contact_phone_1">Telefone 1</string>
+    <string name="mcn_text_field_contact_phone_2">Telefone 2</string>
+    <string name="mcn_text_field_contact_phone_3">Telefone 3</string>
+    <string name="mcn_text_field_contact_name">Nome:</string>
+    <string name="text_address_label">Endereço</string>
+
+    <string name="text_edit_label">Editar</string>
+    <string name="text_address_stablishment_label">Endereço do estabelecimento</string>
+    <string name="text_address_cep_label">CEP</string>
+    <string name="text_user_edit_address_title">Editar endereços</string>
+    <string name="text_user_addresses_label">Endereço</string>
+    <string name="text_user_address_number">Número</string>
+    <string name="text_user_address_complement_label">Complemento</string>
+    <string name="text_user_address_neighborhood_label">Bairro</string>
+    <string name="text_user_address_city_label">Cidade</string>
+    <string name="text_user_address_state_label">Estado</string>
+    <string name="text_user_address_correspondence">Correspondência</string>
+    <string name="text_user_address_contract">Endereço de contrato</string>
+    <string name="text_user_address_point_sale">Ponto de vendas</string>
+    <string name="text_user_address_supplies">Suprimentos</string>
+    <string name="text_user_address_save_updates">Para salvar alterações, selecione ao menos um tipo de endereço.</string>
+    <string name="text_error_cep_empty_not_allowed">Campo CEP é obrigatório.</string>
+    <string name="text_error_city_empty_not_allowed">Campo cidade é obrigatório.</string>
+    <string name="text_error_address_complement_empty_not_allowed">Complemento do endereço é obrigatório.</string>
+    <string name="text_error_address_neighborhood_empty_not_allowed">Campo bairro é obrigatório.</string>
+    <string name="text_error_address_number_empty_not_allowed">Campo número é obrigatório.</string>
+    <string name="text_error_address_state_empty_not_allowed">Campo estado é obrigatório.</string>
+    <string name="text_error_address_addresses_empty_not_allowed">Campo endereço é obrigatório.</string>
+    <string name="text_address_types_content_template">Tipos: %s</string>
+    <string name="text_contact_phone_empty">Por favor, é preciso preencher um telefone</string>
+    <string name="text_contact_phone_is_not_valid">Por favor, digite um número de telefone válido.</string>
+    <string name="text_update_address_result_title">Endereço do estabelecimento alterado com sucesso!</string>
+    <string name="text_update_address_result_screen_title">Alterar endereços</string>
+    <string name="text_invalid_cep">CEP não encontrado.</string>
+    <string name="text_cep_error_title">Editar endereços</string>
+    <string name="text_address_update_error">Erro ao tentar atualizar o endereço.</string>
+    <string name="text_error_update_address_title">Atualização de endereço</string>
+    <string name="update_info_alert_title">Os <font color="#0774E7">dados do proprietário</font> podem estar desatualizados, verifique as informações e atualize caso necessário."</string>
+    <string name="text_update_in_central_message">Alteração de dados somente pela central de atendimento</string>
+    <string name="title_owner_update_dialog"><![CDATA[<b>Sobre alteração de dados do proprietário</b>]]></string>
+    <string name="title_contact_update_dialog"><![CDATA[<b>Sobre alteração de dados de contato</b>]]></string>
+    <string name="text_update_dialog">No momento a edição dos dados só pode ser realizada através da nossa central de atendimento. Isso é necessário para garantir a segurança das informações.</string>
+    <string name="no_information_to_display">Não há informações a serem exibidas</string>
+    <string name="confirm_data_button">Confirmar que os dados estão atualizados</string>
+    <string name="dialog_confirm_data_message">Você confirma que os dados estão atualizados?</string>
+    <string name="your_data_is_ok_question">Seus dados cadastrais estão atualizados?</string>
+    <string name="see_data">Ver dados</string>
+    <string name="already_updated">Já atualizei</string>
+    <string name="pendency_image_text">Imagem indicando pendência nos dados do proprietário</string>
+    <string name="open">Aberto</string>
+    <string name="active">Ativo</string>
+    <string name="inactive">Inativo</string>
+    <string name="keep_current">Manter atual</string>
+    <string name="to_change">Alterar</string>
+
+    <string name="text_current_earnings_plan_label">Faturamento atual</string>
+
+    <string name="item_dc_transferir_bandeiras">Transferir bandeiras</string>
+    <string name="item_dc_tipo_conta">Tipo de conta</string>
+    <string name="item_dc_contas">Conta</string>
+    <string name="toolbar_title_track">Troca de domicílio</string>
+    <string name="toolbar_title_track_detail">Detalhes do domicílio</string>
+
+    <!-- Troca de Domicilio Solicitações Filter -->
+   <string name="filter_troca_domicilio_data_negociacao">Data da negociação</string>
+   <string name="filter_troca_domicilio_numero_operacao">Número da operação</string>
+   <string name="filter_troca_domicilio_numero_protocolo">Número do protocolo</string>
+   <string name="filter_troca_domicilio_selecione_data">Selecione uma data</string>
+
+   <string name="detail_troca_domicilio_error_intro">Alguns motivos impedem a alteração para essa bandeira, são eles:\n\n</string>
+
+    <string name="item_track_account">Conta:</string>
+    <string name="item_track_agency">Agência:</string>
+    <string name="item_track_protocol">Protocolo:</string>
+
+
+    <string name="item_brands_title_filter">Bandeiras</string>
+    <string name="item_payment_type_title_filter">Forma de pagamento</string>
+    
+    <string name="edit_block_title">Edição não permitida!</string>
+    <string name="edit_block_close_button_label">Fechar</string>
+    <string name="edit_block_call_center_button_label">Ligar na Central</string>
+    <string name="edit_block_message">Seu usuário não possui autorização para realizar alteração de dados cadastrais. Consulte nossa central de atendimento para qualquer dúvida.</string>
+
+    <string name="title_owner_data">Dados do proprietário</string>
+
+    <string name="user_data_information_title">Informações de acesso</string>
+    <string name="user_data_information_button_title">Alterar dados</string>
+    <string name="user_data_profile_title">Perfil e funcionalidades</string>
+    <string name="user_data_delete_title">Quer excluir a sua conta?</string>
+    <string name="user_data_delete_text">Para realizar esta ação, você precisa telefonar para a central de atendimento.</string>
+    <string name="user_data_profile">Perfil</string>
+    <string name="user_data_profile_link">Ver funções do meu perfil</string>
+    <string name="user_change_data_title">Preencha os campos que você deseja alterar!</string>
+    <string name="user_change_data_access_information">Informações de acessos</string>
+    <string name="user_change_data_change_password">Alterar senha</string>
+    <string name="user_change_data_new_password">Nova senha</string>
+    <string name="user_change_data_password_tips">Para uma senha segura, não utilize: Sua data de nascimento e CPF, dígitos repetidos, contínuos, espelhados e não faça desenhos de teclado numérico.</string>
+    <string name="user_change_data_button">Alterar dados</string>
+    <string name="user_change_bs_picture_title">Para continuar com a alteração, você precisará tirar uma foto!</string>
+    <string name="user_change_bs_picture_subtitle">Certifique-se que você está em um lugar tranquilo para conseguir tirar uma selfie de acordo com as orientações. Vamos lá?</string>
+
+    <string name="user_data_change_text_error_email">Por favor, digite um email válido.</string>
+    <string name="user_data_change_text_hint_email">Exemplo: exemplo@exemplo.com.br</string>
+    <string name="user_data_change_text_error_phone">Por favor, digite um telefone válido.</string>
+    <string name="user_data_change_text_hint_phone">Exemplo: (11) 99999-9999</string>
+    <string name="user_data_change_password_six_digits">Sua senha deve conter 6 dígitos.</string>
+    <string name="user_data_change_password_different">As senhas não conferem</string>
+    <string name="user_data_change_bs_close_sdk_title">Tem certeza que deseja sair?</string>
+    <string name="user_data_change_bs_close_sdk_message">Para confirmar as alterações feitas, você precisa realizar uma validação com uma selfie sua.</string>
+    <string name="user_data_change_bs_close_sdk_button1">Desejo voltar para o meu cadastro</string>
+    <string name="user_data_change_bs_close_sdk_button2">Continuar validação</string>
+    <string name="user_data_change_bs_generic_error_sdk_title">Será necessário refazer o fluxo de validação.</string>
+    <string name="user_data_change_bs_generic_error_sdk_message">Algo deu errado. Para continuar, refaça o fluxo de validação biométrica facial.</string>
+    <string name="user_data_change_bs_generic_error_sdk_button">Fazer validação novamente</string>
+    <string name="user_data_change_bs_permission_error_sdk_title">Você não liberou o acesso à câmera.</string>
+    <string name="user_data_change_bs_permission_error_sdk_message">Não é possível continuar sem essa permissão. Você pode liberar o acesso dentro das configurações do celular.</string>
+    <string name="user_data_change_bs_generic_api_error_sdk_title">Não foi possível continuarmos.</string>
+    <string name="user_data_change_bs_generic_api_error_sdk_message">Algo deu errado. Para continuar, refaça o fluxo de validação biométrica facial ou tente novamente mais tarde.</string>
+    <string name="user_data_change_bs_success_title">Alteração concluida!</string>
+    <string name="user_data_change_bs_success_message">Alteração feita com sucesso. Por favor, entre novamente no app para a confirmação da alteração.</string>
+    <string name="user_data_change_bs_error_title">Tivemos algum problema na validação </string>
+    <string name="user_data_change_bs_error_message">Clique em tentar novamente para refazer o fluxo.</string>
+
+    <string name="user_data_additional_information_title">Informações adicionais</string>
+    <string name="user_data_additional_information_communication_label">Tipo de comunicação</string>
+    <string name="user_data_additional_information_contact_label">Preferência de contato</string>
+    <string name="user_data_additional_information_pcd_label">PcD</string>
+    <string name="user_data_additional_information_contact_hour_label">Melhor horário para contato</string>
+    <string name="user_data_additional_information_not_defined">Não informado</string>
+    <string name="user_data_change_additional_info_title">Preencha os campos</string>
+    <string name="user_data_change_additional_info_subtitle">Complemente suas informações.</string>
+    <string name="contact_type_bottom_sheet_tilte">Selecione o tipo de comunicação</string>
+
+    <string name="user_data_change_additional_bs_error_title">Tivemos algum problema na validação </string>
+    <string name="user_data_change_additional_bs_error_message">Clique em tentar novamente para refazer o fluxo.</string>
+    <string name="user_data_change_additional_bs_update_success_title">Alteração concluida!</string>
+    <string name="user_data_change_additional_bs_update_success_message">Alteração de dados complementares feita com sucesso. </string>
+    <string name="user_data_change_additional_bs_contact_title">Selecione preferência de contato</string>
+    <string name="user_data_change_additional_bs_pcd_title">Selecione se você é PcD</string>
+    <string name="user_data_change_additional_bs_hour_contact_title">Melhor horário para contato</string>
+</resources>

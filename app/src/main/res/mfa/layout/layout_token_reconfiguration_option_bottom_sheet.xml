@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <LinearLayout
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical">
+        
+        <View
+            android:layout_width="24dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_drag_bottom_sheet"/>
+
+        <TextView
+            style="@style/Heading_500_Bold_18_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="18dp"
+            android:text="@string/text_celular_anterior"
+            />
+
+        <TextView
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/text_voc_possui_acesso_ao_seu_aparelho_celular_anterior_com_o_token_validado"
+            />
+        
+        <FrameLayout
+            android:id="@+id/dontHavePhoneButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            >
+            <TextView
+                style="@style/Label_400_Alternate_brand_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_nao_possuo_o_celular"
+                />
+        </FrameLayout>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/havePhoneButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:text="@string/text_possuo_o_celular"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

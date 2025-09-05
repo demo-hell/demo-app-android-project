@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/Heading_600_regular_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dimen_2sp"
+            android:text="@string/txt_title_solesp_info_send"
+            android:textColor="@color/brand_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTitleInfoSection"
+            style="@style/Heading_300_bold_14_display_300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/txt_title_info_section_solesp_info_send"
+            android:textColor="@color/color_cloud_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+        <include
+            android:id="@+id/itNumberEc"
+            layout="@layout/layout_input_text_disabled_solesp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/txtTitleInfoSection" />
+
+        <include
+            android:id="@+id/itName"
+            layout="@layout/layout_input_text_disabled_solesp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/itNumberEc" />
+
+        <br.com.cielo.libflue.card.CieloCardInformation
+            android:id="@+id/cardInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:cardInformationType="information"
+            app:cardText="@string/txt_information_solesp_info_send"
+            app:layout_constraintTop_toBottomOf="@id/itName" />
+
+        <TextView
+            android:id="@+id/txtTitleInfoContact"
+            style="@style/Heading_300_bold_14_display_300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/txt_title_contact_section_solesp_info_send"
+            android:textColor="@color/color_cloud_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardInformation" />
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/itEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            app:hint="@string/txt_hint_input_email_solesp_info_send"
+            app:layout_constraintTop_toBottomOf="@id/txtTitleInfoContact" />
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/itPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLines="1"
+            app:hint="@string/txt_hint_input_number_phone_solesp_info_send"
+            app:layout_constraintTop_toBottomOf="@id/itEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

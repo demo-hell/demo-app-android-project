@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_meu_cadastro">Meu Cadastro</string>
+
+    <string name="legenda_numero_estabelecimento">Nº do estabelecimento</string>
+    <string name="legenda_cnpj">CNPJ</string>
+    <string name="legenda_razao_social">Razão Social</string>
+    <string name="legenda_ramo_de_atividade">Ramo de Atividade</string>
+    <string name="legenda_data_abertura">Data de Abertura</string>
+    <string name="legenda_proprietario">Proprietário(a)</string>
+    <string name="legenda_telefone">Telefone</string>
+
+    <!--Endereço de contato-->
+    <string name="botao_endereco_fisico">Endereço físico</string>
+    <string name="botao_endereco_contato">Endereço contato</string>
+
+    <string name="meu_cadastro_solucoes_contratadas">Soluções Contratadas</string>
+    <string name="meu_cadastro_solucoes_contratadas_description">Caso você tenha acordo comercial, este será aplicado no seu extrato.</string>
+    <string name="meu_cadastro_domicilio_bancario">Domicílio Bancário</string>
+    <string name="meu_cadastro_domicilio_bancario_banco">Banco</string>
+    <string name="meu_cadastro_domicilio_bancario_agencia">Agência</string>
+    <string name="meu_cadastro_domicilio_bancario_conta_corrente">Conta-corrente</string>
+    <string name="meu_cadastro_domicilio_bancario_trava_domicilio">Trava de domicílio</string>
+    <string name="meu_cadastro_domicilio_bancario_trva_antecipacao">Trava de antecipação</string>
+    <string name="meu_cadastro_bandeiras_habilitadas">Bandeiras Habilitadas</string>
+
+    <string name="meu_cadastro_bandeiras_habilitadas_debito">Débito</string>
+    <string name="meu_cadastro_bandeiras_habilitadas_credito">Crédito à vista</string>
+    <string name="meu_cadastro_bandeiras_habilitadas_parcelado_1a3">Parcelado 1x a 3x</string>
+    <string name="meu_cadastro_bandeiras_habilitadas_parcelado_4a6">Parcelado 4x a 6x</string>
+    <string name="meu_cadastro_bandeiras_habilitadas_parcelado_7a9">Parcelado 7x a 9x</string>
+    <string name="meu_cadastro_bandeiras_habilitadas_parcelado_10a12">Parcelado 10x a 12x</string>
+    <string name="text_close_label">FECHAR</string>
+    <string name="text_prepaid_bank_info">Cartão Pré-Pago</string>
+    <string name="title_minha_empresa">ESTABELECIMENTO</string>
+    <string name="title_dados_bancarios">USUÁRIO</string>
+    <string name="title_minhas_solucoes">CONTAS</string>
+
+    <string name="meu_cadastro_transacao_efetuada_token">transação efetuada com token</string>
+    <string name="meu_cadastro_transacao_processo_usuario">transação está em processo para o usuário</string>
+    <string name="meu_cadastro_nome_fantasia_alterado">Nome Fantasia alterado com sucesso</string>
+    <string name="meu_cadastro_nome_fantasia_alterar">Alterar Nome Fantasia</string>
+    <string name="meu_cadastro_dados_proprietario_alterado">Dados do proprietário alterados com sucesso!</string>
+    <string name="meu_cadastro_dados_proprietario_alterar">Alterar dados do proprietário</string>
+</resources>

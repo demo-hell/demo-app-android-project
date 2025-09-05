@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/ivOnboardingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0dp"
+        android:minHeight="@dimen/dimen_226dp"
+        android:minWidth="@dimen/dimen_226dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitleOnboardingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="@dimen/dimen_272dp"
+        app:layout_constraintHeight_min="@dimen/dimen_40dp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:srcCompat="@drawable/ic_01" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleOnboardingItem"
+        style="@style/Heading_600_regular_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvSubtitleOnboardingItem"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@+id/ivOnboardingItem"
+        app:layout_constraintVertical_bias="0"
+        tools:text="Highlight 1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubtitleOnboardingItem"
+        style="@style/Paragraph_400_regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAlignment="center"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleOnboardingItem"
+        app:layout_constraintVertical_bias="0"
+        tools:text="Texto de descrição falando sobre o Cielo Tap, o que é e quais são as vantagens para o negócio das pessoas usuárias." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

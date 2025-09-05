@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.discover.sdk</groupId>
+  <artifactId>core</artifactId>
+  <versioning>
+    <latest>COR1.1.4-releaseCandidate</latest>
+    <release>COR1.1.4-releaseCandidate</release>
+    <versions>
+      <version>COR1.1.2-release</version>
+      <version>COR1.1.2-releaseCandidate</version>
+      <version>COR1.1.3-release</version>
+      <version>COR1.1.3-releaseCandidate</version>
+      <version>COR1.1.4-release</version>
+      <version>COR1.1.4-releaseCandidate</version>
+    </versions>
+    <lastUpdated>20210716091919</lastUpdated>
+  </versioning>
+</metadata>

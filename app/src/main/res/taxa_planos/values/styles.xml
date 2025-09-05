@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text16sp_263238_OpenSans_Normal" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/black_233038</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="Text16sp_34454f_OpenSans_Bold" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/color_34454f</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text16sp_00aff0_OpenSans_Bold" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/color_00aff0</item>
+        <item name="android:textSize">16sp</item>
+        <item name="typeface">OpenSans-Bold.ttf</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text16sp_233038_OpenSans_Normal" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/color_233038</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="Text16sp_008ddf_700_Bold" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/color_00aff0</item>
+        <item name="android:textSize">16sp</item>
+        <item name="typeface">fonts/MuseoSans-700.ttf</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FeeAndPlanTabAppearance" parent="ThemeOverlay.AppCompat.Light">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+
+    <style name="ConciliadorTabAppearance" parent="ThemeOverlay.AppCompat.Light">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+</resources>

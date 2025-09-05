@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/tvValueLabelShimmer"
+        android:layout_width="@dimen/dimen_96dp"
+        android:layout_height="@dimen/dimen_10dp"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tvValueShimmer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintTop_toBottomOf="@id/tvValueLabelShimmer" />
+
+    <View
+        android:id="@+id/tvPlanShimmer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvValueShimmer"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

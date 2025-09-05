@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/includePersonalInfo"
+                layout="@layout/view_id_onboarding_access_details_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvAccessExplanation"
+                style="@style/Paragraph_400_regular_16_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/id_onboarding_p1_custom_access_can_title"
+                app:layout_constraintTop_toBottomOf="@id/includePersonalInfo" />
+
+            <TextView
+                android:id="@+id/tvDoubts"
+                style="@style/Paragraph_400_regular_16_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:lineSpacingExtra="@dimen/dimen_6sp"
+                android:text="@string/id_onboarding_p1_do_you_still_have_doubts"
+                app:layout_constraintTop_toBottomOf="@id/tvAccessExplanation" />
+
+            <br.com.cielo.libflue.button.CieloRegularSecondaryButton
+                android:id="@+id/btGoToHelpCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/id_onboarding_p1_go_to_help_center"
+                app:layout_constraintTop_toBottomOf="@id/tvDoubts" />
+
+            <TextView
+                android:id="@+id/tvSendPhotos"
+                style="@style/Heading_400_regular_16_brand_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_38dp"
+                android:text="@string/id_onboarding_p1_admin_access_to_conclude_title"
+                app:layout_constraintTop_toBottomOf="@+id/btGoToHelpCenter" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_16dp"
+                android:background="@drawable/background_status_my_keys_pix_alert_100"
+                android:paddingHorizontal="@dimen/dimen_16dp"
+                android:paddingVertical="@dimen/dimen_11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSendPhotos"
+                tools:layout_editor_absoluteX="16dp">
+
+                <ImageView
+                    android:id="@+id/ivIconInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_info"
+                    app:tint="@color/alert_600" />
+
+                <TextView
+                    android:id="@+id/tvInfoText"
+                    style="@style/Paragraph_200_regular_12_display_400"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:text="@string/id_onboarding_p1_admin_access_to_conclude_subtitle"
+                    android:textColor="@color/alert_600"
+                    android:lineSpacingExtra="@dimen/dimen_4sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivIconInfo"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/color_cloud_200"
+        app:layout_constraintBottom_toTopOf="@id/btSendLater" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSendLater"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/white"
+        android:text="@string/id_onboarding_pictures_start_send_later"
+        android:textColor="@drawable/text_color_brand_400_selector"
+        app:layout_constraintBottom_toTopOf="@+id/btSendNow" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSendNow"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/id_onboarding_pictures_start_send_now"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

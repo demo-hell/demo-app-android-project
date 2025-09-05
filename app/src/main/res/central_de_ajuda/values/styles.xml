@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextItemList700_14Blue" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_005195</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="typeface">fonts/MuseoSans-700.ttf</item>
+    </style>
+
+    <style name="CentraAjudaCategoriesTitle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_005195</item>
+        <item name="android:textSize">16sp</item>
+        <item name="typeface">fonts/MuseoSans-700.ttf</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CentraAjudaCategoriesDescription" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_758e9d</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">fonts/MuseoSans-500.ttf</item>
+    </style>
+
+    <style name="CentralAjudaContactsTitle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_0774E7</item>
+        <item name="android:textSize">16sp</item>
+        <item name="typeface">fonts/Museo700-Regular.ttf</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CentralAjudaContactsPhoneNumber" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_0774E7</item>
+        <item name="android:textSize">24sp</item>
+        <item name="typeface">fonts/Museo700-Regular.ttf</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CentralAjudaContactsDescription" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/grey_758E9D</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">fonts/MuseoSans-500.ttf</item>
+    </style>
+
+
+    <style name="CentralAjudaContactsText" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_00AFF1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">fonts/Museo-700.ttf</item>
+    </style>
+
+    <style name="HelpCenterButton" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/brand_400</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>

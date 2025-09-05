@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/imgEmptyCanceledSales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:src="@drawable/ic_popup_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescriptionEmptyTransactions"
+        style="@style/Label_300_Regular_14_brand_600"
+        android:textColor="@color/color_cloud_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="@string/text_empty_canceled_sales"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/imgEmptyCanceledSales" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

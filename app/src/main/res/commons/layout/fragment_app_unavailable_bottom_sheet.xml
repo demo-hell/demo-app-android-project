@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dimen_24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/ivDialogImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginHorizontal="@dimen/dimen_32dp"
+        app:srcCompat="@drawable/img_maintenance_mfa"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.36"
+        app:layout_constraintHeight_min="@dimen/dimen_180dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearErrorHandlerContent" />
+
+    <LinearLayout
+        android:id="@+id/linearErrorHandlerContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            style="@style/Heading_500_Bold_18_display_500"
+            android:textColor="@color/brand_400"
+            android:text="@string/app_unavailable_dialog_title"
+            android:textAlignment="center"
+            android:lineSpacingExtra="@dimen/dimen_6sp" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            style="@style/Paragraph_400_Regular_16_display_400"
+            android:text="@string/app_unavailable_dialog_message"
+            android:textAlignment="center"
+            android:lineSpacingExtra="@dimen/dimen_8sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

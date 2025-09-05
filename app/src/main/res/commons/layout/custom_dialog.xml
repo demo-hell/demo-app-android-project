@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog"
+    android:orientation="vertical">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/custom_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:typeface="Museo700-Regular.ttf" />
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/custom_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/text_color_263238"
+        android:textSize="16sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <RelativeLayout
+        android:id="@+id/container_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+            android:id="@+id/custom_dialog_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="16dp"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            app:typeface="MuseoSans-700.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+            android:id="@+id/custom_dialog_button_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/custom_dialog_button_right"
+            android:background="@android:color/transparent"
+            android:padding="16dp"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            app:typeface="MuseoSans-700.ttf" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

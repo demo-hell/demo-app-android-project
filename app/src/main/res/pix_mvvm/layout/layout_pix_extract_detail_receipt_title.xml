@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_32dp"
+    android:textAppearance="@style/bold_montserrat_16"
+    android:textColor="@color/neutral_800"
+    tools:textAppearance="@style/semi_bold_montserrat_16_cloud_0_spacing_4"
+    tools:text="Destino do valor" />

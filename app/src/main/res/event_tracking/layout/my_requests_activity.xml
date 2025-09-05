@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/my_requests_header_scene"
+    tools:context=".eventTracking.presentation.EventTrackingNavigationFlowActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/navigation_icon"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:contentDescription="@string/content_description_return_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_direction_arrow_left" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/help_icon"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:contentDescription="@string/description_accessibility_help_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_help_blue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/my_requests_title"
+        style="@style/bold_montserrat_20_cloud_600"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toStartOf="@+id/help_icon"
+        app:layout_constraintStart_toStartOf="@+id/navigation_icon"
+        app:layout_constraintTop_toBottomOf="@id/navigation_icon"
+        tools:text="@string/my_requests_title_string" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/my_requests_subtitle"
+        style="@style/regular_montserrat_16_cloud_400_spacing_4"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/my_requests_subtitle_string"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toStartOf="@+id/help_icon"
+        app:layout_constraintStart_toStartOf="@+id/my_requests_title"
+        app:layout_constraintTop_toBottomOf="@id/my_requests_title"
+        tools:text="@string/my_requests_subtitle_string" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_inner_view_my_requests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_requests_subtitle">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/hostFragmentMyRequests"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/nav_graph_event_tracking" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

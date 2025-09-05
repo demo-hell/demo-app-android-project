@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sectionTransactions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTransactionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/pix_home_transactions"
+        android:textAppearance="@style/bold_montserrat_14_neutral_800"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textAppearance="@style/semi_bold_montserrat_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:paddingHorizontal="@dimen/dimen_12dp"
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionLabel"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_pix_menu_transactions"
+        tools:visibility="visible" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        app:shimmer_auto_start="true"
+        app:shimmer_base_alpha="1"
+        app:shimmer_highlight_alpha="0"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionLabel"
+        tools:duration="200"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dimen_8dp">
+
+            <View
+                android:id="@+id/square1"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:background="@drawable/background_cloud_100_radius_12_dp" />
+
+            <View
+                android:id="@+id/square2"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:background="@drawable/background_cloud_100_radius_12_dp" />
+
+            <View
+                android:id="@+id/square3"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:background="@drawable/background_cloud_100_radius_12_dp" />
+
+            <View
+                android:id="@+id/square4"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:background="@drawable/background_cloud_100_radius_12_dp" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

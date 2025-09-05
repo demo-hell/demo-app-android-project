@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingVertical="@dimen/dimen_8dp">
+
+    <TextView
+        android:id="@+id/tvAccountDataTitle"
+        style="@style/label_12_brand_600_ubuntu_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/text_pix_my_limits_trusted_detail_data"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDestinationBankTitle"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_transfer_destination_bank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccountDataTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDestinationBank"
+        style="@style/label_16_display_400_ubuntu_bold"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_bank_pix_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDestinationBankTitle"
+        tools:text="Banco do Brasil" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDestinationAgencyAndAccount"
+        style="@style/Label_300_regular_14_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_28dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:fontFamily="@font/ubuntu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDestinationBank"
+        tools:text="Ag: 04132 | Conta: 004132-5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRegistrationDateTitle"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:text="@string/text_registration_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDestinationAgencyAndAccount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRegistrationDate"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_calendar_pix_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegistrationDateTitle"
+        tools:text="29/06/2022 às 15:57:11" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/display_200"
+        app:layout_constraintTop_toBottomOf="@id/tvRegistrationDate" />
+
+    <TextView
+        android:id="@+id/tvAccountLimit"
+        style="@style/label_12_brand_600_ubuntu_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/pix_text_my_limits_add_new_trusted_destination_limit_title"
+        app:layout_constraintTop_toBottomOf="@id/separator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAccountLimitInfo"
+        style="@style/Paragraph_200_regular_12_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:lineSpacingExtra="@dimen/dimen_4sp"
+        android:text="@string/text_pix_my_limits_register_trusted_destination_transfer_value_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccountLimit" />
+
+    <TextView
+        android:id="@+id/tvLimitValue"
+        style="@style/Label_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:textAllCaps="true"
+        android:textColor="@color/display_300"
+        app:layout_constraintTop_toBottomOf="@id/tvAccountLimitInfo"
+        tools:text="R$ 5.000.000,00" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/display_200"
+        app:layout_constraintTop_toBottomOf="@id/tvLimitValue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDeleteAccount"
+        style="@style/Label_400_Alternate_regular_16_danger_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_trash_new"
+        android:drawablePadding="@dimen/dimen_18dp"
+        android:paddingVertical="@dimen/dimen_10dp"
+        android:text="@string/text_delete_account"
+        android:textColor="@color/danger_400"
+        app:drawableTint="@color/danger_400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

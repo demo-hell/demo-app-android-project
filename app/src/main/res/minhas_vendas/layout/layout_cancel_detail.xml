@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <ViewFlipper
+        android:id="@+id/vf_dt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- view 01 -->
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="visible"
+            />
+
+
+        <!-- view 02 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            tools:ignore="MissingConstraints">
+
+            <include
+                android:id="@+id/toolbar_include"
+                layout="@layout/toolbar_main"
+                android:layout_marginTop="180dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="IncludeLayoutParam" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tv_title_cd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/tv_title"
+                android:textColor="@color/color_231F20"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_include"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <!-- detail sale -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/ft_dc_uncheck"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_cd"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_cd"
+                tools:ignore="MissingConstraints">
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="154dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/tv_cd_data"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_data_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="17dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_cd_data"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_cd_data"
+                    app:layout_constraintTop_toTopOf="@+id/tv_cd_data"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_vs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/tv_cd_vs"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_data"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_cd_data"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_data"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_vs_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_data_value"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_cd_vs"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_data_value"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_vs_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/tv_cd_brand"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_vs"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_cd_vs"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_vs"
+                    tools:ignore="MissingConstraints" />
+
+
+                <ImageView
+                    android:id="@+id/tv_cd_vs_brand_value"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_vs_value"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_cd_vs_brand"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_vs_value"
+                    tools:ignore="MissingConstraints" />
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_formpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/tv_cd_formpayment"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_vs_brand"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_cd_vs_brand"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_vs_brand"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_formpayment_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_vs_brand_value"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_cd_formpayment"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_vs_brand_value"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_vs_disponivel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/tv_cd_vs_disponivel"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_formpayment"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/tv_cd_formpayment"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_formpayment"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_cd_vs_disponivel_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/color_8A99A8"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_cd_formpayment_value"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_cd_vs_disponivel"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cd_formpayment_value"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tv_subtitle_cd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/tv_subtitle"
+                android:textColor="@color/color_231F20"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                tools:ignore="MissingConstraints" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_options_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="@+id/tv_subtitle_cd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_subtitle_cd"
+                app:layout_constraintTop_toBottomOf="@+id/tv_subtitle_cd"
+                app:layout_goneMarginEnd="8dp">
+
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_cancel_selector"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:paddingLeft="16sp"
+                    android:paddingTop="3sp"
+                    android:paddingRight="16sp"
+                    android:paddingBottom="3sp"
+                    android:text="Valor Total"
+                    android:textColor="@drawable/radio_cancel_text_flat_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_cancel_selector"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/ubuntu"
+                    android:gravity="center"
+                    android:paddingLeft="16sp"
+                    android:paddingTop="3sp"
+                    android:paddingRight="16sp"
+                    android:paddingBottom="3sp"
+                    android:text="Outro Valor"
+                    android:textColor="@drawable/radio_cancel_text_flat_selector" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_valor_disponivel"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:errorTextAppearance="@style/error_appearance"
+                app:layout_constraintEnd_toEndOf="@+id/rg_options_cancel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/rg_options_cancel"
+                app:layout_constraintTop_toBottomOf="@+id/rg_options_cancel"
+                tools:ignore="MissingConstraints">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/ev_valor_disponivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_shape"
+                    android:digits="1234567890.,"
+                    android:hint="Valor disponível"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="numberDecimal"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color_263238"
+                    android:textColorHint="@color/gray_light"
+                    android:textSize="16sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_confirmar_cancelamento"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/btn_cancel_unselector"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/btn_cancel_detalhes"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/text_input_valor_disponivel"
+                app:layout_constraintStart_toStartOf="@+id/text_input_valor_disponivel"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- view 03 -->
+        <include
+            layout="@layout/fragment_receba_mais_failure" />
+
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorLayout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            app:cieloErrorTitle="@string/text_title_generic_error"
+            app:cieloErrorMessage="@string/text_message_generic_error"
+            app:cieloErrorButtonLabel="@string/text_try_again_label"
+            app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </ViewFlipper>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_meus_recebimentos_flitro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="?android:attr/actionBarSize">
+
+        <View
+            android:id="@+id/view_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_meus_recebimentos_filtro_periodo_aberto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_meus_recebimentos_periodo_down_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/meus_recebimentos_filtro_periodo"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            app:typeface="MuseoSans-700.ttf" />
+
+                        <ImageView
+                            android:id="@+id/imageview_arrow_down_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="13dp"
+                            android:contentDescription="@null"
+                            android:rotation="-90"
+                            app:srcCompat="@drawable/ic_arrow_right_gray" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/radio_group_filtro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+                                android:id="@+id/radio_filtro_diario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@drawable/radio_button_custom"
+                                android:checked="true"
+                                android:layoutDirection="rtl"
+                                android:text="@string/meus_recebimentos_filtro_periodo_diario"
+                                app:typeface="MuseoSans-500.ttf" />
+
+                            <LinearLayout
+                                android:id="@+id/btn_meus_recebimentos_data"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:clickable="true"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/background_date_button"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    app:srcCompat="@drawable/ic_date" />
+
+                                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                                    android:id="@+id/textview_meus_recebimentos_filtro_data"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/extrato_filtro_data"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="14sp"
+                                    app:typeface="MuseoSans-500.ttf" />
+                            </LinearLayout>
+
+                            <!--<br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="4dp"-->
+                                <!--android:layout_marginTop="32dp"-->
+                                <!--android:text="@string/meus_recebimentos_filtro_consolidado"-->
+                                <!--android:textColor="@color/gray_light"-->
+                                <!--android:textSize="14sp"-->
+                                <!--app:typeface="MuseoSans-700.ttf" />-->
+
+                            <!--<br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginRight="16dp"-->
+                                <!--android:text="@string/meus_recebimentos_filtro_descricao"-->
+                                <!--android:textColor="@color/gray_light"-->
+                                <!--android:textSize="12sp"-->
+                                <!--app:typeface="MuseoSans-500.ttf" />-->
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+                                android:id="@+id/radio_filtro_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:buttonTint="@drawable/radio_button_custom"
+                                android:layoutDirection="rtl"
+                                android:text="@string/meus_recebimentos_filtro_periodo_7"
+                                app:typeface="MuseoSans-500.ttf" />
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+                                android:id="@+id/radio_filtro_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:buttonTint="@drawable/radio_button_custom"
+                                android:layoutDirection="rtl"
+                                android:text="@string/meus_recebimentos_filtro_periodo_15"
+                                app:typeface="MuseoSans-500.ttf" />
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+                                android:id="@+id/radio_filtro_30"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:buttonTint="@drawable/radio_button_custom"
+                                android:layoutDirection="rtl"
+                                android:text="@string/meus_recebimentos_filtro_periodo_30"
+                                app:typeface="MuseoSans-500.ttf" />
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+                                android:id="@+id/radio_filtro_outros"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:buttonTint="@drawable/radio_button_custom"
+                                android:layoutDirection="rtl"
+                                android:text="@string/meus_recebimentos_filtro_periodo_outros"
+                                app:typeface="MuseoSans-500.ttf" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_meus_recebimentos_datas_inicio_fim"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/btn_meus_recebimentos_data_inicio"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_date_button"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:srcCompat="@drawable/ic_date" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/textview_meus_recebimentos_filtro_data_inicio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@android:color/transparent"
+                            android:text="@string/extrato_filtro_data_inicio"
+                            android:textAllCaps="false"
+                            android:textColor="@color/gray_light"
+                            android:textSize="14sp"
+                            app:typeface="MuseoSans-500.ttf" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/btn_meus_recebimentos_data_final"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_date_button"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:srcCompat="@drawable/ic_date" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/textview_meus_recebimentos_filtro_data_final"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@android:color/transparent"
+                            android:text="@string/extrato_filtro_data_fim"
+                            android:textAllCaps="false"
+                            android:textColor="@color/gray_light"
+                            android:textSize="14sp"
+                            app:typeface="MuseoSans-500.ttf" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/btn_meus_recebimentos_filtro_cancelar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="16dp"
+                        android:text="@string/meus_recebimentos_filtro_botao_cancelar"
+                        android:textAllCaps="true"
+                        android:textColor="@color/purple"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-700.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/btn_meus_recebimentos_filtro_confirmar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="@string/meus_recebimentos_filtro_botao_confirmar"
+                        android:textAllCaps="true"
+                        android:textColor="@color/purple"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-700.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

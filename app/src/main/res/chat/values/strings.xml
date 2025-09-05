@@ -1,0 +1,8 @@
+<resources>
+    <string name="title_alert">Você deseja realmente encerrar o atendimento?</string>
+    <string name="message_alert">Encerrando o atendimento atual você perderá as informações deste chat.</string>
+    <string name="close">Encerrar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="error_message">Houve um erro de conexão, tente novamente mais tarde</string>
+    <string name="assistant_rating">Avalie o chat</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suporteTecnico.presentation.fragment.CentralOpenTicketFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/containerContactButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCentralOpenTicket"
+            android:layout_width="@dimen/dimen_128dp"
+            android:layout_height="@dimen/dimen_128dp"
+            android:layout_marginStart="@dimen/dimen_116dp"
+            android:layout_marginEnd="@dimen/dimen_116dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_communication_phone_gray_and_blue_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCentralOpenTicketTitle"
+            style="@style/bold_montserrat_20_cloud_800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_82dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/open_ticket_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCentralOpenTicket" />
+
+        <TextView
+            android:id="@+id/tvCentralOpenTicketDescription"
+            style="@style/regular_montserrat_16_neutral_600_spacing_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dimen_40dp"
+            android:text="@string/open_ticket_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCentralOpenTicketTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@color/cloud_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvCapitalsAndMetropolitanRegions"
+            style="@style/regular_montserrat_16_neutral_600_spacing_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_28dp"
+            android:text="@string/Capitals_and_Metropolitan_Regions"
+            app:layout_constraintEnd_toEndOf="@id/containerContactButton"
+            app:layout_constraintStart_toStartOf="@id/containerContactButton"
+            app:layout_constraintTop_toTopOf="@id/containerContactButton" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnFirstPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/PHONE_CALL_CENTER_CAPITAL"
+            app:buttonType="filled"
+            app:layout_constraintEnd_toEndOf="@id/containerContactButton"
+            app:layout_constraintStart_toStartOf="@id/containerContactButton"
+            app:layout_constraintTop_toBottomOf="@id/tvCapitalsAndMetropolitanRegions" />
+
+        <TextView
+            android:id="@+id/tvOtherLocations"
+            style="@style/regular_montserrat_16_neutral_600_spacing_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            android:text="@string/Other_locations"
+            app:layout_constraintEnd_toEndOf="@id/containerContactButton"
+            app:layout_constraintStart_toStartOf="@id/containerContactButton"
+            app:layout_constraintTop_toBottomOf="@id/btnFirstPhone" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnSecondPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/PHONE_CALL_CENTER_OTHERS"
+            app:buttonType="filled"
+            app:layout_constraintEnd_toEndOf="@id/containerContactButton"
+            app:layout_constraintStart_toStartOf="@id/containerContactButton"
+            app:layout_constraintTop_toBottomOf="@id/tvOtherLocations" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/back"
+            app:buttonType="outlined"
+            app:layout_constraintBottom_toBottomOf="@id/containerContactButton"
+            app:layout_constraintEnd_toEndOf="@id/containerContactButton"
+            app:layout_constraintStart_toStartOf="@id/containerContactButton"
+            app:layout_constraintTop_toBottomOf="@id/btnSecondPhone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

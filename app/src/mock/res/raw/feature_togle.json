@@ -1,0 +1,76 @@
+{
+  "features":[
+    {
+      "featureName": "minhas_solicitacoes",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "assistente_cielo",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "minhas_maquinas",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "assistente_cielo_open",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "postecipado",
+      "show": false,
+      "status": "desactivated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "produtos_servicos",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "cielo_fidelidade",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "minhas_vendas",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "meus_recebimentos",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "antecipe_vendas",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "meu_cadastro",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    },
+    {
+      "featureName": "central_ajuda",
+      "show": true,
+      "status": "activated",
+      "statusMessage": ""
+    }
+  ]
+}

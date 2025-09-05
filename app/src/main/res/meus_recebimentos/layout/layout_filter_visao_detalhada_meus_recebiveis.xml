@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layoutTop"
+        layout="@layout/layout_top_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/includes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_100dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/amount"
+                layout="@layout/layout_amount_min_and_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/other_filter"
+                layout="@layout/layout_other_filter_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/editTextCadNumber"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:digits="1234567890.,"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:maxLines="1"
+                app:hint="@string/text_outer_card_number_filter"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/editTextOperationSummary"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:digits="1234567890.,"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                app:hint="@string/text_outer_operation_summary_filter"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/editTextOperationNumber"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:digits="1234567890.,"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                app:hint="@string/text_outer_operation_code_filter"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/editTextCodeSales"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:digits="1234567890.,"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:maxLines="1"
+                app:hint="@string/text_outer_code_sales_filter"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputView
+                android:id="@+id/editTextMachineNumber"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:digits="1234567890.,"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                app:hint="@string/text_outer_machine_number_filter"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow_above_view"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_16dp"
+        android:visibility="visible"
+        app:elevation="5dp">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/clearFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            fancy:fb_defaultColor="@color/white"
+            fancy:fb_text="@string/text_clear_filters_label"
+            fancy:fb_textColor="@color/color_017CEB"
+            fancy:fb_textSize="16sp" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/applyFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/text_apply_filters_label"
+            fancy:fb_textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

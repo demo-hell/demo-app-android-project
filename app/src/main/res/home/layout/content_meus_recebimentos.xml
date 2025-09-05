@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <LinearLayout
+        android:id="@+id/llLoadingShimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/containerSeeMore"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/includeShimmerDepositedYesterday"
+            layout="@layout/shimmer_loading_placeholder_deposited_yesterday"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <include
+            android:id="@+id/includeShimmerDepositedToday"
+            layout="@layout/shimmer_loading_placeholder_deposited_today"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toTopOf="@id/containerSeeMore"
+            app:layout_constraintTop_toBottomOf="@id/includeShimmerDepositedYesterday"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGroupIncludes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/containerSeeMore">
+
+        <include
+            android:id="@+id/includeDepositedYesterdayStatus"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            layout="@layout/view_total_sales_home"/>
+
+        <include
+            android:id="@+id/includeDepositedTodayStatus"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/includeDepositedYesterdayStatus"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            layout="@layout/view_total_sales_home"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/containerSeeMore"
+        layout="@layout/view_see_more_sales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/containerReceivablesUpdatedAt"
+        android:layout_marginBottom="@dimen/dimen_16dp"/>
+
+    <include
+        android:id="@+id/includeCardError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toTopOf="@id/containerSeeMore"
+        layout="@layout/my_sales_online_home_error" />
+
+    <include
+        android:id="@+id/containerReceivablesUpdatedAt"
+        layout="@layout/view_updated_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:clickable="true"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLoginInputFooter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    tools:showIn="@layout/fragment_new_login">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxSaveUserData"
+        android:text="@string/text_save_login_username"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/purple"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/textForgottenUsernameOrPassword"
+        style="@style/SmallWhiteTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/text_info_forgotten_username_or_password" />
+
+
+</LinearLayout>

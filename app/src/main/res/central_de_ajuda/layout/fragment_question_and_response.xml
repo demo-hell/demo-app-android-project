@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollQuestionAndAnswerContent"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLikeOrDislike"
+        android:paddingBottom="35dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearQuestionAndResponseContent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textFrequentUserAsk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    style="@style/Text18sp700Blue005195Bold"
+                    tools:text="Qual a diferença entre Cancelamentos e Contestações?"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linearVideoContent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="250dp">
+
+                    <WebView
+                        android:id="@+id/webviewQuestionAndAnswerVideo"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+
+                    <include
+                        android:id="@+id/frameWebviewLoging"
+                        android:visibility="gone"
+                        layout="@layout/frame_progress" />
+
+                </LinearLayout>
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textFrequentQuestionAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    style="@style/TextBlack_263238_16spOpenSans"
+                    tools:text="O cancelamento é efetuado pelo portador do cartão diretamente na loja em quie efetuou a compra. \n\n A contestação ocorre quando o portador do cartão liga na operadora e informa, por exemplo, que nao reconhece a compra."/>
+
+
+            </LinearLayout>
+
+            <include android:id="@+id/linearQuestionAndResponseError"
+                android:visibility="gone"
+                layout="@layout/linear_loan_simulation_error"/>
+
+            <include
+                android:id="@+id/frameQuestionAndResponseLoading"
+                android:visibility="gone"
+                layout="@layout/frame_progress"/>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLikeOrDislike"
+        android:elevation="5dp"
+        android:background="@drawable/shape_rounded_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nestedScrollQuestionAndAnswerContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:maxHeight="130dp"
+        android:layout_height="wrap_content" >
+
+
+        <include
+            android:id="@+id/frameLikeOrDislikeLoading"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            layout="@layout/frame_progress"/>
+
+
+        <LinearLayout
+            android:id="@+id/linearUserGoodReaction"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textUserGoodReactionToQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextBlue20sp70000AEEF"
+                android:text="@string/text_good_question_reaction_label"
+                tools:text="@string/text_good_question_reaction_label"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearUserBadReaction"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            tools:visibility="gone"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp"
+            android:paddingStart="55dp"
+            android:paddingEnd="55dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/shape_rounded_top_blue"
+            android:layout_height="match_parent">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textUserBadReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                style="@style/TextBlue20sp700FFFFFF"
+                android:text="@string/text_bad_question_reaction_label"
+                tools:text="text_bad_question_reaction_label"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLikeOrDislikeContent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp"
+            tools:visibility="gone"
+            android:layout_height="match_parent">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                style="@style/TextBlack_000000_16spOpenSans"
+                android:text="@string/text_question_ask_client_feedback_label"
+                tools:text="@string/text_question_ask_client_feedback_label"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/buttonNegativeQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="72dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_negative_button"/>
+
+
+                <ImageButton
+                    android:id="@+id/buttonPositiveQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_positive_button"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

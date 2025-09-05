@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".arv.presentation.anticipation.ArvScheduledAnticipationBankSelectFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvScheduledAnticipationSubtitle"
+            style="@style/Label_100_ubuntu_regular_16_cloud_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/arv_scheduled_anticipation_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAnticipationScheduleLabel"
+            style="@style/Label_700_Bold_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/detached_anticipation_schedule_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvScheduledAnticipationSubtitle" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRadioButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAnticipationScheduleLabel">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:shimmer_auto_start="true"
+                app:shimmer_base_alpha="1"
+                app:shimmer_highlight_alpha="0"
+                tools:duration="200">
+
+                <include layout="@layout/arv_scheduled_radiobutton_loading_shimmer" />
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <RadioGroup
+                android:id="@+id/RBNegotiationType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/RBCielo"
+                    style="@style/medium_montserrat_16_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cielo_blue_outline_selector"
+                    android:button="@null"
+                    android:drawableEnd="@drawable/custom_circle_radio_button"
+                    android:minHeight="@dimen/dimen_56dp"
+                    android:padding="@dimen/dimen_12dp"
+                    android:text="@string/arv_cielo_receivables" />
+
+                <RadioButton
+                    android:id="@+id/RBMarket"
+                    style="@style/medium_montserrat_16_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@drawable/cielo_blue_outline_selector"
+                    android:button="@null"
+                    android:drawableEnd="@drawable/custom_circle_radio_button"
+                    android:minHeight="@dimen/dimen_56dp"
+                    android:padding="@dimen/dimen_12dp"
+                    android:text="@string/arv_market_receivables" />
+
+                <RadioButton
+                    android:id="@+id/RBBoth"
+                    style="@style/medium_montserrat_16_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@drawable/cielo_blue_outline_selector"
+                    android:button="@null"
+                    android:drawableEnd="@drawable/custom_circle_radio_button"
+                    android:minHeight="@dimen/dimen_56dp"
+                    android:padding="@dimen/dimen_12dp"
+                    android:text="@string/arv_both_schedules" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:background="@color/display_50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clRadioButtonContainer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSelectBankLabel"
+            style="@style/Label_700_Bold_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:text="@string/arv_bank_for_receiving"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <include
+            android:id="@+id/arvAccount"
+            layout="@layout/arv_account_layout"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSelectBankLabel" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_56dp"
+            android:layout_marginBottom="@dimen/dimen_26dp"
+            android:text="@string/continuar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/arvAccount"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

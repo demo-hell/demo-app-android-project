@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:layout_marginBottom="@dimen/dimen_8dp"
+    android:background="@drawable/custom_text_input_view_selector"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dimen_18dp"
+    android:paddingBottom="@dimen/dimen_18dp"
+    android:weightSum="2"
+    tools:ignore="MissingConstraints">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_weight="0.18"
+        >
+
+        <ImageView
+            android:id="@+id/img_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@drawable/custom_text_input_view_selector"
+            app:srcCompat="@drawable/bg_cartao" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_name_bank_value"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_name_bank"
+            android:textSize="@dimen/dimen_16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_name_agencia"
+                android:textSize="@dimen/dimen_12dp" />
+
+            <TextView
+                android:id="@+id/txt_name_agencia_value"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:text="@string/txt_name_agencia_value"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:text="@string/txt_name_conta"
+                android:textSize="@dimen/dimen_12dp" />
+
+            <TextView
+                android:id="@+id/txt_name_conta_value"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/txt_name_conta_value"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

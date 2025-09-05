@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suporteTecnico.presentation.fragment.ReviewInformationTicketFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleResumeOpenTicket"
+        style="@style/bold_montserrat_20_cloud_800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="@string/review_information_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:fillViewport="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleResumeOpenTicket">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvContainerScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@id/scrollView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/scrollView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvContainerProblem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="@id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cvContainerScroll">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReportProblem"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/report_problem"
+                    app:layout_constraintStart_toStartOf="@id/cvContainerProblem"
+                    app:layout_constraintTop_toTopOf="@id/cvContainerProblem" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleProblem"
+                    style="@style/regular_montserrat_14_neutral_600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:text="@string/problem"
+                    app:layout_constraintStart_toStartOf="@id/tvReportProblem"
+                    app:layout_constraintTop_toBottomOf="@id/tvReportProblem" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProblem"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleProblem"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleProblem"
+                    tools:text="Máquina não liga" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleLogicalNumber"
+                    style="@style/regular_montserrat_14_neutral_600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/number_logic"
+                    app:layout_constraintStart_toStartOf="@id/tvProblem"
+                    app:layout_constraintTop_toBottomOf="@id/tvProblem" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLogicalNumber"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintBottom_toBottomOf="@id/cvContainerProblem"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleLogicalNumber"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleLogicalNumber"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="123456789" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/viewSeparatorTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_marginVertical="@dimen/dimen_4dp"
+                android:background="@color/cloud_100"
+                app:layout_constraintEnd_toEndOf="@id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="@id/cvContainerScroll"
+                app:layout_constraintTop_toBottomOf="@id/cvContainerProblem" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvContainerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="@id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewSeparatorTop">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleAddress"
+                    style="@style/bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_address_label"
+                    app:layout_constraintStart_toStartOf="@id/cvContainerAddress"
+                    app:layout_constraintTop_toTopOf="@id/cvContainerAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAddress"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintEnd_toEndOf="@id/cvContainerAddress"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleAddress"
+                    tools:text="Alameda Xingu, nº 512, 24º Andar, Alphaville, São Paulo - CEP 12345678" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleFacade"
+                    style="@style/regular_montserrat_14_neutral_600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/hint_facade"
+                    app:layout_constraintStart_toStartOf="@id/tvAddress"
+                    app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFacade"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleFacade"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleFacade"
+                    tools:text="Hogwarts Modas" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleReferencePoint"
+                    style="@style/regular_montserrat_14_neutral_600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/hint_ponto_referencia"
+                    app:layout_constraintStart_toStartOf="@id/tvFacade"
+                    app:layout_constraintTop_toBottomOf="@id/tvFacade" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReferencePoint"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleReferencePoint"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleReferencePoint"
+                    tools:text="Casa vermelha na esquina" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/viewSeparatorContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_marginVertical="@dimen/dimen_4dp"
+                android:background="@color/cloud_100"
+                app:layout_constraintEnd_toEndOf="@id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="@id/cvContainerScroll"
+                app:layout_constraintTop_toBottomOf="@id/cvContainerAddress" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvContainerContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewSeparatorContact">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvContactInformation"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_information"
+                    app:layout_constraintStart_toStartOf="@id/cvContainerContact"
+                    app:layout_constraintTop_toTopOf="@id/cvContainerContact" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleContactPhone"
+                    style="@style/regular_montserrat_14_neutral_600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:text="@string/phone"
+                    app:layout_constraintStart_toStartOf="@id/tvContactInformation"
+                    app:layout_constraintTop_toBottomOf="@id/tvContactInformation" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPhoneNumber"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleContactPhone"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleContactPhone"
+                    tools:text="(19) 98315-8742" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleContactName"
+                    style="@style/regular_montserrat_14_neutral_600"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/hint_nome_contato"
+                    app:layout_constraintStart_toStartOf="@id/tvPhoneNumber"
+                    app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvContactName"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    app:layout_constraintBottom_toBottomOf="@id/cvContainerContact"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleContactName"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleContactName"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="Hermione da Silva" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/viewSeparatorBottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_marginVertical="@dimen/dimen_4dp"
+                android:background="@color/cloud_100"
+                app:layout_constraintEnd_toEndOf="@id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="@id/cvContainerScroll"
+                app:layout_constraintTop_toBottomOf="@id/cvContainerContact" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvContainerBusinessHour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewSeparatorBottom">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleBusinessHour"
+                    style="@style/bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_hours"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/cvContainerBusinessHour" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBusinessHour"
+                    style="@style/semi_bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleBusinessHour"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleBusinessHour"
+                    tools:text="Quarta à sábado - 9h até 18h" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <br.com.cielo.libflue.button.v2.CieloButton
+                android:id="@+id/btnOpenCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginVertical="@dimen/dimen_16dp"
+                android:text="@string/open_request"
+                app:layout_constraintBottom_toBottomOf="@id/cvContainerScroll"
+                app:layout_constraintEnd_toEndOf="@+id/cvContainerScroll"
+                app:layout_constraintStart_toStartOf="@id/cvContainerScroll"
+                app:layout_constraintTop_toBottomOf="@+id/cvContainerBusinessHour" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/frame_progress"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/errorInclude"
+        layout="@layout/layout_generic_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.cielo.libflue.loading.TokenLoadingViewFlui
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <br.com.cielo.libflue.screen.HandlerViewFluiV2
+        android:id="@+id/customHandlerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:backImage="@drawable/ic_direction_arrow_left"
+        app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+        app:headerImage="@drawable/ic_symbol_close_brand_400_24_dp"
+        app:isShowContainerButton="true"
+        app:labelColorButtonContained="@color/white"
+        app:labelColorButtonOutlined="@color/brand_400"
+        app:message="@string/commons_generic_error_message"
+        app:messageStyle="@style/medium_montserrat_16_cloud_400"
+        app:title="@string/commons_generic_error_title"
+        app:titleStyle="@style/bold_montserrat_20_cloud_600_spacing_8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/image_empty_transactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:src="@drawable/ic_empty_transactions"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_title_empty_transactions"
+        style="@style/Heading_400_bold_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:text="@string/text_empty_transactions_heading"
+        android:textAlignment="center"
+        android:textColor="@color/brand_400"
+        app:layout_constraintTop_toBottomOf="@id/image_empty_transactions" />
+
+    <TextView
+        android:id="@+id/text_description_empty_transactions"
+        style="@style/Paragraph_400_Regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8dp"
+        android:text="@string/text_empty_transactions_description"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/text_title_empty_transactions" />
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/button_refresh_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:text="@string/label_button_empty_transactions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/description_button_empty_transactions"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

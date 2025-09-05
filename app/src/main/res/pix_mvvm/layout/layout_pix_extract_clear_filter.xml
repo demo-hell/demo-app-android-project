@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:layout_marginTop="@dimen/dimen_13dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/regular_montserrat_14_cloud_600_spacing_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pix_extract_message_empty_transactions_with_active_filter" />
+
+    <TextView
+        android:id="@+id/tvClearFilter"
+        style="@style/semibold_montserrat_16_brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_29dp"
+        android:clickable="true"
+        android:text="@string/clean_all_filter"
+        app:drawableEndCompat="@drawable/ic_directions_chevron_right_brand_400_16_dp" />
+
+</LinearLayout>

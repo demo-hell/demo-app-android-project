@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picture_error_title">Erro camera</string>
+    <string name="picture_error_description">Erro ao abrir a camera, tente outra vez.</string>
+</resources>

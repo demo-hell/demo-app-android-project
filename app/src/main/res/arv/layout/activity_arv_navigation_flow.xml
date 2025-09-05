@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/activity_arv_navigation_flow_scene"
+    tools:context=".arv.presentation.ArvNavigationFlowActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/navigation_icon"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:srcCompat="@drawable/ic_direction_arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/content_description_return_button"/>
+
+    <LinearLayout
+        android:id="@+id/containerMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/wa_icon"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:srcCompat="@drawable/ic_whatsapp_small"
+            app:tint="@color/brand_400"
+            android:contentDescription="@string/description_accessibility_wa_button"
+            android:visibility="visible"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/help_icon"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:srcCompat="@drawable/ic_help_blue"
+            android:contentDescription="@string/description_accessibility_help_button"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/CollapsingToolbar.Expanded_BlackBold"
+        android:lineSpacingExtra="@dimen/dimen_0dp"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:ellipsize="end"
+        android:textAlignment="viewStart"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/navigation_icon"
+        tools:text="@string/text_title_arv_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="@dimen/dimen_8dp">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/navHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@+id/containerButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/nav_graph_arv" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/containerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/navHostFragment"
+            app:layout_constraintVertical_bias="1">
+
+            <View
+                android:id="@+id/viewDivider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/display_200" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFirst"
+                style="@style/Heading_500_18"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@color/white"
+                android:text="@string/ajuda_alert_cancelar"
+                android:textColor="@color/brand_400"
+                android:textSize="@dimen/dimen_16sp"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSecond"
+                style="@style/Heading_500_18"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/button_full_width_brand_selector"
+                android:text="@string/text_avancar"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <br.com.cielo.libflue.screen.HandlerViewFlui
+        android:id="@+id/customHandlerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:backImage="@drawable/ic_direction_arrow_left"
+        app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+        app:headerImage="@drawable/ic_symbol_close_brand_400_24_dp"
+        app:headerImageContentDescription="@string/content_description_close_button"
+        app:isShowContainerButton="true"
+        app:labelColorButtonContained="@color/white"
+        app:labelColorButtonOutlined="@color/brand_400"
+        app:message="@string/commons_generic_error_message"
+        app:messageStyle="@style/Paragraph_400_regular_16_display_400_center"
+        app:title="@string/commons_generic_error_title"
+        app:titleStyle="@style/Heading_600_regular_18_center" />
+
+    <br.com.cielo.libflue.loading.TokenLoadingViewFlui
+        android:id="@+id/arvLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <br.com.cielo.libflue.loading.AnimatedProgressViewFlui
+        android:id="@+id/animatedProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_16dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

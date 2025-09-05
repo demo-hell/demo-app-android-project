@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="available_gross_value">Total bruto disponível para antecipar</string>
+    <string name="available_gross_value_info">Valor total disponível referente a 12 meses (descontando gravames).</string>
+
+    <string name="anticipation_history_title">Histórico de contratações</string>
+    <string name="empty_anticipation_history_title">Até o momento você não realizou nenhuma antecipação.</string>
+
+    <string name="anticipation_history_error_title">Não foi possível exibir o histórico.</string>
+    <string name="anticipation_history_name_title">%s • Antecipação Avulsa</string>
+    <string name="anticipation_history_date">Realizada em:</string>
+
+    <string name="anticipation_value_text">Valor antecipado:</string>
+    <string name="anticipation_status_text">Status da negociação:</string>
+    <string name="anticipation_see_full_history">Ver histórico completo</string>
+    <string name="anticipation_see_full_history_button">Ver histórico completo, botão</string>
+
+    <string name="anticipation_explanation_text">Antecipe os valores disponíveis das vendas por crédito sem precisar esperar e tenha muito mais liberdade e facilidade.</string>
+    <string name="anticipation_select_the_type_of">Selecione o tipo de antecipação</string>
+    <string name="anticipation_whatsapp_news_title">Temos uma novidade para você!</string>
+    <string name="anticipation_whatsapp_news_talk_to_expert">Fale com um especialista</string>
+    <string name="anticipation_whatsapp_news_message">Você pode contratar a Antecipação de Recebíveis também pelo WhatsApp. Inserimos um atalho nessa tela, venha conferir com a gente!</string>
+    <string name="anticipation_whatsapp_tooltip">Você pode contratar direto com\num especialista no WhatsApp</string>
+
+    <string name="single_anticipation">Antecipação Avulsa\nno mesmo dia</string>
+    <string name="single_anticipation_title">Antecipação Avulsa no mesmo dia</string>
+    <string name="single_anticipation_button">Antecipação Avulsa, botão</string>
+    <string name="single_anticipation_date">O valor é antecipado no mesmo dia. *Consulte condições.</string>
+    <string name="single_anticipation_date_zero">Não há valor disponível para realizar esse tipo de antecipação.</string>
+    <string name="arv_no_value_to_anticipate_info_title">Não há valor disponível para Antecipação Avulsa</string>
+
+    <string name="programmed_anticipation">Antecipação Automática\nem 1 dia</string>
+    <string name="programmed_anticipation_button">Antecipação Programada, botão</string>
+    <string name="programmed_anticipation_info">Programe a antecipação automática de seus recebimentos futuros, e receba em 1 dia útil.</string>
+
+    <string name="anticipation_card_number_establishment">Nº do Estabelecimento: %s</string>
+    <string name="anticipation_card_cnpj_establishment">CNPJ: %s</string>
+
+    <string name="anticipation_user_data_info">Dados do recebedor da antecipação</string>
+
+    <string name="anticipation_closed_market_title">Por enquanto o mercado está fechado para negociações</string>
+    <string name="anticipation_closed_market_message">Mercado temporariamente fechado para negociações.</string>
+
+    <string name="anticipation_Unavailable_service_title">No momento essa funcionalidade está em manutenção</string>
+    <string name="anticipation_Unavailable_service_message"><![CDATA[Não se preocupe, é uma manutenção para melhorias desse serviço.
+        <br/><br/>Enquanto aguarda, aproveite as outras funcionalidades do nosso aplicativo ou volte mais tarde.]]></string>
+
+    <string name="anticipation_not_eligible_title">Ficamos muito felizes com seu interesse na Antecipação de recebíveis</string>
+    <string name="anticipation_not_eligible_message"><![CDATA[Estamos trabalhando para disponibilizar esse serviço para mais clientes.
+    <br/><br/>Enquanto não está disponível para você, aproveite as outras funcionalidades que você tem acesso.]]></string>
+
+    <string name="anticipation_corporate_desk_title">Você tem um canal exclusivo de atendimento</string>
+    <string name="anticipation_corporate_desk_message">Entre em contato no número abaixo para ver as condições de antecipação das suas vendas.</string>
+    <string name="anticipation_corporate_desk_phone">(11) 3003-8449</string>
+
+    <string name="anticipation_historic_error">Não foi possível exibir o histórico.</string>
+    <string name="anticipation_me_information_error">Não foi possível exibir essas informações.</string>
+
+    <string name="anticipation_what_is_it_title">O que é Antecipar recebível?</string>
+    <string name="anticipation_what_is_it_message">Você antecipa valores disponíveis das vendas sem precisar esperar. Mais liberdade e facilidade pra você e seu negócio.</string>
+
+    <string name="anticipation_attention_to_the_schedule_title">Atenção aos horários</string>
+    <string name="anticipation_attention_to_the_schedule_message"><![CDATA[As antecipações efetivadas <b>até o limite das %s</b> estarão disponíveis em sua conta no mesmo dia. <b>Operações após esse horário</b> são disponibilizadas em 1 dia útil.]]></string>
+
+    <string name="anticipation_brand_title">Antecipe por bandeiras</string>
+    <string name="anticipation_brand_message">Você tem maior facilidade no gerenciamento das taxas na antecipação por bandeiras. Aproveite esta novidade.</string>
+
+    <string name="anticipation_start_btn">Vamos começar!</string>
+
+    <string name="simulate_detached_anticipation">Simule a Antecipação Avulsa</string>
+    <string name="detached_anticipation_details">Antecipe seu recebível selecionando um período específico.</string>
+    <string name="detached_anticipation_schedule_label">Selecione qual agenda irá negociar:</string>
+    <string name="simulate_detached_schedule_type">Recebíveis Cielo</string>
+    <string name="simulate_detached_cielo_type">Recebíveis Cielo</string>
+    <string name="simulate_detached_market_type">Recebíveis Outras Maquininhas</string>
+    <string name="detached_anticipation_period_need">Qual período você deseja antecipar?</string>
+    <string name="detached_anticipation_select_last_months_period_message">Selecione os últimos meses para antecipar seus recebíveis:</string>
+    <string name="detached_anticipation_select_date_in">De: %s</string>
+    <string name="detached_anticipation_select_date_until">Até: %s</string>
+    <string name="detached_anticipation_gross_value_available">Valor bruto disponível do período selecionado:</string>
+    <string name="simulate_detached_anticipation_liquid_value">Simule para ver o valor líquido que você pode receber.</string>
+    <string name="simulate_detached_anticipation_value">Simule o valor que deseja receber</string>
+    <string name="detached_anticipation_zero_liquid_value">R$ 0,00</string>
+    <string name="simulate_detached_anticipation_not_available">Não há valor disponível para antecipar no período selecionado. Por favor, tente outra data.</string>
+    <string name="simulate_label_button">Simular</string>
+    <string name="anticipation_value_period_label_button">Antecipar valor do período</string>
+    <string name="calendar_init_date_label">Data inicial</string>
+    <string name="calendar_end_date_label">Data final</string>
+    <string name="accessibility_arv_single_loading">Carregando informações, aguarde um momento</string>
+    <string name="accessibility_arv_single_initDate_button">Selecionar data inicial, botão</string>
+    <string name="accessibility_arv_single_endDate_button">Selecionar data final, botão</string>
+
+    <string name="txt_arv_historic_title">Histórico de contratações</string>
+    <string name="txt_arv_historic_description">Consulte todas as contratações de antecipação de recebíveis que você realizou.</string>
+    <string name="txt_arv_historic_card_amount"><![CDATA[Valor total antecipado: <b>%s</b>]]></string>
+    <string name="txt_arv_historic_card_title">%s - Antecipação %s</string>
+    <string name="txt_arv_historic_card_date">Data da contratação: %s</string>
+    <string name="txt_arv_historic_error_message">Pedimos desculpas mas ocorreu um erro para carregar essa área. Por favor, tente recarregar.</string>
+
+    <string name="content_description_arv_historic_card_title">Agenda recebíveis %s, antecipação %s.</string>
+    <string name="content_description_arv_historic_card_amount">Valor total antecipado: %s.</string>
+    <string name="content_description_arv_historic_card_status">Status da negociação: %s. Acessar detalhes da antecipação, botão.</string>
+    <string name="content_description_arv_historic_shimmer_card">Aguarde um momento.</string>
+
+    <string name="arv_query_by_flags_title">Consulte e edite as %s</string>
+    <string name="txt_arv_historic_details_title">Detalhes da contratação</string>
+    <string name="txt_arv_historic_details_net_label_amount">Valor total antecipado</string>
+    <string name="txt_arv_historic_details_label_gross_amount">Valor bruto</string>
+    <string name="txt_arv_historic_details_label_discount_amount">Desconto</string>
+    <string name="txt_arv_historic_details_label_status">Status da negociação</string>
+    <string name="txt_arv_historic_details_label_info_overall">Informações gerais</string>
+    <string name="txt_arv_historic_details_label_type_anticipation">Tipo de antecipação</string>
+    <string name="txt_arv_historic_details_label_agenda">Agenda</string>
+    <string name="txt_arv_historic_details_label_date_hiring">Data da contratação</string>
+    <string name="txt_arv_historic_details_label_brands_selected">Bandeiras selecionadas</string>
+    <string name="txt_arv_historic_details_label_transaction_fee">Taxa da operação</string>
+    <string name="txt_arv_historic_details_label_operation_number">Número da operação</string>
+
+    <string name="arv_review_anticipation">Revise e solicite a sua antecipação</string>
+    <string name="arv_anticipation_type">Tipo de antecipação</string>
+    <string name="arv_receiver_establishment">Estabelecimento recebedor</string>
+    <string name="arv_schedule">Agenda</string>
+    <string name="arv_simulated_period">Período simulado</string>
+    <string name="arv_highlights_period_flow">DESTAQUES DA ANTECIPAÇÃO AVULSA POR PERÍODO</string>
+    <string name="arv_highlights_value_flow">DESTAQUES DA ANTECIPAÇÃO AVULSA SIMULADA</string>
+    <string name="arv_redo_simulation">Refazer simulação</string>
+    <string name="arv_back_btn">Voltar</string>
+    <string name="arv_finish_request">Concluir solicitação</string>
+    <string name="arv_bank_for_receiving">Domicílio bancário para recebimento:</string>
+    <string name="arv_bank_to_receive">Domicílio bancário para recebimento</string>
+    <string name="arv_bank_two_lines_format">"%s\nAg: %s | Conta: %s-%s"</string>
+    <string name="arv_consult_and_edit_brands">Consultar e editar bandeiras</string>
+    <string name="arv_edit">Editar %s</string>
+    <string name="arv_edit_brands">bandeiras</string>
+    <string name="arv_edit_acquirer">credenciadoras</string>
+    <string name="arv_fees_info">Caso o valor disponível na registradora seja inferior ao valor solicitado acima, a operação será realizada considerando o saldo disponível, sendo mantida a taxa nominal da operação.</string>
+    <string name="arv_total_gross_value">Valor bruto total</string>
+    <string name="arv_total_net_to_receive">Total líquido a receber</string>
+    <string name="arv_account_select_bs_title">Selecione uma conta bancária para recebimento</string>
+    <string name="arv_single_list_bs_title">%s selecionadas Antecipação Avulsa:</string>
+    <string name="arv_single_brands_list_bs_title">Bandeiras selecionadas na simulação de Antecipação Avulsa:</string>
+    <string name="arv_purple_alert">Realize sua solicitação até as %s para receber no mesmo dia. Após esse horário, você receberá no próximo dia útil. Transação livre de IOF.</string>
+    <string name="bank_branch">Agência:\u0020</string>
+    <string name="bank_account">Conta:\u0020</string>
+    <string name="arv_period_format">%s até %s</string>
+    <string name="arv_fees_format">"Taxa efetiva (%s%%) e nominal (%s%% a.m.).
+
+Taxa efetiva é referente ao prazo médio de operação realizada. E a nominal é a taxa ao mês"</string>
+    <string name="arv_total_discount_format">Total de desconto: – %s</string>
+    <string name="arv_brand_format">Bandeira: %s</string>
+    <string name="arv_selection_label">%s selecionadas</string>
+    <string name="arv_brands">Bandeiras</string>
+    <string name="arv_acquirers">Credenciadoras</string>
+    <string name="arv_change_bank">Alterar domicílio</string>
+    <string name="arv_loading_banks_error_message">Pedimos desculpas, ocorreu um erro para carregar o seu domicílio bancário.</string>
+    <string name="arv_reload_banks_button_label">Recarregar</string>
+    <string name="arv_account_format">%s-%s</string>
+
+    <string name="anticipation_confirmation_title">Estamos quase lá! Atente-se as informações abaixo</string>
+    <string name="arv_scheduled_anticipation_confirmation_title">Estamos quase lá! Atente-se as informações abaixo antes de concluir</string>
+    <string name="anticipation_confirmation_message"><![CDATA[As antecipações efetivadas <b>até as %s</b> estarão disponíveis na sua conta no mesmo dia. Após este horário, o valor antecipado estará disponível em <b>1 dia útil</b>.
+    <br/><br/>Ao confirmar esta solicitação de <b>Antecipação Avulsa no mesmo dia</b>, você está ciente que não será possível desfazer esta operação. Você quer confirmar?]]></string>
+    <string name="arv_scheduled_anticipation_confirmation_message"><![CDATA[As antecipações efetivadas <b>até as %s</b> estarão disponíveis na sua conta no mesmo dia. Após este horário, o valor antecipado estará disponível em <b>1 dia útil</b>.
+    <br/><br/>Ao confirmar esta solicitação de <b>Antecipação Automática em 1 dia</b>, você está ciente que não será possível desfazer esta operação. Você quer confirmar?]]></string>
+    <string name="arv_scheduled_anticipation_confirmation_message_root"><![CDATA[A contratação da Antecipação Automática em 1 dia <b>também será aplicada às suas filiais.</b>
+    <br/><br/>As antecipações efetivadas <b>até as %s</b> estarão disponíveis na sua conta no mesmo dia. Após este horário, o valor antecipado estará disponível em <b>1 dia útil</b>.
+    <br/><br/>Ao confirmar esta solicitação de <b>Antecipação Automática em 1 dia</b>, você está ciente que não será possível desfazer esta operação. Você quer confirmar?]]></string>
+    <string name="arv_scheduled_anticipation_confirmation_message_branch"><![CDATA[Sua contratação da antecipação <b>pode ser substituída caso seja feita uma nova contratação pela sua RAÍZ.</b>
+    <br/><br/>As antecipações efetivadas <b>até as %s</b> estarão disponíveis na sua conta no mesmo dia. Após este horário, o valor antecipado estará disponível em <b>1 dia útil</b>.
+    <br/><br/>Ao confirmar esta solicitação de <b>Antecipação Automática em 1 dia</b>, você está ciente que não será possível desfazer esta operação. Você quer confirmar?]]></string>
+    <string name="anticipation_success_request_title">Antecipação Avulsa no mesmo dia solicitada com sucesso!</string>
+    <string name="arv_scheduled_anticipation_success_request_title">Antecipação Automática em 1 dia solicitada com sucesso!</string>
+    <string name="anticipation_success_request_message"><![CDATA[Após a confirmação da registradora, o prazo para creditar o valor no seu domicílio bancário é de 1 dia útil. <br>Acompanhe o status dessa solicitação no seu histórico de contratações.]]></string>
+
+    <string name="anticipation_error_insufficient_balance_title">Não há saldo suficiente para realizar esta operação</string>
+    <string name="anticipation_error_insufficient_balance_message">Durante o envio da proposta verificamos que o seu saldo é insuficiente. A negociação foi recusada.\nVolte e realize uma nova negociação.</string>
+
+    <string name="query_by_card_header_brands_text">Bandeiras</string>
+    <string name="query_by_card_header_net_and_total_text">Líquido e bruto</string>
+    <string name="query_by_card_header_select_all">Todos</string>
+    <string name="total_value_text">Valor bruto total</string>
+    <string name="discounts_text">Descontos</string>
+    <string name="net_amount_receivable">Total líquido a receber</string>
+    <string name="arv_values_warn">Ao salvar, você irá visualizar os <b>valores líquido e bruto atualizados</b> com as taxas aplicadas.</string>
+    <string name="arv_empty_brands_dialog_title">Atenção</string>
+    <string name="arv_empty_brands_dialog_message">Para continuar com a Antecipação Avulsa no mesmo dia, selecione ao menos uma bandeira.</string>
+    <string name="arv_empty_acquirers_dialog_message">Para continuar com a Antecipação Avulsa no mesmo dia, selecione ao menos uma credenciadora.</string>
+    <string name="arv_about_discounts_dialog_title">Taxas</string>
+    <string name="arv_save_changes">Salvar alterações</string>
+    <string name="arv_scheduled_anticipation_subtitle">Você deixa programada a antecipação automática de seus recebimentos. É indicada para quem quer antecipar diariamente.</string>
+    <string name="arv_about_schedule">Sobre recebiveis %s</string>
+    <string name="arv_about_schedule_message">Você receberá o total dos valores disponíveis da agenda %s.</string>
+    <string name="arv_efective_fee">Taxa efetiva aplicada</string>
+    <string name="arv_anticipation_warning">A contratação da Antecipação Automática em 1 dia também será aplicada às suas filiais.</string>
+    <string name="arv_scheduled_anticipation_read_terms">Leia e aceite os termos de contratação dessa Antecipação Automática em 1 dia:</string>
+    <string name="arv_scheduled_anticipation_terms">Contrato de Antecipação Automática em 1 dia</string>
+    <string name="arv_type_scheduled_cielo_label">Agenda: Recebíveis Cielo</string>
+    <string name="arv_type_scheduled_market_label">Agenda: Outras maquininhas</string>
+    <string name="arv_status_active">Status: <b>Ativo</b></string>
+    <string name="arv_ec_has_scheduled_anticipations">Este estabelecimento possui antecipações programadas:</string>
+    <string name="arv_ec_has_scheduled_anticipations_single_disabled_message">Seu estabelecimento já possui antecipações programadas.</string>
+    <string name="arv_root_has_scheduled_anticipations">A Raiz de seu CNPJ já possui antecipações programadas:</string>
+    <string name="arv_root_has_scheduled_anticipations_single_disabled_message">A raiz de seu CNPJ já possui antecipações programadas.</string>
+    <string name="arv_ec_has_one_scheduled_anticipation">Este estabelecimento possui uma Antecipação Automática em 1 dia:</string>
+    <string name="arv_hire_another_schedule_cielo">Contratar para Agenda Cielo</string>
+    <string name="arv_hire_another_schedule_market">Contratar para Agenda Outras Maquininhas</string>
+    <string name="arv_cancel_anticipation">Cancelar antecipação</string>
+    <string name="arv_simulate_what_value_do_you_want">Qual o valor deseja receber?</string>
+    <string name="arv_simulate_value_available_label">Valor líquido disponível</string>
+    <string name="arv_simulate_value_available">R$ s%</string>
+    <string name="arv_simulate_value_not_surpass">O valor que deseja receber não pode ultrapassar o seu valor líquido disponível.</string>
+    <string name="arv_simulate_value_not_available_choose_brands">Pelo simulador você não consegue selecionar as bandeiras desejadas para antecipar. Caso queira essa funcionalidade, escolha antecipar o valor do período, na tela anterior.</string>
+    <string name="arv_simulate_alert_max_value">Não é possível simular um valor maior que o valor total líquido.</string>
+    <string name="arv_wait_a_moment">Aguarde um momento...</string>
+
+    <string name="arv_opt_in_request_title">Autorização pendente</string>
+    <string name="arv_opt_in_request_message"><![CDATA[Para realizar as negociações de antecipação, é necessário que você autorize a Cielo a ter acesso à sua agenda de recebíveis. <br/><br/>Caso tenha interesse, sugerimos que realize a autorização do termo, sendo assim você poderá prosseguir com as suas negociações de Cielo e Mercado.]]></string>
+    <string name="arv_opt_in_request_button_label">Realizar autorização</string>
+
+    <string name="arv_contacts_title">Contratos</string>
+    <string name="negotiation_type_unavailable">Agenda indisponível</string>
+    <string name="arv_negotiation_temporarily_unavailable">Agenda temporariamente indisponível</string>
+    <string name="arv_market_recivables_unavailable">Agenda temporariamente indisponível</string>
+    <string name="arv_cielo_receivables">Recebíveis Cielo</string>
+    <string name="arv_cielo_receivables_colored_substring">Cielo</string>
+    <string name="arv_market_receivables">Recebíveis Outras Maquininhas</string>
+    <string name="arv_market_receivables_colored_substring">Outras Maquininhas</string>
+    <string name="arv_cielo_schedule_label">Agenda Cielo</string>
+    <string name="arv_market_schedule_label">Agenda Outras Maquininhas</string>
+    <string name="arv_cielo">Cielo</string>
+    <string name="arv_market">Outras Maquininhas</string>
+    <string name="arv_scheduled_branches_contracts_warning_label">Uma ou mais das suas filiais já possuem uma Antecipação Automática em 1 dia contratada.</string>
+    <string name="arv_both_schedules">Ambas Agendas</string>
+    <string name="arv_both_schedules_colored_substring">Ambas</string>
+    <string name="arv_cielo_and_market_receivables">Recebíveis Cielo e Outras Maquininhas</string>
+    <string name="arv_one_schedule_with_no_balance_and_other_with_scheduled_activated">Agenda %s sem saldo e Agenda %s com Antecipação Automática em 1 dia</string>
+    <string name="arv_hire_anyway">Contratar mesmo assim</string>
+    <string name="arv_branches_with_scheduled_hired">Filiais com Antecipação Automática em 1 dia</string>
+    <string name="arv_applied_fee">Taxa aplicada:</string>
+    <string name="arv_hired_since">Contratado desde:</string>
+    <string name="arv_scheduled_market_unavailable">Agenda Outras Maquininhas indisponível</string>
+    <string name="arv_cancel_confirmation_title">Tem certeza que gostaria de cancelar essa antecipação?</string>
+    <string name="arv_cancel_confirmation_message"><![CDATA[
+    <ul>
+    <li>&nbsp;Você não receberá mais diariamente as vendas no crédito, <b>receberá em 30 dias no Crédito à Vista e 30 dias por parcela no Parcelado;</b></li>
+    <br>
+    <li><b>&nbsp;Suas taxas podem ser alteradas.<b></li>
+    </ul>]]></string>
+    <string name="arv_cancel_reason">Motivo do cancelamento</string>
+    <string name="arv_keep_anticipation">Manter antecipação</string>
+    <string name="arv_yes_keep">Sim, desejo cancelar</string>
+    <string name="arv_write_reason_here">Escreva o motivo aqui (%s)</string>
+    <string name="arv_mandatory">Obrigatório</string>
+    <string name="arv_optional">Opcional</string>
+    <string name="arv_cancel_reason_1">O prazo de 30 dias já é adequado para mim</string>
+    <string name="arv_cancel_reason_2">Preço acima do esperado</string>
+    <string name="arv_cancel_reason_3">Não solicitei a Antecipação</string>
+    <string name="arv_cancel_reason_4">Já possuo outras formas para receber em prazo mais curto</string>
+    <string name="arv_cancel_reason_other">Outro</string>
+    <string name="arv_cancel_write_reason">Preencha o motivo do cancelamento</string>
+    <string name="arv_cancel_fees_alert">Suas taxas e prazos de recebimento serão alteradas em até 1 dia útil.</string>
+    <string name="arv_cancel_subtitle">Para continuar, informe o motivo para cancelar esta antecipação.</string>
+    <string name="arv_cancel_success_title">Seu cancelamento foi solicitado com sucesso</string>
+    <string name="arv_cancel_success_message">Suas taxas e prazos de recebimento serão alteradas em até 1 dia útil. O prazo do cancelamento é de até 48 horas.</string>
+    <string name="expand_brands_button_description">Expandir bandeiras</string>
+    <string name="arv_select_all_button_description">selecionar todos, botão</string>
+
+    <plurals name="brand_plurals">
+        <item quantity="one">mais %d bandeira</item>
+        <item quantity="other">mais %d bandeiras</item>
+    </plurals>
+
+    <plurals name="acquirer_plurals">
+        <item quantity="one">mais %d credenciadora</item>
+        <item quantity="other">mais %d credenciadoras</item>
+    </plurals>
+
+    <string name="receive_today">Receba hoje</string>
+    <string name="arv_pending_authorization_subtitle">Para realizar as negociações de antecipação, é necessário que você autorize a Cielo a ter acesso à sua agenda de recebíveis. Caso tenha interesse, sugerimos que realize a autorização do termo, sendo assim você poderá prosseguir com as suas negociações de Cielo e Mercado.</string>
+    <string name="arv_24_months_label">24 meses</string>
+    <string name="arv_12_months_label">12 meses</string>
+    <string name="arv_6_months_label">6 meses</string>
+    <string name="arv_3_months_label">3 meses</string>
+    <string name="arv_1_month_label">1 mês</string>
+
+</resources>

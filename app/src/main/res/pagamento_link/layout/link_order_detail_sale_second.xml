@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/background_card_cielo_default"
+        android:padding="@dimen/dimen_12dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStatusPayLabel"
+            style="@style/payment_link_order_details_label"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:text="@string/link_detail_sale_payment_status_pay"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStatusPayData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:background="@drawable/background_gree_link_status_order_pay"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_12sp"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingBottom="@dimen/dimen_6dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="@id/textViewStatusPayLabel"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textViewStatusPayLabel"
+            tools:text="Aprovado" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAFLabel"
+            style="@style/payment_link_order_details_label"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:text="@string/link_detail_sale_payment_af"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="@+id/textViewStatusPayLabel"
+            app:layout_constraintTop_toBottomOf="@id/textViewStatusPayData" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAFData"
+            style="@style/payment_link_order_details_data"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            tools:text="N/A"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewStatusPayData" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDatePayLabel"
+            style="@style/payment_link_order_details_label"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:text="@string/link_detail_sale_payment_date"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/textViewAFLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDatePayData"
+            style="@style/payment_link_order_details_data"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAFData"
+            tools:text="03/04/2020" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStatusDeliveryLabel"
+            style="@style/payment_link_order_details_label"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:text="@string/link_detail_sale_payment_delivery_status"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/textViewDatePayLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStatusDeliveryData"
+            style="@style/payment_link_order_details_data"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDatePayData"
+            tools:text="Solicitar motoboy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

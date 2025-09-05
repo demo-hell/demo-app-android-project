@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_welcome_notification">
+
+            <View
+                android:id="@+id/dragIcon"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_4dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/ic_drag_bottom_sheet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bsImage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_40dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintHeight_max="@dimen/dimen_250dp"
+                app:layout_constraintHeight_min="@dimen/dimen_140dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dragIcon"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:srcCompat="@drawable/ic_generic_error_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/bold_montserrat_20_cloud_800"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/tvSubTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bsImage"
+                tools:text="@string/selfie_challenge_bs_alert_title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubTitle"
+                style="@style/regular_montserrat_16_neutral_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_30dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/buttonsContainer"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                tools:text="@string/selfie_challenge_bs_alert_subtitle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <br.com.cielo.libflue.button.v2.CieloButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/cancel"
+                    app:buttonType="outlined"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <br.com.cielo.libflue.button.v2.CieloButton
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ok"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginVertical="@dimen/dimen_16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnCancel" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

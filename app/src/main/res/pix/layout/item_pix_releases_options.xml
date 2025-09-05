@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/radioGroupTypeEntries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbAllEntries"
+            style="@style/Paragraph_400_regular_16_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_selector_radio_button"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/txt_pix_extract_filter_option_all_releases" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/display_200" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbEntries"
+            style="@style/Paragraph_400_regular_16_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_selector_radio_button"
+            android:layoutDirection="rtl"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/txt_pix_extract_filter_entries" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/display_200" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbExits"
+            style="@style/Paragraph_400_regular_16_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_selector_radio_button"
+            android:layoutDirection="rtl"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/txt_pix_extract_filter_exits" />
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

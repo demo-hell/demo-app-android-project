@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvLabelValue"
+        style="@style/bold_ubuntu_12_cloud_300"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_pix_extract_detail_transaction_receipt_amount"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:padding="@dimen/dimen_16dp"
+        android:background="@drawable/background_success_100_radius_8"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelValue">
+
+        <TextView
+            android:id="@+id/tvTransactionAmount"
+            style="@style/regular_ubuntu_24_success_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="R$ 500,00" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvTransactionAmount"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvSale"
+                style="@style/regular_ubuntu_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_value_sale_pix"
+                app:layout_constraintEnd_toStartOf="@id/tvSaleValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSaleValue"
+                style="@style/regular_ubuntu_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textAlignment="viewEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvSale"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="R$ 500,00" />
+
+            <TextView
+                android:id="@+id/tvChange"
+                style="@style/regular_ubuntu_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/tv_value_change_pix"
+                app:layout_constraintEnd_toStartOf="@id/tvChangeValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSale" />
+
+            <TextView
+                android:id="@+id/tvChangeValue"
+                style="@style/regular_ubuntu_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textAlignment="viewEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvChange"
+                app:layout_constraintTop_toBottomOf="@id/tvSale"
+                tools:text="R$ 500,00" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

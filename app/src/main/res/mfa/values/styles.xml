@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextViewResumeBankAndCNPJTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/color_231F20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJSubtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_6sp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJContainer">
+        <item name="android:minHeight">144dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_16dp</item>
+        <item name="android:background">@drawable/background_resume_bank_and_cnpj</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJTitle14sp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJTitle5dpTop" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJDataTop" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:layout_marginStart">@dimen/dimen_5dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJData" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:layout_marginStart">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJTitleData" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="TextViewResumeBankAndCNPJTitleDataTop" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_title_contract"
+                    style="@style/TextBlack16spTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:text="@string/itens_selecionados"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linear_item_chosen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:layout_marginStart="@dimen/dimen_12dp"
+                    android:layout_marginEnd="@dimen/dimen_12dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_contract" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_title_contract1"
+                    style="@style/TextBlack16spTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_24dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:text="@string/dados_de_entrega"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_item_chosen" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:layout_marginStart="@dimen/dimen_12dp"
+                    android:layout_marginEnd="@dimen/dimen_12dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="@dimen/card_corner"
+                    app:cardElevation="@dimen/dimen_3dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_contract1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/text_title_address"
+                            style="@style/TextBlack16sp500Normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_16dp"
+                            android:layout_marginTop="@dimen/dimen_16dp"
+                            android:layout_marginEnd="@dimen/dimen_16dp"
+                            android:text="@string/endereco" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/text_description_address"
+                            style="@style/TextGrey14spNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_16dp"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:layout_marginEnd="@dimen/dimen_16dp"
+                            android:layout_marginBottom="@dimen/dimen_16dp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <RelativeLayout
+                    android:id="@+id/containerErrorLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView3" >
+
+                    <include
+                        android:id="@+id/frameErrorInclude"
+                        layout="@layout/item_alert"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_button_next"
+        style="@style/ButtonShapedPurpleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/button_next"
+            style="@style/ButtonShapedPurpleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_28dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginStart="@dimen/dimen_40dp"
+            android:layout_marginEnd="@dimen/dimen_40dp"
+            android:text="@string/confirmar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/frame_progress_include"
+            layout="@layout/frame_progress"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/include_error"
+        layout="@layout/fragment_receba_mais_failure"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

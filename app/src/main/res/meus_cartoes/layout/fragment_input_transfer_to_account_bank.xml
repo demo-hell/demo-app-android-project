@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="52dp"
+            android:layout_marginTop="34dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textBankAccountTitle"
+                style="@style/TextBlack24spTitle"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_bank_account_title"
+                tools:text="@string/text_bank_account_title" />
+
+
+            <LinearLayout
+                android:id="@+id/linearBankAccountInputs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tvBankHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="@string/esqueci_senha_banco_hint"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <RelativeLayout
+                    android:id="@+id/bankLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/dimen_8dp"
+                    >
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/bankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Banco"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textColor="@color/text_color_263238"
+                        android:textColorHint="@color/gray_light"
+                        android:textSize="16sp"
+                        app:typeface="MuseoSans-500.ttf" />
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@android:drawable/arrow_down_float"
+                        android:tint="@color/display_400"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/bankLineView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/gray_light" />
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/spinnerBankAgencies"-->
+<!--                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:spinnerMode="dialog"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="20dp"-->
+<!--                    android:paddingBottom="20dp" -->
+<!--                    />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutBankAgency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputHintPrepago"
+                    android:layout_marginTop="58dp"
+                    android:hint="@string/text_agency_number_hint">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                        android:id="@+id/textInputEditAgencyNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:imeOptions="actionNext"
+                        style="@style/TextInputEditPrepago"
+                        android:background="@drawable/edit_text_shape_bank_account"
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearAccountAndDigit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutAccount"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:theme="@style/TextInputHintPrepago"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:hint="@string/text_account_hint">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/textInputEditAccount"
+                            android:inputType="number"
+                            style="@style/TextInputEditPrepago"
+                            android:background="@drawable/edit_text_shape_bank_account"
+                            android:maxLines="1"
+                            android:maxLength="15"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutDigit"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:hint="@string/text_account_digit"
+                        android:layout_marginStart="5dp">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/textInputEditAccountDigit"
+                            android:maxLines="1"
+                            android:maxLength="1"
+                            android:imeOptions="actionDone"
+                            style="@style/TextInputEditPrepago"
+                            android:background="@drawable/edit_text_shape_bank_account"
+                            android:lines="1"
+                            android:inputType="text|textCapSentences"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearAccountTypeButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:orientation="horizontal">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                        android:id="@+id/buttonCheckingAccountType"
+                        android:text="@string/text_checking_account_type_label"
+                        style="@style/ButtonSwitchStyle"
+                        android:background="@drawable/button_selector_rounded_left"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                        android:id="@+id/buttonSavingAccoutType"
+                        style="@style/ButtonSwitchStyle"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selector_rounded_right"
+                        android:text="@string/text_savings_account_type_label" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearElectronicTransferFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="end"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearAccountTypeButtons">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/buttonDirectElectronicTransferNext"
+                        style="@style/ButtonShapedPurpleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="43dp"
+                        android:enabled="false"
+                        android:padding="15dp"
+                        app:fb_text="@string/text_bank_account_input_next_button_label" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

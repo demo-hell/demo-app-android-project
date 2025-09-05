@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_access_manager"
+    app:startDestination="@id/accessManagerHomeFragment">
+
+    <action
+        android:id="@+id/action_to_accessManagerHomeFragment"
+        app:destination="@+id/accessManagerHomeFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_access_manager" />
+
+    <fragment
+        android:id="@+id/accessManagerHomeFragment"
+        android:name="br.com.mobicare.cielo.accessManager.home.AccessManagerHomeFragment"
+        android:label="fragment_access_manager_home"
+        tools:layout="@layout/fragment_access_manager_home">
+
+        <action
+            android:id="@+id/action_accessManagerHomeFragment_to_accessManagerSelectRoleFragment"
+            app:destination="@id/accessManagerSelectRoleFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_accessManagerHomeFragment_to_accessManagerAssignedUsersFragment"
+            app:destination="@id/accessManagerAssignedUsersFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_accessManagerHomeFragment_to_accessManagerAddUserOptionForeignFragment"
+            app:destination="@id/accessManagerAddUserOptionForeignFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerHomeFragment"/>
+
+        <action
+            android:id="@+id/action_accessManagerHomeFragment_to_accessManagerExpiredInvitationFragment"
+            app:destination="@id/accessManagerExpiredInvitationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_accessManagerHomeFragment_to_accessManagerPendingForeignUsersFragment"
+            app:destination="@id/accessManagerPendingForeignUsersFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+        <action
+            android:id="@+id/action_accessManagerHomeFragment_to_accessManagerAddUserTypeFragment"
+            app:destination="@id/accessManagerAddUserTypeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerHomeFragment"/>
+
+        <action
+            android:id="@+id/action_accessManagerHomeFragment_to_accessManagerCustomProfileFragment"
+            app:destination="@id/accessManagerCustomProfileFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerHomeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerSelectRoleFragment"
+        android:name="br.com.mobicare.cielo.accessManager.assignRole.AccessManagerSelectRoleFragment"
+        android:label="fragment_access_manager_select_role"
+        tools:layout="@layout/fragment_access_manager_select_role">
+
+        <argument
+            android:name="usersList"
+            app:argType="br.com.mobicare.cielo.accessManager.model.AccessManagerUser[]" />
+
+        <action
+            android:id="@+id/action_accessManagerSelectRoleFragment_to_accessManagerAssignRoleFragment"
+            app:destination="@id/accessManagerAssignRoleFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerAssignRoleFragment"
+        android:name="br.com.mobicare.cielo.accessManager.assignRole.AccessManagerAssignRoleFragment"
+        android:label="fragment_access_manager_assign_role"
+        tools:layout="@layout/fragment_access_manager_assign_role">
+
+        <argument
+            android:name="usersList"
+            app:argType="br.com.mobicare.cielo.accessManager.model.AccessManagerUser[]" />
+        <argument
+            android:name="role"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerAssignedUsersFragment"
+        android:name="br.com.mobicare.cielo.accessManager.assignedUsers.AccessManagerAssignedUsersFragment"
+        android:label="fragment_access_manager_assigned_users"
+        tools:layout="@layout/fragment_access_manager_assigned_users">
+
+        <argument
+            android:name="usersList"
+            app:argType="br.com.mobicare.cielo.accessManager.model.AccessManagerUser[]" />
+        <argument
+            android:name="profileId"
+            app:argType="string" />
+        <argument
+            android:name="profileName"
+            app:argType="string" />
+        <argument
+            android:name="customProfileIsEnabled"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_accessManagerAssignedUsersFragment_to_accessManagerBatchChangeProfileFragment2"
+            app:destination="@id/accessManagerBatchChangeProfileFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerBatchChangeProfileFragment"
+        android:name="br.com.mobicare.cielo.accessManager.presentation.batchProfileChange.AccessManagerBatchChangeProfileFragment"
+        android:label="fragment_access_manager_batch_change_profile"
+        tools:layout="@layout/fragment_access_manager_batch_change_profile">
+
+        <argument
+            android:name="usersList"
+            app:argType="br.com.mobicare.cielo.accessManager.model.AccessManagerUser[]" />
+        <argument
+            android:name="profileId"
+            app:argType="string" />
+        <argument
+            android:name="profileName"
+            app:argType="string" />
+        <argument
+            android:name="customProfileIsEnabled"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerCustomProfileFragment"
+        android:name="br.com.mobicare.cielo.accessManager.customProfile.AccessManagerCustomProfileFragment"
+        android:label="fragment_access_manager_assigned_users"
+        tools:layout="@layout/fragment_access_manager_custom_profile">
+
+        <action
+            android:id="@+id/action_accessManagerCustomProfileFragment_to_accessManagerCustomProfileDetailFragment"
+            app:destination="@id/accessManagerCustomProfileDetailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerCustomProfileFragment" />
+
+        <action
+            android:id="@+id/action_accessManagerCustomProfileFragment_to_accessManagerAssignedUsersFragment"
+            app:destination="@id/accessManagerAssignedUsersFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerCustomProfileFragment" />
+
+        <argument
+            android:name="usersList"
+            app:argType="br.com.mobicare.cielo.accessManager.model.AccessManagerUser[]" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerCustomProfileDetailFragment"
+        android:name="br.com.mobicare.cielo.accessManager.customProfile.detail.AccessManagerCustomProfileDetailFragment"
+        android:label="fragment_access_manager_custom_profile_detail"
+        tools:layout="@layout/fragment_access_manager_custom_profile_detail"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right">
+
+        <argument
+            android:name="profileId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerAddUserOptionForeignFragment"
+        android:name="br.com.mobicare.cielo.accessManager.addUser.AccessManagerAddUserOptionForeignFragment"
+        android:label="fragment_access_manager_add_user_option_foreign"
+        tools:layout="@layout/fragment_access_manager_add_user_option_foreign"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right">
+
+        <action
+            android:id="@+id/action_accessManagerAddUserOptionForeignFragment_to_accessManagerAddUserTypeFragment"
+            app:destination="@id/accessManagerAddUserTypeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerAddUserOptionForeignFragment" />
+
+        <action
+            android:id="@+id/action_accessManagerAddUserOptionForeignFragment_to_accessManagerAddUserNationalityFragment"
+            app:destination="@id/accessManagerAddUserNationalityFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerAddUserOptionForeignFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerAddUserNationalityFragment"
+        android:name="br.com.mobicare.cielo.accessManager.addUser.AccessManagerAddUserNationalityFragment"
+        android:label="fragment_access_manager_add_user_nationality"
+        tools:layout="@layout/fragment_access_manager_add_user_nationality"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right">
+
+        <action
+            android:id="@+id/action_accessManagerAddUserNationalityFragment_to_accessManagerAddUserTypeFragment"
+            app:destination="@id/accessManagerAddUserTypeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerAddUserNationalityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accessManagerAddUserCpfFragment"
+        android:name="br.com.mobicare.cielo.accessManager.addUser.AccessManagerAddUserCpfFragment"
+        android:label="fragment_access_manager_add_users_cpf"
+        tools:layout="@layout/fragment_access_manager_add_user_cpf"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right">
+
+        <action
+            android:id="@+id/action_accessManagerAddUserCpfFragment_to_accessManagerAddUserEmailFragment"
+            app:destination="@id/accessManagerAddUserEmailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerAddUserCpfFragment" />
+
+        <action
+            android:id="@+id/action_accessManagerAddUserCpfFragment_to_accessManagerExpiredInvitationFragment"
+            app:destination="@id/accessManagerExpiredInvitationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+        <argument
+            android:name="IS_FOREIGN_ARGS"
+            app:argType="boolean" />
+        <argument
+            android:name="NATIONALITY_CODE_ARGS"
+            app:argType="string" />
+        <argument
+            android:name="ROLE_ARGS"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/accessManagerAddUserEmailFragment"
+        android:name="br.com.mobicare.cielo.accessManager.addUser.AccessManagerAddUserEmailFragment"
+        android:label="fragment_access_manager_add_user_email"
+        tools:layout="@layout/fragment_access_manager_add_user_email">
+
+        <action
+            android:id="@+id/action_accessManagerAddUserEmailFragment_to_accessManagerAddUserEstablishmentFragment"
+            app:destination="@id/accessManagerAddUserEstablishmentFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerAddUserCpfFragment"/>
+
+        <action
+            android:id="@+id/action_accessManagerAddUserEmailFragment_to_accessManagerExpiredInvitationFragment"
+            app:destination="@id/accessManagerExpiredInvitationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+        <argument
+            android:name="IS_FOREIGN_ARGS"
+            app:argType="boolean" />
+        <argument
+            android:name="NATIONALITY_CODE_ARGS"
+            app:argType="string" />
+        <argument
+            android:name="CPF_ARGS"
+            app:argType="string" />
+        <argument
+            android:name="ROLE_ARGS"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerAddUserTypeFragment"
+        android:name="br.com.mobicare.cielo.accessManager.addUser.AccessManagerAddUserTypeFragment"
+        android:label="fragment_access_manager_add_user_type"
+        tools:layout="@layout/fragment_access_manager_add_user_type">
+
+        <action
+            android:id="@+id/accessManagerAddUserTypeFragment_to_accessManagerAddUserCpfFragment"
+            app:destination="@id/accessManagerAddUserCpfFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerAddUserTypeFragment" />
+
+        <argument
+            android:name="IS_FOREIGN_ARGS"
+            app:argType="boolean" />
+        <argument
+            android:name="NATIONALITY_CODE_ARGS"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerAddUserEstablishmentFragment"
+        android:name="br.com.mobicare.cielo.accessManager.addUser.AccessManagerAddUserEstablishmentFragment"
+        android:label="fragment_access_manager_add_user_establishment"
+        tools:layout="@layout/fragment_access_manager_add_user_establishment">
+
+        <action
+            android:id="@+id/action_accessManagerAddUserEstablishmentFragment_to_accessManagerAddUserTypeFragment"
+            app:destination="@id/accessManagerAddUserTypeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerHomeFragment"/>
+
+        <action
+            android:id="@+id/action_accessManagerAddUserEstablishmentFragment_to_accessManagerAddUserOptionForeignFragment"
+            app:destination="@id/accessManagerAddUserOptionForeignFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerHomeFragment" />
+
+        <argument
+            android:name="IS_FOREIGN_ARGS"
+            app:argType="boolean" />
+        <argument
+            android:name="NATIONALITY_CODE_ARGS"
+            app:argType="string" />
+        <argument
+            android:name="cpf"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="ROLE_ARGS"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerExpiredInvitationFragment"
+        android:name="br.com.mobicare.cielo.accessManager.expired.AccessManagerExpiredInvitationFragment"
+        android:label="fragment_access_manager_expired_invitation"
+        tools:layout="@layout/fragment_access_manager_expired_invitation">
+
+        <action
+            android:id="@+id/action_accessManagerExpiredInvitationFragment_to_accessManagerHomeFragment"
+            app:destination="@id/accessManagerHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/accessManagerExpiredInvitationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerPendingForeignUsersFragment"
+        android:name="br.com.mobicare.cielo.accessManager.foreignUsers.AccessManagerForeignListFragment"
+        android:label="accessManagerPendingForeignUsersFragment"
+        tools:layout="@layout/fragment_access_manager_foreign_list">
+
+        <argument
+            android:name="usersList"
+            app:argType="br.com.mobicare.cielo.accessManager.model.ForeignUsersItem[]" />
+
+        <action
+            android:id="@+id/action_accessManagerPendingForeignUsersFragment_to_accessManagerForeignUserDetailFragment"
+            app:destination="@id/accessManagerForeignUserDetailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/accessManagerForeignUserDetailFragment"
+        android:name="br.com.mobicare.cielo.accessManager.foreignDetail.AccessManagerForeignDetailFragment"
+        android:label="accessManagerPendingForeignDetailFragment"
+        tools:layout="@layout/fragment_access_manager_foreign_detail">
+
+        <argument
+            android:name="userId"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

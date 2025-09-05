@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_99000000">
+
+        <LinearLayout
+            android:id="@+id/content_constrant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_welcome_notification"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_weight="0.03"
+                android:background="@drawable/ic_drag_bottom_sheet" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="0.35"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/txt_toobar_name"
+                        style="@style/TxtToobarNameBoldMontserrat"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="@string/text_registro_recebiveis" />
+
+                    <LinearLayout
+                        android:id="@+id/btn_close"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_icon_close" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="0.01"
+                android:background="@color/color_grey_B8B8B8"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+                app:layout_constraintVertical_bias="0" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="4.6"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25"
+                tools:ignore="MissingConstraints">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_bottom_sheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/txt_title"
+                    style="@style/TxtTitleBlueBold"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:text="@string/txt_title_motoboy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_bottom_sheet"
+                    app:layout_goneMarginStart="@dimen/dimen_16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/txt_subtitle"
+                    style="@style/TxtSubtitleBlackNormal"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:autoLink="phone"
+                    android:paddingBottom="@dimen/dimen_20dp"
+                    android:text="@string/arv_pending_authorization_subtitle"
+                    android:textAlignment="gravity"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_title"
+                    app:layout_goneMarginStart="@dimen/dimen_16dp"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                    android:id="@+id/retryButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toTopOf="@+id/retryButton2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_subtitle"
+                    app:layout_constraintVertical_bias="1"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                    android:id="@+id/retryButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/layout_meu_cadastro_values"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textview_item_solucao_contratada_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:clickable="true"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:typeface="MuseoSans-700.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textview_item_solucao_contratada_num_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="right"
+                android:visibility="gone"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_item_solucoes_contratadas_title"
+            android:layout_toLeftOf="@+id/layout_meu_cadastro_values"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textview_item_solucao_contratada_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textColor="@color/text_color_263238"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:typeface="MuseoSans-700.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textview_item_solucao_contratada_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textColor="@color/gray_light"
+                android:textSize="12sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_meu_cadastro_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/layout_item_solucoes_contratadas_title"
+            android:alpha="0.2"
+            android:background="@color/text_color_263238" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_man"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:background="@color/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dc_rv_banks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_16dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintBottom_toTopOf="@+id/text_track_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dc_tv_name_bank_dc"
+                tools:ignore="MissingConstraints"
+                tools:listitem="@layout/item_dados_conta" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dc_tv_name_bank_dc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dimen_6sp"
+                android:text="@string/dc_title"
+                android:textAllCaps="false"
+                android:textColor="@color/color_353A40"
+                android:textSize="@dimen/dimen_16sp"
+                android:fontFamily="@font/montserrat_bold"
+                app:layout_constraintBottom_toTopOf="@id/dc_rv_banks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_track_title"
+                style=""
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:text="@string/dc_track_account_title"
+                android:textSize="@dimen/dimen_16sp"
+                android:fontFamily="@font/montserrat_bold"
+                app:layout_constraintBottom_toTopOf="@+id/text_track_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/dc_rv_banks"
+                app:layout_constraintTop_toBottomOf="@+id/dc_rv_banks" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_track_text"
+                style=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:maxLines="2"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:text="@string/dc_track_account_text"
+                android:textSize="@dimen/dimen_16sp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_6sp"
+                app:layout_constraintBottom_toTopOf="@+id/card_view"
+                app:layout_constraintEnd_toEndOf="@id/dc_rv_banks"
+                app:layout_constraintStart_toStartOf="@id/dc_rv_banks"
+                app:layout_constraintTop_toBottomOf="@+id/text_track_title" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contract_track"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_24dp"
+                android:background="@drawable/background_card_cielo_default"
+                app:layout_constraintBottom_toTopOf="@+id/bt_add_account"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_track_text">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginEnd="@dimen/dimen_16dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/dc_track_account"
+                        android:textSize="@dimen/dimen_16sp"
+                        android:fontFamily="@font/ubuntu"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView_arrow"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView_arrow"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imageView_arrow"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <ImageView
+                        android:id="@+id/imageView_arrow"
+                        android:layout_width="@dimen/dimen_24dp"
+                        android:layout_height="@dimen/dimen_18dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/dimen_16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:srcCompat="@drawable/ic_arrow_flui" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_add_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_60dp"
+                android:background="@drawable/background_blue_arround_botton"
+                android:gravity="center"
+                android:lineSpacingExtra="0sp"
+                android:text="@string/dc_add_account"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/montserrat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/frameProgress_dc"
+        layout="@layout/frame_progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Error -->
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorLayout"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:visibility="gone"
+        android:layout_marginBottom="?android:attr/listPreferredItemHeight"
+        app:cieloErrorButtonLabel="@string/text_try_again_label"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorMessage="@string/text_message_generic_error"
+        app:cieloErrorTitle="@string/text_title_generic_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

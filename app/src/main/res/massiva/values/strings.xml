@@ -1,0 +1,8 @@
+<resources>
+    <string name="ga_login_massiva">Login cliente massiva</string>
+    <string name="ga_login_duvida_EC">Dúvida Num. do estabelecimento</string>
+
+    <string name="login_massiva_message">Caro cliente, já criamos um usuário para você. Cadastre agora a sua senha para acessar o aplicativo.</string>
+    <string name="login_massiva_cadastrar_senha">Cadastrar senha</string>
+
+</resources>

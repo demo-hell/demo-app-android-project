@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".arv.presentation.anticipation.ArvAnticipationSimulationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAnticipationTypeLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_anticipation_type"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMoneyCoin"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_money_coin_down"
+            android:tint="@color/cloud_300"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAnticipationType"
+            app:layout_constraintEnd_toStartOf="@id/tvAnticipationType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvAnticipationType" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAnticipationType"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivMoneyCoin"
+            app:layout_constraintTop_toBottomOf="@id/tvAnticipationTypeLabel"
+            tools:text="Antecipação Avulsa" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReceiverEstablishmentLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_receiver_establishment"
+            app:layout_constraintTop_toBottomOf="@+id/tvAnticipationType" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStore"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_store_gray"
+            android:tint="@color/cloud_300"
+            app:layout_constraintBottom_toBottomOf="@+id/tvReceiverEstablishmentCnpj"
+            app:layout_constraintEnd_toStartOf="@id/tvReceiverEstablishmentName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvReceiverEstablishmentName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReceiverEstablishmentName"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivStore"
+            app:layout_constraintTop_toBottomOf="@id/tvReceiverEstablishmentLabel"
+            tools:text="Padaria Jardim Azul {nome fantasia}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReceiverEstablishmentCnpj"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivStore"
+            app:layout_constraintTop_toBottomOf="@id/tvReceiverEstablishmentName"
+            tools:text="34.317.980/****-**" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvScheduleLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_schedule"
+            app:layout_constraintTop_toBottomOf="@+id/tvReceiverEstablishmentCnpj" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMachine"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_cielo_machine"
+            android:tint="@color/cloud_300"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSchedule"
+            app:layout_constraintEnd_toStartOf="@id/tvSchedule"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvSchedule" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSchedule"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivMachine"
+            app:layout_constraintTop_toBottomOf="@id/tvScheduleLabel"
+            tools:text="Recebíveis Cielo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSimulatedPeriodLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_simulated_period"
+            app:layout_constraintTop_toBottomOf="@+id/tvSchedule" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_calendar"
+            android:tint="@color/cloud_300"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPeriod"
+            app:layout_constraintEnd_toStartOf="@id/tvPeriod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPeriod" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPeriod"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivCalendar"
+            app:layout_constraintTop_toBottomOf="@id/tvSimulatedPeriodLabel"
+            tools:text="15/10/2022 até 25/12/2022" />
+
+        <include
+            android:id="@+id/arvAccountFees"
+            layout="@layout/arv_account_fees"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPeriod" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFeeInfo"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_fees_info"
+            app:layout_constraintTop_toBottomOf="@id/arvAccountFees" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@color/display_50"
+            app:layout_constraintTop_toBottomOf="@id/tvFeeInfo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBankSelectLabel"
+            style="@style/Label_700_Bold_14"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/arv_bank_for_receiving"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <include
+            android:id="@+id/arvAccount"
+            layout="@layout/arv_account_layout"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginVertical="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBankSelectLabel" />
+
+        <include
+            android:id="@+id/purpleAlert"
+            layout="@layout/arv_purple_alert"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/arvAccount"
+            tools:visibility="visible" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btRedoSimulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_48dp"
+            android:text="@string/arv_back_btn"
+            app:buttonType="outlined"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/purpleAlert" />
+
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btConfirm"
+            style="@style/label_16_montserrat_semi_bold_cloud_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            app:buttonEnabled="false"
+            android:text="@string/arv_finish_request"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btRedoSimulation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:background="@color/display_50"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/bold_montserrat_14_neutral_800"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="@string/postecipado_title"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dividerView"/>
+
+    <TextView
+        android:id="@+id/goalCurrentInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:padding="@dimen/dimen_10dp"
+        android:lineHeight="@dimen/dimen_20dp"
+        style="@style/medium_montserrat_14_neutral_800"
+        tools:text="Hoje é dia 25/07, faltam 26 dias para você atingir a sua meta."
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <br.com.cielo.libflue.progress.ValueProgressView
+        android:id="@+id/valueProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginTop="@dimen/dimen_negative_4dp"
+        app:viewType="simple"
+        app:layout_constraintTop_toBottomOf="@id/goalCurrentInformation"/>
+
+    <TextView
+        android:id="@+id/progressViewInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        style="@style/medium_montserrat_12_cloud_600"
+        tools:text="Período para bater a meta: 01/08 a 30/08"
+        app:layout_constraintTop_toBottomOf="@id/valueProgressView"/>
+
+    <br.com.cielo.libflue.button.CieloRegularSecondaryButton
+        android:id="@+id/btGoToMyPlan"
+        style="@style/regular_montserrat_16_brand_600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/see_my_plan"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintTop_toBottomOf="@id/progressViewInformation"/>
+
+    <include
+        android:id="@+id/loadingShimmerInclude"
+        layout="@layout/postecipado_summary_home_shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="@dimen/dimen_negative_16dp"
+        tools:visibility="gone" />
+
+    <View
+        android:id="@+id/dividerViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/display_50"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btGoToMyPlan"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

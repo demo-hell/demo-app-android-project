@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/dimen_16dp">
+
+    <br.com.cielo.libflue.field.TextFieldFlui
+        android:id="@+id/tvFieldSaleValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:maxLength="12"
+        app:isShowPrefix="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maskTextField="money"
+        app:errorType="danger"
+        app:isShowErrorIcon="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

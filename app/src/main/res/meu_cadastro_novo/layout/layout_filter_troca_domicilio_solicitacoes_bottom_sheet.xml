@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_welcome_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/filter_title_topbar"
+            style="@style/TextTitleStyleMontserrat18spBlack353A40"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toTopOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_symbol_close_brand_400_24_dp"
+            app:tint="@color/color_5A646E" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_welcome_notification"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layoutPaymentTypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="@string/filter_title"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_5A646E"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:textSize="@dimen/dimen_16dp"
+                    style="@style/TextBlack12spUbuntuRegular_353A40"
+                    android:layout_height="wrap_content" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/evNumberOperation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    app:hint="@string/filter_troca_domicilio_numero_protocolo"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    style="@style/TextBlack12spUbuntuRegular_353A40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/filter_status_solicitacao"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_16dp" />
+
+                <br.com.cielo.libflue.selectandmultiselect.ComponentFilterSelectAndMultiselectView
+                    android:id="@+id/componentSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewLabelModality"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:orientation="horizontal"
+                    app:spanCount="3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow_above_view"
+        app:elevation="@dimen/dimen_5dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_16dp"
+        android:visibility="visible">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/clearFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dimen_10dp"
+            android:fontFamily="@font/montserrat"
+            fancy:fb_defaultColor="@android:color/white"
+            fancy:fb_text="Limpar filtros"
+            fancy:fb_textColor="@color/color_017CEB"
+            fancy:fb_textSize="16sp" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/applyFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:layout_weight="1"
+            fancy:fb_textSize="@dimen/dimen_16sp"
+            android:text="@string/text_apply_filters_label" />
+    </LinearLayout>
+
+</RelativeLayout>

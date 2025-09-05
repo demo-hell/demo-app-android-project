@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_title"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:background="@drawable/ic_drag_bottom_sheet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/view_title">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:srcCompat="@drawable/ic_next_installment" />
+
+        <TextView
+            android:id="@+id/text_title_contract"
+            style="@style/styleTextViewResumeReceiveMoreTitle16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            tools:text="Sua parcela no valor de R$ 1.595,02  20°- Abril de 2021 em atraso" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_date_parcel"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintEnd_toStartOf="@id/text_date_parcel_value"
+        tools:text="Vencimento da \n20ª parcela" />
+
+    <TextView
+        android:id="@+id/text_date_parcel_value"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/text_date_parcel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="09/09/2022" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@color/color_C5CED7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_date_parcel" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/view_line">
+
+        <TextView
+            android:id="@+id/text_amount_parcel"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_amount_parcel_bottom_sheet_details_receive_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/text_amount_parcel_value" />
+
+        <TextView
+            android:id="@+id/text_amount_parcel_value"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_DC392A"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/text_amount_parcel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="R$ 200,00" />
+
+        <View
+            android:id="@+id/view_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+           android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_amount_parcel_value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/btn_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_70dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:text="@string/btn_help_bottom_sheet_details_receive_more"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_amount"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

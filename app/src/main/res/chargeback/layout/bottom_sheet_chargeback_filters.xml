@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:background="@drawable/background_welcome_notification">
+
+            <ImageView
+                android:id="@+id/topLayoutIconImageView"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_4dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:src="@drawable/ic_drag_bottom_sheet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:importantForAccessibility="no"
+                app:layout_constraintTop_toTopOf="@id/mainLayout" />
+
+            <TextView
+                android:id="@+id/filterTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_18dp"
+                tools:text="Filtros em contestações"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topLayoutIconImageView"
+                style="@style/bold_montserrat_16_display_500_spacing_0"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/brandContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/filterTitleTextView">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chargeback_label_card_brand"
+                    style="@style/bold_montserrat_16_display_500_spacing_0"
+                    android:contentDescription="@string/chargeback_filter_non_selected_brands_accessibility"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/brandsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="4"
+                    tools:listitem="@layout/item_filter_cardbrand"
+                    />
+
+                <include
+                    android:id="@+id/shimmer_cardbrands_included_layout"
+                    layout="@layout/shimmer_cardbrand_list_background"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/treatedTypeContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/brandContainerLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/treated_type"
+                    style="@style/bold_montserrat_16_display_500_spacing_0"
+                    android:contentDescription="@string/chargeback_filter_non_selected_treated_type_accessibility"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chargebacksTreatedTypeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:listitem="@layout/item_filter_chargeback_process"
+                    />
+
+                <include
+                    android:id="@+id/shimmer_treated_type_included_layout"
+                    layout="@layout/shimmer_chargeback_process_list_background"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/processContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/treatedTypeContainerLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chargeback_label_process"
+                    style="@style/bold_montserrat_16_display_500_spacing_0"
+                    android:contentDescription="@string/chargeback_filter_non_selected_process_accessibility"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chargebacksProcessRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:listitem="@layout/item_filter_chargeback_process"
+                    />
+
+                <include
+                    android:id="@+id/shimmer_process_included_layout"
+                    layout="@layout/shimmer_chargeback_process_list_background"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/indentifiersContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/processContainerLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chargeback_filter_identifiers_title"
+                    style="@style/bold_montserrat_16_display_500_spacing_0"
+                    />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/nsuDocInputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:digits="1234567890.,"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="numberDecimal"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    app:hint="@string/chargeback_filter_nsu_doc_hint"
+                    app:textColorHint="@color/color_cloud_300" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/caseInputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:digits="1234567890.,"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    app:hint="@string/chargeback_filter_case_hint"
+                    app:textColorHint="@color/color_cloud_300" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/tidInputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:digits="1234567890.,ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="50"
+                    android:maxLines="2"
+                    app:hint="@string/chargeback_filter_tid_hint"
+                    app:textColorHint="@color/color_cloud_300" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/periodContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/indentifiersContainerLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chargeback_filter_period_title"
+                    style="@style/bold_montserrat_16_display_500_spacing_0"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/initialDateTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@drawable/background_transparent_border_cloud_200_rounded"
+                    app:hintEnabled="true"
+                    android:hint="@string/chargeback_filter_initial_date_hint"
+                    app:errorEnabled="false"
+                    app:endIconMode="custom"
+                    app:boxBackgroundMode="none"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/blue"
+                    android:clickable="true"
+                    app:endIconDrawable="@drawable/ic_calendar"
+                    android:paddingStart="@dimen/dimen_8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/initialDateTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:background="@android:color/transparent"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/initialDate_warning_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chargeback_filter_date_selector_hint_error"
+                    android:visibility="gone"
+                    style="@style/regular_montserrat_12_danger_400"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/finalDateTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@drawable/background_transparent_border_cloud_200_rounded"
+                    app:hintEnabled="true"
+                    android:hint="@string/chargeback_filter_final_date_hint"
+                    android:focusable="true"
+                    app:errorEnabled="false"
+                    app:endIconMode="custom"
+                    app:boxBackgroundMode="none"
+                    android:textColorHint="@color/black"
+                    app:hintTextColor="@color/blue"
+                    android:clickable="true"
+                    app:endIconDrawable="@drawable/ic_calendar"
+                    android:paddingStart="@dimen/dimen_8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/finalDateTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:background="@android:color/transparent"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/finalDate_warning_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chargeback_filter_date_selector_hint_error"
+                    android:visibility="gone"
+                    style="@style/regular_montserrat_12_danger_400"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonClearFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/periodContainerLayout"
+                app:layout_constraintBottom_toTopOf="@id/buttonApplyFilters"
+                android:text="@string/chargeback_filter_clear_filter_button_text"
+                style="@style/semibold_montserrat_16_brand_400"
+                />
+
+
+            <br.com.cielo.libflue.button.CieloRegularBlueButton
+                android:id="@+id/buttonApplyFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:text="@string/chargeback_filter_apply_filter_button_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/bold_montserrat_16_cloud_0"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

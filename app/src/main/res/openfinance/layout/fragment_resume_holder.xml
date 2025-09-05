@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".openFinance.presentation.resume.ResumePaymentHolderFragment">
+
+    <LinearLayout
+        android:id="@+id/containerResume"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSubtitle"
+                    style="@style/regular_montserrat_16_cloud_600"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_value_payment_open_finance" />
+
+                <TextView
+                    android:id="@+id/tvValuePayment"
+                    style="@style/bold_montserrat_24_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/chargeback_accessibility_shimmer_load" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@drawable/background_cloud_100_radius_12_dp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <TextView
+                        android:id="@+id/tvTax"
+                        style="@style/regular_montserrat_14_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:text="@string/txt_tax_open_finance" />
+
+                    <TextView
+                        android:id="@+id/tvValueTax"
+                        style="@style/bold_montserrat_14_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:text="@string/pt_br_zero_value" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_payment_form_open_finance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_16dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_sales" />
+
+                    <TextView
+                        android:id="@+id/tvPaymentForm"
+                        style="@style/bold_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:text="@string/chargeback_accessibility_shimmer_load" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_date_payment_open_finance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_16dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_calendar" />
+
+                    <TextView
+                        android:id="@+id/tvPaymentDate"
+                        style="@style/bold_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:text="@string/chargeback_accessibility_shimmer_load" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@color/cloud_100" />
+
+                <TextView
+                    style="@style/bold_montserrat_14_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_info_from_payer_open_finance" />
+
+                <TextView
+                    style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_account_pix_cielo_open_finance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_store_gray" />
+
+                    <TextView
+                        android:id="@+id/tvNameAccountDate"
+                        style="@style/bold_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:text="@string/chargeback_accessibility_shimmer_load" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/text_pix_summary_transfer_destination_document_CNPJ" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_16dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_cnh" />
+
+                    <TextView
+                        android:id="@+id/tvCNPJ"
+                        style="@style/bold_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:text="@string/chargeback_accessibility_shimmer_load" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_balance_open_finance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_16dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_coin" />
+
+                    <TextView
+                        android:id="@+id/balanceAccount"
+                        style="@style/bold_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:text="@string/chargeback_accessibility_shimmer_load" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerChangeMerchant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_20dp">
+                    <TextView
+                        style="@style/bold_montserrat_16_brand_400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_change_merchant_open_finance" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_16dp"
+                        android:gravity="start"
+                        android:importantForAccessibility="no"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:src="@drawable/ic_chevron_right" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_22dp"
+                    android:background="@color/display_200" />
+
+                <TextView
+                    style="@style/bold_montserrat_14_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_transfer_destination_open_finance" />
+
+                <TextView
+                    style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_to_open_finance" />
+
+                <TextView
+                    android:id="@+id/tvDestinationPayment"
+                    style="@style/bold_montserrat_16_cloud_800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/chargeback_accessibility_shimmer_load" />
+
+                <TextView
+                    style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/txt_document_open_finance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_16dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_cnh" />
+
+                    <TextView
+                        android:id="@+id/tvDocument"
+                        style="@style/bold_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:text="@string/chargeback_accessibility_shimmer_load" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerPixKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:text="@string/txt_pix_key_open_finance" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/iconPix"
+                            android:layout_width="@dimen/dimen_16dp"
+                            android:layout_height="@dimen/dimen_16dp"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_key" />
+
+                        <TextView
+                            android:id="@+id/tvPixKey"
+                            style="@style/bold_montserrat_16_cloud_800"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dimen_16dp"
+                            android:text="@string/chargeback_accessibility_shimmer_load" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_82dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@drawable/background_fill_purple_100"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/dimen_10dp"
+                        android:paddingVertical="@dimen/dimen_10dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_24dp"
+                            android:layout_height="@dimen/dimen_24dp"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/ic_info_purple_700" />
+
+                        <TextView
+                            android:id="@+id/tvWarnigDetainer"
+                            style="@style/regular_montserrat_14_cloud_600_spacing_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_7dp"
+                            android:text="@string/txt_warning_detainer_open_finance" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_44dp"
+                    android:layout_marginHorizontal="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@drawable/background_border_color_0774e7"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/bold_montserrat_16_brand_400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_cancel_operation_open_finance" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnConfirmSolicitation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_44dp"
+                    android:layout_marginHorizontal="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_16dp"
+                    android:background="@drawable/background_fill_color_0774e7"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/semi_bold_montserrat_16_cloud_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_title_confirm_request" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLifecycleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible">
+
+        <include layout="@layout/shimmer_resume_payment_holder" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/dimen_150dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:visibility="gone"
+        android:theme="@style/progress_bar_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

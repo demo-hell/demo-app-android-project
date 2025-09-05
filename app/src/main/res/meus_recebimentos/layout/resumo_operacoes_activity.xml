@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/content_principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:elevation="16dp">
+
+
+        <include
+            android:id="@+id/toolbar_meus_recebimentos_resumo_operacoes"
+            layout="@layout/toolbar_main" />
+
+        <RelativeLayout
+            android:id="@+id/container_resumo_operacoes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textview_meus_recebimentos_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@color/white"
+                android:padding="16dp"
+                android:text="@string/meus_recebimentos_detalhe_data_recebimento"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:typeface="MuseoSans-700.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/textview_meus_recebimentos_header"
+                android:alpha="0.2"
+                android:background="@color/gray_light" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_meus_recebimentos_resumo_operacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/footer_meus_recebimentos_resumo_operacoes"
+                android:layout_below="@+id/textview_meus_recebimentos_header"
+                android:layout_marginTop="2dp"
+                android:clipToPadding="false" />
+
+            <include
+                android:id="@+id/footer_meus_recebimentos_resumo_operacoes"
+                layout="@layout/footer_meus_recebimentos_resumo_operacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include layout="@layout/content_error"/>
+
+    <ProgressBar
+        android:id="@+id/progress_meus_recebimentos_detalhe_loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+

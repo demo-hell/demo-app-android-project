@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:paddingVertical="@dimen/dimen_16dp"
+    android:paddingStart="@dimen/dimen_16dp"
+    android:paddingEnd="@dimen/dimen_36dp">
+
+    <ImageView
+        android:id="@+id/bankIcon"
+        android:layout_width="@dimen/dimen_32dp"
+        android:layout_height="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_light_payments_money_sign" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankName"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintStart_toEndOf="@id/bankIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Banco do Brasil" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankBranchLabel"
+        style="@style/Label_300_Regular_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/tap_on_phone_branch_label"
+        app:layout_constraintStart_toEndOf="@+id/bankIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvBankName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankBranchNumber"
+        style="@style/Label_300_Bold_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBankBranchLabel"
+        app:layout_constraintStart_toEndOf="@id/tvBankBranchLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvBankBranchLabel"
+        tools:text="004132-5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankAccountLabel"
+        style="@style/Label_300_Regular_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/tap_on_phone_account_label"
+        app:layout_constraintStart_toEndOf="@id/bankIcon"
+        app:layout_constraintTop_toBottomOf="@id/tvBankBranchLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankAccountNumber"
+        style="@style/Label_300_Bold_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBankAccountLabel"
+        app:layout_constraintStart_toEndOf="@id/tvBankAccountLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvBankAccountLabel"
+        tools:text="004132-5" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        style="@style/Paragraph_400_regular_16_display_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_circle_radio_button"
+        app:layout_constraintBottom_toBottomOf="@+id/bankIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bankIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

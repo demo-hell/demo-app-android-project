@@ -1,0 +1,79 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layearAmount"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_150dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:visibility="visible"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/tvAmountEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_negotiations_amount_empity"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/color_5A646E"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/dimen_14sp"
+        android:padding="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/titleAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_amount_title_receviceis"
+        android:textColor="@color/color_5A646E"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/inputAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="R$3.000,00"
+        android:textColor="@color/color_017CEB"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleAmount"/>
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/verMais"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/see_more"
+        android:background="@color/grey_EAEEF3"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:paddingStart="@dimen/dimen_12dp"
+        android:paddingEnd="@dimen/dimen_12dp"
+        android:drawableEnd="@drawable/ic_arrow_end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAmount"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

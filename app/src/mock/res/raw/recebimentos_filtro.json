@@ -1,0 +1,63 @@
+{
+  "incomings": [{
+    "dayOfMonth": "",
+    "dayOfWeek": "",
+    "dayDescription": "",
+    "date": "",
+    "cieloDate": "2017-10-17",
+    "cieloEndDate": "2017-10-23",
+    "totalDeposited": 4204653.85,
+    "totalPending": 382256.36,
+    "pending": {
+      "id": 656,
+      "name": "Valores pendentes",
+      "amount": 382256.36
+    },
+    "mainDay": false,
+    "receiptDetails": [{
+      "id": 640,
+      "name": "Recebíveis de venda",
+      "amount": 5008572.55,
+      "quantity": 5
+    }, {
+      "id": 652,
+      "name": "Valores já antecipados",
+      "amount": -653670.8999999999,
+      "quantity": 4
+    }, {
+      "id": 644,
+      "name": "Cancelamentos",
+      "amount": -4038.04,
+      "quantity": 3
+    }],
+    "bankDatas": [{
+      "name": "BANCO DO BRASIL S.A.",
+      "code": "001",
+      "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+      "branch": "00001",
+      "account": "8",
+      "amount": 3968607.25,
+      "postingsQty": "0 lançamento",
+      "quantity": 0,
+      "status": "",
+      "statusCode": ""
+    }]
+  }],
+  "debtInfo": {
+    "dateRange": "17/10/2017 - 23/10/2017",
+    "pending": {
+      "id": 658,
+      "name": "Valores pendentes",
+      "amount": -114684874.24,
+      "quantity": 1,
+      "cieloDate": "2017-10-23"
+    },
+    "details": [{
+      "key": "São Paulo",
+      "value": "(11) 3304 1056"
+    }, {
+      "key": "Demais Regiões",
+      "value": "0800 939 4785"
+    }]
+  }
+}

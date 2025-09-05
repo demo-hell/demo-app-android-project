@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string name="migration_01_title">Primeiro, insira seu nome completo</string>
+    <string name="migration_02_name">Nome Completo</string>
+    <string name="migration_02_name_confirm">Confirme seu nome</string>
+
+    <string name="migration_02_subtitle">Informe seu CPF e e-mail para o seu novo acesso</string>
+    <string name="migration_02_description">Agora você poderá acessar o App Cielo com seu CPF ou e-mail. Ao concluir sua atualização de acesso, enviaremos um link para validação.</string>
+    <string name="migration_02_edit_email">E-mail</string>
+    <string name="migration_02_edit_email_confirm">Confirme seu e-mail</string>
+    <string name="migration_02_edit_cpf">CPF</string>
+
+    <string name="vp_banner_1">Muito mais rápido e fácil: Use apenas o CPF ou e-mail e uma senha numérica</string>
+    <string name="vp_banner_2">Acessar todos os canais Cielo: Site, App e Central de atendimento</string>
+    <string name="vp_banner_3">Um único login: Gerencie vários estabelecimentos</string>
+
+    <string name="migration_03_subtitle">Estamos acabando.\nCadastre uma nova senha.</string>
+    <string name="migration_02_item_descrition">Dicas para uma senha forte:</string>
+    <string name="migration_02_item_01">– Sua nova senha deve conter 6 dígitos numéricos;</string>
+    <string name="migration_02_item_02">– Não use sequência numérica (ex: 123456);</string>
+    <string name="migration_02_item_03">– Não use o mesmo dígito (Ex: 111111);</string>
+    <string name="migration_02_item_04">– Não use sua data de aniversário.</string>
+
+    <string name="migration_button_next">Próximo</string>
+    <string name="migration_button_conclude">Concluir</string>
+
+    <string name="error_202">E-mail de confirmação enviado. Para finalizar seu cadastro, acesse seu e-mail.</string>
+    <string name="error_401">Usuário logado não tem permissão para criar usuário para este estabelecimento.</string>
+    <string name="error_403">Sessão Expirada.</string>
+    <string name="error_420">Já existe um usuário cadastrado com estes dados.</string>
+    <string name="error_500">Infelizmente ocorreu algum erro. Por favor, tente novamente.</string>
+    <string name="migration_successfull_subtitle">Confirme seu e-mail para ter acesso a sua conta e gerenciar seus dados. O e-mail de confirmação expira em %s</string>
+
+
+
+</resources>

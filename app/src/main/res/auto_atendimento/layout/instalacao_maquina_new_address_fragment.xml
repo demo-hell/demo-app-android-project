@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    style="@style/TextBlack24spTitle"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="left|center"
+                    android:text="@string/ins_tr_title_take_solutions"
+                    android:textColor="#2b2f33"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:typeface="Museo300-Regular.ttf" />
+
+                <LinearLayout
+                    android:id="@+id/btn_rm_close"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_icon_close" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfe5f5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- step 3 -->
+        <ScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_body_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_view_zipcode_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextInputHintMeuCadastro"
+                        app:errorTextAppearance="@style/ErrorAppearance">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/edittext_view_zipcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_shape"
+                            android:hint="@string/ins_tr_title_zipcode"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="9"
+                            android:maxLines="1"
+                            android:textSize="16sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_view_address_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextInputHintMeuCadastro"
+                        app:errorTextAppearance="@style/ErrorAppearance">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/edittext_view_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_shape"
+                            android:hint="@string/ins_tr_title_address"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="100"
+                            android:maxLines="1"
+                            android:textSize="16sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_view_number_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextInputHintMeuCadastro"
+                        app:errorTextAppearance="@style/ErrorAppearance">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/edittext_view_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_shape"
+                            android:hint="@string/ins_tr_title_number"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="8"
+                            android:maxLines="1"
+                            android:textSize="16sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_view_reference_point_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextInputHintMeuCadastro"
+                        app:errorTextAppearance="@style/ErrorAppearance">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/edittext_view_reference_point"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_shape"
+                            android:hint="@string/ins_tr_title_reference_point"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="100"
+                            android:maxLines="1"
+                            android:textSize="16sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_view_neighborhood_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextInputHintMeuCadastro"
+                        app:errorTextAppearance="@style/ErrorAppearance">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/edittext_view_neighborhood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_shape"
+                            android:hint="@string/ins_tr_title_neighborhood"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:maxLines="1"
+
+                            android:textSize="16sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_view_city_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextInputHintMeuCadastro"
+                        app:errorTextAppearance="@style/ErrorAppearance">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/edittext_view_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_shape"
+                            android:hint="@string/ins_tr_title_city"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:textSize="16sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_view_state_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextInputHintMeuCadastro"
+                        app:errorTextAppearance="@style/ErrorAppearance">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                            android:id="@+id/edittext_view_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_shape"
+                            android:hint="@string/ins_tr_title_state"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:textSize="16sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="24dp">
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/btn_rm_ok"
+                        style="@style/ButtonShapedPurpleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        app:fb_text="@string/ins_tr_button_next"
+                        app:typeface="Museo700-Regular.ttf"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_color"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="159dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

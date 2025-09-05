@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_grey_F2F4F8"
+    android:weightSum="5">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight=".4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="4.6"
+        android:id="@+id/vf_dirf"
+        >
+
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progress_balcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints" />
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_grey_F2F4F8"
+            android:orientation="vertical"
+            android:weightSum="4.6"
+            >
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="4.6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                tools:layout_editor_absoluteX="35dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_weight="0.55"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/txt_dirf_title"
+                        android:textColor="@color/color_54646E"
+                        android:textSize="@dimen/dimen_16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+
+                    <TextView
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_dirf_subtitle"
+                        android:textColor="@color/grey_8A99A8"
+                        android:textSize="@dimen/dimen_14dp" />
+
+                    <TextView
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:text="@string/txt_dirf_subtitle_02"
+                        android:textColor="@color/grey_8A99A8"
+                        android:textSize="@dimen/dimen_14dp" />
+
+                    <LinearLayout
+                        android:id="@+id/link_access_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_arrow_right_circle"
+                            android:tint="@color/blue_017CEB"
+                            />
+
+
+                        <TextView
+                            style="@style/Paragraph_300_display_400"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:textColor="@color/blue_017CEB"
+                            android:text="@string/txt_link_dirf_authorization"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dimen_32dp"
+                        android:layout_weight="0.55"
+                        android:text="@string/txt_dirf_subtitle_03"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:background="@drawable/custom_text_input_view_selector"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <LinearLayout
+                            android:id="@+id/layout_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dimen_5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dimen_16dp"
+                                    android:layout_marginLeft="@dimen/dimen_16dp"
+                                    android:layout_marginTop="@dimen/dimen_16dp"
+                                    android:layout_marginEnd="@dimen/dimen_16dp"
+                                    android:layout_marginRight="@dimen/dimen_16dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        style="@style/Paragraph_300_display_400"
+                                        android:layout_width="@dimen/dimen_0dp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="left"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black_5A646E"
+                                        android:text="@string/text_dirf_year"
+                                        android:id="@+id/tv_year_value"
+                                        android:layout_marginBottom="@dimen/dimen_5dp"
+                                        android:textSize="@dimen/dimen_14dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        </LinearLayout>
+                    <include layout="@layout/component_sanfona_dirf"/>
+
+
+
+                    <br.com.cielo.libflue.button.CieloRegularBlueButton
+                        android:id="@+id/btnDirf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_48dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:text="@string/btn_download_dirf" />
+
+                    <include layout="@layout/layout_info_dec"
+                        android:visibility="gone"
+                        android:id="@+id/layout_info_dec"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_dirf_rodape"
+                        android:fontFamily="@font/ubuntu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:textColor="@color/color_54646E"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:text="@string/txt_dirf_duvida"
+                        android:layout_marginBottom="@dimen/dimen_20dp"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+        <!-- sucesso-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_08"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintHeight_max="@dimen/dimen_250dp"
+                app:layout_constraintHeight_min="@dimen/dimen_140dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:srcCompat="@drawable/ic_29" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_action_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                    android:id="@+id/viewButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:text="Visualizar arquivo"
+                    android:background="@drawable/btn_bottom_unselector"
+                    style="@style/BntBottomBackgroundWhiteTextBlue"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                    android:id="@+id/shareButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_40dp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:text="Compartilhar"
+                    android:background="@drawable/btn_bottom_unselector"
+                    style="@style/BntBottomBackgroundWhiteTextBlue"
+                    app:layout_constraintTop_toBottomOf="@id/viewButton"
+                    app:layout_constraintBottom_toTopOf="@id/closeButton"/>
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                    android:id="@+id/closeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_16dp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/btn_bottom_selector"
+                    style="@style/BntBottomBackgroundBlue"
+                    android:text="@string/text_btn_bottom_sheet_success"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

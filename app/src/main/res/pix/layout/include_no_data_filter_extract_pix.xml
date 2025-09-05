@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_empty_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_link_pgto_empty_state" />
+
+    <TextView
+        style="@style/Paragraph_400_regular_16_display_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/text_pix_extract_no_data_result_filter" />
+
+    <TextView
+        android:id="@+id/cleanFilter"
+        style="@style/Label_400_Alternate_regular_16_brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:text="@string/text_clear_filters_label"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/changeFilter"
+        style="@style/Label_400_Alternate_regular_16_brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:text="@string/btn_reconfigure_filters"
+        android:textAlignment="center" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="@dimen/dimen_0dp">
+
+            <ImageView
+                android:id="@+id/cardBrandLogo"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/master_3x"/>
+
+            <View
+                android:id="@+id/viewBottomSelectedLineDecorator"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom|center"
+                android:background="@color/black_000000"/>
+
+            <View
+                android:id="@+id/viewBottomLineDecorator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/box_gray"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="79dp"
+            android:layout_weight="0.75"
+            android:layout_height="@dimen/dimen_0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerBrandFeeDetails"
+                android:paddingStart="100dp"
+                android:paddingEnd="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frameBottomTransparency"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:background="@drawable/recycler_bottom_semi_transparency"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/frameInnerCloseButton"
+            android:layout_width="match_parent"
+            android:layout_height="79dp">
+            <TextView
+                android:id="@+id/textClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/blue_00aeef"
+                android:text="@string/text_close_label"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+
+</FrameLayout>
+

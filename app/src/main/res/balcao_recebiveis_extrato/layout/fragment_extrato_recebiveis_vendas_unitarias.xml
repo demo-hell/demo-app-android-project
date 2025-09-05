@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context=".balcaoRecebiveisExtrato.unitsales.fragment.ExtratoRecebiveisVendasUnitariasFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/empityFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_200dp"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center"
+            android:textColor="@color/color_5A646E"
+            android:textSize="@dimen/dimen_14sp"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/tv_list_empty_negotiations_extrato" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            app:layout_constraintBottom_toTopOf="@id/progressBarPaging"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/extract_receivable_unit_sales_item" />
+
+        <View
+            android:id="@+id/viewShadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_4dp"
+            android:background="@drawable/background_shadow"
+            app:layout_constraintBottom_toTopOf="@id/linearLayoutFooter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarPaging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_12dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/linearLayoutFooter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dimen_40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:background="@drawable/background_shape_gray_round_corners"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingRight="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Paragraph_200_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/text_view_sales_unit_negotiated_label" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewNegotiatesValue"
+                    style="@style/TextParagraph700Bold24sp400_145EB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="R$ 0,00" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTotalNegotiated"
+                style="@style/Paragraph_200_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_16dp"
+                android:text="@string/text_view_sales_unit_more_detail"
+                android:textColor="@color/blue_017CEB" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:visibility="gone"
+        app:cieloErrorButtonLabel="@string/text_try_again_label"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorMessage="@string/text_message_generic_error"
+        app:cieloErrorTitle="@string/text_title_generic_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

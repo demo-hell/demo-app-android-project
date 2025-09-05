@@ -1,0 +1,115 @@
+{
+  "grouped":true,
+  "helpText":"Detalhamento das vendas com previsão de recebimento neste dia.",
+  "groupedPostings":[
+    {
+      "date":"24/10/2017",
+      "postings":[
+        {
+          "id":644,
+          "title":"Visa Credito Parcelado Loja",
+          "date":"24/10/2017",
+          "postingsQty":9,
+          "cvsQty":0,
+          "hasDescriptionDetails":true,
+          "uniquekeyROPart1":2,
+          "uniquekeyROPart2":1,
+          "uniquekeyROPart3":22,
+          "merchantId": "11111",
+          "productName":"Credito Parcelado Loja",
+          "brand":"Visa",
+          "details":[
+            {
+              "key":"Estabelecimento",
+              "value":"2000463961"
+            },
+            {
+              "key":"Quantidade de lançamentos",
+              "value":"9"
+            },
+            {
+              "key":"Valor bruto",
+              "value":"R$ 12.260,00"
+            },
+            {
+              "key":"Valor líquido",
+              "value":"R$ 11.279,20"
+            }
+          ],
+          "paymentDate":""
+        },
+        {
+          "id":644,
+          "title":"Mastercard Credito Parcelado Loja",
+          "date":"24/10/2017",
+          "postingsQty":8,
+          "cvsQty":0,
+          "hasDescriptionDetails":true,
+          "uniquekeyROPart1":2,
+          "uniquekeyROPart2":2,
+          "uniquekeyROPart3":22,
+          "merchantId": "11111",
+          "productName":"Credito Parcelado Loja",
+          "brand":"Mastercard",
+          "details":[
+            {
+              "key":"Estabelecimento",
+              "value":"2000463961"
+            },
+            {
+              "key":"Quantidade de lançamentos",
+              "value":"8"
+            },
+            {
+              "key":"Valor bruto",
+              "value":"R$ 16.000,04"
+            },
+            {
+              "key":"Valor líquido",
+              "value":"R$ 15.680,04"
+            }
+          ],
+          "paymentDate":""
+        },
+        {
+          "id":644,
+          "title":"Mastercard Debito A Vista",
+          "date":"24/10/2017",
+          "postingsQty":2,
+          "cvsQty":0,
+          "hasDescriptionDetails":true,
+          "uniquekeyROPart1":4,
+          "uniquekeyROPart2":2,
+          "uniquekeyROPart3":22,
+          "merchantId": "11111",
+          "productName":"Debito A Vista",
+          "brand":"Mastercard",
+          "details":[
+            {
+              "key":"Estabelecimento",
+              "value":"2000463961"
+            },
+            {
+              "key":"Quantidade de lançamentos",
+              "value":"2"
+            },
+            {
+              "key":"Valor bruto",
+              "value":"R$ 20.000,23"
+            },
+            {
+              "key":"Valor líquido",
+              "value":"R$ 19.520,22"
+            }
+          ],
+          "paymentDate":""
+        }
+      ]
+    }
+  ],
+  "pagination":{
+    "pageNumber":2,
+    "pageSize":5,
+    "numPages":2
+  }
+}

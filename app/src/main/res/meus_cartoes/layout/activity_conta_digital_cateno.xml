@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white_f4f8f9"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16sp"
+            android:layout_marginLeft="@dimen/dimen_16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dimen_16sp"
+            android:layout_marginRight="@dimen/dimen_16sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/conta_digital_question"
+            android:textColor="@color/color_204986"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16sp"
+            android:layout_marginLeft="@dimen/dimen_16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dimen_16sp"
+            android:layout_marginRight="@dimen/dimen_16sp"
+            android:layout_marginBottom="@dimen/dimen_16sp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/conta_digital_information"
+            android:textColor="@color/black_5A646E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout19" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPager"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="@dimen/dimen_0dp" />
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/btnHelp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/login_ajuda"
+        android:textColor="@color/blue_017CEB"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

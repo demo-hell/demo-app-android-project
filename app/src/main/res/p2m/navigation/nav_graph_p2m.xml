@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_p2m"
+    app:startDestination="@id/introP2mFragment">
+
+    <fragment
+        android:id="@+id/introP2mFragment"
+        android:name="br.com.mobicare.cielo.p2m.presentation.IntroP2mFragment"
+        android:label="fragment_intro_p2m"
+        tools:layout="@layout/fragment_intro_p2m">
+        <action
+            android:id="@+id/action_introP2mFragment_to_p2mAccreditFragment"
+            app:destination="@id/p2mAccreditFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/p2mAccreditFragment"
+        android:name="br.com.mobicare.cielo.p2m.presentation.P2mAccreditFragment"
+        android:label="fragment_p2m_accredit"
+        tools:layout="@layout/fragment_p2m_accredit">
+        <action
+            android:id="@+id/action_p2mAccreditFragment_to_p2mTermFragment"
+            app:destination="@id/p2mTermFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/p2mTermFragment"
+        android:name="br.com.mobicare.cielo.p2m.presentation.P2mTermFragment"
+        android:label="fragment_p2m_term"
+        tools:layout="@layout/fragment_p2m_term" >
+        <argument
+            android:name="isSelectedThirty"
+            app:argType="boolean"/>
+        <action
+            android:id="@+id/action_p2mTermFragment_to_p2mEndFragment"
+            app:destination="@id/p2mEndFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/p2mEndFragment"
+        android:name="br.com.mobicare.cielo.p2m.presentation.P2mEndFragment"
+        android:label="P2mEndFragment" />
+
+</navigation>

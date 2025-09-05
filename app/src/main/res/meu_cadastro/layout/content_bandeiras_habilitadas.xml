@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/linear_bandeiras"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_bandeiras_habilitadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/text_bandeiras_habilitadas"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/meu_cadastro_bandeiras_habilitadas"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:typeface="Museo700-Regular.ttf" />
+
+        <LinearLayout
+            android:id="@+id/layout_bandeiras_habilitadas_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager_bandeiras_habilitadas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator_bandeiras_habilitadas"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                app:ci_drawable="@drawable/circle_indicator"
+                app:ci_drawable_unselected="@drawable/circle_indicator_unselected"  />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

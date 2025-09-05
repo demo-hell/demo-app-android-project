@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="superlink_not_eligible_title">Quer vender online sem precisar de um site?</string>
+    <string name="superlink_not_eligible_message">
+        <![CDATA[
+            <p>Para utilizar o Link de Pagamento, solicite agora esse serviço*. Se você já contratou, é só trocar de EC na tela inicial do App Cielo Gestão.</p>
+            <p>* Produto sujeito à elegibilidade.</p>
+            <p><b>Turbine ainda mais o seu Link!</b><br>Com o Cielo Tap, além de pagamentos por Link, você conta com venda por aproximação e Pix.</p>
+        ]]>
+    </string>
+    <string name="superlink_not_eligible_label_primary_button">Contratar Link de Pagamento</string>
+    <string name="superlink_not_eligible_label_secondary_button">Saiba mais</string>
+
+    <string name="super_link_router_bs_load_error_message">Infelizmente, não será possível prosseguir no momento. Por favor, tente novamente mais tarde.</string>
+    <string name="super_link_router_bs_to_accreditation_message">Para conseguir vender com links de pagamento solicite este serviço agora mesmo!</string>
+    <string name="super_link_router_bs_need_impersonating_title">Para acessar o Link de Pagamento, troque de estabelecimento</string>
+    <string name="super_link_router_bs_need_impersonating_message">Para fazer suas vendas online com o link de pagamento, é necessário acessar o EC %s.</string>
+    <string name="super_link_router_bs_need_impersonating_label_button">Trocar para Cielo Link de Pagamento</string>
+    <string name="super_link_router_bs_not_eligible_message">No momento, este serviço não está disponível para o seu estabelecimento.</string>
+    <string name="super_link_router_bs_not_eligible_message_with_inconsistencies">No momento, este serviço não está disponível para o seu estabelecimento.%s</string>
+    <string name="super_link_router_bs_not_eligible_message_with_inconsistencies_format"><![CDATA[<br><br><b>Motivo:</b> %s.<br><b>Ação requerida:</b> %s.]]></string>
+    <string name="super_link_router_bs_not_eligible_label_button">Ligar para a Cielo</string>
+    <string name="super_link_router_loading_message">Aguarde...</string>
+
+    <string name="super_link_impersonating_title">Troque de estabelecimento</string>
+    <string name="super_link_impersonating_subtitle">Para acessar o Link de Pagamento, troque de estabelecimento</string>
+    <string name="super_link_impersonating_ec_number">Estabelecimento: %s</string>
+    <string name="super_link_impersonating_ec_number_and_ec_cnpj">%s - %s</string>
+    <string name="super_link_impersonating_content_description_card">Estabelecimento: %s. Trocar de estabelecimento, botão</string>
+    <string name="super_link_impersonating_content_description_card_with_ec_name">Estabelecimento: %s. Número de EC: %s. Trocar de estabelecimento, botão</string>
+    <string name="super_link_impersonating_content_description_card_with_ec_name_and_cnpj">Estabelecimento: %s. Número de EC: %s. CNPJ: %s. Trocar de estabelecimento, botão</string>
+
+    <string name="payment_link_accreditation_know_more_title">Transforme o seu celular em maquininha</string>
+    <string name="payment_link_accreditation_know_more_message">
+        <![CDATA[
+            <p>Aceite pagamentos por aproximação, venda com segurança com o Pix* e envie Link de Pagamento! Tudo em um só lugar.</p>
+            <p>* Sujeito à elegibilidade</p>
+            <p>Acesse para conhecer mais sobre essa novidade e <b>comece a vender pelo celular, sem mensalidade!</b></p>
+        ]]>
+    </string>
+    <string name="payment_link_accreditation_know_more_label_primary_button">Acessar Cielo Tap</string>
+
+</resources>

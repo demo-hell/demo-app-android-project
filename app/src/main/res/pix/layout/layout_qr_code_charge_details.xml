@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <TextView
+        android:id="@+id/tvPriceTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_200_Bold_12"
+        android:gravity="center"
+        android:text="@string/text_pix_summary_transfer_value_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Label_700_Regular_24_Display_500_ubuntu"
+        android:background="@drawable/background_round_solid_eaeef3"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_11dp"
+        tools:text="R$ 150,00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceTitle" />
+
+    <TextView
+        android:id="@+id/tvNameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_200_Bold_12"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:gravity="center"
+        android:text="@string/nome"
+        app:layout_constraintTop_toBottomOf="@id/tvPriceValue" />
+
+    <TextView
+        android:id="@+id/tvNameValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        style="@style/Label_400_bold_16_display_500"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        tools:text="Temporal Tintas"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameTitle"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/tvDocumentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_200_Bold_12"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:gravity="center"
+        android:text="@string/text_your_document"
+        app:layout_constraintTop_toBottomOf="@id/tvNameValue" />
+
+    <TextView
+        android:id="@+id/tvDocumentValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_400_bold_16_display_500"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        tools:text="114.888.686/0001-21"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocumentTitle"  />
+
+    <TextView
+        android:id="@+id/tvIdentifierTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_200_Bold_12"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:gravity="center"
+        android:text="@string/text_your_identifier"
+        app:layout_constraintTop_toBottomOf="@id/tvDocumentValue" />
+
+    <TextView
+        android:id="@+id/tvIdentifierValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_400_bold_16_display_500"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        tools:text="#CobrançaMC-OP1"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdentifierTitle" />
+
+    <TextView
+        android:id="@+id/tvMessageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_200_Bold_12"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:gravity="center"
+        android:text="@string/text_your_message_on_billing"
+        app:layout_constraintTop_toBottomOf="@id/tvIdentifierValue" />
+
+    <TextView
+        android:id="@+id/tvMessageValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/Label_400_bold_16_display_500"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        tools:text="Tintas"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessageTitle" />
+
+    <TextView
+        android:id="@+id/tvQrCodeExpiresTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_200_Bold_12"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_your_qr_code_expires_in"
+        app:layout_constraintTop_toBottomOf="@id/tvMessageValue" />
+
+    <TextView
+        android:id="@+id/tvQrCodeExpiresValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_400_bold_16_display_500"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        tools:text="04/01/2022"
+        app:layout_constraintTop_toBottomOf="@+id/tvQrCodeExpiresTitle" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupQrCodeIdentifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvIdentifierTitle, tvIdentifierValue" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupQrCodeExpires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvQrCodeExpiresTitle, tvQrCodeExpiresValue" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupQrCodeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvMessageTitle, tvMessageValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

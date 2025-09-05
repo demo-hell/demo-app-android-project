@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_produtos_fidelidade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_ic_produtos_fidelidade"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_fidelidade_produtos" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/text_view_title_produtos_fidelidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/fidelidade_title_produtos"
+            android:textColor="@color/text_color_263238"
+            android:textSize="16sp"
+            app:typeface="Museo700-Regular.ttf" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_produtos_fidelidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_produtos_fidelidade_bg_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_view_item_produtos_fidelidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.CircleIndicator
+                    android:id="@+id/indicator_produtos_fidelidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:animateLayoutChanges="true"
+                    android:animationCache="true"
+                    app:ci_drawable="@drawable/circle_indicator"
+                    app:ci_drawable_unselected="@drawable/circle_indicator_unselected" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:alpha="0.2"
+                android:background="@color/gray_light" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ver_mais"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/home_ver_mais"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp"
+                    app:typeface="MuseoSans-700.ttf" />
+
+                <ImageView
+                    android:id="@+id/image_view_ic_ver_mais_produtos"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_arrow" />
+                />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progress_bar_produtos_fidelidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

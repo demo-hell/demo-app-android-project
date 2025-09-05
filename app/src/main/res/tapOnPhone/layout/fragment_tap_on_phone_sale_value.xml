@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    tools:context=".tapOnPhone.presentation.sale.value.TapOnPhoneSaleValueFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sale_title_title"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/tap_on_phone_sale_value_title"
+        android:textColor="@color/brand_600"
+        android:textSize="@dimen/dimen_18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.cielo.libflue.field.TextFieldFlui
+        android:id="@+id/tvFieldSaleValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:maxLength="12"
+        app:isShowPrefix="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_sale_title_title"
+        app:maskTextField="money"
+        app:errorType="highlight"
+        app:isShowErrorIcon="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

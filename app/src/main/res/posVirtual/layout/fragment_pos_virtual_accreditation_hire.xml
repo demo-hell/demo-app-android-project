@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_8dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <TextView
+        style="@style/bold_montserrat_14_cloud_500_spacing_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/pos_virtual_accreditation_label_change_bank" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerChangeBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:contentDescription="@string/pos_virtual_accreditation_content_description_loading_infos"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_pos_virtual_accreditation_card_button_change_bank_shimmer" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <include
+        android:id="@+id/includeErrorChangeBank"
+        layout="@layout/layout_pos_virtual_accreditation_error_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone" />
+
+    <br.com.cielo.libflue.cardbutton.CieloCardButton
+        android:id="@+id/ccbChangeBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:labelButton="@string/pos_virtual_accreditation_label_button_change_bank"
+        app:showArrowIndicator="false"
+        app:showLabelButton="true"
+        app:subtitlesHorizontal="true"
+        tools:firstSubtitle="Agência: 04132"
+        tools:secondSubtitle="Conta: 004132-5"
+        tools:title="Banco do Brasil" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_8dp"
+        android:layout_marginVertical="@dimen/dimen_24dp"
+        android:background="@color/cloud_50" />
+
+    <TextView
+        android:id="@+id/tvMessageTerms"
+        style="@style/regular_montserrat_16_cloud_400_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/pos_virtual_accreditation_description_terms" />
+
+    <TextView
+        android:id="@+id/tvBtnOpenTerms"
+        style="@style/semi_bold_montserrat_14_brand_400_spacing_minus_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginVertical="@dimen/dimen_25dp"
+        android:contentDescription="@string/pos_virtual_accreditation_content_decription_button_terms"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/pos_virtual_accreditation_label_button_terms"
+        app:drawableEndCompat="@drawable/ic_directions_chevron_right_brand_400_16_dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

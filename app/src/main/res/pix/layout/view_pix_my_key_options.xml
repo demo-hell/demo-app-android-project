@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/whatIsMainKeyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/brand_400"
+            app:layout_constraintBottom_toBottomOf="@+id/container_text_data_register_key"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/container_text_data_register_key"
+            app:srcCompat="@drawable/ic_interrogation_password" />
+
+        <TextView
+            style="@style/Label_400_Alternate_regular_16_brand_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_22dp"
+            android:text="@string/bs_details_what_is_master_key"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shareKeyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_17dp"
+            android:layout_height="@dimen/dimen_18dp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/container_text_data_register_key"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/container_text_data_register_key"
+            app:srcCompat="@drawable/ic_share_blue" />
+
+        <TextView
+            style="@style/Label_400_Alternate_regular_16_brand_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:text="@string/bs_details_share_key"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copyKeyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/brand_400"
+            app:layout_constraintBottom_toBottomOf="@+id/container_text_data_register_key"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/container_text_data_register_key"
+            app:srcCompat="@drawable/ic_copy_super_link" />
+
+        <TextView
+            style="@style/Label_400_Alternate_regular_16_brand_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_19dp"
+            android:text="@string/copy_pix_key"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deleteKeyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/container_text_data_register_key"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/container_text_data_register_key"
+            app:srcCompat="@drawable/ic_cielo_facilita_brand_trash" />
+
+        <TextView
+            style="@style/Label_400_Alternate_regular_16_danger_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_19dp"
+            android:text="@string/bs_details_delete_key"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+</LinearLayout>

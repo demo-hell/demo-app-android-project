@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sr_title_registration">Criar usuário</string>
+    <string name="sr_title_registration_data">Dados Cadastrais</string>
+    <string name="sr_title_establishment_data">Dados do Estabelecimento</string>
+
+    <string name="sr_email_hint">E-mail</string>
+    <string name="sr_email_confirm_hint">E-mail confirmar</string>
+    <string name="sr_user_hint">Usuário</string>
+    <string name="sr_full_name_hint">Nome completo</string>
+    <string name="sr_nationality_hint">Nacionalidade</string>
+    <string name="sr_cpf_hint">CPF</string>
+    <string name="sr_password_hint">Senha</string>
+    <string name="sr_password_confirm_hint">Confirme sua Senha</string>
+
+    <string name="sr_regitration_button_confirmation">Confirmar</string>
+    <string name="sr_confirm_button_resend">Reenviar</string>
+
+
+    <string name="sr_confirm_text_link">Um link de confirmação foi enviado para o e-mail:</string>
+    <string name="sr_confirm_text_alert_1">
+        <![CDATA[
+        A criação do seu acesso será concluída após você clicar no link de validação enviado ao seu e-mail.
+        <br/><br/>Fique atento, pois o link enviado tem <b>validade</b> e <b>expira</b> dentro de <b>%s</b>.
+        <br/><br/>Caso não receba o e-mail, você pode acessar o app utilizando o CPF cadastrado.
+        ]]>
+     </string>
+
+    <string name="sr_terms_1">Li e estou de acordo com os</string>
+    <string name="sr_terms_2">Termos de uso e condições Gerais para utilização da Cielo</string>
+
+    <string name="migration02_email_01">E-mail incompleto ou inválido</string>
+    <string name="migration02_email_02">O campo e-mail e confirmar e-mail devem ser iguais</string>
+    <string name="migration02_cpf">CPF incompleto ou inválido</string>
+
+    <string name="sr_invalidate_full_name">Por favor, digite seu nome completo</string>
+    <string name="sr_invalidate_user">Por favor, digite o nome do usuário</string>
+    <string name="sr_invalidate_email">Por favor, digite um e-mail válido</string>
+    <string name="sr_invalidate_email_confirm">Por favor, digite um e-mail válido</string>
+    <string name="sr_invalidate_cpf">Por favor, digite o número do CPF válido</string>
+
+    <string name="sr_invalidate_password">Por favor, digite uma senha</string>
+    <string name="sr_invalidate_password_confirm">Por favor, confirme a senha</string>
+    <string name="migration03_senha">A senha deve conter %d dígitos</string>
+    <string name="migration03_senha_antiga">A senha deve conter até %d dígitos</string>
+    <string name="migration03_senha_confirm">O campo senha e confirmar senha devem ser iguais</string>
+    <string name="sr_invalidate_number_stablishment">Por favor, digite o número de estabelecimento válido</string>
+    <string name="sr_invalidate_terms_coditions">Por favor, aceite os termos e condições</string>
+
+    <string-array name="list_nationatily">
+        <item>Nacionalidade</item>
+        <item>Brasileiro</item>
+        <item>Estrangeiro</item>
+    </string-array>
+
+    <string name="text_password_user_tip">Sua senha deve conter 6 dígitos numéricos</string>
+
+    <string name="text_user_foreign_label">Sou estrangeiro</string>
+
+    <string name="text_optional_cpf_label">CPF (opcional)</string>
+    <string name="password_politic_title">Requisitos da senha</string>
+    <string name="password_politic_requirementes_title">A senha deve atender os requisitos abaixo</string>
+    <string name="password_politic_requirementes_content">
+        <![CDATA[
+        <b><font color="#009E55">A senha precisa:</font></b>
+        <br/>· Conter 6 dígitos
+        <br/><b><font color="#DC2A2A">A senha não pode:</font></b>
+        <br/>· Ter sido utilizada anteriormente
+        <br/>· Ser os primeiros 6 dígitos do seu CPF
+        <br/>· Conter dígitos repetidos, por exemplo 111111
+        <br/>· Conter dezenas sequenciais (Ex: 102030 ou 112233)
+        <br/>· Conter dezenas repetidas (Ex: 121212)
+        <br/>· Conter dígitos sequenciais (Ex: 123456 ou 654321)
+        <br/>· Conter dígitos espelhados (Ex:123321)
+        <br/>· Desenhos de teclado numérico (Ex: 753159)
+        ]]></string>
+
+    <string name="title_alert_create_access">Atenção! Para criar seu acesso, leia a dica abaixo</string>
+    <string name="subtitle_unauthorized">Caro cliente, você deve solicitar o acesso ao seu Gestor Comercial Cielo.</string>
+    <string name="subtitle_ineligible">Caro cliente, você deve solicitar o acesso ao Proprietário ou Administrator do Estabelecimento.</string>
+</resources>

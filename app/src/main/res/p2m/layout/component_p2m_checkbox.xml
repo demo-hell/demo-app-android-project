@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginBottom="@dimen/dimen_10dp">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/check_box_p2m"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:background="@drawable/regular_checkbox"
+        android:contentDescription="@string/accept_terms_privacy_accessibility"
+        android:button="@null"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/color_353A40" />
+
+    <TextView
+        android:id="@+id/tv_read_and_accepted"
+        style="@style/regular_ubuntu_16_display_400_spacing_2"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_weight="4.5"
+        android:text="@string/text_p2m_terms_cielo" />
+
+</LinearLayout>

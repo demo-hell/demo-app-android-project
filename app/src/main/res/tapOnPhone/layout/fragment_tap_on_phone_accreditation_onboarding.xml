@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".tapOnPhone.accreditation.onboarding.TapOnPhoneOnboardingFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerOnboarding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/indicatorOnboarding"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicatorOnboarding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        app:ci_animator="@animator/circle_indicator_animator"
+        app:ci_drawable="@drawable/circle_indicator_tutorial_cancel"
+        app:ci_drawable_unselected="@drawable/circle_indicator_unselected_display_200"
+        app:ci_height="@dimen/dimen_8dp"
+        app:ci_width="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toTopOf="@id/containerActionsOnboarding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerOnboarding"
+        app:layout_constraintVertical_bias="1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerActionsOnboarding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/indicatorOnboarding"
+        app:layout_constraintVertical_bias="1">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/display_200"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <br.com.cielo.libflue.button.CieloRegularWhiteButton
+            android:id="@+id/btnNextOnboardingTapOnPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@color/blue_0774E7"
+            android:text="@string/text_next_label"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLetsStartTapOnPhone"
+            style="@style/Heading_500_18"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/button_full_width_brand_selector"
+            android:text="@string/tap_on_phone_onboarding_start"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

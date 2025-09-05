@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/dimen_16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/pix_transfer_review_label_transfer_amount"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/neutral_600" />
+
+    <br.com.cielo.libflue.button.CieloTextButton
+        android:id="@+id/tbAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textSize="@dimen/dimen_32sp"
+        app:cieloTypeFace="bold"
+        tools:text="R$ 120,00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:background="@drawable/background_stroke_cloud_200_radius_12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/pix_transfer_review_label_transfer_in"
+            android:textAppearance="@style/medium_montserrat_14"
+            android:textColor="@color/neutral_600" />
+
+        <br.com.cielo.libflue.button.CieloTextButton
+            android:id="@+id/tbDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            android:paddingBottom="@dimen/dimen_4dp"
+            app:cieloTypeFace="semi_bold"
+            tools:text="Hoje • 20/01/2024" />
+
+        <View
+            android:id="@+id/dividerRecurrenceButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:background="@color/border_neutral"
+            android:visibility="gone" />
+
+        <br.com.cielo.libflue.switchButton.CieloSwitch
+            android:id="@+id/switchRecurrence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginVertical="@dimen/dimen_4dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvLabelRecurrence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_19dp"
+            android:includeFontPadding="false"
+            android:textAppearance="@style/semibold_montserrat_16_brand_400"
+            android:visibility="gone"
+            tools:text="Mensal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/cloud_100" />
+
+    <LinearLayout
+        android:id="@+id/llTransferData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@drawable/background_stroke_cloud_200_radius_12dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:text="@string/pix_transfer_review_label_transfer_data"
+            android:textAppearance="@style/bold_montserrat_14"
+            android:textColor="@color/neutral_800" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/cloud_100" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/pix_transfer_review_label_message"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/neutral_600" />
+
+    <br.com.cielo.libflue.button.CieloTextButton
+        android:id="@+id/tbMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/pix_transfer_review_button_message"
+        app:cieloTypeFace="semi_bold" />
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/btnTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/transfer" />
+
+</LinearLayout>

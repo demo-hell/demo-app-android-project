@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_bs_balcao">Autorização de parceiros</string>
+    <string name="text_registro_recebiveis">Registro de Recebíveis</string>
+    <string name="text_first_termo">Termo de aceite para visualização da agenda de recebíveis</string>
+    <string name="text_second_termo">Agora ficou muito mais prático realizar uma antecipação de todas as transações realizadas pelo seu estabelecimento comercial. Com a sua autorização, será possível antecipar as suas vendas de crédito, inclusive as realizadas em outras credenciadoras.\n\nPara isso, basta permitir a Cielo visualizar e analisar as informações de sua agenda de recebíveis.\n\nA lista abaixo apresenta os CPFs/CNPJs associados a sua conta e que estarão contemplados neste termo de aceite. Você poderá excluir a visualização dos recebíveis de alguma credenciadora, subrecredenciadora, bandeira ou produto (débito ou crédito), ou mesmo revogar o acesso da Cielo a qualquer tempo. Caso necessário, você poderá contatar a nossa Central de Relacionamento.</string>
+    <string name="text_third_termo">•</string>
+    <string name="text_third_termo_2">Visualize e atualize os CPF/CPNJ que permite acesso aos seus recebíveis;</string>
+    <string name="text_third_termo_3">Revogar acesso de CPF/CNPJ;</string>
+
+    <string name="txt_br_cpf">CNPJ vinculados</string>
+    <string name="txt_br_not_register">Não sabe o que é o Registro de Recebíveis?</string>
+    <string name="termo_aceite_br">Ao aceitar os termos, você declara e autoriza  a Cielo a acessar as informações de sua  agenda de recebíveis de todas as  credenciadoras, subcredenciadoras, bandeiras
+        e produtos (débito e crédito), e autoriza a Cielo a compartilhar estas  informações com os seus fundos de  investimento e com outras empresas do  grupo econômico da Companhia.</string>
+
+    <string name="term_aceite_balcao">Ao aceitar os termos, você declara e autoriza a Cielo a acessar as informações de sua agenda de recebíveis de todas as credenciadoras,
+    subcredenciadoras, bandeiras e produtos (débito e crédito), e autoriza a Cielo a compartilhar estas informações com os seus fundos de investimento e com outras
+    empresas do grupo econômico da Companhia.</string>
+
+    <string name="banner_sucess_title">Sua autorização foi realizada com sucesso!</string>
+    <string name="banner_error_title">Tivemos um problema ao carregar seus dados.</string>
+    <string name="banner_error_subtitle">Verifique sua conexão e tente novamente.</string>
+
+    <string name="banner_title_not_knowledge_register">O que é o Registro de Recebíveis?</string>
+    <string name="banner_not_knowledge_register">Com o objetivo de aumentar a oferta de crédito mais barato aos estabelecimentos comerciais, o Banco Central do Brasil, através da Resolução N. 4.734 de 27 de Junho de 2019 e da Circular N. 3.952 de 27 de Junho de 2019, determina que todos os recebíveis de cartão de crédito e de débito dos estabelecimentos comerciais sejam registrados junto a infraestruturas de mercado chamadas registradoras, sendo que a negociação de tais recebíveis pode ser realizada conforme decisão de cada estabelecimento comercial.
+</string>
+
+    <string name="text_title_error_br">Nenhuma autorização disponível</string>
+    <string name="text_subtitle_error_br">No momento, você não possui nenhum aceite disponível para realizar a autorização.</string>
+
+    <string name="validar_mais_tarde">Ver depois</string>
+    <string name="prosseguir_termo">Continuar</string>
+    <string name="text_title_br_bottom_sheet">Temos uma novidade sobre a </string>
+    <string name="text_title_br_bottom_sheet_01">antecipação de Recebíveis</string>
+    <string name="text_body_br_bottom_sheet">Em breve, você poderá antecipar todos os seus recebíveis, inclusive de outras credenciadoras com a Cielo! Garanta agora a sua autorização e não fique fora dessa!\n\nCaso prefira prosseguir depois, o termo estará disponível na página</string>
+    <string name="text_body_br_bottom_sheet_01">Outros > Autorizações</string>
+    <string name="txt_br_history_title">Histórico de Registro de Recebíveis</string>
+    <string name="txt_br_history_subtitle">Você autorizou o acesso das informações da sua agenda de recebíveis de todas as credenciadoras e bandeiras relacionadas a ela. Confira abaixo a lista de CPFs/CNPJs refentes as contas aprovadas no termo:</string>
+    <string name="txt_br_cpf_detalhes">CPF 00.123.456-80</string>
+    <string name="text_br_history_de">Data de envio</string>
+    <string name="text_br_history_de_value">18/01/2020</string>
+    <string name="text_br_history_user_value">EYVDY8@PRESTADORCBMP.COM.BR</string>
+    <string name="text_br_history_user">Usuário</string>
+    <string name="text_br_history_cc">Cliente Cielo</string>
+    <string name="text_br_history_cc_value">Sim</string>
+    <string name="text_br_history_st">Status</string>
+    <string name="text_br_history_st_value">Aprovado</string>
+    <string name="text_br_history_ca">Credenciadoras autorizadas</string>
+    <string name="text_br_history_ba">Bandeiras autorizadas</string>
+    <string name="txt_br_search">Busque por CPF/CNPJ</string>
+
+    <string name="text_input_code_sku">Código do produto</string>
+    <string name="text_label_data_exp">Selecione a data de expiração</string>
+    <string name="text_input_data_exp">Selecione uma data</string>
+    <string name="text_label_desc_client">Descrição para o cliente</string>
+    <string name="text_label_desc">Descrição (limite 13 caracteres)</string>
+    <string name="text_label_quantity">Número máximo de parcelas</string>
+    <string name="text_label_subdesc_client">Indique o nome que aparecerá na fatura do cliente</string>
+    <string name="text_label_payment_limit">Número máximo de pagamentos ou links</string>
+    <string name="text_label_sub_payment_limit">A quantidade de pagamentos deste link é ilimitado. Caso queira editar o número de pedidos , digite a quantidade abaixo</string>
+    <string name="text_label_quantity_request">Quantidade máxima de pedidos</string>
+    <string name="text_label_quantity_request_hint">Quantidade de pedidos</string>
+    <string-array name="spinner_quantity_options_advanced">
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+        <item>4x</item>
+        <item>5x</item>
+        <item>6x</item>
+        <item>7x</item>
+        <item>8x</item>
+        <item>9x</item>
+        <item>10x</item>
+        <item>11x</item>
+        <item>12x</item>
+    </string-array>
+
+</resources>

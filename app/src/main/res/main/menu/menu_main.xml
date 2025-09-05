@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+
+
+    <!--<item
+        android:id="@+id/menuItemChangeEc"
+        android:title="@string/text_change_ec_menu_label"
+        app:iconTint="@color/white_f4f8f9"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_store_black_24dp"/>
+
+    <item
+        android:id="@+id/menuItemLogout"
+        android:icon="@drawable/ic_exit_to_app_black"
+        android:title="@string/text_logout_label"
+        app:iconTint="@color/white_f4f8f9"
+        app:showAsAction="ifRoom" />-->
+
+
+</menu>

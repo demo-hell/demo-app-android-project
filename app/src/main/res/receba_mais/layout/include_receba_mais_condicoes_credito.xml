@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_reciver_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_reciver"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_parcel_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_parcel"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/rm_cc_credit_parcel_desc_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_pay_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_pay"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_pay_day_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_pay_day"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_iof_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_iof"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_fee_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_fee"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_cust_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_cust"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        style="@style/TextGrey14spNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/rm_cc_credit_total_text" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_credit_total"
+        style="@style/Text14sp900Grey707070Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="" />
+</LinearLayout>

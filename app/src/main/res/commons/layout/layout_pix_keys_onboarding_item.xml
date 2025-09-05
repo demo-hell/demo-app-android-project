@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/iv_pix_keys_onboarding_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title_pix_keys_onboarding_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="@dimen/dimen_272dp"
+        app:layout_constraintHeight_min="@dimen/dimen_40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:srcCompat="@drawable/ic_ilustra" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_pix_keys_onboarding_item"
+        style="@style/label_18_display_500_montserrat_bold_center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_pix_keys_onboarding_item"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@+id/iv_pix_keys_onboarding_item"
+        app:layout_constraintVertical_bias="0"
+        tools:text="@string/text_pix_what_is_pix_onboarding" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_subtitle_pix_keys_onboarding_item"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_pix_keys_onboarding_item"
+        app:layout_constraintVertical_bias="0"
+        tools:text="@string/text_pix_what_is_pix_answer_onboarding" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

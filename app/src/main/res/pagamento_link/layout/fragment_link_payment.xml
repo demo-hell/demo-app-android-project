@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/display_50"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/frameLinkPaymentProgress"
+        android:visibility="gone"
+        layout="@layout/frame_progress" />
+
+    <include
+        android:id="@+id/linearErrorRequest"
+        android:visibility="gone"
+        layout="@layout/linear_loan_simulation_error"/>
+
+    <FrameLayout
+        android:id="@+id/frameCustomerNotEligible"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLinkPaymentContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/newPaymentLabel"
+            style="@style/Heading_400_Bold_16_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:text="@string/text_new_payment_label"
+            android:fontFamily="@font/montserrat_bold"
+            />
+
+        <br.com.mobicare.cielo.commons.ui.widget.CallToActionView
+            android:id="@+id/callToActionNewLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:callToActionTitle="@string/text_new_link_payment_title"
+            app:buttonCallToActionLabel="@string/text_new_link_payment_button_label"/>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textLastSummaryLinks"
+            style="@style/Heading_400_Bold_16_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:text="@string/text_create_link_last_links_summary_label"
+            android:fontFamily="@font/montserrat_bold" />
+
+        <FrameLayout
+            android:id="@+id/frameLastActiveLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".arv.presentation.anticipation.ArvSingleAnticipationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_simulate_detached_anticipation_title"
+            style="@style/Heading_600_20_display_brand_600"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/simulate_detached_anticipation"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <br.com.cielo.libflue.field.TextFieldFlui
+            android:id="@+id/itAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isShowPrefix="true"
+            app:maskTextField="money"
+            style="@style/regular_ubuntu_40_cloud_500_spacing_10"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <include
+            android:id="@+id/arv_simulate_box_info"
+            layout="@layout/arv_single_simulate_value_box_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itAmount" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSecond"
+            style="@style/Heading_500_18"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/button_full_width_brand_selector"
+            android:text="@string/text_avancar"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_16sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/arv_simulate_box_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

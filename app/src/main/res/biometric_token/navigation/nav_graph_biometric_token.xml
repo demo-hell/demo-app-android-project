@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_biometric_token"
+    app:startDestination="@id/biometricTokenHomeFragment">
+
+    <fragment
+        android:id="@+id/biometricTokenHomeFragment"
+        android:name="br.com.mobicare.cielo.biometricToken.presentation.home.BiometricTokenHomeFragment"
+        android:label="BiometricTokenHomeFragment">
+        <action
+            android:id="@+id/action_biometricTokenHomeFragment_to_biometricTokenSelfieFragment"
+            app:destination="@id/biometricTokenSelfieFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/biometricTokenSelfieFragment"
+        android:name="br.com.mobicare.cielo.biometricToken.presentation.selfie.BiometricTokenSelfieFragment"
+        android:label="BiometricTokenSelfieFragment">
+
+        <argument
+            android:name="ARG_BIOMETRIC_SCREEN_NAME"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="ARG_BIOMETRIC_SCREEN_NAME_EXCEPTION"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="ARG_BIOMETRIC_SCREEN_NAME_GENERIC_ERROR"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_biometricTokenSelfieFragment_to_biometricTokenSuccessFragment"
+            app:destination="@id/biometricTokenSuccessFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_biometricTokenSelfieFragment_to_biometricTokenPasswordFragment"
+            app:destination="@id/biometricTokenPasswordFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/biometricTokenSuccessFragment"
+        android:name="br.com.mobicare.cielo.biometricToken.presentation.success.BiometricTokenSuccessFragment"
+        android:label="BiometricTokenSuccessFragment" />
+
+    <fragment
+        android:id="@+id/biometricTokenPasswordFragment"
+        android:name="br.com.mobicare.cielo.biometricToken.presentation.password.BiometricTokenPasswordFragment"
+        android:label="biometricTokenPasswordFragment">
+
+        <argument
+            android:name="ARG_BIOMETRIC_USERNAME"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="ARG_BIOMETRIC_TOKEN"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+</navigation>

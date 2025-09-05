@@ -1,0 +1,90 @@
+<resources>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_deep_link">DeepLink</string>
+    <string name="title_meu_cadastro">MeuCadastro</string>
+    <string name="title_fazer_venda">FazerVenda</string>
+    <string name="title_cancel_detail">CancelDetail</string>
+    <string name="title_minhas_vendas_detalhes">MinhasVendasDetalhes</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ga_menu">Menu</string>
+
+    <string name="menu_trocar_estabelecimento">Trocar estabelecimento</string>
+    <string name="menu_inicio">Início</string>
+    <string name="menu_minhas_vendas">Minhas Vendas</string>
+    <string name="menu_meus_recebimentos">Meus Recebimentos</string>
+    <string name="meus_recebimentos_detalhe">Meus Recebimentos > Resumo de Operacoes</string>
+    <string name="meus_recebimentos_operacoes_detalhe">Meus Recebimentos > Resumo de Operacoes > Detalhe</string>
+    <string name="menu_meu_cadastro">Meu Cadastro</string>
+    <string name="menu_meus_cancelamentos">Meus Cancelamentos</string>
+    <string name="menu_taxa_plano">Taxas e planos</string>
+    <string name="menu_meus_antecipe">Antecipe Suas Vendas</string>
+    <string name="menu_farol">Cielo Farol</string>
+    <string name="card_farol_subtitle">Acompanhe relatórios de desempenho do seu negócio e conheça o perfil do seu cliente</string>
+    <string name="card_farol_food">Integração completa com o Plano Básico do Cielo Farol</string>
+    <string name="card_farol_button">Acessar Cielo Farol</string>
+    <string name="menu_auto_atendimento">Serviços</string>
+    <string name="menu_meus_produtos">Produtos e Serviços</string>
+    <string name="menu_meus_fidelidade">Programa Cielo Fidelidade</string>
+    <string name="menu_receba_mais_simulacao">Receba Mais</string>
+    <string name="menu_central_ajuda">Central de Ajuda</string>
+    <string name="menu_notificacoes">Notificações</string>
+    <string name="menu_opniao">Dê sua Opinião</string>
+    <string name="menu_sobre">Sobre o APP</string>
+    <string name="menu_cielo_mobile">Cielo Mobile</string>
+    <string name="menu_cielo_mobile_description">Para realizar vendas com cartão pelo smartphone ou tablet, faça o download do aplicativo.</string>
+    <string name="menu_sair">Sair</string>
+    <string name="x_dots_y">%1$s: %2$s</string>
+    <string name="tooltip_transf_nao_realizada">Não foi possivel enviar sua transferência, faremos novas tentativas no prazo de 1 dia útil</string>
+    <string name="tooltip_transf_negada_banco">Não foi possível concluir sua transferência, verifique seus dados cadastrais e regularize através do auto serviço no nosso site ou entre em contato com a nossa central de relacionamento</string>
+    <string name="tooltip_test_text">Texto de testes para tooltip - Texto de testes para tooltip - Texto de testes para tooltips</string>
+
+    <string name="mail_titulo">Minha opinião sobre o app Cielo</string>
+    <string name="mail_titulo_autenticado">EC %1$s - Minha opinião sobre o app Cielo</string>
+
+    <string name="text_my_cards_title">Conta Digital</string>
+    <string name="text_my_cards_title_ln">Conta\nDigital</string>
+    <string name="text_receba_mais_title">Receba Mais</string>
+    <string name="text_receba_mais_title_ln">Receba\nMais</string>
+
+    <string name="text_receba_meus_dados">Meus dados</string>
+    <string name="text_receba_confirmacacao">Confirmação</string>
+
+    <string name="text_menu_link_payment">Pagamento por link</string>
+    <string name="text_link_payment_title">Pagamento por link</string>
+    <string name="text_logout_label">Sair</string>
+
+    <string name="text_message_back_again_to_logout">Pressionando o botão voltar mais uma vez irá deslogar do app.</string>
+    <string name="text_user_logout_info">Logout</string>
+    <string name="text_logout_back_button_message">Deseja deslogar do app?</string>
+
+    <string name="text_configurar">Configurar</string>
+    <string name="text_shipping_confirmation">Confirmação de envio</string>
+    <string name="text_title_verify_your_bank_account">Verifique a sua conta bancária</string>
+    <string name="text_subtitle_verify_your_bank_account">Em até 2 dias você receberá um valor na conta selecionada, em seguida é só digitar os valores na tela de confirmação para ativar o token</string>
+    <string name="text_token_title">No site, preencha o campo solicitante com os números exibidos abaixo</string>
+
+    <!-- MENSAGEM DE ERROR DO ARV-->
+    <string name="msg_error_programada">Antecipação Programada: Ocorre um erro durante a tentativa de antecipação programada.</string>
+    <string name="msg_error_avulsa">Antecipação Avulsa: Caro cliente, desculpe, ocorreu um erro na solicitação. Para antecipar as suas vendas, por favor, acesso o nosso chat e fale com nossos atendentes.</string>
+
+    <!-- MENSAGEM DE SUCESSO DO ARV-->
+    <string name="msg_sucess_programada">Antecipação Programada: Você programou as suas próximas antecipações e, a partir do próximo dia útil, irá receber o valor disponível em sua conta diariamente pelo preço proporcional de no primerio mês, e de nos próximos meses.</string>
+    <string name="msg_sucess_avulsa">Antecipação Avulsa: Você antecipou %1$s.O valor de %2$s será depositado na sua conta no próximo dia útil. O seu número de protocolo é %3$s.</string>
+    <string name="msg_cancelamento_arv">O cancelamento desta operação deverá ser realizado junto a Central de Antecipação de Vendas até às 14:00. Se o seu banco de recebimento for Bradesco o cancelamento deve ser realizado até às 10:00.</string>
+
+    <string name="alteracao_indisponivel">Alteração indisponível</string>
+    <string name="titulo_receba_rapido_inelegivel">Você não é elegível a alteração de recebimento</string>
+    <string name="subtitulo_receba_rapido_inelegivel">Fique tranquilo, logo iremos liberar essa funcionalidade para você :)</string>
+    <string name="estabelecimento_inelegivel">Estabelecimento inelegível</string>
+    <string name="nao_e_possivel_contratar">Não é possível contratar :(</string>
+    <string name="voce_ainda_nao_e_elegivel_ao_receba_rapido">Você ainda não é elegível ao Recebimento Automático.</string>
+    <string name="text_view_temporarily_block_title_mfa">Depósito temporariamente bloqueado</string>
+    <string name="text_view_temporarily_block_subtitle_mfa">Detectamos que a conta bancária informada já recebeu um depósito hoje . Aguarde o prazo de 1 dia.</string>
+
+
+    <string name="text_mfa_token_configuration_toolbar">Token</string>
+    <string name="text_mfa_token_configuration_title">Estamos configurando o seu token de segurança</string>
+    <string name="text_mfa_token_configuration_message">O token é necessário para realizar suas operações com mais segurança. Por favor, aguarde alguns instantes.</string>
+</resources>

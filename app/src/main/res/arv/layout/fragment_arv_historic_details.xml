@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context="br.com.mobicare.cielo.arv.presentation.historic.details.ArvHistoricDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvLabelNetAmount"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/txt_arv_historic_details_net_label_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvValueNetAmount"
+            style="@style/Label_700_Bold_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/brand_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelNetAmount"
+            tools:text="R$ 10.000,00" />
+
+        <TextView
+            android:id="@+id/tvLabelGrossAmount"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/txt_arv_historic_details_label_gross_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueNetAmount" />
+
+        <TextView
+            android:id="@+id/tvValueGrossAmount"
+            style="@style/Label_700_Bold_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/color_cloud_400"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelGrossAmount"
+            tools:text="R$ 10.000,00" />
+
+        <TextView
+            android:id="@+id/tvLabelDiscountAmount"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/txt_arv_historic_details_label_discount_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueGrossAmount" />
+
+        <TextView
+            android:id="@+id/tvValueDiscountAmount"
+            style="@style/Label_700_Bold_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/color_cloud_400"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelDiscountAmount"
+            tools:text="- R$ 10.000,00" />
+
+        <TextView
+            android:id="@+id/tvLabelStatus"
+            style="@style/label_12_display_400_ubuntu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/txt_arv_historic_details_label_status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueDiscountAmount" />
+
+        <ImageView
+            android:id="@+id/ivIconStatus"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            app:layout_constraintBottom_toBottomOf="@id/tvValueStatus"
+            app:layout_constraintEnd_toStartOf="@id/tvValueStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvValueStatus"
+            tools:srcCompat="@drawable/ic_chargeback_lifecycle_check" />
+
+        <TextView
+            android:id="@+id/tvValueStatus"
+            style="@style/Label_700_Bold_16"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:textColor="@color/color_cloud_400"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivIconStatus"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelStatus"
+            tools:text="Efetivado" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_8dp"
+            android:layout_marginVertical="@dimen/dimen_24dp"
+            android:background="@color/color_cloud_50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvValueStatus" />
+
+        <TextView
+            android:id="@+id/tvLabelInfo"
+            style="@style/Label_400_Alternate_regular_14_danger_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/txt_arv_historic_details_label_info_overall"
+            android:textColor="@color/color_cloud_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGeneralInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dimen_16dp"
+            android:paddingBottom="@dimen/dimen_26dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelInfo"
+            tools:ignore="RtlSymmetry"
+            tools:itemCount="3"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/layout_card_general_information" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

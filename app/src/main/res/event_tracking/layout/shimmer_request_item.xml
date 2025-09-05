@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_event_request"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dimen_16dp"
+        app:cardElevation="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/item_event_request_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_auto_start="true"
+            app:shimmer_base_alpha="1"
+            app:shimmer_highlight_alpha="0"
+            app:duration="800">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_16dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_40dp"
+                    android:theme="@style/AppMaterialComponentsNoActionBar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/item_event_name"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_marginEnd="@dimen/dimen_40dp"
+                        android:background="@drawable/background_display_50_radius_8"
+                        android:textAppearance="@style/bold_montserrat_16"
+                        android:textColor="@color/neutral_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/item_event_solicitation_type_title"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_11dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:background="@drawable/background_display_50_radius_8"
+                        android:textAppearance="@style/regular_montserrat_12"
+                        android:textColor="@color/color_neutral_main"
+                        app:layout_constraintEnd_toStartOf="@+id/item_machine_guideline_50"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/item_event_name" />
+
+                    <TextView
+                        android:id="@+id/item_event_solicitation_type_value"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_11dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:background="@drawable/background_display_50_radius_8"
+                        android:ellipsize="end"
+                        android:ems="3"
+                        android:maxLines="1"
+                        android:textAppearance="@style/bold_montserrat_16"
+                        android:textColor="@color/neutral_dark"
+                        app:layout_constraintEnd_toStartOf="@+id/item_machine_guideline_50"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/item_event_solicitation_type_title" />
+
+                    <TextView
+                        android:id="@+id/item_machine_solicitation_date_title"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="11dp"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:background="@drawable/background_display_50_radius_8"
+                        android:textAppearance="@style/regular_montserrat_12"
+                        android:textColor="@color/color_neutral_main"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/item_machine_guideline_50"
+                        app:layout_constraintTop_toTopOf="@id/item_event_solicitation_type_value" />
+
+                    <TextView
+                        android:id="@+id/item_event_solicitation_date_value"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_11dp"
+                        android:layout_marginStart="@dimen/dimen_8dp"
+                        android:background="@drawable/background_display_50_radius_8"
+                        android:textAppearance="@style/bold_montserrat_16"
+                        android:textColor="@color/neutral_dark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/item_machine_guideline_50"
+                        app:layout_constraintTop_toTopOf="@id/item_event_solicitation_type_value" />
+
+                    <View
+                        android:id="@+id/item_machine_status_tag"
+                        style="@style/Chip.Events.Status"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_28dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        android:background="@drawable/background_display_50_radius_8"
+                        android:ellipsize="end"
+                        android:ems="3"
+                        android:maxLines="1"
+                        app:layout_constraintEnd_toStartOf="@+id/item_machine_guideline_50"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/item_event_solicitation_type_value" />
+
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/item_machine_guideline_50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.50" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sectionHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dimen_16dp"
+    android:paddingEnd="@dimen/dimen_8dp"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ibBankDomicile">
+
+            <TextView
+                android:id="@+id/tvMerchantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/semi_bold_montserrat_14"
+                android:textColor="@color/neutral_800"
+                android:lineSpacingExtra="@dimen/dimen_3sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ibBankDomicile"
+                tools:text="Gomide Burgers" />
+
+            <TextView
+                android:id="@+id/tvDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_8dp"
+                android:textAppearance="@style/semi_bold_montserrat_12"
+                android:textColor="@color/neutral_600"
+                android:lineSpacingExtra="@dimen/dimen_1sp"
+                app:layout_constraintTop_toBottomOf="@id/tvMerchantName"
+                app:layout_constraintStart_toStartOf="@id/tvMerchantName"
+                app:layout_constraintEnd_toStartOf="@id/ibBankDomicile"
+                tools:text="11.222.111/0001-21"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tvMerchantNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/semi_bold_montserrat_12"
+                android:textColor="@color/neutral_600"
+                android:lineSpacingExtra="@dimen/dimen_1sp"
+                app:layout_constraintTop_toBottomOf="@id/tvDocument"
+                app:layout_constraintStart_toStartOf="@id/tvDocument"
+                app:layout_constraintEnd_toStartOf="@id/ibBankDomicile"
+                tools:text="EC 111222"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibBankDomicile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_8dp"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:layout_marginHorizontal="@dimen/dimen_8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_places_bank_accent_500_24_dp"
+            app:tint="@color/brand_400"
+            android:contentDescription="@string/pix_home_content_description_bank_domicile_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ibAccountManagement" />
+
+        <ImageButton
+            android:id="@+id/ibAccountManagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_8dp"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_settings_default_24dp"
+            app:tint="@color/brand_400"
+            android:contentDescription="@string/pix_home_content_description_account_management_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLoading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        app:shimmer_auto_start="true"
+        app:shimmer_base_alpha="1"
+        app:shimmer_highlight_alpha="0"
+        tools:duration="200"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/strip1"
+                android:layout_width="@dimen/dimen_190dp"
+                android:layout_height="@dimen/dimen_14dp"
+                android:background="@drawable/background_solid_cloud_100_radius_4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/strip2"
+                android:layout_width="@dimen/dimen_120dp"
+                android:layout_height="@dimen/dimen_14dp"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:background="@drawable/background_solid_cloud_100_radius_4dp"
+                app:layout_constraintTop_toBottomOf="@id/strip1"
+                app:layout_constraintStart_toStartOf="@id/strip1" />
+
+            <View
+                android:id="@+id/strip3"
+                android:layout_width="@dimen/dimen_120dp"
+                android:layout_height="@dimen/dimen_14dp"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:background="@drawable/background_solid_cloud_100_radius_4dp"
+                app:layout_constraintTop_toBottomOf="@id/strip2"
+                app:layout_constraintStart_toStartOf="@id/strip2" />
+
+            <View
+                android:id="@+id/square1"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:background="@drawable/background_solid_cloud_100_radius_4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <View
+                android:id="@+id/square2"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:layout_marginEnd="@dimen/dimen_24dp"
+                android:background="@drawable/background_solid_cloud_100_radius_4dp"
+                app:layout_constraintEnd_toStartOf="@id/square1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</FrameLayout>

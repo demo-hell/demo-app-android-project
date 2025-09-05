@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_solid_white_border_color_c5ced7"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:padding="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/container_key"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/rbCustomProfile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/clTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvTitle"
+                                    style="@style/regular_ubuntu_16_cloud_800"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="Canadá"
+                                    android:ellipsize="end"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    app:layout_constrainedWidth="true"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@id/tvTotalQuantity"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvTotalQuantity"
+                                    style="@style/regular_ubuntu_16_cloud_800"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/dimen_4dp"
+                                    tools:text="• 57 Usuários"
+                                    android:ellipsize="end"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    app:layout_constrainedWidth="true"
+                                    app:layout_constraintStart_toEndOf="@id/tvTitle"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvSubTitle"
+                            style="@style/regular_ubuntu_12_display_400"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_12dp"
+                            tools:text="Toronto - Quebéc" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/rbCustomProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:button="@drawable/selector_radio_button"
+                    android:gravity="end"
+                    android:scaleType="fitXY"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="@id/container_key"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/container_key"
+                    app:layout_constraintTop_toTopOf="@id/container_key" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

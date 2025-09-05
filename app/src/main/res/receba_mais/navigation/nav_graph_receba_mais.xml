@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_receba_mais"
+    app:startDestination="@id/myResumeFragment">
+
+    <fragment
+        android:id="@+id/myResumeFragment"
+        android:name="br.com.mobicare.cielo.recebaMais.presentation.ui.fragment.MyResumeFragment"
+        android:label="MyResumeFragment"
+        tools:layout="@layout/fragment_receba_mais_resumo">
+
+        <action
+            android:id="@+id/action_myResumeFragment_to_contractInstallmentsFragment"
+            app:destination="@id/ContractInstallmentsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ContractInstallmentsFragment"
+        android:name="br.com.mobicare.cielo.recebaMais.presentation.ui.fragment.contractinstallments.ContractInstallmentsFragment"
+        android:label="ContractInstallmentsFragment"
+        tools:layout="@layout/fragment_contract_installments">
+
+        <argument
+            android:name="CONTRACT_DETAIL_ARGS"
+            app:argType="br.com.mobicare.cielo.recebaMais.domains.entities.ContractDetailsResponse" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue_00aeef"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:id="@+id/progress_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_color"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="@dimen/dimen_159dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_man_flag"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_welcome_notification">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/toolbar_dialog"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linear_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_include"
+            app:layout_constraintVertical_bias="0.0">
+
+            <View
+                android:id="@+id/progress_01"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_4dp"
+                android:layout_marginStart="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_0dp"
+                android:layout_marginBottom="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:background="@color/blue_00aeef" />
+
+            <View
+                android:id="@+id/progress_02"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_4dp"
+                android:layout_marginStart="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_0dp"
+                android:layout_marginBottom="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:background="@color/blue_00aeef" />
+
+            <View
+                android:id="@+id/progress_03"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_4dp"
+                android:layout_marginStart="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_0dp"
+                android:layout_marginBottom="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:background="@color/blue_00aeef" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:scrollbarFadeDuration="2"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_quantity_flags"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_progress">
+
+            <FrameLayout
+                android:id="@+id/frameFormContentInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/text_view_quantity_flags"
+            style="@style/Text12sp900Black313131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            tools:text="237 - Santander S/A"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLoginNext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <br.com.cielo.libflue.button.CieloLargeBlueButton
+            android:id="@+id/buttonLoginNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:enabled="false"
+            tools:text="Próximo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_include"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/include_error"
+        layout="@layout/fragment_receba_mais_failure"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

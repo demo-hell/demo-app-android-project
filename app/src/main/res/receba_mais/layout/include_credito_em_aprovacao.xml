@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <ImageView
+        android:id="@+id/im_aguardando_aprovacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icon_ampulheta"
+        tools:ignore="MissingConstraints" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/tv_aguardando_aprovacao_title"
+        style="@style/TextPurple20spTitleValue_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="O seu contrato ainda está sendo gerado."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_aguardando_aprovacao"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/tv_aguardando_aprovacao_subtitle"
+        style="@style/TextPurple16spTitleValue_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Você pode atualizar esta tela a qualquer momento para verificar o retorno da sua contratação."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aguardando_aprovacao_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_aguardando_aprovacao_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aguardando_aprovacao_title"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/bt_Update_aguardando_aprovacao"
+        style="@style/ButtonShapedPurpleStyle"
+        android:layout_width="219dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="8dp"
+        android:text="Atualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aguardando_aprovacao_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/tv_aguardando_aprovacao_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aguardando_aprovacao_subtitle"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:text="Atualizar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

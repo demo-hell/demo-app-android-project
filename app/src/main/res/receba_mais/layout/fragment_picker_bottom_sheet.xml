@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_custom_calendar"
+        app:layout_constraintHeight_min="@dimen/dimen_230dp"
+        app:layout_constraintHeight_max="@dimen/dimen_344dp"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textPickerBottomSheetTitle"
+                    style="@style/Heading_300_bold_14_display_500"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:text="@string/text_picker_bottom_sheet_calendar_title" />
+
+                <ImageView
+                    android:id="@+id/btn_calendar_close"
+                    android:layout_width="@dimen/dimen_48dp"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:padding="@dimen/dimen_16dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_icon_close"
+                    android:contentDescription="@string/close" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_calendar_custom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_140dp"
+            android:paddingVertical="@dimen/dimen_24dp"
+            android:clipToPadding="false"
+            tools:listitem="@layout/item_calendar_custom"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintBottom_toTopOf="@id/btn_calendar_confirmar"/>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btn_calendar_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:text="@string/confirmar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

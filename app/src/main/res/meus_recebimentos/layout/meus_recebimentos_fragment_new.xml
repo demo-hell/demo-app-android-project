@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/content_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/content_filter"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_meus_recebimentos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <LinearLayout
+                android:id="@+id/layout_meus_recebimentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <br.com.cielo.libflue.button.CieloRegularBlueButton
+                    android:id="@+id/generate_pdf"
+                    android:layout_width="@dimen/dimen_328dp"
+                    android:layout_height="@dimen/dimen_44dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:text="@string/gerar_pdf_dos_comunicados"
+                    android:visibility="gone"/>
+                <LinearLayout
+                    android:id="@+id/content_alert_grafico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/box_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <ImageView
+                        android:id="@+id/imageview_grafico_alert_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="16dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_alert_grafico" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_grafico_alert"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="10"
+                        android:text="@string/extrato_alert_grafico"
+                        android:textColor="@color/gray_light"
+                        android:textSize="12sp"
+                        app:typeface="MuseoSans-500.ttf" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/content_grafico_meus_recebimentos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/frameMyProfits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/content_depositado_pendente"
+                    layout="@layout/content_depositado_pendente_new" />
+
+                <include
+                    android:id="@+id/content_bancos"
+                    layout="@layout/content_bancos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/frameExtrato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_16dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameInteractLeaderboardBannersOffers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_16dp" />
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/content_error"
+        layout="@layout/content_error" />
+
+    <RelativeLayout
+        android:id="@+id/progress_meus_recebimentos_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

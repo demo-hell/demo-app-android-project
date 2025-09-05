@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/dimen_12dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_400_regular_16_display_400"
+        tools:text="Outubro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/valueAchieved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        style="@style/Paragraph_400_bold_16_display_500"
+        android:textSize="@dimen/dimen_16sp"
+        tools:text="R$ 20.153,20"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMonth"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/goalStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_400_regular_16_display_400"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        tools:text="Meta alcançada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valueAchieved"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@color/nublado_200"
+        app:layout_constraintTop_toBottomOf="@id/goalStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

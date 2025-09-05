@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <br.com.cielo.libflue.radio.CieloCardRadioButton
+        android:id="@+id/rbOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/pix_transfer_recurrence_label_weekly_period" />
+
+</LinearLayout>

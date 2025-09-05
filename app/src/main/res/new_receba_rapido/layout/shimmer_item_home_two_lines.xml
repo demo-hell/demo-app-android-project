@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:background="@drawable/background_cloud_0_radius_8_dp"
+    app:cardCornerRadius="@dimen/dimen_6sp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_content"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:layout_marginEnd="@dimen/dimen_44dp"
+                android:background="@drawable/shimmer_background" />
+
+            <View
+                android:id="@+id/vw_divide_card_chargeback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_18dp"
+                android:background="@color/cloud_200" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_9dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:layout_marginBottom="@dimen/dimen_9dp"
+                android:background="@drawable/shimmer_background" />
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

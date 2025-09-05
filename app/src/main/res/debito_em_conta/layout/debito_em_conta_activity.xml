@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight=".4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="4.6"
+        android:id="@+id/vf_balcao"
+        >
+
+        <!-- Error FeatureToogle-->
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorToggle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cieloErrorTitle="@string/error_maintenance_title"
+            app:cieloErrorMessage="@string/error_maintenance_content"
+            app:cieloErrorContentImage="@drawable/img_maintenance_mfa"
+            app:cieloErrorButtonLabel="@string/meus_recebimentos_dialog_fechar"/>
+
+        <!-- Error Elegibilidade-->
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorLayoutBR"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            app:cieloErrorTitle="@string/text_title_error_br"
+            app:cieloErrorMessage="@string/text_subtitle_error_br"
+            app:cieloErrorButtonLabel="@string/incomint_fast_cancellation_back_button"
+            app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Error Url-->
+        <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+            android:id="@+id/errorHandlerUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cieloErrorTitle="@string/text_title_generic_error"
+            app:cieloErrorMessage="@string/text_user_loan_register_error_message"
+            app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+            app:cieloErrorButtonLabel="@string/meus_recebimentos_dialog_fechar"/>
+
+
+
+
+    </ViewFlipper>
+
+
+
+</LinearLayout>

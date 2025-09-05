@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvResourceGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/bold_montserrat_16_cloud_400"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:text="TextView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/layout_open_finance_permission_item" />
+</LinearLayout>

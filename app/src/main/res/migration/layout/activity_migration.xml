@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_welcome_notification">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/toolbar_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linear_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_include"
+            app:layout_constraintVertical_bias="0.0">
+
+            <View
+                android:id="@+id/progress_01"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_0dp"
+                android:layout_marginBottom="@dimen/dimen_0dp"
+                android:background="@color/blue_00aeef" />
+
+            <View
+                android:id="@+id/progress_02"
+                android:layout_weight="1"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_0dp"
+                android:layout_marginBottom="@dimen/dimen_0dp"
+                android:background="@color/blue_00aeef" />
+
+            <View
+                android:id="@+id/progress_03"
+                android:layout_weight="1"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="4dp"
+                android:layout_marginStart="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_0dp"
+                android:layout_marginBottom="@dimen/dimen_0dp"
+                android:background="@color/blue_00aeef" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameFormContentInput"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_progress" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/progress_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_color"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="159dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

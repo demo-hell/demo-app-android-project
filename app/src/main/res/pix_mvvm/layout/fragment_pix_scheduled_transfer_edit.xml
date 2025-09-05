@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_600"
+        android:lineSpacingExtra="@dimen/dimen_4dp"
+        android:text="@string/pix_account_scheduled_transfer_edit_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_28dp"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:paddingBottom="@dimen/dimen_8dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:background="@drawable/background_stroke_cloud_200_radius_12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/medium_montserrat_14"
+            android:textColor="@color/neutral_600"
+            android:text="@string/pix_account_scheduled_transfer_edit_selected_time" />
+
+        <br.com.cielo.libflue.button.CieloTextButton
+            android:id="@+id/tbEditTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="06:00, 17:30 e 22:00" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/cloud_100"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <include
+        layout="@layout/layout_pix_receipt_method_card"
+        android:id="@+id/includeImmediateTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>

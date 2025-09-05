@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/regular_montserrat_16_neutral_600_spacing_4"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/cancel_sharing_desc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/bold_montserrat_16_neutral_600"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:layout_weight="1"
+        android:text="@string/sure_want_cancel_sharing" />
+</LinearLayout>

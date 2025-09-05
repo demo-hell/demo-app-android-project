@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TaxTextIncomingFastAppearance" parent="ThemeOverlay.AppCompat.Light">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+
+    <style name="TextLabelDefaultUbuntu" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/color_5A646E</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+
+    <style name="TextLabelDefaultUbuntuBold" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textColor">@color/color_5A646E</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+</resources>

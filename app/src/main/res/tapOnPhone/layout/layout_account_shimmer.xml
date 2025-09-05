@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/bankIconShimmer"
+        android:layout_width="@dimen/dimen_32dp"
+        android:layout_height="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shimmer_background" />
+
+    <View
+        android:id="@+id/tvBankNameShimmer"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_120dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintStart_toEndOf="@id/bankIconShimmer"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shimmer_background" />
+
+    <View
+        android:id="@+id/tvBankBranchLabelShimmer"
+        android:layout_width="@dimen/dimen_98dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:background="@drawable/shimmer_background"
+        style="@style/Label_300_Regular_14_display_400"
+        app:layout_constraintStart_toEndOf="@+id/bankIconShimmer"
+        app:layout_constraintTop_toBottomOf="@+id/tvBankNameShimmer" />
+
+
+    <View
+        android:id="@+id/tvBankAccountLabelShimmer"
+        android:layout_width="@dimen/dimen_104dp"
+        android:layout_height="@dimen/dimen_20dp"
+        style="@style/Label_300_Regular_14_display_400"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintStart_toEndOf="@id/bankIconShimmer"
+        app:layout_constraintTop_toBottomOf="@id/tvBankBranchLabelShimmer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

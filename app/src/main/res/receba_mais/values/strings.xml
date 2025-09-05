@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rm_title_message">Receba Mais</string>
+    <string name="rm_title_modal">Receba Mais</string>
+    <string name="rm_title">Crédito na medida certa para você</string>
+
+    <string name="rm_subtitle">
+    <![CDATA[
+        A Cielo, em parceria com a Money Plus, tem o crédito na medida certa para você e acaba de disponibilizar o valor pré-aprovado de <b>R$ 10.000,00</b>
+        ]]>
+    </string>
+
+    <string name="cb_dinheiro_uteis">Dinheiro em até 2 dias úteis</string>
+    <string name="cb_pagamento_recebiveis">Pagamento via recebíveis</string>
+    <string name="cb_taxas_diferenciadas">Taxas diferenciadas</string>
+
+    <string name="btn_simular_agora">Simular agora</string>
+
+    <string name="ga_simular_agora">simular-agora</string>
+
+
+    <string name="rm_md_title_1_1">Recebimento do seu crédito</string>
+    <string name="rm_md_title_1_2">Seu contato</string>
+    <string name="rm_md_title_1_3">Condições do seu crédito</string>
+
+    <string name="rm_ss_sub_title">Solicitação efetuada!</string>
+    <string name="rm_ss_text_1_1">A sua solicitação foi realizada com sucesso e seu contrato está sendo gerado.\n\nDentro de instantes será possível consultar os detalhes da sua contratação no menu em</string>
+    <string name="rm_ss_text_1_2">Receba Mais</string>
+    <string name="rm_ss_text_1_3">ou no botão abaixo</string>
+    <string name="rm_ss_button_see_credit">Ver detalhes</string>
+
+
+    <string name="rm_fl_title">Ops!</string>
+    <string name="rm_fl_text_1">Houve uma falha na comunicação.</string>
+    <string name="rm_fl_text_2">Estamos trabalhando para resolver este problema.</string>
+    <string name="rm_fl_text_3">Verifique se você está conectado a internet.</string>
+    <string name="rm_fl_button_update">Atualizar</string>
+    <string name="text_meu_credito_titulo">Receba Mais</string>
+
+
+    <!--Receba Mais Codição de Crédito - include_receba_mais_contato-->
+    <string name="rm_cc_credit_reciver_text">Crédito a receber:</string>
+    <string name="rm_cc_credit_parcel_text">Parcelas:</string>
+    <string name="rm_cc_credit_parcel_desc_text">O pagamento das parcelas será feito via débito nos recebíveis de sua agenda.</string>
+    <string name="rm_cc_credit_pay_text">Vencimento da 1ª parcela:</string>
+    <string name="rm_cc_credit_pay_day_text">Dia do vencimento:</string>
+    <string name="rm_cc_credit_iof_text">IOF:</string>
+    <string name="rm_cc_credit_fee_text">Tarifa de cadastro (TC):</string>
+    <string name="rm_cc_credit_cust_text">Custo efetivo total (CET):</string>
+    <string name="rm_cc_credit_total_text">Total do financiamento:</string>
+    <string name="rm_cc_credit_next_button">Próximo </string>
+    <string name="rm_cc_credit_contract_button">Contratar</string>
+    <string name="rm_cc_invalid_phone">Telefone incompleto ou inválido</string>
+    <string name="rm_cc_invalid_email">E-mail incompleto ou inválido</string>
+    <string name="rm_cc_credit_help_menu_item">Ajuda</string>
+    <string name="rm_cc_credit_close_menu_item">Fechar</string>
+
+    <string name="text_day_payment_format">%s</string>
+    <string name="text_parcel_payment_format">%sx</string>
+
+    <string name="text_installment_and_loan_info_template">%1$sx de R$ %2$s (%3$s de juros a.m.)</string>
+
+    <string name="text_total_loan_simulation_amount">R$ %s</string>
+
+    <string name="text_loan_simulation_title_template">Seu crédito pré-aprovado é de R$ %1$s com taxa fixa de %2$s a.m.</string>
+    <string name="text_loan_limit_exceeded_error">O valor digitado excede o limite aprovado.</string>
+    <string name="text_dialog_loan_limit_error_title">Valor excedido</string>
+
+    <string name="text_picker_bottom_sheet_plots_title">Selecione parcelas:</string>
+    <string name="text_loan_plot_picker_template">%1$dx de R$ %2$s (%3$s de juros a.m.)</string>
+
+
+    <string name="receba_mais_contrato_text_title">Contrato</string>
+
+    <string name="text_pending_contract_title">O seu contrato ainda está sendo gerado.</string>
+
+    <string name="text_pending_contract_description">Você pode atualizar esta tela a qualquer momento para verificar o retorno da sua contratação.</string>
+
+    <string name="text_pending_contract_action_label">Atualizar</string>
+
+    <string name="text_user_loan_simulation_conditions_param_label">Seu crédito pré-aprovado é de R$ %1$s com taxa fixa de %2$s a.m.</string>
+
+    <string name="text_rm_help_title">Central de ajuda - Receba Mais</string>
+
+    <string name="text_user_loan_register_error_message">Houve algum problema durante o seu cadastro, não foi possível concluir a contratação</string>
+    <string name="text_receba_mais_success_title">Solicitação efetuada!</string>
+    <string name="text_receba_mais_success_message">Sua proposta está em aprovação com nosso parceiro. Se aceita, você receberá o dinheiro em sua conta e o contrato por e-mail em até 2 dias úteis.\n\nVeja os detalhes da sua contratação no menu Receba Mais.</string>
+    <string name="text_bank_agency_template">Agência: %1$s</string>
+    <string name="text_bank_agency_digit">-%1$s</string>
+    <string name="text_bank_account_number_template">Conta: %1$s</string>
+    <string name="text_bank_account_digit_template">-%1$s</string>
+
+    <string name="text_simulation_title_label">Simule agora</string>
+    <string name="text_close_button">Fechar, botão</string>
+
+    <string name="title_receive_more_bottom_sheet">Contrato - Ativo</string>
+    <string name="text_receive_more_resume_parcel_amount">Valor das parcelas</string>
+    <string name="text_receive_more_resume_contract_date">Data da contratação</string>
+    <string name="receive_more_resume_see_extract">Ver extrato</string>
+
+    <string name="title_screen_resume_receive_more">Auto atendimento | Receba mais</string>
+    <string name="subtitle_screen_resume_receive_more">Aqui temos algumas informações do seu contrato ativo.</string>
+    <string name="title_item_contract_resume_receive_more">Informações do contrato</string>
+    <string name="title_item_extract_resume_receive_more">Extrato de pagamento</string>
+    <string name="title_item_receive_more_condition_credit">Condições do crédito contratado (Receba Mais)</string>
+    <string name="title_item_receive_more_opening_fee">Taxa de Abertura de Crédito</string>
+    <string name="title_item_receive_more_due_date">Data de vencimento</string>
+    <string name="title_item_receive_more_first_parcel">Vencimento da 1ª parcela</string>
+    <string name="title_item_receive_more_other_information">Outras informações </string>
+    <string name="text_total_title_item_receive_more_other_information">Total do financiamento</string>
+    <string name="text_parcel_title_item_receive_more_other_information">Parcelas</string>
+
+    <string name="title_item_receive_more_establishment_code">Código do estabelecimento</string>
+    <string name="title_item_receive_more_document">Documento (CNPJ/CPF)</string>
+    <string name="title_item_receive_more_financial_partner">Financiadora parceira</string>
+    <string name="title_item_receive_more_bank_receive">Domicilio bancário de recebimento</string>
+    <string name="title_toolbar_receive_more">Gestão de empréstimos</string>
+
+    <string name="status_not_receive_more"> - Em aberto.</string>
+    <string name="status_receive_more">- Em aberto</string>
+    <string name="status_receive_more_parcel">ª Parcela - </string>
+    <string name="parcel_receive_more_parcel">ª Parcela</string>
+    <string name="value_contract_receive_more_percent">percentual CET de %1$s</string>
+    <string name="value_contract_receive_more_tax_month">de juros a.m</string>
+    <string name="value_contract_receive_more_quantity">x de</string>
+    <string name="message_error_title_receive_more">Não conseguimos gerar os dados do seu contrato</string>
+    <string name="message_error_subtitle_receive_more">Houve algum problema na geração dos dados do seu contrato, não foi possível exibir as informações tente novamente.</string>
+    <string name="title_bottom_sheet_details_receive_more">Sua parcela no valor de %1$s</string>
+    <string name="item_parcel_bottom_sheet_details_receive_more">Vencimento da\n%1$s</string>
+    <string name="item_amount_parcel_bottom_sheet_details_receive_more">Ainda falta você pagar:</string>
+    <string name="btn_help_bottom_sheet_details_receive_more">Precisa de Ajuda?</string>
+    <string name="day_of_month_sheet_details_receive_more">de cada mês</string>
+
+    <string name="text_receba_mais_contract_installment_info">Este é um histórico das suas parcelas do seu empréstimo.</string>
+    <string name="text_receba_mais_contract_installment_show_more">Ver todas as parcelas</string>
+    <string name="text_receba_mais_contract_installment_show_less">Ver menos parcelas</string>
+    <string name="text_receba_mais_contract_installment_summary_title">Resumo</string>
+    <string name="text_receba_mais_contract_installment_item">%sª Parcela - %s</string>
+    <string name="text_receba_mais_contract_installment_toolbar_title">Extrato de pagamentos</string>
+
+</resources>

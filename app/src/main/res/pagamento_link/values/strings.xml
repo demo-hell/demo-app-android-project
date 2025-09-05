@@ -1,0 +1,329 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="text_super_link">Link de Pagamento</string>
+    <string name="text_new_payment_label">Novo pagamento</string>
+    <string name="text_new_link_payment_title">Use links para facilitar os pagamentos das suas vendas</string>
+    <string name="text_new_link_payment_button_label">Criar novo link</string>
+    <string name="text_create_link_payment_input_label">Qual o nome do seu produto?</string>
+    <string name="text_create_link_value_label">Selecione o valor da venda</string>
+    <string name="text_create_link_button_label">Gerar link</string>
+    <string name="text_advanced_options_link_button_label">Opções avançadas</string>
+    <string name="text_create_link_value_hint">0,00</string>
+    <string name="text_create_link_title">Identifique sua venda</string>
+    <string name="text_link_type">Tipo de link</string>
+    <string name="text_link_type_text_subtitle">Para qual finalidade deseja criar um Link de Pagamento?</string>
+    <string name="text_title_shipping_method">Agora, escolha o tipo de entrega</string>
+    <string name="text_loggi_disponibilidade">Disponível nas 11 maiores capitais do Brasil: São Paulo, Rio de Janeiro, Belo Horizonte, Curitiba, Porto Alegre, Campinas, São José dos Campos, Ribeirão Preto, Santos, Sorocaba, São José do Rio Preto, Brasília, Goiânia, Florianópolis, Uberlândia, Salvador, Fortaleza, Recife e Manaus.</string>
+    <string name="text_title_info_como_funciona_loggi">Como funciona a entrega Loggi</string>
+
+    <!-- passo 01 motoboy -->
+    <string name="title_tela_solicitar_motoboy">Solicitar o entregador Loggi</string>
+
+    <string name="txt_title_motoboy_step01">Atenção</string>
+    <string name="txt_subtitle_motoboy_step01">Antes de solicitar o seu motoboy Loggi, certifique-se de que seu produto esteja preparado, embalado e totalmente pronto para a coleta.</string>
+    <string name="btn_solicitation_motoboy">Solicitar agora</string>
+
+    <!-- passo 02 motoboy bottom sheet status 200-->
+    <string name="txt_title_motoboy">Motoboy Loggi localizado!</string>
+    <string name="txt_subtitle_motoboy">Acompanhe o trajeto do seu motoboy, ele deve chegar em instantes.</string>
+    <string name="txt_aguardando_motoboy">Sucesso</string>
+    <string name="btn_name_motoboy">Acompanhar</string>
+
+
+    <!-- passo 02 motoboy serviço não disponível error 420-->
+    <string name="txt_title_motoboy_unavailable">Fora do horário de funcionamento</string>
+    <string name="txt_subtitle_motoboy_unavailable">A Loggi funciona das 08:00 às 21:59 durante toda a semana, por favor volte novamente dentro do horário de funcionamento. </string>
+    <string name="txt_aguardando_motoboy_unavailable">Serviço não disponível</string>
+
+    <!-- passo 02 motoboy not found error 404-->
+    <string name="txt_topbar_name_error_404">Serviço não disponível</string>
+    <string name="txt_toolbar_name_error">Serviço Indisponível</string>
+    <string name="txt_title_error_404">Pedido não encontrado</string>
+    <string name="txt_subtitle_error_404">Houve algum problema e não foi possível localizar o seu pedido </string>
+    <string name="txt_btn_error">Tentar novamente</string>
+
+
+    <!-- passo 02 motoboy sucess status ERROR_CANCELLATION_PENDING or CANCELLED -->
+    <string name="txt_topbar_name_collection_canceled">Coleta cancelada</string>
+    <string name="txt_title_collection_canceled">O motoboy cancelou a coleta</string>
+    <string name="txt_subtitle_collection_canceled">O valor cobrado na venda será extornado ao comprador, para solicitar uma nova coleta envie um novo Link de Pagamento ao cliente e aguarde o pagamento. </string>
+
+
+    <!-- passo 02 motoboy chronometer screen-->
+    <string name="txt_topbar_name_chronometer">Localizando motoboy Loggi</string>
+    <string name="txt_title_chronometer">Aguarde, estamos localizando um motoboy Loggi para você</string>
+    <string name="txt_subtitle_chronometer">00:00</string>
+
+    <string name="bottom_sheet_generic">BottomSheetGeneric</string>
+
+
+    <string name="txt_title_retornar_painel">Aguarde, estamos localizando um\n motoboy Loggi para você</string>
+    <string name="txt_subtitle_retornar_painel">00:00</string>
+    <string name="btn_retornar_painel">Retornar ao painel Link de Pagamento</string>
+
+
+    <string name="text_loggi_information">
+        <![CDATA[
+Visando comodidade ao seu negócio, a Cielo está oferecendo uma parceria com a Loggi, trazendo maior segurança para você e seus clientes. Ao solicitar a modalidade, você estará utilizando um recurso de entrega por meio de um parceiro da Cielo.<br/>
+<br/>
+<b>A plataforma Loggi fica disponível das 08h às 21h59; de domingo a domingo.</b><br/>
+<br/>
+<b>Quais regiões este serviço de entrega atende?</b><br/>
+São Paulo, Rio de Janeiro, Belo Horizonte, Campinas, Curitiba, Fortaleza, Goiânia, Manaus, Porto Alegre, Recife, Ribeirão Preto e Salvador.<br/>
+<br/>
+<b>O que você deve fazer ao selecionar a Loggi?</b><br/>
+Após a escolha por esta modalidade, você poderá informará a Loggi o seu endereço de coleta do produto. Ao receber a notificação do pagamento realizado, você deverá solicitar um motoboy para coleta do seu produto através do painel de controle do Link de Pagamento.<br/>
+Porém, caso não seja possível encontrar um motoboy disponível em sua região, o pedido será cancelado automaticamente. Se preferir, gere um novo link com outra modalidade de entrega e encaminhe novamente ao seu cliente.<br/>
+<br/>
+<b>Como é calculado o valor?</b><br/>
+O custo da entrega é calculado a cada pedido efetuado e depende da região em que será entregue sua venda. Este custo é o que chamamos do custo do frete e é repassado para o seu cliente pagar.<br/>
+<br/>
+<b>Qual será o valor da entrega?</b><br/>
+O valor total da entrega é composto pelo valor da sua venda mais o valor do frete, e como o valor do frete muda a depender da região de entrega, cálculo do valor total será informado somente quando o seu cliente informar o local de entrega. A taxa que a Cielo cobrará da venda (MDR) será sobre este valor total = valor da venda + MDR.<br/>
+<br/>
+<b>Como você acompanha os status?</b><br/>
+Quando o pagamento for identificado, um SMS será enviado informando que o motoboy irá chegar, para a coleta do pedido. Certifique que o seu produto já está preparado para coleta. O estabelecimento poderá acompanhar o status do serviço Loggi direto no app da Loggi + SMS que receber. Você também receberá outra notificação por SMS quando o Motoboy realizar a entrega no local do cliente. Você também receberá outra nofiticação por SMS quando o Motoboy realizar a entrega no local do cliente.<br/>
+<br/>
+<b>Qual é o tempo de entrega?</b><br/>
+O prazo de entrega é de até 1 dia útil, dependendo do raio de entrega de endereço do seu cliente. O seu produto só será coletado após a confirmação de pagamento do comprador e respeitando a sua regra do tempo adicional.<br/>
+<br/>
+<b>Se houver problema na entrega?</b><br/>
+Caso haja algum eventual problema durante a entrega, notifique a Loggi nos canais de atendimento.<br/>
+<br/>
+<b>O que acontece se o comprador não estiver em localização suportada pela Loggi?</b><br/>
+Caso não seja possível encontrar um motoboy disponível em sua região, o pedido será cancelado automaticamente. Se preferir, gere um novo link com outra modalidade de entrega e encaminhe novamente ao seu cliente.<br/>
+        ]]>
+    </string>
+
+    <!--activity_list_ativos-->
+    <string name="text_activity_link_ativos_title">Todos os links ativos</string>
+
+    <!--Help por pagamento por Link-->
+    <string name="text_pg_lk_help_title">Central de ajuda - Pagamento por Link</string>
+    <string name="text_pg_generate_link">Gerar Link</string>
+
+
+    <string name="text_create_link_last_links_summary_label">Últimos links ativos</string>
+    <string name="text_create_link_user_input_value_label">Valor desejado</string>
+
+    <string name="text_create_link_value_button_shortcut_one">+ R$ 5</string>
+    <string name="text_create_link_value_button_shortcut_two">+ R$ 10</string>
+    <string name="text_create_link_value_button_shortcut_three">+ R$ 50</string>
+    <string name="text_create_link_value_button_shortcut_four">+ R$ 100</string>
+    <string name="text_create_link_title_hint">Digite o nome do produto</string>
+    <string name="text_create_link_error_title">Erro ao criar link de pagamento</string>
+
+    <string name="text_phone_call_permission_title">Permissão não concedida</string>
+    <string name="text_phone_ask_permission">Para conseguir ligar para a Cielo é necessário conceder a permissão ao telefone.</string>
+    <string name="text_phone_permission_denied_message">Se quiser utilizar o atalho para ligar para a cielo vá ao menu do sistema e conceda a permissão de acesso ao telefone.</string>
+    <string name="text_range_info_label">(min R$ 0,01 máx R$ 20.000.000,00)</string>
+
+    <!-- acceptance term-->
+    <string name="acceptance_what_time_you_need">Quanto tempo você precisa para preparar o seu pedido?</string>
+    <string name="acceptance_description_put_time">O Motoboy Loggi será solicitado imediatamente após a confirmação do pedido. Caso precise de mais tempo para preparar seu pedido, preencha o campo abaixo:</string>
+    <string name="minutes_hint">Agendar coleta “Em minutos” (Opcional)</string>
+    <string name="deadline_information">O prazo de entrega é de até 2 horas, dependendo do endereço fornecido pelo cliente.</string>
+    <string name="region_question">E se Loggi não estiver disponível para a região informada?</string>
+    <string name="region_answer">Caso seu cliente informe um local não suportado atualmente pela Loggi, automaticamente você deverá realizar a entrega por meio dos Correios.</string>
+    <string name="acceptance_short_term">Aceito essas condições e farei a entrega por Correios, caso a Loggi não consiga atender a região informada pelo cliente</string>
+    <string name="go_forward_button">Avançar</string>
+    <string name="acceptance_title">Termo de aceite</string>
+    <string name="acceptance_term_toolbar_title">Entrega Loggi</string>
+    <string name="acceptance_term">O texto esta no arquivo assets/texts/terms.txt</string>
+    <string name="address_phone_hint">Telefone</string>
+    <string name="address_zipcode_hint">Cep</string>
+    <string name="address_address_hint">Endereço</string>
+    <string name="address_address_type">Tipo de endereço</string>
+    <string name="address_address_type_others">Outros</string>
+    <string name="address_number_hint">Número</string>
+    <string name="address_complement_hint">Complemento</string>
+    <string name="address_neighborhood_hint">Bairro</string>
+    <string name="address_city_hint">Cidade</string>
+    <string name="address_state_hint">Estado</string>
+    <string name="address_text_view_phone">Telefone para contato</string>
+    <string name="address_title">Informe o endereço de coleta</string>
+    <string name="address_title_correios">Informe o endereço de origem</string>
+    <string name="address_toolbar_title_correios">Entrega Correios</string>
+    <string name="address_cep_error">Verifique o CEP</string>
+    <string name="address_phone_error">Verifique o telefone</string>
+    <string name="address_toolbar_title">Dados de coleta - Loggi</string>
+
+    <string name="text_loggi_object_details_title">Qual o tamanho da embalagem que o produto será enviado?</string>
+    <string name="text_loggi_object_details_subtitle">Caso não seja nenhum dos tamanhos abaixo selecione um tamanho aproximado</string>
+    <string name="text_loggi_object_dimensions_template">%1$s = %2$scm x %3$scm x %4$scm</string>
+    <string name="text_loggi_title_toolbar">Detalhes do produto</string>
+    <string name="text_loggi_warning">
+        <![CDATA[
+<b>Fique atento:</b> O prazo de entrega é de até <b>2 horas</b>, dependendo do raio de entrega de endereço do seu cliente. O seu produto só será coletado após a confirmação de pagamento do comprador e respeitando a regra do tempo adicional. Você receberá um <b>SMS da Loggi</b>, no momento em que o pagamento estiver confirmado. <br/>
+<br/>
+<b><font color="#00d088">Dica:</font></b> Certifique que o seu produto já está preparado para coleta.<br/>
+<br/>
+<b>Caso seu cliente esteja em local não oferecido pela Loggi, automaticamente você deverá realizar a entrega por meio dos Correios.</b>
+        ]]>
+    </string>
+
+    <string name="text_fix_freight_label">Valor do frete fixo</string>
+    <string name="text_freight_cost_input_label">Valor do frete</string>
+    <string name="text_freight_cost_input_hint">Digite o valor</string>
+    <string name="text_freight_name_input_label">Nome do frete</string>
+    <string name="text_freight_name_input_hint">Digite o nome</string>
+
+    <!-- link generation -->
+    <string name="label_pay_atention">Fique atento para a modalidade de Delivery Loggi</string>
+    <string name="text_view_number_one">1</string>
+    <string name="text_view_number_two">2</string>
+    <string name="text_view_number_one_notification">Acompanhe as notificações</string>
+    <string name="text_view_number_one_notification_description">Depois de gerar e compartilhar os links de pagamento, acompanhe os status na área Últimos Links Ativos na página inicial do Link de Pagamento.</string>
+    <string name="text_view_number_two_call_motoboy">Solicite o motoboy</string>
+    <string name="text_view_number_two_call_motoboy_explanation1">Após identificarmos o pagamento, você será notificado e poderá solicitar o motoboy Loggi. Certifique-se que o seu produto está pronto para ser coletado antes de pedir o motoboy.</string>
+    <string name="text_view_number_two_call_motoboy_explanation2">Caso não seja possível encontrar um motoboy disponível em sua região, o pedido será cancelado automaticamente. Se preferir, gere um novo link com outra modalidade de entrega e encaminhe novamente ao seu cliente.</string>
+    <string name="text_view_number_two_call_motoboy_explanation3">E se a Loggi não estiver disponível para a região?</string>
+    <string name="text_view_number_two_call_motoboy_explanation4">Se o seu cliente informar um local não suportado atualmente pela Loggi, seu pedido será cancelado automaticamente.</string>
+    <string name="text_view_number_two_call_motoboy_explanation5">Atenção: Como não é necessária a digitação de senha em transações feitas pelo Cielo Link de Pagamento, seu cliente poderá contestá-la, caso não reconheça a cobrança. Para reduzir os riscos de cancelamentos, veja algumas dicas de segurança.</string>
+    <string name="text_view_copy_and_paste_super_link">Agora, copie o link e compartilhe em suas redes sociais:</string>
+    <string name="text_correios_options">
+        <![CDATA[
+        Embale seu produto de forma compacta e segura e <b>leve até a agência dos Correios mais próxima</b>
+        ]]>
+    </string>
+    <string name="text_freight_options">
+        <![CDATA[
+        Nessa opção você fica responsável pela entrega, devendo <b>informar um valor fixo para o frete</b>
+        ]]>
+    </string>
+    <string name="text_instructions_button">
+        <![CDATA[
+        <b><font color="#017CEB">Consultar as instruções</font></b> sobre gestão dos links e como solicitar a Loggi
+        ]]>
+    </string>
+    <string name="text_free_options">
+        <![CDATA[
+        Nessa opção você fica responsável pela <b>entrega e pelo valor do frete</b>
+        ]]>
+    </string>
+    <string name="txt_free_transport">Frete Grátis</string>
+    <string name="txt_shipping">Correios</string>
+    <string name="txt_loggi">Loggi - Entregue hoje</string>
+    <string name="txt_labl_shipping_fix">Frete Fixo do estabelecimento</string>
+
+    <string name="step_01_title">O que devo fazer depois de gerar o link:</string>
+    <string name="step_01_subtitle1">Compartilhe o Link de Pagamento \ncom seus clientes</string>
+    <string name="step_01_foot">Escolher outra modalidade</string>
+    <string name="step_01_checkbox">Sim, vou compartilhar</string>
+    <string name="step_02_subtitle">Acompanhe o status do pagamento</string>
+    <string name="step_02_subtitle02">É possível ver o status dos links gerados na página inicial do Link de Pagamento. Quando o pagamento for aprovado, você poderá solicitar manualmente o seu motoboy Loggi.</string>
+    <string name="step_02_checkbox">Sim, vou acompanhar</string>
+    <string name="step_03_subtitle">Solicite seu motoboy Loggi</string>
+    <string name="step_03_subtitle02">Certifique-se que o seu produto estão pronto para ser coletado antes de pedir o motoboy. Solicite seu motoboy Loggi na página inicial do Link de Pagamento após a aprovação do pagamento.</string>
+    <string name="step03_info01">Prazo para localizar \nseu motoboy</string>
+    <string name="step03_info021">00:10</string>
+    <string name="step03_info022">minutos</string>
+    <string name="step_03_checkbox">Sim, vou solicitar</string>
+    <string name="onboarding_name">Entrega Loggi</string>
+
+    <!-- Link Order and Detail -->
+    <string name="link_list_detail_label">Detalhes do link</string>
+    <string name="link_list_order_placed_label">Pedidos realizados</string>
+    <string name="link_list_detail_quantity_label">Quantidade de links:</string>
+    <string name="link_list_detail_quantity_unlimited">Ilimitados</string>
+    <string name="link_list_delivery_way_label">Entrega via</string>
+    <string name="link_list_delivery_way_label_fixed_amount">Entrega via lojista</string>
+    <string name="link_list_exclusion_information">Os pedidos realizados antes da exclusão permanecem ativos</string>
+    <string name="link_list_empty_list">Não há pedidos em andamento</string>
+    <string name="link_list_error_list">Tivemos um problema em carregar seus dados\nPor favor, tente novamente</string>
+    <string name="link_list_card_error">Tivemos um problema em carregar seus dados. Por favor, tente novamente</string>
+    <string name="link_list_error_text_button">Carregar novamente</string>
+    <string name="link_detail_customer_label">Dados do comprador</string>
+    <string name="link_detail_customer_content_client">Cliente:</string>
+    <string name="link_detail_customer_content_phone">Telefone:</string>
+    <string name="link_detail_customer_content_email">E-mail:</string>
+    <string name="link_detail_customer_content_address">Endereço entrega:</string>
+    <string name="link_detail_sale_label">Dados da venda</string>
+    <string name="link_detail_sale_content_date">Data:</string>
+    <string name="link_detail_sale_content_order">N° do pedido:</string>
+    <string name="link_detail_sale_content_payment_way">Meio de Pag.:</string>
+    <string name="link_detail_sale_content_delivery">Frete:</string>
+    <string name="link_detail_sale_content_total_value">Valor total:</string>
+    <string name="link_detail_sale_payment_status_pay">Status do Pag.:</string>
+    <string name="link_detail_sale_payment_af">Indicação AF:</string>
+    <string name="link_detail_sale_payment_date">Data do Pag.:</string>
+    <string name="link_detail_sale_payment_delivery_status">Status do delivery:</string>
+    <string name="link_detail_sale_payment_call_loggi_button">Solicitar Loggi</string>
+    <string name="link_detail_sale_payment_loggi_time_info">Serviço disponível a partir das 8h às 21h59 todos os dias da semana.</string>
+    <string name="alert_delete_link_title">Deseja excluir o Link de Pagamento?</string>
+    <string name="alert_delete_link_description">Após a exclusão não será possível gerenciar os pedidos deste link no App.</string>
+    <string name="alert_delete_link_yes">Sim</string>
+    <string name="alert_delete_link_no">Não</string>
+    <string name="alert_delete_link_excluded">Link de Pagamento excluído</string>
+    <string name="track_loggi_button">Acompanhar</string>
+    <string name="text_view_finality_superlink_send_product">Enviar um produto</string>
+    <string name="text_view_finality_superlink_charge_value">Cobrar valor</string>
+    <string name="text_view_finality_superlink_recurrent_sale">Venda recorrente</string>
+    <string name="text_view_sale_identify_sale_periodicy_title">Periodicidade da cobrança</string>
+    <string name="text_view_sale_identify_sale_date_title">Data final do período de cobrança</string>
+    <string name="text_view_sale_identify_sale_periodicy_select">Selecione o período de cobrança</string>
+    <string name="text_view_sale_identify_sale_date_select">Selecione uma data</string>
+    <string name="hint_quantity_orders">Quantidade de pedidos</string>
+    <string name="text_view_contested">As vendas realizadas no Link de Pagamento poderão ser contestadas caso não seja reconhecidas pelo comprador</string>
+    <string name="advanced_options_expiry_date">Data de expiração</string>
+    <string name="recurrent_final_date">Data final de cobrança</string>
+
+    <string name="tv_sl_valor">Valor</string>
+    <string name="tv_sl_data_expiracao">Data de expiração</string>
+    <string name="tv_sl_cobranca_valor">Cobrança de valor</string>
+    <string name="tv_sl_envio_produto">Envio de produto</string>
+    <string name="tv_sl_tipo_venda">Tipo de venda</string>
+    <string name="tv_sl_num_parcelas">Número máx. de parcelas</string>
+    <string name="tv_sl_codigo_produto">Código do produto</string>
+    <string name="tv_sl_descricao">Descrição</string>
+    <string name="tv_sl_perido_cobranca">Período final de cobrança</string>
+    <string name="tv_sl_venda_recorrente">Venda recorrente</string>
+    <string name="tv_sl_venda_link_ativos">Links Ativos</string>
+    <string name="tv_sl_see_more_information">Ver mais informações</string>
+    <string name="tv_sl_qtdd_max_produtos">Quantidade máx. de pedidos</string>
+    <string name="tv_sl_entrega_via">Entrega via</string>
+    <string name="no_active_links">Não há links ativos.</string>
+    <string name="sale_value_range_info">Digite um valor entre R$ 0,01 e R$ 20.000.000,00</string>
+    <string name="nome_do_produto">Nome do produto</string>
+    <string name="link_safety_tips">Veja dicas de segurança</string>
+
+    <string name="select_frequency">Selecione o período de cobrança</string>
+    <string name="select_date">Selecione uma data</string>
+    <string name="unavailable_service_try_again">Serviço indisponível no momento, tente mais tarde</string>
+    <string name="link_gerado_sucesso2">Link gerado com sucesso!</string>
+    <string name="text_view_copy_and_paste_super_link_2">Agora, copie o link e compartilhe com seu cliente.</string>
+    <string name="see_link_before_send">Veja antes de enviar para seu cliente</string>
+    <string name="text_view_number_two_call_motoboy_explanation6"><![CDATA[<b>Atenção:</b> Como não é necessário digitar senha em transações feitas pela Cielo Link de Pagamento, seu cliente poderá contestá-la caso não reconheça a cobrança. Para reduzir os riscos de cancelamento, veja algumas dicas de segurança.]]></string>
+    <string name="go_to_generated_links">Ir para links gerados</string>
+    <string name="to_share_capitalize">Compartilhar</string>
+    <string name="charge_value">Cobrar valor</string>
+    <string name="correios">Correios</string>
+    <string name="send_a_product">Enviar um produto</string>
+    <string name="payment_link_for">Estou enviando um link para pagamento referente a %s: %s</string>
+    <string name="weight_grams">Peso em gramas</string>
+    <string name="cep_origin">CEP (Origem)</string>
+
+    <string name="pagamento_link_correios_unavailable">O serviço de frete por Correios está indisponível.</string>
+    <string name="pagamento_link_delivery_options">Opções de envio</string>
+
+    <string name="want_to_delete_this_link">Deseja excluir este link?</string>
+
+    <string-array name="pagamento_link_installments_options_array">
+        <item />
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+        <item>4x</item>
+        <item>5x</item>
+        <item>6x</item>
+        <item>7x</item>
+        <item>8x</item>
+        <item>9x</item>
+        <item>10x</item>
+        <item>11x</item>
+        <item>12x</item>
+    </string-array>
+
+    <string name="payment_link_toolbar_order_detail">Links Ativos</string>
+
+</resources>

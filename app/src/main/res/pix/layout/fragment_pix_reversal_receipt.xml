@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".pix.ui.extract.reversal.PixReversalReceiptFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dimen_16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_cielo_logo_pix" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title_receipt"
+                style="@style/label_18_brand_600_montserrat_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/text_pix_transfer_receipt_title"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_date_receipt"
+                style="@style/label_16_display_400_ubuntu_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_receipt"
+                tools:text="Realizado às 17:39:31 em 31/12/2021 " />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@color/display_200"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date_receipt" />
+
+            <include
+                android:id="@+id/include_reversal_data_receipt"
+                layout="@layout/layout_pix_reversal_receipt_reversal_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <View
+                android:id="@+id/view_reversal_data"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@color/display_200"
+                app:layout_constraintTop_toBottomOf="@+id/include_reversal_data_receipt" />
+
+            <include
+                android:id="@+id/include_reversal_original_transaction"
+                layout="@layout/layout_pix_reversal_original_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view_reversal_data" />
+
+            <View
+                android:id="@+id/view_original_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@color/display_200"
+                app:layout_constraintTop_toBottomOf="@+id/include_reversal_original_transaction" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_authentication_code_title_receipt"
+                style="@style/label_16_display_300_montserrat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/text_pix_transfer_receipt_authentication_code"
+                app:layout_constraintTop_toBottomOf="@+id/view_original_transaction" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_transaction_code_receipt"
+                style="@style/label_16_display_400_ubuntu_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_bold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_authentication_code_title_receipt"
+                tools:text="58D5E212165B4CA0909BC86B9CEE0111" />
+
+            <View
+                android:id="@+id/view_informative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@color/display_200"
+                app:layout_constraintTop_toBottomOf="@+id/tv_transaction_code_receipt" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_informative_receipt"
+                style="@style/label_12_display_400_ubuntu_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/text_pix_transfer_receipt_informative"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/view_informative" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_cielo_receipt"
+                style="@style/label_16_display_400_montserrat_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:text="@string/text_pix_transfer_receipt_informative_cielo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_informative_receipt" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_cnpj_cielo_receipt"
+                style="@style/label_16_display_400_montserrat_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pix_transfer_receipt_informative_cnpj_cielo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cielo_receipt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/share_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_receipt"
+            app:layout_constraintVertical_bias="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_share_receipt"
+                style="@style/light_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_share_24dp"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:text="@string/text_pix_transfer_receipt_share"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

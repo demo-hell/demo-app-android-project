@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".centralDeAjuda.presentation.ui.contatos.ombudsman.message.OmbudsmanMessageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/title_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/text_title_ombudsman_personal_data"
+            android:textColor="@color/display_500"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subtitle_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/text_subtitle_ombudsman_personal_data"
+            android:textColor="@color/display_500"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toBottomOf="@+id/title_ombudsman_message" />
+
+        <TextView
+            android:id="@+id/title_subject_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/text_title_subject_ombudsman_message"
+            android:textColor="@color/display_500"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_ombudsman_message" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_subject_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/custom_edit_text"
+            app:layout_constraintTop_toBottomOf="@id/title_subject_ombudsman_message">
+
+            <TextView
+                android:id="@+id/tv_subject_ombudsman_message"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:fontFamily="@font/ubuntu"
+                android:hint="@string/text_hin_subject_ombudsman_message"
+                android:textColor="@color/display_500"
+                android:textColorHint="@color/display_300"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iv_arrow_subject_ombudsman_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_subject_ombudsman_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_subject_ombudsman_message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_subject_ombudsman_message"
+                app:srcCompat="@drawable/ic_arrow_down_tax" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/title_protocol_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/text_title_protocol_subject_ombudsman_message"
+            android:textColor="@color/display_500"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toBottomOf="@+id/container_subject_ombudsman_message" />
+
+        <EditText
+            android:id="@+id/edit_text_protocol_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/custom_edit_text"
+            android:hint="@string/text_hin_protocol_ombudsman_message"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="19"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen_8dp"
+            android:textColor="@color/text_color_263238"
+            android:textColorHint="@color/display_300"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toBottomOf="@id/title_protocol_ombudsman_message" />
+
+        <TextView
+            android:id="@+id/error_protocol_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/text_error_protocol_ombudsman_message"
+            android:textColor="@color/red_DC392A"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_protocol_ombudsman_message" />
+
+        <TextView
+            android:id="@+id/title_message_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/text_title_message_ombudsman_message"
+            android:textColor="@color/display_500"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toBottomOf="@+id/error_protocol_ombudsman_message" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/container_message_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/custom_edit_text"
+            android:baselineAlignedChildIndex="0"
+            android:minHeight="@dimen/dimen_150dp"
+            android:padding="@dimen/dimen_12dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="1000"
+            app:hintEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/title_message_ombudsman_message">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_message_ombudsman_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:background="@null"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="top"
+                android:hint="@string/text_hin_message_ombudsman_message"
+                android:inputType="textMultiLine"
+                android:maxLength="1000"
+                android:minHeight="@dimen/dimen_120dp"
+                android:textColor="@color/display_500"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/error_message_ombudsman_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/text_error_message_ombudsman_message"
+            android:textColor="@color/red_DC392A"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_message_ombudsman_message" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

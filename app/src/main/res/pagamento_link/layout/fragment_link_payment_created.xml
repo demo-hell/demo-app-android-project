@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/containerBottom"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:paddingHorizontal="@dimen/dimen_16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Paragraph_400_bold_16_display_500"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Camiseta infantil - P" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Paragraph_300_Regular_14_Display_500"
+                android:gravity="center"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                app:layout_constraintTop_toBottomOf="@+id/productName"
+                tools:text="Valor da venda: R$ 40,00" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_link_sucess"
+                android:layout_width="@dimen/dimen_72dp"
+                android:layout_height="@dimen/dimen_72dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPrice"
+                app:srcCompat="@drawable/ic_check_success" />
+
+            <TextView
+                android:id="@+id/linkSuccessTextView"
+                style="@style/Heading_400_bold_16_brand_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center"
+                android:text="@string/link_gerado_sucesso2"
+                app:layout_constraintTop_toBottomOf="@+id/img_link_sucess" />
+
+            <TextView
+                android:id="@+id/textViewCopy"
+                style="@style/Paragraph_300_Regular_14_Display_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:text="@string/text_view_copy_and_paste_super_link_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linkSuccessTextView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/copyArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@drawable/background_card_cielo_default"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCopy">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/link_value"
+                    style="@style/Paragraph_300_Regular_14_display_500"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_12dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewCopy"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="https://bit.ly/kksncid" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:paddingEnd="@dimen/dimen_8dp"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    android:tint="@color/brand_400"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_copy_super_link" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/seeLink"
+                style="@style/Label_300_Alternate_14_brand_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_37dp"
+                android:gravity="center"
+                android:padding="@dimen/dimen_6dp"
+                android:text="@string/see_link_before_send"
+                app:layout_constraintTop_toBottomOf="@id/copyArea" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/infoText"
+                style="@style/Paragraph_200_regular_12_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:text="@string/text_view_number_two_call_motoboy_explanation6"
+                app:layout_constraintTop_toBottomOf="@id/seeLink" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:id="@+id/btn_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/btn_generatedLinks"
+            app:layout_constraintEnd_toStartOf="@+id/btn_share"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_marginBottom="@dimen/dimen_30dp"
+                app:srcCompat="@drawable/ic_whatsapp_blue" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/btn_generatedLinks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_whatsapp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_marginBottom="@dimen/dimen_28dp"
+                app:srcCompat="@drawable/ic_share_blue" />
+        </FrameLayout>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btn_generatedLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_25dp"
+            android:text="@string/go_to_generated_links"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

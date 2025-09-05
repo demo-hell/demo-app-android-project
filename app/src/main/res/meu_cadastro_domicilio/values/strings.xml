@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <!-- adicionar bandeiras -->
+
+    <string name="add_account_01">A bandeira selecionada será</string>
+    <string name="add_account_02">transferida</string>
+    <string name="add_account_03">para a nova conta, ou seja,</string>
+    <string name="add_account_04">não estará mais habilitada</string>
+    <string name="add_account_05">na conta anterior</string>
+
+    <!-- transferencia de bandeiras -->
+
+    <string name="ft_subtitle_sucess_tranfer">As vendas das bandeiras selecionadas serão recebidas no novo banco cadastrado em 1 dia útil.</string>
+    <string name="tv_toolbar_tranfer">Transferir bandeiras</string>
+
+    <string name="transfer_brands_01">O número do chamado será enviado para seu</string>
+    <string name="transfer_brands_02">e-mail.</string>
+    <string name="transfer_brands_03">Para acompanhar sua solicitação você irar informar o número do chamado na</string>
+    <string name="transfer_brands_04">Central de Relacionamento</string>
+
+    <string name="text_title_account_brands">Você está visualizando às bandeiras da conta</string>
+    <string name="tv_item_tx_bandeiras_ver_mais_min">Ver mais</string>
+    <string name="tv_item_tx_bandeiras_ver_menos_min">Ver menos</string>
+    <string name="tv_item_tx_brands_account">Conta de destino</string>
+
+    <!-- instalação de máquina -->
+    <string name="ft_subtitle_sucess_install_machine">Em breve você irá receber sua nova máquininha</string>
+    <string name="tv_toolbar_install_machine">Solução de captura</string>
+    <string name="transfer_brands_install_machine_01">Guarde o número do protocolo para acompanhar sua solicitação por nossa</string>
+    <string name="transfer_brands_install_machine_02">Central de Relacionamento</string>
+
+    <!-- troca de máquina -->
+    <string name="ft_subtitle_sucess_replace_machine">Em breve você irá receber sua nova máquina</string>
+    <string name="tv_toolbar_replace_machine">Abrir Solicitação</string>
+    <plurals name="text_analysis_period">
+        <item quantity="one">Até %d hora</item>
+        <item quantity="other">Até %d horas</item>
+    </plurals>
+
+    <!-- transferencia em prossessamento -->
+    <string name="transfer_brands_pross_01">Para acompanhar a solicitação, informe o número de chamado enviado para seu e-mail na</string>
+    <string name="transfer_brands_pross_02">Central de Relacionamento</string>
+
+    <string name="token_validating_title">Validando token</string>
+    <string name="token_validating_content">Por favor, aguarde!</string>
+    <string name="token_validating_success">Token validado com sucesso!</string>
+    <string name="token_validating_error">Houve algum problema...</string>
+
+    <string name="status_200">200</string>
+</resources>

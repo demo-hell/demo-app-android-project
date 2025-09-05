@@ -1,0 +1,7 @@
+{
+  "confirmationText":"Confirme aqui a antecipação de suas vendas e receba no próximo dia útil.",
+  "anticipationAmount": 5800,
+  "operationTax": 6.99,
+  "amountToReceive": 5605.70,
+  "toolTipMessage":"*Para solicitações de antecipação realizadas até as 14hs."
+}

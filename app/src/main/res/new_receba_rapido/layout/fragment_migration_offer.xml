@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receive_auto_migration_subtitle"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_16"
+        android:textColor="@color/neutral_main"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        android:text="@string/receive_auto_migration_could_be_1_day"
+        android:textAppearance="@style/bold_montserrat_16"
+        android:textColor="@color/neutral_dark"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"/>
+
+    <TextView
+        android:id="@+id/tvFeesLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/receive_auto_migration_check_fees"
+        android:textAppearance="@style/semi_bold_montserrat_16"
+        android:textColor="@color/neutral_dark"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage"/>
+
+    <TextView
+        android:id="@+id/tvCreditFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receive_auto_migration_credit_fee"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_16"
+        android:textColor="@color/neutral_main"
+        app:layout_constraintTop_toBottomOf="@id/tvFeesLabel"/>
+
+    <TextView
+        android:id="@+id/tvInstallmentFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receive_auto_migration_installment_fee"
+        android:textAppearance="@style/medium_montserrat_16"
+        android:textColor="@color/neutral_main"
+        app:layout_constraintTop_toBottomOf="@id/tvCreditFee"/>
+
+    <TextView
+        android:id="@+id/tvKeepFeesAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_48dp"
+        android:text="@string/receive_auto_migration_keep_plan_info"
+        android:textAppearance="@style/medium_montserrat_16"
+        android:textColor="@color/neutral_main"
+        app:layout_constraintTop_toBottomOf="@id/tvInstallmentFee"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p2m.presentation.P2MFlowActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph_p2m" />
+
+    <br.com.cielo.libflue.screen.HandlerViewFlui
+        android:id="@+id/customHandlerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:backImage="@drawable/ic_direction_arrow_left"
+        app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+        app:headerImage="@drawable/ic_symbol_close_brand_400_24_dp"
+        app:headerImageContentDescription="@string/content_description_close_button"
+        app:isShowContainerButton="true"
+        app:labelColorButtonContained="@color/white"
+        app:labelColorButtonOutlined="@color/brand_400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:message="@string/commons_generic_error_message"
+        app:messageStyle="@style/Paragraph_400_regular_16_display_400_center"
+        app:title="@string/commons_generic_error_title"
+        app:titleStyle="@style/Heading_600_regular_18_center" />
+
+    <br.com.cielo.libflue.loading.AnimatedProgressViewFlui
+        android:id="@+id/animatedProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

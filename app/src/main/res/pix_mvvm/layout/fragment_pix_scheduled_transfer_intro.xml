@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/medium_montserrat_16_neutral_600"
+        android:lineSpacingExtra="@dimen/dimen_4dp"
+        android:text="@string/pix_account_scheduled_transfer_description" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:src="@drawable/ic_money_real_24_dp"
+        app:tint="@color/neutral_600"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/bold_montserrat_16_neutral_800_spacing_4"
+        android:text="@string/pix_account_scheduled_transfer_info_1_title"
+        tools:textAppearance="@style/semi_bold_montserrat_16"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/cloud_400"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:text="@string/pix_account_scheduled_transfer_info_1_description" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:src="@drawable/ic_date_time_clock_24_dp"
+        app:tint="@color/neutral_600"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/bold_montserrat_16_neutral_800_spacing_4"
+        android:text="@string/pix_account_scheduled_transfer_info_2_title"
+        tools:textAppearance="@style/semi_bold_montserrat_16"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/cloud_400"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:text="@string/pix_account_scheduled_transfer_info_2_description" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:src="@drawable/ic_money_note_arrow_up_24_dp"
+        app:tint="@color/neutral_600"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/bold_montserrat_16_neutral_800_spacing_4"
+        android:text="@string/pix_account_scheduled_transfer_info_3_title"
+        tools:textAppearance="@style/semi_bold_montserrat_16"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/cloud_400"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:text="@string/pix_account_scheduled_transfer_info_3_description" />
+
+</LinearLayout>

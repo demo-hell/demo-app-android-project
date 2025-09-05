@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dimen_300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dimen_16dp"
+    android:background="@drawable/background_radius8dp_stroke_gray_204986"
+    android:padding="@dimen/dimen_16dp">
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layerField1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_ripple_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:constraint_referenced_ids="tvLabel1, ivIcon1, tvContent1" />
+
+    <TextView
+        style="@style/Label_400_Regular_12"
+        android:id="@+id/tvLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Data da contestação" />
+
+    <ImageView
+        android:id="@+id/ivIcon1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_30dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContent1"
+        app:layout_constraintStart_toStartOf="@+id/tvLabel1"
+        app:layout_constraintTop_toTopOf="@+id/tvContent1"
+        tools:srcCompat="@drawable/ic_chargeback_help_16" />
+
+    <TextView
+        style="@style/Label_700_Bold_16"
+        android:id="@+id/tvContent1"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/display_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel1"
+        tools:text="19/11/2022" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layerField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_ripple_white"
+        app:layout_constraintStart_toStartOf="@+id/ivIcon1"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent1"
+        app:constraint_referenced_ids="tvLabel2, ivIcon2, tvContent2" />
+
+    <TextView
+        style="@style/Label_400_Regular_12"
+        android:id="@+id/tvLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        tools:text="Razão"
+        app:layout_constraintStart_toStartOf="@+id/ivIcon1"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent1" />
+
+    <ImageView
+        android:id="@+id/ivIcon2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_30dp"
+        android:importantForAccessibility="no"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContent2"
+        app:layout_constraintStart_toStartOf="@+id/tvLabel2"
+        app:layout_constraintTop_toTopOf="@+id/tvContent2"
+        tools:srcCompat="@drawable/ic_mastercard_brand" />
+
+    <TextView
+        style="@style/Label_700_Bold_16"
+        android:id="@+id/tvContent2"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_5A646E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel2"
+        tools:text="4017 - Fraude" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

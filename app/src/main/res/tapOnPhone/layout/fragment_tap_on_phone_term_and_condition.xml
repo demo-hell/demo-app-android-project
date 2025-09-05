@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConclude"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_preenchimento_dados" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/Heading_600_regular_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:text="@string/tap_on_phone_term_and_condition_title"
+                android:textColor="@color/brand_600"
+                app:layout_constraintTop_toBottomOf="@+id/ivTerms" />
+
+            <View
+                android:id="@+id/background"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:background="@drawable/background_pix_terms"
+                app:layout_constraintBottom_toBottomOf="@id/checkboxArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitleTerms"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_16dp"
+                android:text="@string/tap_on_phone_term_and_condition_subtitle"
+                app:layout_constraintTop_toTopOf="@id/background" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitleTerms"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                tools:itemCount="3"
+                tools:listitem="@layout/layout_term_link" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/checkboxArea"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingStart="@dimen/dimen_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvTerms"
+                tools:ignore="RtlSymmetry">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxTerms"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+
+                    android:background="@drawable/checkbox_terms_add_ec"
+                    android:button="@null"
+                    android:fontFamily="@font/ubuntu"
+                    android:textColor="@color/color_353A40"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvReadAcceptTermAndConditions"
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/access_manager_read_and_accept"
+                    android:textColor="@color/color_5A646E"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/checkBoxTerms"
+                    app:layout_constraintStart_toEndOf="@id/checkBoxTerms"
+                    app:layout_constraintTop_toTopOf="@+id/checkBoxTerms" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConclude"
+        style="@style/semi_bold_montserrat_16_cloud_0_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:enabled="false"
+        android:text="@string/tap_on_phone_finish_accreditation"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+# Guardsquare license file
+expiryDate            = 2025-06-01
+maintenanceExpiryDate = 2025-06-01
+product               = DexGuard
+version               = 7.*,8.*,9.*
+identifier            = br.com.mobicare.cielo,br.com.mobicare.cielo.homolog
+licensee              = Cielo
+customerID            = AC00003332
+contact               = Aline Paula
+contactEmail          = aline.paula@cielo.com.br
+licenseFileVersion    = 1
+licenseKey            = 3e147258c24eb4be33467f376803e8c9fa0f70e3b1436670bfbfe40ffc1f7e60638114b45d62546178c4230eabfd05c9acb475e909d171c5fce13ed21a9f36d4

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_pos_virtual"
+    app:startDestination="@id/posVirtualRouterFragment">
+
+    <fragment
+        android:id="@+id/posVirtualRouterFragment"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.router.PosVirtualRouterFragment"
+        android:label="PosVirtualRouter">
+
+        <action
+            android:id="@+id/action_posVirtualRouter_to_posVirtualOnboarding"
+            app:destination="@id/posVirtualOnboardingFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/posVirtualRouterFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_posVirtualRouter_to_posVirtualAccreditation"
+            app:destination="@id/posVirtualAccreditationOfferFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/posVirtualRouterFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_posVirtualRouter_to_posVirtualHome"
+            app:destination="@id/posVirtualHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/posVirtualRouterFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualOnboardingFragment"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.onboarding.PosVirtualOnboardingFragment"
+        android:label="PosVirtualOnboarding">
+
+        <action
+            android:id="@+id/action_posVirtualOnboarding_to_posVirtualAccreditation"
+            app:destination="@id/posVirtualAccreditationOfferFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/posVirtualOnboardingFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualAccreditationOfferFragment"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.accreditation.offer.PosVirtualAccreditationOfferFragment"
+        android:label="PosVirtualAccreditationOffer">
+
+        <action
+            android:id="@+id/action_posVirtualAccreditationOffer_to_posVirtualAccreditationRatesDetails"
+            app:destination="@id/posVirtualAccreditationRatesDetailsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_posVirtualAccreditationOffer_to_posVirtualAccreditationHire"
+            app:destination="@id/posVirtualAccreditationHireFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualAccreditationRatesDetailsFragment"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.accreditation.offer.ratesDetails.PosVirtualAccreditationRatesDetailsFragment"
+        android:label="PosVirtualAccreditationRatesDetails">
+
+        <argument
+            android:name="POS_VIRTUAL_IS_ACCEPT_AUTOMATIC_RECEIPT_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="POS_VIRTUAL_TYPE_PRODUCT_ARGS"
+            app:argType="br.com.mobicare.cielo.posVirtual.utils.PosVirtualProductTypeEnum" />
+
+        <argument
+            android:name="POS_VIRTUAL_BRANDS_ARGS"
+            app:argType="br.com.mobicare.cielo.component.requiredDataField.data.model.response.Brand[]" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualAccreditationHireFragment"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.accreditation.hire.PosVirtualAccreditationHireFragment"
+        android:label="PosVirtualAccreditationHire">
+
+        <argument
+            android:name="POS_VIRTUAL_OFFER_ID_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="POS_VIRTUAL_IS_ACCEPT_AUTOMATIC_RECEIPT_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="POS_VIRTUAL_AGREEMENTS_ARGS"
+            app:argType="br.com.mobicare.cielo.component.requiredDataField.data.model.response.Agreement[]" />
+
+        <argument
+            android:name="POS_VIRTUAL_PRODUCTS_ARGS"
+            app:argType="br.com.mobicare.cielo.component.requiredDataField.data.model.response.Product[]" />
+
+        <argument
+            android:name="POS_VIRTUAL_ITEMS_CONFIGURATIONS_ARGS"
+            app:argType="string[]" />
+
+        <argument
+            android:name="POS_VIRTUAL_REQUIRED_ARGS"
+            app:nullable="true"
+            app:argType="br.com.mobicare.cielo.component.requiredDataField.data.model.response.Required" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualHomeFragment"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.home.PosVirtualHomeFragment"
+        android:label="PosVirtualHomeFragment">
+
+        <action
+            android:id="@+id/action_posVirtualHomeFragment_to_posVirtualInsertAmountQRCodePix"
+            app:destination="@id/posVirtualInsertAmountQRCodePix"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_posVirtualHomeFragment_to_posVirtualRequestDetailsFragment"
+            app:destination="@id/posVirtualRequestDetails"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <argument
+            android:name="POS_VIRTUAL_PRODUCTS"
+            app:argType="br.com.mobicare.cielo.posVirtual.domain.model.PosVirtualProduct[]" />
+
+        <argument
+            android:name="MERCHANT_ID"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualInsertAmountQRCodePix"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.qrCodePix.insertAmount.PosVirtualQRCodePixInsertAmountFragment"
+        android:label="PosVirtualInsertAmountQRCodePix">
+
+        <argument
+            android:name="POS_VIRTUAL_LOGICAL_NUMBER_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_posVirtualInsertAmountQRCodePix_to_posVirtualViewQRCodePix"
+            app:destination="@id/posVirtualViewQRCodePix"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/posVirtualHomeFragment"
+            app:popUpToInclusive="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualViewQRCodePix"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.qrCodePix.viewAmount.PosVirtualQRCodePixViewCode"
+        android:label="PosVirtualViewQRCodePix">
+
+        <argument
+            android:name="POS_VIRTUAL_QRCODE_PIX_ARGS"
+            app:argType="br.com.mobicare.cielo.posVirtual.data.model.response.PosVirtualCreateQRCodeResponse" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/posVirtualRequestDetails"
+        android:name="br.com.mobicare.cielo.posVirtual.presentation.home.PosVirtualRequestDetailsFragment"
+        android:label="PosVirtualRequestDetails">
+
+        <argument
+            android:name="POS_VIRTUAL_PRODUCT"
+            app:argType="br.com.mobicare.cielo.posVirtual.domain.model.PosVirtualProduct" />
+
+        <argument
+            android:name="MERCHANT_ID"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

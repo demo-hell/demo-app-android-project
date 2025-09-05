@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Text14sp700Black34454f" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/black_34454f</item>
+        <item name="android:textSize">14sp</item>
+        <item name="typeface">MuseoSans-700.ttf</item>
+    </style>
+
+    <style name="Text12sp500Grey5d5d5d" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/grey_5d5d5d</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">MuseoSans-500.ttf</item>
+    </style>
+
+    <style name="Text12sp900Black313131" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/black_313131</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">MuseoSans-900.ttf</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text12sp500Blue008ddf" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_008ddf</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">MuseoSans-500.ttf</item>
+    </style>
+
+    <style name="Text14sp500Blue008ddf" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_008ddf</item>
+        <item name="android:textSize">14sp</item>
+        <item name="typeface">MuseoSans-500.ttf</item>
+    </style>
+
+</resources>

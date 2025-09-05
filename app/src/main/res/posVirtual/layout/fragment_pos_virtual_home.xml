@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sectionEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <br.com.cielo.libflue.cardbutton.CieloCardButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:firstSubtitle="@string/txt_item_cielo_tap_pos_virtual_home_subtitle"
+            app:icon="@drawable/ic_cielo_system_cielo_tap_cloud_400_24_dp"
+            app:title="@string/txt_item_cielo_tap_pos_virtual_home_title"
+            tools:visibility="visible" />
+
+        <br.com.cielo.libflue.cardbutton.CieloCardButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:firstSubtitle="@string/txt_item_qr_code_pix_pos_virtual_home_subtitle"
+            app:icon="@drawable/ic_payments_qr_code_scan_cloud_300_24_dp"
+            app:title="@string/txt_item_qr_code_pix_pos_virtual_home_title"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sectionPending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:id="@+id/dividerPending"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_8dp"
+            android:background="@color/cloud_50" />
+
+        <TextView
+            android:id="@+id/tvEnablementPending"
+            style="@style/bold_montserrat_14_cloud_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/pos_virtual_home_title_pending" />
+
+        <LinearLayout
+            android:id="@+id/containerItemsPending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen_16dp">
+
+            <br.com.cielo.libflue.cardbutton.CieloCardButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:visibility="gone"
+                app:firstSubtitle="@string/txt_item_payment_link_pos_virtual_home_subtitle"
+                app:icon="@drawable/ic_cielo_system_super_link_cloud_400_24_dp"
+                app:title="@string/txt_item_payment_link_pos_virtual_home_title"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <br.com.cielo.libflue.button.CieloTextButton
+        android:id="@+id/btnSeeRatesAndPlans"
+        style="@style/semi_bold_montserrat_14_brand_400"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:drawable="@drawable/ic_directions_chevron_right_brand_400_16_dp"
+        android:text="@string/pos_virtual_home_label_button_see_rates_and_plans" />
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_white_arround"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_24dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCieloLogo"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:contentDescription="@string/description_accessibility_cielo_logo"
+            app:layout_constraintBottom_toBottomOf="@id/containerInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/containerInfo"
+            app:srcCompat="@drawable/cielo_logo_v2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/ivCieloLogo"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvPaymentDate"
+                style="label_200_regular_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:textColor="@color/cloud_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="25/10/2022 • 13:10:00" />
+
+            <TextView
+                android:id="@+id/tvReceiptType"
+                style="@style/Label_200_Regular_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/background_stroke_cloud_500"
+                android:paddingHorizontal="@dimen/dimen_34dp"
+                android:paddingVertical="@dimen/dimen_8dp"
+                android:text="@string/tap_on_phone_sale_receipt_client_text"
+                android:textAllCaps="true"
+                android:textColor="@color/cloud_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPaymentDate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvEstablishmentName"
+        style="@style/Paragraph_300_bold_14_alert_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:textColor="@color/cloud_500"
+        app:layout_constraintTop_toBottomOf="@+id/containerHeader"
+        tools:text="Alimentos S.A" />
+
+    <TextView
+        android:id="@+id/tvCnpj"
+        style="@style/Paragraph_300_Regular_14_Brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/cloud_500"
+        app:layout_constraintTop_toBottomOf="@+id/tvEstablishmentName"
+        tools:text="CNPJ: 50.255.010/0001-22" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        style="@style/Paragraph_300_Regular_14_Brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/cloud_500"
+        app:layout_constraintTop_toBottomOf="@+id/tvCnpj"
+        tools:text="ALPHAVILLE INDUSTRIAL, 25 ANDAR, CENTRO" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/display_200"
+        app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+    <TextView
+        android:id="@+id/tvCardInfo"
+        style="@style/Paragraph_300_bold_14_alert_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:textColor="@color/cloud_500"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:text="CARTÃO MASTERCARD - FINAL 1234" />
+
+    <TextView
+        android:id="@+id/tvDoc"
+        style="@style/Paragraph_300_Regular_14_Brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/cloud_500"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardInfo"
+        tools:text="DOC: 8544742" />
+
+    <TextView
+        android:id="@+id/tvAut"
+        style="@style/Paragraph_300_Regular_14_Brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/cloud_500"
+        app:layout_constraintTop_toBottomOf="@+id/tvDoc"
+        tools:text="AUT: 666322" />
+
+    <TextView
+        android:id="@+id/tvAid"
+        style="@style/Paragraph_300_Regular_14_Brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/cloud_500"
+        app:layout_constraintTop_toBottomOf="@+id/tvAut"
+        tools:text="AID: A0000004942010" />
+
+    <TextView
+        android:id="@+id/tvInstallments"
+        style="@style/Paragraph_300_Regular_14_Brand_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/cloud_500"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tvAid"
+        tools:text="Parcelado emissor em {02} parcelas0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_26dp"
+        android:background="@drawable/background_stroke_cloud_500"
+        android:padding="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvInstallments">
+
+        <TextView
+            android:id="@+id/tvPaymentType"
+            style="@style/Label_400_bold_16_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cloud_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Débito" />
+
+        <TextView
+            android:id="@+id/tvSaleValue"
+            style="@style/Label_400_bold_16_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cloud_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="R$ 150,00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

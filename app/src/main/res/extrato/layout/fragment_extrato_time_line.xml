@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/content_extrato_footer">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_extrato_time_line"
+            android:layout_width="match_parent"
+            android:background="@color/background"
+            android:layout_height="match_parent"
+            android:clipToPadding="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/blue"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/content_extrato_footer"
+        layout="@layout/content_extrato_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true" />
+
+    <ProgressBar
+        android:id="@+id/progress_extrato_list"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/relativeExtratoTimelineError"
+        android:visibility="gone"
+        tools:visibility="visible"
+        layout="@layout/content_error"/>
+
+
+</RelativeLayout>

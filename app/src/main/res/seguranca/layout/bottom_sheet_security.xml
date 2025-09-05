@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    style="@style/bottom_security"
+    android:layout_height="wrap_content"
+    android:background="@color/color_99000000_security">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomSheet_security"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/title_bottomsheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="@string/bottom_sheet_title"
+            android:textColor="@color/color_231F20_security"
+            android:textSize="@dimen/dimen_18dp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toTopOf="@+id/description_bottomsheet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/description_bottomsheet"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:text="@string/bottom_sheet_description"
+            android:textColor="@color/color_231F20_security"
+            android:textSize="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditLoginPasswordSecurity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <br.com.cielo.libflue.inputtext.CieloPasswordTextInputView
+            android:id="@+id/textInputEditLoginPasswordSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            app:hint="@string/hint_senha"
+            app:layout_constraintBottom_toTopOf="@+id/frameProgressButtonEnterSecurity"
+            app:layout_constraintEnd_toEndOf="@+id/description_bottomsheet"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="@+id/description_bottomsheet" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonNewLoginUserEnter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_23dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/montserrat"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputEditLoginPasswordSecurity"
+            app:layout_constraintStart_toStartOf="@+id/textInputEditLoginPasswordSecurity"
+            fancy:fb_defaultColor="@color/color_017CEB"
+            fancy:fb_disabledColor="@color/color_C5CED7"
+            fancy:fb_disabledTextColor="@android:color/white"
+            fancy:fb_radius="@dimen/dimen_8dp"
+            fancy:fb_text="@string/bottom_sheet_button"
+            fancy:fb_textSize="@dimen/dimen_16sp" />
+
+
+        <FrameLayout
+            android:id="@+id/frameProgressButtonEnterSecurity"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttonNewLoginUserEnter"
+            app:layout_constraintVertical_bias="0.01999998">
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                style="@style/Widget.MaterialProgressBar.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:mpb_indeterminateTint="@color/purple_status_bar"
+                app:mpb_progressBackgroundTint="@color/purple_status_bar"
+                app:mpb_progressTint="@color/purple_status_bar" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

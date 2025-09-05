@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="br.com.mobicare.cielo.onboarding.presentation.ui.activity.OnboardingActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_onboarding"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/relativeJumpNext"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeJumpNext"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF7F7F7">
+
+        <RelativeLayout
+            android:id="@+id/layout_jump"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/btnJump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:lineSpacingMultiplier="1.17"
+                android:text="@string/onboarding_jump"
+                android:textColor="@color/purple"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </RelativeLayout>
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:ci_drawable="@drawable/circle_selected"
+            app:ci_drawable_unselected="@drawable/circle_unselected" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_next"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/next"
+                android:layout_toStartOf="@+id/next"
+                android:lineSpacingMultiplier="1.17"
+                android:text="@string/onboarding_next"
+                android:textColor="@color/purple"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_arrow_right_purple" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relativeAccessApp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF7F7F7">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/btnAccessApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingMultiplier="1.17"
+            android:text="@string/access_app"
+            android:textColor="@color/purple"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:typeface="MuseoSans-500.ttf" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

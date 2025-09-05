@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/step_01_title"
+        android:textColor="@color/color_231F20"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sl_one"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/appCompatTextView2"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/step01_subtitle01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="@dimen/dimen_316dp"
+        android:layout_height="@dimen/dimen_65dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/sl_background_with_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            app:srcCompat="@drawable/whatzap" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            app:srcCompat="@drawable/mail" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="@dimen/dimen_344dp"
+        android:layout_height="@dimen/dimen_56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/sl_background_selector"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxSaveUserData"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:layout_weight=".55"
+            android:background="@drawable/sl_checkbox_uncheck"
+            android:button="@null"
+            android:fontFamily="@font/ubuntu"
+            android:textColor="@color/color_353A40" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView4"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.9"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/step_01_checkbox"
+            android:textColor="@color/color_5A646E"
+            android:textSize="@dimen/dimen_14sp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNextOnboarding"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_margin="@dimen/dimen_8dp"
+            android:layout_weight=".55"
+            android:background="@drawable/sl_next_btn_disable" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/txtEscolherOutraModalidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="@string/step_01_foot"
+        android:textColor="@color/color_5A646E"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

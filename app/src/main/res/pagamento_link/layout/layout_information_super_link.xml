@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/borderCardBrandImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_border_gray"
+        android:padding="@dimen/dimen_3dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bottom_sheet_drag" />
+
+        <TextView
+            android:id="@+id/text_detail_link_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:text="@string/link_list_detail_label"
+            android:textColor="@color/color_231F20"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewMoreInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginEnd="@dimen/dimen_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewCommunication"
+            app:layout_constraintTop_toBottomOf="@+id/text_detail_link_title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewWhatsApp"
+            android:layout_width="@dimen/dimen_48dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:padding="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewCommunication"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycleViewMoreInformation"
+            app:srcCompat="@drawable/ic_whatsapp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCommunication"
+            android:layout_width="@dimen/dimen_48dp"
+            android:layout_height="@dimen/dimen_48dp"
+            android:layout_marginStart="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:padding="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageViewWhatsApp"
+            app:layout_constraintTop_toBottomOf="@+id/recycleViewMoreInformation"
+            app:srcCompat="@drawable/ic_external_share" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

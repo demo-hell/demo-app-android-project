@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="groupingTitleText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/color_353A40</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="groupingValuesText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="typeface">normal</item>
+        <item name="android:textColor">@color/color_353A40</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="footerValuesText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textColor">@color/color_5A646E</item>
+        <item name="android:padding">@dimen/dimen_6dp</item>
+    </style>
+
+    <style name="footerTitleText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/color_5A646E</item>
+        <item name="android:padding">@dimen/dimen_6dp</item>
+    </style>
+
+
+</resources>

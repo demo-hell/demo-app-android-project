@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/custom_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/blue"
+        android:text="@string/ajuda_alert_title"
+        android:textSize="20sp"
+        app:typeface="Museo700-Regular.ttf" />
+
+
+    <FrameLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <ScrollView
+            android:id="@+id/scroll_radios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:paddingBottom="40dp"
+            android:clipToPadding="false">
+
+            <RadioGroup
+                android:id="@+id/radio_group_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp" />
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:orientation="horizontal">
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/custom_dialog_button_cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/custom_dialog_button_right"
+                android:background="@android:color/transparent"
+                android:padding="16dp"
+                android:textColor="@color/purple"
+                android:text="@string/ajuda_alert_cancelar"
+                android:textSize="14sp"
+                app:typeface="MuseoSans-700.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/custom_dialog_button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:padding="16dp"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:text="@string/dialog_esqueci_usar_numero"
+                app:typeface="MuseoSans-700.ttf" />
+
+        </LinearLayout>
+
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

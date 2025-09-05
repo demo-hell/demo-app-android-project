@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_decode_qrcode"
+    app:startDestination="@id/pixDecodeQRCodeSummaryFragment">
+
+    <fragment
+        android:id="@+id/pixDecodeQRCodeSummaryFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.qrCode.decode.summary.PixDecodeQRCodeSummaryFragment"
+        android:label="PixDecodeQRCodeSummaryFragment"
+        tools:layout="@layout/fragment_pix_decode_qrcode_summary">
+
+        <argument
+            android:name="PIX_DECODE_QRCODE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.QRCodeDecodeResponse" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_pixTransferSummaryFragment_to_pixTransferReceiptFragment"
+            app:destination="@id/pixTransferReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixTransferSummaryFragment_to_pixBillingReceiptFragment"
+            app:destination="@id/pixBillingReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixTransferSummaryFragment_to_pixTransferScheduledReceiptFragment"
+            app:destination="@id/pixTransferScheduledReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.transfer.receipt.PixTransferReceiptFragment"
+        android:label="PixTransferReceiptFragment"
+        tools:layout="@layout/fragment_pix_transfer_receipt">
+
+        <argument
+            android:name="PIX_GO_BACK_TO_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSACTION_CODE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_ID_END_TO_END_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSFER_DETAILS_RESPONSE_ARGS"
+            android:defaultValue="@null"
+            app:argType="br.com.mobicare.cielo.pix.domain.TransferDetailsResponse"
+            app:nullable="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixBillingReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.qrCode.decode.receipt.PixBillingReceiptFragment"
+        android:label="PixBillingReceiptFragment"
+        tools:layout="@layout/fragment_pix_billing_receipt">
+
+        <argument
+            android:name="PIX_GO_BACK_TO_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_TRANSACTION_CODE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_ID_END_TO_END_ARGS"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferScheduledReceiptFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.receipt.PixScheduledTransactionReceiptFragment"
+        android:label="PixScheduledTransactionReceiptFragment"
+        tools:layout="@layout/fragment_pix_scheduled_transaction_receipt">
+
+        <argument
+            android:name="PIX_EXTRACT_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.SchedulingDetailResponse"
+            app:nullable="true" />
+
+        <argument
+            android:name="PIX_SCHEDULING_CODE_ARGS"
+            app:argType="string"
+            app:nullable="true"/>
+
+        <argument
+            android:name="PIX_GO_BACK_TO_ARGS"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

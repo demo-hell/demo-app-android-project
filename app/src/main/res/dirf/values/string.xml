@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_dirf_title">Informe de rendimentos retidos na fonte.</string>
+    <string name="txt_dirf_subtitle">O Informe de Rendimentos é emitido apenas para clientes Cielo pessoa jurídica, uma vez que o documento é utilizado para preenchimento da Declaração de imposto de renda retido na fonte (DIRF/EFD-REINF)</string>
+    <string name="txt_dirf_subtitle_02">Para mais informações sobre a DIRF/EFD-REINF</string>
+    <string name="txt_dirf_subtitle_03">Selecione as opções abaixo para realizar o download</string>
+    <string name="text_dirf_year">Ano do calendário</string>
+    <string name="txt_dirf_file_01">Formato do arquivo</string>
+    <string name="btn_download_dirf">Baixar</string>
+    <string name="title_sub_menu_Dirf">DIRF/EFD-REINF</string>
+    <string name="txt_dirf_duvida">Para dúvidas sobre como baixar seu documento, acesse a Central de Ajuda</string>
+    <string name="txt_link_dirf_authorization">Acesse o portal da Receita Federal</string>
+
+    <string name="txt_name_calendar">Selecione o ano calendário</string>
+    <string name="txt_item_dirf">PDF</string>
+    <string name="txt_dec_info">Para baixar o arquivo em .DEC, preencha as seguintes informações</string>
+
+    <string name="ev_name_resposable">Nome do responsável legal</string>
+    <string name="ev_nome_ra_social">Nome ou razão social</string>
+    <string name="ev_dirf_cpf">CPF do responsável legal</string>
+    <string name="ev_dirf_cnpj">CNPJ da matriz</string>
+
+    <string name="item_dirf_pdf">PDF</string>
+    <string name="item_dirf_excel">Excel</string>
+    <string name="item_dirf_dec">.DEC</string>
+
+    <string name="text_body_dirf_01">Para dúvidas sobre como baixar seu documento, acesse a</string>
+    <string name="text_body_dirf_02">Central de Ajuda</string>
+
+    <string name="txt_erro_420_title">Arquivo não disponível.</string>
+    <string name="txt_erro_420_subtitle">Esta funcionalidade está liberada apenas para Pessoa Jurídica (CNPJ).</string>
+
+    <string name="txt_success_title">Seu download foi concluído!</string>
+    <string name="txt_success_subtitle">Verifique em seu dispositivo, na pasta\n<b>%s</b></string>
+
+    <string name="txt_erro_400_title">Arquivo não disponível no período selecionado.</string>
+    <string name="txt_erro_400_subtitle">Selecione outro período e tente novamente.</string>
+
+    <string name="txt_erro_system_title">Falha no sistema</string>
+    <string name="txt_erro_system_subtitle">Infelizmente ocorreu um falha em nosso sistema e não conseguimos converter o arquivo selecionado.\n\nTente novamente ou aguarde alguns minutos</string>
+    <string name="text_dirf_help_title">Central de ajuda - DIRF/EFD-REINF</string>
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".newRecebaRapido.presentation.details.ReceiveAutomaticConfirmationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_description"
+            style="@style/regular_montserrat_16_neutral_600_spacing_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/receive_auto_confirmation_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_subtitle_receive_auto_details"
+            style="@style/bold_montserrat_14_neutral_800_spacing_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/receive_auto_confirmation_fees_and_receiving"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_description" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_tax_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_receive_auto_details">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_tax_details_credit_cash"
+                style="@style/regular_montserrat_14_neutral_600_spacing_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                tools:text="@string/receive_auto_details_tax_cash_sales"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_tax_details_installment"
+                style="@style/regular_montserrat_14_neutral_600_spacing_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:text="@string/receive_auto_details_tax_installment_sales"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tax_details_credit_cash" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_plan_title"
+            style="@style/bold_montserrat_14_neutral_800_spacing_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/receive_auto_confirmation_plan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_tax_box" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_plan_content"
+            style="@style/regular_montserrat_14_neutral_600_spacing_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            tools:text="Recebimento Automático em 1 dia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_plan_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_validity_title"
+            style="@style/bold_montserrat_14_neutral_800_spacing_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/receive_auto_confirmation_validity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_plan_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_post_validity_fees"
+            style="@style/semi_bold_montserrat_12"
+            android:textColor="@color/brand_400"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dimen_48dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:gravity="center_vertical|end"
+            android:text="@string/receive_auto_confirmation_fees_post_validity"
+            android:drawableEnd="@drawable/ic_info_brand_400_16_dp"
+            android:drawablePadding="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_validity_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_validity_title"
+            app:layout_constraintTop_toTopOf="@id/tv_validity_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_validity_content"
+            style="@style/regular_montserrat_14_neutral_600_spacing_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            tools:text="12 meses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_validity_title" />
+
+        <View
+            android:id="@+id/vw_divide_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@color/display_50"
+            app:layout_constraintTop_toBottomOf="@id/tv_validity_content" />
+
+        <include
+            android:id="@+id/container_info_tax_box"
+            layout="@layout/tax_info_box_component"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginBottom="@dimen/dimen_44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_divide_card" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCancelAnyTimeInfo"
+            style="@style/regular_montserrat_12_neutral_600_spacing_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/receive_auto_cancel_any_time_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_info_tax_box" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dimen_56dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_see_tax_with_brand"
+                style="@style/semi_bold_montserrat_center_16_brand_400_spacing_4"
+                android:stateListAnimator="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:background="@drawable/background_white_stroke_1_5_dp_cielo_accent_500_radius_1000_dp"
+                android:gravity="center"
+                android:text="@string/btn_see_tax_with_brand" />
+
+            <br.com.cielo.libflue.button.CieloLargeBlueButton
+                android:id="@+id/btn_contract_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:text="@string/btn_see_tax_contract_plan" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/errorInclude"
+            layout="@layout/layout_receive_auto_error_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vw_divide_card" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/validityGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:constraint_referenced_ids="tv_validity_title, tv_validity_content, btn_post_validity_fees"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

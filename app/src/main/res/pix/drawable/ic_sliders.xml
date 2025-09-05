@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M6,14C6.5523,14 7,14.4477 7,15V20C7,20.5523 6.5523,21 6,21C5.4477,21 5,20.5523 5,20V15C5,14.4477 5.4477,14 6,14Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M6,4C6.5523,4 7,4.4477 7,5V11C7,11.5523 6.5523,12 6,12C5.4477,12 5,11.5523 5,11V5C5,4.4477 5.4477,4 6,4Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M12,12C12.5523,12 13,12.4477 13,13V20C13,20.5523 12.5523,21 12,21C11.4477,21 11,20.5523 11,20V13C11,12.4477 11.4477,12 12,12Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M12,3C12.5523,3 13,3.4477 13,4V8C13,8.5523 12.5523,9 12,9C11.4477,9 11,8.5523 11,8V4C11,3.4477 11.4477,3 12,3Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M18,14C18.5523,14 19,14.4477 19,15V20C19,20.5523 18.5523,21 18,21C17.4477,21 17,20.5523 17,20V15C17,14.4477 17.4477,14 18,14Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M18,4C18.5523,4 19,4.4477 19,5V11C19,11.5523 18.5523,12 18,12C17.4477,12 17,11.5523 17,11V5C17,4.4477 17.4477,4 18,4Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M3,15C3,14.4477 3.4477,14 4,14H8C8.5523,14 9,14.4477 9,15C9,15.5523 8.5523,16 8,16H4C3.4477,16 3,15.5523 3,15Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M8.5996,9C8.5996,8.4477 9.0473,8 9.5996,8H14.3997C14.952,8 15.3997,8.4477 15.3997,9C15.3997,9.5523 14.952,10 14.3997,10H9.5996C9.0473,10 8.5996,9.5523 8.5996,9Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M15,15C15,14.4477 15.4477,14 16,14H20C20.5523,14 21,14.4477 21,15C21,15.5523 20.5523,16 20,16H16C15.4477,16 15,15.5523 15,15Z"
+      android:fillColor="#5A646E"
+      android:fillType="evenOdd"/>
+</vector>

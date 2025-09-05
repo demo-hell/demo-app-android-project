@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_meus_recebimentos_depositado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/meus_recebimentos_linear_image_arrow_down"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/titlePaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/meus_recebimentos_depositado"
+                            android:textColor="@color/gray_light"
+                            android:textSize="12sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/paidValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meus_recebimentos_valor_depositado"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            app:typeface="MuseoSans-700.ttf" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/arrowDown"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:rotation="90"
+                        app:srcCompat="@drawable/ic_arrow" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/meus_recebimentos_divisoria_valores"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:alpha="0.2"
+                    android:background="@color/gray_light" />
+
+                <LinearLayout
+                    android:id="@+id/meus_recebimentos_linear_image_arrow_rigth"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/meus_recebimentos_pendente"
+                            android:textColor="@color/gray_light"
+                            android:textSize="12sp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/pendingValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/meus_recebimentos_valor_pendente"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            app:typeface="MuseoSans-700.ttf" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/arrowRight"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_arrow"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/meus_recebimentos_show_depositos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/meus_recebimentos_recebiveis_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/meus_recebimentos_recebiveis_divisioria"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:alpha="0.2"
+                        android:background="@color/gray_light" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewIncoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

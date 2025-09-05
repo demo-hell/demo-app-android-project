@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_tap_on_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title_tap_on_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="@dimen/dimen_205dp"
+        app:layout_constraintHeight_min="@dimen/dimen_50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:srcCompat="@drawable/ic_08" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_tap_on_phone"
+        style="@style/Heading_600_regular_20_bold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/tap_on_phone_enable_nfc_title"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/dimen_18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_tap_on_phone"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@+id/iv_tap_on_phone"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_subtitle_tap_on_phone"
+        style="@style/Paragraph_400_regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/tap_on_phone_enable_nfc_subtitle"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_tap_on_phone"
+        app:layout_constraintVertical_bias="0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

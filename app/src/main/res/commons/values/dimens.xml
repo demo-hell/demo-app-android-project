@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<dimen name="design_fab_size_normal">86dp</dimen>-->
+    <dimen name="card_corner">10dp</dimen>
+    <dimen name="navigation_drawer_width">232dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_22dp">22dp</dimen>
+    <dimen name="dimen_24sp">24sp</dimen>
+    <dimen name="dimen_232dp">232dp</dimen>
+    <dimen name="dimen_256dp">256dp</dimen>
+    <dimen name="dimen_156dp">156dp</dimen>
+</resources>

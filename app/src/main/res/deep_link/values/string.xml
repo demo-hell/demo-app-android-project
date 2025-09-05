@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="deep_link_title">Deep Link</string>
+    <string name="dp_title_toolbar">Validar e-mail</string>
+    <!-- tela de sucesso -->
+    <string name="dp_title_sucess">E-mail validado com sucesso</string>
+    <string name="dp_subtitle_sucess_01">Agora você já pode acessar sua conta usando seu CPF ou e-mail.</string>
+    <string name="dp_subtitle_sucess_02">\n O e-mail expira em 24 horas.</string>
+    <string name="dp_btn_send">Ir para o Login</string>
+
+    <!-- modal sucesso -->
+    <string name="dp_modal_sucess_title">E-mail reenviado</string>
+    <string name="dp_modal_sucess_msg_01">Confira sua caixa de e-mail e abra o link</string>
+    <string name="dp_modal_sucess_msg_02">O link expira em</string>
+
+    <!-- tela de error -->
+    <string name="dp_title_error">Tivemos um problema</string>
+    <string name="dp_subtitle_error">Não conseguimos validar seu email, tente novamente mais tarde</string>
+    <string name="dp_btn_send_error">Ok</string>
+
+    <!-- modal de error -->
+    <string name="dp_modal_error_title">Tivemos um problema</string>
+    <string name="dp_modal_error_msg">Não conseguimos reenviar o e-mail de validação. Tente novamente mais tarde ou entre em contato com a Central.</string>
+
+    <!-- tela de token expirado -->
+    <string name="dp_title_expirado">Sua validação expirou</string>
+    <string name="dp_subtitle_expirado">Solicite abaixo o reenvio para começar a usar o aplicativo</string>
+    <string name="dp_btn_send_expirado">Reenviar e-mail</string>
+
+</resources>

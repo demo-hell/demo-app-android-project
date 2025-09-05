@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_grouping_canceled_sales"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/textViewQuantity"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/grouping_title_quantity_canceled_sales"
+            android:textColor="@color/color_cloud_400"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/groupingQuantityCanceled"
+            style="@style/Paragraph_300_bold_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:textColor="@color/color_cloud_600"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewQuantity"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textViewValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/grouping_title_value_canceled_sales"
+            android:textColor="@color/color_cloud_400"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/groupingQuantityCanceled" />
+
+        <TextView
+            android:id="@+id/groupingValueCanceled"
+            style="@style/Paragraph_300_bold_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/color_cloud_600"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewValue"
+            app:layout_constraintTop_toTopOf="@id/textViewValue"
+            tools:text="R$ 0,00" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+

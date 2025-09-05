@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_12dp"
+    android:background="@drawable/background_solid_pistachio_100_rounded_8dp">
+
+    <TextView
+        android:id="@+id/tvLastSaleTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Label_200_Regular_12_Display_500"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Última venda hoje • às 15h00:"/>
+
+    <ImageView
+        android:id="@+id/ivBrandIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSaleType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSaleType"
+        app:srcCompat="@drawable/ic_generic_brand" />
+
+    <TextView
+        android:id="@+id/tvSaleType"
+        style="@style/Label_300_regular_14_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        tools:text="Parcelado cliente"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvSaleValue"
+        app:layout_constraintStart_toEndOf="@id/ivBrandIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastSaleTime" />
+
+    <TextView
+        android:id="@+id/tvSaleValue"
+        style="@style/Label_300_Bold_14_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        tools:text="R$ 100.000,00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastSaleTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp"
+    tools:context=".centralDeAjuda.presentation.ui.contatos.ombudsman.protocol.OmbudsmanProtocolFragment">
+
+    <ImageView
+        android:id="@+id/iv_protocol_ombudsman"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/txt_title_protocol_ombudsman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="@dimen/dimen_232dp"
+        app:layout_constraintHeight_min="@dimen/dimen_40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_12" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/txt_title_protocol_ombudsman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/text_title_question_ombudsman"
+        android:textColor="@color/brand_400"
+        android:textSize="@dimen/dimen_18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_protocol_ombudsman"
+        app:layout_constraintTop_toBottomOf="@+id/iv_protocol_ombudsman" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_protocol_ombudsman"
+        style="@style/Paragraph_300_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:text="@string/text_subtitle_question_ombudsman"
+        app:layout_constraintBottom_toTopOf="@+id/container_action_btn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title_protocol_ombudsman" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_action_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/btn_not_protocol"
+            style="@style/HelpCenterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:text="@string/text_btn_no_protocol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btn_with_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/text_btn_with_protocol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_not_protocol" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

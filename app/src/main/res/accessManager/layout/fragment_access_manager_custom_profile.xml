@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    tools:context=".accessManager.customProfile.AccessManagerCustomProfileFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_21dp"
+        android:paddingEnd="@dimen/dimen_48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/access_manager_select_profile_title"
+        android:textColor="@color/brand_600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btBackArrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubtitle"
+        style="@style/Paragraph_400_regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        android:text="@string/access_manager_select_profile_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:indeterminateTint="@color/brand_400"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toTopOf="@id/clButtons"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle">
+
+        <LinearLayout
+            android:id="@+id/layoutRowProfiles"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16dp" />
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clButtons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_96dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/detailsButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/access_manager_see_details_profile"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_400"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintBottom_toTopOf="@+id/seeUsersButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/seeUsersButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@color/blue_0774E7"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/access_manager_see_users"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintBottom_toBottomOf="parent"  />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

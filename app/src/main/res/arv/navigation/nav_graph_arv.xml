@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_arv"
+    app:startDestination="@id/arvRouterFragment">
+
+    <fragment
+        android:id="@+id/arvRouterFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.router.ArvRouterFragment"
+        android:label="ArvRouterFragment"
+        tools:layout="@layout/fragment_arv_router">
+
+        <action
+            android:id="@+id/action_arvRouterFragment_to_arvOnboardingFragment"
+            app:destination="@id/arvOnboardingFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvRouterFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_arvRouterFragment_to_arvHomeFragment"
+            app:destination="@id/arvHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvRouterFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_arvRouterFragment_to_arvSingleAnticipationFragment"
+            app:destination="@id/arvSingleAnticipationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvRouterFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvOnboardingFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.onboarding.ArvOnboardingFragment"
+        android:label="ArvOnboardingFragment"
+        tools:layout="@layout/fragment_arv_onboarding">
+
+        <action
+            android:id="@+id/action_arvOnboardingFragment_to_arvHomeFragment"
+            app:destination="@id/arvHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvOnboardingFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvHomeFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.home.ArvHomeFragment"
+        android:label="ArvHomeFragment"
+        tools:layout="@layout/fragment_arv_home">
+
+        <action
+            android:id="@+id/action_arvHomeFragment_to_arvSingleAnticipationFragment"
+            app:destination="@id/arvSingleAnticipationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvSingleAnticipationFragment" />
+
+        <action
+            android:id="@+id/action_arvHomeFragment_to_arvScheduledAnticipationBankSelectFragment"
+            app:destination="@id/arvScheduledAnticipationBankSelectFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvScheduledAnticipationBankSelectFragment" />
+
+        <action
+            android:id="@+id/action_arvHomeFragment_to_arvHistoricFragment"
+            app:destination="@id/arvHistoricListFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_arvHomeFragment_to_arvCancelScheduledAnticipationFragment"
+            app:destination="@id/arvCancelScheduledAnticipationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvCancelScheduledAnticipationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvSingleAnticipationFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.anticipation.ArvSingleAnticipationFragment"
+        android:label="ArvSingleAnticipationFragment"
+        tools:layout="@layout/fragment_arv_single_anticipation">
+
+        <argument
+            android:name="arvCieloAnticipation"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvAnticipation"
+            app:nullable="true" />
+
+        <argument
+            android:name="arvMarketAnticipation"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvAnticipation"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_arvSingleAnticipation_to_arvHomeFragment"
+            app:destination="@id/arvHomeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvSingleAnticipationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_arvSingleAnticipationFragment_to_arvAnticipationSimulationFragment"
+            app:destination="@id/arvAnticipationSimulationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_arvSingleAnticipationFragment_to_arvSimulateSingleAnticipationValueFragment"
+            app:destination="@id/arvSimulateSingleAnticipationValueFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvAnticipationSimulationFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.anticipation.ArvAnticipationSimulationFragment"
+        android:label="ArvAnticipationSimulationFragment"
+        tools:layout="@layout/fragment_arv_simulation">
+
+        <argument
+            android:name="SIMULATION_ARGS"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvAnticipation" />
+
+        <action
+            android:id="@+id/action_arvAnticipationSimulationFragment_to_arvHomeFragment"
+            app:destination="@id/arvHomeFragment"
+            app:popUpTo="@id/arvHomeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_arvAnticipationSimulationFragment_to_arvHistoricListFragment"
+            app:destination="@id/arvHistoricListFragment"
+            app:popUpTo="@id/arvHomeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_arvAnticipationSimulationFragment_to_arvQueryByFlagFragment"
+            app:destination="@id/arvQueryByFlagFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvScheduledAnticipationBankSelectFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.anticipation.ArvScheduledAnticipationBankSelectFragment"
+        android:label="ArvScheduledAnticipationBankSelectFragment"
+        tools:layout="@layout/fragment_arv_scheduled_anticipation_bank_select">
+
+        <argument
+            android:name="SCHEDULED_ANTICIPATION_ARGS"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvScheduledAnticipation" />
+
+        <action
+            android:id="@+id/action_arvScheduledAnticipationBankSelectFragment_to_arvScheduledAnticipationConfirmationFragment"
+            app:destination="@id/arvScheduledAnticipationConfirmationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvScheduledAnticipationConfirmationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvHistoricListFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.historic.list.ArvHistoricListFragment"
+        android:label="ArvHistoricFragment"
+        tools:layout="@layout/fragment_arv_historic_list">
+
+        <action
+            android:id="@+id/action_arvHistoricListFragment_to_arvHistoricDetailsFragment"
+            app:destination="@id/arvHistoricDetailsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvHistoricDetailsFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.historic.details.ArvHistoricDetailsFragment"
+        android:label="ArvHistoricDetailsFragment"
+        tools:layout="@layout/fragment_arv_historic_details">
+
+        <argument
+            android:name="ARV_HISTORIC_DETAILS_NEGOTIATION_ARGS"
+            app:argType="br.com.mobicare.cielo.arv.data.model.response.Item" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvQueryByFlagFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.anticipation.ArvFilterSelectionBrandFragment"
+        android:label="ArvAnticipationSimulationFragment"
+        tools:layout="@layout/fragment_arv_filter">
+
+        <argument
+            android:name="BRANDS_SELECTION_ARGS"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvAnticipation" />
+
+        <argument
+            android:name="RECEIVE_TODAY_ARGS"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_arvQueryByBrandFragment_to_arvAnticipationSimulationFragment"
+            app:destination="@id/arvAnticipationSimulationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_from_right"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvAnticipationSimulationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvScheduledAnticipationConfirmationFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.anticipation.ArvScheduledAnticipationConfirmationFragment"
+        android:label="ArvScheduledAnticipationConfirmationFragment"
+        tools:layout="@layout/fragment_arv_scheduled_anticipation_confirmation">
+
+        <argument
+            android:name="SCHEDULED_ANTICIPATION_ARGS"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvScheduledAnticipation" />
+
+        <argument
+            android:name="ARV_BANK_ARGS"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvBank" />
+        <action
+            android:id="@+id/action_arvScheduledAnticipationConfirmationFragment_to_arvHistoricListFragment"
+            app:destination="@id/arvHistoricListFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/arvHomeFragment" />
+        <action
+            android:id="@+id/action_arvScheduledAnticipationConfirmationFragment_to_arvHomeFragment"
+            app:destination="@id/arvHomeFragment"
+            app:popUpTo="@id/arvHomeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/arvSimulateSingleAnticipationValueFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.anticipation.ArvSimulateSingleAnticipationValueFragment"
+        android:label="ArvSimulateSingleAnticipationValueFragment"
+        tools:layout="@layout/fragment_arv_simulate_single_anticipation_value">
+
+        <action
+            android:id="@+id/action_arvSimulateSingleAnticipationValueFragment_to_arvAnticipationSimulationFragment"
+            app:destination="@id/arvAnticipationSimulationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <argument
+            android:name="SIMULATION_VALUE_ARGS"
+            app:argType="br.com.mobicare.cielo.arv.domain.model.ArvAnticipation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/arvCancelScheduledAnticipationFragment"
+        android:name="br.com.mobicare.cielo.arv.presentation.anticipation.ArvCancelScheduledAnticipationFragment"
+        android:label="ArvCancelScheduledAnticipationFragment"
+        tools:layout="@layout/fragment_arv_cancel_reason">
+
+        <argument
+            android:name="SCHEDULED_ANTICIPATION_CANCEL_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_arvScheduledAnticipationConfirmationFragment_to_arvHomeFragment"
+            app:destination="@id/arvHomeFragment"
+            app:popUpTo="@id/arvHomeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

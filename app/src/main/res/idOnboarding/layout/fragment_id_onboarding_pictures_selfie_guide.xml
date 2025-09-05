@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_21dp"
+        android:paddingEnd="@dimen/dimen_48dp"
+        android:contentDescription="@string/back"
+        app:srcCompat="@drawable/ic_left_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textColor="@color/brand_600"
+        android:text="@string/id_onboarding_pictures_selfie_guide_title"
+        app:layout_constraintTop_toBottomOf="@id/btBackArrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubtitle"
+        style="@style/Paragraph_400_regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        android:text="@string/id_onboarding_pictures_selfie_guide_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintBottom_toTopOf="@id/tvSelfiePrivacy">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_24dp">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llSelfieGlasses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSelfieGlasses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:srcCompat="@drawable/ic_glasses"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSelfieGlasses"
+                    style="@style/Paragraph_300_regular_14_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:text="@string/id_onboarding_pictures_selfie_guide_glasses"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llSelfieSun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/llSelfieGlasses"
+                app:layout_constraintStart_toStartOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSelfieSun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:srcCompat="@drawable/ic_sun_brightness"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSelfieSun"
+                    style="@style/Paragraph_300_regular_14_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:text="@string/id_onboarding_pictures_selfie_guide_sun"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llSelfiePosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/llSelfieSun"
+                app:layout_constraintStart_toStartOf="parent">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSelfiePosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    app:srcCompat="@drawable/ic_target_user"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSelfiePosition"
+                    style="@style/Paragraph_300_regular_14_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:text="@string/id_onboarding_pictures_selfie_guide_position"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSelfiePrivacy"
+        style="@style/Paragraph_100_Regular_10_display_300"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_32dp"
+        android:text="@string/id_onboarding_pictures_selfie_guide_privacy"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/btNext"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btNext"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/open_camera"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

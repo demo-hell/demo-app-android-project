@@ -1,0 +1,128 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <include
+        android:id="@+id/errorLayout"
+        layout="@layout/fragment_receba_mais_failure"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/container_toolbar"
+        layout="@layout/toolbar_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/progressLoadingLayout"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:background="@color/overlay_color"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_toolbar">
+
+        <ProgressBar
+            android:layout_width="159dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollContentLayout"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_toolbar">
+        <FrameLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/nextButton"
+            style="@style/ButtonShapedPurpleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Continuar" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/progress_00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollContentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <View
+            android:id="@+id/progress_01"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:background="@color/color_145EB3" />
+
+        <View
+            android:id="@+id/progress_02"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:background="@color/color_145EB3" />
+        <View
+            android:id="@+id/progress_03"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:background="@color/color_145EB3" />
+        <View
+            android:id="@+id/progress_04"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:background="@color/color_145EB3" />
+        <View
+            android:id="@+id/progress_05"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:background="@color/color_145EB3" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

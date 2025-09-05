@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="styleTextViewItemReceiveMoreTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_5A646E</item>
+    </style>
+
+    <style name="styleTextViewItemReceiveMore" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/color_5A646E</item>
+    </style>
+
+    <style name="styleTextViewItemReceiveMoreValue" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_5A646E</item>
+    </style>
+
+    <style name="styleTypeFaceItemReceiveMore">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/color_017CEB</item>
+        <item name="android:text">@string/receive_more_resume_see_extract</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+    </style>
+
+
+    <style name="styleTypeFaceReceiveMoreClose">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/color_017CEB</item>
+        <item name="android:text">@string/text_close</item>
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="styleTextViewResumeReceiveMoreTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_231F20</item>
+    </style>
+
+    <style name="styleTextViewResumeReceiveMoreSubtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/display_500</item>
+    </style>
+
+    <style name="styleTextViewResumeReceiveMoreTitle16sp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_231F20</item>
+    </style>
+
+    <style name="styleTextViewResumeReceiveMoreTitle14sp" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_231F20</item>
+    </style>
+
+    <style name="styleTextViewInformationReceiveMore" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/grey_8A99A8</item>
+    </style>
+
+</resources>

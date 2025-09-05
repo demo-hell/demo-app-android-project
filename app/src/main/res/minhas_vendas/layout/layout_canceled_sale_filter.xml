@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearCanceledSaleSearchInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputCanceledSaleValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:theme="@style/TextInputLayoutCieloCommonStyle"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/editInputCanceledSaleValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:digits="1234567890.,"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Valor da venda"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="numberDecimal"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:textColor="@color/text_color_263238"
+                android:textColorHint="@color/gray_light"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputCanceledSaleCancelValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:theme="@style/TextInputLayoutCieloCommonStyle"
+            app:errorTextAppearance="@style/error_appearance"
+            tools:ignore="MissingConstraints">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/editInputCanceledSaleCancelValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:digits="1234567890.,"
+                android:hint="Valor do cancelamento"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="numberDecimal"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:textColor="@color/text_color_263238"
+                android:textColorHint="@color/gray_light"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputCanceledSaleAuthorizationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:theme="@style/TextInputLayoutCieloCommonStyle"
+            app:errorTextAppearance="@style/error_appearance"
+            tools:ignore="MissingConstraints">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/editInputCanceledSaleAuthorizationCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:digits="1234567890abcdefghijlmnopqrstuvxzwyk"
+                android:hint="Código de autorização"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textColor="@color/text_color_263238"
+                android:textColorHint="@color/gray_light"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputCanceledSaleNsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:theme="@style/TextInputLayoutCieloCommonStyle"
+            app:errorTextAppearance="@style/error_appearance"
+            tools:ignore="MissingConstraints">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/editInputCanceledSaleNsu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:digits="1234567890.,"
+                android:hint="NSU"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="numberDecimal"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:textColor="@color/text_color_263238"
+                android:textColorHint="@color/gray_light"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputCanceledSaleTID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:theme="@style/TextInputLayoutCieloCommonStyle"
+            app:errorTextAppearance="@style/error_appearance">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                android:id="@+id/editInputCanceledSaleTID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:digits="1234567890.,ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="TID"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="noExcludeDescendants"
+                android:maxLength="50"
+                android:inputType="textCapCharacters"
+                android:maxLines="2"
+                android:textColor="@color/text_color_263238"
+                android:textColorHint="@color/gray_light"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-500.ttf" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

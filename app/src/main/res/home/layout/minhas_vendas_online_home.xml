@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clSalesContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <include
+        android:id="@+id/includeShimmerTodaySale"
+        layout="@layout/shimmer_loading_placeholder_today_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"/>
+
+    <include
+        android:id="@+id/includeShimmerLastSale"
+        layout="@layout/shimmer_loading_placeholder_last_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/includeShimmerTodaySale"
+        app:layout_constraintBottom_toTopOf="@id/containerSeeMoreSales"
+        android:layout_marginTop="@dimen/dimen_16dp" />
+
+    <LinearLayout
+        android:id="@+id/llNoSalesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/containerSeeMoreSales"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/ivNoSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_img_no_sales" />
+
+        <TextView
+            android:id="@+id/tvNoSalesMessage"
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:gravity="center"
+            tools:text="Ainda não foram realizadas vendas no dia de hoje. Você pode ver outras vendas." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContainerIncludes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/containerSeeMoreSales"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/containerTotalSales"
+            layout="@layout/view_total_sales_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_12dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/containerLastSale"
+            layout="@layout/view_last_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:padding="@dimen/dimen_12dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/containerSeeMoreSales"
+            app:layout_constraintTop_toBottomOf="@id/containerTotalSales" />
+
+        <include
+            android:id="@+id/includeCardError"
+            layout="@layout/my_sales_online_home_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/containerSeeMoreSales"
+        layout="@layout/view_see_more_sales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toTopOf="@id/containerSalesUpdatedAt" />
+
+    <include
+        android:id="@+id/containerSalesUpdatedAt"
+        layout="@layout/view_updated_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:clickable="true"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

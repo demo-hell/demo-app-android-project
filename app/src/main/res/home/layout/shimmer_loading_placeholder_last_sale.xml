@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:background="@drawable/background_solid_pistachio_100_rounded_8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLastSaleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_14dp"
+        android:layout_marginVertical="@dimen/dimen_12dp"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginEnd="@dimen/dimen_180dp"
+        android:background="@color/display_100"
+        app:shimmer_auto_start="true"
+        app:shimmer_base_alpha="1"
+        app:shimmer_highlight_alpha="0"
+        shimmer:duration="800"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLastSaleValue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_18dp"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginEnd="@dimen/dimen_70dp"
+        android:layout_marginBottom="@dimen/dimen_18dp"
+        android:background="@drawable/background_solid_display_100_rounded_4dp"
+        app:shimmer_auto_start="true"
+        app:shimmer_base_alpha="1"
+        app:shimmer_highlight_alpha="0"
+        shimmer:duration="800"
+        app:layout_constraintTop_toBottomOf="@id/shimmerLastSaleTitle"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/loadingShimmerLastSaleGroupViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="shimmerLastSaleTitle, shimmerLastSaleValue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:elevation="16dp"
+        android:outlineProvider="bounds"
+        tools:ignore="UnusedAttribute">
+
+
+        <include android:id="@+id/toolbarNeedHelp"
+            layout="@layout/toolbar_main" />
+
+       <include
+           android:id="@+id/content_preciso_ajuda"
+           layout="@layout/content_preciso_ajuda"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

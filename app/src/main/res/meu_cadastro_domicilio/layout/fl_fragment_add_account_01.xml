@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="24dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="24dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_man_add_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:visibility="visible"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tv_ac_title"
+                style="@style/Text12sp500Grey5d5d5d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="17dp"
+                android:text="Insira as informações da conta"
+                android:textColor="@color/blue_005195"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:typeface="MuseoSans-700.ttf"
+                tools:ignore="MissingConstraints" />
+            <!-- Tipo de Conta -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_ac_type_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:textColorHint="@color/black_263238"
+                android:hint="Tipo de conta"
+                app:typeface="MuseoSans-500.ttf">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/ev_ac_type_account"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="none"
+                    android:textIsSelectable="true"
+                    android:maxLines="1"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!-- Banco -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_ac_type_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:textColorHint="@color/black_263238"
+                android:hint="Banco"
+                app:typeface="MuseoSans-500.ttf">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/ev_ac_type_bank"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="none"
+                    android:textIsSelectable="true"
+                    android:maxLines="1"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!-- Agencia -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_ac_type_agencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:hint="Agência"
+                android:textColorHint="@color/black_263238"
+                app:typeface="MuseoSans-500.ttf">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/ev_ac_type_agencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- layout agencia e conta -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <!-- Agência -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_ac_type_conta"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:hint="Conta"
+                    android:textColorHint="@color/black_263238"
+                    app:typeface="MuseoSans-500.ttf">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                        android:id="@+id/ev_ac_type_conta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- Dígito -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_ac_type_digito"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:hint="Dígito"
+                    android:textColorHint="@color/black_263238"
+                    app:typeface="MuseoSans-500.ttf">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                        android:id="@+id/ev_ac_type_digito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/frameProgress"
+        layout="@layout/frame_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/dc_error"
+        layout="@layout/fragment_receba_mais_failure"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

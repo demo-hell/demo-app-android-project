@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayoutDialogCommonContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_70"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/frameDialogCommonContent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearVersionUpdaterContent"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="@drawable/shape_rounded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textCieloCommonDialogTitle"
+                android:layout_width="wrap_content"
+                tools:textSize="20sp"
+                tools:text="Nova versão disponível"
+                tools:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:typeface="MuseoSans-700.ttf"
+                android:text="Nova versão disponível"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textCieloCommonDescription"
+                android:layout_width="wrap_content"
+                android:maxWidth="203dp"
+                android:layout_height="wrap_content"
+                tools:text="Temos uma nova versão\n disponível na #lojacielo#. Por\n favor, atualize agora para acessar."
+                android:text="Temos uma nova versão\n disponível na #lojacielo#. Por\n favor, atualize agora para acessar."
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:textSize="13sp"
+                android:textColor="@color/grey_838383"
+                app:typeface="MuseoSans-500.ttf" />
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/buttonCieloConfirm"
+                android:layout_marginTop="32dp"
+                tools:text="Atualizar"
+                android:text="Atualizar"
+                style="@style/ButtonShapedPurpleStyle"
+                android:layout_width="219dp"
+                android:layout_height="48dp" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textCielolNoOption"
+                tools:text="Agora não"
+                android:layout_marginTop="23dp"
+                tools:textSize="16sp"
+                android:textColor="@color/purple"
+                android:layout_gravity="center"
+                android:text="Agora não"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:typeface="MuseoSans-700.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

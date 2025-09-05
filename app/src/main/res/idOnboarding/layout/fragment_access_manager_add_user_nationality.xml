@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btBackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingVertical="@dimen/dimen_16dp"
+                android:paddingStart="@dimen/dimen_21dp"
+                android:paddingEnd="@dimen/dimen_48dp"
+                android:contentDescription="@string/content_description_return_button"
+                app:srcCompat="@drawable/ic_left_arrow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/regular_montserrat_20_brand_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:text="@string/access_manager_nationality_user_title"
+                app:layout_constraintTop_toBottomOf="@+id/btBackArrow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitle"
+                style="@style/regular_montserrat_16_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_16dp"
+                android:lineSpacingExtra="@dimen/dimen_8sp"
+                android:text="@string/access_manager_nationality_user_subtitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clNationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/background_border_blue"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCountry"
+                    style="@style/regular_ubuntu_20_brand_400"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dimen_16dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    tools:text="Espanha"
+                    app:layout_constraintEnd_toStartOf="@+id/btnEditValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btnEditValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_edit"
+                    app:iconActionContentDescription="@string/description_accessibility_sale_value"
+                    android:padding="@dimen/dimen_16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        style="@style/regular_montserrat_center_16_display_0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/text_next_label"
+        android:textColor="@android:color/white"
+        android:clickable="false"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

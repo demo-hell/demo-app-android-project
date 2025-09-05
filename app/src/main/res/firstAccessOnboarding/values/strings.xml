@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_install_onboarding_sell_title">Vender usando o App da Cielo nunca foi tão fácil</string>
+    <string name="first_install_onboarding_sell_subtitle">Você está a um passo de enviar links de pagamento, vender por Pix, Cielo Tap e muito mais com o App Cielo Gestão!</string>
+    <string name="first_install_onboarding_follow_title">Acompanhe suas vendas e antecipe seus recebimentos</string>
+    <string name="first_install_onboarding_follow_subtitle">Tudo ao seu alcance para escolher a melhor forma de acompanhar e receber as suas vendas.</string>
+    <string name="first_install_onboarding_security_title">Segurança para você e para o seu negócio!</string>
+    <string name="first_install_onboarding_security_subtitle">Seu cadastro e suas vendas protegidas com a segurança e excelência da Cielo!</string>
+    <string name="first_install_onboarding_ready_title">Estamos prontos para impulsionar o seu negócio</string>
+    <string name="first_install_onboarding_ready_subtitle">Conheça todas as soluções que a Cielo oferece para você 
+</string>
+</resources>

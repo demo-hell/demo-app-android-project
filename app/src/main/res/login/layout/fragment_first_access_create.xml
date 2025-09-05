@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    tools:context=".login.firstAccess.presentation.ui.create.FirstAccessCreateFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/content_description_return_button"
+        android:padding="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_direction_arrow_left" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/bold_montserrat_20_cloud_800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:text="@string/first_access_create_access_title"
+        app:layout_constraintTop_toBottomOf="@id/ibBack" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinue"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_24dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitle"
+                style="@style/regular_montserrat_16_neutral_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:lineHeight="@dimen/dimen_24dp"
+                android:text="@string/first_access_create_access_subtitle"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/tifNumberEc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:hint="@string/first_access_create_access_number_ec"
+                android:inputType="number"
+                android:maxLength="20"
+                android:maxLines="1"
+                app:endIconType="none"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/tifCpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:hint="@string/first_access_create_access_cpf"
+                app:endIconType="none"
+                app:layout_constraintTop_toBottomOf="@id/tifNumberEc" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/tifEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:hint="@string/first_access_create_access_email"
+                app:endIconType="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tifCpf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tfTermsReadConditions"
+                style="@style/regular_montserrat_14_cloud_500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/first_access_create_access_accept_conditions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tifEmail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <br.com.cielo.libflue.button.v2.CieloButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="@string/continuar"
+        app:buttonEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

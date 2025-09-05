@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar_generic_activity"
+        layout="@layout/toolbar_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_generic_activity" />
+
+    <RelativeLayout
+        android:id="@+id/progress_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_color"
+        android:clickable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="159dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cardButtons"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="84dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/cancelButton"-->
+<!--            style="@style/OutlineButtonPurple"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:text="@string/cancelar" />-->
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            style="@style/OutlineFancyButtonShapedPurpleStyle"
+            android:id="@+id/cancelButton"
+            android:layout_width="131dp"
+            android:layout_height="33dp"
+            android:text="@string/cancelar"
+            android:textColor="@color/purple"
+            android:layout_centerVertical="true"
+            fancy:fb_text="@string/cancelar"
+            fancy:fb_textColor="@color/purple"
+            fancy:fb_textSize="12sp"
+            />
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/saveButton"-->
+<!--            style="@style/FilledButtonPurple"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:text="@string/du_btn_salvar" />-->
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            style="@style/FilledFancyButtonShapedPurpleStyle"
+            android:id="@+id/saveButton"
+            android:layout_width="131dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            fancy:fb_text="@string/du_btn_salvar"
+            fancy:fb_textColor="@color/white"
+            fancy:fb_textSize="12sp"
+            />
+
+    </RelativeLayout>
+    <include
+        layout="@layout/card_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

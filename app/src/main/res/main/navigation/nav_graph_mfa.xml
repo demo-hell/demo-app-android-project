@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_mfa"
+    app:startDestination="@id/mfaRouterFragment">
+    <fragment
+        android:id="@+id/mfaRouterFragment"
+        android:name="br.com.mobicare.cielo.mfa.router.MfaRouterFragment"
+        android:label="MfaRouterFragment"
+        app:startDestination="@id/action_mfaRouterFragment_to_primeiroAcessoMfaFragment">
+        <action
+            android:id="@+id/action_mfaRouterFragment_to_primeiroAcessoMfaFragment"
+            app:destination="@id/primeiroAcessoMfaFragment" />
+
+        <!-- Fluxo de reconfiguração do token MFA -->
+        <action
+            android:id="@+id/action_mfaRouterFragment_to_tokenReconfigurationFragment"
+            app:destination="@id/tokenReconfigurationFragment" />
+
+        <action
+            android:id="@+id/action_mfaRouterFragment_to_putValueMFAFragment"
+            app:destination="@id/putValueMFAFragment" />
+        <action
+            android:id="@+id/action_mfaRouterFragment_to_faqQuestionsFragment"
+            app:destination="@id/faqQuestionsFragment" />
+        <action
+            android:id="@+id/action_mfaRouterFragment_to_otpRegisterFragment"
+            app:destination="@id/otpRegisterFragment"
+            app:popUpTo="@id/nav_graph_mfa"
+            app:popUpToInclusive="true">
+
+            <argument
+                android:name="br.com.cielo.mfa.usernameKey"
+                app:argType="string" />
+
+        </action>
+        <action
+            android:id="@+id/action_mfaRouterFragment_to_nav_graph_merchant_status_mfa"
+            app:destination="@id/nav_graph_merchant_status_mfa" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/primeiroAcessoMfaFragment"
+        android:name="br.com.mobicare.cielo.mfa.primeiroAcesso.PrimeiroAcessoMfaFragment"
+        android:label="PrimeiroAcessoMfaFragment"
+        tools:layout="@layout/fragment_primeiro_acesso_mfa">
+        <action
+            android:id="@+id/action_primeiroAcessoMfaFragment_to_selecioneBancoMfaFragment"
+            app:destination="@id/selecioneBancoMfaFragment" />
+        <action
+            android:id="@+id/action_primeiroAcessoMfaFragment_to_centralAjudaPerguntasFragmentMFA"
+            app:destination="@id/faqQuestionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selecioneBancoMfaFragment"
+        android:name="br.com.mobicare.cielo.mfa.selecioneBanco.SelecioneBancoMfaFragment"
+        android:label="SelecioneBancoMfaFragment"
+        tools:layout="@layout/fragment_selecione_banco_mfa">
+        <action
+            android:id="@+id/action_selecioneBancoMfaFragment_to_centralAjudaPerguntasFragmentMFA"
+            app:destination="@id/faqQuestionsFragment" />
+
+        <action
+            android:id="@+id/action_selecioneBancoMfaFragment_to_resumeBankAndCNPJFragment"
+            app:destination="@id/resumeBankAndCNPJFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resumeBankAndCNPJFragment"
+        android:name="br.com.mobicare.cielo.mfa.resume.FragmentResumeBankAndCNPJ"
+        android:label="SelecioneBancoMfaFragment"
+        tools:layout="@layout/fragment_resume_bank_and_cnpj">
+
+        <action
+            android:id="@+id/action_resumeBankAndCNPJFragment_to_centralAjudaPerguntasFragmentMFA"
+            app:destination="@id/faqQuestionsFragment" />
+
+        <argument
+            android:name="ARG_PARAM_MFA_ACCOUNT_CNPJ"
+            app:argType="br.com.mobicare.cielo.mfa.MfaAccount" />
+
+        <argument
+            android:name="ARG_PARAM_MFA_ACCOUNT_ENROLLMENT"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/putValueMFAFragment"
+        android:name="br.com.mobicare.cielo.mfa.activation.PutValueMFAFragment"
+        android:label="PutValueMFAFragment"
+        tools:layout="@layout/fragment_put_value_mfa">
+        <action
+            android:id="@+id/action_putValueMFAFragment_to_centralAjudaPerguntasFragmentMFA"
+            app:destination="@id/faqQuestionsFragment" />
+        <action
+            android:id="@+id/action_putValueMFAFragment_to_otpRegisterFragment"
+            app:destination="@id/otpRegisterFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph_mfa"
+            app:popUpToInclusive="true">
+
+            <argument
+                android:name="br.com.cielo.mfa.usernameKey"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/faqQuestionsFragment"
+        android:name="br.com.mobicare.cielo.mfa.faq.FaqQuestionsFragment"
+        android:label="FaqQuestionsFragment">
+        <action
+            android:id="@+id/action_faqQuestionsFragment_to_faqAnswerFragment"
+            app:destination="@id/faqAnswerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/faqAnswerFragment"
+        android:name="br.com.mobicare.cielo.mfa.faq.FaqAnswerFragment"
+        android:label="FaqAnswerFragment">
+        <argument
+            android:name="QUESTION_EXTRAS"
+            app:argType="br.com.mobicare.cielo.centralDeAjuda.presentation.domain.QuestionRequestModelView" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpRegisterFragment"
+        android:name="br.com.mobicare.cielo.commons.secure.presentation.ui.fragment.OtpRegisterFragment"
+        android:label="OtpRegisterFragment">
+        <action
+            android:id="@+id/action_otpRegisterFragment_to_faqQuestionsFragment"
+            app:destination="@id/faqQuestionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tokenReconfigurationFragment"
+        android:name="br.com.mobicare.cielo.commons.secure.presentation.ui.fragment.TokenReconfigurationFragment"
+        android:label="TokenReconfigurationFragment">
+        <action
+            android:id="@+id/action_tokenReconfigurationFragment_to_selecioneBancoMfaFragment"
+            app:destination="@id/selecioneBancoMfaFragment" />
+
+        <action
+            android:id="@+id/action_tokenReconfigurationFragment_to_validationPreviousTokenFragment"
+            app:destination="@id/validationPreviousTokenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/validationPreviousTokenFragment"
+        android:name="br.com.mobicare.cielo.mfa.validationprevioustoken.ValidationPreviousTokenFragment"
+        android:label="ValidationPreviousTokenFragment">
+        <action
+            android:id="@+id/action_validationPreviousTokenFragment_to_faqQuestionsFragment"
+            app:destination="@id/faqQuestionsFragment" />
+    </fragment>
+
+    <include app:graph="@navigation/nav_graph_merchant_status_mfa" />
+
+</navigation>

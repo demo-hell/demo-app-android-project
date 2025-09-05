@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_help"
+        android:contentDescription="@string/description_accessibility_help_center_button"
+        android:icon="@drawable/ic_help_circle_blue"
+        android:title="@string/rm_cc_credit_help_menu_item"
+        app:showAsAction="ifRoom" />
+
+</menu>

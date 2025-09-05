@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_ec_toolbar_title">Adicionar estabelecimento</string>
+    <string name="new_establishment_title">Preencha as informações do novo estabelecimento</string>
+    <string name="new_establishment_number">Nº do novo estabelecimento</string>
+    <string name="account_data">Dados bancários</string>
+    <string name="bank_name">Banco</string>
+    <string name="agency">Agência</string>
+    <string name="add_establishment_success_title">Estabelecimento adicionado com sucesso!</string>
+    <string name="add_establishment_success_text">Para continuar aproveitando todos os serviços da Cielo, acesse sua lista de estabelecimentos e selecione o que você adicionou.</string>
+    <string name="add_establishment_success_button">Ver estabelecimentos</string>
+    <string name="list_of_available_banks">Lista de bancos disponíveis</string>
+    <string name="search_by_bank_name">Buscar por banco</string>
+    <string name="account_type">"Tipo de conta"</string>
+    <string name="bank_name_caixa">Caixa economica federal S.A.</string>
+    <string name="terms_text_1">Li e estou de acordo com os</string>
+    <string name="terms_text_2">Termos de uso e condições gerais</string>
+    <string name="terms_text_3">para utilização do Cielo Gestão.</string>
+    <string name="account_number">Nº da conta</string>
+    <string name="account_digit">Dígito</string>
+</resources>

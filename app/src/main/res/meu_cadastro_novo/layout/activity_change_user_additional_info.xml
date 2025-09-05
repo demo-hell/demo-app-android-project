@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/AppMaterialComponentsNoActionBar">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_directions_arrow_left_brand_400_24_dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
+        app:layout_constraintTop_toBottomOf="@id/btBackArrow">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/bold_montserrat_20_cloud_500_spacing_8"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/user_data_change_additional_info_title"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubTitle"
+                style="@style/bold_montserrat_16_cloud_500_spacing_8"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/user_data_change_additional_info_subtitle"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/communicationLabel"
+                style="@style/bold_montserrat_14_cloud_500_spacing_8"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/user_data_additional_information_communication_label"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubTitle" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/communicationTi"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_2dp"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/communicationLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/communicationEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_extract_arrow_down"
+                    android:drawablePadding="@dimen/dimen_16dp"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:scrollHorizontally="true"
+                    android:longClickable="false"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/communicationObligatory"
+                style="@style/regular_montserrat_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/text_obrigatory_field_error"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/communicationTi" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/contactLabel"
+                style="@style/bold_montserrat_14_cloud_500_spacing_8"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:text="@string/user_data_additional_information_contact_label"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/communicationObligatory" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contactTi"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contactEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_extract_arrow_down"
+                    android:drawablePadding="@dimen/dimen_16dp"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/contactObligatory"
+                style="@style/regular_montserrat_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/text_obrigatory_field_error"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactTi" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pcdLabel"
+                style="@style/bold_montserrat_14_cloud_500_spacing_8"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:text="@string/user_data_additional_information_pcd_label"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactObligatory" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pcdTi"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pcdLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pcdEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_extract_arrow_down"
+                    android:drawablePadding="@dimen/dimen_16dp"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pcdObligatory"
+                style="@style/regular_montserrat_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/text_obrigatory_field_error"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pcdTi" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/contactHourLabel"
+                style="@style/bold_montserrat_14_cloud_500_spacing_8"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:text="@string/user_data_additional_information_contact_hour_label"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pcdObligatory" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contactHourTi"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactHourLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contactHourEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_extract_arrow_down"
+                    android:drawablePadding="@dimen/dimen_16dp"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/contactHourObligatory"
+                style="@style/regular_montserrat_12_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_24dp"
+                android:text="@string/text_obrigatory_field_error"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contactHourTi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <br.com.cielo.libflue.button.CieloLargeBlueButton
+        android:id="@+id/btnNext"
+        style="@style/medium_montserrat_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:enabled="false"
+        android:text="@string/user_data_information_button_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+    <br.com.mobicare.cielo.commons.ui.widget.MessageProgressView
+        android:id="@+id/messageProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

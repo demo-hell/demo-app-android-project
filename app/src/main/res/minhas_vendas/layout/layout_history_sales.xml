@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true">
+
+    <LinearLayout
+        android:id="@+id/includes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_100dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/include_amount"
+            layout="@layout/layout_amount_min_and_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/include_amount"
+            layout="@layout/layout_other_filter_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_more_sales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includes">
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/editTextSaleCadNumber"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:digits="1234567890.,"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:maxLines="1"
+            app:hint="@string/text_outer_card_number_filter"
+            app:typeface="MuseoSans-500.ttf" />
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/editTextSaleOperationSummary"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:digits="1234567890abcdefghijlmnopqrstuvxzwyk"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="text"
+            android:maxLines="1"
+            app:hint="@string/text_outer_operation_summary_filter"
+            app:typeface="MuseoSans-500.ttf" />
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/editTextSaleTid"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:digits="1234567890.,ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="textCapCharacters"
+            android:maxLength="50"
+            android:maxLines="2"
+            app:hint="@string/text_outer_tid_filter"
+            app:typeface="MuseoSans-500.ttf" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Paragraph_300_display_400_bs" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/blue_017CEB</item>
+    </style>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_transparent_border_cloud_200_rounded"
+    android:paddingVertical="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/imgIconOption"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_bank_slip_cloud_400_24dp" />
+
+    <TextView
+        android:id="@+id/txtLabelOption"
+        style="@style/label_16_brand_400_ubuntu"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_12dp"
+        android:importantForAccessibility="no"
+        android:textColor="@color/color_cloud_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgIconOption"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Extrato completo" />
+
+    <ImageView
+        android:id="@+id/imgRadioCheckOption"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_circle_radio_button_unselected" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

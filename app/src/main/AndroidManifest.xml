@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.mobicare.cielo">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="28"
+        tools:overrideLibrary="com.symbiotic.pinonglass, com.symbiotic.taponphone, com.discover.mpos.sdk, com.discover.mpos.sdk.core, com.symbiotic.cardreader, com.visa.app.ttpkernel" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.NEARBY_WIFI_DEVICES"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- allow me permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- allow me permission -->
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- <uses-feature android:name="android.hardware.camera2.full" /> -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false"
+        tools:replace="android:required" />
+
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature
+        android:name="android.permission.NFC"
+        android:required="false"
+        tools:replace="android:required" />
+    <uses-feature
+        android:name="android.permission.BLUETOOTH"
+        android:required="false"
+        tools:replace="android:required" />
+    <uses-feature
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:required="false"
+        tools:replace="android:required" />
+
+    <application
+        android:name=".CieloApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher_cielo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false"
+        tools:ignore="LockedOrientationActivity"
+        tools:replace="android:allowBackup,android:fullBackupContent,android:icon,android:theme,android:name">
+        <activity
+            android:name=".cancelSale.presentation.CancelSaleFlowActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".openFinance.presentation.manager.newShare.conclusion.OpenFinanceFlowConclusionActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".openFinance.presentation.manager.newShare.OpenFinanceFlowNewShareActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".suporteTecnico.presentation.TechnicalSupportFlowActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".openFinance.presentation.manager.OpenFinanceOnBoardingActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".openFinance.presentation.manager.OpenFinanceFlowActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".openFinance.presentation.OpenFinanceHolderMainActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pix.ui.qrCode.decode.PixDecodeQrCodeNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pix.ui.qrCode.decode.read.PixReadQRCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pix.ui.qrCode.decode.copyPaste.PixCopyPasteQRCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="br.com.mobicare.cielo.webView.presentation.WebViewContainerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".pix.ui.qrCode.charge.PixGenerateQrCodeNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pix.ui.keys.myKeys.PixMyKeysNavigationFlowActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".pix.ui.keys.onboarding.PixKeysOnboardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".taxaPlanos.presentation.ui.postecipado.meuAluguel.EquipmentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dirf.ui.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dirf.ui.DirfResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".simulator.SimulatorNavigationFlowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".recebaMais.presentation.ui.activity.FluxoNavegacaoRecebaMaisActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pix.ui.PixNavigationFlowActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".pix.ui.extract.PixExtractNavigationFlowActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".pix.ui.mylimits.PixMyLimitsNavigationFlowActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".centralDeAjuda.presentation.ui.contatos.ombudsman.OmbudsmanNavigationFlowActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".interactbannersoffers.termoAceite.TermoAceiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adicaoEc.presentation.ui.AddEcActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".internaluser.InternalUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity android:name=".meuCadastroNovo.presetantion.consultdetail.TrocaDomicilioSolicitacoesDetailActivity" />
+        <activity
+            android:name=".meuCadastroNovo.presetantion.ui.TrocaDomicilioSolicitacoesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".mfa.MfaOtpErrorHandleActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".antecipeSuasVendas.ui.negociacao.type.NegociacaoAntecipacaoTypeActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".antecipeSuasVendas.programmed.FluxoNavegacaoNegociationAntecipacaoProgramadaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".lgpd.LgpdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".mfa.merchantstatus.FluxoNavegacaoMerchantStatusMfaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".recebaRapido.cancellation.CancellationRecebaRapidoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".recebaRapido.RecebaRapidoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pedidos.orderdetail.OrderDetailsMachinesTrackingActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".debitoEmConta.DebitoEmContaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".balcaoRecebiveis.AuthorizationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.ContaDigitalCatenoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".debitoEmConta.DebitoEmContaAuthorizationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".debitoEmConta.DebitoEmContaAuthorizationHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".balcaoRecebiveis.AuthorizationHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".dirf.DirfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".lighthouse.ui.activities.LightHouseActivityConciliador"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".selfRegistration.passwordpolitic.PasswordPoliticActivity"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".newLogin.onboardfirstaccess.OnBoardFirstAccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".newLogin.updateregister.OnBoardUpdateRegister"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pagamentoLink.delivery.InfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="br.com.mobicare.cielo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <receiver
+            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+            android:exported="false"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".splash.presentation.ui.activities.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SplashScreen"
+            tools:node="merge">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter
+                android:autoVerify="true"
+                android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="minhaconta2.cielo.com.br"
+                    android:scheme="appcielo" />
+
+                <data
+                    android:host="minhaconta2.cielo.com.br"
+                    android:pathPrefix="/deeplink"
+                    android:scheme="https" />
+
+                <data
+                    android:host="digitalhml.hdevelo.com.br"
+                    android:pathPrefix="/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.newUser.NewUserInviteReceiveNavigationActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <nav-graph android:value="@navigation/nav_graph_new_user_receive_invite" />
+        </activity>
+
+        <activity
+            android:name="br.com.mobicare.cielo.accessManager.invite.receive.ui.legacy.invite.LegacyUserInviteReceiveNavigationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+
+        <activity
+            android:name=".main.presentation.ui.activities.MainBottomNavigationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".deeplink.DeepLinkActivity"
+            android:label="@string/title_deep_link"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".meuCadastroNovo.presetantion.ui.fragment.MeuCadastroActivity"
+            android:label="@string/title_meu_cadastro"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".minhasVendas.activities.CanceledDetailsActivity"
+            android:label="@string/title_deep_link"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".minhasVendas.activities.CancelDetailActivity"
+            android:label="@string/title_cancel_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".minhasVendas.detalhe.MinhasVendasDetalhesActvity"
+            android:label="@string/title_minhas_vendas_detalhes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".precisoDeAjuda.presentation.ui.activities.PrecisoAjudaActivity"
+            android:label="@string/ajuda_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".esqueciUsuarioAndEstabelecimento.presentation.ui.activities.EsqueciUsuarioAndEstabelecimentoActivity"
+            android:label="@string/ajuda_title"
+            android:parentActivityName=".precisoDeAjuda.presentation.ui.activities.PrecisoAjudaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".commons.presentation.utils.WebviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".antecipeSuasVendas.presentation.ui.activities.AntecipeTermoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".home.presentation.meusrecebimentonew.MeusRecebimentosHomeActivityNew"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".commons.presentation.utils.FragmentUtilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.presentation.minhasVendas.ui.activity.MinhasVendasHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mySales.presentation.ui.MySalesTransactionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mySales.presentation.ui.MySaleDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lighthouse.ui.activities.LightHouseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suporteTecnico.ui.activity.TechnicalSupportActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suporteTecnico.ui.activity.TechnicalSupportProblemActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suporteTecnico.ui.activity.TechnicalSupportSolutionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".onboarding.presentation.ui.activity.OnboardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firstAccessOnboarding.FirstInstallOnboardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".centralDeAjuda.presentation.ui.CentralAjudaActvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.CreditCardsStatementActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.UnlockCreditCardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".picture.PrePaidTakePictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".picture.PrePaidTakePicture2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.CardPhotoDescriptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.CardPhotoConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.DirectElectronicTransferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.BillsPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".commons.ui.barcode.PaymentsBarCodeScanActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".research.presentation.ui.ResearchActivityDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".notification.list.ListNotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".recebaMais.presentation.ui.activity.RecebaMaisActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".commons.ui.help.HelpMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".recebaMais.presentation.ui.activity.RecebaMaisContractActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".migration.presentation.ui.activity.MigrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".coil.presentation.activity.CoilEngineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".autoAtendimento.presentation.ui.activity.SuppliesEngineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".centralDeAjuda.presentation.ui.subcategorias.CentralAjudaSubCategoriasEngineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".centralDeAjuda.presentation.ui.activities.QuestionAndAnswerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".centralDeAjuda.search.HelpCenterSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".commons.CommonActivityWithFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meusCartoes.presentation.ui.activity.cardActivateCateno.CardNewPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meuCadastroDomicilio.presetation.activity.FlagTransferEngineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".meuCadastroDomicilio.presetation.activity.AddAccountEngineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".autoAtendimento.presentation.ui.activity.instalacaoMaquinaAdicional.engine.InstalacaoMaquinaAdicionalEngineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".autoAtendimento.presentation.ui.activity.instalacaoMaquinaAdicional.fragments.address.newAddress.InstalacaoMaquinaChooseAddressBottomSheetFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".autoAtendimento.presentation.ui.activity.trocaMaquina.engine.TrocaMaquinaEngineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".faleConosco.FaleConoscoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".minhasVendas.fragments.trasacoes.MinhasVendasTransacoesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".home.presentation.minhasVendas.ui.activity.MinhasVendasCanceladasActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".newLogin.NewLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreenNoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".newLogin.about.AboutAppActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".commons.router.RouterFragmentInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".login.firstAccess.presentation.FirstAccessNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".meusrecebimentosnew.visaosumarizada.VisaoSumarizadaMeusRecebimentosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Purple.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pagamentoLink.presentation.ui.engine.FluxoNavegacaoSuperlinkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".mfa.FluxoNavegacaoMfaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mfa.token.TokenGeneratorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".meusrecebimentosnew.visaodetalhada.VisaoDetalhadaMeusRecebimentosActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Purple.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pedidos.presentation.ui.OrderMachineSelectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Purple.AppTheme.NoActionBar" />
+        <activity
+            android:name=".balcaoRecebiveisExtrato.activity.BalcaoRecebiveisExtratoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Purple.AppTheme.NoActionBar" />
+        <activity
+            android:name=".security.presentation.ui.activity.SecurityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.mobicare.cielo.accessManager.AccessManagerNavigationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.White" />
+        <activity
+            android:name="br.com.mobicare.cielo.idOnboarding.IDOnboardingNavigationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+        <activity
+            android:name=".solesp.ui.SolespNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+        <activity
+            android:name="br.com.mobicare.cielo.chargeback.presentation.ChargebackNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".forgotMyPassword.presentation.ForgotMyPasswordNavigationFlowActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.mobicare.cielo.tapOnPhone.presentation.TapOnPhoneNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".biometricToken.BiometricTokenNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+        <activity
+            android:name="br.com.mobicare.cielo.p2m.presentation.P2MFlowActivity"
+            android:exported="false"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.mobicare.cielo.component.requiredDataField.presentation.RequiredDataFieldFlowActivity"
+            android:exported="false"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".arv.presentation.ArvNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".component.impersonate.presentation.ImpersonateNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="br.com.mobicare.cielo.newRecebaRapido.presentation.ReceiveAutomaticActivity"
+            android:exported="false"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".posVirtual.presentation.PosVirtualNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".selfieChallange.presentation.SelfieChallengeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+        <activity
+            android:name=".eventTracking.presentation.EventTrackingNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppMaterialComponentsNoActionBar" />
+        <activity android:name=".turboRegistration.RegistrationUpdateNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppMaterialComponentsNoActionBar"/>
+        <activity
+            android:name=".technicalSupport.features.predictiveBattery.presentation.PredictiveBatteryNavigationFlowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+        <activity
+            android:name="br.com.mobicare.cielo.mdr.ui.MdrOfferActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+        <activity
+            android:name=".pixMVVM.presentation.status.PixAuthorizationStatusActivity"
+            android:exported="false"
+            android:theme="@style/NewTheme.AppTheme.NoActionBar" />
+        <activity
+            android:name=".pixMVVM.presentation.router.PixRouterNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".pixMVVM.presentation.home.PixHomeNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".pixMVVM.presentation.extract.PixNewExtractNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".pixMVVM.presentation.infringement.PixInfringementNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppMaterialTheme.CieloAccent500"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".pixMVVM.presentation.key.PixKeyNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppMaterialTheme.CieloAccent500"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".pixMVVM.presentation.account.PixAccountNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".pixMVVM.presentation.refund.PixRefundNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".pixMVVM.presentation.qrCode.PixQRCodeNavigationFlowActivity"
+            android:exported="false"
+            android:theme="@style/AppMaterialTheme.CieloAccent500"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+
+        <activity
+            android:name=".meuCadastroNovo.presetantion.userDataChange.UserDataChangeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+
+        <activity
+            android:name=".meuCadastroNovo.presetantion.userAdditionalInfoChange.UserAdditionalInfoChangeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppMaterialComponentsNoActionBar" />
+
+        <activity
+            android:name=".onboardingWeb.presentation.OnboardingWebActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.LightStatusBar" />
+
+        <activity
+            android:name=".transparentLogin.presentation.TransparentLoginActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".newRecebaRapido.migration.d2tod1.MigrationD2toD1NavigationFlowActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_cielo_notification" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <!-- TODO remove after migrating to allowme V2 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="XXXXX" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

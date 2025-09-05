@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:padding="@dimen/dimen_16dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_stroke_cloud_300_radius_8_dp">
+
+        <TextView
+            android:id="@+id/tvActiveModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green_100"
+            android:paddingHorizontal="@dimen/dimen_8dp"
+            android:paddingVertical="@dimen/dimen_4dp"
+            android:textAppearance="@style/semi_bold_montserrat_14"
+            android:textColor="@color/green_800"
+            android:text="@string/pix_extract_scheduled_settlement_active_model"
+            android:drawablePadding="@dimen/dimen_4dp"
+            app:drawableTint="@color/green_800"
+            app:drawableStartCompat="@drawable/ic_symbol_check_round_16_dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textAppearance="@style/bold_montserrat_16"
+            android:textColor="@color/neutral_800"
+            android:text="@string/pix_extract_scheduled_settlement_subtitle" />
+
+        <TextView
+            android:id="@+id/tvReceivingHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:textAppearance="@style/medium_montserrat_14"
+            android:textColor="@color/neutral_600"
+            tools:text="Recebimento às 06:00, 12:00, 17:30 e 22:00 " />
+
+    </LinearLayout>
+
+</FrameLayout>

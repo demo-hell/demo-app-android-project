@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewUpdateRegister"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_300dp"
+        android:layout_marginLeft="@dimen/dimen_52dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_img_onboard_first_access" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageViewUpdateRegister"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        tools:text="Tudo para a sua máquina"
+        android:textColor="@color/color_017CEB"
+        android:textSize="@dimen/dimen_18sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:textColor="@color/color_5A646E"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonOK"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Peça mais máquinas, solicite bobinas, adesivos e manutenção. Consulte taxas contratadas e acompanhe o seu plano." />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonOK"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@drawable/background_buttom_update_register"
+        android:text="@string/onboard_first_accesses_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        android:fontFamily="@font/montserrat"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

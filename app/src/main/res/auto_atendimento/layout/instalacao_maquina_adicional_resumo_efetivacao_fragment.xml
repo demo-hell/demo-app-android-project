@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="26dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirme os dados para concluir sua solicitação"
+            android:textColor="@color/color_204986"
+            android:textSize="14sp"
+            app:typeface="Museo700-Regular.ttf"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/color_C5CED7"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solicitação"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:typeface="Museo700-Regular.ttf" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maquininha"
+                        android:textColor="@color/color_5A646E"
+                        android:textSize="12sp"
+                        app:typeface="Museo500-Regular.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/solMaqNameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/color_231F20"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf"
+                        tools:text="LIO"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pagamento"
+                            android:textColor="@color/color_5A646E"
+                            android:textSize="12sp"
+                            app:typeface="Museo500-Regular.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/solMaqPriceText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/color_231F20"
+                            android:textSize="14sp"
+                            app:typeface="MuseoSans-500.ttf"
+                            tools:text="R$ 170,00/Mes"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantidade"
+                            android:textColor="@color/color_5A646E"
+                            android:textSize="12sp"
+                            app:typeface="Museo500-Regular.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/solMaqQuantidade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/color_231F20"
+                            android:textSize="14sp"
+                            app:typeface="MuseoSans-500.ttf"
+                            tools:text="2"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <include
+            android:id="@+id/includeEnderecoEntrega"
+            layout="@layout/layout_endereco_entrega"/>
+
+        <include
+            android:id="@+id/includeDadosContato"
+            layout="@layout/layout_dados_contato" />
+
+    </LinearLayout>
+
+</LinearLayout>

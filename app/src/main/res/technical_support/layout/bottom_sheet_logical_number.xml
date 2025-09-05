@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <br.com.cielo.libflue.inputtext.CieloTextInputField
+        android:id="@+id/tifNumberVersion"
+        style="@style/semi_bold_montserrat_16_cloud_800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/version_number"
+        android:inputType="text"
+        android:maxLength="20"
+        app:endIconType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHelpAboutMachine"
+        style="@style/semi_bold_montserrat_12_accent_800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:gravity="center_vertical"
+        android:text="@string/dont_know_version_machine"
+        app:drawableStartCompat="@drawable/ic_help"
+        app:drawableTint="@color/accent_800"
+        app:layout_constraintStart_toStartOf="@+id/tifNumberVersion"
+        app:layout_constraintTop_toBottomOf="@+id/tifNumberVersion" />
+
+    <br.com.cielo.libflue.button.v2.CieloButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/confirm"
+        app:buttonType="filled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpAboutMachine" />
+</androidx.constraintlayout.widget.ConstraintLayout>

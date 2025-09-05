@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sectionOptions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        tools:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/btnPixLimits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/background_stroke_cloud_200_radius_12dp"
+            android:contentDescription="@string/pix_home_content_description_account_management_button">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/pix_home_menu_limits_pix"
+                android:textAppearance="@style/medium_montserrat_16_neutral_800"
+                android:drawablePadding="@dimen/dimen_16dp"
+                app:drawableStartCompat="@drawable/ic_sliders"
+                app:drawableEndCompat="@drawable/ic_chevron_right_24_cloud_400"
+                android:importantForAccessibility="no" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnAccountManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/background_stroke_cloud_200_radius_12dp"
+            android:contentDescription="@string/pix_home_content_description_account_management_button">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/pix_home_menu_account_management"
+                android:textAppearance="@style/medium_montserrat_16_neutral_800"
+                android:drawablePadding="@dimen/dimen_16dp"
+                app:drawableStartCompat="@drawable/ic_settings_default_24dp"
+                app:drawableTint="@color/neutral_600"
+                app:drawableEndCompat="@drawable/ic_chevron_right_24_cloud_400"
+                android:importantForAccessibility="no" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        app:shimmer_auto_start="true"
+        app:shimmer_base_alpha="1"
+        app:shimmer_highlight_alpha="0"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionLabel"
+        tools:duration="200"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/strip1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:background="@drawable/background_cloud_100_radius_12_dp" />
+
+            <View
+                android:id="@+id/strip2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:background="@drawable/background_cloud_100_radius_12_dp" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</FrameLayout>

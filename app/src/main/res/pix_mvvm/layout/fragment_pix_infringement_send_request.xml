@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_stroke_cloud_300_radius_8_dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_13dp">
+
+        <br.com.cielo.libflue.textView.CieloTextViewWithLabel
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:label="@string/pix_infringement_send_request_label_reason"
+            tools:text="Fui vítima de golpe" />
+
+        <br.com.cielo.libflue.textView.CieloTextViewWithLabel
+            android:id="@+id/tvValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:label="@string/pix_infringement_send_request_label_value"
+            tools:text="R$ 100,00" />
+
+        <br.com.cielo.libflue.textView.CieloTextViewWithLabel
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:label="@string/pix_infringement_send_request_label_date"
+            tools:text="15/01/2024" />
+
+        <br.com.cielo.libflue.textView.CieloTextViewWithLabel
+            android:id="@+id/tvInstitution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:label="@string/pix_infringement_send_request_label_institution"
+            tools:text="Cielo S.A." />
+
+        <br.com.cielo.libflue.textView.CieloTextViewWithLabel
+            android:id="@+id/tvDetailsOfWhatHappened"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:label="@string/pix_infringement_send_request_label_details_of_what_happened"
+            tools:text="Fui vítima de um golpe. O número do boletim de ocorrência é 21243242." />
+
+    </LinearLayout>
+
+    <br.com.cielo.libflue.card.CieloCardInformation
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:cardInformationType="information"
+        app:cardText="@string/pix_infringement_send_request_card_message" />
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/btnSendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/enviar_solicitacao" />
+
+</LinearLayout>

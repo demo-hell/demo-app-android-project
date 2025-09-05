@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".pix.ui.qrCode.receivable.PixAmountReceivableBottomSheet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_16dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:background="@drawable/ic_drag_bottom_sheet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_amount_receivable"
+            style="@style/label_18_display_500_montserrat_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/text_pix_enter_amount_receivable_title"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <br.com.cielo.libflue.inputtext.CieloInputText
+            android:id="@+id/input_amount_pix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/tv_amount_receivable" />
+
+        <br.com.cielo.libflue.button.CieloRegularWhiteButton
+            android:id="@+id/btn_valueless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:text="@string/text_pix_enter_amount_receivable_btn_no_value"
+            android:textColor="@color/blue_0774E7"
+            app:layout_constraintTop_toBottomOf="@id/input_amount_pix"/>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btn_save_amount_receivable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/blue_0774E7"
+            android:text="@string/confirmar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_valueless"
+            app:layout_constraintVertical_bias="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

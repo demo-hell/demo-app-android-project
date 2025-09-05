@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receive_automatic_keep_plan_subtitle"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:textAppearance="@style/medium_montserrat_16"
+        android:textColor="@color/neutral_main"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receive_automatic_keep_plan_message"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:textAppearance="@style/medium_montserrat_16"
+        android:textColor="@color/neutral_main"
+        android:lineSpacingExtra="@dimen/dimen_8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

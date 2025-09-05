@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/medium_montserrat_16_neutral_600"
+        android:lineSpacingExtra="@dimen/dimen_4dp"
+        android:text="@string/pix_refund_review_bs_cancel_message" />
+
+    <br.com.cielo.libflue.button.v2.CieloButton
+        android:id="@+id/btCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:buttonType="outlined_danger"
+        android:text="@string/pix_refund_review_bs_cancel_button" />
+
+    <br.com.cielo.libflue.button.v2.CieloButton
+        android:id="@+id/btClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_close" />
+
+</LinearLayout>

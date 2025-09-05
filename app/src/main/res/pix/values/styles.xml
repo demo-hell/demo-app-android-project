@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="label_14_display_400_ubuntu_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="label_16_display_400_ubuntu_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="label_16_display_500_montserrat" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/display_500</item>
+    </style>
+
+    <style name="label_16_display_400_ubuntu_pix_home" parent="label_16_display_400_ubuntu_base">
+        <item name="android:layout_marginStart">@dimen/dimen_6dp</item>
+    </style>
+
+    <style name="label_12_alert_400_ubuntu" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/alert_400</item>
+    </style>
+
+    <style name="label_14_display_500_montserrat_bold_pix_home" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_500</item>
+        <item name="android:layout_marginStart">@dimen/dimen_6dp</item>
+    </style>
+
+    <style name="label_14_display_400_ubuntu_pix_home" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="label_14_display_400_montserrat_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="label_14_display_400_montserrat" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="label_14_display_500_ubuntu_bold_end_pix_home" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_500</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="label_14_ocean_500_ubuntu" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/ocean_500</item>
+    </style>
+
+    <style name="label_14_display_500_ubuntu" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_500</item>
+    </style>
+
+    <style name="label_12_display_400_ubuntu" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="Label_400_Regular_16_Display_500_ubuntu" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/display_500</item>
+    </style>
+
+    <style name="label_12_ubuntu_base" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+
+    <style name="label_12_display_600_ubuntu_base" parent="label_12_ubuntu_base">
+        <item name="android:textColor">@color/display_600</item>
+    </style>
+
+    <style name="label_12_display_400_ubuntu_base" parent="label_12_ubuntu_base">
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="label_12_display_400_ubuntu_bold" parent="label_12_ubuntu_base">
+        <item name="android:textColor">@color/display_400</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+    <style name="label_12_display_300_ubuntu_bold" parent="label_12_ubuntu_base">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textColor">@color/display_300</item>
+    </style>
+
+    <style name="label_12_brand_600_ubuntu_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/brand_600</item>
+    </style>
+
+    <style name="label_18_brand_600_montserrat_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/brand_600</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="label_16_brand_600_montserrat_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/brand_600</item>
+    </style>
+
+    <style name="label_16_display_300_montserrat" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/display_300</item>
+    </style>
+
+    <style name="label_16_display_400_montserrat_center" parent="label_16_display_300_montserrat">
+        <item name="android:textColor">@color/display_400</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="label_12_display_500_ubuntu_regular" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/display_500</item>
+    </style>
+
+    <style name="label_12_display_500_ubuntu_base" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/display_500</item>
+    </style>
+
+    <style name="label_10_display_400_ubuntu_center_pix_home" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+        <item name="android:textColor">@color/display_400</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="label_18_display_500_montserrat_bold_center" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/display_500</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="label_18_display_400_montserrat_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/display_400</item>
+    </style>
+
+    <style name="label_18_display_500_montserrat_start" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/display_500</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="label_18_brand_400_montserrat" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/blue_0774E7</item>
+    </style>
+
+    <style name="label_16_brand_400_montserrat" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/blue_0774E7</item>
+    </style>
+
+
+    <style name="label_14_brand_400_montserrat_pix_home" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/blue_0774E7</item>
+    </style>
+
+    <style name="label_14_brand_400_ubuntu" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/blue_0774E7</item>
+    </style>
+
+    <style name="label_16_brand_400_ubuntu_bold" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/blue_0774E7</item>
+    </style>
+
+    <style name="label_16_brand_400_ubuntu" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/blue_0774E7</item>
+    </style>
+
+    <style name="label_12_display_400_ubuntu_success_100" parent="label_12_ubuntu_base">
+        <item name="android:textColor">@color/success_500</item>
+        <item name="android:background">@drawable/background_status_my_keys_pix_success_100</item>
+        <item name="android:paddingStart">@dimen/dimen_10dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_6dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_6dp</item>
+    </style>
+
+    <style name="label_12_display_400_ubuntu_success_100_radius_8" parent="label_12_ubuntu_base">
+        <item name="android:textColor">@color/success_500</item>
+        <item name="android:background">@drawable/background_success_100_radius_8</item>
+        <item name="android:paddingStart">@dimen/dimen_10dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_6dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_6dp</item>
+    </style>
+
+    <style name="label_200_Regular_12_ubuntu_400_success_100" parent="label_12_ubuntu_base">
+        <item name="android:textColor">@color/success_500</item>
+        <item name="android:background">@drawable/background_status_my_keys_pix_success_100</item>
+        <item name="android:drawableStart">@drawable/ic_money_sign</item>
+        <item name="android:paddingStart">@dimen/dimen_12dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_6dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_6dp</item>
+        <item name="android:drawablePadding">@dimen/dimen_12dp</item>
+    </style>
+
+    <style name="label_14_alert_600_montserrat" parent="label_14_display_500_montserrat_bold_pix_home">
+        <item name="android:textColor">@color/alert_600</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="label_12_display_400_ubuntu_main_key_alert_100" parent="label_200_Regular_12_ubuntu_400_success_100">
+        <item name="android:text">@string/text_pix_my_keys_main_key</item>
+    </style>
+
+    <style name="label_12_display_400_ubuntu_active_key_alert_100" parent="label_12_display_400_ubuntu_success_100">
+        <item name="android:text">@string/text_pix_my_keys_active_key</item>
+    </style>
+
+    <style name="progress_bar_blue" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/blue_0774E7</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:buttonBarNegativeButtonStyle">@style/PermissionButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PermissionButtonStyle</item>
+    </style>
+
+    <style name="PermissionButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/blue_0774E7</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MyLimitsTabAppearance" parent="ThemeOverlay.AppCompat.Light">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+
+</resources>

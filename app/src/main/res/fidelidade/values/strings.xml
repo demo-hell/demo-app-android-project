@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--produtos-->
+    <string name="fidelidade_title_produtos">Produtos</string>
+    <string name="fidelidade_legenda_produtos">Aspirador de Pó PH1400 MAX - Philco</string>
+    <string name="fidelidade_loja_produtos">Magazine Luiza</string>
+    <string name="fidelidade_loja_pontos_necessarios">20 pontos</string>
+    <string name="fidelidade_loja_pontos_button_resgatar">Resgatar</string>
+</resources>
+

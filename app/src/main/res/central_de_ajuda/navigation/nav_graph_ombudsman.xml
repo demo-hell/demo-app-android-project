@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_ombudsman"
+    app:startDestination="@id/ombudsmanProtocolFragment">
+
+    <fragment
+        android:id="@+id/ombudsmanProtocolFragment"
+        android:name="br.com.mobicare.cielo.centralDeAjuda.presentation.ui.contatos.ombudsman.protocol.OmbudsmanProtocolFragment"
+        android:label="OmbudsmanProtocolFragment"
+        tools:layout="@layout/fragment_ombudsman_protocol">
+
+        <action
+            android:id="@+id/action_ombudsmanProtocolFragment_to_ombudsmanPersonalDataFragment"
+            app:destination="@id/ombudsmanPersonalDataFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ombudsmanPersonalDataFragment"
+        android:name="br.com.mobicare.cielo.centralDeAjuda.presentation.ui.contatos.ombudsman.personaldata.OmbudsmanPersonalDataFragment"
+        android:label="OmbudsmanPersonalDataFragment"
+        tools:layout="@layout/fragment_ombudsman_personal_data">
+
+        <action
+            android:id="@+id/action_ombudsmanPersonalDataFragment_to_ombudsmanMessageFragment"
+            app:destination="@id/ombudsmanMessageFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/ombudsmanMessageFragment"
+        android:name="br.com.mobicare.cielo.centralDeAjuda.presentation.ui.contatos.ombudsman.message.OmbudsmanMessageFragment"
+        android:label="OmbudsmanMessageFragment"
+        tools:layout="@layout/fragment_ombudsman_message">
+
+        <argument
+            android:name="ARGUMENT_OMBUDSMAN"
+            app:argType="br.com.mobicare.cielo.centralDeAjuda.data.clients.domains.OmbudsmanRequest" />
+
+    </fragment>
+
+</navigation>

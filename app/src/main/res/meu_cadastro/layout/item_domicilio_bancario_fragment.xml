@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_corner"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/container_card_domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- HEADER -->
+            <LinearLayout
+                android:id="@+id/layout_domicilio_bancario_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E2E2E2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageview_domicilio_bancario_header"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearCommonBankInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="8dp"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_item_solucao_contratada_value"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:textColor="@color/text_color_263238"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:ellipsize="end"
+                    android:layout_marginBottom="16dp"
+                    app:typeface="MuseoSans-700.ttf" />
+
+                <!-- Banco -->
+                <LinearLayout
+                    android:id="@+id/layout_cadastro_domicilio_bancario_banco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="@string/meu_cadastro_domicilio_bancario_banco"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="12sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_cadastro_domicilio_bancario_banco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                </LinearLayout>
+
+                <!-- Agencia -->
+                <LinearLayout
+                    android:id="@+id/layout_cadastro_domicilio_bancario_agencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="@string/meu_cadastro_domicilio_bancario_agencia"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="12sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_cadastro_domicilio_bancario_agencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                </LinearLayout>
+
+
+                <!-- Conta Corrente -->
+                <LinearLayout
+                    android:id="@+id/layout_cadastro_domicilio_bancario_conta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="@string/meu_cadastro_domicilio_bancario_conta_corrente"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="12sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_cadastro_domicilio_bancario_conta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

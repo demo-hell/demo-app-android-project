@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_notification_title_list">Notificações</string>
+    <string name="text_notification_not_exist">Você não tem nenhuma Notificação por enquanto.</string>
+    <string name="text_button_label_link">Habilitar</string>
+
+    <string name="text_notification_welcome_title">Agora você já pode receber promoções, novidades e informações no App.</string>
+    <string name="text_notification_welcome_subtitle">Fique de olho nas suas Notificações.</string>
+    <string name="text_user_fingerprint_data_lost_warning">Os dados da conta atual não ficarão salvos neste celular</string>
+    <string name="text_user_fingerprint_data_lost_warning_title">Você quer remover os dados?</string>
+
+    </resources>

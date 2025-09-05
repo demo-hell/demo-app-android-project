@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:background="@drawable/custom_text_input_view_selector"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/setinha_down"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="Suspicious0dp">
+
+        <TextView
+            android:id="@+id/txt_data_revogacao"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.7"
+            android:text="@string/txt_date_authorization_value"
+            android:textColor="@color/color_5A646E"
+            android:textSize="14dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_setinha_down_revogacao"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_setinha_down_revogacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_setinha_down"
+                tools:ignore="VectorDrawableCompat"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="225dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_body_revogation"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_banks_status_revogacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_comp_bank_status"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

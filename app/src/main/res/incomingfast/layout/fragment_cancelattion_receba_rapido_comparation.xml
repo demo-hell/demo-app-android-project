@@ -1,0 +1,57 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.mobicare.cielo.recebaRapido.cancellation.comparationscreen.CancelattionRecebaRapidoComparationFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextTitleHeading500Bold18spDisplay500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:text="@string/incomint_fast_cancellation_comparation_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewInfoResquested"
+        style="@style/Paragraph_300_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:text="@string/incomint_fast_cancellation_comparation_info" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp">
+
+            <br.com.mobicare.cielo.component.feeandplans.ComponentLayoutFeeAndPlans
+                android:id="@+id/componentFeeWithRR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dimen_180dp"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                tools:visibility="visible" />
+
+            <br.com.mobicare.cielo.component.feeandplans.ComponentLayoutFeeAndPlans
+                android:id="@+id/componentFeeWithoutRR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dimen_180dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

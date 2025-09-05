@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_32dp">
+
+    <TextView
+        android:id="@+id/tvThirtyDays"
+        style="@style/semi_bold_montserrat_14_brand_400_spacing_3"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:background="@drawable/selector_button_filter_extract_pix"
+        android:clickable="true"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:paddingHorizontal="@dimen/dimen_12dp"
+        android:paddingVertical="@dimen/dimen_8dp"
+        android:text="@string/pix_extract_filter_item_period_label_last_thirty_days" />
+
+    <TextView
+        android:id="@+id/tvFifteenDays"
+        style="@style/semi_bold_montserrat_14_brand_400_spacing_3"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:background="@drawable/selector_button_filter_extract_pix"
+        android:clickable="true"
+        android:paddingHorizontal="@dimen/dimen_12dp"
+        android:paddingVertical="@dimen/dimen_8dp"
+        android:text="@string/pix_extract_filter_item_period_label_last_fifteen_days" />
+
+    <TextView
+        android:id="@+id/tvSevenDays"
+        style="@style/semi_bold_montserrat_14_brand_400_spacing_3"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:background="@drawable/selector_button_filter_extract_pix"
+        android:clickable="true"
+        android:paddingHorizontal="@dimen/dimen_12dp"
+        android:paddingVertical="@dimen/dimen_8dp"
+        android:text="@string/pix_extract_filter_item_period_label_last_seven_days" />
+
+
+</GridLayout>

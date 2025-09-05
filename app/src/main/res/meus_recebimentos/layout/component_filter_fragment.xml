@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/moreFilterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:contentDescription="@string/description_filter_button"
+            app:srcCompat="@drawable/ic_filter" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_choose_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image_calender_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/et_date_init"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_flui_calendar" />
+
+        <RelativeLayout
+            android:id="@+id/et_date_init"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@drawable/date_edittext_filter_arround"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/et_date_end"
+            app:layout_constraintStart_toEndOf="@id/image_calender_one"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_date_init"
+                style="@style/Text14spUbuntuRegular_white"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_35dp"
+                android:gravity="center"
+                android:hint="@string/start_date"
+                android:paddingLeft="@dimen/dimen_10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/et_date_end"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@drawable/date_edittext_filter_arround"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_date_init"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_date_end"
+                style="@style/Text14spUbuntuRegular_white"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_35dp"
+                android:gravity="center"
+                android:hint="@string/end_date"
+                android:paddingStart="@dimen/dimen_10dp" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_choose_dates_dialy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            app:srcCompat="@drawable/ic_date_white"
+            app:tint="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/et_daily"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_weight="4"
+            android:background="@drawable/date_edittext_filter_arround">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/tv_date_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_35dp"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:text="@string/select_date"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:typeface="MuseoSans-700.ttf" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

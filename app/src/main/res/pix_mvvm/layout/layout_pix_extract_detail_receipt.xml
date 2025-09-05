@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/ivBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:contentDescription="@string/pix_extract_detail_content_description_brand"
+        android:src="@drawable/ic_cielo_logo_pix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/pix_extract_detail_content_description_share_button"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/ivBrand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBrand">
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:importantForAccessibility="no"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/ic_share_24dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvPixType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:textAppearance="@style/semi_bold_montserrat_16_neutral_dark_spacing_4"
+        app:layout_constraintTop_toBottomOf="@id/ivBrand"
+        tools:text="Transferência enviada • Pix" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textAppearance="@style/medium_montserrat_14_neutral_main"
+        app:layout_constraintTop_toBottomOf="@id/tvPixType"
+        tools:text="Realizado em 19/12/2023 às 08:34:01" />
+
+    <TextView
+        android:id="@+id/tvAboutSettlement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textAppearance="@style/medium_montserrat_14_neutral_main"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        tools:text="Transferido para conta cadastrada em 19/12/2023 às 14:00:00" />
+
+    <LinearLayout
+        android:id="@+id/containerContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:paddingBottom="@dimen/dimen_32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAboutSettlement"
+        tools:layout_height="@dimen/dimen_32dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/color_B8C1CC"
+        app:layout_constraintTop_toBottomOf="@id/containerContent" />
+
+    <TextView
+        android:id="@+id/tvReceiptObservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:gravity="center"
+        android:text="@string/pix_extract_detail_receipt_no_tax_value"
+        android:textAppearance="@style/medium_montserrat_14_neutral_main"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:gravity="center"
+        android:text="@string/pix_extract_detail_receipt_company_name"
+        android:textAppearance="@style/medium_montserrat_14_neutral_main"
+        app:layout_constraintTop_toBottomOf="@id/tvReceiptObservation" />
+
+    <TextView
+        android:id="@+id/tvCompanyDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:text="@string/pix_extract_detail_receipt_company_document"
+        android:textAppearance="@style/semi_bold_montserrat_16_neutral_dark_spacing_4"
+        app:layout_constraintTop_toBottomOf="@id/tvCompanyName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

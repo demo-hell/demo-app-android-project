@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:ignore="Overdraw">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textview_extrato_footer_quantity"
+        style="@style/Paragraph_300_regular_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/textview_extrato_footer_amount"
+        android:gravity="left"
+        android:padding="@dimen/dimen_16dp"
+        android:textColor="@color/brand_400"
+        android:textSize="@dimen/dimen_14sp"
+        tools:text="77 vendas aprovadas" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textview_extrato_footer_amount"
+        style="@style/Paragraph_300_bold_14_display_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dimen_16dp"
+        android:textColor="@color/brand_400"
+        android:textSize="@dimen/dimen_14sp"
+        tools:text="R$ 894,00" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2dp"
+        android:layout_alignParentTop="true"
+        android:alpha="0.2"
+        android:background="@color/gray_light" />
+
+</RelativeLayout>

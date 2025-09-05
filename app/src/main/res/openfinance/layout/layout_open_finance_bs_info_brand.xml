@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iconBrand"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_gravity="start"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/ic_bank_brand_banco_do_brasil_square" />
+
+    <TextView
+        android:id="@+id/tvBrand"
+        style="@style/bold_montserrat_16_neutral_600"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvBrandDesc"
+        style="@style/regular_montserrat_16_neutral_600_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/bold_montserrat_16_neutral_600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="@string/participating_institutions" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInstitutions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/layout_open_finance_institution_item"/>
+
+</LinearLayout>

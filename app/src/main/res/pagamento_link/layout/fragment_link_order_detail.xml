@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.mobicare.cielo.pagamentoLink.orders.LinkOrdersFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_F5F8F9"
+        android:clipToPadding="true"
+        android:fillViewport="true"
+        android:padding="@dimen/dimen_16dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/link_order_detail_customer_data" />
+
+            <include layout="@layout/link_order_detail_sale_first" />
+
+            <include layout="@layout/link_order_detail_sale_second" />
+
+            <br.com.cielo.libflue.button.CieloRegularBlueButton
+                android:id="@+id/buttonCallLoggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/link_detail_sale_payment_call_loggi_button"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewInfoLoginTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:text="@string/link_detail_sale_payment_loggi_time_info"
+                android:textColor="@color/color_5A646E"
+                android:textSize="@dimen/dimen_10sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

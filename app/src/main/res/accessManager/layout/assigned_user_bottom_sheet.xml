@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingBottom="@dimen/dimen_16dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/ic_drag_bottom_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/label_18_display_400_montserrat_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Bruna Ben Parker " />
+
+            <View
+                android:id="@+id/dotStatusColor"
+                android:layout_width="@dimen/dimen_8dp"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_marginHorizontal="@dimen/dimen_4dp"
+                android:background="@drawable/background_corners_solid_gray_8dp"
+                android:backgroundTint="@color/success_400"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/tvTitle"
+                app:layout_constraintTop_toTopOf="@id/tvTitle"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSubtitle"
+                style="@style/label_12_display_400_ubuntu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                tools:text="@string/assigned_user_bs_subtitle_admin" />
+
+            <View
+                android:id="@+id/viewDivider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@color/color_C5CED7"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clUserData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                app:layout_constraintTop_toBottomOf="@+id/viewDivider">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmail"
+                    style="@style/label_16_display_400_ubuntu_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmailValue"
+                    style="@style/label_16_display_400_ubuntu_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+                    tools:text="brena.parker@fotografias.com" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCPF"
+                    style="@style/label_16_display_400_ubuntu_base"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="CPF"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/tvTokenStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEmailValue"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTokenStatus"
+                    style="@style/label_16_display_400_ubuntu_base"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Status do Token"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvCPF"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEmailValue" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCPFValue"
+                    style="@style/label_16_display_400_ubuntu_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    tools:text="-"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/tvTokenStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCPF" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTokenStatusValue"
+                    style="@style/label_16_display_400_ubuntu_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvCPF"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTokenStatus"
+                    tools:text="Inativo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProfileType"
+                    style="@style/label_16_display_400_ubuntu_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/assigned_user_bs_profile_type"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTokenStatusValue" />
+
+                <LinearLayout
+                    android:id="@+id/containerProfileType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_solid_white_border_color_c5ced7"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvProfileType">
+
+                    <RadioGroup
+                        android:id="@+id/rgProfileType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_16dp"
+                        tools:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rbAdmin"
+                            style="@style/Paragraph_400_regular_16_display_500"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/custom_circle_radio_button"
+                            android:checked="true"
+                            android:layoutDirection="ltr"
+                            android:paddingHorizontal="@dimen/dimen_16dp"
+                            android:paddingVertical="@dimen/dimen_12dp"
+                            android:text="@string/admin_rb" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rbReader"
+                            style="@style/Paragraph_400_regular_16_display_500"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:button="@drawable/custom_circle_radio_button"
+                            android:layoutDirection="ltr"
+                            android:paddingHorizontal="@dimen/dimen_16dp"
+                            android:paddingVertical="@dimen/dimen_12dp"
+                            android:text="@string/reader_rb" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rbAnalyst"
+                            style="@style/Paragraph_400_regular_16_display_500"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:button="@drawable/custom_circle_radio_button"
+                            android:layoutDirection="ltr"
+                            android:paddingHorizontal="@dimen/dimen_16dp"
+                            android:paddingVertical="@dimen/dimen_12dp"
+                            android:text="@string/analyst_rb" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rbTechnical"
+                            style="@style/regular_ubuntu_16_display_500"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:button="@drawable/custom_circle_radio_button"
+                            android:layoutDirection="ltr"
+                            android:paddingHorizontal="@dimen/dimen_16dp"
+                            android:paddingVertical="@dimen/dimen_12dp"
+                            android:text="@string/technical_rb" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/rbCustomProfile"
+                            style="@style/regular_ubuntu_16_display_500"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:button="@drawable/custom_circle_radio_button"
+                            android:layoutDirection="ltr"
+                            android:visibility="gone"
+                            android:paddingHorizontal="@dimen/dimen_16dp"
+                            android:paddingVertical="@dimen/dimen_12dp"
+                            android:text="@string/customProfile_rb" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnSaveChanges"
+                            style="@style/regular_montserrat_16_display_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_radius8dp_display_200"
+                            android:enabled="false"
+                            android:padding="@dimen/dimen_9dp"
+                            android:layout_marginBottom= "@dimen/dimen_16dp"
+                            android:text="@string/save_changes" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnSelectCustomProfile"
+                            style="@style/regular_montserrat_16_display_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_brand_500_rounded"
+                            android:padding="@dimen/dimen_9dp"
+                            android:text="@string/select_custom_profile"
+                            android:visibility="gone"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/btnRemove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_38dp"
+                android:layout_weight="1"
+                android:background="@drawable/outline_rounded_solid_white_stroke_red"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+                app:layout_constraintTop_toBottomOf="@+id/clUserData">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/ic_circle_slash" />
+
+                <TextView
+                    style="@style/Label_400_Alternate_regular_14_danger_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:text="@string/remove_user" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewInfo"
+                android:layout_width="@dimen/dimen_17dp"
+                android:layout_height="@dimen/dimen_17dp"
+                android:background="@drawable/ic_info"
+                app:layout_constraintTop_toTopOf="@+id/tvInfo"
+                app:layout_constraintBottom_toBottomOf="@+id/tvInfo"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvInfo"
+                style="@style/label_14_display_400_ubuntu_pix_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginTop="@dimen/dimen_60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/viewInfo"
+                app:layout_constraintTop_toBottomOf="@+id/clUserData"
+                tools:text="@string/assigned_user_bs_info_cnpj" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/containerProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        android:background="@color/white">
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

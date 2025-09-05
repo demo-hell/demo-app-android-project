@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">UA-8516386-19</string>
+    <string name="ga_sampleFrequency">100.0</string>
+    <integer name="ga_sessionTimeout">1800</integer>
+    <bool name="ga_autoActivityTracking">false</bool>
+    <bool name="ga_anonymizeIp">false</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <integer name="ga_dispatchPeriod">60</integer>
+
+    <!-- <screenName name="com.mobicare.cielo.activity.MenuActivity">Home Screen (teste)</screenName>
+     <screenName name="com.mobicare.cielo.activity.SupportActivity">Telefones Uteis (teste)</screenName> -->
+</resources>

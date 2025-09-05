@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="taxas"
+            type="br.com.mobicare.cielo.meuCadastro.domains.entities.CardBrandFees" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/layout_item_solucoes_contratadas_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textview_item_bandeiras_habilitadas_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="@color/text_color_263238"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:typeface="MuseoSans-700.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textview_item_bandeiras_habilitadas_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="@color/gray_light"
+            android:textSize="14sp"
+            app:typeface="MuseoSans-500.ttf" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,177 @@
+<resources>
+    <string name="ga_login">Login cliente</string>
+    <string name="ga_login_duvida_ec">Dúvida N do estabelecimento</string>
+    <string name="ga_login_duvida_user">Dúvida Nome de usuário</string>
+    <string name="ga_login_salvar_numero_ec">Salvar o nº do estabelecimento</string>
+    <string name="ga_login_n_salvar_numero_ec">Não salvar o nº do estabelecimento</string>
+
+    <string name="login_ec_hint">Email, CPF ou Nº do estabelecimento</string>
+
+    <string name="text_login_email_label">E-mail</string>
+    <string name="text_login_cpf_label">CPF</string>
+
+    <string name="login_username_hint">Usuário</string>
+    <string name="login_password_hint">Senha</string>
+    <string name="login_button_entrar">Entrar</string>
+    <string name="login_title">Entrar na sua conta</string>
+    <!--<string name="login_button_esqueci_senha">Esqueci a senha</string>-->
+    <string name="login_seja_cliente">Seja nosso cliente</string>
+    <string name="login_ajuda">Precisa de ajuda?</string>
+    <string name="login_criar_usuario">Criar usuário</string>
+    <string name="login_reminder_user">Lembrar meu usuário</string>
+
+    <!--<string name="login_button_esqueci_usuario">Esqueci usuário</string>-->
+    <string name="login_descricao">Para acessar o aplicativo, utilize os mesmos dados de acesso do site da Cielo</string>
+    <string name="login_button_precisa_ajuda">Esqueci a Senha, Usuário ou Estabelecimento</string>
+    <string name="login_salvar_acesso">Salvar o nº do estabelecimento e o usuário.</string>
+
+    <string name="error_login_user">Por favor digite um usuário.</string>
+    <string name="error_login_password">Por favor digite uma senha válida.</string>
+
+    <string name="login_title_duvida_ec">Número do estabelecimento</string>
+    <string name="login_recuperar_duvida_ec">Recuperar</string>
+    <string name="login_recuperar_duvida_ok">Ok</string>
+    <string name="login_message_duvida_ec">O número do estabelecimento é o seu número de identificação na Cielo.</string>
+    <string name="login_title_duvida_user">Nome de usuário</string>
+    <string name="login_message_duvida_user">O seu usuário é o mesmo que você criou no momento do cadastro para acessar o aplicativo ou o site da Cielo.</string>
+
+    <string name="login_ec_error">Número do estabelecimento inválido.</string>
+    <!--<string name="dialog_ec">Número do Estabelecimento</string>-->
+    <string name="dialog_estabelecimento_msg">Você encontra o número do estabelecimento no seu comprovante de venda, abaixo do endereço. Desconsidere os zeros à esquerda e o 0001 à direita. São 10 números.</string>
+
+
+    <string name="title_closable_content_dialog">"O que é o nº do estabelecimento?"</string>
+    <string name="sub_title_closable_conten_dialog_1">É o número do seu negócio, você encontra no comprovante da venda emitida pela máquina, abaixo do endereço.\n</string>
+    <string name="sub_title_closable_conten_dialog_2">Para utilizá-lo você deve desconsiderar os dois zeros à esquerda e os quatro últimos dígitos.\n\n</string>
+    <string name="sub_title_closable_conten_dialog_3">Exemplo:</string>
+    <string name="sub_title_closable_conten_dialog_4">Se o número for</string>
+    <string name="sub_title_closable_conten_dialog_5">0010512345600001</string>
+    <string name="sub_title_closable_conten_dialog_6">, o nº do estabelecimento é</string>
+    <string name="sub_title_closable_conten_dialog_7">1051234560</string>
+
+    <string name="title_closable_dialog">Nº do estabelecimento</string>
+
+    <string name="text_user_choose_register_login">Não consegui acessar o app com e-mail ou CPF</string>
+    <string name="text_user_choose_register_login_description">Para acessar o app utilizando e-mail ou CPF é necessário ter feito atualização. Caso ainda não tenha feito faça login com seus dados de estabelecimento.</string>
+    <string name="text_user_choose_register_button_label">Fazer login</string>
+    <string name="text_user_choose_register_create_title">Sou cliente, mas não tenho cadastro</string>
+    <string name="text_user_choose_register_create_description">Se você é cliente, mas não é cadastrado na Cielo faça seu cadastro clicando no botão abaixo.</string>
+    <string name="text_user_choose_register_create_button_label">Fazer cadastro</string>
+
+    <string name="text_user_choose_register_newclient_title">Ainda não sou cliente</string>
+    <string name="text_user_choose_register_newclient_description">Caso você ainda não seja cliente clique no botão abaixo para se tornar cliente Cielo.</string>
+    <string name="text_user_choose_register_newclient_button_label">Se tornar cliente Cielo</string>
+    <string name="text_choose_register_user_label">Veja abaixo os possíveis motivos</string>
+
+    <string name="text_button_closable_dialog">Descobrir nº do estabelecimento</string>
+    <string name="text_central_ajuda">Central de\najuda</string>
+    <string name="text_seja_cliente">Seja um\ncliente</string>
+    <string name="text_criar_usuario">Criar\nusuário</string>
+
+    <string name="text_invalid_ec_number">Nº do estabelecimento inválido</string>
+    <string name="text_invalid_ec_message">Verifique o número digitado e tente novamente.</string>
+    <string name="text_change_user_title">Você quer usar outra conta?</string>
+    <string name="text_cancel_label">CANCELAR</string>
+    <string name="text_user_another_account_label">USAR OUTRA CONTA</string>
+    <string name="text_user_change_account_message">Os dados da conta atual não ficarão salvos nesse celular</string>
+
+    <string name="text_change_account_title">Deseja acessar outra conta?</string>
+    <string name="text_change_account_message">Ao mudar de conta, os dados da sua conta atual não serão salvos neste celular.</string>
+    <string name="text_change_another_account">Usar outra conta</string>
+
+    <string name="label_ga_central_ajuda">Central de ajuda</string>
+    <string name="label_ga_criar_usuario">Criar usuário</string>
+    <string name="label_ga_seja_cliente">Seja nosso cliente</string>
+    <string name="label_ga_estabelecimento_duvida">Nº do estabelecimento</string>
+    <string name="label_ga_estabelecimento">Nº do estabelecimento</string>
+    <string name="label_ga_button_next">Próximo</string>
+    <string name="text_massiva_message">Caro cliente, nós já fizemos o seu pré-cadastro! O seu usuário é também o número do seu estabelecimento.\n\nAgora só falta confirmar mais alguns dados e cadastrar a sua senha para acessar o aplicativo.</string>
+
+    <string name="text_login_multichannel_email_invalid">O e-mail informado é inválido</string>
+    <string name="text_login_multichannel_cpf_invalid">O CPF informado é inválido</string>
+    <string name="text_login_multichannel_ec_invalid">O Nº do Estabelecimento informado é inválido</string>
+
+    <string name="text_title_user_not_registered">Dados de acesso incorretos</string>
+
+    <string name="text_forgotten_email">Esqueceu sua senha?</string>
+    <string name="text_webview_ssl_message">O certificado do site está expirado tem certeza que deseja continuar o acesso?</string>
+
+    <string name="title_vp_introduce_01">Acessar com seu CPF ou E-mail</string>
+    <string name="subtitle_vp_introduce_01">Para realizar seu login com CPF ou email, primeiro você precisa atualizar seus dados cadastrais. Acesse o app com seu EC e usuário e atualize os dados. Após a atualização você poderá passar a se logar com email ou CPF.</string>
+
+    <string name="title_vp_introduce_02">Onde encontrar nº do estabelecimento</string>
+    <string name="subtitle_vp_introduce_02_a">No comprovante de vendas emitido pela maquininha. Para usar é só ignorar</string>
+    <string name="subtitle_vp_introduce_02_b">os dois zeros</string>
+    <string name="subtitle_vp_introduce_02_c">e os</string>
+    <string name="subtitle_vp_introduce_02_d">quatro últimos digitos</string>
+
+    <string name="text_primeiro_acesso">Primeiro acesso</string>
+    <string name="text_error_user_already_exists">Já existe um usuário cadastrado com estes dados.</string>
+    <string name="text_create_account_title">Crie a sua conta do zero!</string>
+    <string name="text_create_account_message">Caso você tenha recebido um convite, prossiga entrando na sua conta Cielo, na tela anterior, com os seus dados de acesso atuais e senha, na tela de login.</string>
+    <string name="text_continue_with_first_access">Continuar com primeiro acesso</string>
+
+    <string name="first_access_option_title">Já é cliente? Crie seu acesso</string>
+    <string name="first_access_option_subtitle">Caso já tenha usuário ou tenha recebido um convite, você pode ir direto para o login.</string>
+    <string name="first_access_option_back_login">Voltar para o login</string>
+    <string name="first_access_option_create_access">Criar acesso</string>
+    <string name="first_access_create_access_title">Criação de acesso</string>
+    <string name="first_access_create_access_subtitle"><![CDATA[A partir de agora o <b>CPF</b> e o <b>E-mail</b> serão utilizados para acessar a sua conta em nossos canais digitais.]]></string>
+    <string name="first_access_create_access_number_ec">Número do estabelecimento</string>
+    <string name="first_access_create_access_cpf">CPF</string>
+    <string name="first_access_create_access_email">E-mail</string>
+    <string name="first_access_create_access_accept_conditions">Ao continuar, você aceita os</string>
+    <string name="first_access_create_access_terms_and_conditions">termos e condições de uso.</string>
+    <string name="first_access_create_access_terms_contract">Contrato de credenciamento Cielo</string>
+    <string name="first_access_create_access_terms_privacy">Política de privacidade e uso de dados pessoais</string>
+    <string name="first_access_create_access_terms_conditions">Termos e condições de uso do site Cielo</string>
+    <string name="first_access_create_access_error_cpf">CPF Inválido</string>
+    <string name="first_access_create_access_error_password">Senha fora das regras de segurança</string>
+    <string name="first_access_create_access_error_confirm_password">As senhas não coincidem</string>
+    <string name="first_access_create_access_error_confirm_password_required">Confirmação de senha é obrigatória</string>
+    <string name="first_access_create_access_error_email">Digite um e-mail válido</string>
+    <string name="first_access_create_password_title">Crie uma senha</string>
+    <string name="first_access_create_password_subtitle">Crie sua senha com seis números</string>
+    <string name="first_access_create_password_label">Senha</string>
+    <string name="first_access_create_password_password_confirm">Confirme sua senha</string>
+    <string name="first_access_create_password_bottom_sheet_generic_title">Os dados inseridos são inválidos.</string>
+    <string name="first_access_create_password_bottom_sheet_generic_subtitle"> Para continuar informe outros dados no cadastro.</string>
+
+    <!-- Accessibility -->
+    <string name="invalid_password_accessibility_base_text">A senha digitada é inválida, pois ela contém</string>
+    <string name="valid_password_accessibility_base_text">A senha não pode conter</string>
+    <string name="first_access_create_password_button_disabled">Botão desabilitado, pois a senha digitada está fora das regras de segurança</string>
+
+    <string name="password_requirement_title">A senha não pode conter:</string>
+    <string name="password_requirement_digits">Os primeiros 6 dígitos do seu CPF</string>
+    <string name="password_requirement_repeated_digits_or_dozens">Dígitos ou dezenas repetidas</string>
+    <string name="password_requirement_repeated_digits_or_dozens_sample">(Ex:123321 ou 101010)</string>
+    <string name="password_requirement_dozens_sequential">Dígitos ou dezenas sequenciais</string>
+    <string name="password_requirement_dozens_sequential_sample">(Ex: 102030)</string>
+    <string name="password_requirement_mirrored_digits">Dígitos espelhados</string>
+    <string name="password_requirement_mirrored_digits_sample">(Ex: 123321)</string>
+    <string name="password_requirement_drawing_keyboard">Desenhos de teclado numérico</string>
+    <string name="password_requirement_drawing_keyboard_sample">(Ex: 159753)</string>
+
+    <string name="first_access_success_title">Confirmação por e-mail</string>
+    <string name="first_access_success_subTitle">
+        <![CDATA[
+            <font color="#2F363E">Enviamos um link para o seu e-mail
+            <br/><b>%1$s</b>. A criação do seu acesso será concluída após você clicar no link.
+            <br/><b>Atenção:</b> O link expira em %2$s.</font>
+        ]]>
+    </string>
+
+    <string name="text_title_error">Erro</string>
+    <string name="continue_button">Continuar</string>
+    <string name="create_account">Seja Cielo</string>
+    <string name="create_account_login">Criar conta</string>
+    <string name="logo_cielo">Logo CIELO</string>
+    <string name="button_identifier">Criar conta, botão</string>
+    <string name="action_problem">Problemas ao acessar Botão</string>
+    <string name="action_first">Primeiro acesso</string>
+    <string name="entre_na_sua_conta">Entre na sua conta</string>
+    <string name="entre_na_sua_conta_description">Título: Entre na sua conta</string>
+    <string name="button_token">Acesso ao Token</string>
+    <string name="button_token_description">Acesso ao Token, botão</string>
+</resources>

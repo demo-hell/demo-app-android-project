@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_22dp">
+
+    <ImageView
+        android:id="@+id/lockedProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/ic_01" />
+
+    <TextView
+        android:id="@+id/profileInfoTitle"
+        style="@style/medium_montserrat_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_16dp"
+        android:lineHeight="@dimen/dimen_24dp"
+        android:text="@string/txt_lock_for_technical_profile"
+        android:textAlignment="center"
+        android:textColor="@color/black_5A646E" />
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/btnAccessWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_label_button_access_website" />
+
+</LinearLayout>

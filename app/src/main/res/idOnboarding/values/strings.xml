@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="id_onboarding_name">Identidade Digital</string>
+
+    <string name="update_user_data">Atualizar dados</string>
+    <string name="do_it_later">Fazer mais tarde</string>
+    <string name="resend_code">Reenviar código</string>
+    <string name="validate_code">Validar código</string>
+    <string name="lets_go">Vamos lá</string>
+    <string name="back_later">Voltar mais tarde</string>
+    <string name="wait_x_before_resending">Aguarde %s para reenviar</string>
+    <string name="int_x_dots_y">%1$02d:%2$02d</string>
+    <string name="open_camera">Abrir câmera</string>
+
+    <string name="id_onboarding_bs_title_error_generic">Parece que tivemos algum problema por aqui.</string>
+    <string name="id_onboarding_bs_description_error_generic"><![CDATA[Vamos resolver isso e você pode voltar para <b>tentar de novo mais tarde</b>, combinado?]]></string>
+    <string name="id_onboarding_bs_message_error_generic">Alguma coisa deu errado. Tente novamente, caso persista, tente novamente mais tarde.</string>
+
+    <!-- Loading/Success Labels -->
+    <string name="loading_validating_infos">Validando informações</string>
+    <string name="loading_validating_infos_success">Informações validadas com sucesso</string>
+    <string name="loading_sending_email">Enviando e-mail</string>
+    <string name="loading_sending_email_success">E-mail enviado</string>
+    <string name="loading_sending_sms">Enviando SMS</string>
+    <string name="loading_sending_sms_success">SMS enviado</string>
+    <string name="loading_sending_whatsapp">Enviando WhatsApp</string>
+    <string name="loading_sending_whatsapp_success">WhatsApp enviado</string>
+    <string name="loading_validating_code">Validando código</string>
+    <string name="loading_validating_code_success">Código validado</string>
+    <string name="loading_upload_doc_picture">Enviando fotos</string>
+    <string name="loading_upload_doc_picture_success">Fotos enviadas</string>
+    <string name="loading_upload_selfie_picture">Enviando foto</string>
+    <string name="loading_upload_selfie_picture_success">Foto enviada</string>
+
+    <!-- P1 -->
+    <!-- Days Counter -->
+    <string name="id_onboarding_update_days_counter_title">Atualização de dados em %d dias</string>
+    <string name="id_onboarding_update_days_counter_message"><![CDATA[Estamos atualizando os dados de acessos para garantir maior segurança e oferecer um novo recurso de gerenciamento de acessos dentro da sua conta Cielo.<br/>A <b>data limite é %s.</b> Não deixe para depois, essa atualização é muito importante.]]></string>
+    <string name="id_onboarding_update_days_counter_mandatory_title">Acesso temporariamente bloqueado</string>
+    <string name="id_onboarding_update_days_counter_mandatory_message">Para continuar acessando todas as funções do aplicativo é preciso fazer uma atualização dos seus dados, siga o passo a passo para ter o seu acesso novamente.</string>
+    <string name="id_onboarding_update_days_counter_continue_title">%s que bom te ver aqui novamente</string>
+    <string name="id_onboarding_update_days_counter_continue_message"><![CDATA[Vamos lá? Falta pouco para atualizar todos os seus dados, lembrando que a <b>data limite é %s</b>.<br/>Essa é uma atualização necessária de segurança não deixe para depois.]]></string>
+    <string name="id_onboarding_update_days_counter_continue_mandatory_title">%s dados não atualizados no prazo</string>
+    <string name="id_onboarding_update_days_counter_continue_mandatory_message"><![CDATA[Sua atualização de acesso passou do prazo de validação de dados, vamos continuar de onde você parou da última vez.<br/>Clique em continuar para desbloquear seu usuário]]></string>
+    <!-- CPF Update -->
+    <string name="id_onboarding_update_cpf_title">%s, o seu CPF está correto?</string>
+    <string name="id_onboarding_update_cpf_subtitle">Já preenchemos seu CPF para agilizarmos.</string>
+    <string name="id_onboarding_update_cpf_edit_subtitle">No credenciamento você nos informou este CPF e ele será substituído no cadastro Cielo.</string>
+    <string name="id_onboarding_update_cpf_label">Seu CPF:</string>
+    <string name="id_onboarding_update_cpf_error">CPF inválido. Revise o CPF digitado</string>
+    <string name="id_onboarding_update_cpf_help_link">Esse não é seu CPF?</string>
+    <string name="id_onboarding_update_cpf_invalid_cpf_bs_title">Não foi possível validar o seu CPF</string>
+    <string name="id_onboarding_update_cpf_invalid_cpf_bs_new_title">Aguarde pois tivemos um problema na validação do seu CPF</string>
+    <string name="id_onboarding_update_cpf_invalid_cpf_bs_message"><![CDATA[Fale com a gente pelo telefone <b>4002 5472</b> ou <b>0800 570 8472</b>, informando o seu CPF como está no documento e o número do seu estabelecimento cadastrado na Cielo.]]></string>
+
+    <string name="id_onboarding_update_cpf_irregular_cpf_btn_title">Já regularizei meu CPF</string>
+    <string name="id_onboarding_update_cpf_irregular_title">Parece que o seu CPF está irregular</string>
+    <string name="id_onboarding_update_cpf_irregular_message"><![CDATA[Para continuar utilizando o App Cielo Gestão, regularize a sua situação na Receita Federal. <b>Após atingir o limite de %s tentativas, seu acesso será bloqueado.</b>]]></string>
+    <string name="id_onboarding_update_blocked_irregular_cpf_title">Seu CPF está irregular</string>
+    <string name="id_onboarding_update_cpf_max_tries_bs_title">Não foi possível validar o seu CPF</string>
+    <string name="id_onboarding_update_cpf_max_tries_bs_message"><![CDATA[Por segurança, precisamos esperar <b>12 horas</b> antes de fazer uma nova tentativa. Verifique se o seu CPF foi preenchido <b>como está no seu documento</b> e vamos tentar de novo, combinado?]]></string>
+    <string name="id_onboarding_update_cpf_max_tries_mandatory_bs_message"><![CDATA[Devido a múltiplas tentativas de validação do CPF e Nome, o serviço estará disponível após <b>%s</b>.]]></string>
+    <string name="id_onboarding_update_cpf_text">Informe um CPF diferente para atualizar seu cadastro.</string>
+    <string name="id_onboarding_new_cpf_text">Inserir novo CPF</string>
+    <string name="id_onboarding_new_cpf_title_greeting">%s, qual é o seu CPF?</string>
+    <string name="id_onboarding_new_cpf_subtitle">Precisamos dessa informação para identificação da sua conta.</string>
+
+    <string name="id_onboarding_cpf_already_used_title">O CPF %s já está sendo utilizado na conta de outra pessoa. Verifique um dos cenários abaixo:</string>
+    <string name="id_onboarding_cpf_already_used_logout_title">Você possui uma conta Cielo com este CPF?</string>
+    <string name="id_onboarding_cpf_already_used_logout_subtitle">Entre na conta Cielo com este CPF e senha. Ao continuar você sairá do acesso atual em que você iniciou esta atualização.</string>
+    <string name="id_onboarding_cpf_already_used_logout_action">Acessar conta</string>
+    <string name="id_onboarding_cpf_already_used_help_center_title">Este CPF é seu mas desconhece a existência de uma conta?</string>
+    <string name="id_onboarding_cpf_already_used_help_center_subtitle">Fale com a gente pelo telefone <b>4002 5472</b> ou <b>0800 570 8472</b>, informe o seu CPF e o número do seu estabelecimento cadastrado na Cielo.  </string>
+    <string name="id_onboarding_cpf_already_used_return_title">Digitou o CPF errado?</string>
+    <string name="id_onboarding_cpf_already_used_return_subtitle">Simples, basta você preencher com outro CPF, a atualização do seu cadastro.</string>
+    <string name="id_onboarding_cpf_already_used_return_action">Preencher outro CPF</string>
+
+    <!-- Name Update -->
+    <string name="id_onboarding_update_name_title">%s, o seu nome completo está correto?</string>
+    <string name="id_onboarding_update_name_subtitle">Já preenchemos seu nome para agilizarmos.</string>
+    <string name="id_onboarding_update_name_label">Seu nome completo:</string>
+    <string name="id_onboarding_update_name_hint">Nome Sobrenome Completo</string>
+    <string name="id_onboarding_update_name_error">Por favor digite seu nome completo. Revise e tente novamente</string>
+    <string name="id_onboarding_update_name_help_link">Por que pedimos o seu nome completo?</string>
+    <!-- Email Update -->
+    <string name="id_onboarding_update_email_title">%s, o seu e-mail está correto?</string>
+    <string name="id_onboarding_update_email_empty_title">%s, não temos o seu e-mail no nosso cadastro.</string>
+    <string name="id_onboarding_update_email_subtitle">Confirme se esse ainda é o seu melhor e-mail ou preencha um novo.</string>
+    <string name="id_onboarding_update_email_empty_subtitle">Preencha abaixo o seu melhor e-mail para incluirmos em nosso cadastro.</string>
+    <string name="id_onboarding_update_email_edit_subtitle">Confirme se esse ainda é o seu melhor e-mail ou preencha um novo.</string>
+    <string name="id_onboarding_update_email_label">Seu e-mail</string>
+    <string name="id_onboarding_update_email_hint">contato@contato.com.br</string>
+    <string name="id_onboarding_update_cpf_hint">000.000.000-00</string>
+    <string name="id_onboarding_update_email_error">Por favor, preencha um e-mail válido. Revise e tente novamente</string>
+    <string name="id_onboarding_update_email_help_link">Por que pedimos o e-mail?</string>
+    <string name="id_onboarding_update_email_max_tries_bs_title">Você atingiu o limite de reenvios de código</string>
+    <string name="id_onboarding_update_email_max_tries_bs_message">Após algumas tentativas, não foi possível enviar um novo código em seu e-mail. Para sua segurança, aguarde %s e solicite novamente.</string>
+    <string name="id_onboarding_update_email_unavailable_bs_title">Parece que este e-mail já foi cadastrado</string>
+    <string name="id_onboarding_update_email_unavailable_bs_message">Outra pessoa já registrou este e-mail. Por favor, utilize outro e-mail.</string>
+    <string name="id_onboarding_update_email_unavailable_bs_button">Tentar outro e-mail</string>
+    <string name="id_onboarding_update_email_domain_restricted_bs_title">Domínio de e-mail não permitido</string>
+    <string name="id_onboarding_update_email_confirm">Confirmar</string>
+    <string name="id_onboarding_update_email_confirm_email">Confirmar e-mail</string>
+    <string name="id_onboarding_update_email_alert_message"><![CDATA[Vamos enviar um código de autenticação para o seu e-mail. <b>Confira sua caixa de entrada, o código expirará em 30 minutos.</b>]]></string>
+    <!-- Email Validation -->
+    <string name="id_onboarding_update_email_validation_title">%s, insira o código enviado por e-mail</string>
+    <string name="id_onboarding_update_email_validation_subtitle"><![CDATA[Enviamos um código de autenticação para o e-mail <b>%s</b><br/><br/><font color=#0774E7>O e-mail está errado?</font>]]></string>
+    <string name="id_onboarding_update_email_foreign_validation_subtitle"><![CDATA[Enviamos um código de autenticação para o e-mail <b>%s</b>]]></string>
+    <string name="id_onboarding_update_email_validation_error">O código ainda não está completo ou foi preenchido incorretamente.</string>
+    <!-- Phone Update -->
+    <string name="id_onboarding_update_phone_title">%s, como você prefere receber o código?</string>
+    <string name="id_onboarding_update_phone_empty_title">%s, não temos o seu celular em nosso cadastro</string>
+    <string name="id_onboarding_update_phone_subtitle">Vamos enviar um código de autenticação para o seu celular. Confirme o seu número ou insira um novo abaixo.</string>
+    <string name="id_onboarding_update_phone_editing_subtitle">Seu número de celular cadastrado será substituído por este novo número.</string>
+    <string name="id_onboarding_update_phone_empty_subtitle">Preencha abaixo um número de celular válido para incluirmos em seu cadastro.</string>
+    <string name="id_onboarding_update_phone_label">Seu celular cadastrado</string>
+    <string name="id_onboarding_update_phone_hint">(11) 90000–0000</string>
+    <string name="id_onboarding_update_phone_error">Por favor digite um número de celular válido.</string>
+    <string name="id_onboarding_update_phone_help_link">Por que pedimos o celular?</string>
+    <string name="id_onboarding_update_phone_btn_whatsapp">Receber por WhatsApp</string>
+    <string name="id_onboarding_update_phone_btn_sms">Receber por SMS</string>
+    <string name="id_onboarding_update_phone_no_wapp_bs_title">Você não tem o WhatsApp instalado. Deseja instalar?</string>
+    <string name="id_onboarding_update_phone_no_wapp_bs_message">Para conseguir enviar seus codigos é essencial que você tenha o WhatsApp instalado em seu celular.</string>
+    <string name="id_onboarding_update_phone_max_tries_bs_title">Você atingiu o limite de reenvios de código</string>
+    <string name="id_onboarding_update_phone_max_tries_bs_message"><![CDATA[Devido múltiplas tentativas de validação, o serviço estará disponível após <b>%s</b desde a última tentativa.]]></string>
+    <string name="id_onboarding_update_phone_unavailable_bs_title">Este celular já foi utilizado em um cadastro</string>
+    <string name="id_onboarding_update_phone_unavailable_bs_message">Algum cliente já registrou este celular em um cadastro. Por favor, tente outro celular</string>
+    <string name="id_onboarding_update_phone_unavailable_bs_button">Tentar outro e-mail</string>
+    <string name="id_onboarding_update_phone_alert_message"><![CDATA[Ao escolher uma das opções, <b>o código que você receber, expirará em 30 minutos.</b>]]></string>
+    <string name="id_onboarding_update_foreign_phone_title">Insira o seu telefone</string>
+    <string name="id_onboarding_update_foreign_phone_subtitle">Insira o telefone da pessoa que será adicionada. É importante ser um telefone utilizado apenas por essa pessoa.</string>
+    <string name="id_onboarding_update_foreign_phone_error">Não foi possível carregar os seus dados no momento, por favor, tente novamente mais tarde.</string>
+    <!-- Phone Validation -->
+    <string name="id_onboarding_update_phone_validation_title">%1$s, insira o código enviado por %2$s</string>
+    <string name="id_onboarding_update_phone_validation_subtitle"><![CDATA[Foi enviado um código de autenticação para o celular <b>%s</b><br/><br/><font color=#0774E7>O celular está errado?</font>]]></string>
+    <string name="id_onboarding_update_phone_validation_error">O código ainda não está completo ou foi preenchido incorretamente.</string>
+
+    <!-- P1 Validation -->
+    <string name="id_onboarding_validate_p1_loading_title">Aguarde enquanto validamos as suas informações...</string>
+    <string name="id_onboarding_validate_p1_loading_subtitle"><![CDATA[O processo deve levar cerca de cinco minutos. Se preferir, você pode fechar o aplicativo.<br/><br/>Em alguns casos, esse processo pode levar até cinco dias úteis. Surgiu alguma dúvida? Entre em contato com a gente pelo telefone <b>4002 5472</b> ou <b>0800 570 8472.</b>]]></string>
+    <string name="id_onboarding_validate_p1_success_bs_login_again_title">Usuário e troca de e-mail validados com sucesso.</string>
+    <string name="id_onboarding_validate_p1_success_bs_login_again_message">Para sua segurança precisamos que você faça o acesso na sua conta Cielo novamente com o seu novo e-mail.</string>
+    <string name="id_onboarding_validate_p1_success_bs_login_again_button">Acessar conta Cielo</string>
+    <string name="id_onboarding_validate_p1_success_bs_title">Seus dados de usuário foram validados com sucesso</string>
+    <string name="id_onboarding_validate_p1_success_bs_message">Agora é só aproveitar todas as funções dos canais digitais da Cielo! Tenha tudo ao alcance de suas mãos e simplifique seu dia.</string>
+    <string name="id_onboarding_validate_p1_success_data_changed_bs_title">Informações validadas com sucesso</string>
+    <string name="id_onboarding_validate_p1_success_data_changed_bs_message">Daqui pra frente, utilize o CPF ou e-mail que você acabou de atualizar para acessar sua conta Cielo.</string>
+    <string name="id_onboarding_validate_p1_timeout_bs_title">O seu acesso está em revisão interna, dados em análise </string>
+    <string name="id_onboarding_validate_p1_timeout_bs_message">Essa validação está sendo analisada. Aguarde, te avisaremos assim que essa revisão interna acabar.</string>
+    <string name="id_onboarding_validate_p1_denied_bs_title">Poxa! Não foi possível validar seus dados</string>
+    <string name="id_onboarding_validate_p1_denied_bs_message"><![CDATA[Fale com a gente pelo telefone <b>4002 5472</b> ou <b>0800 570 8472</b>, informando o seu CPF como está no documento e o número do seu estabelecimento cadastrado na Cielo.]]></string>
+
+    <string name="id_onboarding_p1_no_role_bs_title">Solicite seu acesso ou um perfil ao proprietário</string>
+    <string name="id_onboarding_p1_no_role_bs_message"><![CDATA[Para continuar usando os canais digitais, peça ao proprietário para fazer o primeiro acesso e liberar um perfil para seu usuário em gestão de acessos.<br/>Para esse estabelecimento: <b>%1$s</b>, somente o proprietário poderá liberar seu acesso aos canais digitais.<br/><br/>Seu acesso sem perfil está disponível<br/>até <b>%2$s</b>.]]></string>
+    <string name="id_onboarding_p1_no_role_mandatory_bs_title">Você está sem perfil de acesso</string>
+    <string name="id_onboarding_p1_no_role_mandatory_bs_message"><![CDATA[Para usar os canais digitais peça ao proprietário para fazer o primeiro acesso e liberar um perfil para seu usuário em gestão de acessos.<br/>Para esse estabelecimento: <b>%s</b>, somente o proprietário poderá liberar seu acesso aos canais digitais.]]></string>
+    <string name="id_onboarding_p1_with_this_profile_you_can">Com este perfil de acesso você pode:</string>
+    <string name="id_onboarding_p1_do_you_miss_some_feature">Sentiu falta de alguma funcionalidade?</string>
+    <string name="id_onboarding_p1_personal_data_updated_info">Para mais dúvidas sobre os tipos de perfis e Gestão de Acessos, acesse a sua conta Cielo com o CPF e/ou e-mail que você acabou de atualizar, vamos lá?</string>
+    <string name="id_onboarding_p1_do_you_still_have_doubts">Ainda tem dúvidas sobre tipos de perfis, atualização cadastral ou Gestão de Acessos?</string>
+    <string name="id_onboarding_p1_go_to_help_center">Acessar a Central de Ajuda</string>
+    <string name="id_onboarding_p1_viewer_ask_to_admin">Você pode solicitar a uma pessoa administradora para que altere o seu tipo de perfil.</string>
+    <string name="id_onboarding_p1_viewer_finish_validation">%s, finalizamos a atualização dos seus dados cadastrais</string>
+    <string name="id_onboarding_p1_viewer_access_can_see_extract">Consultar extrato de vendas e recebíveis</string>
+    <string name="id_onboarding_p1_viewer_access_can_see_establishment_data">Visualizar os dados cadastrais do estabelecimento</string>
+    <string name="id_onboarding_p1_analyst_access_can_see_establishment_data">Visualizar e editar os dados cadastrais do estabelecimento</string>
+    <string name="id_onboarding_p1_analyst_cancel">Cancelar vendas</string>
+    <string name="id_onboarding_p1_viewer_access_can_create_payment_links">Criar e gerenciar Link de Pagamento</string>
+    <string name="id_onboarding_p1_viewer_access_can_ask_for_materials">Solicitar bobina, materiais e manutenção de maquininhas</string>
+    <string name="id_onboarding_p1_admin_access_to_conclude_title">Para concluir a configuração do seu perfil, precisamos que você envie fotos do seu documento e do seu rosto. Vamos lá?</string>
+    <string name="id_onboarding_p1_admin_access_to_conclude_subtitle">A confirmação por foto é necessária para liberar o acesso de administrador, analista e personalizado. Envie as fotos para ter acesso completo aos canais!</string>
+    <string name="id_onboarding_p1_admin_access_can_title">Você pode acessar todas as funções e configurações do estabelecimento. Além de:</string>
+    <string name="id_onboarding_p1_admin_access_can_invite_people_title">Convidar pessoas e atribuir perfis</string>
+    <string name="id_onboarding_p1_admin_access_can_invite_people_subtitle">Controle os acessos ao seu estabelecimento criando novos administradores e visualizadores.</string>
+    <string name="id_onboarding_p1_admin_access_can_change_profiles_title">Alterar perfis e remover convidados</string>
+    <string name="id_onboarding_p1_admin_access_can_change_profiles_subtitle">Consulte e altere as permissões de quem acessa o seu estabelecimento sempre que quiser. Remova usuários que não fazem parte da sua empresa.</string>
+    <string name="id_onboarding_p1_admin_access_can_resend_invites_title">Reenviar convites de acesso</string>
+    <string name="id_onboarding_p1_admin_access_can_resend_invites_subtitle">Os convites expiram quando não há ação de quem foi convidado. Reenvie seus convites sempre que for preciso.</string>
+    <string name="id_onboarding_p1_data_ok">Seus dados foram validados!</string>
+    <string name="id_onboarding_p1_technical_access_can_title"><![CDATA[O seu perfil possui acesso <b>apenas ao Gerenciamento de chaves.</b>]]></string>
+    <string name="id_onboarding_p1_custom_access_can_title"><![CDATA[O seu perfil de acesso é <b>personalizado</b>, ou seja, ele foi feito para você pelo responsável do estabelecimento. Isso significa que as configurações e permissões foram adaptadas de acordo com as suas responsabilidades.]]></string>
+
+    <!-- P2 -->
+    <!-- Pictures Start -->
+    <string name="id_onboarding_pictures_send_to_conclude">%s, envie suas fotos para concluir a configuração do seu perfil de acesso</string>
+    <string name="id_onboarding_access_profile_information_title"><![CDATA[O <b>seu perfil de acesso</b> no estabelecimento <b>%s</b> (CNPJ raíz: %s), é do tipo:]]></string>
+    <string name="id_onboarding_access_profile_cpf_information_title"><![CDATA[O <b>seu perfil de acesso</b> no estabelecimento <b>%s</b> (CPF: %s), é do tipo:]]></string>
+    <string name="id_onboarding_pictures_start_title">%s, vamos tirar algumas fotos.</string>
+    <string name="id_onboarding_pictures_start_message"><![CDATA[Agora vamos tirar uma selfie e algumas fotos dos documentos para análise e segurança.<br/>Assim você pode aproveitar todas as funcionalidades do app.]]></string>
+    <string name="id_onboarding_pictures_start_send_now">Enviar fotos agora</string>
+    <string name="id_onboarding_pictures_start_send_later">Enviar fotos depois</string>
+
+    <!--P2 Restart -->
+    <string name="id_onboarding_pictures_restart_warning_title">Não foi possível validar sua identidade</string>
+    <string name="id_onboarding_pictures_restart_warning_message">Vamos tentar de novo? Envie novas fotos do seu rosto e documento para aproveitar todas as funcionalidades do App Cielo Gestão!</string>
+    <string name="id_onboarding_pictures_restart_warning_button_label">Tirar novas fotos</string>
+
+    <!-- Pictures Later -->
+    <string name="id_onboarding_pictures_later_title">Importante</string>
+    <string name="id_onboarding_pictures_later_message"><![CDATA[<b>Ao deixar de efetuar essa etapa seu acesso será limitado!</b> Pedimos a validação do seu documento como uma medida de segurança.]]></string>
+    <string name="id_onboarding_pictures_later_message_items"><![CDATA[<b>Realizando a etapa, você garante:</b><br/>&#8226; Acesso ilimitado e seguro de sua conta;<br/>&#8226; Maior autonomia e independência em sua jornada;]]></string>
+    <!-- Pictures LGPD -->
+    <string name="id_onboarding_pictures_lgpd_title">Tire uma foto do seu documento e uma selfie</string>
+    <string name="id_onboarding_pictures_lgpd_message">Para confirmar a sua identidade, precisamos que nos envie uma foto do seu documento.</string>
+    <string name="id_onboarding_pictures_lgpd_link_message">Abra, leia e concorde com todos os termos para ter o acesso total ao app Gestão:</string>
+    <string name="id_onboarding_pictures_lgpd_link">Termo LGPD</string>
+    <!-- Pictures Select Doc -->
+    <string name="id_onboarding_pictures_select_doc_title">%s, qual documento você quer enviar?</string>
+    <string name="id_onboarding_pictures_select_doc_rg_title">RG</string>
+    <string name="id_onboarding_pictures_select_doc_rg_desc">Documento estadual de identidade</string>
+    <string name="id_onboarding_pictures_select_doc_unique_rg_title">Novo RG</string>
+    <string name="id_onboarding_pictures_select_doc_unique_rg_desc">Documento nacional de identidade</string>
+    <string name="id_onboarding_pictures_select_doc_cnh_title">CNH</string>
+    <string name="id_onboarding_pictures_select_doc_cnh_desc">Carteira nacional de habilitação</string>
+    <string name="id_onboarding_pictures_select_doc_rne_title">Documento do Estrangeiro</string>
+    <string name="id_onboarding_pictures_select_doc_rne_desc">Carteira de Registro Nacional Migratório (CRNM)</string>
+    <string name="id_onboarding_pictures_attention_front_picture_rg">Atenção! Envie a fotografia da frente do seu RG</string>
+    <string name="id_onboarding_pictures_attention_for_tips_rg">Atente-se para as dicas na tela anterior, elas informam como enviar uma boa foto do seu documento.</string>
+    <string name="id_onboarding_pictures_attention_front_picture_cnh">Atenção! Tire a foto da CNH fechada</string>
+    <string name="id_onboarding_pictures_attention_for_tips_cnh"><![CDATA[A primeira foto será <b>somente da frente</b> do seu documento.]]></string>
+    <string name="id_onboarding_pictures_send_front_picture">Enviar foto da frente</string>
+    <string name="id_onboarding_pictures_attention_front_picture_crnm">Atenção! Envie a fotografia da frente do seu documento</string>
+    <string name="id_onboarding_pictures_attention_for_tips_crnm">Atente-se para as dicas na tela anterior, elas informam como enviar uma boa foto do seu documento.</string>
+    <!-- Select Digital Doc -->
+    <string name="id_onboarding_select_digital_doc_title">Tipo do documento</string>
+    <string name="id_onboarding_select_digital_doc_subtitle">Agora, selecione o tipo de documento que deseja utilizar, físico ou digital</string>
+    <string name="id_onboarding_select_digital_doc_physical_title">Documento físico</string>
+    <string name="id_onboarding_select_digital_doc_physical_rg_subtitle">RG (Identidade)</string>
+    <string name="id_onboarding_select_digital_doc_physical_cnh_subtitle">CNH (Habilitação)</string>
+    <string name="id_onboarding_select_digital_doc_digital_title">Documento digital</string>
+    <!-- Pictures Doc Guide -->
+    <string name="id_onboarding_digital_doc_guide_title">Faça o envio do documento de identificação digital</string>
+    <string name="id_onboarding_digital_doc_guide_file"><![CDATA[O <font color=#009E55><b>documento digital</b></font> deve estar em formato <font color=#009E55><b>PDF.</b></font>]]></string>
+    <string name="id_onboarding_digital_doc_guide_folder"><![CDATA[<font color=#009E55><b>Salve a versão digital</b></font> em um local de fácil acesso em seu dispositivo.]]></string>
+    <string name="id_onboarding_digital_doc_guide_upload">Anexe e envie o documento.</string>
+    <string name="id_onboarding_digital_doc_guide_document"><![CDATA[Certifique-se de que o documento<font color=#009E55><b> esteja aberto</b></font> no anexo.]]></string>
+    <string name="id_onboarding_digital_doc_guide_attach_document_title">Anexe o seu documento digital</string>
+    <string name="id_onboarding_digital_doc_guide_error_bs_title">Documento não detectado</string>
+    <string name="id_onboarding_digital_doc_guide_button">Confirmar Envio</string>
+    <string name="id_onboarding_digital_doc_guide_attach_delete_title">Tem certeza que quer apagar o documento anexado?</string>
+    <string name="id_onboarding_digital_doc_guide_attach_size_error">O documento possui mais de 4mb. Por favor, reduza o tamanho para até 4mb e anexe novamente.</string>
+    <string name="id_onboarding_digital_doc_guide_attach_error_extension">Documento com extensão incorreta. Extensões aceitas: .PDF.</string>
+    <string name="id_onboarding_digital_doc_guide_attach_document_btn">Anexar</string>
+    <string name="id_onboarding_digital_doc_guide_error_bs_text">Não foi possível identificar o seu documento. Verifique se o documento que você selecionou não difere do documento enviado ou siga as orientações que serão apresentadas.\nVamos lá?</string>
+    <string name="loading_upload_digital_doc_picture">Enviando Documento</string>
+    <string name="loading_upload_digital_doc_picture_success">Documento enviado com sucesso!</string>
+    <string name="pdf_bottom_sheet_title">Visualizar documento anexado</string>
+    <!-- Pictures Doc Guide -->
+    <string name="id_onboarding_pictures_doc_guide_title">Siga essas dicas para tirar uma boa foto:</string>
+    <string name="id_onboarding_pictures_doc_guide_rg_case"><![CDATA[Se o seu RG está plastificado, <font color=#009E55><b>posicione de uma maneira que evite reflexos.</b></font> Lembre-se, a foto deve estar com seus dados legíveis]]></string>
+    <string name="id_onboarding_pictures_doc_guide_rg_sun"><![CDATA[Escolha um <font color=#009E55><b>ambiente iluminado, evite usar o flash</b></font> para não criar reflexos]]></string>
+    <string name="id_onboarding_pictures_doc_guide_rg_position"><![CDATA[Posicione a <font color=#009E55><b>frente do seu RG</b></font> no local que vai ser indicado na tela]]></string>
+    <string name="id_onboarding_pictures_doc_guide_cnh_case"><![CDATA[<font color=#009E55><b>Retire a proteção de plástico</b></font> da sua CNH para evitar reflexos]]></string>
+    <string name="id_onboarding_pictures_doc_guide_cnh_sun"><![CDATA[Escolha um <font color=#009E55><b>ambiente iluminado, evite usar o flash</b></font> para não criar reflexos]]></string>
+    <string name="id_onboarding_pictures_doc_guide_cnh_position"><![CDATA[Posicione a <font color=#009E55><b>frente da sua CNH</b></font> no local que vai ser indicado na tela]]></string>
+    <string name="id_onboarding_pictures_doc_guide_rne_position"><![CDATA[Posicione a <font color=#009E55><b>frente do documento</b></font> no local que vai ser indicado na tela]]></string>
+    <string name="id_onboarding_pictures_doc_guide_cnh_error_message">Não foi possível capturar seu documento agora. Por favor, tente novamente mais tarde</string>
+    <string name="id_onboarding_pictures_doc_guide_bg"><![CDATA[<font color=#009E55><b>Coloque seu documento sobre uma superfície lisa,</b></font> como uma mesa ou bancada]]></string>
+    <!-- Pictures Selfie Guide -->
+    <string name="id_onboarding_pictures_selfie_guide_title">Vamos tirar uma foto do seu rosto?</string>
+    <string name="id_onboarding_pictures_selfie_guide_subtitle">Siga as dicas abaixo e capriche na selfie! Essa foto será usada apenas para confirmar a sua identidade.</string>
+    <string name="id_onboarding_pictures_selfie_guide_glasses">Retire os óculos e outros acessórios como boné, capuz ou gorro</string>
+    <string name="id_onboarding_pictures_selfie_guide_sun"><![CDATA[Escolha um ambiente <b>bem iluminado e com uma parede neutra</b> ao fundo]]></string>
+    <string name="id_onboarding_pictures_selfie_guide_document"><![CDATA[A pessoa na selfie precisa ser a <b>mesma pessoa</b> do documento enviado. ]]></string>
+    <string name="id_onboarding_pictures_selfie_guide_position">Segure o celular na altura dos seus olhos e encaixe  o rosto no local que vai ser indicado na tela</string>
+    <string name="id_onboarding_pictures_selfie_guide_privacy"><![CDATA[Entenda como tratamos seus dados pessoais em nossa <b><font color=#0774E7>Politica de Privacidade da Cielo</font></b>]]></string>
+    <string name="id_onboarding_pictures_selfie_guide_permission_title">Tem certeza que deseja negar o acesso a câmera?</string>
+    <string name="id_onboarding_pictures_selfie_guide_permission_message"><![CDATA[Atenção! Para dar <b>continuidade no processo, é necessário habilitar a câmera.</b>]]></string>
+    <string name="id_onboarding_pictures_selfie_guide_permission_not_enable">Não desejo habilitar</string>
+    <string name="id_onboarding_pictures_selfie_guide_permission_enable">Acessar ajustes para habilitar</string>
+    <string name="id_onboarding_pictures_selfie_guide_cam_error_message">Ocorreu um erro ao tentar abrir a câmera</string>
+    <string name="id_onboarding_pictures_selfie_guide_selfie_error_message">Não foi possível capturar sua selfie agora. Por favor, tente novamente mais tarde</string>
+    <string name="id_onboarding_pictures_selfie_guide_selfie_centralize_face">Lembre-se: Posicione o seu rosto na posição indicada na câmera</string>
+    <string name="id_onboarding_pictures_selfie_guide_selfie_close_face">Lembre-se: Aproxime o seu rosto na posição indicada na câmera</string>
+    <string name="id_onboarding_pictures_selfie_guide_selfie_face_away">Lembre-se: Afaste um pouco o seu rosto da câmera</string>
+    <string name="id_onboarding_pictures_selfie_guide_selfie_not_satisfactory_lighting">Lembre-se: Esteja num ambiente iluminado para enviar uma boa foto</string>
+    <string name="id_onboarding_pictures_selfie_guide_selfie_outside_focus">Lembre-se: Estabilize e foque a câmera no seu rosto</string>
+    <string name="id_onboarding_pictures_selfie_guide_selfie_remove_glasses">Lembre-se: Retire óculos e outros acessórios para enviar a foto</string>
+    <string name="id_onboarding_invalid_selfie_error_title">Não conseguimos validar sua foto</string>
+    <string name="id_onboarding_invalid_selfie_error_message">Ocorreu um erro ao validar a sua foto. Siga as instruções e tente novamente.</string>
+
+    <!-- Pictures BRSCAN Guide-->
+    <string name="brscan_documento_captura_estado_encaixe_documento">Encaixe seu documento aqui</string>
+    <string name="brscan_documento_captura_estado_afaste_documento">Afaste um pouco a câmera</string>
+    <string name="brscan_confirma_documento_frente_subtitle">Confira se a foto ficou nítida e sem reflexos. As informações também precisam estar legíveis.</string>
+    <string name="brscan_confirma_documento_verso_subtitle">Confira se a foto ficou nítida e sem reflexos. As informações também precisam estar legíveis.</string>
+    <string name="brscan_confirma_documento_continuar_botao_de_acao">Sim, continuar</string>
+    <string name="brscan_confirma_documento_repetir_botao_de_acao">Não, tirar outra</string>
+    <string name="brscan_confirma_documento_finalizar_botao_de_acao">Sim, continuar</string>
+    <string name="brscan_documento_proximo_processso_frente_title">Agora, vamos tirar uma foto da frente do seu documento</string>
+    <string name="brscan_documento_proximo_processso_verso_title">Agora, vamos tirar uma foto do verso do seu documento</string>
+    <string name="brscan_documento_proximo_processso_botao_de_acao">Abrir câmera</string>
+
+    <string name="FaceTec_action_im_ready">Vamos lá</string>
+    <string name="FaceTec_instructions_header_ready_1">Hora da foto!</string>
+    <string name="FaceTec_instructions_header_ready_2" />
+    <string name="FaceTec_feedback_hold_steady">Mantenha essa posição</string>
+    <string name="FaceTec_feedback_move_phone_closer">Aproxime seu rosto</string>
+    <string name="FaceTec_instructions_message_ready_1">Enquadre seu rosto na marcação e aperte o botão abaixo para começar</string>
+
+    <!-- StoneAge SDK -->
+    <string name="capture_document_unknown_error_message"><![CDATA[Parece que tivemos algum problema por aqui. Vamos resolver isso e você pode voltar para <b>tentar de novo mais tarde,</b> combinado?]]></string>
+    <string name="capture_document_image_not_good_title">A imagem não está boa o suficiente</string>
+    <string name="capture_document_image_not_good_message"><![CDATA[Não foi possível identificar o seu documento. Certifique-se de tirar foto do documento sem nenhum plástico ou qualquer outra coisa que possa dificultar a visualização do mesmo.<br/> Vamos tentar de novo?]]></string>
+    <string name="capture_document_no_face_detected_title">Rosto não detectado</string>
+    <string name="capture_document_no_face_detected_message"><![CDATA[Na última vez, a foto do seu rosto estava fora do enquadramento. Por favor, posicione o seu rosto no enquadramento da câmera e siga as orientações que serão apresentadas.<br/> Vamos lá?]]></string>
+    <string name="capture_document_not_detected_title">Documento não detectado</string>
+    <string name="capture_document_not_detected_message"><![CDATA[Não foi possível identificar o seu documento, enquadre o documento no quadrado selecionado para tirar a foto de acordo com a orientação.<br/> Vamos lá?]]></string>
+    <string name="capture_document_wrong_side_detected_title">O lado apresentado está divergente</string>
+    <string name="capture_document_wrong_side_detected_message"><![CDATA[Não foi possível identificar o seu documento, enquadre o documento no quadrado selecionado para tirar a foto de acordo com a orientação.<br/> Vamos lá?]]></string>
+    <string name="capture_document_multiple_documents_detected_title">Foi identificado mais de um documento</string>
+    <string name="capture_document_multiple_documents_detected_message"><![CDATA[Foi identificado documentos divergentes, certifique-se de que você está validando apenas um documento.<br/> Vamos lá?]]></string>
+    <string name="capture_document_too_many_faces_title">Foi identificado mais de um rosto no documento</string>
+    <string name="capture_document_too_many_faces_message"><![CDATA[Foi identificado rostos divergentes, certifique-se de que você está validando apenas um documento.<br/> Vamos lá?]]></string>
+    <string name="capture_document_opened_document_title">Documento aberto</string>
+    <string name="capture_document_opened_document_message"><![CDATA[Não foi possível identificar o documento. Por favor, posicione um lado de cada vez do documento, enquadre na câmera de acordo com as orientações que serão apresentadas.<br/> Vamos lá?]]></string>
+    <string name="capture_document_cropped_document_title">Documento não foi identificado por inteiro</string>
+    <string name="capture_document_cropped_document_message"><![CDATA[Na última vez, o documento estava fora do enquadramento. Por favor, posicione o seu documento no enquadramento da câmera e siga as orientações que serão apresentadas.<br/> Vamos lá?]]></string>
+    <string name="capture_document_no_document_side_detected_title">Nenhum dos lados do documento foi detectado</string>
+    <string name="capture_document_no_document_side_detected_message"><![CDATA[Não foi possível identificar a frente e verso do documento, enquadre o documento no quadrado selecionado para tirar a foto de acordo com a orientação.<br/> Vamos lá?]]></string>
+    <string name="capture_document_error_bottom_sheet">BottomSheetCaptureDocumentError</string>
+    <string name="capture_document_different_documents_detected_message"><![CDATA[Não foi possível identificar o seu documento. Verifique se o documento que você selecionou não difere do documento enviado ou siga as orientações que serão apresentadas.<br/> Vamos lá?]]></string>
+    <string name="selfie_error_title">Não conseguimos validar sua foto</string>
+    <string name="selfie_image_not_good_message">A imagem enviada está com a qualidade muito baixa, siga as instruções e tente novamente.</string>
+    <string name="selfie_no_face_detected_message">Nenhum rosto foi detectado na foto enviada, siga as instruções e tente novamente.</string>
+    <string name="selfie_too_many_faces_message">Foi encontrado mais de um rosto na foto enviada, siga as instruções e tente novamente.</string>
+    <string name="selfie_wearing_hat_message">Detectamos que você está usando boné na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_wearing_glasses_message">Detectamos que você está usando óculos na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_wearing_mask_message">Detectamos que você está usando máscara na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_face_not_centered_message">Centralize o seu rosto na área demarcada e tente novamente.</string>
+    <string name="selfie_face_too_far_message">Rosto muito distante da câmera, siga as instruções e tente novamente.</string>
+    <string name="selfie_face_is_smiling_message">Detectamos que você está sorrindo na foto, siga as instruções e tente novamente.</string>
+    <string name="selfie_face_too_close_message">Rosto muito próximo da câmera, siga as instruções e tente novamente.</string>
+    <string name="selfie_face_too_bright_message">Ambiente muito claro, não conseguimos detectar o seu rosto, siga as instruções e tente novamente.</string>
+    <string name="selfie_face_too_dark_message">Ambiente muito escuro, não conseguimos detectar o seu rosto, siga as instruções e tente novamente.</string>
+    <string name="selfie_success_bottom_sheet_title">Reconhecimento facial concluído !</string>
+    <string name="selfie_success_bottom_sheet_message">Obrigado por nos ajudar a cuidar da sua segurança!\nAgora que já confirmamos a sua identidade, clique no botão para continuar e trocar a sua senha!</string>
+    <string name="selfie_check_identify_title">Antes de continuar, você é %s?</string>
+    <string name="selfie_check_identify_message">Todo processo de validação deve ser feito por %s, que recebeu o convite.</string>
+    <string name="selfie_check_identify_title_error">Você não pode prosseguir com o fluxo.</string>
+    <string name="selfie_check_identify_message_error">Peça para %s continuar com esse processo.</string>
+    <string name="selfie_check_identify_button_negative">Não sou essa pessoa</string>
+    <string name="selfie_check_identify_button_positive">Sim, sou essa pessoa</string>
+
+    <!-- P2 Validation -->
+    <string name="id_onboarding_validate_p2_loading_title">Falta pouco!</string>
+    <string name="id_onboarding_validate_p2_loading_subtitle"><![CDATA[Agora é só esperar enquanto validamos sua identidade, isso pode levar alguns minutos.<br/><br/>
+Em alguns casos, esse processo pode levar até cinco dias úteis. Surgiu alguma dúvida? Entre em contato com a gente pelo telefone <b>4002 5472</b> ou <b>0800 570 8472.</b>]]></string>
+    <string name="id_onboarding_validate_p2_foreign_loading_title">Dados enviados para\n análise</string>
+    <string name="id_onboarding_validate_p2_foreign_loading_subtitle">Informações enviadas para aprovação do administrador. Assim que aprovado, você terá acesso a esse estabelecimento.</string>
+    <string name="id_onboarding_validate_p2_validate_infos">Essa validação pode demorar alguns minutos, em alguns casos, esse processo pode levar até cinco dias úteis, por favor aguarde. Assim que finalizado, você poderá acessar a sua conta.</string>
+    <string name="id_onboarding_validate_p2_data_sent_title">Dados enviados para análise</string>
+    <string name="id_onboarding_validate_p2_data_sent_message"><![CDATA[Essa validação pode demorar um pouco, por favor aguarde.<br/>Te avisaremos por e-mail assim que a análise terminar!]]></string>
+    <string name="id_onboarding_validate_p2_generic_error"><![CDATA[Parece que tivemos algum problema por aqui. Vamos resolver isso e você pode voltar para <b>tentar de novo mais tarde</b>, combinado?]]></string>
+
+    <!-- HomeStatusCard -->
+    <string name="id_onboarding_home_status_card_update_data_title">Atualize seus dados</string>
+    <string name="id_onboarding_home_status_card_waiting_title">Dados em análise</string>
+    <string name="id_onboarding_home_status_card_send_docs_title">Enviar documentos</string>
+    <string name="id_onboarding_home_status_card_approved_title">Documentos aprovados</string>
+    <string name="id_onboarding_home_status_card_update_data_message">Para que possa acessar todas as funções do app</string>
+    <string name="id_onboarding_home_status_card_waiting_message">Em breve você terá acesso a todas as funcionalidades do app</string>
+    <string name="id_onboarding_home_status_card_send_docs_message">Confirme sua identidade para liberar o acesso de administrador</string>
+    <string name="id_onboarding_home_status_card_send_docs_message_analyst">Confirme sua identidade para liberar o acesso de analista</string>
+    <string name="id_onboarding_home_status_card_approved_message">Aproveite a Gestão de Acessos e todas as funções do seu app</string>
+
+    <!-- Onboarding -->
+    <string name="id_onboarding_start_btn">Vamos começar!</string>
+    <string name="id_onboarding_validate_data_title">Valide seus dados agora</string>
+    <string name="id_onboarding_validate_data_message">O primeiro passo para liberar sua Gestão de Acessos é uma atualização de dados. Vamos confirmar seu CPF, e-mail e telefone.</string>
+    <string name="id_onboarding_different_profiles_title">Diferentes perfis de acesso para cada usuário</string>
+    <string name="id_onboarding_different_profiles_message">Com a Gestão de Acessos, os colaboradores do seu negócio são atribuídos a um tipo de perfil, que pode ser:  Administrador, Analista ou Visualizador.</string>
+    <string name="id_onboarding_different_profiles_btn">Saiba mais sobre cada perfil</string>
+    <string name="id_onboarding_control_title">Mais controle sobre as informações do negócio</string>
+    <string name="id_onboarding_control_message"><![CDATA[Validar seus dados cadastrais vai tornar seu negócio ainda mais protegido contra fraudes. Além de liberar a nova função de <b>Gestão de Acessos!</b>]]></string>
+    <string name="id_onboarding_experience_title">Sua experiência mais completa e ainda mais segura!</string>
+    <string name="id_onboarding_experience_message">Com a validação de dados cadastrais, vamos confirmar sua identidade e de todos os colaboradores do seu negócio.</string>
+    <string name="id_onboarding_experience_btn">Porque preciso validar meus dados?</string>
+
+    <!-- Onboarding Status-->
+    <string name="id_onboarding_status_continue_p1_title">%s, que bom te ver aqui de novo!</string>
+    <string name="id_onboarding_status_continue_p1_subtitle"><![CDATA[Parece que você já iniciou a validação cadastral. Lembrando que, a partir de <b>%s</b> você só irá conseguir acessar sua conta após concluir a validação.]]></string>
+    <string name="id_onboarding_status_continue_p1_action">Por que preciso validar meus dados</string>
+    <string name="id_onboarding_status_update_later">Validar mais tarde</string>
+    <string name="id_onboarding_status_continue_update">Continuar validação</string>
+    <string name="id_onboarding_status_blocked_title">%s, valide seus dados para acessar sua conta</string>
+    <string name="id_onboarding_status_blocked_subtitle">O prazo que você tinha para adiar a validação dos seus dados expirou. Mas não se preocupe, vamos continuar de onde você parou!</string>
+    <string name="id_onboarding_status_did_start_subtitle">É necessário validar seus dados cadastrais  para liberar a Gestão de Acessos e atribuir seu perfil com segurança. Não se preocupe, vamos te guiar durante todo o processo! </string>
+    <string name="id_onboarding_status_did_start_update">Validar</string>
+    <string name="id_onboarding_status_update_my_data">Validar meus dados</string>
+    <string name="id_onboarding_status_did_start_and_blocked_title">O prazo para validar seus dados expirou</string>
+
+    <string name="id_onboarding_status_did_start_and_blocked_subtitle"><![CDATA[Por segurança, seu acesso foi temporariamente bloqueado. Conclua a validação para acessar sua conta.<br/>
+    Não se preocupe, vamos te guiar durante todo o processo!]]></string>
+
+    <string name="id_onboarding_status_did_start_and_in_the_last_days_subtitle"><![CDATA[É necessário validar seus dados cadastrais  para liberar a Gestão de Acessos e atribuir seu perfil com segurança.<br/>
+    Lembrando que, a partir de <b>%s</b>  você só irá conseguir acessar sua conta após concluir a validar.]]></string>
+
+    <string name="id_onboarding_status_update_dialog_title">O prazo para validar seus dados está quase no fim</string>
+    <string name="id_onboarding_status_update_dialog_subtitle">Após o dia %s, o seu acesso será temporariamente bloqueado. Quer mesmo deixar para depois?</string>
+    <string name="id_onboarding_status_update_later_dialog">Sim, deixar para depois</string>
+    <string name="id_onboarding_status_update_now_dialog">Validar agora</string>
+    <string name="id_onboarding_status_access_currently_blocked_title">Seu acesso está bloqueado no momento</string>
+    <string name="id_onboarding_status_access_currently_blocked_message"><![CDATA[Para continuar utilizando o App Cielo Gestão, regularize a sua situação na Receita Federal.<br/><br/>Em 24h após a terceira tentativa de atualização cadastral, você pode tentar novamente.]]></string>
+    <string name="id_onboarding_status_copy_service_email">Copiar e-mail de atendimento</string>
+
+    <string name="id_onboarding_status_email_copied">E-mail copiado</string>
+    <string name="id_onboarding_status_service_email">atendimento_appcielo@cielo.com.br</string>
+
+    <plurals name="id_onboarding_status_did_start_title">
+        <item quantity="one">Valide seus dados em até %d dia</item>
+        <item quantity="other">Valide seus dados em até %d dias</item>
+    </plurals>
+
+    <string name="id_onboarding_title_loading_send_docs">Enviando fotos</string>
+    <string name="id_onboarding_message_loading_send_docs">Suas fotos estão sendo enviadas para análise. Por favor, aguarde alguns instantes</string>
+    <string name="id_onboarding_message_error_send_docs">Por favor, entre novamente em sua conta para prosseguir com o envio de fotos</string>
+    <string name="id_onboarding_title_bs_error_p2_login">Ops, algo aconteceu!</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@drawable/box_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@drawable/outline_rounded_shape_color_c5ced7"
+        android:drawableEnd="@drawable/ic_mearchant_search"
+        android:fontFamily="@font/ubuntu"
+        android:hint="@string/change_ec_search_hint"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:paddingEnd="@dimen/dimen_16dp"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddEc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        style="@style/Paragraph_300_Regular_14_Brand_400"
+        android:text="@string/change_ec_add_ec"
+        android:textColor="@color/brand_400"
+        android:drawableStart="@drawable/plus_circle"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/edit_search"
+        tools:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/progress_child"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddEc" />
+
+    <ProgressBar
+        android:id="@+id/progress_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+        app:layout_constraintBottom_toTopOf="@+id/backButton" />
+
+    <br.com.cielo.libflue.button.CieloSmallLightButton
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:text="@string/change_ec_btn_back"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

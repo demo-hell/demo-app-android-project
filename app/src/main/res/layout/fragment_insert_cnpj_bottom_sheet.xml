@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_title_cnpj"
+        android:layout_width="24dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:background="@drawable/ic_drag_bottom_sheet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_title_insert_cnpj"
+        style="@style/TextViewResumeBankAndCNPJTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title_insert_cnpj"
+        app:layout_constraintTop_toBottomOf="@id/view_title_cnpj" />
+
+    <TextView
+        android:id="@+id/text_subtitle_insert_cnpj"
+        style="@style/TextViewResumeBankAndCNPJSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_subtitle_insert_cnpj"
+        android:textColor="@color/color_5A646E"
+        app:layout_constraintTop_toBottomOf="@id/text_title_insert_cnpj" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_subtitle_insert_cnpj">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/text_cnpj"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_background_cnpj_gray"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:textColor="@color/color_5A646E"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="14.463.732/" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/text_root_cnpj"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_background_cnpj"
+            android:hint="@string/hint_root_cnpj"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:textColor="@color/color_353A40"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:typeface="MuseoSans-500.ttf" />
+
+        <TextView
+            android:id="@+id/text_view_error_mfa_cnpj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/text_error_cnpj_mfa_bank"
+            android:textColor="@color/red_DC392A"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/text_root_cnpj"
+            app:layout_constraintTop_toBottomOf="@id/text_root_cnpj" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+        android:id="@+id/btn_chat_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:textSize="@dimen/dimen_14sp"
+        android:background="@drawable/btn_bottom_unselector"
+        android:text="@string/btn_chat_insert_cnpj"
+        android:textAppearance="@style/BntBottomBackgroundWhite"
+        app:layout_constraintTop_toBottomOf="@id/container_cnpj" />
+
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/btn_send_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:enabled="false"
+        android:text="@string/btn_send_insert_cnpj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_chat_cnpj" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

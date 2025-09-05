@@ -1,0 +1,42 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dimen_272dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dimen_8dp">
+
+    <TextView
+        android:id="@+id/cieloFarolTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/regular_montserrat_14_cloud_500"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/cielo_farol_best_day_of_week" />
+
+    <ImageView
+        android:id="@+id/cieloFarolIcon"
+        android:layout_width="@dimen/dimen_22dp"
+        android:layout_height="@dimen/dimen_22dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        tools:srcCompat="@drawable/ic_date_time_calendar_cloud_300_16_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/cieloFarolTitle"
+        app:layout_constraintTop_toBottomOf="@+id/cieloFarolTitle" />
+
+    <TextView
+        android:id="@+id/cieloFarolDescription"
+        style="@style/bold_ubuntu_20_ocean_600_spacing_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/cieloFarolIcon"
+        app:layout_constraintStart_toEndOf="@+id/cieloFarolIcon"
+        app:layout_constraintTop_toTopOf="@+id/cieloFarolIcon"
+        tools:text="Sexta-feira" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@drawable/ic_menu_fidelidade" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/home_fidelidade_title"
+            android:textColor="@color/text_color_263238"
+            android:textSize="16sp"
+            app:typeface="Museo700-Regular.ttf" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_desconto_aluguel_fidelidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_fidelidade_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Troque seus pontos por desconto no aluguel da máquina da Cielo"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    app:typeface="MuseoSans-700.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resgate descontos até 100% do valor do aluguel de uma ou mais máquinas."
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/text_color_263238"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-500.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#33838383" />
+
+            <RelativeLayout
+                android:id="@+id/layout_home_minhas_vendas_ver_mais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ver_mais"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/home_ver_mais"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp"
+                    app:typeface="MuseoSans-700.ttf" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_arrow" /> />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progress_minhas_vendas_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

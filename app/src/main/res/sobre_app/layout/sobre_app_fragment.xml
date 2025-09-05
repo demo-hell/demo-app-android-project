@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/layout_central_ajuda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentTop="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="@dimen/card_corner"
+                    app:cardElevation="6dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_alignParentTop="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/sobre_app_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Versão 1.0"
+                            android:textColor="@color/purple"
+                            android:textSize="18sp"
+                            android:layout_marginTop="51dp"
+                            android:layout_gravity="center"
+                            app:typeface="MuseoSans-700.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sobre_app_texto"
+                            android:textColor="@color/text_color_263238"
+                            android:textSize="12sp"
+                            android:layout_margin="16dp"
+                            app:typeface="MuseoSans-500.ttf" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_shape_oval"
+                    android:elevation="10dp"
+                    android:contentDescription="@null"
+                    android:padding="19dp"
+                    app:srcCompat="@drawable/simbolocielo" />
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

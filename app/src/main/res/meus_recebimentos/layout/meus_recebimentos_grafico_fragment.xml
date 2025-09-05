@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_meus_recebimentos_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/imageview_meus_recebimentos_proximo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_arrow_right_gray" />
+
+        <ImageView
+            android:id="@+id/imageview_meus_recebimentos_anterior"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:rotation="180"
+            app:srcCompat="@drawable/ic_arrow_right_gray" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_meus_recebimentos_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageview_meus_recebimentos_proximo"
+            android:layout_toRightOf="@+id/imageview_meus_recebimentos_anterior"></androidx.viewpager.widget.ViewPager>
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart_meus_recebimentos"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#FFF"
+        android:clipChildren="false"
+        android:clipToPadding="false" />
+</LinearLayout>

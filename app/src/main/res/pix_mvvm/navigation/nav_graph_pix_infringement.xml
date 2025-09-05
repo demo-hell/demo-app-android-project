@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navGraphPixInfringement"
+    app:startDestination="@id/pixInfringementSelectReasonFragment">
+
+    <fragment
+        android:id="@+id/pixInfringementSelectReasonFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.infringement.ui.selectReason.PixInfringementSelectReasonFragment"
+        android:label="PixInfringementSelectReasonFragment"
+        tools:layout="@layout/fragment_pix_infringement_select_reason">
+
+        <action
+            android:id="@+id/action_pixInfringementSelectReasonFragment_to_pixInfringementDetailWhatHappenedFragment"
+            app:destination="@id/pixInfringementDetailWhatHappenedFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixInfringementDetailWhatHappenedFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.infringement.ui.detailWhatHappened.PixInfringementDetailWhatHappenedFragment"
+        android:label="PixInfringementDetailWhatHappenedFragment"
+        tools:layout="@layout/fragment_pix_infringement_detail_what_happened">
+
+        <argument
+            android:name="PIX_CREATE_INFRINGEMENT"
+            app:argType="br.com.mobicare.cielo.pixMVVM.domain.model.PixCreateNotifyInfringement"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pixInfringementDetailWhatHappenedFragment_to_pixInfringementSendRequestFragment"
+            app:destination="@id/pixInfringementSendRequestFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixInfringementSendRequestFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.infringement.ui.sendRequest.PixInfringementSendRequestFragment"
+        android:label="PixInfringementSendRequestFragment"
+        tools:layout="@layout/fragment_pix_infringement_send_request">
+
+        <argument
+            android:name="PIX_CREATE_INFRINGEMENT"
+            app:argType="br.com.mobicare.cielo.pixMVVM.domain.model.PixCreateNotifyInfringement"
+            app:nullable="true" />
+
+    </fragment>
+
+</navigation>

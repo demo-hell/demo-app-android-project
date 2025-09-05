@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelMachines"
+                style="@style/Heading_400_Bold_16_display_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_plan_data" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_machines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:clipToPadding="true"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerMachines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:visibility="gone"
+                app:shimmer_duration="800"
+                tools:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/background_link_list_shimmer_load" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <include
+                android:id="@+id/layoutCardErrorMachines"
+                layout="@layout/layout_card_error"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_180dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutIncomingFast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@drawable/sl_background_with_border_grey"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_8dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    style="@style/Heading_400_Bold_16_display_600"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recebimento" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewChangeIncoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@drawable/background_blue_arround_corner_8"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_8dp"
+                    android:text="@string/text_view_fee_plan_incoming_button"
+                    android:textColor="@color/color_017CEB"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearLayoutIncomingFast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewIncomingWay"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/ubuntu"
+                        android:gravity="start"
+                        android:text="@string/text_view_fee_plan_incoming_way_label"
+                        android:textColor="@color/black_5A646E"
+                        android:textSize="@dimen/dimen_16sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewIncomingFast"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/ubuntu_bold"
+                        android:gravity="end"
+                        android:text="@string/text_view_fee_plan_incoming_way"
+                        android:textColor="@color/color_017CEB"
+                        android:textSize="@dimen/dimen_16sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewRRCancellation"
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:visibility="gone"
+                tools:text="Você poderá cancelar o Recebimento Automático a qualquer momento."
+                tools:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/frameInteractLeaderboardBannersOffers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_16dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerIncoming"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                app:shimmer_duration="800"
+                tools:visibility="gone">
+
+                <include layout="@layout/layout_fee_and_plan_shimmer_holder" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <include
+                android:id="@+id/layoutCardErrorIncomingFast"
+                layout="@layout/layout_card_error"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_154dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:visibility="gone" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/containerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerTaxes"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                app:shimmer_duration="800"
+                tools:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_link_list_shimmer_load" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <include
+                android:id="@+id/layoutCardErrorTaxes"
+                layout="@layout/layout_card_error"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

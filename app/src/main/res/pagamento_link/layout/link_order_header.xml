@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Heading_400_Bold_16_display_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/link_list_detail_label" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/background_card_cielo_default"
+            android:padding="@dimen/dimen_12dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewProductName"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/ubuntu_bold"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imageViewCommunication"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Camiseta infantil" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewCommunication"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:padding="@dimen/dimen_12dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewTrash"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_external_share"
+                android:tint="@color/brand_400" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewTrash"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:padding="@dimen/dimen_12dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_trash_new"
+                android:tint="@color/brand_400" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewProductPrice"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:textColor="@color/black_353A40"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewProductName"
+                tools:text="R$ 49,90" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDeliveryWayLabel"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:text="@string/link_list_delivery_way_label"
+                android:textColor="@color/black_353A40"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewProductPrice" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewDeliveryIcon"
+                android:layout_width="@dimen/dimen_43dp"
+                android:layout_height="@dimen/dimen_14dp"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                app:layout_constraintBottom_toBottomOf="@id/textViewDeliveryWayLabel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@id/textViewDeliveryWayLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewDeliveryWayLabel"
+                tools:srcCompat="@drawable/ic_loggi" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewLinkQuantityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:layout_marginEnd="@dimen/dimen_4dp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:text="@string/link_list_detail_quantity_label"
+                android:textColor="@color/black_353A40"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textViewQuantity"
+                app:layout_constraintTop_toBottomOf="@id/textViewDeliveryWayLabel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_bold"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:textColor="@color/black_353A40"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/textViewLinkQuantityLabel"
+                app:layout_constraintBottom_toBottomOf="@id/textViewLinkQuantityLabel"
+                app:layout_constraintLeft_toRightOf="@id/textViewLinkQuantityLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewLinkQuantityLabel"
+                tools:text="6" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewExlusionInfo"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:text="@string/link_list_exclusion_information"
+                android:textColor="@color/black_353A40"
+                android:textSize="@dimen/dimen_14sp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewLinkQuantityLabel" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutCopyLink"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:background="@drawable/background_card_cielo_default"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewLinkQuantityLabel"
+                tools:ignore="MissingConstraints">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/link_value"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_12dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="clo.br/12345"
+                    android:textColor="@color/color_017CEB"
+                    android:textSize="@dimen/dimen_11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imageViewCopy"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:typeface="MuseoSans-500.ttf" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewCopy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_copy_super_link"
+                    android:tint="@color/brand_400" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewmoreInformation"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_12dp"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:text="@string/tv_sl_see_more_information"
+                android:textColor="@color/blue_017CEB"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayoutCopyLink"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayoutCopyLink"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutCopyLink" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

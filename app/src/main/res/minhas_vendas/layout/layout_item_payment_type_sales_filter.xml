@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_40dp"
+    android:background="@drawable/rounded_border_gray"
+    android:gravity="center"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentTypeNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dimen_187dp"
+        android:textColor="@color/color_353A40"
+        android:textAlignment="center"
+        android:fontFamily="@font/ubuntu"
+        tools:text="Débito"/>
+
+</LinearLayout>

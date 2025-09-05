@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_account">
+
+    <fragment
+        android:id="@+id/pixReceiptMethodFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.account.ui.receiptMethod.PixReceiptMethodFragment"
+        android:label="PixReceiptMethodFragment"
+        tools:layout="@layout/fragment_pix_receipt_method">
+
+        <action
+            android:id="@+id/action_pixReceiptMethodFragment_to_pixTransferBySaleFragment"
+            app:destination="@id/pixTransferBySaleFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixReceiptMethodFragment_to_pixCieloAccountFragment"
+            app:destination="@id/pixCieloAccountFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixReceiptMethodFragment_to_pixScheduledTransferIntroFragment"
+            app:destination="@id/pixScheduledTransferIntroFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixReceiptMethodFragment_to_pixScheduledTransferEditFragment"
+            app:destination="@id/pixScheduledTransferEditFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixTransferBySaleFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.account.ui.transferBySale.PixTransferBySaleFragment"
+        android:label="PixTransferBySaleFragment"
+        tools:layout="@layout/fragment_pix_transfer_by_sale" />
+
+    <fragment
+        android:id="@+id/pixCieloAccountFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.account.ui.cieloAccount.PixCieloAccountFragment"
+        android:label="PixCieloAccountFragment"
+        tools:layout="@layout/fragment_pix_cielo_account" />
+
+    <fragment
+        android:id="@+id/pixScheduledTransferIntroFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.account.ui.scheduledTransfer.PixScheduledTransferIntroFragment"
+        android:label="PixScheduledTransferIntroFragment"
+        tools:layout="@layout/fragment_pix_scheduled_transfer_intro">
+
+        <action
+            android:id="@+id/action_pixScheduledTransferIntroFragment_to_pixScheduledTransferConfigureFragment"
+            app:destination="@id/pixScheduledTransferConfigureFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixScheduledTransferEditFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.account.ui.scheduledTransfer.PixScheduledTransferEditFragment"
+        android:label="PixScheduledTransferEditFragment"
+        tools:layout="@layout/fragment_pix_scheduled_transfer_edit">
+
+        <action
+            android:id="@+id/action_pixScheduledTransferEditFragment_to_pixScheduledTransferConfigureFragment"
+            app:destination="@id/pixScheduledTransferConfigureFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixScheduledTransferEditFragment_to_pixScheduledTransferBalanceFragment"
+            app:destination="@id/pixScheduledTransferBalanceFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixScheduledTransferConfigureFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.account.ui.scheduledTransfer.PixScheduledTransferConfigureFragment"
+        android:label="PixScheduledTransferConfigureFragment"
+        tools:layout="@layout/fragment_pix_scheduled_transfer_configure" />
+
+    <fragment
+        android:id="@+id/pixScheduledTransferBalanceFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.account.ui.scheduledTransfer.PixScheduledTransferBalanceFragment"
+        android:label="PixScheduledTransferBalanceFragment"
+        tools:layout="@layout/fragment_pix_scheduled_transfer_balance" />
+
+</navigation>

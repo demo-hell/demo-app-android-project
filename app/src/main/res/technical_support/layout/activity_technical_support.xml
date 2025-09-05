@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_f4f8f9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include android:id="@+id/toolbarTechnicalSupport"
+        layout="@layout/toolbar_main" />
+
+    <ProgressBar
+        android:id="@+id/progressTechnical"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTechnicalSupportListWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/toolbarTechnicalSupport"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_corner"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTechnicalSupportMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

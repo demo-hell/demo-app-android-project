@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <include
+        android:id="@+id/include_error"
+        layout="@layout/fragment_receba_mais_failure"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/toolbar_dialog_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/progress_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/overlay_color"
+            android:clickable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/card_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_include">
+
+            <ProgressBar
+                android:layout_width="159dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:scrollbarFadeDuration="2"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/card_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_include"
+            app:layout_constraintVertical_bias="0.0">
+
+            <FrameLayout
+                android:id="@+id/frameFormContentInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_progress"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints">
+
+            <!-- layout options -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/options_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/text_view_quantity_flags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="2 Bandeiara Selecionada"
+                    android:textColor="@color/blue_758e9d"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_ac_cancel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:typeface="MuseoSans-500.ttf" />
+
+
+                <Button
+                    android:id="@+id/btn_ac_cancel"
+                    android:layout_width="130dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_arround_white"
+                    android:bottomLeftRadius="10dp"
+                    android:bottomRightRadius="10dp"
+                    android:text="@string/du_btn_cancelar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple"
+                    android:topLeftRadius="10dp"
+                    android:topRightRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.657"
+                    app:typeface="Museo-500.ttf"
+                    tools:ignore="MissingPrefix" />
+
+                <Button
+                    android:id="@+id/btn_ac_salve"
+                    android:layout_width="130dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/button_arround_purple"
+                    android:bottomLeftRadius="10dp"
+                    android:bottomRightRadius="10dp"
+                    android:text="@string/du_btn_salvar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:topLeftRadius="10dp"
+                    android:topRightRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_ac_cancel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/btn_ac_cancel"
+                    app:layout_constraintTop_toTopOf="@+id/btn_ac_cancel"
+                    app:typeface="Museo-500.ttf"
+                    tools:ignore="MissingPrefix" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

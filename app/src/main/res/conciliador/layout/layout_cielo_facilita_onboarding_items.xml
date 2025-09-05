@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include_header_onboarding_facilita"
+            layout="@layout/include_header_onboarding_facilita"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_onboarding_facilita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="216dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include_header_onboarding_facilita"
+            app:layout_constraintVertical_bias="0.50"
+            tools:srcCompat="@drawable/ic_group_fees" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/iv_onboarding_facilita"
+            app:layout_constraintVertical_bias="0.30">
+
+            <TextView
+                android:id="@+id/tv_title_onboarding_facilita"
+                style="@style/Label_18_display_500_facilita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/conciliador_title_taxas" />
+
+            <TextView
+                android:id="@+id/tv_subtitle_onboarding_facilita"
+                style="@style/Label_16_display_400_facilita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/subtitle_onboarding_items" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_light"
+        android:text="@string/extrato_status_atualizar_dialog_pos_title"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:textColor="@color/text_color_263238"
+        android:text="@string/extrato_status_atualizar_dialog_pos_message"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_light"
+        android:text="@string/extrato_status_atualizar_dialog_smart_title"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:textColor="@color/text_color_263238"
+        android:text="@string/extrato_status_atualizar_dialog_smart_message"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_light"
+        android:text="@string/extrato_status_atualizar_dialog_tef_title"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:textColor="@color/text_color_263238"
+        android:text="@string/extrato_status_atualizar_dialog_tef_message"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_light"
+        android:text="@string/extrato_status_atualizar_dialog_ecommerce_title"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_263238"
+        android:text="@string/extrato_status_atualizar_dialog_ecommerce_message"
+        android:textSize="14sp"
+        app:typeface="MuseoSans-700.ttf" />
+
+
+</LinearLayout>

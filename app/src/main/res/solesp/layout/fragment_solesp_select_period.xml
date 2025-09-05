@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/Heading_600_regular_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dimen_2sp"
+            android:text="@string/txt_title_solesp_select_period"
+            android:textColor="@color/brand_600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            style="@style/Paragraph_400_regular_16_display_300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/txt_description_solesp_select_period"
+            android:textColor="@color/color_cloud_400"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+
+        <TextView
+            android:id="@+id/txtTitleDefineDate"
+            style="@style/Heading_300_bold_14_display_300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/txt_subtitle_define_date_solesp_select_period"
+            android:textColor="@color/color_cloud_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtDescription" />
+
+        <include
+            android:id="@+id/inputStartDate"
+            layout="@layout/layout_input_date_period_solesp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/txtTitleDefineDate" />
+
+        <include
+            android:id="@+id/inputEndDate"
+            layout="@layout/layout_input_date_period_solesp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintTop_toBottomOf="@id/inputStartDate" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupDefineDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="txtTitleDefineDate, inputStartDate, inputEndDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

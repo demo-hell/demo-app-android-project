@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_value_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_pix_summary_qrcode_original_value"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_value"
+        style="@style/label_14_display_400_ubuntu_pix_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_enter_amount_value_zero"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_value_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_interest_value_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_qrcode_interest_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_value" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_interest_value"
+        style="@style/label_14_display_400_ubuntu_pix_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_enter_amount_value_zero"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_interest_value_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_penalty_value_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_qrcode_penalty_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_interest_value" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_penalty_value"
+        style="@style/label_14_display_400_ubuntu_pix_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_enter_amount_value_zero"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_penalty_value_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_abatement_value_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_qrcode_abatement_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_penalty_value" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_abatement_value"
+        style="@style/label_14_display_400_ubuntu_pix_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_enter_amount_value_zero"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abatement_value_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_discount_value_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_qrcode_discount_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abatement_value" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_discount_value"
+        style="@style/label_14_display_400_ubuntu_pix_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_enter_amount_value_zero"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_discount_value_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

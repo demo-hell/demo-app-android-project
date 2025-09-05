@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/relativeTechnicalSupportItemContent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/textTechnicalSupportItemDescription"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        tools:text="Testando algum valor"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageDetailArrow"
+        app:srcCompat="@drawable/ic_arrow"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp" />
+
+</RelativeLayout>

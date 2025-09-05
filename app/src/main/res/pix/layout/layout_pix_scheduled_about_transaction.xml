@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutTitle"
+        style="@style/label_16_brand_600_montserrat_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_transfer_receipt_about_transaction"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutAmountTitle"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_transfer_receipt_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutAmountValue"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutAmountTitle"
+        tools:text="R$ 150,00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutTransferTypeTitle"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_transfer_type"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutAmountValue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutTransferTypeValue"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_extract_detail_status_title_pix_send"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutTransferTypeTitle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerAboutMessageSent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutTransferTypeValue">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAboutMessageSentTitle"
+            style="@style/label_16_display_300_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pix_transfer_receipt_message"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAboutMessageSentValue"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvAboutMessageSentTitle"
+            tools:text="Jogo de PS4 do homem-aranha. Seminovo." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutDateScheduledTitle"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_scheduled_to_title"
+        app:layout_constraintTop_toBottomOf="@+id/containerAboutMessageSent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutDateScheduledValue"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutDateScheduledTitle"
+        tools:text="17/06/2022" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutDateScheduledInfo"
+        style="@style/Paragraph_200_regular_12_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:lineSpacingExtra="@dimen/dimen_4dp"
+        android:text="@string/text_scheduled_to_info"
+        app:layout_constraintTop_toBottomOf="@+id/tvAboutDateScheduledValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

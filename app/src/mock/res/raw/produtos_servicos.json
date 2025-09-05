@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "thumb": "",
+      "name": "Dotz",
+      "description": "Seu cliente acumula Dotz na máquina da Cielo."
+    },
+    {
+      "id": "2",
+      "thumb": "",
+      "name": "Smiles",
+      "description": "Seu cliente acumula Smiles na máquina da Cielo."
+    },
+    {
+      "id": "3",
+      "thumb": "",
+      "name": "SKY",
+      "description": "Recargas e pagamentos de fatura direto da máquina da Cielo."
+    }
+  ]
+}

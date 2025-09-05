@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/notHiredScheduledAnticipation"
+        layout="@layout/layout_arv_scheduled_anticipation_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRootAnticipations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitleRootAnticipation"
+            style="@style/bold_montserrat_16_cloud_500_spacing_0"
+            android:textSize="@dimen/dimen_14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_16dp"
+            android:text="@string/arv_root_has_scheduled_anticipations"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/singleScheduledAnticipation"
+            layout="@layout/layout_arv_scheduled_root_anticipation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleRootAnticipation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAnticipations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/clRootAnticipations">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/bold_montserrat_16_cloud_500_spacing_0"
+            android:textSize="@dimen/dimen_14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_16dp"
+            android:text="@string/arv_ec_has_scheduled_anticipations"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/multipleScheduledAnticipation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_stroke_cloud_200_8dp_radius"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clHiredOptions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/dimen_8dp">
+
+                <include
+                    android:id="@+id/hiredScheduledAnticipationCielo"
+                    layout="@layout/layout_arv_scheduled_anticipation_hired"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/dividerScheduled"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:background="@color/color_cloud_200"
+                    app:layout_constraintTop_toBottomOf="@+id/hiredScheduledAnticipationCielo"
+                    android:visibility="gone"/>
+
+                <include
+                    android:id="@+id/hiredScheduledAnticipationMarket"
+                    layout="@layout/layout_arv_scheduled_anticipation_hired"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    app:layout_constraintTop_toBottomOf="@id/dividerScheduled"
+                    android:visibility="gone"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btHireAnotherScheduledAnticipation"
+                style="@style/semi_bold_montserrat_14_brand_400"
+                android:textColor="@color/brand_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:minHeight="@dimen/dimen_48dp"
+                android:background="@color/transparent"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawableTint="@color/brand_400"
+                android:gravity="center_vertical"
+                tools:text="@string/arv_hire_another_schedule_cielo"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clHiredOptions"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvScheduledMarketUnavailable"
+                style="@style/semi_bold_montserrat_14_cloud_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingVertical="@dimen/dimen_12dp"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:text="@string/arv_scheduled_market_unavailable"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clHiredOptions"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTrustedName"
+            style="@style/Heading_500_18_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Casa do Silencioso" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTrustedKey"
+            style="@style/label_16_display_400_ubuntu_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTrustedName"
+            tools:text="CNPJ:11.222.111/0001-21" />
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintTop_toBottomOf="@id/tvTrustedKey" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInstitutionTitle"
+            style="@style/Heading_300_bold_14_display_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            android:text="@string/text_pix_my_limits_trusted_detail_instituitions"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+        <include
+            android:id="@+id/includeDetails"
+            layout="@layout/layout_trusted_destinations_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvInstitutionTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

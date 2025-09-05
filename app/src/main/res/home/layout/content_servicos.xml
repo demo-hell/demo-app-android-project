@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@drawable/ic_menu_mais" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/home_mais_servicos_title"
+            android:textColor="@color/text_color_263238"
+            android:textSize="16sp"
+            app:typeface="Museo700-Regular.ttf" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridlayout_home_servicos"
+        style="@style/grid">
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_minhas_vendas"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout
+                    style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_vendas"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewMinhasVendas"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_minhas_vendas"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_meus_recebimentos"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_recebimentos"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewMeusRecebimentos"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_meus_recebimentos" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_antecipe_suas_vendas"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_antecipacao"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewAntecipeSuasVendas"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_antecipe" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_produtos"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_produtos"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewProdutosEServicos"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_produtos" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_fidelidade"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_fidelidade"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewCieloFidelidade"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_fidelidade" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_meu_cadastro"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_estabelecimento"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewMeuCadastro"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_meu_cadastro"
+                        android:layout_width="match_parent" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_central_ajuda"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_ajuda"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewCentralDeAjuda"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_central_ajuda" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_farol"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_cielo_lighthouse"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textViewFarol"
+                        style="@style/card_servico_label"
+                        android:text="@string/menu_farol" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_meus_cartoes"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_user_cards"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textMeusCartoes"
+                        style="@style/card_servico_label"
+                        android:text="@string/text_my_cards_title_ln" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/card_view_servicos_receba_mais"
+            android:visibility="gone"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_user_cards"/>
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textRecebaMais"
+                        style="@style/card_servico_label"
+                        android:text="@string/text_receba_mais_title_ln" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+
+
+
+    </GridLayout>
+
+</LinearLayout>

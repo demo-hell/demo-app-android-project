@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_receipt"
+        style="@style/label_16_brand_600_montserrat_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_reversal_receipt_original_transaction"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_type_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_extract_detail_transaction_receipt_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_type"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_type_title"
+        tools:text="Peter Parker" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_amount_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_reversal_receipt_original_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_type" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_amount"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_amount_title"
+        tools:text="R$450,00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_bank_destination_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_reversal_receipt_original_date_hour"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_amount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_date_hour"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_destination_title_receipt"
+        tools:text="05/01/2021 às 21:53:04" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_payer_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_reversal_receipt_original_payer_debit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_date_hour" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_payer"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payer_title_receipt"
+        tools:text="Peter Parker" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_document_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_reversal_receipt_original_document"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_payer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_document"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_document_title"
+        tools:text="***.222.962-**" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_institution_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_reversal_receipt_original_institution"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_document" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_institution"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_institution_title"
+        tools:text="Nu Pagamentos S.A." />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_auth_code_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_reversal_receipt_original_transaction_auth_code"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_institution" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_original_transaction_auth_code"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_original_transaction_auth_code_title"
+        tools:text="9992992938881930" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

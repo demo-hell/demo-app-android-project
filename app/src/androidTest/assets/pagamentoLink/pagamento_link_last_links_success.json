@@ -1,0 +1,48 @@
+{
+  "pagination" : {
+    "pageNumber" : 1,
+    "pageSize" : 25,
+    "totalElements" : 1,
+    "firstPage" : true,
+    "lastPage" : false,
+    "numPages" : 2
+  },
+  "items" : [
+    {
+      "type": "LOGGI",
+      "name": "Boneco Jaspion",
+      "price": 23.40,
+      "url": "http://google.com.br",
+      "id": "324234jfajf",
+      "shipping": {
+        "type": "CORREIOS",
+        "zipCode":"05436801",
+        "price": 10.28,
+        "name": "Rua da alvorada",
+        "spec": {
+          "dimension": {
+            "length": 20,
+            "height": 20,
+            "width" : 20
+          }
+        },
+        "pickupAddress": {
+
+          "type": "RUA",
+          "streetAddress": "Almeida da Silva",
+          "streetAddress2": "Na rua do estibordo",
+          "neighborhood": "Vale dos lagos",
+          "city": "São Paulo",
+          "number": "32",
+          "state": "São Paulo",
+          "zipCode": "400000",
+          "contactPhone": "11 9999999999",
+          "note": "Some note"
+        },
+        "withdrawalDelay": 3
+      },
+      "quantity": 1,
+      "createdDate" : "2020-05-26"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:paddingVertical="@dimen/dimen_16dp"
+    android:paddingStart="@dimen/dimen_16dp"
+    android:paddingEnd="@dimen/dimen_36dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderNumberLabel"
+        style="@style/Label_200_Regular_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_number_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivIconInfo"
+        android:layout_width="@dimen/dimen_16dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderNumberLabel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderNumber"
+        style="@style/Label_400_bold_16_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivIconInfo"
+        app:layout_constraintStart_toEndOf="@id/ivIconInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrderNumberLabel"
+        tools:text="0001234" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDateLabel"
+        style="@style/Label_200_Regular_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/order_date_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderNumber" />
+
+    <ImageView
+        android:id="@+id/ivIconCalendar"
+        android:layout_width="@dimen/dimen_16dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDateLabel"
+        app:srcCompat="@drawable/ic_calendar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOrderDate"
+        style="@style/Label_400_bold_16_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivIconCalendar"
+        app:layout_constraintStart_toEndOf="@id/ivIconInfo"
+        app:layout_constraintTop_toTopOf="@+id/ivIconCalendar"
+        tools:text="13/10/2022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

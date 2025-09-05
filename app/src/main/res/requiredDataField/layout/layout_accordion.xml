@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accordion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_12dp"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/accordionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="false">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/medium_montserrat_16_neutral_800"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Endereço" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_direction_mini_chevron_up"
+            android:tint="@color/cloud_200"
+            android:importantForAccessibility="no" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@color/cloud_200" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/accordionContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:orientation="vertical" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

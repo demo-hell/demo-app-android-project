@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Chip.Filter.Cielo"
+    android:layout_width="wrap_content"
+    android:checked="true"
+    android:text="@string/my_request_filter_status_finished"
+    android:theme="@style/Theme.Material3.Light.NoActionBar">
+
+</com.google.android.material.chip.Chip>

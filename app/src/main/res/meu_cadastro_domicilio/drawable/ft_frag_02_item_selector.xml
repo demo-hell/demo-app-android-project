@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@drawable/ft_frag_02_item_selector_check"
+        android:state_checked="true"
+        android:state_pressed="true" />
+    <item
+        android:drawable="@drawable/ft_frag_02_item_selector_uncheck"
+        android:state_pressed="true" />
+    <item
+        android:drawable="@drawable/ft_frag_02_item_selector_uncheck"
+        android:state_checked="true" />
+    <item
+        android:drawable="@drawable/ft_frag_02_item_selector_check" />
+</selector>

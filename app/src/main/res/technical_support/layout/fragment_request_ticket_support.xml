@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suporteTecnico.presentation.fragment.RequestTicketSupportFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerOpenTickets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivMachine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_64dp"
+            android:layout_marginTop="@dimen/dimen_41dp"
+            android:layout_marginEnd="@dimen/dimen_64dp"
+            android:contentDescription="logo_machine"
+            android:src="@drawable/img_158_maquininha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOpeningTicket"
+            style="@style/bold_montserrat_20_cloud_800"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/opening_a_ticket_technical_support_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMachine" />
+
+        <TextView
+            android:id="@+id/tvTestMachineOrOpenCall"
+            style="@style/regular_montserrat_16_neutral_600_spacing_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/test_machine_or_open_call"
+            app:layout_constraintEnd_toEndOf="@id/tvOpeningTicket"
+            app:layout_constraintStart_toStartOf="@id/tvOpeningTicket"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpeningTicket" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnTestManually"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/support_access"
+            app:buttonType="outlined"
+            app:layout_constraintBottom_toTopOf="@id/btnOpenTicket" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnOpenTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/open_ticket"
+            app:buttonType="filled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerUpdateAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivAttention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_64dp"
+            android:layout_marginTop="@dimen/dimen_41dp"
+            android:contentDescription="logo_machine"
+            android:src="@drawable/ic_90_phone_attention"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvUpdatedAddressTitle"
+            style="@style/bold_montserrat_20_cloud_800"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/update_address_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAttention" />
+
+        <TextView
+            android:id="@+id/tvUpdatedAddressSubtitle"
+            style="@style/regular_montserrat_16_neutral_600_spacing_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/update_address_subtitle"
+            app:layout_constraintEnd_toEndOf="@id/tvUpdatedAddressTitle"
+            app:layout_constraintStart_toStartOf="@id/tvUpdatedAddressTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvUpdatedAddressTitle" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnTestManual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/test_manually"
+            android:visibility="gone"
+            app:buttonType="outlined"
+            app:layout_constraintBottom_toTopOf="@id/btnUpdateAddress" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnScreenHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/go_to_initial_screen"
+            app:buttonType="outlined"
+            app:layout_constraintBottom_toTopOf="@id/btnUpdateAddress" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnUpdateAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/update_address"
+            app:buttonType="filled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/frame_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/errorInclude"
+        layout="@layout/layout_generic_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMonthContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_solid_display_100_round_8dp"
+        android:padding="@dimen/dimen_10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/month_transaction"
+            style="@style/Heading_300_bold_14_display_300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Fevereiro de 2022" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_receipts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/llMonthContainer"
+        tools:itemCount="1"
+        tools:listitem="@layout/pix_extract_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

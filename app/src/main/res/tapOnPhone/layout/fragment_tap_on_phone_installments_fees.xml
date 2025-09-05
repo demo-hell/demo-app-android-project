@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_8dp"
+    android:paddingBottom="@dimen/dimen_16dp"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/Heading_600_regular_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_on_phone_installment_fees_title"
+            android:textColor="@color/brand_600"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:textColor="@color/cloud_400"
+            android:textSize="@dimen/dimen_16sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:text="A habilitação do Cielo Tap faz com que o Recebimento Automático também seja habilitado, para receber suas vendas em até 2 dias úteis.*" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRecebaRapidoFAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:text="@string/tap_on_phone_installment_fees_rr"
+            android:textAppearance="@style/semi_bold_montserrat_14"
+            android:textColor="@color/brand_400"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRecebaRapidoFAQ"
+            android:layout_width="@dimen/dimen_14dp"
+            android:layout_height="@dimen/dimen_12dp"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:importantForAccessibility="no"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tvRecebaRapidoFAQ"
+            app:layout_constraintStart_toEndOf="@id/tvRecebaRapidoFAQ"
+            app:layout_constraintTop_toTopOf="@id/tvRecebaRapidoFAQ"
+            app:srcCompat="@drawable/ic_interrogation_tooltip_gravame_cessao" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInstallmentFeesListTitle"
+            style="@style/Heading_300_bold_14_display_300"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:text="@string/tap_on_phone_installment_fees_list_title"
+            android:textColor="@color/cloud_500"
+            app:layout_constraintTop_toBottomOf="@id/tvRecebaRapidoFAQ" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInstallmentFees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@id/tvInstallmentFeesListTitle"
+            tools:itemCount="3"
+            tools:listitem="@layout/layout_tap_on_phone_brands_item" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSalesReceivementTypeTitle"
+            style="@style/Heading_300_bold_14_display_300"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:text="@string/tap_on_phone_installment_fees_sales_receivement_type_title"
+            android:textColor="@color/cloud_500"
+            app:layout_constraintTop_toBottomOf="@id/rvInstallmentFees" />
+
+        <include
+            android:id="@+id/recebaRapidoInfoInclude"
+            layout="@layout/layout_tap_on_phone_sales_receivement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSalesReceivementTypeTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReceivingObservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_1sp"
+            android:text="@string/tap_on_phone_receiving_observation"
+            android:textAppearance="@style/medium_montserrat_12_cloud_400"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/recebaRapidoInfoInclude"
+            tools:textAppearance="@style/regular_montserrat_12_cloud_400"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

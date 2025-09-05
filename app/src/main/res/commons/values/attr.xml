@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTypeFace">
+        <attr name="typeface" format="string" />
+        <attr name="mask" format="string" />
+        <attr name="textFieldStyle" format="reference"/>
+        <attr name="disableCopyToClipboard" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="HeaderButtonView">
+        <attr name="buttonLabel" format="string"/>
+        <attr name="headerButtonIcon" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="HomeActionButtonView">
+        <attr name="buttonPrepaidActionLabel" format="string" />
+        <attr name="buttonActionIcon" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CallToActionView">
+        <attr name="callToActionTitle" format="string" />
+        <attr name="buttonCallToActionLabel" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AlertHandlerCieloView">
+        <attr name="cieloErrorContentImage" format="integer" />
+        <attr name="cieloErrorButtonLabel" format="string" />
+        <attr name="cieloErrorTitle" format="string"/>
+        <attr name="cieloErrorMessage" format="string" />
+        <attr name="cieloShowTitle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularTimerCountdownView">
+        <!-- Color. -->
+        <attr name="countdownIndicatorColor" format="reference|color" />
+        <attr name="progressWidth" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="bottom_sheet_generic_attributes">
+        <attr name="bs_toolbar_name" format="string" />
+        <attr name="bs_title" format="string" />
+        <attr name="bs_subtitle" format="string" />
+        <attr name="bs_btn_bottom_name" format="string" />
+
+        <attr name="bs_btn_close_status" format="boolean" />
+        <attr name="bs_btn_bottom_status" format="boolean" />
+        <attr name="bs_view_line_status" format="boolean" />
+
+        <attr name="bs_image" format="integer" />
+
+        <attr name="bs_btn_bottom_style" format="enum">
+            <enum name="BNT_BOTTOM_WHITE" value="0" />
+            <enum name="BNT_BOTTOM_BLUE" value="1" />
+        </attr>
+
+        <attr name="bs_txt_toolbar_name_style" format="enum">
+            <enum name="TXT_TOOlBAR_NAME_NORMAL" value="0" />
+            <enum name="TXT_TOOlBAR_NAME_BOLD" value="1" />
+        </attr>
+
+        <attr name="bs_txt_title_style" format="enum">
+            <enum name="TXT_TITLE_BLUE" value="0" />
+            <enum name="TXT_TITLE_BLACK" value="1" />
+        </attr>
+
+        <attr name="bs_txt_subtitle_style" format="enum">
+            <enum name="TXT_SUBTITLE_BLUE" value="0" />
+            <enum name="TXT_SUBTITLE_BLACK" value="1" />
+            <enum name="TXT_SUBTITLE_GREEN" value="2" />
+            <enum name="TXT_SUBTITLE_BLACK_JUSTIFIED" value="3" />
+        </attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="bottom_sheet_generic_attributes_flui">
+
+        <attr name="bs_toolbar_name_flui" format="string" />
+        <attr name="bs_title_flui" format="string" />
+        <attr name="bs_subtitle_flui" format="string" />
+        <attr name="bs_btn1_bottom_name_flui" format="string" />
+        <attr name="bs_btn2_bottom_name_flui" format="string" />
+
+        <!-- status widget-->
+        <attr name="bs_btn_close_status_flui" format="boolean" />
+        <attr name="bs_btn_bottom_first_status_flui" format="boolean" />
+        <attr name="bs_btn_bottom_second_status_flui" format="boolean" />
+        <attr name="bs_view1_line_status_flui" format="boolean" />
+        <attr name="bs_view_line_status_flui" format="boolean" />
+
+        <attr name="bs_topbar_title_status_flui" format="boolean" />
+        <attr name="bs_title_status_flui" format="boolean" />
+        <attr name="bs_subtitle_status_flui" format="boolean" />
+        <attr name="bs_image_status_flui" format="boolean" />
+
+        <attr name="bs_image_flui" format="integer" />
+
+        <attr name="bs_btn_bottom1_style_flui" format="enum">
+            <enum name="BNT_BOTTOM_WHITE" value="0" />
+            <enum name="BNT_BOTTOM_BLUE" value="1" />
+        </attr>
+
+        <attr name="bs_btn_bottom2_style_flui" format="enum">
+            <enum name="BNT_BOTTOM_WHITE" value="0" />
+            <enum name="BNT_BOTTOM_BLUE" value="1" />
+        </attr>
+
+        <attr name="bs_txt_toolbar_name_style_flui" format="enum">
+            <enum name="TXT_TOOlBAR_NAME_NORMAL" value="0" />
+            <enum name="TXT_TOOlBAR_NAME_BOLD" value="1" />
+        </attr>
+
+        <attr name="bs_txt_title_style_flui" format="enum">
+            <enum name="TXT_TITLE_BLUE" value="0" />
+            <enum name="TXT_TITLE_BLACK" value="1" />
+        </attr>
+
+        <attr name="bs_txt_subtitle_style_flui" format="enum">
+            <enum name="TXT_SUBTITLE_BLUE" value="0" />
+            <enum name="TXT_SUBTITLE_BLACK" value="1" />
+            <enum name="TXT_SUBTITLE_GREEN" value="2" />
+            <enum name="TXT_SUBTITLE_BLACK_JUSTIFIED" value="3" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_sub_menu_authorization">Autorizações</string>
+
+    <string name="term_aceite_pix">Li e aceito os termos e condições</string>
+    <string name="txt_link_authorization">Acesse o contrato de autorização do Pix</string>
+
+    <string name="txt_pix_history_title">Sua autorização para o Pix foi realizada.</string>
+    <string name="txt_pix_history_subtitle">Seu estabelecimento está pronto para receber pagamentos com Pix. Caso já tenha realizado alguma venda, você poderá acessar as movimentações em sua conta Cielo.</string>
+    <string name="txt_link_authorization_history">Contrato de autorização Pix</string>
+    <string name="txt_pix_history_search_doc">Para consultar o seu contrato do Pix, acesse o documento da adesão</string>
+    <string name="text_pix_history_de">Data de autorização:</string>
+    <string name="txt_pix_box_detail">Confira o status abaixo:</string>
+    <string name="text_pix_history_status">Status:</string>
+    <string name="banner_success_title_pix">Seu estabelecimento está pronto para receber pagamentos com Pix</string>
+
+    <string name="banner_pix_success_subtitle">Caso já tenha realizado alguma venda, você poderá acessar as movimentações em sua conta Cielo.\nPara consultar o seu contrato do Pix, acesse o documento da adesão.</string>
+    <string name="banner_pix_success_subtitle_03">Para consultar o seu contrato do Pix, acesse o documento da adesão.</string>
+
+    <string name="banner_success_email_title">Sua solicitação para habilitar o Pix foi enviada com sucesso!</string>
+    <string name="banner_success_email_subtitle">Em breve você irá receber uma confirmação por email ou sms.</string>
+
+    <string name="pix_status_active">Habilitado</string>
+    <string name="pix_status_pending">Solicitação em progresso</string>
+    <string name="pix_status_waiting_activation">Aguardando</string>
+
+    <string name="txt_check_03_partner">Receba diretamente na sua conta</string>
+    <string name="text_info_pix">E para habilitar as transações via Pix do seu estabelecimento, criaremos uma conta digital Cielo para manutenção de cada CPF/CNPJ.\n\nA taxa negociada é de <b>0,0%</b> por transação Pix.\n\n Ao longo do dia os valores das vendas
+        via Pix serão transferidos automaticamente da conta Cielo para a conta bancária em que você recebe as transações Visa débito do seu estabelecimento. Para mais informações, acesse a página sobre o Pix.</string>
+    <string name="txt_pix_partner_title">Adesão ao Pix</string>
+
+    <string name="text_info_pix_partner_title">Seu estabelecimento está pronto para receber pagamentos com Pix!</string>
+    <string name="text_info_pix_partner_sub_title">Caso já tenha realizado alguma venda, verifique diretamente em sua conta no banco. \nPara consultar o seu contrato do Pix, acesse o documento da adesão.</string>
+    <string name="text_info_pix_partner_contract_authorization">Acesse o contrato de autorização do Pix</string>
+
+    <string name="text_user_pix_ineligible_title">Agradecemos o seu interesse no Pix!</string>
+    <string name="text_user_pix_ineligible_subtitle">Ficamos felizes com o seu interesse, no momento estamos trabalhando para disponibilizar esse serviço para nossos clientes.</string>
+
+    <string-array name="array_pix_benefits">
+        <item>Aceito para qualquer tipo de pagamentos, QR Code e link de pagamento.</item>
+        <item>É seguro e rápido.</item>
+        <item>Suas vendas são transferidas para sua conta 3 vezes ao dia, todos os dias.</item>
+    </string-array>
+
+    <string-array name="array_pix_benefits_partner">
+        <item>Aceito para qualquer tipo de pagamentos, QR Code e link de pagamento.</item>
+        <item>É seguro e rápido.</item>
+        <item>A qualquer hora, em qualquer dia</item>
+    </string-array>
+
+    <string name="text_info_pix_ore_information_authorization">Para mais informações, acesse a página sobre o Pix.</string>
+    <string name="go_to_home_pix">Ir para tela inicial</string>
+
+    <string name="btn_send_terms">Solicitar Pix</string>
+    <string name="text_unavailability_message">Esta visualização está indisponível no momento. Fique tranquilo, todas as suas informações continuam salvas!</string>
+
+    <string name="text_toolbar_home_pix">Pix</string>
+
+    <string name="text_pix_coin">R$</string>
+    <string name="text_client_name_pix">Olá, %s</string>
+    <string name="text_client_document_pix">%s • %s</string>
+    <string name="text_client_ec_pix">EC %s</string>
+    <string name="text_pix_explanation">Envie e receba pagamentos com o Pix a qualquer hora, dia da semana e para diversos bancos e contas.</string>
+
+    <string name="text_pix_balance_title">Saldo em conta</string>
+    <string name="text_pix_transactions_title">Transações</string>
+    <string name="text_pix_my_keys_title">Minhas chaves</string>
+
+    <string name="text_pix_show_extract_title">Ver extrato</string>
+    <string name="text_pix_try_again">Recarregar</string>
+    <string name="text_pix_try_again_message">Não foi possível mostrar o seu saldo, tente recarregar.</string>
+    <string name="text_pix_try_again_message_my_keys">Não foi possível exibir as suas chaves, tente recarregar.</string>
+
+    <string name="text_pix_my_keys_cnpf">CNPJ</string>
+    <string name="text_pix_my_keys_phone">Celular</string>
+    <string name="text_pix_my_keys_email">E-mail</string>
+    <string name="text_pix_my_keys_random_key">Chave aleatória</string>
+
+    <string name="text_pix_my_keys_manage">Gerenciar chaves</string>
+
+    <string name="text_pix_questions">Dúvidas Pix</string>
+
+    <string name="text_pix_transaction_transfer">Transferir</string>
+    <string name="text_pix_transaction_read_qr_code">Ler QR Code</string>
+    <string name="text_pix_transaction_generate_charge">Gerar cobrança</string>
+    <string name="text_pix_transaction_copy_and_paste">Pix Copia e Cola</string>
+
+    <string name="text_btn_show_my_keys_pix">Ver minhas chaves</string>
+    <string name="text_pix_next">Próximo</string>
+
+    <string name="text_pix_what_is_pix_onboarding">O que é chave Pix?</string>
+    <string name="text_pix_what_is_pix_answer_onboarding">A chave simplifica a forma de você receber e pagar através do Pix. Com ela, as pessoas não precisarão mais digitar todos os seus dados bancários.</string>
+
+    <string name="text_pix_more_practical_onboarding">Muito mais prático!</string>
+    <string name="text_pix_more_practical_answer_onboarding">Vincule até 20 chaves (número de celular, CNPJ, e-mail e chave aleatória) a uma única conta. Assim, basta o pagador usar uma destas informações para te transferir.</string>
+
+    <string name="text_toolbar_my_keys_pix">Gerenciar chaves</string>
+    <string name="text_title_screen_my_keys_pix">Minhas chaves Pix</string>
+    <string name="text_subtitle_screen_my_keys_pix">Cadastre e compartilhe as sua chaves para receber de forma prática com o Pix.</string>
+    <string name="text_register_a_pix_key">Cadastrar uma chave</string>
+    <string name="text_my_keys_quantity">%d de 20 chaves</string>
+    <string name="text_my_keys_main_key_empty_title">Você não possui uma chave principal ativada.</string>
+    <string name="text_my_keys_main_key_empty_subtitle">Cadastre uma chave aleatória como principal para gerar suas cobranças de forma prática com o Pix nas suas soluções de captura.</string>
+
+    <string name="text_pix_my_keys_register_my_cnpj">Cadastrar meu CNPJ</string>
+    <string name="text_pix_my_keys_register_my_phone">Cadastrar meu celular</string>
+    <string name="text_pix_my_keys_register_my_email">Cadastrar meu e-mail</string>
+
+    <string name="text_pix_my_keys_main_key">Chave principal</string>
+    <string name="text_pix_my_keys_portability_request_send">Pedido de portabilidade aberto</string>
+    <string name="text_pix_my_keys_portability_request">Pedido de portabilidade</string>
+    <string name="text_pix_my_keys_claim_request_sent">Pedido de reivindicação aberto</string>
+    <string name="text_pix_my_keys_claim_request">Pedido de reivindicação</string>
+    <string name="text_pix_my_keys_waiting_key_activation">Aguardando ativação da chave</string>
+    <string name="text_pix_my_keys_active_key">Ativa</string>
+
+    <string name="text_btn_pix_my_keys_more_information">O que é chave principal?</string>
+    <string name="text_pix_my_keys_information_title">Cadastre e compartilhe suas chaves ativas</string>
+    <string name="text_pix_my_keys_information_subtitle">Quem utilizar a sua chave cadastrada irá ver os seguintes dados: Seu nome fantasia; O seu CNPJ completo; O nome Cielo S/A que é a instituição atrelada ao app Cielo Gestão.</string>
+
+    <string name="text_pix_terms_title">Vamos solicitar o Pix? Leia e aceite os termos de uso</string>
+    <string name="text_pix_terms_subtitle">Após a leitura dos termos, toque na caixa de seleção para nos indicar o seu aceite para prosseguir:</string>
+
+    <string name="text_pix_terms_read_conditions">Ler termos e condições de uso Pix</string>
+    <string name="text_pix_terms_cielo">Termos da conta Cielo</string>
+    <string name="text_pix_terms_request_pix">Solicitar Pix</string>
+
+    <string name="text_pix_term_onboarding_sales_title">Venda com o Pix nas suas soluções de captura Cielo</string>
+    <string name="text_pix_term_onboarding_sales_subtitle">Além das formas de pagamento tradicionais, receba suas vendas com o Pix e dê mais opções para o seu cliente.</string>
+
+    <string name="text_pix_term_onboarding_receive_title">Receba as cobranças feitas com Pix na conta Cielo</string>
+    <string name="text_pix_term_onboarding_receive_subtitle">As vendas com o Pix serão creditadas em uma conta Cielo que você vai gerir. Ela será criada assim que você habilitar o Pix conosco.</string>
+
+    <string name="text_success_pix_hiring_title">Oba! Seu Pix está habilitado nas suas soluções de captura Cielo</string>
+    <string name="text_success_pix_hiring_subtitle">Com o seu token de segurança habilitado, faça a gestão dos seus recebíveis Pix na conta Cielo</string>
+
+    <string name="tex_btn_show_pix_onboarding">Ver área Pix</string>
+
+    <string name="text_onboarding_home_pix_title_page_one">Além de receber, você pode fazer um Pix com a gente</string>
+    <string name="text_onboarding_home_pix_subtitle_page_one">Realize transações em qualquer dia e a qualquer hora.</string>
+
+    <string name="text_onboarding_home_pix_title_page_two">Envie e receba transações em poucos segundos</string>
+    <string name="text_onboarding_home_pix_subtitle_page_two">Faça transferências, pagamentos e cobranças instantaneamente.</string>
+
+    <string name="text_onboarding_home_pix_title_page_three">Realize transações de forma simples utilizando chaves</string>
+    <string name="text_onboarding_home_pix_subtitle_page_three">Utilize seu CNPJ, e-mail, número de celular e chave aleatória como chaves Pix.</string>
+
+    <string name="text_onboarding_home_pix_title_page_four">Mais facilidades pra você com o Pix Saque e Pix Troco</string>
+    <string name="text_onboarding_home_pix_subtitle_page_four">Com o Pix Saque e Pix Troco, você pode efetuar saques ou compras com valor maior e receber a diferença em dinheiro.</string>
+
+    <string name="text_onboarding_home_pix_title_page_five">O Pix Saque ou Pix Troco está em estabelecimentos credenciados</string>
+    <string name="text_onboarding_home_pix_subtitle_page_five">Escaneie o QR Code, revise e faça o Pix, pronto, receba seu dinheiro na hora. Nenhum estabelecimento pode cobrar taxas.</string>
+
+    <string name="toolbar_screen_transfer_pix">Transferir</string>
+
+    <string name="text_title_selector_pix">Selecione a chave para iniciar a  transferência</string>
+    <string name="text_title_which_key_do_you_want_to_register">Qual chave você quer cadastrar?</string>
+
+    <string name="text_pix_key_type_document">CPF/CNPJ</string>
+    <string name="text_pix_key_type_random">Aleatória</string>
+    <string name="text_pix_key_type_account">Agência e conta</string>
+
+    <string name="text_pix_insert_key_transfer_title_document">Digite a chave CPF ou CNPJ</string>
+    <string name="text_pix_insert_key_transfer_title_phone">Digite a chave Celular</string>
+    <string name="text_pix_insert_key_transfer_title_email">Digite a chave E-mail</string>
+    <string name="text_pix_insert_key_transfer_title_random">Digite a chave Aleatória</string>
+    <string name="text_pix_insert_key_transfer_title_account">Busque a instituição financeira</string>
+
+    <string name="text_pix_insert_key_transfer_hint_document">000.000.000-00</string>
+    <string name="text_pix_insert_key_transfer_hint_phone">(00) 00000-0000</string>
+    <string name="text_pix_insert_key_transfer_hint_email">nome@e-mail.com</string>
+    <string name="text_pix_insert_key_transfer_hint_random">abc432AB2001ad</string>
+
+    <string name="text_pix_insert_key_transfer_subtitle">A chave digitada deve ser a escolhida por quem vai receber o seu Pix.</string>
+    <string name="text_pix_insert_key_trusted_destination_subtitle">A chave digitada deve ser a do contato que você quer cadastrar.</string>
+    <string name="text_pix_insert_key_transfer_change_key">Quero alterar o tipo de chave</string>
+
+    <string name="text_pix_insert_key_transfer_error">Esta chave é inválida ou foi digitada incorretamente. Revise e tente novamente.</string>
+
+    <string name="text_pix_enter_amount_title">Qual o valor da transferência?</string>
+    <string name="text_pix_enter_amount_title_pay">Qual o valor do pagamento?</string>
+    <string name="text_pix_enter_amount_title_withdrawal">Qual o valor do saque?</string>
+    <string name="text_pix_enter_amount_title_change">Qual o valor do troco?</string>
+    <string name="text_pix_enter_amount_title_balance">Saldo disponível</string>
+    <string name="text_pix_enter_amount_message_error">O valor deve ser maior que R$0,00</string>
+    <string name="text_pix_enter_amount_value">R$ %s</string>
+    <string name="text_pix_enter_amount_value_zero">R$ 0,00</string>
+
+    <string name="text_pix_enter_message_title">Escreva a sua mensagem</string>
+    <string name="text_pix_enter_message_hint">Sua mensagem aqui</string>
+    <string name="text_pix_enter_message_btn">Salvar mensagem</string>
+
+    <string name="text_pix_summary_transfer_title">Antes de finalizar a transferência, confirme os dados.</string>
+    <string name="text_pix_summary_transfer_cancel">Cancelar transação</string>
+    <string name="text_pix_summary_transfer_value_title">Valor</string>
+    <string name="text_pix_summary_transfer_rate"><![CDATA[Tarifa: <b>%s</b>]]></string>
+    <string name="text_pix_summary_transfer_total"><![CDATA[Total a ser debitado da sua conta: <b>%s</b>]]></string>
+
+    <string name="text_pix_summary_transfer_destination">DESTINO DA TRANSFERÊNCIA</string>
+    <string name="text_pix_summary_transfer_destination_to">Para</string>
+    <string name="text_pix_summary_transfer_destination_document_CNPJ">CNPJ</string>
+    <string name="text_pix_summary_transfer_destination_document">Documento</string>
+    <string name="text_pix_summary_transfer_destination_bank">Instituição</string>
+    <string name="text_pix_summary_transfer_type">Tipo de transação</string>
+    <string name="text_pix_summary_transfer_type_value">Transferência • Pix</string>
+    <string name="text_pix_summary_transfer_date">Data da transferência</string>
+    <string name="text_pix_summary_transfer_date_value">Hoje</string>
+    <string name="text_pix_summary_transfer_insert_msg">Sua mensagem (opcional)</string>
+    <string name="text_pix_summary_transfer_insert_msg_hint">Escrever uma mensagem...</string>
+
+    <string name="random_key_pix"><![CDATA[Aleatória: <b>%s</b>]]></string>
+    <string name="copy_pix_key">Copiar chave</string>
+    <string name="key_copied_text">Chave copiada</string>
+    <string name="this_is_my_pix_key">Esta é a minha chave Pix: %s</string>
+    <string name="pix_key">Chave %s</string>
+    <string name="no_main_key_title">Você não possui uma chave principal ativada.</string>
+    <string name="no_main_key_message_1">Cadastre uma chave aleatória como principal</string>
+    <string name="no_main_key_message_2">para gerar suas cobranças de forma prática com o Pix nas suas soluções de captura ou gerencie suas outras chaves cadastradas.</string>
+    <string name="alert_message_icon">Alerta nas suas chaves pix</string>
+
+    <string name="text_pix_summary_transfer_error_btn">Revisar transferência</string>
+    <string name="text_pix_summary_transfer_error_title">Não foi possível concluir a sua transação</string>
+
+    <string name="text_pix_summary_transfer_success_title">Transação efetuada!</string>
+    <string name="text_pix_summary_transfer_success_message"><![CDATA[Você transferiu com sucesso o valor de <b>%s</b> para <b>%s</b>]]></string>
+    <string name="text_pix_summary_transfer_show_receipt">Ver comprovante</string>
+
+    <string name="text_pix_transfer_receipt_toolbar">Comprovante</string>
+
+    <string name="text_pix_transfer_receipt_title">Comprovante de transação</string>
+    <string name="text_pix_transfer_receipt_date">Realizada em %s às %s</string>
+    <string name="text_pix_scheduling_receipt_date">Agendado em %s às %s</string>
+    <string name="text_pix_scheduling_canceled_receipt_date">Cancelado em %s às %s</string>
+    <string name="text_pix_pending_transfer_receipt_date">em %s às %s</string>
+    <string name="text_pix_transfer_failed_receipt_date">Não efetuada em %s às %s</string>
+    <string name="text_pix_transfer_started_receipt_date">Iniciada em %s às %s</string>
+    <string name="text_pix_transfer_receipt_date_mask">%s às %s</string>
+
+    <string name="text_pix_transfer_receipt_about_transaction">Sobre a transação</string>
+    <string name="text_pix_transfer_receipt_amount">Valor</string>
+    <string name="text_pix_qr_code_purchase_amount">Valor da compra</string>
+    <string name="text_pix_qr_code_sale_amount">Valor da venda</string>
+    <string name="text_pix_change_value">Valor do Pix Troco</string>
+    <string name="text_pix_qr_code_total_received">Total recebido</string>
+    <string name="text_pix_transfer_receipt_rate">Tarifa</string>
+    <string name="text_pix_transfer_receipt_free">Grátis</string>
+    <string name="text_pix_transfer_debit_info">Total debitado da sua conta: %s</string>
+    <string name="text_pix_transferred_value">Valor transferido</string>
+    <string name="text_pix_transfer_receipt_message">Mensagem enviada</string>
+    <string name="text_pix_transfer_auth_code">Código de autenticação</string>
+
+    <string name="text_pix_transfer_receipt_amount_destination">Destino do valor</string>
+    <string name="text_pix_transfer_receipt_agency">Agência</string>
+    <string name="text_pix_transfer_receipt_account">Conta</string>
+    <string name="text_pix_transfer_receipt_account_type">Tipo de conta</string>
+
+    <string name="text_pix_transfer_receipt_origin_amount">Origem do valor</string>
+    <string name="text_pix_transfer_receipt_from">De</string>
+    <string name="text_pix_transfer_receipt_authentication_code">ID da transação</string>
+
+    <string name="text_pix_transfer_receipt_informative">Esse comprovante não possui valor fiscal</string>
+    <string name="text_pix_transfer_receipt_informative_cielo">Cielo S.A.</string>
+    <string name="text_pix_transfer_receipt_informative_cnpj_cielo">CNPJ 01.027.058/0001-91</string>
+
+    <string name="text_pix_transfer_receipt_share">Compartilhar</string>
+    <string name="share_receipt_pix">Share via</string>
+    <string name="text_pix_transfer_receipt_share_error">Não é possível compartilhar este recibo.</string>
+
+    <string name="text_pix_transfer_cancel_title">Tem certeza que deseja cancelar esta transação?</string>
+    <string name="text_pix_transfer_cancel_message">Ao cancelar nesta etapa, esta transação não será realizada e todos os dados preenchidos até agora serão perdidos.</string>
+    <string name="text_pix_transfer_cancel">Sim, cancelar</string>
+    <string name="text_pix_transfer_amount_error">Você deve definir um valor para poder prosseguir com esta transação.</string>
+
+    <string name="text_pix_transfer_error_otp_title">Houve algum problema!</string>
+    <string name="text_pix_transfer_error_otp_message">Por favor, tente novamente.</string>
+    <string name="text_pix_transfer_error_btn_try_again">Tentar novamente</string>
+
+    <string name="text_pix_transfer_title_informative_receiving">Informativo deste recebimento de R$</string>
+    <string name="text_pix_transfer_title_informative_sending">Informativo desta saída de R$</string>
+
+    <string name="text_pix_transfer_channel_used_receiving">Canal da venda:</string>
+    <string name="text_pix_transfer_channel_used_receiving_without_two_points">Canal da venda</string>
+    <string name="text_pix_transfer_channel_used_sending">Canal utilizado:</string>
+    <string name="text_pix_transfer_channel_used_sending_without_two_points">Canal utilizado</string>
+    <string name="text_pix_transfer_channel_used_scheduling">Canal agendador:</string>
+    <string name="text_pix_transfer_channel_used_cancelling">Canal cancelador:</string>
+    <string name="text_pix_transfer_channel_used_failed">Canal pagador:</string>
+
+    <string name="text_pix_transfer_merchant_receiving">Estabelecimento recebedor:</string>
+    <string name="text_pix_transfer_merchant_receiving_without_two_points">Estabelecimento recebedor</string>
+    <string name="text_pix_transfer_merchant_sending">Estabelecimento que realizou:</string>
+    <string name="text_pix_transfer_merchant_sending_payment">Estabelecimento que realizou o pagamento</string>
+    <string name="text_pix_transfer_merchant_scheduling">Estabelecimento que agendou:</string>
+    <string name="text_pix_transfer_merchant_cancelling">Estabelecimento que cancelou:</string>
+    <string name="text_pix_transfer_merchant_failed">Estabelecimento pagador:</string>
+
+    <string name="text_toolbar_key_registration_pix">Cadastrar chave</string>
+
+    <string name="text_pix_key_registration_cnpj">Cadastrar o CNPJ</string>
+    <string name="text_pix_key_registration_random">Cadastrar chave aleatória</string>
+    <string name="text_pix_key_registration_phone">Cadastrar celular</string>
+    <string name="text_pix_key_registration_email">Cadastrar e-mail</string>
+
+    <string name="text_pix_key_registration_cnpj_subtitle">Receba transferências via Pix compartilhando apenas o seu CNPJ.</string>
+    <string name="text_pix_key_registration_random_subtitle">Com esta chave, você recebe um Pix sem precisar compartilhar seus dados.</string>
+    <string name="text_pix_key_registration_phone_subtitle">Receba transferências via Pix compartilhando apenas o seu número de celular.</string>
+    <string name="text_pix_key_registration_email_subtitle">Receba transferências via Pix compartilhando apenas o seu e-mail.</string>
+
+    <string name="text_pix_key_registration_informative_title">Ao cadastrar e ativar essa chave, quem te pagar ou transferir irá ver os seguintes dados:</string>
+    <string name="text_pix_key_registration_informative_message">• Seu nome fantasia ou razão social;
+        \n• O seu CNPJ completo;
+        \n• O nome da instituição financeira em que estiver vinculada essa chave;
+        \n• Seu e-mail;
+        \n• E seu número de telefone.
+    </string>
+
+    <string name="text_pix_key_delete_error_title">Não foi possível concluir a exclusão da chave</string>
+    <string name="text_pix_key_registration_error_title">Não foi possível concluir o cadastro da chave!</string>
+
+    <string name="text_pix_key_registration_make_master_key_title">Quer tornar esta chave como principal para suas vendas com Pix?</string>
+    <string name="text_pix_key_registration_make_master_key_subtitle">Sem uma chave principal, você não conseguirá gerar cobranças com Pix nas suas soluções de captura Cielo. Quer confirmar?</string>
+
+    <string name="text_pix_key_registration_portability_title">Vamos fazer a portabilidade desta chave?</string>
+    <string name="text_pix_key_registration_portability_subtitle"><![CDATA[Para cadastrar a chave <b>%s</b> que está em outra instituição %s, será necessário iniciar a portabilidade.]]></string>
+    <string name="text_pix_key_registration_portability_btn_one">Iniciar portabilidade</string>
+    <string name="text_pix_key_registration_portability_btn_two">O que é portabilidade?</string>
+
+    <string name="text_pix_key_registration_claim_title">Vamos fazer a reivindicação desta chave?</string>
+    <string name="text_pix_key_registration_claim_subtitle"><![CDATA[A chave <b>%s</b> está vinculada a outra pessoa.\n\nAo reivindicar o uso dessa chave, o atual dono deve responder até 30 dias.]]></string>
+    <string name="text_pix_key_registration_claim_btn_one">Iniciar reivindicação</string>
+    <string name="text_pix_key_registration_claim_btn_two">O que é reivindicação?</string>
+
+    <string name="text_pix_key_error_title">Não foi possível validar a chave!</string>
+    <string name="text_pix_key_error_message">Não podemos prosseguir nesta transação. Por favor, tente novamente.</string>
+
+    <string name="bs_details_your_pix_key">Sua chave Pix:</string>
+    <string name="bs_details_your_main_pix_key">Esta chave está vinculada as suas soluções de captura Cielo e é utilizada para gerar cobranças com Pix. Quer saber mais sobre a chave principal?</string>
+    <string name="bs_details_what_is_master_key">O que é chave principal?</string>
+    <string name="bs_details_share_key">Compartilhar chave</string>
+    <string name="bs_details_delete_key">Excluir chave</string>
+    <string name="bs_details_portability_requested">Foi solicitado a portabilidade desta chave</string>
+    <string name="bs_details_claim_requested">Foi solicitado a reivindicação desta chave</string>
+    <string name="bs_details_portability_requested_subtitle">Você tem até o dia %s para confirmar este pedido e tirar esta chave da Cielo e liberar para outra instituição financeira.</string>
+    <string name="bs_details_portability_requested_subtitle_institution_name">Você tem até o dia %s para confirmar este pedido e tirar esta chave da Cielo e liberar para a instituição %s.</string>
+    <string name="text_to_keep_key_confirm_message"><![CDATA[Chave: <b>%s</b> <br><br>Esta chave continua em sua posse aqui na Cielo. Fique à vontade em utilizá-la e fazer um Pix.]]></string>
+    <string name="text_to_release_key_confirm_message"><![CDATA[Chave: <b>%s</b> <br><br> Esta chave Pix foi excluída da sua lista de chaves na Cielo. Você pode cadastrar outra no lugar.]]></string>
+    <string name="bs_portability_text_key_kept">Chave Pix mantida na sua conta Cielo</string>
+    <string name="bs_portability_text_key_released">Chave liberada para sua outra instituição financeira</string>
+
+    <string name="text_pix_create_key_email_title">Digite o e-mail</string>
+    <string name="text_pix_create_key_phone_title">Digite o número de celular</string>
+    <string name="text_pix_create_key_email_subtitle">Este e-mail será uma chave para você receber transferências Pix.</string>
+    <string name="text_pix_create_key_phone_subtitle">Este número será uma chave para você receber transferências Pix.</string>
+    <string name="text_pix_create_key_new_code">Enviar novo código</string>
+    <string name="text_pix_create_key_timer"><![CDATA[Solicite um novo código em <b>%s segundos.</b>]]></string>
+    <string name="text_pix_create_key_insert_code">Insira o código enviado para %s.</string>
+    <string name="text_pix_create_key_insert_code_phone">Insira o código enviado via SMS ou Whatsapp para %s.</string>
+    <string name="text_pix_create_key_insert_code_error_input">Código inválido ou digitado incorretamente.</string>
+
+    <string name="text_pix_create_key_insert_code_error_title">Ops, houve um erro aqui!</string>
+    <string name="text_pix_create_key_insert_code_error_subtitle">Pedimos desculpas, ocorreu um erro no sistema. Por favor, tente novamente.</string>
+    <string name="text_pix_error_otp_message">Não foi possível carregar este item agora. Estamos trabalhando para corrigir este problema, tente de novo em alguns instantes.</string>
+
+    <string name="text_pix_error_transaction_title">Transação não efetuada</string>
+    <string name="text_pix_error_transaction_message">Houve um erro no processamento, aguarde alguns minutos e tente novamente.</string>
+
+    <string name="text_pix_error_transaction_in_process_title">Processando transação</string>
+    <string name="text_pix_error_transaction_in_process_message"><![CDATA[ Sua transação Pix de <b>%s</b> para <b>%s</b> está em processamento.
+    <br><br>Aviso: Esta transação pode levar alguns minutos para ser efetuada. Após a conclusão do processamento, você sera notificado.]]></string>
+
+    <string name="bs_details_delete_main_key_confirm_deletion_title">Quer mesmo excluir? Esta chave é utilizada nas suas vendas com Pix</string>
+    <string name="bs_details_delete_main_key_confirm_deletion_subtitle">Esta chave é importante para gerar as suas vendas Pix nas suas soluções de captura Cielo. Ao excluir, você é impedido de gerar novas cobranças Pix e será necessário cadastrar uma nova chave aleatória, quer mesmo continuar?</string>
+
+    <string name="bs_details_delete_key_confirm_deletion_title">Quer mesmo excluir esta chave?</string>
+    <string name="bs_details_delete_key_confirm_deletion_subtitle">Ao finalizar a exclusão, você não poderá usar esta chave nas suas transações Pix no app Cielo, quer mesmo continuar?</string>
+
+    <string name="bs_details_delete_key_btn_yes">Quero excluir</string>
+    <string name="text_pix_home_mey_keys_verification_keys">Chaves em verificação</string>
+
+    <string name="text_pix_error_create_claims_ownership_title">Não foi possível concluir a reivindicação da chave!</string>
+    <string name="text_pix_error_create_claims_portability_title">Não foi possível concluir a portabilidade da chave!</string>
+
+    <string name="text_pix_error_create_claims_ownership_title_alternative">Não foi possível concluir a reivindicação da chave</string>
+    <string name="text_pix_error_create_claims_portability_title_alternative">Não foi possível concluir a portabilidade da chave</string>
+
+    <string name="text_pix_success_create_claims_action">Concluir</string>
+    <string name="text_pix_success_create_claims_ownership_title">Solicitação de reivindicação enviada com sucesso!</string>
+    <string name="text_pix_success_create_claims_portability_title">Solicitação de portabilidade enviada com sucesso!</string>
+
+    <string name="text_pix_create_claims_ownership_day">30 dias</string>
+    <string name="text_pix_create_claims_portability_day">7 dias</string>
+    <string name="text_pix_claims_date">o dia %s</string>
+
+    <string name="text_pix_success_create_claims_ownership_message"><![CDATA[Chave solicitada: <b>%s</b>.
+    <br><br>O atual dono desta chave Pix tem <b>até %s</b> para aceitar ou recusar o seu pedido de reivindicação.]]></string>
+
+    <string name="text_pix_success_create_claims_portability_message"><![CDATA[Chave solicitada: <b>%s</b>.
+    <br><br>Você tem <b>até %s</b> para aceitar o pedido na sua outra instituição financeira onde esta chave está cadastrada.]]></string>
+
+    <string name="text_pix_claims_details_portability_title">Solicitação de portabilidade de chave pendente</string>
+    <string name="text_pix_claims_details_ownership_title">Você solicitou a reivindicação desta chave</string>
+    <string name="text_pix_claims_details_portability_reply_date_information">Confirme a portabilidade até %s na instituição financeira em que esta chave está cadastrada. Após a confirmação, você poderá utilizá-la como chave Pix na Cielo.</string>
+    <string name="text_pix_claims_details_ownership_reply_date_information">Aguarde a resposta da reivindicação até %s. Após a confirmação do seu pedido, você poderá utilizá-la como chave Pix na Cielo.</string>
+    <string name="text_pix_claims_details_cancel">Cancelar pedido</string>
+
+    <string name="text_pix_claims_cancel_ownership_title">Cancelar reivindicação</string>
+    <string name="text_pix_claims_cancel_ownership_message">Você tem certeza que deseja cancelar a solicitação de reivindicação?</string>
+
+    <string name="text_pix_claims_cancel_portability_title">Cancelar portabilidade</string>
+    <string name="text_pix_claims_cancel_portability_message">Você tem certeza que deseja cancelar o pedido de portabilidade?</string>
+
+    <string name="text_button_release_key">Liberar chave</string>
+    <string name="text_button_keep_key">Manter chave na Cielo</string>
+    <string name="bs_claim_generic_error_title">Serviço temporariamente indisponível</string>
+    <string name="bs_claim_generic_error_message">Infelizmente não será possivel prosseguir no momento. Por favor, tente novamente mais tarde.</string>
+
+    <string name="text_error_confirm_claim_title">Não foi possível concluir a reivindicação da chave!</string>
+
+    <string name="text_success_revoke_claim_title">Chave Pix mantida na sua conta Cielo!</string>
+    <string name="text_success_revoke_claim_message"><![CDATA[Chave: <b>%s</b>
+    <br><br>Esta chave continua em sua posse aqui na Cielo. Fique à vontade em utilizá-la e fazer um Pix.]]></string>
+
+    <string name="text_institution_name">Qual o nome da instituição?</string>
+    <string name="type_the_bank_name_or_code">Digite o nome ou código do banco</string>
+    <string name="could_not_find_any_banks">Não encontramos nenhum banco para a sua busca.</string>
+    <string name="bank_list_mask">%s - %s</string>
+    <string name="text_account_type_name">Qual o tipo de conta?</string>
+
+    <string name="type_agency_without_digit">Digite a agência <b>sem</b> dígito</string>
+    <string name="type_account_with_digit">Digite a conta <b>com</b> o dígito</string>
+    <string name="text_agency_digit_info">Se o dígito da sua agência possui letra, favor substituir por 0.</string>
+    <string name="text_account_with_digit">Conta com dígito</string>
+    <string name="text_document_title">Qual o CPF ou CNPJ de quem receberá sua transferência?</string>
+    <string name="text_document_title_trusted_destination">Qual o CPF ou CNPJ do seu novo contato?</string>
+    <string name="text_recipient_name_pf_title">Qual o nome completo da pessoa?</string>
+    <string name="text_recipient_name_pf_title_trusted_destination">Qual o nome completo do contato?</string>
+    <string name="text_recipient_name_pj_title">Qual o nome da empresa?</string>
+    <string name="text_recipient_name_pj_title_trusted_destination">Qual o nome da empresa do contato?</string>
+    <string name="hint_text_recipient_name_pf">Nome de quem irá receber</string>
+    <string name="hint_text_recipient_name_pf_trusted_destination">Nome do contato</string>
+    <string name="hint_text_recipient_name_pj">Nome da empresa que irá receber</string>
+    <string name="hint_text_recipient_name_pj_trusted_destination">Nome da empresa</string>
+    <string name="incorrect_document_error_message">CPF ou CNPJ inválido. Revise ou tente outro CPF ou CNPJ.</string>
+    <string name="your_account_balance_text">Saldo da sua conta</string>
+    <string name="value_to_be_debited_text">Saída do valor a ser debitado</string>
+    <string name="cnpj_title">CNPJ</string>
+    <string name="cpf_title">CPF</string>
+    <string name="agency_and_account_bank_value">Ag: %s | Conta: %s</string>
+
+    <string name="hint_agency_without_digit">0000</string>
+    <string name="hint_account_number_with_digit">12345-6</string>
+    <string name="text_payment_account_type">Conta pagamento</string>
+    <string name="text_account_type_cp">Conta poupança</string>
+    <string name="text_account_type_cc">Conta corrente</string>
+    <string name="text_list_bank_error_title">Não foi possível carregar a lista de bancos</string>
+    <string name="text_list_bank_error_subtitle">Ao não carregar a lista de bancos, não podemos prosseguir nesta transação. Por favor tente atualizar para recarregar a lista.</string>
+
+    <string name="screen_text_toolbar_generate_qr_code">Gerar cobrança</string>
+    <string name="screen_text_title_generate_qr_code">Antes de criar a cobrança com QR Code Pix, confirme os dados.</string>
+    <string name="screen_text_generate_qr_code_informative_amount">Quem for te pagar, irá definir um valor.</string>
+    <string name="screen_text_generate_qr_code_your_key">Sua chave Pix</string>
+    <string name="screen_text_qr_code_change_key_save">Salvar alterações</string>
+    <string name="screen_text_qr_code_change_key_title">Para qual chave você quer alterar?</string>
+    <string name="screen_text_qr_code_change_key_subtitle">É necessário utilizar uma das suas chaves ativas, para gerar uma cobrança.</string>
+
+    <string name="screen_text_generate_qr_code_billing_data">SEUS DADOS NA COBRANÇA</string>
+    <string name="screen_text_generate_qr_code_billing_data_identifier_title">Identificador (opcional)</string>
+    <string name="screen_text_generate_qr_code_billing_data_identifier">Definir um identificador...</string>
+    <string name="screen_text_generate_qr_code_billing_data_date_expiration_title">Possui data de expiração? (Opcional)</string>
+    <string name="screen_text_generate_qr_code_billing_data_date_expiration">Definir uma data...</string>
+    <string name="screen_text_generate_qr_code_billing_data_title_calendar_expiration">Selecione uma data para expiração do QRcode.</string>
+    <string name="screen_text_generate_qr_code_billing_data_info_about_expiration_date">Caso a data não seja informada, o QR Code não terá prazo de expiração</string>
+
+    <string name="screen_text_generate_qr_code_reminder">Lembrete: Quem pagar essa cobrança, visualizará os seguintes dados: Seu nome fantasia ou razão social; O seu CNPJ completo; e o nome da instituição financeira, Cielo S.A.</string>
+    <string name="screen_text_btn_generate_qr_code">Criar QR Code Pix</string>
+
+    <string name="text_pix_enter_identifier_title">Defina o seu identificador</string>
+    <string name="text_pix_enter_identifier_subtitle">Esse identificador será enviado junto com o valor a ser pago.</string>
+    <string name="text_pix_enter_identifier_hint">Seu identificador aqui</string>
+    <string name="text_pix_enter_identifier_btn">Salvar identificador</string>
+
+    <string name="text_pix_enter_amount_receivable_title">Qual o valor você quer receber?</string>
+    <string name="text_pix_enter_amount_receivable_btn_no_value">Não especificar um valor</string>
+
+    <string name="text_pix_dialog_new_key_title">Vamos cadastrar a chave aleatória?</string>
+    <string name="text_pix_dialog_new_key_message">Para simplificar sua transações com o Pix e agilizar a transação que você quer fazer agora, sugerimos cadastrar a chave aleatória. Para prosseguir, é necessário ter uma chave ativa.</string>
+    <string name="text_pix_dialog_new_key_button">Cadastrar outra chave</string>
+
+    <string name="text_pix_generate_qr_code_error_title">Não foi possível criar o QR Code!</string>
+    <string name="text_pix_generate_qr_code_error_message">Pedimos desculpas, ocorreu um erro na criação deste QR Code. Por favor, tente novamente.</string>
+
+    <string name="screen_toolbar_text_read_qr_code">Ler QR Code</string>
+    <string name="screen_text_read_qr_code">Aponte a câmera para\n escanear o QR Code.</string>
+    <string name="screen_text_read_qr_code_camera_permission_message">Para continuar você precisa habilitar o acesso câmera do seu aparelho. Você pode fazer isso alterando as permissões do Cielo Gestão nas configurações do seu aparelho.</string>
+    <string name="screen_text_read_qr_code_error_title">Houve uma falha na leitura do código</string>
+    <string name="screen_text_read_qr_code_error_message">Pedimos desculpas, mas este escaner só é compatível com QR Codes Pix.</string>
+
+    <string name="screen_text_read_qr_code_summary_pay_btn">Pagar</string>
+    <string name="screen_text_read_qr_code_summary_pay_value">Valor do pagamento</string>
+    <string name="screen_text_read_qr_code_summary_pay_recipient">DESTINO DO PAGAMENTO</string>
+    <string name="screen_text_read_qr_code_summary_pay_identifier">Identificador</string>
+    <string name="screen_text_read_qr_code_summary_pay_collector_message">Mensagem do cobrador</string>
+    <string name="screen_text_read_qr_code_summary_pay_set_date">Selecione uma data para agendar.</string>
+    <string name="text_pix_scheduled_payment">Pagamento agendado • Pix</string>
+    <string name="screen_text_read_qr_code_summary_pay_type">Pagamento de QR Code • Pix</string>
+    <string name="screen_text_withdraw_qr_code_receipt">Pagamento de QR Code • Pix Saque</string>
+    <string name="screen_text_change_qr_code_receipt">Pagamento de QR Code • Pix Troco</string>
+    <string name="screen_text_total_amount_qr_code_change">Total debitado da sua conta: %s</string>
+
+    <string name="text_pix_generated_qr_code">QR Code gerado</string>
+    <string name="text_pix_generated_qr_code_copy">O código Pix foi copiado</string>
+    <string name="text_pix_generated_qr_code_price_mask">R$ %d</string>
+    <string name="text_pix_share_your_qr_code_bs_title">Compartilhe seu QR Code Pix!</string>
+    <string name="text_pix_share_your_qr_code_bs_button_code">Compartilhar código</string>
+    <string name="text_pix_share_your_qr_code_bs_button_img">Compartilhar imagem</string>
+    <string name="text_pix_share_your_qr_code_bs_subtitle">Seu nome fantasia (ou razão social), CNPJ completo e instituição (Cielo S.A.) serão visualizados pelo pagador.</string>
+    <string name="text_your_document">Documento</string>
+    <string name="text_your_identifier">Identificador</string>
+    <string name="text_your_message_on_billing">Sua mensagem na cobrança</string>
+    <string name="text_your_qr_code_expires_in">QR Code expira em</string>
+    <string name="text_share_or_show_your_qr_code">Mostre ou compartilhe o QR Code Pix</string>
+
+    <string name="text_error_pay_qrcode"><![CDATA[Não conseguimos fazer a transação de <b>%s</b> para <b>%s</b>.
+    <br><br>Motivo: %s]]></string>
+
+    <string name="text_in_process_pay_qrcode"><![CDATA[Sua transação Pix de <b>%s</b> para <b>%s</b> está em processamento.
+    <br><br>Aviso: Esta transação pode levar alguns minutos para ser efetuada. Após a conclusão do processamento, você sera notificado.]]></string>
+
+    <string name="text_success_pay_qrcode"><![CDATA[Você pagou com sucesso o valor de <b>%s</b> para <b>%s</b>.]]></string>
+
+    <string name="text_success_pay_qrcode_withdrawal"><![CDATA[Você pagou com sucesso o valor de <b>%s</b> para <b>%s</b>.
+    <br><br><b>Atenção:</b> Caro cliente, não se esqueça de retirar o valor do Pix Saque no local no qual você realizou esta transação.]]></string>
+
+    <string name="text_success_pay_qrcode_change"><![CDATA[Você pagou com sucesso a compra de %s mais <b>troco de %s</b>) para <b>%s</b>.
+    <br><br><b>Atenção:</b> Caro cliente, não se esqueça de retirar o valor do Pix Troco no local para qual você realizou esta transação.]]></string>
+
+    <string name="text_success_pay_qrcode_title">Pagamento efetuado</string>
+    <string name="qr_code_image_content_description">Não foi possível carregar o QR Code. Compartilhe apenas o código Pix Copia e Cola.</string>
+    <string name="qr_code_description_copy_code">Copiar código</string>
+
+    <string name="text_pix_summary_pay_date">Data do pagamento</string>
+    <string name="text_pix_summary_pay_title">Antes de finalizar a pagamento, confirme os dados</string>
+
+    <string name="text_message_received_on_billing_title">Mensagem recebida na cobrança</string>
+    <string name="text_scheduled_to_title">Agendado para</string>
+    <string name="text_scheduled_to_info">Sua transação será debitada na data agendada. Nesta data será gerado um novo comprovante da transação efetuada.</string>
+
+    <string name="text_pix_summary_pay_date_withdrawal">Data do saque</string>
+    <string name="text_pix_summary_qrcode_withdrawal_title">Antes de finalizar o pagamento do Pix Saque, confirme os dados</string>
+    <string name="text_pix_summary_qrcode_change_title">Antes de finalizar o pagamento da compra com o Pix Troco, confirme os dados</string>
+
+    <string name="text_pix_summary_qrcode_withdrawal_title_value">Valor do saque</string>
+    <string name="text_pix_summary_qrcode_change_title_value">Valor do troco</string>
+    <string name="text_pix_summary_qrcode_information_change_withdrawal">Nenhum valor adicional poderá ser cobrado pelos estabelecimentos comerciais e bancários em que você solicita o Pix Saque e Pix Troco.</string>
+
+    <string name="screen_read_qr_code_summary_purchase_title">Valor da compra</string>
+
+    <string name="tex_btn_show_pix_onboarding_extract">Ver meu extrato</string>
+    <string name="text_onboarding_extract_pix_title_page_one">Identifique facilmente os lançamentos no extrato</string>
+    <string name="text_onboarding_extract_pix_subtitle_page_one">Reconheça a data, o tipo de transação e com quem você enviou ou recebeu dinheiro na sua conta.</string>
+    <string name="text_onboarding_extract_pix_title_page_two">Visualize suas transações agendadas em uma área dedicada</string>
+    <string name="text_onboarding_extract_pix_subtitle_page_two">Na aba agendados, você pode visualizar as suas tranferências e pagamentos agendados.</string>
+    <string name="text_onboarding_extract_pix_title_page_three">Veja os detalhes de cada transação Pix</string>
+    <string name="text_onboarding_extract_pix_subtitle_page_three">Você pode consultar os comprovantes, devolver qualquer valor recebido e cancelar agendamentos. Vem conhecer!</string>
+    <string name="text_toolbar_extract_pix">Extrato</string>
+
+    <string name="text_pix_extract_home_header">Seus recebimentos são transferidos automaticamente para seu domicílio bancário. Quer ter acesso completo as funcionalidades Pix? Saiba mais > </string>
+    <string name="text_pix_extract_home_header_initial">Seus recebimentos são transferidos automaticamente para seu domicílio bancário.</string>
+    <string name="text_pix_extract_tab_all">Todas</string>
+    <string name="text_pix_extract_tab_returns">Devoluções</string>
+    <string name="text_pix_extract_tab_scheduled">Agendados</string>
+    <string name="text_pix_extract_title_information">É uma satisfação ter você com a gente</string>
+    <string name="text_pix_extract_message_information">Acompanhe suas transações dentro da sua conta Pix e mantenha sua vida financeira organizada.</string>
+    <string name="text_pix_extract_message_information_page_return">Olá! Suas devoluções vão aparecer aqui e em breve estaremos lançando esta funcionalidade.</string>
+    <string name="text_pix_extract_title_information_page_scheduled">Olá! Suas transações agendadas aparecem aqui.</string>
+    <string name="text_pix_extract_message_information_page_scheduled">Para agendar uma transação, basta escolher uma data futura na transferência ou pagamento.</string>
+    <string name="text_pix_extract_filter_page">Filtrar transações:</string>
+    <string name="text_pix_extract_filter_title_entries">Lançamentos</string>
+    <string name="text_pix_extract_filter_title_transactions">Transações</string>
+    <string name="text_pix_extract_filter_title_define_date">Defina as datas (não coloque datas futuras):</string>
+    <string name="text_pix_extract_filter_title_selection_one_transaction">Selecione até 1 transação</string>
+    <string name="text_pix_extract_filter_title_periodo">Período</string>
+    <string name="text_pix_extract_button_apply_filter">Aplicar</string>
+    <string name="text_pix_extract_filter_choose_other_period">Selecione outra data para aplicar este filtro</string>
+    <string name="text_pix_extract_filter_choose_other_period_item">Escolher outro período</string>
+    <string name="text_pix_extract_filter_date_start">De: Dia/Mês/Ano</string>
+    <string name="text_pix_extract_filter_date_end">Até: Dia/Mês/Ano</string>
+    <string name="text_pix_extract_filter_date_start_complete">De: %s</string>
+    <string name="text_pix_extract_filter_date_end_complete">Até: %s</string>
+    <string name="text_pix_extract_filter_toast_msg_clear">Filtros alterados para as opções padrão de\ncada categoria.</string>
+    <string name="text_pix_extract_no_data_result_filter">Não encontramos nenhuma transação com base no seu filtro, tente outra combinação.</string>
+    <string name="text_pix_extract_filter_title">Filtros: Aba Todas</string>
+    <string name="text_pix_extract_filter_chose_other_period">Selecione outra data para aplicar este filtro</string>
+    <string name="btn_reconfigure_filters">Rever Filtros</string>
+    <string name="text_pix_extract_filter_content_description_screen_filters">Abrir tela Filtro</string>
+    <string name="txt_pix_extract_filter_button_open_filter">Filtros</string>
+    <string name="txt_pix_extract_filter_option_period_recents">Mais Recentes</string>
+    <string name="txt_pix_extract_filter_option_transaction">Todas as Transações</string>
+    <string name="txt_pix_extract_filter_option_transfers">Transferências</string>
+    <string name="txt_pix_extract_filter_option_qr_code">QR Codes</string>
+    <string name="txt_pix_extract_filter_option_returns">Devoluções</string>
+    <string name="txt_pix_extract_filter_entries">Entradas (+R$)</string>
+    <string name="txt_pix_extract_filter_exits">Saídas (–R$)</string>
+    <string name="txt_pix_extract_filter_option_all_releases">Todos os lançamentos</string>
+    <string name="text_pix_balance_icon_content_description_show_true">Botão para ocultar saldo</string>
+    <string name="text_pix_balance_icon_content_description_show_false">Botão para exibir saldo</string>
+
+    <string-array name="titles_page_pix_extract">
+        <item>Todas</item>
+        <item>Devoluções</item>
+        <item>Agendados</item>
+    </string-array>
+
+    <string name="screen_toolbar_text_extract">Extrato Pix</string>
+    <string name="screen_toolbar_text_extract_detail">Detalhes da transação</string>
+
+    <string name="text_pix_extract_detail_processing_title">Em processamento</string>
+    <string name="text_pix_extract_detail_processing_content"><![CDATA[<b>Esta transação pode levar alguns minutos para ser concluída</b>, fique tranquilo, iremos notificar após a conclusão do processamento.]]></string>
+    <string name="text_pix_extract_detail_failed_title">Transação não efetuada</string>
+    <string name="text_pix_extract_detail_failed_content"><![CDATA[<b>A instituição recebedora negou a transferência,</b> entre em contato com o recebedor e tente novamente.]]></string>
+
+    <string name="quoted_label">”%s”</string>
+
+    <string name="text_pix_extract_detail_status_title_pix_receive">Transferência recebida • Pix</string>
+    <string name="text_pix_extract_detail_status_title_qr_code_pix_receive">Recebido via QR Code • Pix</string>
+    <string name="text_pix_extract_detail_status_title_qr_code_troco_receive">Recebido via QR Code • Pix Troco</string>
+    <string name="text_pix_extract_detail_status_title_qr_code_saque_receive">Recebido via QR Code • Pix Saque</string>
+    <string name="text_pix_extract_detail_status_title_pix_send">Transferência enviada • Pix</string>
+    <string name="text_pix_extract_detail_status_title_qr_code_saque_send">Pagamento do QR Code • Pix Saque</string>
+    <string name="text_pix_extract_detail_status_title_fee">Tarifa • Pix</string>
+    <string name="text_pix_extract_detail_status_title_processing_transfer">Processando transferência • Pix</string>
+
+    <string name="text_pix_extract_detail_transaction_receipt_title">Comprovante de transação</string>
+    <string name="text_pix_extract_detail_transaction_receipt_amount">Valor</string>
+
+    <string name="text_pix_extract_detail_transaction_receipt_type">Tipo da transação</string>
+    <string name="text_pix_extract_detail_transaction_receipt_about">Sobre a transação</string>
+
+    <string name="text_pix_extract_detail_message_received">Mensagem recebida</string>
+    <string name="text_pix_extract_detail_message_sent">Mensagem enviada</string>
+    <string name="text_pix_extract_detail_received_from">Recebido de</string>
+    <string name="text_pix_extract_detail_sent_to">Para</string>
+    <string name="text_pix_extract_detail_transfer_sent_to">Transferido para</string>
+
+    <string name="text_pix_extract_detail_transaction_link">Ver transação tarifada</string>
+
+    <string name="text_pix_extract_detail_bank_and_document">%s • Documento: %s</string>
+    <string name="tv_value_sale_pix">Valor da venda:</string>
+    <string name="tv_value_change_pix">Valor do Pix Troco:</string>
+    <string name="tv_purchase_amount">Valor da compra:</string>
+    <string name="text_pix_extract_detail_received_amount">Valor recebido:</string>
+    <string name="text_pix_extract_detail_fee">Tarifa:</string>
+    <string name="text_pix_extract_detail_net_amount_in_account">Líquido na conta:</string>
+    <string name="text_pix_extract_detail_fee_amount">Valor da tarifa:</string>
+    <string name="text_pix_extract_detail_transferred_amount">Valor transferido:</string>
+    <string name="text_pix_extract_detail_receiving">Recebimento:</string>
+    <string name="text_pix_extract_detail_fee_info">A tarifa é referente a um recebimento na sua conta Pix Cielo.</string>
+    <string name="text_pix_extract_detail_receiving_details_text">O valor transferido é o líquido de um recebimento descontado a tarifa. Para mais informações, veja os detalhes do recebimento.</string>
+    <string name="text_pix_extract_detail_receiving_details_button">Ver detalhes do recebimento</string>
+    <string name="text_pix_extract_detail_to_be_discounted">A ser descontado</string>
+    <string name="text_pix_extract_detail_processing">Em processamento</string>
+
+    <string name="text_pix_extract_detail_content_description_button_fee">Tarifa, %s. Botão</string>
+    <string name="text_pix_extract_detail_content_description_button_net_amount">Valor líquido na conta: %s. Botão</string>
+    <string name="text_pix_extract_detail_content_description_button_receiving_amount">Recebimento, %s. Botão</string>
+    <string name="text_pix_extract_detail_content_description_button_see_receiving_details">Ver detalhes do recebimento. Botão</string>
+
+    <string name="we_found_a_problem_title">Ops! Encontramos um probleminha aqui</string>
+    <string name="we_found_a_problem_subtitle">Pedimos desculpas mas ocorreu um erro no sistema. Por favor tente de novo.</string>
+    <string name="pix_qr_code_sent_withdraw">Pagamento de QR Code • Pix Saque</string>
+    <string name="pix_qr_code_sent_change">Pagamento de QR Code • Pix Troco</string>
+    <string name="pix_qr_code_payment_transfer">Pagamento de QR Code • Pix</string>
+    <string name="pix_sent_transfer">Transferência enviada • Pix</string>
+    <string name="pix_qr_code_received_withdraw">Recebido via QR Code • Pix Saque</string>
+    <string name="pix_qr_code_received_change">Recebido via QR Code • Pix Troco</string>
+    <string name="pix_qr_code_received_payment_transfer">Recebido via QR Code • Pix</string>
+    <string name="pix_received_transfer">Transferência recebida • Pix</string>
+    <string name="pix_sent_reversal">Devolução enviada • Pix</string>
+    <string name="pix_received_reversal">Devolução recebida • Pix</string>
+    <string name="pix_negative_value">– %s</string>
+    <string name="pix_view_original_transaction">Ver transação original</string>
+
+    <string name="screen_account_management_toolbar">Gestão da conta Pix Cielo</string>
+    <string name="screen_account_management_title">As configurações abaixo, são aplicados a todos os estabelecimentos (ECs) vinculados ao CNPJ desta conta.</string>
+    <string name="screen_account_management_automatic_transfer_active">Transferência automática está ativa na sua conta Pix Cielo</string>
+    <string name="screen_account_management_automatic_transfer_information">Os recebimentos das suas vendas Pix do EC selecionado, são transferidas sem custos, automaticamente desta conta Pix Cielo para o seu domicílio bancário de destino:</string>
+    <string name="screen_account_management_automatic_free_movement_title">Livre movimentação da sua conta Pix Cielo</string>
+    <string name="screen_account_management_automatic_free_movement_subtitle">Com a livre movimentação, você terá disponível todas as funcionalidades Pix.</string>
+    <string name="screen_account_management_automatic_free_movement_informative">Com a livre movimentação ativa, a transferência automática é desabilitada, e você pode utilizar as funcionalidades Pix para movimentar o seu saldo.</string>
+    <string name="screen_account_management_automatic_free_movement_active">Quer ativar a livre movimentação?</string>
+    <string name="screen_account_management_automatic_free_movement_active_btn">Ativar livre movimentação</string>
+
+    <string name="pix_bank_account_agency"><![CDATA[Agência: <b>%s</b>]]></string>
+    <string name="pix_bank_account_account"><![CDATA[Conta: <b>%s</b>]]></string>
+
+    <string name="screen_account_management_digital_identity_migration_title">Identificamos que você ainda não atualizou o seu cadastro Cielo</string>
+    <string name="screen_account_management_digital_identity_migration_subtitle">Para ativar a livre movimentação da sua conta Pix Cielo, é necessário você realizar a atualização cadastral, garantindo maior segurança e oferecendo novos recursos para você na Cielo. Quer atualizar agora?</string>
+    <string name="screen_account_management_digital_identity_migration_btn">Atualizar cadastro</string>
+
+    <string name="screen_account_management_digital_identity_migration_not_admin_title">O seu perfil não tem acesso a gestão do Pix</string>
+    <string name="screen_account_management_digital_identity_migration_not_admin_subtitle">Verifique com a pessoa que administra este CNPJ / EC, se você pode ter acesso ao Pix.</string>
+
+    <string name="screen_account_management_digital_identity_migration_confirmation_title">Ao continuar, você não poderá voltar a ativar a transferência automática</string>
+    <string name="screen_account_management_digital_identity_migration_confirmation_message">Lembrando que você mesmo que terá que transferir o seu saldo para qualquer instituição utilizando as funcionalidades Pix. Quer mesmo continuar?</string>
+    <string name="screen_account_management_digital_identity_migration_confirmation_btn">Quero continuar</string>
+
+    <string name="screen_account_management_error_merchant">Não foi possível exibir o seu domicílio bancário, tente recarregar.</string>
+    <string name="screen_account_management_success_change_account_title">Livre movimentação da sua conta Pix Cielo ativada com sucesso</string>
+    <string name="screen_account_management_success_change_account_message"><![CDATA[A partir desse momento, não haverá transferências automáticas do seu saldo.
+    <br><br><b>Atenção: Agora você tem acesso a todas as funcionalidades Pix.</b>]]></string>
+
+    <string name="pix_copy_paste_screen_title">Pix Copia e Cola</string>
+    <string name="pix_copy_paste_screen_label">Insira o código do Pix copia e cola para pagamento</string>
+    <string name="pix_copy_paste_screen_hint">Digite ou cole o código</string>
+    <string name="pix_paste_qr_code">Colar código</string>
+
+    <string name="text_pix_scheduled_date">Agendado para %s</string>
+    <string name="text_pix_scheduled_appointment_receipt">Comprovante de agendamento</string>
+    <string name="screen_text_transfer_summary_set_scheduled_date">Selecione uma data para agendar</string>
+    <string name="screen_text_transfer_summary_set_scheduled_date_today">Hoje - %s</string>
+    <string name="screen_text_transfer_summary_set_scheduled_date_future">Agendado - %s</string>
+    <string name="text_pix_extract_detail_scheduled_title">Transação agendada</string>
+    <string name="text_pix_extract_card_scheduled">Transferência agendada • Pix</string>
+    <string name="text_pix_extract_detail_scheduled_content">Para efetivar esta transação, é necessário haver saldo suficiente na data agendada, caso contrário, ela será cancelada.</string>
+    <string name="text_pix_extract_detail_transaction_cancel_schedule">Cancelar agendamento</string>
+    <string name="text_pix_dialog_cancel_scheduled_pix_title">Deseja cancelar esse agendamento?</string>
+    <string name="text_pix_extract_detail_status_title_pix_scheduled">Transação agendada • Pix</string>
+    <string name="text_pix_summary_scheduled_transfer_success_message"><![CDATA[Você agendou com sucesso a tranferência do valor de <b>%s</b> para <b>%s</b>]]></string>
+    <string name="text_pix_dialog_cancel_scheduled_pix_message">Após a confirmação, essa transação agendada será cancelada</string>
+    <string name="text_pix_dialog_cancel_scheduled_pix">Agendamento cancelado</string>
+    <string name="text_pix_dialog_cancel_scheduled_pix_success_bold">Você cancelou esta transação agendada.</string>
+    <string name="text_pix_dialog_cancel_scheduled_pix_success"><![CDATA[ <b>Você cancelou esta transação agendada.</b> Não iremos debitar esse valor do seu saldo. ]]></string>
+
+    <string name="text_pix_summary_qrcode_due_date_charge">Data de vencimento desta cobrança</string>
+    <string name="text_pix_summary_qrcode_deadline_due_date">Data limite para pagamento após vencimento</string>
+    <string name="text_pix_summary_qrcode_date_later">A data acima é posterior a data de vencimento, com isso houve reajuste no valor do pagamento.</string>
+
+    <string name="text_pix_summary_qrcode_debtor">DADOS DO DEVEDOR</string>
+    <string name="text_pix_summary_qrcode_debtor_name">Nome do devedor</string>
+    <string name="text_pix_summary_qrcode_debtor_document">%s do devedor</string>
+
+    <string name="text_pix_summary_qrcode_original_value">Valor original</string>
+    <string name="text_pix_summary_qrcode_interest_value">Juros</string>
+    <string name="text_pix_summary_qrcode_penalty_value">Multa</string>
+    <string name="text_pix_summary_qrcode_abatement_value">Abatimentos</string>
+    <string name="text_pix_summary_qrcode_discount_value">Descontos</string>
+    <string name="text_pix_summary_qrcode_show_details">Exibir detalhes do valor</string>
+    <string name="text_pix_summary_qrcode_gone_details">Ocultar detalhes do valor</string>
+    <string name="text_pix_summary_qrcode_cob_error_title">Não foi possível concluir a escolha da data do pagamento</string>
+
+    <string name="text_pix_summary_qrcode_cob_other_information">Informações adicionais da cobrança</string>
+    <string name="text_pix_summary_qrcode_cob_final_amount">Valor final do pagamento</string>
+
+
+    <string-array name="array_pix_tab_my_limits">
+        <item>Transação</item>
+        <item>Saque e troco</item>
+        <item>Contatos de confiança</item>
+        <item>Gestão de horários</item>
+    </string-array>
+
+    <string name="text_toolbar_pix_my_limits">Meus Limites Pix</string>
+    <string name="text_toolbar_pix_my_limits_pix_pf">Pix para pessoas</string>
+    <string name="text_toolbar_pix_my_limits_pix_pj">Pix para empresas</string>
+    <string name="text_toolbar_pix_my_limits_transactions">Limites transações Pix</string>
+    <string name="text_toolbar_pix_my_limits_withdraw_and_change">Pix Saque e Pix Troco</string>
+    <string name="text_toolbar_pix_my_limits_account_registration">Cadastro de contas</string>
+    <string name="text_toolbar_pix_my_limits_time_management">Gestão de horário</string>
+    <string name="text_pix_my_limits_settings">Configurações Pix</string>
+    <string name="text_pix_my_limits_manager">Gerencie os limites das suas transações, saque e troco Pix e cadastre contas.</string>
+    <string name="text_pix_my_limits_title_transaction">Configure os limites das suas transações Pix</string>
+    <string name="text_pix_my_limits_title_transaction_cpf">Configure os limites das suas transações Pix para pessoas</string>
+    <string name="text_pix_my_limits_title_transaction_cnpj">Configure os limites das suas transações Pix para empresas</string>
+    <string name="text_pix_my_limits_title_withdraw_and_change">Configure os limites das suas transações Pix Saque e Pix Troco</string>
+    <string name="text_pix_my_limits_title_time_management">Configure a hora de início do período noturno</string>
+    <string name="text_my_limits_subtitle_time_management">Você pode alterar o início do período noturno. Essa mudança afeta as transações Pix, Pix Saque e Pix Troco.</string>
+    <string name="text_my_limits_available_limit">Limite Disponível</string>
+    <string name="text_my_limits_available_limit_description">O limite disponível refere-se ao valor correspondente que você pode movimentar, para os tipos de limites.</string>
+
+    <string name="text_pix_my_limits_title_account_registration">Cadastro de contas</string>
+    <string name="text_pix_my_limits_subtitle_account_registration">Envie com segurança, um Pix com valores maiores que o seu limite para as contas cadastradas.</string>
+    <string name="text_pix_my_limits_register_new_account">Cadastrar uma nova conta</string>
+    <string name="text_pix_my_limits_empty_title_account_registration">Você não possui nenhuma conta cadastrada.</string>
+    <string name="text_pix_my_limits_trusted_detail_instituitions">Instituições relacionadas:</string>
+    <string name="text_pix_my_limits_trusted_detail_data">DADOS DA CONTA</string>
+    <string name="text_my_limits_transaction_change">A alteração dos limites abaixo afetará:</string>
+    <string name="text_my_limits_transaction_options"><![CDATA[&#8226; Enviar transferência Pix;<br>&#8226; Pagamentos de QR Code Pix;<br>&#8226; Enviar devolução Pix.]]></string>
+    <string name="text_my_limits_transaction_check_daytime_and_nighttime">Consulte os horários do período diurno e noturno na aba gestão de horários.</string>
+    <string name="text_pix_my_limits_withdraw">Pix Saque e Pix Troco a serem realizados em estabelecimentos credenciados.</string>
+    <string name="text_my_limits_transaction_daytime">Período diurno</string>
+    <string name="text_pix_my_limits_transaction_nocturnal">Período noturno</string>
+    <string name="text_pix_my_limits_transaction_hours_range">(Das %dh às %dh)</string>
+    <string name="text_pix_my_limits_daytime">Período diurno:</string>
+    <string name="text_pix_my_limits_nighttime">Período Noturno:</string>
+    <string name="text_pix_my_limits_schedule">Horário atual</string>
+    <string name="text_pix_my_limits_schedule_brasilia">de acordo com o horário de Brasília</string>
+    <string name="text_pix_my_limits_transaction_monthly">Limite mensal</string>
+    <string name="text_pix_my_limits_transaction">Limite por transação:</string>
+    <string name="text_pix_my_limits_total">Limite total do período:</string>
+    <string name="text_pix_my_limits_value">Valor total para todas as transações no mês:</string>
+    <string name="pix_marker"> • </string>
+    <string name="text_pix_my_limits_error_title">Não foi possível abrir esta funcionalidade da gestão dos seus limites</string>
+
+    <string name="text_pix_my_limit_adjust_limit">Ajustar limite</string>
+    <string name="text_pix_new_limit_daytime">Qual o novo limite da transação do período diurno?</string>
+    <string name="text_pix_new_limit_daytime_total">Qual o novo limite total do período diurno?</string>
+    <string name="text_pix_new_limit_nighttime">Qual o novo limite da transação do período noturno?</string>
+    <string name="text_pix_new_limit_nighttime_total">Qual o novo limite total do período noturno?</string>
+    <string name="text_pix_new_limit_start_nighttime">Escolha o início do período noturno</string>
+    <string name="text_pix_new_limit_monthly">Qual o novo limite mensal?</string>
+    <string name="text_pix_send_adjust_limit">A solicitação do novo limite foi enviada</string>
+    <string name="text_pix_detail_adjust_limit">Para aumento de limite, a efetivação do ajuste leva de 24h a 48h para ser aplicado. Se você está diminuindo um limite, a aplicação é instantânea.</string>
+    <string name="text_pix_my_limit_info"><![CDATA[O valor acima é seu limite atual e <b>será alterado para %s</b>. O prazo para ativação leva de 24h à 48h.]]></string>
+    <string name="text_pix_checking_start">A partir das 22h</string>
+    <string name="text_pix_checking_end">A partir das 20h</string>
+    <string name="text_pix_daytime_start">Das %sh às %sh</string>
+    <string name="text_pix_nighttime_end">Das %sh às %sh</string>
+    <string name="text_apply_change">Aplicar alteração</string>
+
+    <string name="text_registration_date">Data de cadastro</string>
+    <string name="text_contact_data">Dados do contato</string>
+    <string name="text_pix_my_limits_register_trusted_destination_transfer_value_info">Este valor se aplicará a todas transações diurnas e noturnas e também será o limite mensal que você pode enviar para esta conta.</string>
+    <string name="text_delete_account">Excluir conta</string>
+    <string name="text_delete_account_dialog_title">Tem certeza que deseja excluir esta conta?</string>
+    <string name="text_delete_account_dialog_info">Você poderá cadastrar novamente com um novo limite, mas terá que aguardar de 24h a 48h para efetivação.</string>
+    <string name="text_delete_account_dialog_btn">Sim, excluir</string>
+
+    <string name="pix_text_my_limits_trusted_error_title">Não foi possível a gestão dos seus limites</string>
+
+    <string name="pix_text_my_limits_add_new_trusted_destination">Finalizar cadastro</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_options">Para iniciar o cadastro, qual a chave do seu contato?</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_toolbar">Cadastrar conta</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_subtitle">Revise os dados do seu contato antes de finalizar o cadastro</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_limit_title">LIMITE PARA ESTA CONTA</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_informative">O valor acima se aplicará as transações diurnas e noturnas e também será o limite mensal que você terá para esta conta</string>
+
+    <string name="pix_text_my_limits_add_new_trusted_destination_cancel">Cancelar cadastro</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_cancel_title">Tem certeza que deseja cancelar este cadastro?</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_cancel_message">Você pode realizar o cadastro em outro momento, mas ao cancelar nesta etapa, todos os dados preenchidos até agora serão perdidos e terá que preencher novamente.</string>
+
+    <string name="pix_text_my_limits_add_new_trusted_destination_name">Nome</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_success_title">A solicitação de cadastro da conta bancária foi enviada</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_success_message">Para a sua segurança, leva de 24h a 48h para ser efetivado o cadastro desta conta bancária do seu contato de confiança.</string>
+
+    <string name="pix_text_my_limits_add_new_trusted_destination_value_title">Qual o limite desta nova conta?</string>
+    <string name="pix_text_my_limits_add_new_trusted_destination_value_message">O valor se aplicará as transações diurnas e noturnas e também será o limite mensal que você terá para esta conta.</string>
+
+    <string name="pix_text_my_limits_add_new_trusted_destination_greater_than_zero">Você deve definir um valor para poder prosseguir com o cadastro desse contato.</string>
+
+    <string name="pix_title_dialog_alert_add_new_reliable_contact">Atenção! A conta recém cadastrada só será exibida na lista quando efetivada</string>
+    <string name="pix_message_dialog_alert_add_new_reliable_contact">Aguarde o prazo de 24h a 48h, quando efetivada, a conta bancária do contato será exibida na sua lista de contatos de confiança.</string>
+
+    <string name="pix_reversal_history">Histórico de devoluções</string>
+    <string name="pix_reversal_history_error">Não foi possível exibir o histórico de devoluções, tente recarregar.</string>
+    <string name="pix_reversal_question">Você deseja devolver um valor?</string>
+    <string name="pix_reversal_question_troco">Você deseja devolver um valor do Pix Troco?</string>
+    <string name="pix_reversal_expired">Tempo expirado para devolução</string>
+    <string name="pix_reversal_i_want_to_reversal">Quero devolver um valor</string>
+    <string name="pix_reversal_full">Foi realizada a devolução integral</string>
+    <string name="pix_reversal_due_date_message">A devolução integral ou parcial para quem te pagou, pode ser feita até %s do dia %s.</string>
+
+    <string name="text_pix_reversal_receipt_reversal_data">Dados da devolução</string>
+    <string name="tv_amount_title_receipt_reversal_debit">Valor devolvido</string>
+    <string name="tv_amount_title_receipt_reversal_credit">Valor recebido</string>
+    <string name="tv_reason_title_receipt_reversal">Motivo</string>
+    <string name="tv_available_amount_title_receipt_reversal">Valor atual restante para devolução</string>
+    <string name="tv_auth_code_title_receipt_reversal">Código de autenticação</string>
+
+    <string name="text_pix_reversal_insert_reason">Motivo (opcional)</string>
+
+    <string name="text_pix_reversal_insert_reason_hint">Escreva o seu motivo...</string>
+    <string name="text_pix_reversal_type_value">Devolução • Pix</string>
+
+    <string name="text_pix_enter_message_title_reversal">Escreva o motivo da devolução</string>
+    <string name="text_pix_enter_message_hint_reversal">Seu motivo aqui</string>
+    <string name="text_pix_enter_message_btn_reversal">Salvar motivo</string>
+
+    <string name="text_pix_summary_transfer_title_reversal">Antes de finalizar a devolução, confirme os dados</string>
+    <string name="text_pix_summary_transfer_value_title_reversal">Valor a devolver</string>
+
+    <string name="text_pix_summary_transfer_destination_reversal">DESTINO DA DEVOLUÇÃO</string>
+
+    <string name="text_pix_enter_amount_title_reversal">Quanto você deseja devolver?</string>
+    <string name="text_pix_enter_amount_reversal_available">Disponível para devolução</string>
+    <string name="text_pix_enter_reversal_amount_message_error">O valor deve ser igual ou menor que %s</string>
+    <string name="toolbar_screen_transfer_pix_reversal">Devolver um valor</string>
+    <string name="text_pix_transaction_transfer_reversal">Devolver</string>
+    <string name="text_pix_reversal_receipt_original_transaction">Dados da transação original</string>
+    <string name="text_pix_reversal_receipt_original_amount">Valor original</string>
+    <string name="text_pix_reversal_receipt_original_date_hour">Data e hora</string>
+    <string name="text_pix_reversal_receipt_original_payer_debit">Pagador do valor original</string>
+    <string name="text_pix_reversal_receipt_original_payer_credit">Você enviou o valor original para</string>
+    <string name="text_pix_reversal_receipt_original_document">Documento</string>
+    <string name="text_pix_reversal_receipt_original_institution">Instituição</string>
+    <string name="text_pix_reversal_receipt_original_transaction_auth_code">Código de autenticação da transação original</string>
+    <string name="text_pix_reversal_receipt_original_transaction_date_hour">%s às %s</string>
+    <string name="text_pix_amount_available_to_reversal">Disponível para devolução:</string>
+    <string name="text_pix_history_refunds_error">Não foi possível exibir o histórico de devoluções, tente recarregar.</string>
+
+    <string name="screen_account_management_automatic_movement_active_btn">Ativar</string>
+    <string name="screen_account_management_automatic_movement_active_question">Quer ativar a transferência automática?</string>
+    <string name="screen_account_management_automatic_movement_title">Transferência automática na sua conta Pix Cielo</string>
+    <string name="screen_account_management_free_movement_is_active_title">A livre movimentação da sua conta Pix Cielo está ativa</string>
+    <string name="text_change_account_type">Alterar gestão da conta</string>
+
+    <string name="text_pix_dialog_migration_to_free_movement_title">Você precisar transferir todo o seu saldo para conseguir ativar a transferência automática</string>
+    <string name="text_pix_dialog_migration_to_free_movement_subtitle">A sua conta Pix Cielo, deve estar com o saldo R$ 0,00 para ativar essa funcionalidade.</string>
+    <string name="screen_account_management_success_change_to_transitory_account_title">A transferência automática da sua conta Pix Cielo foi ativada com sucesso</string>
+    <string name="screen_account_management_success_change_to_transitory_account_subtitle">A partir desse momento, todos os seus recebimentos são transferidos automáticamente para o seu domicílio bancário.</string>
+    <string name="text_pix_generic_bs_error_title">Não foi possível concluir a sua solicitação</string>
+
+    <string name="text_pix_night_time_success_message">Para ajustar o horário noturno, a efetivação do ajuste leva de 24h a 48h para ser aplicado.</string>
+    <string name="text_pix_night_time_success_title">A solicitação do novo horário foi enviada</string>
+
+    <string name="text_pix_generic_error_title">Não foi possível concluir a sua solicitação</string>
+    <string name="text_pix_generic_error_message">Pedimos desculpas, ocorreu um erro no processamento. Por favor, tente cadastrar novamente.</string>
+    <string name="text_pix_error_in_processing">Pedimos desculpas, ocorreu um erro no processamento. Por favor, tente novamente.</string>
+
+    <string name="text_pix_error_try_again">Tente atualizar para recarregar.</string>
+    <string name="text_pix_my_limit_night_time_pending_alert"><![CDATA[O horário selecionado acima é seu horário atual e <b>será alterado para %s</b> após o prazo de segurança.]]></string>
+    <string name="text_pix_typed_key_to_transfer">Chave digitada</string>
+
+
+    <string name="txt_pix_error_crashlytics_on_dismiss_bs">Erro no onDismiss (BS Pix Transfer) %s</string>
+    <string name="txt_pix_error_crashlytics_on_destroy_view_bs">Erro no onDestroyView (BS Pix Transfer) %s</string>
+
+
+    <string name="text_pix_to_many_requests_error_title_handlerview">Por segurança, efetuar transferências com chave está bloqueada por 1 hora</string>
+    <string name="text_pix_to_many_requests_error_body_handlerview"><![CDATA[Identificamos que houve tentativas de transferências para diferentes chaves em menos de 1 minuto.<br/>Aguarde o tempo estipulado para realizar esse tipo de transação.]]></string>
+    <string name="close_handlerview">Fechar</string>
+
+    <string name="txt_pix_filter_date_invalid">Não é possível filtrar por períodos superiores a 90 dias.</string>
+    <string name="txt_pix_open_finance_unavailable_service" >Infelizmente, não será possível prosseguir no momento. \nPor favor, tente novamente mais tarde.</string>
+    <string name="txt_pix_open_finance_back_institution" >Voltar para instituição iniciadora</string>
+    <string name="txt_pix_open_finance_not_account_pix" >Você não possui nenhuma conta Pix Cielo</string>
+    <string name="txt_pix_open_finance_request_pix_account" >Solicite ou habilite a sua conta Pix Cielo pelo Aplicativo Cielo Gestão, e comece a utilizar as funcionalidades Pix.</string>
+    <string name="txt_pix_open_finance_meet_pix_account" >Conhecer Pix Cielo</string>
+    <string name="txt_open_finance_impersonating_subtitle">Escolha o estabelecimento que autorizará o pagamento</string>
+    <string name="txt_open_finance_impersonating_title">Selecione o estabelecimento</string>
+    <string name="txt_title_confirm_payment_open_finance">Confirme a solicitação de pagamento</string>
+    <string name="txt_value_payment_open_finance">Valor do pagamento</string>
+    <string name="txt_tax_open_finance">Tarifa:</string>
+    <string name="txt_payment_form_open_finance">Forma de pagamento</string>
+    <string name="txt_date_payment_open_finance">Data do pagamento</string>
+    <string name="txt_info_from_payer_open_finance">Informações do pagador</string>
+    <string name="txt_account_pix_cielo_open_finance">Conta Pix Cielo</string>
+    <string name="txt_change_merchant_open_finance">Selecionar outro estabelecimento</string>
+    <string name="txt_transfer_destination_open_finance">Destino da transferência</string>
+    <string name="txt_to_open_finance">Para</string>
+    <string name="txt_document_open_finance">Documento</string>
+    <string name="txt_pix_key_open_finance">Chave Pix</string>
+    <string name="txt_cancel_operation_open_finance">Cancelar operação</string>
+    <string name="txt_warning_detainer_open_finance"><![CDATA[Para que possamos finalizar o pagamento, iremos te redirecionar para a instituição <b>%s</b>]]></string>
+    <string name="txt_confirm_payment_open_finance">Deseja confirmar o pagamento?</string>
+    <string name="txt_desc_payment_open_finance">Ao clicar em confirmar, vamos validar seu token de segurança e te redirecionar para a instituição iniciadora de pagamento.</string>
+    <string name="txt_payment_open_finance">Confirmar pagamento</string>
+    <string name="txt_without_access_open_finance">Sem permissão de acesso</string>
+    <string name="txt_without_desc_access_open_finance">Identificamos que você não possui permissão para prosseguir para o pagamento. Verifique seu nível de perfil de acesso.</string>
+    <string name="txt_request_payment_invalid_open_finance">Solicitação de pagamento inválida</string>
+    <string name="txt_request_payment_invalid_desc_open_finance">Identificamos que sua solicitação de pagamento já foi autorizada. Verifique o andamento na Instituição que iniciou o pagamento.</string>
+    <string name="txt_request_payment_invalid_reject_open_finance">Identificamos que sua solicitação de pagamento foi rejeitada. Você poderá iniciar um novo pagamento a qualquer momento.</string>
+    <string name="txt_time_try_again_open_finance">Seu tempo esgotou, tente novamente</string>
+    <string name="txt_time_try_desc_again_open_finance">Por segurança, o tempo máximo permitido para concluir seu pagamento é de 5 minutos. Combinado?</string>
+    <string name="txt_payment_progress_open_finance">Pagamento em andamento</string>
+    <string name="txt_payment_progress_desc_open_finance"><![CDATA[Vamos te redirecionar de volta ao <b>%s</b>, enquanto resolvemos o problema por aqui. Combinado?]]></string>
+    <string name="txt_go_now_open_finance">Ir agora</string>
+    <string name="txt_payment_progress_success_open_finance"><![CDATA[Para finalizar o pagamento, vamos te redirecionar de volta para a instituição <b>%s</b>. Combinado?]]></string>
+    <string name="txt_select_other_account_open_finance">Selecionar outra conta</string>
+    <string name="txt_select_other_account_desc_open_finance">Identificamos que você não possui permissão para prosseguir para o pagamento. Verifique seu nível de perfil de acesso.</string>
+    <string name="txt_confirm_cancel_payment_open_finance">Deseja cancelar a solicitação de pagamento?</string>
+    <string name="txt_confirm_cancellation_open_finance"><![CDATA[Ao cancelar, vamos redirecionar você para a instituição %s .]]></string>
+    <string name="txt_title_cancel_payment_open_finance">Ocorreu um erro no redirecionamento</string>
+    <string name="txt_desc_cancel_payment_open_finance"><![CDATA[Fique tranquilo, nada foi cobrado e vamos te redirecionar de volta para a instituição <b>%s</b>. Combinado?]]></string>
+    <string name="txt_title_success_cancellation_payment_open_finance">Solicitação de pagamento cancelada</string>
+    <string name="txt_balance_open_finance">Saldo na conta</string>
+
+</resources>

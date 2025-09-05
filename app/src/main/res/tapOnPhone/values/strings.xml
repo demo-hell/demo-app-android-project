@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tap_on_phone">Cielo Tap</string>
+    <string name="tap_on_phone_change_ec">Trocando de EC</string>
+    <string name="tap_on_phone_wait_a_momenty">Aguarde um momento</string>
+    <string name="tap_on_phone_extension_enable_time">Finalizando...</string>
+    <string name="tap_on_phone_extension_activated">Tudo certo!</string>
+
+    <string name="tap_on_phone_developer_mode_enable_ghost_app_title">Para acessar o Cielo Tap, desabilite o modo desenvolvedor</string>
+    <string name="tap_on_phone_developer_mode_enable_ghost_app_subtitle">Acesse as configurações do seu celular e desabilite o modo desenvolvedor.</string>
+
+    <string name="tap_on_phone_initialize_terminal_generic_error_title">Parece que tivemos algum problema por aqui</string>
+    <string name="tap_on_phone_initialize_terminal_generic_error_message"><![CDATA[Vamos resolver isso e você pode voltar para <b>tentar de novo mais tarde,</b> combinado?]]></string>
+    <string name="tap_on_phone_initialize_card_reader_title">Leitor de cartão não conectado</string>
+    <string name="tap_on_phone_initialize_card_reader_message"><![CDATA[Para fazer esta venda com leitor de cartão, conecte o leitor no seu celular. Após conectá-lo, você pode voltar para <b>tentar de novo,</b> combinado?]]></string>
+
+    <string name="tap_on_phone_configured_environment">Fazer primeira venda</string>
+    <string name="tap_on_phone_configured_environment_title">Pronto, o Cielo Tap já está ativo!</string>
+    <string name="tap_on_phone_configured_environment_subtitle"><![CDATA[Agora você pode receber pagamentos pelo celular com seu App Cielo Gestão.<br/><br/><b>Vamos começar agora?</b>]]></string>
+
+    <string name="tap_on_phone_enable_nfc">Acessar configurações</string>
+    <string name="tap_on_phone_enable_nfc_title">Habilite o NFC nas configurações para receber pagamentos por aproximação</string>
+    <string name="tap_on_phone_enable_nfc_subtitle">Antes de configurar o Cielo Tap, acesse as configurações do seu celular e ative a função NFC.</string>
+
+    <string name="tap_on_phone_nfc_is_not_supported_title">Seu celular não possui NFC</string>
+    <string name="tap_on_phone_nfc_is_not_supported_subtitle">Para realizar vendas por aproximação, é necessário que o seu celular possua a tecnologia NFC.</string>
+
+    <string name="tap_on_phone_android_is_not_supported_title">Seu celular não é compatível</string>
+    <string name="tap_on_phone_android_is_not_supported_subtitle">Para realizar vendas por aproximação, é necessário que o seu celular seja Android versão 10 ou superior.</string>
+
+    <string name="tap_on_phone_active_terminal_message">Verificando seu celular</string>
+
+    <string name="tap_on_phone_not_eligible_title">Agradecemos o seu interesse no Cielo Tap</string>
+    <string name="tap_on_phone_not_eligible_message">No momento, este serviço não está disponível para o seu estabelecimento.\n\nEnviaremos uma notificação quando essa novidade chegar para você ;)</string>
+    <string name="tap_on_phone_not_eligible_text_button">Voltar para o início</string>
+
+    <string name="tap_on_phone_is_disabled_title">O Cielo Tap está desativado na sua conta</string>
+    <string name="tap_on_phone_is_disabled_message"><![CDATA[O Cielo Tap foi desativado por você via Central de Atendimento.<br>Ligue para central para contratar e reativar este serviço.]]></string>
+
+    <string name="tap_on_phone_sale_value_title">Qual o valor da venda?</string>
+    <string name="tap_on_phone_sale_value_error_text">Valor mínimo da venda: R$ 0,21.</string>
+    <string name="tap_on_phone_sale_button">Vender</string>
+    <string name="tap_on_phone_sale_total_installments_value">%sx</string>
+    <string name="tap_on_phone_sale_receipt_client_text">Via cliente</string>
+    <string name="tap_on_phone_sale_total_installments_quantity">Número de parcelas</string>
+    <string name="tap_on_phone_sale_total_select_installments_quantity">Selecione a quantidade de parcelas</string>
+    <string name="description_accessibility_edit_installment_quantity">Editar número de parcelas, botão</string>
+    <string name="tap_on_phone_credit_installment_sale">Crédito parcelado loja</string>
+    <string name="tap_on_phone_select_the_payment_type">Escolha a forma de pagamento e realize a venda</string>
+    <string name="tap_on_phone_payment_type_client">Forma de pagamento do seu cliente</string>
+    <string name="tap_on_phone_payment_new_sale">Nova venda</string>
+    <string name="account_selector_title">Selecione um domicílio bancário para recebimento</string>
+    <string name="tap_on_phone_accreditation_loading_success_message">Solicitação enviada</string>
+    <string name="tap_on_phone_follow_order_button_label">Acompanhar Solicitação</string>
+    <string name="tap_on_phone_order_sucess_message"><![CDATA[Seu número de pedido é <b>%s</b>. Em até 5 dias úteis, você poderá utilizar o seu celular para vender. Avisaremos por e-mail quando estiver tudo pronto.]]></string>
+    <string name="tap_on_phone_order_error_message">Vamos resolver isso e você pode voltar para tentar novamente mais tarde, combinado?</string>
+    <string name="order_number_label">Número do pedido</string>
+    <string name="order_date_label">Data do pedido</string>
+    <string name="tap_on_phone_term_and_condition_title">Termos e condições de uso</string>
+    <string name="tap_on_phone_term_and_condition_subtitle">Leia e aceite os termos de aditivo ao contrato de adesão Cielo para concluir a habilitação</string>
+    <string name="tap_on_phone_finish_accreditation">Concluir habilitação</string>
+    <string name="tap_on_phone_accreditation_request_sucess_title">Solicitação de contratação do Cielo Tap realizada com sucesso!</string>
+    <string name="tap_on_phone_accreditation_request_error_title">Tivemos um problema por aqui</string>
+    <string name="tap_on_phone_select_account_button_label">Selecionar outro domicílio bancário</string>
+    <string name="tap_on_phone_receiving">Recebimento:</string>
+    <string name="tap_on_phone_sales_fees">Taxas das vendas pelo Cielo Tap:</string>
+    <string name="tap_on_phone_review_information">Revise as informações antes de continuar.</string>
+    <string name="tap_on_phone_almost_finished">Estamos quase finalizando a habilitação do Cielo Tap</string>
+    <string name="tap_on_phone_main_title">Cielo Tap</string>
+    <string name="tap_on_phone_following_subtitle">Aqui você pode acompanhar o andamento da sua contratação do Cielo Tap.</string>
+    <string name="tap_on_phone_accreditation_following_request_label">Solicitação de contratação</string>
+    <string name="tap_on_phone_debit_label">Débito:\u0020</string>
+    <string name="tap_on_phone_credit_label">Crédito à vista:\u0020</string>
+    <string name="tap_on_phone_receive_term">Prazo de recebimento:\u0020</string>
+    <string name="tap_on_phone_order_error_personal_info_message"><![CDATA[Identificamos que faltam alguns dados no seu cadastro Cielo, e por isso não podemos prosseguir no credenciamento do Cielo Tap.<br/><br/>
+    <b>%s</b><br/><br/>
+     Ligue para central de atendimento e peça para atualizar seus dados cadastrais. Ao concluir a atualização, volte para reiniciar o credenciamento no Cielo Tap.]]></string>
+
+    <string name="tap_on_phone_onboarding_title_1">Chegou o Cielo Tap</string>
+    <string name="tap_on_phone_onboarding_message_1">Faça vendas por aproximação com seu celular, no débito ou crédito, sem precisar da maquininha. Exclusivo para as bandeiras Mastercard e Visa.</string>
+
+    <string name="tap_on_phone_onboarding_title_2">Venda com segurança</string>
+    <string name="tap_on_phone_onboarding_message_2">O Cielo Tap traz toda a segurança e disponibilidade das maquininhas Cielo para o seu celular! Gerencie e consulte suas vendas sempre que quiser.</string>
+
+    <string name="tap_on_phone_onboarding_title_3">Sem mensalidade</string>
+    <string name="tap_on_phone_onboarding_message_3">Pague apenas as taxas da transação quando usar. Vender e receber com Cielo Tap é rápido e prático!</string>
+
+    <string name="tap_on_phone_onboarding_title_4">Requisitos mínimos do celular</string>
+    <string name="tap_on_phone_onboarding_message_4"><![CDATA[Para utilizar o Cielo Tap, é necessário que o seu celular seja <b>Android na versão 10 ou superior e possua a tecnologia NFC.</b>]]></string>
+
+    <string name="tap_on_phone_onboarding_start">Vamos começar!</string>
+    <string name="tap_on_phone_account_label">Conta:\u0020</string>
+    <string name="tap_on_phone_branch_label">Agência:\u0020</string>
+    <string name="tap_on_phone_see_installments_fees">Ver as taxas por parcela</string>
+    <string name="tap_on_phone_offer_error_title">Não foi possível exibir as taxas do Cielo Tap.</string>
+    <string name="tap_on_phone_account_error_title">Não foi possível exibir o domicílio bancário.</string>
+    <string name="tap_on_phone_try_again">Tente novamente mais tarde.</string>
+    <string name="tap_on_phone_go_back_to_the_beginning">Voltar para o início</string>
+    <string name="tap_on_phone_loading_offer">Carregando oferta</string>
+
+    <plurals name="tap_one_phone_term_working_days">
+        <item quantity="zero">no mesmo dia</item>
+        <item quantity="one">um dia útil</item>
+        <item quantity="other">%d dias úteis*</item>
+    </plurals>
+
+    <string name="tap_on_phone_sending_order_request">Enviando solicitação</string>
+    <string name="tap_on_phone_installment_fees_title">Taxas do Cielo Tap</string>
+    <string name="tap_on_phone_installment_fees_rr">O que é o Recebimento Automático?</string>
+    <string name="tap_on_phone_installment_fees_list_title">Taxas por parcelas:</string>
+    <string name="tap_on_phone_installment_fees_sales_receivement_type_title">Recebimento das vendas:</string>
+    <string name="tap_on_phone_rr_receivement_debit">Débito: <b>em 1 dia útil</b></string>
+    <string name="fee_label_in_x_installments">Em %sx</string>
+    <string name="content_description_fee_container_to_open">Expandir parcelas da bandeira %s, botão</string>
+    <string name="content_description_fee_container_to_close">Fechar parcelas da bandeira %s, botão</string>
+
+    <plurals name="tap_on_phone_installment_fees_subtitle">
+        <item quantity="zero"><![CDATA[A habilitação do Cielo Tap faz com que o Recebimento Automático também seja habilitado, para receber suas vendas <b>hoje.</b>]]></item>
+        <item quantity="one"><![CDATA[A habilitação do Cielo Tap faz com que o Recebimento Automático também seja habilitado, para receber suas vendas em até <b>um dia útil.</b>]]></item>
+        <item quantity="other"><![CDATA[A habilitação do Cielo Tap faz com que o Recebimento Automático também seja habilitado, para receber suas vendas em até <b>%d dias úteis.*</b>]]></item>
+    </plurals>
+
+    <plurals name="tap_on_phone_rr_receivement_type_x">
+        <item quantity="one"><![CDATA[<b>em %d dia útil</b>]]></item>
+        <item quantity="other"><![CDATA[<b>em %d dias úteis*</b>]]></item>
+    </plurals>
+
+    <string name="tap_on_phone_receiving_observation">* O recebimento em até %d dias úteis ocorrerá por meio da habilitação do Recebimento Automático em 2 dias. Caso não tenha interesse, o serviço poderá ser cancelado pelos canais de atendimento.</string>
+    <string name="tap_on_phone_receiving_description">Receba suas vendas em menos tempo e melhore seu fluxo de caixa.</string>
+    <string name="tap_on_phone_receiving_checkbox_description">Quero contratar</string>
+
+    <string name="tap_on_phone_receiving_title">Deseja contratar o Recebimento Automático em 2 dias?</string>
+    <string name="tap_on_phone_receiving_content_description_checked">Contratar recebimento automático em 2 dias, botão de opção selecionado</string>
+    <string name="tap_on_phone_receiving_content_description_unchecked">Contratar recebimento automático em 2 dias, botão de opção não selecionado</string>
+
+    <string name="tap_on_phone_establishment_creation_in_progress_title">Falta pouco! A habilitação do Cielo Tap está sendo feita</string>
+    <string name="tap_on_phone_establishment_creation_in_progress_message">Seu novo número de EC já foi criado. Estamos habilitando e em breve você receberá um e-mail quando tudo estiver pronto.</string>
+
+    <string name="tap_on_phone_accreditation_in_progress_title">Solicitação para habilitar o Cielo Tap realizada com sucesso!</string>
+    <string name="tap_on_phone_accreditation_in_progress_message">Em até 5 dias úteis, você poderá utilizar o seu celular para vender. Avisaremos por e-mail quando estiver tudo pronto.</string>
+
+    <string name="tap_on_phone_impersonate_title">Para acessar o Cielo Tap, troque de estabelecimento</string>
+    <string name="tap_on_phone_impersonate_message">Para fazer suas vendas por aproximação com seu celular, é necessário acessar o EC %s.</string>
+    <string name="tap_on_phone_impersonate_button">Trocar para Cielo Tap</string>
+
+    <string name="tap_on_phone_error_sale_title">Não foi possível realizar a venda</string>
+    <string name="tap_on_phone_error_generic_sale">Tente fazer novamente a venda ou volte para tentar de novo mais tarde.</string>
+    <string name="tap_on_phone_canceled_sale_message">Infelizmente a venda foi cancelada.</string>
+    <string name="tap_on_phone_expired_sale_message">Infelizmente o tempo para fazer a venda expirou.</string>
+    <string name="tap_on_phone_error_sale_message"><![CDATA[%s<br/><br/><br/>%s]]></string>
+
+    <string name="tap_on_phone_sale_value_installment"><![CDATA[Valor a pagar no crédito parcelado em %sx: %s.]]></string>
+    <string name="tap_on_phone_sale_value_credit"><![CDATA[Valor a pagar no crédito à vista: %s.]]></string>
+    <string name="tap_on_phone_sale_value_debit"><![CDATA[Valor a pagar no débito: %s.]]></string>
+
+    <string name="tap_on_phone_sale_value_installment_extension">Valor no crédito parcelado em %sx</string>
+    <string name="tap_on_phone_sale_value_credit_extension">Valor no crédito à vista</string>
+    <string name="tap_on_phone_sale_value_debit_extension">Valor a pagar no débito</string>
+
+    <string name="tap_on_phone_receipt_document">CNPJ: %s</string>
+    <string name="tap_on_phone_receipt_document_cpf">CPF: %s</string>
+    <string name="tap_on_phone_receipt_card">CARTÃO %s - FINAL %s</string>
+    <string name="tap_on_phone_receipt_doc">DOC: %s</string>
+    <string name="tap_on_phone_receipt_aut">AUT: %s</string>
+    <string name="tap_on_phone_receipt_aid">AID: %s</string>
+    <string name="tap_on_phone_receipt_date">%s • %s</string>
+    <string name="tap_on_phone_receipt_address">%s, %s, %s</string>
+    <string name="tap_on_phone_receipt_value">R$ %s</string>
+    <string name="tap_on_phone_receipt_installments">Parcelado emissor/loja em %s parcelas</string>
+
+    <string name="tap_on_phone_receipt_installment">Crédito parcelado %sx</string>
+    <string name="tap_on_phone_receipt_credit">Crédito à vista</string>
+    <string name="tap_on_phone_receipt_debit">Débito</string>
+    <string name="tap_on_phone_receipt_total_value">Valor total da venda</string>
+
+    <string name="tap_on_phone_title_bs_alert_device_compatibility">Seu celular não é compatível</string>
+    <string name="tap_on_phone_message_bs_alert_device_compatibility"><![CDATA[Será possível concluir a contratação, mas para realizar vendas por aproximação com o Cielo Tap, é necessário que o seu celular seja <b>Android versão 10 ou superior e possua a tecnologia NFC.</b>]]></string>
+
+    <string name="tap_on_phone_bs_error_delete_cache_title">Para acessar o Cielo Tap, acesse novamente a sua conta</string>
+    <string name="tap_on_phone_bs_error_delete_cache_message"><![CDATA[Tivemos algum problema por aqui. <b>Acesse novamente a sua conta</b> para tentar utilizar o Cielo Tap de novo mais tarde, combinado?]]></string>
+    <string name="tap_on_phone_bs_error_delete_cache_label_button">Sair da conta</string>
+    <string name="tap_on_phone_format_exception">Classe: %s, Função: %s, Erro: %s</string>
+    
+    <string name="tap_on_phone_bs_required_data_field_title">Para continuar, atualize o seu cadastro</string>
+    <string name="tap_on_phone_bs_required_data_field_description">Ligue para a Central de Atendimento para atualizar os dados que estão faltando.</string>
+    <string name="tap_on_phone_bs_required_data_field_label_button_secondary">Voltar para a tela inicial</string>
+
+    <string name="tap_on_phone_update_tables_card_reader">Atualizando terminal...</string>
+
+    <string name="tap_on_phone_informative_card_reader">Para fazer esta venda com leitor de cartão, conecte o leitor no seu celular.</string>
+
+    <string name="tap_on_phone_title_bs_error_code_forty_two">Estamos concluindo sua configuração inicial</string>
+    <string name="tap_on_phone_message_bs_error_code_forty_two">Tente novamente em alguns instantes.</string>
+</resources>

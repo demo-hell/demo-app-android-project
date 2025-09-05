@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="TextPagamentoLink500_12Purple" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">fonts/MuseoSans-500.ttf</item>
+    </style>
+
+    <style name="payment_link_order_details_label" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_12dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16dp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/color_8A99A8</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+
+    <style name="payment_link_order_details_data" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_12dp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_8sp</item>
+        <item name="android:textColor">@color/black_353A40</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+
+    <style name="Paragraph_500_bold_display_red_F74953" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/red_F74953</item>
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="Paragraph_500_bold_display_color_204986" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+        <item name="android:textColor">@color/color_204986</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_destination_receipt"
+        style="@style/label_16_brand_600_montserrat_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_transfer_receipt_amount_destination"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_to_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_transfer_destination_to"
+        app:layout_constraintTop_toBottomOf="@+id/tv_destination_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_to_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to_title_receipt"
+        tools:text="Peter Parker" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_document_destination_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_transfer_destination_document"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_document_destination_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_document_destination_title_receipt"
+        tools:text="***.222.962-**" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_bank_destination_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_transfer_destination_bank"
+        app:layout_constraintTop_toBottomOf="@+id/tv_document_destination_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_bank_destination_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_destination_title_receipt"
+        tools:text="Nu Pagamentos S.A." />
+
+    <LinearLayout
+        android:id="@+id/llManualTransferFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_destination_receipt">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bank_destination_agency_title"
+            style="@style/label_16_display_300_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/text_pix_transfer_receipt_agency" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bank_destination_agency_subtitle"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            tools:text="0001" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bank_destination_account_title"
+            style="@style/label_16_display_300_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/text_pix_transfer_receipt_account" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bank_destination_account_subtitle"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            tools:text="0000000-5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bank_destination_accountType_title"
+            style="@style/label_16_display_300_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/text_pix_transfer_receipt_account_type" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_bank_destination_accountType_subtitle"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            tools:text="Conta corrente" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_bank_message_received_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_message_received_on_billing_title"
+        app:layout_constraintTop_toBottomOf="@+id/llManualTransferFields" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_bank_message_received_value"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_message_received_title"
+        tools:text="Tintas acrílica" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/messageReceivedGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_bank_message_received_title, tv_bank_message_received_value"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMerchantNumberTitleDestination"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_transfer_merchant_receiving_without_two_points"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bank_message_received_value" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMerchantNumberDestination"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvMerchantNumberTitleDestination"
+        tools:text="2014097009" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/merchantNumberGroupDestination"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvMerchantNumberTitleDestination, tvMerchantNumberDestination"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+{
+  "faq": {
+    "title": "Dúvidas Gerais",
+    "description": "Confira as respostas para as suas principais dúvidas",
+    "value": "http://cielo.neoassist.com/?th=central-mobile"
+  },
+  "technicalQuestions": {
+    "title": "Dúvidas Técnicas",
+    "description": "Conheça as soluções para as suas principais dúvidas.",
+    "value": "https://www.cielo.com.br/suportetecnico"
+  },
+  "onlineConsultant": {
+    "title": "Assitente Cielo",
+    "description": "Fale agora com um consultor via chat direto no seu celular.",
+    "value": "https://apa3.xgen.com.br/cielo1/ivr_app.html"
+  },
+  "phonesSupport": [{
+    "title": "Central de Relacionamento",
+    "description": "Fale com a gente para solicitar algum produto ou serviço da Cielo:",
+    "time_description": "De segunda a sábado, das 8h às 22h.",
+    "phones": [{
+      "description": "Capitais e Regiões Metropolitanas",
+      "value": "4002 5472"
+    },
+      {
+        "description": "Demais Localidades",
+        "value": "0800 570 8472"
+      }
+    ]
+  }, {
+    "title": "Suporte Técnico",
+    "description": "A Cielo oferece o melhor suporte técnico a seus clientes:",
+    "time_description": "De segunda a sábado, das 8h às 22h.",
+    "phones": [{
+      "description": "Capitais e Regiões Metropolitanas",
+      "value": "4002 5472"
+    },
+      {
+        "description": "Demais Localidades",
+        "value": "0800 570 8472"
+      }
+    ]
+  }, {
+    "title": "Programa Cielo Fidelidade",
+    "description": "Informações sobre o programa Cielo Fidelidade:",
+    "time_description": "De segunda a sexta (exceto feriados), das 8h às 17h.",
+    "phones": [{
+      "description": "Capitais e Regiões Metropolitanas",
+      "value": "4003 6662"
+    },
+      {
+        "description": "Demais Localidades",
+        "value": "0(xx)11 4999 6260"
+      }
+    ]
+  }, {
+    "title": "Ouvidoria",
+    "description": "Antes de acionar a ouvidoria, tenha sempre o protocolo do seu atendimento em mãos.",
+    "time_description": "De segunda a sexta (exceto feriados), das 8h às 17h.",
+    "phones": [{
+      "description": "Todas as Localidades",
+      "value": "0800 570 2288"
+    }]
+  }]
+}

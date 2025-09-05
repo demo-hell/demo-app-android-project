@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fluxo_navegacao_simulator"
+    app:startDestination="@id/simulatorRouterFragment">
+
+    <fragment
+        android:id="@+id/simulatorRouterFragment"
+        android:name="br.com.mobicare.cielo.simulator.simulation.presentation.router.SimulatorRouterFragment"
+        tools:layout="@layout/fragment_router_simulator">
+
+        <action
+            android:id="@+id/action_simulatorRouterFragment_to_simulationValueFragment"
+            app:destination="@id/simulationValueFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/simulatorRouterFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/simulationValueFragment"
+        android:name="br.com.mobicare.cielo.simulator.simulation.presentation.simulation.SimulationValueFragment"
+        tools:layout="@layout/fragment_simulation_value">
+
+        <action
+            android:id="@+id/action_simulationValueFragment_to_simulationProductSelectionFragment"
+            app:destination="@id/simulationProductSelectionFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_simulationValueFragment_to_simulationResultFragment"
+            app:destination="@id/simulationResultFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <argument
+            android:name="updateResult"
+            app:argType="boolean"
+            android:defaultValue="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/simulationProductSelectionFragment"
+        android:name="br.com.mobicare.cielo.simulator.simulation.presentation.simulation.SimulationProductSelectionFragment"
+        tools:layout="@layout/fragment_simulation_product_selection">
+
+        <action
+            android:id="@+id/action_simulationProductSelectionFragment_to_simulationResultFragment"
+            app:destination="@id/simulationResultFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/simulationResultFragment"
+        android:name="br.com.mobicare.cielo.simulator.simulation.presentation.result.SimulationResultFragment"
+        tools:layout="@layout/fragment_simulation_result">
+
+        <action
+            android:id="@+id/action_simulationResultFragment_to_simulationValueFragment"
+            app:destination="@id/simulationValueFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+</navigation>

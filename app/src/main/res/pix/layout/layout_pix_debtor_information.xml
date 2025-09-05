@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/display_200"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_title"
+        style="@style/label_12_brand_600_ubuntu_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_qrcode_debtor"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_name_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_qrcode_debtor_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_debtor_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_name"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_debtor_name_title"
+        tools:text="Alexandre Manaós" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_document_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_qrcode_debtor_document"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_debtor_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_document"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_debtor_document_title"
+        tools:text="***.222.962-**" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/bankIconShimmer"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginVertical="@dimen/dimen_20dp"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bankNameShimmer"
+        android:layout_width="@dimen/dimen_159dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_marginVertical="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintStart_toEndOf="@id/bankIconShimmer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bankAccountShimmer"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintStart_toEndOf="@id/bankIconShimmer"
+        app:layout_constraintTop_toBottomOf="@id/bankNameShimmer" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@color/display_200"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bankIconShimmer" />
+
+    <View
+        android:id="@+id/editButtonShimmer"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:background="@drawable/shimmer_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

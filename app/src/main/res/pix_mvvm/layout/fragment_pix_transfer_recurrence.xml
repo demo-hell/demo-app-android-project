@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16dp">
+
+    <br.com.cielo.libflue.field.CieloSelectField
+        android:id="@+id/csfSelectStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:hint="@string/pix_transfer_recurrence_hint_select_date"
+        app:labelText="@string/pix_transfer_recurrence_label_select_start_date" />
+
+    <br.com.cielo.libflue.field.CieloSelectField
+        android:id="@+id/csfSelectPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:hint="@string/pix_transfer_recurrence_hint_select_period"
+        app:labelText="@string/pix_transfer_recurrence_label_select_period" />
+
+    <br.com.cielo.libflue.field.CieloSelectField
+        android:id="@+id/csfSelectEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:hint="@string/pix_transfer_recurrence_hint_select_period"
+        app:labelText="@string/pix_transfer_recurrence_label_select_end_date" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mdr_offer_title">Oferta com taxas exclusivas</string>
+    <string name="mdr_offer_description"><![CDATA[Concentre suas vendas na Cielo <b>com taxas exclusivas,</b> válidas por tempo limitado.]]></string>
+    <string name="mdr_offer_with_ra_description"><![CDATA[Concentre suas vendas na Cielo e receba <b>em 1 dia útil com taxas exclusivas,</b> válidas por tempo limitado.]]></string>
+    <string name="mdr_offer_fee_title">Veja como ficarão suas taxas por bandeira </string>
+    <string name="mdr_offer_average_rent">Aluguel médio por maquininha</string>
+    <string name="mdr_offer_available_for_use_title">\nMaquininhas disponíveis para utilização</string>
+    <string name="mdr_offer_button_do_not_show_again">Não mostrar novamente</string>
+    <string name="mdr_offer_button_accept">Aceitar proposta</string>
+    <string name="mdr_offer_average_rent_value">R$ %s</string>
+
+   <string name="mdr_offer_accept_success">Sua solicitação foi enviada com sucesso!</string>
+    <string name="mdr_offer_accept_success_description"><![CDATA[Seu novo plano estará disponível na área de Taxas e Planos <b>em até 3 dias.</b> Caso precise de ajuda com a sua maquininha, entre em contato via Central de Atendimento.]]></string>
+    <string name="mdr_offer_accept_success_conclude">Concluir</string>
+    <string name="mdr_offer_fee_receive_automatic_title">Taxas Recebimento Automático</string>
+    <string name="mdr_offer_cash_credit"><![CDATA[<b>Crédito à vista: %s%%</b>]]></string>
+    <string name="mdr_offer_installment_credit"><![CDATA[<b>Crédito parcelado: %s%% </b>(por parcela)]]></string>
+
+    <string name="mdr_debit">Débito:</string>
+    <string name="mdr_credit_at_once">Crédito à vista:</string>
+    <string name="mdr_credit_paid_in_six_installments">Parcelado em 6x:</string>
+    <string name="mdr_credit_paid_in_up_to_twelve_installments">Parcelado 7x a 12x:</string>
+    <string name="mdr_x_per_cent_string">%s%%</string>
+
+    <string name="mdr_offer_alert_postponed"><![CDATA[Para manter essas condições de aluguel, você deverá cumprir um faturamento mínimo mensal de <b>%s.</b> Caso não atinja o faturamento acordado, o aluguel será de <b>%s</b> por máquina. A oferta estará disponível a partir de 3 dias após o aceite. Para consulta, acesse a área de Taxas e Planos.]]></string>
+    <string name="mdr_offer_alert_without_postponed"><![CDATA[Para manter as condições acima, você deverá cumprir um faturamento mínimo mensal de <b>%s.</b> A oferta estará disponível a partir de 3 dias após o aceite. Para consulta, acesse a área de Taxas e Planos.]]></string>
+    <string name="mdr_offer_alert_without_machine"><![CDATA[Para manter essas condições de aluguel, você deverá cumprir um faturamento mínimo mensal de <b>%s.</b> A oferta estará disponível a partir de 3 dias após o aceite. Para consulta, acesse a área de Taxas e Planos.]]></string>
+
+    <string name="bs_mdr_offer_accept_title">Deseja contratar esse produto?</string>
+    <string name="bs_mdr_offer_accept_description"> <![CDATA[Ao contratar, suas novas condições comerciais serão aplicadas <b>em até 3 dias.</b> Não perca tempo e volte a vender com a Cielo!]]></string>
+    <string name="bs_mdr_offer_accept_continue"> Sim, quero contratar</string>
+    <string name="bs_mdr_offer_accept_cancel"> Cancelar</string>
+
+    <string name="mdr_offer_reject_success_message">Certo, essa oferta de taxa foi removida.</string>
+</resources>

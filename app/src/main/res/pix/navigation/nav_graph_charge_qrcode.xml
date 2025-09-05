@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_charge_qrcode"
+    app:startDestination="@id/pixGenerateQRCodeFragment">
+
+    <fragment
+        android:id="@+id/pixGenerateQRCodeFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.qrCode.charge.generate.PixGenerateQRCodeFragment"
+        android:label="PixGenerateQRCodeFragment"
+        tools:layout="@layout/fragment_pix_generate_qr_code">
+
+        <action
+            android:id="@+id/action_pixGenerateQRCodeFragment_to_pixQRCodeChangeKeyFragment"
+            app:destination="@id/pixQRCodeChangeKeyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixGenerateQrCode_to_pixShowQrCodeDetails"
+            app:destination="@id/pixShowQrCodeDetailsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixGenerateQRCodeFragment"
+            app:popUpToInclusive="true" />
+
+        <argument
+            android:name="PIX_SELECTED_KEY_ARGS"
+            android:defaultValue="@null"
+            app:argType="br.com.mobicare.cielo.pix.domain.MyKey"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixShowQrCodeDetailsFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.qrCode.charge.details.PixShowQrCodeDetailsFragment"
+        android:label="PixShowQrCodeDetailsFragment"
+        tools:layout="@layout/fragment_qr_code_details">
+
+        <argument
+            android:name="PIX_QR_CODE_CHARGE_DETAILS"
+            app:argType="br.com.mobicare.cielo.pix.domain.QRCodeChargeResponse" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixQRCodeChangeKeyFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.qrCode.charge.key.PixQRCodeChangeKeyFragment"
+        android:label="PixQRCodeChangeKeyFragment">
+        <argument
+            android:name="PIX_SELECTED_KEY_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.MyKey" />
+        <action
+            android:id="@+id/action_pixQRCodeChangeKeyFragment_to_pixGenerateQRCodeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixGenerateQRCodeFragment" />
+    </fragment>
+
+</navigation>

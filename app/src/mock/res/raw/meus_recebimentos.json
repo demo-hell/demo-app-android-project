@@ -1,0 +1,1856 @@
+{
+  "incomings":[
+    {
+      "dayOfMonth":"1",
+      "dayOfWeek":"Qui",
+      "dayDescription":"Qui, 19 de out de 2017",
+      "date":"19/10/2017",
+      "cieloDate":"2017-10-19",
+      "cieloEndDate":"",
+      "totalDeposited":246456.11,
+      "totalPending":0,
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A.",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 0,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"2",
+      "dayOfWeek":"Sex",
+      "dayDescription":"Sex, 20 de out de 2017",
+      "date":"20/10/2017",
+      "cieloDate":"2017-10-20",
+      "cieloEndDate":"",
+      "totalDeposited":306610.66,
+      "totalPending":0,
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":325830.66,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":63878.22,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-19220,
+          "quantity":1
+        }
+      ],
+      "bankDatas":null
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"4",
+      "dayOfWeek":"Ter",
+      "dayDescription":"Hoje (Ter, 24 de out de 2017)",
+      "date":"24/10/2017",
+      "cieloDate":"2017-10-24",
+      "cieloEndDate":"",
+      "totalDeposited":65396.0,
+      "totalPending":13720,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":13720
+      },
+      "mainDay":true,
+
+      "bankDatas":null
+    },
+    {
+      "dayOfMonth":"5",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"6",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"7",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+
+    {
+      "dayOfMonth":"8",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"9",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"10",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"11",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"12",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":650396.12,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":45861.9,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },{
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },{
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    },
+    {
+      "dayOfMonth":"3",
+      "dayOfWeek":"Seg",
+      "dayDescription":"Seg, 23 de out de 2017",
+      "date":"23/10/2017",
+      "cieloDate":"2017-10-23",
+      "cieloEndDate":"",
+      "totalDeposited":650396.12,
+      "totalPending":33320,
+      "pending":{
+        "id":656,
+        "name":"Valores pendentes",
+        "amount":33320
+      },
+      "mainDay":false,
+      "receiptDetails":[
+        {
+          "id":640,
+          "name":"Recebíveis de venda",
+          "amount":323336.11,
+          "quantity":1
+        },
+        {
+          "id":642,
+          "name":"Crédito de antecipação",
+          "amount":9156.66,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Valores já antecipados",
+          "amount":-76880,
+          "quantity":1
+        },
+        {
+          "id":644,
+          "name":"Cancelamentos",
+          "amount":123.11,
+          "quantity":1
+        },
+        {
+          "id":646,
+          "name":"Contestações",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":648,
+          "name":"Cobrança de aluguel",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":650,
+          "name":"Outras cobranças",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":652,
+          "name":"Outros valores recebidos",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":658,
+          "name":"Valores pendentes acumulados",
+          "amount":123.44,
+          "quantity":1
+        },
+        {
+          "id":666,
+          "name":"Liberação de saldo retido",
+          "amount":123.44,
+          "quantity":1
+        }
+      ],
+      "bankDatas": [
+        {
+          "name": "BANCO DO BRASIL S.A. 2",
+          "code": "001",
+          "imgUrl": "http://cdn.apk-cloud.com/detail/image/br.com.bb.android-w250.png",
+          "branch": "00001",
+          "account": "000000101148798",
+          "amount": 1591754.4,
+          "postingsQty": "",
+          "quantity": 10,
+          "status": "PREVISTO",
+          "statusCode": ""
+        }
+      ]
+    }
+  ],
+  "debtInfo":{
+    "dateRange":"19/10/2017 - 24/10/2017",
+    "pending":{
+      "id":658,
+      "name":"Valores pendentes",
+      "amount":-10917581.03,
+      "quantity":1,
+      "cieloDate":"2017-10-24"
+    },
+    "details":[
+      {
+        "key":"São Paulo",
+        "value":"(11) 3304 1056"
+      },
+      {
+        "key":"Demais Regiões",
+        "value":"0800 939 4785"
+      }
+    ]
+  }
+}

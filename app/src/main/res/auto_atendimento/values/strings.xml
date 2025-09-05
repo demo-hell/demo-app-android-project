@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_title_contract_sticker">Solicitação de Adesivos</string>
+    <string name="tv_title_contract_skin">Solicitação de Películas</string>
+    <string name="tv_title_contract_coil">Solicitação de Bobinas</string>
+    <string name="aut_error_420">Não foi possível realizar a operação, por favor, entre em contato com a nossa Central: 4002–5472 (capitais e celular) ou 0800 570 8471 (exceto capitais) / Olá, esse serviço está disponível diariamente das 6h às 22h. Por favor, volte novamente nesse horário! Obrigado</string>
+    <string name="aut_title">Autoatendimento</string>
+    <string name="aut_title_new_machine">"Solicitar nova máquina"</string>
+    <string name="dados_contato">Dados de contato</string>
+    <string name="hint_nome_contato">Nome do contato</string>
+    <string name="hint_celular">Celular</string>
+    <string name="hint_periodo">Período</string>
+    <string name="hint_selecione_periodo">Selecione o período</string>
+    <string name="tv_title_select_period">Selecione período que deseja que sua maquininha seja entregue</string>
+    <string name="hint_nome_fachada">Nome da fachada</string>
+    <string name="hint_digite_o_nome">Digite o nome</string>
+    <string name="hint_ponto_referencia">Ponto de referência</string>
+    <string name="hint_digite_ponto_referencia">Digite um ponto de referência</string>
+    <string name="please_select_time">Por favor, selecione um horário desejado</string>
+    <string name="please_put_the_establishment_name">"Por favor, preencha o nome da fachada"</string>
+
+    <string name="ins_tr_title_zipcode">CEP</string>
+    <string name="ins_tr_title_address">Endereço</string>
+    <string name="ins_tr_title_number">Número</string>
+    <string name="ins_tr_title_neighborhood">Bairro</string>
+    <string name="ins_tr_title_reference_point">Ponto de referência</string>
+    <string name="ins_tr_title_street_number">Rua e número</string>
+    <string name="ins_tr_title_city">Cidade</string>
+    <string name="ins_tr_title_state">Estado</string>
+    <string name="ins_tr_title_take_solutions">Soluções de captura</string>
+    <string name="ins_tr_title_add_address">Inserir outro endereço</string>
+    <string name="ins_tr_button_next">Continuar</string>
+
+
+    <string name="ins_tr_error_city_empty_not_allowed">Campo cidade é obrigatório</string>
+    <string name="ins_tr_error_zipcode_empty_not_allowed">Campo CEP é obrigatório</string>
+    <string name="ins_tr_error_address_empty_not_allowed">Campo endereço é obrigatório</string>
+    <string name="ins_tr_error_neighborhood_empty_not_allowed">Campo bairro é obrigatório</string>
+    <string name="ins_tr_error_number_empty_not_allowed">Campo número é obrigatório</string>
+    <string name="ins_tr_error_state_empty_not_allowed">Campo estado é obrigatório</string>
+    <string name="ins_tr_error_reference_point_empty_not_allowed">Campo ponto de referência é obrigatório</string>
+    <string name="adress_type">Tipo de endereço</string>
+    <string name="other_address">Outro Endereço</string>
+    <string name="txt_install_machine_address_street">%s %s</string>
+    <string name="barueri">Barueri</string>
+    <string name="state">Estado</string>
+    <string name="sp">SP</string>
+
+    <string name="change_machine_txt_period">%s - %s</string>
+    <string name="change_machine_title_confirm_change_data">Confirme os dados para concluir sua solicitação</string>
+    <string name="change_machine_label_request">Solicitação</string>
+    <string name="change_machine_label_machine">Maquininha</string>
+    <string name="change_machine_label_logical_number">Nº Lógico</string>
+    <string name="change_machine_label_serial_number">Nº Lógico</string>
+    <string name="change_machine_label_request_number">Nº do pedido</string>
+    <string name="change_machine_label_version_machine">Versão da Maquininha</string>
+
+    <string name="install_machine_add_title_toolbar">Soluções de captura</string>
+
+    <string name="request_machine_rental_amount_per_month">%s/mês</string>
+    <string name="request_machine_period">%s - %s</string>
+    <string name="sticker_multivan">Adesivo Multivan</string>
+    <string name="boosting_business_title">Impulsionando o negócios para todos</string>
+    <string name="boosting_business_message">Nossos produtos estão ainda mais acessíveis. Para garantir mais segurança e inclusão em suas vendas, distribuímos películas que garantem a acessibilidade nos teclados das máquinas, como previsto na Lei 13.146/15 e Constituição Federal.</string>
+
+</resources>

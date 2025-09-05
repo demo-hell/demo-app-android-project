@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivFirstIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFirstBenefitMoreInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.560"
+        app:srcCompat="@drawable/ic_secure_person" />
+
+    <TextView
+        android:id="@+id/tvFirstBenefit"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:text="@string/id_onboarding_p1_admin_access_can_invite_people_title"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        app:layout_constraintStart_toEndOf="@id/ivFirstIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFirstBenefitMoreInfo"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_300_regular_14_display_400"
+        android:text="@string/id_onboarding_p1_admin_access_can_invite_people_subtitle"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstBenefit"
+        app:layout_constraintStart_toEndOf="@id/ivFirstIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen_4dp" />
+
+    <ImageView
+        android:id="@+id/ivSecondIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSecondBenefitMoreInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSecondBenefit"
+        app:layout_constraintVertical_bias="0.484"
+        app:srcCompat="@drawable/ic_group_person" />
+
+    <TextView
+        android:id="@+id/tvSecondBenefit"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:text="@string/id_onboarding_p1_admin_access_can_change_profiles_title"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toEndOf="@id/ivSecondIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstBenefitMoreInfo" />
+
+    <TextView
+        android:id="@+id/tvSecondBenefitMoreInfo"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_300_regular_14_display_400"
+        android:text="@string/id_onboarding_p1_admin_access_can_change_profiles_subtitle"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSecondBenefit"
+        app:layout_constraintStart_toEndOf="@id/ivSecondIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen_4dp" />
+
+    <ImageView
+        android:id="@+id/ivThirdIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/tvThirdBenefitMoreInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvThirdBenefit"
+        app:srcCompat="@drawable/ic_message_new" />
+
+    <TextView
+        android:id="@+id/tvThirdBenefit"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:text="@string/id_onboarding_p1_admin_access_can_resend_invites_title"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toEndOf="@id/ivThirdIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSecondBenefitMoreInfo" />
+
+    <TextView
+        android:id="@+id/tvThirdBenefitMoreInfo"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        style="@style/Paragraph_300_regular_14_display_400"
+        android:text="@string/id_onboarding_p1_admin_access_can_resend_invites_subtitle"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvThirdBenefit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivSecondIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen_4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

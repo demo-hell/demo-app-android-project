@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_meu_cadastro_dados_estabelecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="UnusedAttribute">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/blue" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_meu_cadastro_dados_estabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/card_corner"
+            app:cardElevation="6dp"
+            app:cardUseCompatPadding="true">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_meu_cadastro_estabelecimento_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="51dp"
+                    android:textColor="@color/purple"
+                    android:textSize="18sp"
+                    app:typeface="Museo700-Regular.ttf" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_meu_cadastro_labels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_meu_cadastro_estabelecimento_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/legenda_numero_estabelecimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/legenda_numero_estabelecimento"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/legenda_cnpj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/legenda_cnpj"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="16dp"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/legenda_razao_social"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/legenda_razao_social"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/legenda_ramo_de_atividade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/legenda_ramo_de_atividade"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/legenda_data_abertura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/legenda_data_abertura"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/legenda_proprietario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/legenda_proprietario"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/legenda_telefone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/legenda_telefone"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/layout_meu_cadastro_labels"
+                    android:layout_below="@+id/textview_meu_cadastro_estabelecimento_name"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="32dp"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_meu_cadastro_numero_estabelecimento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_light"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_meu_cadastro_cnpj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_meu_cadastro_razao_social"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_meu_cadastro_ramo_da_atividade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_meu_cadastro_data_de_abertura"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_meu_cadastro_proprietario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textview_meu_cadastro_telefone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/gray_light"
+                        android:textSize="14sp"
+                        android:elevation="10dp"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_shape_oval"
+            android:elevation="10dp"
+            android:contentDescription="@null"
+            android:padding="19dp"
+            app:srcCompat="@drawable/ic_estabelecimento" />
+
+
+    </RelativeLayout>
+</layout>

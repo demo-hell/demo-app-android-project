@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_56dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/brandIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_brand_visa_square" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBrandName"
+        style="@style/medium_montserrat_16"
+        android:textColor="@color/cloud_800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/brandIcon"
+        app:layout_constraintStart_toEndOf="@id/brandIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Visa" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        style="@style/Paragraph_400_regular_16_display_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_circle_radio_button"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/brandIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/brandIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

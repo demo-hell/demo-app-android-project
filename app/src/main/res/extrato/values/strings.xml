@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="extrato_ga_filtro">Minhas Vendas > Filtro</string>
+    <string name="extrato_ga_hide_filtro">Fechar filtro</string>
+
+    <string name="extrato_filtro_periodo">Período</string>
+    <string name="extrato_filtro_periodo_fechado">Período:</string>
+    <string name="extrato_alert_grafico">A navegação pelo gráfico só está disponível na visualização diária.</string>
+    <string name="extrato_filtro_periodo_hoje">Hoje</string>
+    <string name="extrato_filtro_periodo_7">Últimos 7 dias</string>
+    <string name="extrato_filtro_periodo_15">Últimos 15 dias</string>
+    <string name="extrato_filtro_periodo_30">Últimos 30 dias</string>
+    <string name="extrato_filtro_periodo_ultimos">Últimos</string>
+    <string name="extrato_filtro_periodo_dias">dias</string>
+    <string name="extrato_filtro_periodo_outros">Outros períodos</string>
+    <string name="extrato_filtro_data_inicio">Data inicial</string>
+    <string name="extrato_filtro_data_fim">Data final</string>
+    <string name="extrato_filtro_data">Data</string>
+    <string name="extrato_filtro_botao_cancelar">Cancelar</string>
+    <string name="extrato_filtro_botao_confirmar">Confirmar</string>
+    <string name="extrato_menu_help">Ajuda</string>
+    <string name="extrato_menu_shared">Compartilhar</string>
+    <string name="extrato_detalhes">Detalhes da Venda</string>
+    <string name="cancelamento_detalhes">Cancelar venda</string>
+
+    <string name="extrato_filtro_atencao_data_invalida_title">Atenção</string>
+    <string name="extrato_filtro_atencao_data_invalida">A data final não pode ser menor que a data inicial.</string>
+    <string name="extrato_filtro_atencao_data_inicio_null">Selecione uma data inicial.</string>
+    <string name="extrato_filtro_atencao_datas_nullas">O período selecionado não é válido.</string>
+    <string name="extrato_filtro_atencao_data_erro">A data selecionada não é válida.</string>
+    <string name="ga_extrato_day">Minhas Vendas > Hoje</string>
+    <string name="ga_extrato">Minhas Vendas</string>
+    <string name="ga_diario">Diário</string>
+    <string name="extrato_recibo_pos">Via do estabelecimento / POS=</string>
+    <string name="extrato_recibo_doc">DOC=</string>
+    <string name="extrato_recibo_aut">AUT=</string>
+    <string name="extrato_recibo_cnpj">CNPJ </string>
+    <string name="extrato_help_text">Este relatório apresenta o total de suas vendas no período selecionado. Para mais detalhes da venda, clique na setinha lateral direita na linha sobre a venda desejada.</string>
+
+    <plurals name="extrato_quantity">
+        <item quantity="one">%1$s venda</item>
+        <item quantity="other">%1$s vendas</item>
+    </plurals>
+
+    <string name="extrato_quantidade_vendas_plural">%1$s vendas aprovadas</string>
+    <string name="extrato_quantidade_canceladas_plural">%1$s vendas canceladas</string>
+
+    <string name="approved_sales_quantity">Vendas aprovadas</string>
+    <string name="gross_amount_sales">Valor bruto</string>
+    <string name="net_amount_sales">Valor líquido</string>
+
+    <string name="extrato_quantidade_vendas_singular">%1$s venda aprovada</string>
+    <string name="extrato_quantidade_canceladas_singular">%1$s venda cancelada</string>
+    <string name="extrato_quantidade_vendas_zero">Nenhuma venda aprovada</string>
+    <string name="extrato_quantidade_canceladas_zero">Nenhum cancelamento aprovado</string>
+    <string name="grouping_title_quantity_canceled_sales">Quantidade de vendas canceladas</string>
+    <string name="grouping_title_value_canceled_sales">Valor do cancelamento</string>
+    <string name="grouping_title_net_velue_canceled_sales">Valor líquido</string>
+
+    <string name="extrato_empty">Não identificamos nenhuma venda até o momento.</string>
+    <string name="extrato_meus_cartoes_empty">Não identificamos nenhuma transação durante este período.</string>
+    <string name="extrato_list_empty">Não identificamos nenhuma venda no período selecionado.</string>
+
+    <string name="extrato_status_atualizar_label">Toque aqui e saiba como atualizar</string>
+    <string name="extrato_status_atualizar_title">Como atualizar suas vendas</string>
+    <string name="extrato_status_atualizar_dialog_pos_title">No POS</string>
+    <string name="extrato_status_atualizar_dialog_pos_message">Pressione a tecla “Entra" da máquina, digite 15 e “Entra” novamente.</string>
+    <string name="extrato_status_atualizar_dialog_smart_title">No Smartphone ou Tablet</string>
+    <string name="extrato_status_atualizar_dialog_smart_message">No app Cielo Mobile acesse “Outras opções” ≫ “Configurações” ≫ “Funções" ≫ digite 15 e confirme.</string>
+    <string name="extrato_status_atualizar_dialog_tef_title">No TEF</string>
+    <string name="extrato_status_atualizar_dialog_tef_message">Será atualizado após a confirmação da venda.</string>
+    <string name="extrato_status_atualizar_dialog_ecommerce_title">No E-Commerce</string>
+    <string name="extrato_status_atualizar_dialog_ecommerce_message">Esta venda está pendente de captura. Para capturá-la acesse o site da Cielo e clique em “Vendas Online” ≫ “E-commerce".</string>
+    <string name="text_canceled_sells_label">Meus Cancelamentos</string>
+
+    <string name="text_details_sale_obs">Você receberá o valor líquido da venda, descontadas as taxas de administração da Cielo.</string>
+    <string name="text_transaction_approved">Transação aprovada</string>
+    <string name="text_details_sale_alert_title">Ainda não é possível cancelar esta venda</string>
+    <string name="text_details_sale_alert_description">Só será possível cancelar esta venda após 24 horas.</string>
+    <string name="text_details_sale_status_refresh">atualizar</string>
+    <string name="text_details_sale_status_denied">negada</string>
+
+    <string name="text_more_options">Mais opções</string>
+    <string name="option_bottom_sheet_solesp">Solicitar extrato especial</string>
+    <string name="option_bottom_sheet_canceled_sales">Vendas canceladas</string>
+    <string name="option_bottom_sheet_chargeback">Contestação de vendas</string>
+
+    <string name="consolidate_sales_extensive_date">%s %s</string>
+    <string name="title_receivables_payments_credit">Comunicado de vendas crédito no dia %s</string>
+    <string name="title_receivables_payments_debit">Comunicado de vendas débito no dia %s</string>
+    <string name="title_receivables_payments_credit_adjust">Comunicado de ajuste à crédito no dia %s</string>
+    <string name="title_receivables_payments_debit_adjust">Comunicado de ajuste à débito no dia %s</string>
+    <string name="body_receivables_payments"><![CDATA[O pagamento das suas vendas realizadas no débito, no valor de <strong>R$ 0,00</strong>, originalmente previsto para <strong>04–03-2024</strong> (segunda-feira) foi realizado em <strong>07-03-2024</strong> (quinta-feira) - você pode conferir pela coluna <strong>Data prevista de pagamento</strong> abaixo. Com isso, o total recebido em <strong>07-03-2024</strong> é de <strong>R$ 0,00</strong>]]></string>
+    <string name="gerar_pdf_dos_comunicados">Gerar PDF dos comunicados</string>
+
+</resources>

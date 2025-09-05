@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/svContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/btCallToAction"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dimen_16dp">
+
+            <ImageView
+                android:id="@+id/ivDataOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_40dp"
+                android:importantForAccessibility="no"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_validado_transfer" />
+
+            <TextView
+                android:id="@+id/tvDataOk"
+                style="@style/Heading_500_bold_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:gravity="center"
+                android:text="@string/id_onboarding_p1_data_ok"
+                android:textColor="@color/brand_600"
+                app:layout_constraintTop_toBottomOf="@+id/ivDataOk" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:layout_marginBottom="@dimen/dimen_6dp"
+                android:background="@drawable/background_success_50_radius_8dp"
+                android:paddingTop="@dimen/dimen_4dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDataOk">
+
+                <ImageView
+                    android:id="@+id/ivFirstIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvCpfValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvCpfTitle"
+                    app:srcCompat="@drawable/ic_success_new" />
+
+                <TextView
+                    android:id="@+id/tvCpfTitle"
+                    style="@style/Label_200_Regular_12"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:text="@string/du_cpf"
+                    android:textColor="@color/display_400"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivFirstIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCpfValue"
+                    style="@style/Label_300_Bold_14_display_400"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivFirstIcon"
+                    app:layout_constraintTop_toBottomOf="@id/tvCpfTitle"
+                    tools:text="460.323.044-01" />
+
+                <ImageView
+                    android:id="@+id/ivSecondIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvEmailValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvEmailTitle"
+                    app:layout_constraintVertical_bias="0.505"
+                    app:srcCompat="@drawable/ic_success_new" />
+
+                <TextView
+                    android:id="@+id/tvEmailTitle"
+                    style="@style/Label_200_Regular_12"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_24dp"
+                    android:text="@string/du_email"
+                    android:textColor="@color/display_400"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivSecondIcon"
+                    app:layout_constraintTop_toBottomOf="@id/tvCpfValue" />
+
+                <TextView
+                    android:id="@+id/tvEmailValue"
+                    style="@style/Label_300_Bold_14_display_400"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivSecondIcon"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmailTitle"
+                    tools:text="teste@teste.com.br" />
+
+                <ImageView
+                    android:id="@+id/ivThirdIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvPhoneValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvPhoneTitle"
+                    app:srcCompat="@drawable/ic_success_new" />
+
+                <TextView
+                    android:id="@+id/tvPhoneTitle"
+                    style="@style/Label_200_Regular_12"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_28dp"
+                    android:text="@string/me_phone"
+                    android:textColor="@color/display_400"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/ivThirdIcon"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmailValue" />
+
+                <TextView
+                    android:id="@+id/tvPhoneValue"
+                    style="@style/Label_300_Bold_14_display_400"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginBottom="@dimen/dimen_24dp"
+                    app:layout_constraintBottom_toTopOf="@id/divider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivThirdIcon"
+                    app:layout_constraintTop_toBottomOf="@id/tvPhoneTitle"
+                    tools:text="(21) 97762-4401" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@color/color_cloud_200"
+                    app:layout_constraintTop_toBottomOf="@id/tvPhoneValue" />
+
+                <TextView
+                    android:id="@+id/tvAccessYourAccount"
+                    style="@style/regular_ubuntu_16_display_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_16dp"
+                    android:lineSpacingExtra="@dimen/dimen_6sp"
+                    android:text="@string/id_onboarding_validate_p1_success_data_changed_bs_message"
+                    android:textColor="@color/color_cloud_500"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/ivThirdIcon"
+                    app:layout_constraintTop_toBottomOf="@id/divider" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCallToAction"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/entendi"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

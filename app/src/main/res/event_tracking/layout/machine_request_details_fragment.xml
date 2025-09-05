@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/machine_request_tab_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/machine_detail_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:elevation="@dimen/dimen_0dp"
+            app:cardCornerRadius="@dimen/dimen_16dp"
+            app:cardElevation="@dimen/dimen_0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_bg_alpha_90"
+                android:padding="@dimen/dimen_16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/machine_recycler_equipments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/machine_equipments_item" />
+
+                <TextView
+                    android:id="@+id/machine_detail_solicitation_date"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:text="@string/request_date"
+                    android:textAppearance="@style/regular_montserrat_12"
+                    android:textColor="@color/color_neutral_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machine_recycler_equipments" />
+
+                <TextView
+                    android:id="@+id/item_machine_solicitation_date_value"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textAppearance="@style/bold_montserrat_16"
+                    android:textColor="@color/neutral_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machine_detail_solicitation_date"
+                    tools:text="16/07/2023" />
+
+                <TextView
+                    android:id="@+id/machine_detail_info_image"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:text="@string/machine_images_are_illustrative"
+                    android:textAppearance="@style/regular_montserrat_12"
+                    android:textColor="@color/neutral_soft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/item_machine_solicitation_date_value" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/machine_detail_card_divider"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    app:dividerColor="#B8C1CC"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/machine_detail_info_image" />
+
+
+                <TextView
+                    android:id="@+id/machine_detail_status"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/filter_status_solicitacao"
+                    android:textAppearance="@style/regular_montserrat_12"
+                    android:textColor="@color/color_neutral_main"
+                    app:layout_constraintEnd_toStartOf="@+id/machine_detail_estimated_date"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machine_detail_card_divider" />
+
+                <ImageView
+                    android:id="@+id/machine_detail_icon_status"
+                    android:layout_width="16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:src="@drawable/ic_cielo_status_without_update"
+                    app:layout_constraintBottom_toBottomOf="@+id/machine_detail_status_value"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machine_detail_status"
+                    app:tint="#6E7985" />
+
+                <TextView
+                    android:id="@+id/machine_detail_status_value"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_4dp"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    android:ellipsize="end"
+                    android:textAppearance="@style/bold_montserrat_16"
+                    android:textColor="@color/neutral_dark"
+                    app:layout_constraintEnd_toStartOf="@+id/machine_detail_estimated_date_value"
+                    app:layout_constraintStart_toEndOf="@id/machine_detail_icon_status"
+                    app:layout_constraintTop_toBottomOf="@+id/machine_detail_status"
+                    tools:text="Atendido" />
+
+
+                <TextView
+                    android:id="@+id/machine_detail_estimated_date"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/estimated_attendance"
+                    android:textAppearance="@style/regular_montserrat_12"
+                    android:textColor="@color/color_neutral_main"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/machine_detail_status"
+                    app:layout_constraintTop_toTopOf="@+id/machine_detail_status" />
+
+
+                <TextView
+                    android:id="@+id/machine_detail_estimated_date_value"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="@style/bold_montserrat_16"
+                    android:textColor="@color/neutral_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/machine_detail_estimated_date"
+                    app:layout_constraintTop_toBottomOf="@+id/machine_detail_estimated_date"
+                    tools:text="16/07/2023" />
+
+                <TextView
+                    android:id="@+id/machine_detail_status_desc"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textAppearance="@style/regular_montserrat_14"
+                    android:textColor="@color/color_neutral_soft"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machine_detail_status_value" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/machine_detail_establishment"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:ellipsize="end"
+            android:text="@string/machine_establishment"
+            android:textAppearance="@style/regular_montserrat_12"
+            android:textColor="@color/color_neutral_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_card_view" />
+
+        <TextView
+            android:id="@+id/machine_detail_establishment_value"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:ellipsize="end"
+            android:textAppearance="@style/bold_montserrat_14"
+            android:textColor="@color/neutral_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_establishment"
+            tools:text="201567530" />
+
+        <TextView
+            android:id="@+id/machine_detail_contact_data"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:ellipsize="end"
+            android:text="@string/machine_contact_data"
+            android:textAppearance="@style/regular_montserrat_12"
+            android:textColor="@color/color_neutral_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_establishment_value" />
+
+        <TextView
+            android:id="@+id/machine_detail_contact_data_value"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:ellipsize="end"
+            android:textAppearance="@style/bold_montserrat_14"
+            android:textColor="@color/neutral_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_contact_data"
+            tools:text="Annie Skywalker \n (11) 94002-8922" />
+
+        <TextView
+            android:id="@+id/machine_detail_mode"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_32dp"
+            android:ellipsize="end"
+            android:text="@string/machine_mode"
+            android:textAppearance="@style/regular_montserrat_12"
+            android:textColor="@color/color_neutral_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_contact_data_value" />
+
+        <TextView
+            android:id="@+id/machine_detail_mode_value"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:ellipsize="end"
+            android:textAppearance="@style/bold_montserrat_14"
+            android:textColor="@color/neutral_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_mode"
+            tools:text="Aluguel" />
+
+        <TextView
+            android:id="@+id/machine_detail_explain"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:ellipsize="end"
+            android:textAppearance="@style/regular_montserrat_12"
+            android:textColor="@color/color_neutral_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_mode_value"
+            tools:text="Olá! Vamos ajudá-lo com a configuração de sua maquininha Cielo para que você possa começar a aceitar pagamentos de seus clientes. Siga as instruções abaixo:\n\n
+            1. Certifique-se de que a maquininha esteja completamente carregada.\n
+            2. Ligue a maquininha pressionando o botão liga/desliga na lateral do aparelho.\n
+            3. Conecte a maquininha à rede Wi-Fi disponível.\n
+            4. Pronto! Sua maquininha está configurada e pronta para uso.\n\n
+            Se tiver alguma dúvida ou dificuldade, entre em contato com nossa equipe de suporte técnico para obter ajuda adicional. Obrigado por escolher a Cielo como sua solução de pagamento!" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/machine_cl_new_equipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_explain">
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/machine_new_equipment_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                app:dividerColor="@color/gray_bg_divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/machine_new_equipment_title"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:ellipsize="end"
+                android:text="@string/new_equipment_data_title"
+                android:textAppearance="@style/bold_montserrat_14"
+                android:textColor="@color/neutral_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/machine_new_equipment_divider" />
+
+
+            <TextView
+                android:id="@+id/machine_new_equipment_model"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:ellipsize="end"
+                android:text="@string/machine_model"
+                android:textAppearance="@style/regular_montserrat_12"
+                android:textColor="@color/color_neutral_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/machine_new_equipment_title" />
+
+            <TextView
+                android:id="@+id/machine_new_equipment_model_value"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:ellipsize="end"
+                android:textAppearance="@style/bold_montserrat_14"
+                android:textColor="@color/neutral_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/machine_new_equipment_model"
+                tools:text="VX 670 GPRS V32" />
+
+            <TextView
+                android:id="@+id/machine_new_equipment_logical_number"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:ellipsize="end"
+                android:text="@string/machine_logical_number"
+                android:textAppearance="@style/regular_montserrat_12"
+                android:textColor="@color/color_neutral_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/machine_new_equipment_model_value" />
+
+            <TextView
+                android:id="@+id/machine_new_equipment_logical_number_value"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:ellipsize="end"
+                android:textAppearance="@style/bold_montserrat_14"
+                android:textColor="@color/neutral_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/machine_new_equipment_logical_number"
+                tools:text="154898032" />
+
+            <TextView
+                android:id="@+id/machine_new_equipment_modality"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/machine_mode"
+                android:textAppearance="@style/regular_montserrat_12"
+                android:textColor="@color/color_neutral_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/machine_new_equipment_logical_number_value" />
+
+            <TextView
+                android:id="@+id/machine_new_equipment_modality_value"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="@style/bold_montserrat_14"
+                android:textColor="@color/neutral_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/machine_new_equipment_modality"
+                tools:text="Aluguel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/machine_detail_footer_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            app:dividerColor="@color/gray_bg_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_cl_new_equipment" />
+
+        <TextView
+            android:id="@+id/machine_detail_need_help_title"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:ellipsize="end"
+            android:text="@string/need_help_with_machine"
+            android:textAppearance="@style/bold_montserrat_14"
+            android:textColor="@color/neutral_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_footer_divider" />
+
+        <TextView
+            android:id="@+id/machine_detail_need_help_desc"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:ellipsize="end"
+            android:text="@string/machine_diagnostic_explain"
+            android:textAppearance="@style/regular_montserrat_12"
+            android:textColor="@color/color_neutral_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_need_help_title" />
+
+        <TextView
+            android:id="@+id/empty_list_request_support"
+            style="@style/btn_empty_list_request_new_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_48dp"
+            android:paddingVertical="@dimen/dimen_16dp"
+            android:text="@string/machine_open_technical_support_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_detail_need_help_desc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

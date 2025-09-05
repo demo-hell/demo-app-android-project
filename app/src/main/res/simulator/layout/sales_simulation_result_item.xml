@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_1dp"
+        android:background="@drawable/background_solid_radius_8dp_display50"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            style="@style/Paragraph_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/sales_simulator_the_customer_pays" />
+
+        <TextView
+            style="@style/Paragraph_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_weight="1.3"
+            android:gravity="end"
+            android:text="@string/sales_simulator_you_receive" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llValues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_1dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_10dp">
+
+        <TextView
+            android:id="@+id/tvInstallmentValue"
+            style="@style/Paragraph_300_regular_14_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            tools:text="1x de R$ 500,00" />
+
+        <TextView
+            android:id="@+id/tvReceiptAmount"
+            style="@style/Paragraph_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            tools:text="R$ 930,30" />
+
+    </LinearLayout>
+</LinearLayout>

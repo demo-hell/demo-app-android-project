@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent_80">#33FFFFFF</color>
+    <color name="transparent_50">#80FFFFFF</color>
+    <color name="transparent_my_user">#80000000</color>
+
+    <color name="blue_transparent_00aeef">#8c00aeef</color>
+</resources>

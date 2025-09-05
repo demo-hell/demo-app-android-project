@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Agora insira um contato válido para essa entrega"
+        android:textColor="@color/color_204986"
+        android:textSize="14sp"
+        app:typeface="Museo700-Regular.ttf"
+        />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/dados_contato"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:typeface="Museo500-Regular.ttf"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNomeContato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:theme="@style/TextInputHintPrepago"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        >
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/tieNomeContato"
+            style="@style/TextInputHintMeuCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nome_contato"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:importantForAutofill="noExcludeDescendants"
+            android:maxLines="1"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNumeroCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:theme="@style/TextInputHintPrepago"
+        app:errorTextAppearance="@style/ErrorAppearance"
+        >
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/tieNumeroCelular"
+            style="@style/TextInputHintMeuCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_celular"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:importantForAutofill="noExcludeDescendants"
+            android:maxLines="1"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

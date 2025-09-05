@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.mobicare.cielo.commons.ui.widget.CustomViewBottomSheetGeneric xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:bs_toolbar_name="@string/txt_aguardando_motoboy"
+    app:bs_title="@string/app_name"
+    app:bs_subtitle="@string/txt_subtitle_motoboy"
+    app:bs_btn_bottom_name="@string/text_close_label"
+    app:bs_image="@drawable/ic_02"
+    app:bs_btn_close_status="true"
+    app:bs_view_line_status="true"
+    app:bs_btn_bottom_status="true"
+    app:bs_txt_toolbar_name_style="TXT_TOOlBAR_NAME_NORMAL"
+    app:bs_txt_title_style="TXT_TITLE_BLUE"
+    app:bs_txt_subtitle_style="TXT_SUBTITLE_BLACK"
+    app:bs_btn_bottom_style="BNT_BOTTOM_BLUE" />
+
+

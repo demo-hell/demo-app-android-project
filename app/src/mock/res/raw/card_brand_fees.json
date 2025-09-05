@@ -1,0 +1,220 @@
+{
+    "cardBrands": [
+        {
+            "name": "Visa",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/Visa%402x.png",
+            "products": [
+                {
+                    "name": "Al Refeicao",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Al Alimentacao",
+                    "fee": "2,10 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Flex Car  Vale",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Debito A Vista",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Parcelado Loja",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "12",
+                    "installmentsText": "2x a 12x"
+                },
+                {
+                    "name": "Crediario",
+                    "fee": "5,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Elo",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/Elo%402x.png",
+            "products": [
+                {
+                    "name": "Al Refeicao",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Al Alimentacao",
+                    "fee": "2,10 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Debito A Vista",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Parcelado Loja",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "12",
+                    "installmentsText": "2x a 12x"
+                }
+            ]
+        },
+        {
+            "name": "Amex",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/amex%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Banescard",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/banescard%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Debito A Vista",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Mastercard",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/Mastercard%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Debito A Vista",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Parcelado Loja",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "12",
+                    "installmentsText": "2x a 12x"
+                },
+                {
+                    "name": "Credito Conversor Moedas",
+                    "fee": "3,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Diners",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/diners-club%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Agiplan",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/agiplan%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Cabal",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/cabal%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Debito A Vista",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Credsystem",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/credsystem%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Credz",
+            "imageURL": "https://s3-sa-east-1.amazonaws.com/apollo-cardbrand-images/credz%402x.png",
+            "products": [
+                {
+                    "name": "Credito A Vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        }
+    ]
+}

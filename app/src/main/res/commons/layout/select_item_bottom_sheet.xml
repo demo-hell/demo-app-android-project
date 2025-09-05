@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16dp">
+
+    <View
+        android:id="@+id/icDragBottomSheet"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_4dp"
+        android:background="@drawable/ic_drag_bottom_sheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/Heading_500_Bold_18_display_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icDragBottomSheet"
+        tools:text="Título" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        tools:itemCount="5"
+        tools:listitem="@layout/layout_row_select_item_bottom_sheet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

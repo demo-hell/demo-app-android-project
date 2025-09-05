@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tapOnPhone.presentation.TapOnPhoneNavigationFlowActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_direction_arrow_left"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@+id/container_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/nav_graph_tap_on_phone" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nav_host_fragment">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/display_200" />
+
+            <br.com.cielo.libflue.button.CieloRegularWhiteButton
+                android:id="@+id/btn_first"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@color/blue_0774E7"
+                android:text="@string/ajuda_alert_cancelar"
+                android:textSize="@dimen/dimen_16sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_second"
+                style="@style/semi_bold_montserrat_16_cloud_0_spacing_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48dp"
+                android:background="@drawable/button_full_width_brand_selector"
+                android:text="@string/text_avancar"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <br.com.cielo.libflue.loading.AnimatedProgressViewFlui
+        android:id="@+id/animated_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <br.com.cielo.libflue.screen.HandlerViewFlui
+        android:id="@+id/custom_handler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:backImage="@drawable/ic_direction_arrow_left"
+        app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+        app:headerImage="@drawable/ic_symbol_close_brand_400_24_dp"
+        app:headerImageContentDescription="@string/content_description_close_button"
+        app:isShowContainerButton="true"
+        app:labelColorButtonContained="@color/white"
+        app:labelColorButtonOutlined="@color/brand_400"
+        app:message="@string/commons_generic_error_message"
+        app:messageStyle="@style/Paragraph_400_regular_16_display_400"
+        app:title="@string/commons_generic_error_title"
+        app:titleStyle="@style/Heading_600_regular_20_bold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

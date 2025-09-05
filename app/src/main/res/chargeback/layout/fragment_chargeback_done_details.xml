@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/Heading_500_20"
+                android:id="@+id/tvTitle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:text="@string/chargeback_details_done_title"
+                android:textColor="@color/brand_600"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/Label_700_Bold_12"
+                android:id="@+id/tvLabelAmount"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:paddingVertical="@dimen/dimen_2dp"
+                android:textColor="@color/cloud_400"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                android:text="@string/chargeback_disputed_amount" />
+
+            <TextView
+                style="@style/Label_700_Bold_24"
+                android:id="@+id/tvAmount"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:textColor="@color/brand_500"
+                app:layout_constraintEnd_toEndOf="@+id/tvLabelAmount"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelAmount"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelAmount"
+                tools:text="R$ 1.000.000,00" />
+
+            <TextView
+                style="@style/Label_700_Bold_12"
+                android:id="@+id/tvLabelDealingPerformedAndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:paddingVertical="@dimen/dimen_2dp"
+                android:textColor="@color/cloud_400"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+                android:text="@string/chargeback_dealing_performed_and_date" />
+
+
+            <TextView
+                android:id="@+id/tvDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chargeback_date_label_text"
+                app:layout_constraintStart_toEndOf="@id/tvLabelDealingPerformedAndDate"
+                app:layout_constraintTop_toTopOf="@id/tvLabelDealingPerformedAndDate"
+                app:layout_constraintBottom_toBottomOf="@id/tvLabelDealingPerformedAndDate"
+                style="@style/Label_700_Bold_12"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                />
+
+
+            <br.com.cielo.libflue.label.CieloTagLabel
+                android:id="@+id/ctlStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                app:backgroundShape="@drawable/background_status_chargeback_success_100"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelDealingPerformedAndDate"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelDealingPerformedAndDate"
+                app:tagIcon="@drawable/ic_warning"
+                app:textStyleFormat="@style/Label_100_regular_14_success_500"
+                tools:text="Em 3 dias" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/Label_400_Regular_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cloud_400"
+                app:layout_constraintBottom_toBottomOf="@+id/ctlStatus"
+                app:layout_constraintStart_toEndOf="@id/ctlStatus"
+                app:layout_constraintTop_toTopOf="@+id/ctlStatus"
+                android:layout_marginStart="@dimen/dimen_4dp"
+                tools:text="• em 05/07/2022" />
+
+            <TextView
+                android:id="@+id/tvLinkAttachment"
+                style="@style/Heading_300_regular_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:textColor="@color/brand_400"
+                android:textStyle="bold"
+                android:text="@string/chargeback_see_document_attachment_defense"
+                android:drawablePadding="@dimen/dimen_4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:drawableRightCompat="@drawable/ic_storage_download_cloud_0_16_dp"
+                app:drawableTint="@color/brand_400"
+                app:layout_constraintTop_toBottomOf="@+id/ctlStatus"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelDealingPerformedAndDate" />
+
+            <TextView
+                android:id="@+id/tvLinkAttachmentDocSender"
+                style="@style/Heading_300_regular_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:textColor="@color/brand_400"
+                android:textStyle="bold"
+                android:text="@string/chargeback_see_document_attachment_sender"
+                android:drawablePadding="@dimen/dimen_4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:drawableRightCompat="@drawable/ic_chargeback_file_text_check"
+                app:drawableTint="@color/brand_400"
+                app:layout_constraintTop_toBottomOf="@+id/tvLinkAttachment"
+                app:layout_constraintStart_toStartOf="@+id/tvLinkAttachment" />
+
+            <TextView
+                style="@style/Label_700_Bold_12"
+                android:id="@+id/tvLabelLifecycle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:paddingBottom="@dimen/dimen_11dp"
+                android:textColor="@color/cloud_400"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvLinkAttachmentDocSender"
+                android:text="@string/chargeback_lifecycle" />
+
+            <FrameLayout
+                android:id="@+id/containerLifecycleState"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelLifecycle"
+                app:layout_constraintEnd_toEndOf="@+id/tvLabelLifecycle"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelLifecycle"
+                tools:visibility="visible">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerLifecycleIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_24dp"
+                    tools:visibility="gone">
+
+                    <include layout="@layout/shimmer_chargeback_lifecyle" />
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/containerLifecycleError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:orientation="vertical"
+                    tools:visibility="gone">
+
+                    <TextView
+                        style="@style/Paragraph_300_regular_14_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chargeback_lifecycle_error_message" />
+
+                    <TextView
+                        android:id="@+id/tvLifecycleReload"
+                        style="@style/Heading_400_Regular_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_56dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/brand_400"
+                        android:textStyle="bold"
+                        android:text="@string/chargeback_lifecycle_reload"
+                        android:drawablePadding="@dimen/dimen_4dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        app:drawableRightCompat="@drawable/ic_chargeback_refresh"
+                        app:drawableTint="@color/brand_400" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvLifecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:ignore="RtlSymmetry"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_chargeback_lifecycle"
+                    tools:visibility="visible"/>
+
+            </FrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerLifecycle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelLifecycle"
+                app:layout_constraintEnd_toEndOf="@+id/tvLabelLifecycle"
+                app:layout_constraintTop_toBottomOf="@+id/containerLifecycleState">
+
+                <ImageView
+                    android:id="@+id/ivActiveIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_small_active" />
+
+                <TextView
+                    style="@style/Label_700_Bold_16"
+                    android:id="@+id/tvLifecycleAction"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen_8dp"
+                    android:textColor="@color/cloud_400"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivActiveIndicator"
+                    app:layout_constraintStart_toEndOf="@+id/ivActiveIndicator"
+                    app:layout_constraintTop_toTopOf="@+id/ivActiveIndicator"
+                    app:layout_constraintEnd_toStartOf="@+id/ivLifecycleArrowIndicator"
+                    tools:text="A favor do estabelecimento" />
+
+                <TextView
+                    style="@style/Label_400_Regular_16"
+                    android:id="@+id/tvLifecycleActionDate"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:textColor="@color/cloud_400"
+                    app:layout_constraintEnd_toEndOf="@+id/tvLifecycleAction"
+                    app:layout_constraintStart_toStartOf="@+id/tvLifecycleAction"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLifecycleAction"
+                    tools:text="Data: 22/07/2022" />
+
+                <ImageView
+                    android:id="@+id/ivLifecycleArrowIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/chargeback_more_info_title"
+                    android:rotation="90"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvLifecycleAction"
+                    app:layout_constraintStart_toEndOf="@+id/tvLifecycleAction"
+                    app:srcCompat="@drawable/ic_chevron_rgt"
+                    app:tint="@color/color_C5CED7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                style="@style/Heading_400_Bold_14"
+                android:id="@+id/tvSubtitleInfo"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_32dp"
+                android:textColor="@color/cloud_500"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/containerLifecycle"
+                android:text="@string/chargeback_general_information" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_24dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="@+id/tvSubtitleInfo"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubtitleInfo"
+                tools:ignore="RtlSymmetry"
+                tools:itemCount="3"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_chargeback_info" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerMoreInfo"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dimen_32dp"
+                android:background="@drawable/background_radius8dp_stroke_gray_204986"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/dimen_16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvSubtitleInfo"
+                app:layout_constraintStart_toStartOf="@+id/tvSubtitleInfo"
+                app:layout_constraintTop_toBottomOf="@+id/rvInfo"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tvMoreInfoTitle"
+                    style="@style/Label_400_Regular_16"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:text="@string/chargeback_more_info_title"
+                    android:textColor="@color/cloud_500"
+                    app:layout_constraintEnd_toStartOf="@+id/ivArrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMoreInfoContent"
+                    style="@style/Label_400_Regular_12"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:lineSpacingExtra="@dimen/dimen_4sp"
+                    android:text="@string/chargeback_more_info_content"
+                    app:layout_constraintEnd_toStartOf="@+id/ivArrow"
+                    app:layout_constraintStart_toStartOf="@+id/tvMoreInfoTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMoreInfoTitle" />
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/chargeback_more_info_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_end"
+                    app:tint="@color/color_C5CED7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

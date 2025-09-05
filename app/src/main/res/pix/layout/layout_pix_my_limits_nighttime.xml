@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/limitsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_my_limits_nocturnal"
+        style="@style/bold_montserrat_14_cloud_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:text="@string/text_pix_my_limits_transaction_nocturnal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_my_limits_hours_range"
+        style="@style/medium_montserrat_12_cloud_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        app:layout_constraintTop_toTopOf="@id/tv_my_limits_nocturnal"
+        app:layout_constraintBottom_toBottomOf="@id/tv_my_limits_nocturnal"
+        app:layout_constraintStart_toEndOf="@id/tv_my_limits_nocturnal"
+        tools:text="(Das 20h às 6h)" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_my_limits_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_limits_nocturnal"
+        android:background="@drawable/background_stroke_1dp_round_color_c5ced7">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_my_limits_nighttime"
+            style="@style/regular_ubuntu_14_cloud_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pix_my_limits_transaction"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_my_limits_nighttime_value"
+            style="@style/regular_ubuntu_20_brand_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:drawableEnd="@drawable/ic_edit_16dp_change_state"
+            android:drawablePadding="@dimen/dimen_8dp"
+            tools:text="R$ 2.500,00"
+            android:textColor="@drawable/text_color_change_state"
+            app:layout_constraintTop_toBottomOf="@+id/tv_my_limits_nighttime" />
+
+        <include
+            android:id="@+id/container_pix_my_limits_nighttime_info"
+            layout="@layout/layout_pix_my_limits_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tv_my_limits_nighttime_value" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/display_200"
+            app:layout_constraintTop_toBottomOf="@+id/container_pix_my_limits_nighttime_info" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_my_limits_total"
+            style="@style/regular_ubuntu_14_cloud_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/text_pix_my_limits_total"
+            app:layout_constraintTop_toTopOf="@id/view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_my_limits_nighttime_total_value"
+            style="@style/regular_ubuntu_20_brand_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:drawableEnd="@drawable/ic_edit_16dp_change_state"
+            android:drawablePadding="@dimen/dimen_8dp"
+            tools:text="R$ 5.000,00"
+            android:textColor="@drawable/text_color_change_state"
+            app:layout_constraintTop_toBottomOf="@+id/tv_my_limits_total" />
+
+        <include
+            android:id="@+id/container_pix_my_limits_nighttime_transaction_limit"
+            layout="@layout/layout_pix_my_limits_transaction_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_19dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_my_limits_nighttime_total_value" />
+
+        <include
+            android:id="@+id/container_pix_my_limits_nighttime_total_info"
+            layout="@layout/layout_pix_my_limits_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/container_pix_my_limits_nighttime_transaction_limit"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarTutorialCancel"
+    android:background="@drawable/screen_rounded_borders"
+    android:layout_height="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textCommonDialogToolbarTitle"
+            style="@style/TextBlack24spTitle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="left|center"
+            android:text="@string/rm_title_modal"
+            android:textColor="#2b2f33"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/montserrat" />
+
+        <LinearLayout
+            android:id="@+id/btn_rm_close"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_icon_close" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/semi_bold_montserrat_14_cloud_400"
+        android:id="@+id/tv_my_limits_transaction_limit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/text_my_limits_available_limit"
+        app:drawableRightCompat="@drawable/ic_symbol_info_cloud_400_16_dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/semi_bold_montserrat_14_cloud_400"
+        android:id="@+id/tv_my_limits_transaction_limit_value"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        tools:text="R$ 4.900,00" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:id="@+id/scrollContentLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".recebaMais.presentation.ui.fragment.contractinstallments.ContractInstallmentsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_grey_F2F4F8"
+        android:padding="@dimen/dimen_16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            style="@style/Heading_500_Bold_18_display_600"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_receba_mais_contract_installment_info"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linarLayoutIntallments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_28dp"
+            android:background="@drawable/background_grey_arround_list_order"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toTopOf="@id/textViewShowMore"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_title_list_installment"
+                style="@style/Heading_400_Bold_16_display_600"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:text="@string/text_receba_mais_contract_installment_summary_title" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewShowMore"
+            style="@style/Label_400_Alternate_regular_16_brand_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_12dp"
+            android:text="@string/text_receba_mais_contract_installment_show_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

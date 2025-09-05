@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_ga_screen_name">Home</string>
+    <string name="home_ga_meus_recebimentos">Home > Meus Recebimentos</string>
+    <string name="home_ga_minhas_vendas">Home > Minhas Vendas</string>
+    <string name="home_ga_antecipacao">Home > Antecipe Suas Vendas</string>
+    <string name="home_ga_produtos">Home > Produtos e Serviços</string>
+    <string name="home_ga_fidelidade">Home > Programa Cielo Fidelidade</string>
+    <string name="home_ga_servicos">Home > Mais Serviços Cielo</string>
+    <string name="home_ga_click_card_avulsa">Card Avulsa</string>
+    <string name="home_ga_click_card_programada">Card Programada</string>
+    <string name="home_ga_click_card_fidelidade">Card Fidelidade</string>
+
+    <string name="home_antecipacao_agora_title">Antecipe agora.</string>
+    <string name="home_antecipacao_title">Antecipe Suas Vendas</string>
+    <string name="home_minhas_vendas_title">Minhas Vendas Hoje</string>
+    <string name="home_minhas_vendas_label">Minhas Vendas</string>
+    <string name="home_meus_recebimentos_title">Meus Recebimentos</string>
+    <string name="home_produtos_title">Produtos e Serviços</string>
+    <string name="home_fidelidade_title">Programa Cielo Fidelidade</string>
+    <string name="home_mais_servicos_title">Mais Serviços Cielo</string>
+
+    <string name="home_servicos_minhas_vendas">Minhas\nVendas</string>
+    <string name="home_servicos_meus_recebimentos">Meus\nRecebimentos</string>
+    <string name="home_servicos_antecipe">Antecipe\nSuas Vendas</string>
+    <string name="home_servicos_produtos">Produtos\ne Serviços</string>
+    <string name="home_servicos_fidelidade">Cielo\nFidelidade</string>
+    <string name="home_servicos_meu_cadastro">Meu\nCadastro</string>
+    <string name="home_servicos_central_ajuda">Central\nde Ajuda</string>
+
+    <string name="home_minhas_vendas_quantidade_vendas_plural">%1$d vendas aprovadas até o momento</string>
+    <string name="home_minhas_vendas_quantidade_vendas_singular">%1$d venda aprovada até o momento</string>
+    <string name="home_minhas_vendas_quantidade_vendas_zero">Ainda não foram realizadas vendas no dia de hoje. Você pode ver outras vendas.</string>
+    <string name="text_error_load_sales">Não foi possível exibir seu total de vendas.</string>
+    <string name="bt_reload">Recarregar</string>
+    <string name="bt_text_see_more_sales">Ver mais vendas</string>
+    <string name="last_sale_time">Última venda hoje • às %s</string>
+    <string name="updated_at">Atualizado às %s</string>
+    <string name="content_description_brand_name">Bandeira %s</string>
+
+    <plurals name="totalSalesToday">
+        <item quantity="one">Total de vendas hoje • %d venda aprovada:</item>
+        <item quantity="other">Total de vendas hoje • %d vendas aprovadas:</item>
+    </plurals>
+
+    <string name="home_minhas_vendas_ultimas_vendas_plural">Últimas %1$d vendas</string>
+    <string name="home_minhas_vendas_ultimas_vendas_singular">Últimas vendas</string>
+    <string name="home_minhas_vendas_atualizar">Atualizar</string>
+    <string name="home_ver_mais">Ver mais</string>
+    <string name="ver_todos_links">Ver todos os links gerados</string>
+    <string name="home_valor_disponivel">Valor disponível</string>
+    <string name="text_home_arv_title">Quer antecipar suas vendas agora?</string>
+    <string name="home_programe_arv">Programe agora a antecipação de \nsuas vendas.</string>
+    <string name="menu_meus_cartoes">Conta Digital</string>
+
+    <string name="text_statement_title">Extrato</string>
+    <string name="text_home_navigation_label">Início</string>
+    <string name="text_values_received_navigation_label">Recebíveis</string>
+    <string name="text_sales_navigation_label">Vendas</string>
+    <string name="text_services_navigation_label">Serviços</string>
+    <string name="text_others_navigation_label">Outros</string>
+    <string name="text_change_ec_menu_label">Modificar estabelecimento</string>
+    <string name="text_fullsec_error_message">Para continuar visualizando as informações de suas vendas, precisamos atualizar os seus dados cadastrais. Ligue na nossa central de relacionamento: 4002 5472 (todas as localidades) ou 800 570 8471 (exceto capitais e ligações pelo celular).</string>
+    <string name="text_fullsec_error_title">Atenção</string>
+    <string name="text_home_arv_link_description">Consulte o valor disponível</string>
+    <string name="banner_incoming_fast_title"><![CDATA[
+    <b>Cielo</b> <font color=#204986>Recebimento Automático em 2 dias</font>
+    ]]></string>
+    <string name="banner_incoming_fast_content">Dinheiro na mão em até 2 dias</string>
+    <string name="banner_incoming_fast_text_view_contract_now">Contrate agora</string>
+    <string name="mfa_status_home_label">
+        <![CDATA[
+        Por favor, configure o seu Token de segurança. <b>Toque aqui.</b>
+        ]]></string>
+    <string name="mfa_pending_status_home_label">
+        <![CDATA[
+        A sua liberação de acesso ao token está em análise. Por favor, aguarde e tente novamente em outro momento.
+        ]]></string>
+    <string name="mfa_not_eligible_status_home_label">
+        <![CDATA[
+        No momento você não é elegível ao Token Cielo e algumas funcionalidades não estarão disponíveis.
+        <font color=#017CEB>Saiba mais</font>
+        ]]></string>
+    <string name="mfa_error_penny_drop_status_home_label">
+        <![CDATA[
+        O token não foi validado devido a inconsistencia na sua conta bancaria. Verifique os dados da sua conta e tente novamente.
+        <font color=#017CEB>Saiba mais</font>
+        ]]></string>
+    <string name="hello_user_header_home">Olá, %s</string>
+    <string name="ec_number_header_home">Número de EC: %s</string>
+    <string name="ec_switch_button_label_home">Trocar</string>
+    <string name="ec_switch_button_description_home">Trocar de estabelecimento</string>
+
+    <string name="home_main_services">Principais serviços</string>
+    <string name="home_services_super_link">Link de Pagamento</string>
+    <string name="home_services_pos_virtual">Vender</string>
+    <string name="home_services_tap_on_phone">Cielo Tap</string>
+    <string name="home_services_pix">Pix</string>
+    <string name="home_services_sales_simulator">Simulador de vendas</string>
+    <string name="home_services_refunds">Vendas canceladas</string>
+    <string name="home_services_rates">Taxas e planos</string>
+
+    <plurals name="not_read_notifications_home">
+        <item quantity="zero">""</item>
+        <item quantity="one">%d notificação não lida</item>
+        <item quantity="other">%d notificações não lidas</item>
+    </plurals>
+
+    <string-array name="view_pager_sales_home">
+        <item>Vendas</item>
+        <item>Recebíveis</item>
+    </string-array>
+
+    <string name="error_on_show_fees">Não foi possível exibir as taxas das principais bandeiras.</string>
+    <string name="fee_per_brand_title">Taxas por bandeira</string>
+    <string name="fee_per_brand_action_button">Ver mais bandeiras e plano</string>
+    <string name="notification_content_description">.%s</string>
+    
+    <string name="cielo_farol_title">Cielo Farol</string>
+    <string name="cielo_farol_best_day_of_week">Melhor dia da semana</string>
+    <string name="cielo_farol_best_time">Melhor horário</string>
+    <string name="cielo_farol_average_consume">Valor médio de consumo</string>>
+    <string name="access_cielo_farol">Acessar Cielo Farol</string>
+    <string name="access_cielo_farol_content_description">Acessar Cielo Farol, botão</string>
+
+    <string name="card_home_arv_alert_title">Que tal antecipar seus recebíveis?</string>
+    <string name="card_home_arv_alert_description"><![CDATA[Você tem <b>%s</b> disponíveis para antecipar e receber na sua conta ainda hoje!]]></string>
+    <string name="card_home_arv_alert_button">Quero antecipar</string>
+
+    <string name="custom_profile_indicator_text">Acesso Personalizado</string>
+    <string name="custom_profile_indicator_desc_text"><![CDATA[Você está com o perfil: <b>%s</b>.<br/>Suas configurações de acesso foram adaptadas às suas responsabilidades. Alguns recursos podem não estar disponíveis.]]></string>
+    <string name="without_number_ec_title">Identificamos que você não possui nenhum número de estabelecimento para gerenciar</string>
+    <string name="without_number_ec_subTitle">Para acessar todas as funcionalidades dentro dos canais digitais Cielo, Site e App, é necessário você se credenciar conosco.</string>
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".chargeback.presentation.refuse.ChargebackRefuseFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/dimen_16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/Heading_500_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/chargeback_refuse_title"
+            android:textColor="@color/color_204986"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRefuseReason"
+            style="@style/Label_700_Bold_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/chargeback_refuse_reason"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/itRefuseReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/custom_edit_text_selector"
+            android:focusable="true"
+            android:minHeight="@dimen/dimen_104dp"
+            android:padding="@dimen/dimen_8dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:hintEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/tvRefuseReason">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRefuseReason"
+                style="@style/Input_400_regular_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="@string/chargeback_refuse_reason_input_hint"
+                android:imeOptions="actionGo|actionDone"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:minHeight="@dimen/dimen_104dp"
+                android:textSize="@dimen/dimen_16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/attachmentGuidelines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            app:layout_constraintTop_toBottomOf="@+id/itRefuseReason">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAttachmentTitle"
+                style="@style/Label_700_Bold_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chargeback_refuse_attachment_title_new"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/tvAttachmentCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tvAttachmentTitle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_write_text_black_24_dp"
+                    app:tint="#5C6A7B" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCase"
+                    style="@style/Label_100_regular_14_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:text="@string/chargeback_refuse_attachment_case" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/tvAttachmentSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAttachmentCase">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_attachment_black_24_dp"
+                    app:tint="#5C6A7B" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSize"
+                    style="@style/Label_100_regular_14_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:text="@string/chargeback_refuse_attachment_maximum_size" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/tvAttachmentFormat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAttachmentSize">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFormat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_file_cloud_600_24_dp"
+                    app:tint="#5C6A7B" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFormat"
+                    style="@style/Label_100_regular_14_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:text="@string/chargeback_refuse_attachment_format" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/tvAttachmentMaximumPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAttachmentFormat">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_hashtag_cloud_600_24_dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPage"
+                    style="@style/Label_100_regular_14_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:text="@string/chargeback_refuse_attachment_maximum_page" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/tvAttachmentDimension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAttachmentMaximumPage">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivDimension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_maximize_cloud_600_24_dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDimension"
+                    style="@style/Label_100_regular_14_cloud_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8dp"
+                    android:text="@string/chargeback_refuse_attachment_dimension" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/includeAttachDocument"
+            layout="@layout/layout_chargeback_attach_document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/attachmentGuidelines"
+            tools:layout_editor_absoluteX="dimen_16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

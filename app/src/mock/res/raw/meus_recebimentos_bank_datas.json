@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Bradesco",
+    "branch": "1247-7",
+    "account": "12.789-1",
+    "amount": "R$ 15.500,00",
+    "postingsQty": "10 lançamentos",
+    "status": "Depositado"
+  },
+  {
+    "name": "Banco do Brasil",
+    "branch": "7823-2",
+    "account": "10.142-7",
+    "amount": "R$ 2.440,00",
+    "postingsQty": "3 lançamentos",
+    "status": "Pendente"
+  },
+  {
+    "name": "Caixa Econômica Federal",
+    "branch": "4063-0",
+    "account": "21481-2",
+    "amount": "R$ 11.500,00",
+    "postingsQty": "5 lançamentos",
+    "status": "Depositado"
+  },
+  {
+    "name": "Santander",
+    "branch": "2221-0",
+    "account": "10005-2",
+    "amount": "R$ 15.200,00",
+    "postingsQty": "2 lançamentos",
+    "status": "Depositado"
+  },
+  {
+    "name": "Itaú",
+    "branch": "7235-3",
+    "account": "3317-2",
+    "amount": "R$ 20.400,00",
+    "postingsQty": "11 lançamentos",
+    "status": "Depositado"
+  },
+  {
+    "name": "Banco Citibank",
+    "branch": "7450-0",
+    "account": "3312-7",
+    "amount": "R$ 4.440,00",
+    "postingsQty": "6 lançamentos",
+    "status": "Pendente"
+  },
+  {
+    "name": "Banco Safra",
+    "branch": "1111-3",
+    "account": "2345-2",
+    "amount": "R$ 2.100,00",
+    "postingsQty": "3 lançamentos",
+    "status": "Pendente"
+  },
+  {
+    "name": "Banco Original",
+    "branch": "6634-1",
+    "account": "2111-2",
+    "amount": "R$ 11.100,00",
+    "postingsQty": "12 lançamentos",
+    "status": "Pendente"
+  },
+  {
+    "name": "Banco BMG",
+    "branch": "3188-2",
+    "account": "1144-0",
+    "amount": "R$ 23.100,00",
+    "postingsQty": "15 lançamentos",
+    "status": "Depositado"
+  }
+]

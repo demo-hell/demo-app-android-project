@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_toolbar_simulator">Simulador de vendas</string>
+
+    <string name="text_simulator_title">Simule quanto você receberá por uma venda na sua maquininha.</string>
+    <string name="text_simulator_sale_value">Qual valor você deseja simular?</string>
+    <string name="text_simulator_sale_value_hint">0,00</string>
+
+    <string name="text_simulator_sale_type">Tipo da venda</string>
+    <string name="text_simulator_sale_type_credit">Crédito parcelado</string>
+    <string name="text_simulator_installment_fees">Quem deve assumir as taxas de parcelamento?</string>
+
+    <string name="text_simulator_installment_store">Parcelado loja</string>
+    <string name="text_simulator_installment_client">Parcelado cliente</string>
+    <string name="text_simulator_fees_store">As taxas do parcelamento são por conta da loja</string>
+    <string name="text_simulator_select_brand">Selecione a bandeira do seu cliente</string>
+
+    <string name="text_simulator_calculate">Calcular</string>
+
+    <string name="text_simulator_select_brand_title">Selecione a bandeira do seu cliente</string>
+
+    <string name="text_simulator_select_error_maximum">Não é possivel simular um valor maior que R$ 1.000.000,00</string>
+    <string name="text_simulator_select_error_minimum">Não é possivel simular um valor menor que R$ 1,00</string>
+
+    <string name="simulation_result">Resultado da simulação</string>
+    <string name="sales_simulator_error_title">No momento, não é possível utilizar o Simulador de Vendas</string>
+    <string name="sales_simulator_error_subtitle">Seu estabelecimento não possui Crédito Parcelado contratado. Fique tranquilo, estamos trabalhando para disponibilizar o Simulador para nossos clientes.</string>
+
+    <string name="sales_simulator_result_info_tax">Taxa: <![CDATA[<b>%.2f%%</b>]]> (referente a taxas administrativas)</string>
+    <string name="sales_simulator_simulated_value">Valor simulado</string>
+    <string name="sales_simulator_simulated_sales_type">Tipo da venda</string>
+    <string name="sales_simulator_installments">Parcelado</string>
+    <string name="sales_simulator_brand">Bandeira</string>
+    <string name="sales_simulator_receipt_period">Prazo do recebimento</string>
+    <string name="sales_simulator_the_customer_pays">O cliente paga</string>
+    <string name="sales_simulator_you_receive">Você recebe</string>
+    <string name="sales_simulator_mask">%dx de %s</string>
+
+    <plurals name="recepitDeadline">
+        <item quantity="one">1 dia útil</item>
+        <item quantity="other">%s dias</item>
+    </plurals>
+
+    <string name="sales_simulator_receiving_term_format"><![CDATA[em <b>%s</b>]]></string>
+
+    <string name="sales_simulator_product_selection_subtitle">Saiba quanto seu estabelecimento irá receber</string>
+    <string name="sales_simulator_value_label">Valor</string>
+    <string name="sales_simulator_brand_selection_label">Qual a bandeira do cartão?</string>
+    <string name="sales_simulator_brand_selection_hint">Selecione a bandeira</string>
+    <string name="sales_simulator_brand_selection_bs_title">"Selecione a bandeira:</string>
+    <string name="sales_simulator_sell_type_selection_label">Qual o tipo de venda?</string>
+    <string name="sales_simulator_sell_type_selection_hint">Selecione o tipo de venda</string>
+    <string name="sales_simulator_sell_type_selection_bs_title">Selecione o tipo de venda</string>
+    <string name="sales_simulator_simulate_label_button">Simular</string>
+    <string name="sales_simulator_simulate_result_title">Resultado da simulação</string>
+    <string name="sales_simulator_simulated_value_label">Valor simulado</string>
+    <string name="sales_simulator_details_label">Detalhes</string>
+    <string name="sales_simulator_current_plan_label">Plano atual</string>
+    <string name="sales_simulator_current_plan_monthly">Recebimento Mensal</string>
+    <string name="sales_simulator_current_plan_daily">Recebimento Automático</string>
+    <string name="sales_simulator_redo_simulation">Refazer simulação</string>
+    <string name="sales_simulator_update">Atualizar</string>
+    <string name="sales_simulator_costumer_installment_label">Parcela do cliente:</string>
+    <string name="sales_simulator_total_fee_label">Taxa total:</string>
+    <string name="sales_simulator_you_receive_total_label">Você recebe no total:</string>
+    <string name="sales_simulator_to_receive_simulated_value_charge_label">Para receber o valor total que simulou, cobre:</string>
+    <string name="sales_simulator_installment_format">%sx de %s</string>
+    <string name="sales_simulator_MDR_RA_format">MDR %s + RA %s</string>
+    <string name="sales_simulator_MDR">MDR</string>
+    <string name="sales_simulator_simulation_details">Detalhes da simulação</string>
+    <string name="sales_simulator_brand_selection_title">Selecione a bandeira:</string>
+    <string name="sales_simulator_payment_type_selection_title">Selecione o tipo de venda:</string>
+
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_about_transaction_receipt"
+        style="@style/label_16_brand_600_montserrat_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_transfer_receipt_about_transaction"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPixAmountTotalTitle"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_qr_code_total_received"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about_transaction_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPixAmountTotalTitleValue"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvPixAmountTotalTitle"
+        tools:text="R$ 10,00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_amount_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_transfer_receipt_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tvPixAmountTotalTitleValue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_amount_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_amount_title_receipt"
+        tools:text="R$ 150,00" />
+
+    <include
+        android:id="@+id/container_billing_details"
+        layout="@layout/layout_pix_billing_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_amount_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pix_change_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_change_value"
+        app:layout_constraintTop_toBottomOf="@+id/container_billing_details" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pix_change_value"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pix_change_title"
+        tools:text="R$ 10,00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_transfer_type_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_transfer_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pix_change_value" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_transfer_type_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_extract_detail_status_title_pix_send"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transfer_type_title_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_rate_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_transfer_receipt_rate"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transfer_type_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_rate_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_transfer_receipt_free"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rate_title_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debit_info"
+        style="@style/Paragraph_200_regular_12_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rate_receipt"
+        tools:text="Total debitado da sua conta: R$ 50,00" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_message_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_debit_info">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_message_title_receipt"
+            style="@style/label_16_display_300_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pix_transfer_receipt_message"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_message_receipt"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_message_title_receipt"
+            tools:text="Jogo de PS4 do homem-aranha. Seminovo." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_scheduled_to_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_scheduled_to_title"
+        app:layout_constraintTop_toBottomOf="@id/container_message_receipt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_scheduled_to_value"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_scheduled_to_title"
+        tools:text="17/06/2022" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_scheduled_to_info"
+        style="@style/Paragraph_200_regular_12_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:text="@string/text_scheduled_to_info"
+        app:layout_constraintTop_toBottomOf="@+id/tv_scheduled_to_value" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleChannelUsed"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_transfer_channel_used_sending_without_two_points"
+        app:layout_constraintTop_toBottomOf="@+id/tv_scheduled_to_info" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChannelUsed"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleChannelUsed"
+        tools:text="App Cielo Gestão" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/scheduledGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_scheduled_to_title, tv_scheduled_to_value , tv_scheduled_to_info" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/changeDebitValueGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvPixAmountTotalTitle, tvPixAmountTotalTitleValue, tv_pix_change_title, tv_pix_change_value" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

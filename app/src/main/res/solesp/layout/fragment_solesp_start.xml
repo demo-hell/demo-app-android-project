@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingVertical="@dimen/dimen_8dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dimen_2sp"
+        android:text="@string/txt_title_solesp_start"
+        android:textColor="@color/brand_600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        style="@style/Paragraph_400_regular_16_display_300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:text="@string/txt_description_solesp_start"
+        android:textColor="@color/color_cloud_400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtDescriptionTwo"
+        style="@style/Paragraph_400_regular_16_display_300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:text="@string/txt_description_two_solesp_start"
+        android:textColor="@color/color_cloud_400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription" />
+
+    <LinearLayout
+        android:id="@+id/descriptionItemOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDescriptionTwo">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_32dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_light_objects_clock_32dp" />
+
+        <TextView
+            style="@style/Paragraph_300_bold_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/txt_description_item_one_solesp_start" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/descriptionItemTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionItemOne">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_32dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_light_documents_finances_32dp" />
+
+        <TextView
+            style="@style/Paragraph_300_bold_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/txt_description_item_two_solesp_start" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/descriptionItemThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionItemTwo">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_32dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_light_communication_envelope_32dp" />
+
+        <TextView
+            style="@style/Paragraph_300_bold_14_display_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/txt_description_item_three_solesp_start" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

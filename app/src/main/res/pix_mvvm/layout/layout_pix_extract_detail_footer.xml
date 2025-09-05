@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/cloud_200" />
+
+    <Button
+        android:id="@+id/btnRefund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/pix_extract_detail_label_button_footer_refund"
+        android:textAppearance="@style/semi_bold_montserrat_center_16_brand_400_spacing_4" />
+
+    <Button
+        android:id="@+id/btnCancelSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/pix_extract_detail_label_button_footer_cancel_schedule"
+        android:textAppearance="@style/semi_bold_montserrat_center_16_brand_400_spacing_4"
+        android:textColor="@color/feedback_danger_main" />
+
+    <Button
+        android:id="@+id/btnRequestAnalysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/pix_infringement_label_button_transaction_analyse"
+        android:textAppearance="@style/semi_bold_montserrat_center_16_brand_400_spacing_4" />
+
+    <Button
+        android:id="@+id/btnAccessOriginalTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/pix_extract_detail_status_access_original_transaction"
+        android:textAppearance="@style/semi_bold_montserrat_center_16_brand_400_spacing_4" />
+
+</LinearLayout>

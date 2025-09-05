@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="9dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLastNegotiations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:listitem="@layout/item_balcao_last_negotiations"/>
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tvListExtratoEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_las_negotiations_empity"
+            android:fontFamily="@font/ubuntu"
+            android:textColor="@color/color_5A646E"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="59dp"
+            android:layout_marginBottom="59dp"
+            android:layout_marginStart="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:layout_marginEnd="@dimen/dimen_40dp"
+            android:layout_marginRight="@dimen/dimen_40dp"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

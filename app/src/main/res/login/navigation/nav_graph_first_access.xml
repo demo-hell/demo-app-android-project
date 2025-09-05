@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/firstAccessCreateFragment">
+
+    <fragment
+        android:id="@+id/firstAccessCreateFragment"
+        android:name="br.com.mobicare.cielo.login.firstAccess.presentation.ui.create.FirstAccessCreateFragment"
+        android:label="FirstAccessCreateFragment"
+        tools:layout="@layout/fragment_first_access_create">
+
+        <action
+            android:id="@+id/action_firstAccessCreateFragment_to_firstAccessCreatePasswordFragment"
+            app:destination="@id/firstAccessCreatePasswordFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/firstAccessCreatePasswordFragment"
+        android:name="br.com.mobicare.cielo.login.firstAccess.presentation.ui.createPassword.FirstAccessCreatePasswordFragment"
+        android:label="FirstAccessCreatePasswordFragment"
+        tools:layout="@layout/fragment_first_access_create_password">
+
+        <argument
+            android:name="number_ec_args"
+            app:argType="string" />
+        <argument
+            android:name="cpf_args"
+            app:argType="string" />
+        <argument
+            android:name="email_args"
+            app:argType="string" />
+    </fragment>
+</navigation>

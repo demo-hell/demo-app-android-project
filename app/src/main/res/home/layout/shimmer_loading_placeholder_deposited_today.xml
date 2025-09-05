@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:background="@drawable/background_solid_alert_50_rounded_8dp">
+
+    <TextView
+        android:id="@+id/tvDepositedToday"
+        style="@style/Label_200_Regular_12_Display_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:text="@string/tv_deposited_today" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/loadingShimmerDepositedToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDepositedToday"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:shimmer_highlight_alpha="0"
+        app:shimmer_base_alpha="1"
+        app:shimmer_auto_start="false"
+        shimmer:duration="800">
+
+        <View
+            android:id="@+id/animatedLoading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_marginEnd="@dimen/dimen_150dp"
+            android:layout_marginBottom="@dimen/dimen_12dp"
+            android:background="@drawable/background_solid_display_100_rounded_4dp" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

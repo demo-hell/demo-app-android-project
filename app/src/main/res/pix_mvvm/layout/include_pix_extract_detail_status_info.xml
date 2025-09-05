@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/bold_montserrat_16"
+        android:textColor="@color/neutral_800"
+        android:text="@string/pix_extract_detail_status_informative_money_outflow"
+        tools:textAppearance="@style/semi_bold_montserrat_16_cloud_0_spacing_4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/neutral_main"
+        android:text="@string/pix_extract_detail_label_channel" />
+
+    <TextView
+        android:id="@+id/tvChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:textAppearance="@style/semi_bold_montserrat_16_cloud_0_spacing_4"
+        android:textColor="@color/neutral_800"
+        tools:text="Transferência automática" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/neutral_main"
+        android:text="@string/pix_extract_detail_label_merchant" />
+
+    <TextView
+        android:id="@+id/tvMerchant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:textAppearance="@style/semi_bold_montserrat_16_cloud_0_spacing_4"
+        android:textColor="@color/neutral_800"
+        tools:text="123456" />
+
+</LinearLayout>

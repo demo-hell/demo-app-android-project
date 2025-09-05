@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/toolbarUserLoanSuccess"
+        layout="@layout/toolbar_main" />
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorHandlerCieloUserLoanSuccess"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarUserLoanSuccess"
+        android:layout_height="@dimen/dimen_0dp"
+        app:cieloErrorTitle="@string/text_receba_mais_success_title"
+        app:cieloErrorButtonLabel="@string/meus_recebimentos_dialog_fechar"
+        app:cieloErrorMessage="@string/text_receba_mais_success_message"
+        app:cieloErrorContentImage="@drawable/ic_success_user_loan"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

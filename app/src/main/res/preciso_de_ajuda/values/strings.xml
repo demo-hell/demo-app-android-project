@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ajuda_title">Precisa de Ajuda?</string>
+    <string name="ajuda_ga_screen_name">Precisa de Ajuda? > Esqueci a senha</string>
+    
+    <string name="ajuda_esqueci_ec">Esqueci o nº do estabelecimento</string>
+    <string name="ajuda_esqueci_usuario">Esqueci o usuário</string>
+    <string name="ajuda_esqueci_senha">Esqueci a senha</string>
+    <string name="ajuda_msg_enviar_email">Enviar e-mail para</string>
+    <string name="ajuda_msg_ligar">Ligar para o número</string>
+
+    <string name="ajuda_alert_title">Número do estabelecimento</string>
+    <string name="ajuda_alert_description">Você se cadastrou na Cielo como Pessoa Jurídica ou Pessoa Física?</string>
+    <string name="ajuda_alert_pessoa_juridica">Pessoa Jurídica</string>
+    <string name="ajuda_alert_pessoa_fisica">Pessoa Física</string>
+    <string name="ajuda_alert_cancelar">Cancelar</string>
+    <string name="ajuda_alert_proximo">Próximo</string>
+
+</resources>

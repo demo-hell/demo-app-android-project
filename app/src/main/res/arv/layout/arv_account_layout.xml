@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:minHeight="@dimen/dimen_96dp"
+    android:paddingHorizontal="@dimen/dimen_16dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <include layout="@layout/loading_shimmer_bank_account" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ImageView
+        android:id="@+id/bankIcon"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginVertical="@dimen/dimen_20dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_money_coin_down" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankName"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintStart_toEndOf="@id/bankIcon"
+        app:layout_constraintTop_toTopOf="@+id/bankIcon"
+        tools:text="Banco do Brasil" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankBranchLabel"
+        style="@style/Label_300_Regular_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:text="@string/bank_branch"
+        app:layout_constraintBottom_toBottomOf="@+id/bankIcon"
+        app:layout_constraintStart_toEndOf="@+id/bankIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvBankName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankBranchNumber"
+        style="@style/Label_300_Bold_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBankBranchLabel"
+        app:layout_constraintStart_toEndOf="@id/tvBankBranchLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvBankBranchLabel"
+        tools:text="04132" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankAccountLabel"
+        style="@style/Label_300_Regular_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_24dp"
+        android:text="@string/bank_account"
+        app:layout_constraintBottom_toBottomOf="@id/tvBankBranchLabel"
+        app:layout_constraintStart_toEndOf="@id/tvBankBranchNumber" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBankAccountNumber"
+        style="@style/Label_300_Bold_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBankAccountLabel"
+        app:layout_constraintStart_toEndOf="@id/tvBankAccountLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvBankAccountLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="004132-5" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@color/display_200"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bankIcon" />
+
+    <Button
+        android:id="@+id/btEditBrands"
+        style="@style/label_16_display_400_montserrat_semi_bold"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:drawableEnd="@drawable/ic_chevron_right"
+        android:drawableTint="@color/brand_400"
+        android:gravity="start"
+        android:paddingVertical="@dimen/dimen_20dp"
+        android:text="@string/arv_change_bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvErrorMessage"
+        style="@style/Label_300_Regular_14_display_400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:padding="@dimen/dimen_6dp"
+        android:text="@string/arv_loading_banks_error_message"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dividerError"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@color/display_200"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvErrorMessage" />
+
+    <Button
+        android:id="@+id/btReload"
+        style="@style/label_16_display_400_montserrat_semi_bold"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:drawableEnd="@drawable/ic_refresh_blue"
+        android:gravity="start"
+        android:paddingHorizontal="@dimen/dimen_6dp"
+        android:paddingVertical="@dimen/dimen_20dp"
+        android:text="@string/arv_reload_banks_button_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dividerError" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/accountErrorGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvErrorMessage, dividerError, btReload"
+        tools:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/accountContentGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="bankIcon, tvBankName, tvBankBranchLabel, tvBankBranchNumber, tvBankAccountNumber,
+        tvBankAccountLabel, btEditBrands, divider"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

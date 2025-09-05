@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tapOnPhone.presentation.impersonate.TapOnPhoneImpersonateFragment">
+
+    <br.com.cielo.libflue.screen.HandlerViewFlui
+        android:id="@+id/handlerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+        app:backgroundColorHandlerView="@android:color/white"
+        app:buttonContainedLabel="@string/tap_on_phone_impersonate_button"
+        app:contentImage="@drawable/ic_cell_phone_exchange"
+        app:headerImage="@drawable/ic_close_blue_top"
+        app:isShowButtonBack="false"
+        app:message="@string/tap_on_phone_impersonate_message"
+        app:messageStyle="@style/Paragraph_400_regular_16_cloud_400_start"
+        app:messageAlignment="textStart"
+        app:title="@string/tap_on_phone_impersonate_title"
+        app:titleStyle="@style/Heading_600_regular_20_center" />
+
+</FrameLayout>

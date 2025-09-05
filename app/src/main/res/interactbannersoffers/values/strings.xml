@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_view_interact_offer_banner_title_RR">
+        <![CDATA[<b>Cielo</b> <font color=#00AEEF>Recebimento Automático</font>
+        ]]>
+    </string>
+    <string name="text_view_interact_offer_banner_description_RR">
+        <![CDATA[<font color=#FFFFFF>Com o Recebimento Automático você tem dinheiro na mão em até 2 dias</font>
+        ]]>
+    </string>
+    <string name="text_view_interact_offer_banner_button_RR">Contrate agora</string>
+
+    <string name="text_cielo_promo">Cielo Promo</string>
+    
+    <string name="terms_of_use">Termo de aceite</string>
+    <string name="terms_of_use_message">
+         Li e aceito o <b>contrato da oferta negociada</b>, assim como o termo de aceite e condições que podem ser aplicadas.
+    </string>
+    <string name="to_hire">Contratar</string>
+
+    <!-- TERMO DE ACEITE -->
+    <string name="receba_rapido_title">Escolha a melhor forma para receber suas vendas!</string>
+    <string name="receba_rapido_subtitle">Temos o compromisso de impulsionar o seu negócio e por isso sua oferta negociada está pronta para ser habilitada.\n\nCom o Recebimento Automático, é possível escolher quando é melhor receber suas vendas: em 2 dias úteis, uma vez por semana ou uma vez por mês.</string>
+    <string name="receba_rapido_title_bs_success">Solicitação em processamento!</string>
+    <string name="receba_rapido_subtitle_bs_success">Sua solicitação para garantir a oferta está em processamento, o prazo de confirmação é de até 48 horas. Em breve você poderá escolher a melhor forma para receber suas vendas.</string>
+</resources>

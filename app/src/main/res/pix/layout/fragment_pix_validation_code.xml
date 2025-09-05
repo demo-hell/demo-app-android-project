@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".pix.ui.keys.myKeys.register.validation.PixValidationCodeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/tv_title_validation_code"
+            style="@style/label_18_display_500_montserrat_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/text_pix_create_key_insert_code" />
+
+        <br.com.cielo.libflue.inputtext.CieloInputText
+            android:id="@+id/input_text_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_validation_code" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_send_new_code"
+            style="@style/label_14_brand_400_montserrat_pix_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:drawableEnd="@drawable/ic_chevron_end_blue"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:text="@string/text_pix_create_key_new_code"
+            android:textColor="@color/display_200"
+            app:drawableTint="@color/display_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_text_code" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_timer_send_new_code"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/text_pix_create_key_timer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_send_new_code" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

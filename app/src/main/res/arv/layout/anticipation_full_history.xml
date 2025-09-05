@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clHistoryInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvAnticipationHistoryType"
+        style="@style/Paragraph_400_bold_16_brand_600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/anticipation_history_name_title"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAnticipationHistoryDate"
+        style="@style/Label_100_ubuntu_regular_16_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAnticipationHistoryTypeDetails1"
+        app:layout_constraintTop_toBottomOf="@id/tvAnticipationHistoryType"
+        tools:text="21/07/2022 às 15h00" />
+
+    <TextView
+        android:id="@+id/tvAnticipationHistoryTypeDetails1"
+        style="@style/Label_100_ubuntu_regular_16_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/anticipation_history_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAnticipationHistoryType" />
+
+    <TextView
+        android:id="@+id/tvAnticipationHistoryType2"
+        style="@style/Label_100_ubuntu_regular_16_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/anticipation_value_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAnticipationHistoryDate" />
+
+
+    <TextView
+        android:id="@+id/tvAnticipationHistoryValue"
+        style="@style/Paragraph_600_Bold_16"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textColor="@color/success_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAnticipationHistoryType2"
+        app:layout_constraintTop_toBottomOf="@id/tvAnticipationHistoryDate"
+        tools:text="R$ 600.000,00" />
+
+    <TextView
+        android:id="@+id/tvAnticipationHistoryType4"
+        style="@style/Label_100_ubuntu_regular_16_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/anticipation_status_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAnticipationHistoryValue" />
+
+    <ImageView
+        android:id="@+id/icStatus"
+        android:layout_width="@dimen/dimen_14dp"
+        android:layout_height="@dimen/dimen_14dp"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAnticipationHistoryStatus"
+        app:layout_constraintStart_toEndOf="@+id/tvAnticipationHistoryType4"
+        app:layout_constraintTop_toTopOf="@+id/tvAnticipationHistoryStatus"
+        app:srcCompat="@drawable/ic_clock_alert_500" />
+
+    <TextView
+        android:id="@+id/tvAnticipationHistoryStatus"
+        style="@style/Paragraph_600_Bold_16"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:drawablePadding="@dimen/dimen_4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/alert_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icStatus"
+        app:layout_constraintTop_toBottomOf="@id/tvAnticipationHistoryValue"
+        tools:text="em andamento" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@color/color_cloud_200"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnticipationHistoryStatus" />
+
+    <TextView
+        android:id="@+id/tvAnticipationSeeFullHistory"
+        style="@style/label_16_brand_400_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:contentDescription="@string/anticipation_see_full_history_button"
+        android:text="@string/anticipation_see_full_history"
+        android:textStyle="bold"
+        app:drawableEndCompat="@drawable/ic_arrow_end"
+        app:drawableTint="@color/brand_400"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/toogle_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/security_enable_disable_text"
+        android:textColor="@color/color_5A646E_security"
+        android:textSize="@dimen/dimen_16sp"
+        android:thumb="@drawable/bg_switch_states"
+        app:layout_constraintTop_toTopOf="parent"
+        app:track="@drawable/bg_thumb_states" />
+
+    <View
+        android:id="@+id/divider_security"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_1px"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@color/color_C5CED7"
+        app:layout_constraintEnd_toEndOf="@+id/toogle_fingerprint"
+        app:layout_constraintStart_toStartOf="@+id/toogle_fingerprint"
+        app:layout_constraintTop_toBottomOf="@+id/toogle_fingerprint" />
+
+    <TextView
+        android:id="@+id/tv_cache_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:fontFamily="@font/ubuntu"
+        android:paddingVertical="@dimen/dimen_10dp"
+        android:text="@string/security_text_clear_cache"
+        android:textColor="@color/brand_400"
+        android:textSize="@dimen/dimen_16sp"
+        app:layout_constraintTop_toBottomOf="@id/divider_security" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

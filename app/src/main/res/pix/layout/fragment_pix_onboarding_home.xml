@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="br.com.mobicare.cielo.pix.ui.home.onboarding.PixOnboardingHomeFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_onboarding_home_pix"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/indicator_onboarding_home_pix"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator_onboarding_home_pix"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        app:ci_drawable="@drawable/circle_indicator_tutorial_cancel"
+        app:ci_drawable_unselected="@drawable/circle_indicator_unselected"
+        app:layout_constraintBottom_toTopOf="@id/container_actions_onboarding_home_pix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_actions_onboarding_home_pix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_action_next_and_jump_pix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <br.com.cielo.libflue.button.CieloRegularWhiteButton
+                android:id="@+id/btn_skip_onboarding_home_pix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_0774E7"
+                android:text="@string/text_skip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <br.com.cielo.libflue.button.CieloRegularWhiteButton
+                android:id="@+id/btn_next_onboarding_home_pix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_0774E7"
+                android:text="@string/text_pix_next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btn_show_home_pix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tex_btn_show_pix_onboarding"
+            android:visibility="gone"
+            android:background="@color/blue_0774E7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

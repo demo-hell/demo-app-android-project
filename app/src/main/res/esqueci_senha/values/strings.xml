@@ -1,0 +1,96 @@
+<resources>
+    <string name="ga_esqueci_senha">Esqueci a senha</string>
+    <string name="ga_cadastrar_senha">Cadastrar Senha</string>
+    <string name="ga_esqueci_senha_lista_bancos">Precisa de Ajuda? > Esqueci a senha</string>
+
+    <string name="cadastrar_senha_titulo_card_confirmar_dados">Confirme seus dados para cadastrar a senha</string>
+    <string name="esqueci_senha_titulo_card_confirmar_dados">Confirme seus dados para redefinir a senha</string>
+    <string name="esqueci_senha_titulo_card_nova_senha">Crie sua nova senha de acesso</string>
+    <string name="esqueci_senha_rules">Entre 8 e 12 caracteres, contendo ao menos um número e uma letra.</string>
+
+    <string name="esqueci_senha_numero_ec_hint">N° do estabelecimento</string>
+    <string name="esqueci_senha_numero_serie_hint">N° de série</string>
+    <string name="esqueci_senha_usuario_hint">Usuário, CPF ou e-mail</string>
+    <string name="esqueci_senha_banco_hint">Banco</string>
+    <string name="esqueci_senha_perfil_hint">Perfil da Conta</string>
+    <string name="esqueci_senha_conta_hint">Tipo de Conta</string>
+    <string name="esqueci_senha_agencia_hint">Agência</string>
+    <string name="esqueci_senha_numero_conta_hint">Nº da conta</string>
+    <string name="esqueci_senha_digito_conta_hint">Dígito</string>
+    <string name="esqueci_senha_nova_senha_hint">Nova senha</string>
+    <string name="esqueci_senha_repetir_nova_senha_hint">Repetir nova senha</string>
+
+
+    <string name="esqueci_senha_numero_ec_msg_obrigatorio">Número do estabelecimento inválido</string>
+    <string name="esqueci_senha_numero_serie_msg_obrigatorio">Número de série inválido</string>
+    <string name="esqueci_senha_numero_ec_msg_obrigatorio_error">Preencha o número do estabelecimento corretamente.</string>
+    <string name="esqueci_senha_usuario_msg_obrigatorio">Usuário inválido</string>
+    <string name="esqueci_senha_banco_msg_obrigatorio">Por favor, selecione um banco</string>
+    <string name="esqueci_senha_tipo_conta_msg_obrigatorio">Por favor, selecione um tipo de conta</string>
+    <string name="esqueci_senha_agencia_msg_obrigatorio">Por favor, digite a agência bancária</string>
+    <string name="esqueci_senha_agencia_num_serie">Número de série inválido</string>
+    <string name="esqueci_senha_numero_conta_msg_obrigatorio">Por favor, digite a nº conta bancária</string>
+    <string name="esqueci_senha_digito_conta_msg_obrigatorio">Dígito inválido</string>
+    <string name="esqueci_senha_nova_senha_msg_obrigatorio">Por favor, digite uma senha válida</string>
+    <string name="esqueci_senha_repetir_nova_senha_msg_obrigatorio">Por favor, digite a confirmação de senha</string>
+    <string name="esqueci_senha_repetir_nova_senha_msg_diferente">As senhas não conferem</string>
+    <string name="tipo_de_conta_caixa">Caixa Econômica Federal</string>
+    <string name="tipo_de_perfil_pj">PJ</string>
+    <string name="tipo_de_perfil_pf">PF</string>
+    <string name="conta_poupanca">Conta Poupança</string>
+    <string name="conta_corrente">Conta Corrente</string>
+    <string name="conta_simples">Conta Simples</string>
+    <string name="conta_entidade_publicas">Entidades Públicas</string>
+    <string name="name_tipo_de_perfil_pj">Pessoa Jurídica</string>
+    <string name="name_tipo_de_perfil_pf">Pessoa Física</string>
+    <string name="esqueci_senha_txt_card_serie">O número de série está no verso do cartão, na parte inferior.</string>
+
+
+    <string name="esqueci_senha_button_enviar">Confirmar</string>
+
+    <string name="dc_add_account">Adicionar conta</string>
+    <string name="text_success_update_password">Enviamos um link para redefinir sua senha no seguinte email: %s</string>
+    <string name="dc_track_account">Acompanhar solicitações</string>
+    <string name="dc_track_account_title">Histórico de alterações de domicílio</string>
+    <string name="dc_track_account_text">Acompanhe a troca de domicílio bancário de maneira prática e rápida.</string>
+
+    <!--<string-array name="lista_bancos">-->
+    <!--<item>ABN</item>-->
+    <!--<item>Alfa</item>-->
+    <!--<item>Banif</item>-->
+    <!--<item>BBM</item>-->
+    <!--<item>BMG</item>-->
+    <!--<item>Bonsucesso</item>-->
+    <!--<item>BTG</item>-->
+    <!--<item>Cacique</item>-->
+    <!--<item>BCG-Brasil</item>-->
+    <!--<item>Citibank</item>-->
+    <!--<item>Credibel</item>-->
+    <!--<item>Daycoval</item>-->
+    <!--<item>Fator</item>-->
+    <!--<item>Fibra</item>-->
+    <!--<item>Gerador</item>-->
+    <!--<item>Guanabara</item>-->
+    <!--<item>BI</item>-->
+    <!--<item>BICBANCO</item>-->
+    <!--<item>Intermedium</item>-->
+    <!--<item>Itaú BBA</item>-->
+    <!--<item>ItaúBank</item>-->
+    <!--<item>Itaucred Financiamentos</item>-->
+    <!--<item>BMB</item>-->
+    <!--<item>Modal</item>-->
+    <!--<item>Morada</item>-->
+    <!--<item>Pan</item>-->
+    <!--<item>Paulista</item>-->
+    <!--<item>Pine</item>-->
+    <!--<item>Renner</item>-->
+    <!--<item>BRP</item>-->
+    <!--<item>Safra</item>-->
+    <!--<item>Santander</item>-->
+    <!--<item>Sofisa</item>-->
+    <!--<item>Topázio</item>-->
+    <!--<item>BV</item>-->
+    <!--<item>Bradesco</item>-->
+    <!--<item>Itaú</item>-->
+    <!--</string-array>-->
+</resources>

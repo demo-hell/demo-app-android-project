@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="required_data_field_title">Para continuar, preencha as informações abaixo</string>
+
+    <string name="required_data_field_section_title_address">Endereço</string>
+    <string name="required_data_field_section_title_company_info">Informações da empresa</string>
+    <string name="required_data_field_section_title_individual_info">Informações da pessoa proprietária</string>
+    <string name="required_data_field_section_title_contact_info">Informações de contato</string>
+
+    <string name="required_data_field_label_field_phone">Telefone</string>
+    <string name="required_data_field_label_field_cellphone">Celular</string>
+    <string name="required_data_field_hint_phone">Número com código do país e DDD</string>
+
+    <string name="required_data_field_validation_error_title">Ocorreu um problema para validar as informações</string>
+    <string name="required_data_field_validation_error_check_fields">Ocorreu um problema para validar as informações. Verifique se todos os campos estão preenchidos corretamente.</string>
+
+    <string name="required_data_field_validation_error_field_phone">Número inválido. Por favor, digite novamente.</string>
+    <string name="required_data_field_validation_error_field_email">E-mail inválido. Por favor, digite novamente.</string>
+    <string name="required_data_field_validation_error_field_date">Data inválida. Por favor, digite novamente.</string>
+    <string name="required_data_field_validation_error_field_document">Documento inválido. Por favor, digite novamente.</string>
+    <string name="required_data_field_validation_error_field_number">Número inválido. Por favor, digite novamente.</string>
+    <string name="required_data_field_validation_error_field_state">Estado inválido. Por favor, digite novamente.</string>
+    <string name="required_data_field_validation_error_field_zip_code">CEP inválido. Por favor, digite novamente.</string>
+    <string name="required_data_field_validation_error_field">Campo inválido. Por favor, digite novamente.</string>
+
+    <string name="required_data_field_error_invalid_data_message">Para continuar, preencha novamente as informações necessárias.</string>
+
+    <string name="required_data_field_title_bs_success_update_data">Agora é só esperar</string>
+    <string name="required_data_field_message_bs_success_update_data"><![CDATA[Em até 5 dias úteis você poderá vender pelo celular. Vamos te avisar por e-mail quando estiver tudo pronto! Seu número de solicitação é <b>%s</b>.]]></string>
+
+</resources>

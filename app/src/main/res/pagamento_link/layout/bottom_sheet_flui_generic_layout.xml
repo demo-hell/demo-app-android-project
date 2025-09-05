@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.mobicare.cielo.commons.ui.widget.flui.CustomViewBottomSheetGenericFlui xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:bs_toolbar_name="@string/txt_aguardando_motoboy"
+    app:bs_title="@string/app_name"
+    app:bs_subtitle="@string/txt_subtitle_motoboy"
+    app:bs_btn_bottom_name="@string/text_close_label"
+    app:bs_image="@drawable/ic_02"
+
+    app:bs_topbar_title_status_flui="false"
+    app:bs_title_status_flui="true"
+    app:bs_subtitle_status_flui="true"
+    app:bs_image_status_flui="true"
+    app:bs_view_line_status_flui="false"
+    app:bs_view1_line_status_flui="true"
+    app:bs_btn_close_status_flui="false"
+    app:bs_btn_bottom_first_status_flui="true"
+    app:bs_btn_bottom_second_status_flui="true"
+
+    app:bs_btn_bottom1_style_flui="BNT_BOTTOM_WHITE"
+    app:bs_btn_bottom2_style_flui="BNT_BOTTOM_BLUE"
+
+    app:bs_txt_toolbar_name_style_flui="TXT_TOOlBAR_NAME_NORMAL"
+    app:bs_txt_title_style_flui="TXT_TITLE_BLUE"
+    app:bs_txt_subtitle_style_flui="TXT_SUBTITLE_BLACK"
+    tools:ignore="MissingClass" />

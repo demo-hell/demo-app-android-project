@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ChangeEcText14sp500" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/blue_00aeef</item>
+        <item name="android:textSize">14sp</item>
+        <item name="typeface">fonts/MuseoSans-500.ttf</item>
+    </style>
+
+    <style name="ChangeEcText14sp500Gray_light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/gray_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="typeface">MuseoSans-500</item>
+    </style>
+
+    <style name="ChangeEcText12sp500Grey_dfe5f5" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/gray_light_1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="typeface">MuseoSans-500</item>
+    </style>
+
+</resources>

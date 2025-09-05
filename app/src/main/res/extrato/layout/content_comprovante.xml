@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:layout_marginBottom="@dimen/dimen_8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_extrato_recibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_light"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="33dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_logo_cielo_black" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_paymentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_creditCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_terminalNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <ViewFlipper
+                android:id="@+id/vf_mv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Loading -->
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:visibility="visible" />
+
+                <!-- Content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/text_view_extrato_comprovante_DocumentNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="12sp"
+                        app:typeface="RobotoMono-Regular.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/text_view_extrato_comprovante_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="12sp"
+                        app:typeface="RobotoMono-Bold.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/text_view_extrato_comprovante_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/text_color_263238"
+                        android:textSize="12sp"
+                        app:typeface="RobotoMono-Regular.ttf" />
+
+                </LinearLayout>
+
+
+            </ViewFlipper>
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_authorizationCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_aut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_comprovante_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="12sp"
+                app:typeface="RobotoMono-Regular.ttf" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toLeftOf="@+id/text_view_extrato_comprovante_amount"
+                    android:text="VALOR:"
+                    android:textColor="@color/text_color_263238"
+                    android:textSize="12sp"
+                    app:typeface="RobotoMono-Bold.ttf" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/text_view_extrato_comprovante_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/text_color_263238"
+                    android:textSize="12sp"
+                    app:typeface="RobotoMono-Bold.ttf" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_extrato_recibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

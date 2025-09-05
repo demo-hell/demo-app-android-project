@@ -1,0 +1,16 @@
+{
+  "brand": "VISA",
+  "paymentType": "Crédito à vista",
+  "creditCardNumber": "************1234",
+  "terminalNumber": "12345678",
+  "establishment": {
+    "name": "Nome do Estabelecimento",
+    "documentNumber": "12.345.678/0001-23",
+    "address": "R Venceslau 141 Centro São Paulo SP"
+  },
+  "mysteriousNumber": "1234567891",
+  "doc": "12345",
+  "aut": "12345",
+  "date": "01/07/2016 14:00",
+  "amount": "R$ 6.400,00"
+}

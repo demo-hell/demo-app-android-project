@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".idOnboarding.updateUser.onboarding.status.IDOnboardingP1CompletionStatusFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollInvites"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@id/container_actions"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56dp"
+                app:layout_constraintBottom_toTopOf="@id/iv_status"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_close_blue"
+                    app:tint="@color/brand_400" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/tv_title_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintHeight_max="@dimen/dimen_272dp"
+                app:layout_constraintHeight_min="@dimen/dimen_40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:srcCompat="@drawable/ic_iniciar_230dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title_status"
+                style="@style/Heading_600_regular_18"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:textAlignment="center"
+                android:textSize="@dimen/dimen_18sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_status"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintTop_toBottomOf="@+id/iv_status"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="@string/id_onboarding_status_continue_p1_title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_subtitle_status"
+                style="@style/Paragraph_400_regular_16_display_400"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:textAlignment="viewStart"
+                app:layout_constraintBottom_toBottomOf="@id/btn_action_onboarding"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_status"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="@string/id_onboarding_status_continue_p1_subtitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_action_onboarding"
+                style="@style/Paragraph_300_montserrat_14_Brand_400"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:drawableEnd="@drawable/ic_help_circle_blue_16dp"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:paddingVertical="@dimen/dimen_10dp"
+                android:text="@string/id_onboarding_status_continue_p1_action"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_subtitle_status"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/display_200"
+            app:layout_constraintBottom_toTopOf="@id/btn_first"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+        <br.com.cielo.libflue.button.CieloRegularWhiteButton
+            android:id="@+id/btn_first"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@color/blue_0774E7"
+            android:text="@string/text_next_label"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintBottom_toTopOf="@id/btn_second"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            app:layout_constraintVertical_bias="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_second"
+            style="@style/Heading_500_18"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/button_full_width_brand_selector"
+            android:text="@string/id_onboarding_start_btn"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_first"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

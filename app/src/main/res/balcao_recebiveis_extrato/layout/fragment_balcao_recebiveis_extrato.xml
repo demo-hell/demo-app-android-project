@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/vf_extrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="22dp"
+                android:layout_height="1dp"
+                android:background="@color/color_grey_B8B8B8"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="8dp"
+                    app:srcCompat="@drawable/ic_menu_recebimentos" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_extrato_title"
+                    android:textColor="@color/text_color_263238"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_extrato_subtitle"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/text_color_263238"
+                android:textSize="14sp"
+                />
+
+
+           <include layout="@layout/layout_list_recebiveis_extrato_new"/>
+
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+
+
+
+
+</LinearLayout>

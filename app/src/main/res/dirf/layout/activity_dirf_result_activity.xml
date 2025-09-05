@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dirf.ui.DirfResultActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight=".4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_08"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintHeight_max="@dimen/dimen_250dp"
+            app:layout_constraintHeight_min="@dimen/dimen_140dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:srcCompat="@drawable/ic_29" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/txt_title"
+            style="@style/TxtTitleBlueBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/txt_subtitle"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            android:text="@string/txt_success_title"/>
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/txt_subtitle"
+        style="@style/TxtSubtitleBlackNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/txt_success_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        tools:layout_editor_absoluteX="83dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_action_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                android:id="@+id/viewButton"
+                style="@style/BntBottomBackgroundWhiteTextBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bottom_unselector"
+                android:text="Visualizar arquivo"
+                android:drawableEnd="@drawable/ic_eye_blue_dirf"
+                android:drawablePadding="@dimen/dimen_12dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dimen_16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                android:id="@+id/shareButton"
+                style="@style/BntBottomBackgroundWhiteTextBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:background="@drawable/btn_bottom_unselector"
+                android:text="Compartilhar"
+                android:drawableEnd="@drawable/ic_share_blue"
+                android:drawablePadding="@dimen/dimen_12dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintBottom_toTopOf="@id/closeButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/viewButton" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+                android:id="@+id/closeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/btn_bottom_selector"
+                style="@style/BntBottomBackgroundBlue"
+                android:text="@string/text_btn_bottom_sheet_success"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

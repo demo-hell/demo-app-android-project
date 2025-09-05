@@ -1,0 +1,13 @@
+<resources>
+    <style name="ARVChipMonthChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@drawable/background_color_chip_state_list</item>
+        <item name="android:textColor">@drawable/text_color_chip_state_list</item>
+        <item name="chipCornerRadius">8dp</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceCornerSmall</item>
+        <item name="chipStrokeColor">@drawable/background_stroke_arv_chip_month_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:theme">@style/Theme.MaterialComponents.Light.NoActionBar</item>
+
+    </style>
+
+</resources>

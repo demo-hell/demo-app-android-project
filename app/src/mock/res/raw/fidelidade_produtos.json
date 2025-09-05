@@ -1,0 +1,31 @@
+{
+  "produtosFidelidade": [
+    {
+    "id": 1,
+    "title":"Aspirador de Pó PH1400 MAX - Philco",
+    "loja":"Magazine Luiza",
+    "points": "20 pontos",
+    "imagem": "http://www.rabelo.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_503.008_1.png"
+  },
+  {
+    "id": 2,
+    "title":"Aspirador de Pó PH1400 MAX - Philco 2",
+    "loja":"Casas Bahia",
+    "points": "25 pontos",
+    "imagem": "http://www.lenoxx.com.br/wp-content/uploads/2015/12/PAS851-1.png"
+  },
+  {
+    "id": 3,
+    "title":"Aspirador de Pó PH1400 MAX - Philco 3",
+    "loja":"Ponto Frio",
+    "points": "22 pontos",
+    "imagem": "http://www.rabelo.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_503.012_1.png"
+  },
+  {
+    "id": 4,
+    "title":"Aspirador de Pó PH1400 MAX - Philco 4",
+    "loja":"Fnac",
+    "points": "30 pontos",
+    "imagem": "http://correaback.vteximg.com.br/arquivos/ids/173564-1000-1000/aspirador-de-po-black-e-decker-a2b-b2-1200-watts-branco-220v-principal.png"
+  }
+]}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dimen_220dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dimen_16dp"
+    android:background="@drawable/background_radius8dp_stroke_gray_204986"
+    android:padding="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/ivBrand"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_42dp"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_generic_brand" />
+
+    <TextView
+        android:id="@+id/tvCardName"
+        style="@style/Label_400_bold_16_display_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:maxWidth="@dimen/dimen_50dp"
+        android:maxHeight="@dimen/dimen_50dp"
+        app:layout_constraintTop_toBottomOf="@id/ivBrand"
+        tools:text="Visa" />
+
+    <TextView
+        android:id="@+id/tvDebitTitle"
+        style="@style/medium_montserrat_12"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_6dp"
+        android:text="@string/mdr_debit"
+        app:layout_constraintEnd_toStartOf="@id/tvDebitValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCardName" />
+
+    <TextView
+        android:id="@+id/tvDebitValue"
+        style="@style/medium_montserrat_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCardName"
+        tools:text="1,23%" />
+
+    <TextView
+        android:id="@+id/tvCreditTitle"
+        style="@style/medium_montserrat_12"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_6dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:text="@string/mdr_credit_at_once"
+        app:layout_constraintEnd_toStartOf="@id/tvDebitValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDebitTitle" />
+
+    <TextView
+        android:id="@+id/tvCreditValue"
+        style="@style/medium_montserrat_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDebitValue"
+        tools:text="5,11%" />
+
+    <TextView
+        android:id="@+id/tvPaidInSixInstallmentsTitle"
+        style="@style/medium_montserrat_12"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_6dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:text="@string/mdr_credit_paid_in_six_installments"
+        app:layout_constraintEnd_toStartOf="@id/tvCreditValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCreditTitle" />
+
+    <TextView
+        android:id="@+id/tvPaidInSixInstallmentsValue"
+        style="@style/medium_montserrat_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCreditValue"
+        tools:text="4,74%" />
+
+    <TextView
+        android:id="@+id/tvPaidInUpToTwelveInstallmentsTitle"
+        style="@style/medium_montserrat_12"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_6dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:text="@string/mdr_credit_paid_in_up_to_twelve_installments"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvPaidInSixInstallmentsValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaidInSixInstallmentsTitle" />
+
+    <TextView
+        android:id="@+id/tvPaidInUpToTwelveInstallmentsValue"
+        style="@style/medium_montserrat_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_4dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaidInSixInstallmentsValue"
+        tools:text="2,57%" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

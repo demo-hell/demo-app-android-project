@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_f7f7f7">#f7f7f7</color>
+    <color name="grey_e6e6e6">#e6e6e6</color>
+    <color name="gray_F5F8F9">#F5F8F9</color>
+    <color name="color_gray_DBDBDB">#DBDBDB</color>
+    <color name="color_gray_DDDDDD">#DDDDDD</color>
+    <color name="brand_100_alpha_25">#40DEF5FF</color>
+    <color name="brand_100_alpha_50">#80DEF5FF</color>
+
+    <color name="colorStatusPayPending">#f98f25</color>
+    <color name="colorStatusPayPaid">#43B977</color>
+    <color name="colorStatusPayDenied">#f21848</color>
+    <color name="colorStatusPayExpired">#e0e0e0</color>
+    <color name="colorStatusPayVoided">#BD281E</color>
+    <color name="colorStatusPayNotFinalized">#DA7C4C</color>
+    <color name="colorStatusPayChargeback">#BD281E</color>
+    <color name="colorStatusPayAuthorized">#43B977</color>
+    <color name="colorStatusPayUndefined">#e0e0e0</color>
+
+</resources>

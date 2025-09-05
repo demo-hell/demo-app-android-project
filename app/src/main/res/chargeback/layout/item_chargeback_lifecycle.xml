@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivIconConcluded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/concluded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chargeback_lifecycle_check" />
+
+    <TextView
+        android:id="@+id/tvLifecycleAction"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_negative_3dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:textAppearance="@style/Label_700_Bold_16"
+        android:textColor="@color/success_400"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivIconConcluded"
+        app:layout_constraintTop_toTopOf="@+id/ivIconConcluded"
+        tools:text="Em análise com o cliente" />
+
+    <TextView
+        android:id="@+id/tvLifecycleActionDate"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:textAppearance="@style/Label_400_Regular_16"
+        android:textColor="@color/success_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvLifecycleAction"
+        app:layout_constraintTop_toBottomOf="@+id/tvLifecycleAction"
+        tools:text="Data: 06/07/2022" />
+
+    <View
+        android:layout_width="@dimen/dimen_1dp"
+        android:layout_height="@dimen/dimen_52dp"
+        android:layout_marginVertical="@dimen/dimen_4dp"
+        android:background="@color/success_400"
+        app:layout_constraintStart_toStartOf="@id/ivIconConcluded"
+        app:layout_constraintEnd_toEndOf="@id/ivIconConcluded"
+        app:layout_constraintTop_toBottomOf="@id/ivIconConcluded"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

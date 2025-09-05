@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_super_link"
+    app:startDestination="@id/impersonatingFragment">
+
+    <fragment
+        android:id="@+id/impersonatingFragment"
+        android:name="br.com.mobicare.cielo.component.impersonate.presentation.fragment.ImpersonateFragment"
+        android:label="ImpersonatingFragment"
+        tools:layout="@layout/fragment_super_link_router"/>
+
+</navigation>

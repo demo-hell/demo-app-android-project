@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_16dp"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPayAtention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fique atento" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNumberOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewPayAtention">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewNumberOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:text="@string/text_view_number_one"
+                android:textColor="@color/color_00AEEF"
+                android:textSize="@dimen/dimen_32sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:text="@string/text_view_number_one_notification"
+                android:textColor="@color/color_204986"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNotificationescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_11sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutNumberOne"
+            tools:text="@string/text_view_number_one_notification_description" />
+
+        <View
+            android:id="@+id/viewLineSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/color_EAEEF3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewNotificationescription" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNumberTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewLineSeparator">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewNumberTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="bottom"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:text="@string/text_view_number_two"
+                android:textColor="@color/color_00AEEF"
+                android:textSize="@dimen/dimen_32sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCallMotoboy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:text="@string/text_view_number_two_call_motoboy"
+                android:textColor="@color/color_204986"
+                android:textSize="@dimen/dimen_14sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCallExplanation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            android:text="@string/text_view_number_two_call_motoboy_explanation1"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_11sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutNumberTwo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCallExplanation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            android:text="@string/text_view_number_two_call_motoboy_explanation2"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCallExplanation1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCallExplanation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            android:text="@string/text_view_number_two_call_motoboy_explanation3"
+            android:textColor="@color/color_204986"
+            android:textSize="@dimen/dimen_14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCallExplanation2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCallExplanation4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_3dp"
+            android:text="@string/text_view_number_two_call_motoboy_explanation4"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_11sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCallExplanation3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCallExplanation5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:fontFamily="@font/ubuntu"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:text="@string/text_view_number_two_call_motoboy_explanation5"
+        android:textColor="@color/black_353A40"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintSecond" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

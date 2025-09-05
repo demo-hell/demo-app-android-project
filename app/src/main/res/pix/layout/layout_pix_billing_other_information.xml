@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/display_200"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_title"
+        style="@style/label_16_brand_600_montserrat_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_qrcode_cob_other_information"
+        app:layout_constraintTop_toBottomOf="@+id/view_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_identifier_title"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/screen_text_read_qr_code_summary_pay_identifier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_debtor_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_debtor_identifier"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_debtor_identifier_title"
+        tools:text="r3109r8muf93e8f01" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,189 @@
+
+<b>TERMOS E CONDIÇÕES DE USO DA PLATAFORMA LOGGI E DA PRESTAÇÃO DE SERVIÇOS DE AGENCIAMENTO DE FRETE - USUÁRIO</b><br/>
+<br/>
+Atualizado em 30 de novembro de 2018.<br/>
+<br/>
+Estes Termos e Condições de Uso (adiante simplesmente "Termos" ou "T&C") reúnem as regras de utilização de todos os produtos da Plataforma Loggi e obrigam a Loggi bem como todos os seus Usuários. A contratação de qualquer produto da Plataforma Loggi implica necessariamente a ciência e aceitação aos presentes Termos, que estão estruturados da seguinte forma:<br/>
+<br/>
+<br/>A Loggi é uma plataforma on-line hospedada sob o domínio loggi.com e de propriedade da LOGGI TECNOLOGIA LTDA., com sede na Alameda Santos, número 2.400, Cerqueira César, CEP 01418-200, Município de São Paulo/SP, inscrita no CNPJ/MF sob no 18.277.493/0001-77 (" Loggi"), disponível por meio da URL www.loggi.com (" Plataforma" ou " Plataforma Loggi");<br/>
+<br/>
+Por meio da Plataforma, a Loggi oferta, sem prejuízo de outros serviços adicionais e agregados a respeito dos quais se falará oportunamente nestes Termos, um ambiente virtual que se propõe aproximar o Usuário a uma rede de prestadores autônomos de serviços de transporte de pequenas cargas, documentos e produtos ("Frete") e pequenas quantias em dinheiro. Esclarece-se que entende- se como sendo "pequenas quantias em dinheiro" montantes disponibilizados para pagamento de eventuais taxas junto aos Correios, Cartórios, entre outros, necessários para pleno cumprimento do serviço de Frete. Os serviços de transporte são realizados exclusivamente por Condutores Autônomos filiados à plataforma Loggi , acionados e localizados por meio das tecnologias e ferramentas disponibilizadas pela Loggi. Dessa forma, pode-se resumir os serviços prestados pela Loggi a seus Usuários como os de disponibilização da Plataforma para agenciamento de frete, recebimento por conta e ordem de terceiros, cobrança e gestão de pagamentos a serem realizados pelos Usuários aos Condutores Autônomos ("Serviços");<br/>
+<br/>
+Denomina-se por "Frete", para fins deste Contrato, os serviços de transporte de pequenas cargas prestados pelos Condutores Autônomos acima mencionados. Os Condutores Autônomos que aderiram a plataforma da Loggi são autônomos devidamente habilitados pela Legislação Vigente, sem qualquer vínculo empregatício com a Loggi e obrigam-se a disponibilizar, no momento do cadastro na Plataforma, cópia de diversos documentos, tais como Carteira Nacional de Habilitação (CNH) na categora "A" e com EAR ("exerce atividade remunerada), entre outros documentos pessoais do Condutor Autônomo e do veículo.<br/>
+<br/>
+Cada serviço de Frete é contratado diretamente pelo Usuário de forma independente (à exceção das entregas efetuadas pelo Loggi Pro, conforme definição abaixo), sem que a Loggi participe do contrato de transporte ou por ele se responsabilize. Desta forma, o Usuário reconhece neste ato que a Loggi não possui qualquer responsabilidade pelo serviço de Frete, nem pela carga transportada, e nem mesmo pelo Condutor Autônomo, o qual é contratado diretamente pelo Usuário por meio da Plataforma. A Loggi apenas permite que o Usuário encontre e contrate diretamente o Condutor Autônomo para realização de serviços de Frete, sob única e exclusiva responsabilidade do Condutor Autônomo.<br/>
+<br/>
+<b>1. SOBRE A PLATAFORMA LOGGI</b><br/>
+<br/>
+1.1. Por meio das tecnologias e ferramentas disponibilizadas em sua Plataforma, sem prejuízo de serviços adicionais e agregados que serão descritos oportunamente nestes T&C, a Loggi possibilita ao Usuário a contratação direta dos serviços de Frete, que serão prestados pelos Condutores Autônomos que aderiram à Plataforma em favor do Usuário.<br/>
+<br/>
+1.2. Para utilizar a Plataforma e efetivar a contratação direta do Frete, o Usuário deverá estar devidamente cadastrado na Plataforma e deverá arcar com todos os encargos advindos desta transação. Salienta-se que o cadastro em si não gera qualquer encargo, mas única e exclusivamente as solicitações de serviço contratadas por meio da Plataforma, mediante aceitação do Condutor Autônomo que prestará o serviço em favor do Usuário.<br/>
+<br/>
+1.3. O Usuário entende e reconhece que os Condutores Autônomos que prestam os serviços de Frete, à exceção das entregas efetuadas pelo Loggi Pro conforme definição abaixo, são independentes e não exclusivos, que atuam por sua conta própria e utilizam-se de seus próprios recursos como: capacete, celular e plano de dados, coletes,
+capas de chuva, entre todos os outros. Assim, o Usuário reconhece expressamente que Loggi figura como mera aproximadora de Usuários e Condutores Autônomos e que inexiste qualquer vínculo empregatício ou de subordinação entre a Loggi e o Condutor Autônomo e, por isso, a Loggi não se responsabiliza pelo Frete, pela carga transportada ou pela conduta do Condutor Autônomo. Assim, neste ato, o Usuário reconhece a total ausência de responsabilidade da Loggi pelos serviços prestados pelos Condutor Autônomos e renuncia expressamente a todo e qualquer eventual direito e tentativa de responsabilização da Loggi em caso de insatisfação ou prejuízo/dano sofrido em razão do serviço de transporte.<br/>
+<br/>
+<b>2. PRODUTOS</b><br/>
+2.1. Os Produtos oferecidos por meio da Plataforma Loggi são os seguintes:<br/>
+<br/>
+2.1.1. Loggi Já: Trata-se de entrega preferencial, na qual há exclusividade para o Usuário solicitante, cujo início do pedido é imediato logo após sua solicitação.<br/>
+<br/>
+2.1.2. Loggi Presto: Trata-se de entrega preferencial e exclusiva, focada para varejistas, que realizam entregas em raios curtos para seus clientes, cujo início do pedido se dá imediatamente logo após sua solicitação. Tal produto possui serviço opcional de recebimento de pagamentos em nome do Usuário junto ao seu destinatário final das entregas efetivadas. Denomina-se por "Recebimento de Pagamento", para os fins destes T&C, os serviços de recebimento do pagamento junto ao destinatário do Frete, mediante a utilização dos serviços de uma Provedora de Serviços de Pagamento ("PSP") especializada em gestão de pagamentos online e/ou mobile payment. Portanto, o Loggi Presto consiste na utilização dos serviços prestados pela Provedora de Serviços de Pagamento que previamente equipa aqueles Condutores Autônomos cadastrados na Plataforma Loggi, que demonstram interesse, com uma estação de recebimento de pagamentos ("Maquineta") para processamento do pagamento do bem transportado.<br/>
+<br/>
+2.1.2.1. Todo o processamento do pagamento, incluindo, mas não se limitando a, responsabilidade pelo transporte eletrônico de valores, inteligência e tecnologia antifraude, tratamento de chargeback e conformidade com as determinações do Banco Central Brasileiro sobre arranjos e meios de pagamento serão de responsabilidade exclusiva da Loggi. O Usuário manifesta ter ciência de que Loggi se responsabiliza por qualquer aspecto do serviço de Recebimento de Pagamento tais como falhas no serviço, indisponibilidades, chargebacks, demora no repasse dos valores devidos ao Estabelecimento e outras questões atinentes ao pagamento.<br/>
+<br/>
+2.1.2.2. Ao requisitar um serviço Loggi Presto, o Usuário estará ciente de que, além dos valores cobrados pela Loggi a título de agenciamento de frete, também incidem as tarifas do serviço que serão descontadas sobre o pagamento efetuado pelo destinatário final do produto transportado. Assim, após a confirmação do pagamento pelo Cliente do Usuário, a Loggi procede ao desconto da tarifa indicada previamente e repassa, via transferência bancária, o restante do valor ao Usuário.<br/>
+<br/>
+2.1.2.3. O serviço de captura e processamento de pagamentos é cobrado por meio do desconto dos valores transacionados entre o Usuário e seu Cliente. As tarifas do serviço são devidas à Loggi e o meio de pagamento associado ao Loggi Presto são devidos à Provedora de Serviços de Pagamento pelo Usuário. Com o objetivo de transparência as tarifas devidas pelo serviço da Provedora de Serviços de Pagamento constam do site da Loggi (https://www.loggi.com/presto/) para sua comodidade.<br/>
+<br/>
+2.1.2.4. O Usuário entende e reconhece que a Gestão dos Pagamentos contratada é de responsabilidade exclusiva da Loggi, portanto, qualquer problema referente ao pagamento deverá ser reportado diretamente a ela, ficando a Provedora de Serviços de Pagamento absolutamente isenta de responsabilidade por qualquer decorrência de tal serviço.<br/>
+<br/>
+2.1.2.5. Ao contratar a utilização do Loggi Presto, o Usuário manifesta ter ciência e anuência ao contrato de solução de pagamentos de transações comerciais da Loggi, localizados emhttps://www.loggi.com/termos-condicoes-de-uso/pagamentos-transacoescomerciais/ que passam a integrar os presentes T&C como Anexo.<br/>
+<br/>
+2.1.3. Loggi Pro: Trata-se de serviço de coleta de maior quantidade de volumes para realização das entregas, por meio do qual o sistema da Plataforma efetuará o cálculo da melhor rota e da quantidade adequada por baú. A realização de tal serviço ocorre por meio de transportadora componente do mesmo grupo econômico da Loggi, a L4B Logística Ltda., CNPJ 24.217.653/0001-95, situada na Rua Major Paladino, número 128, Galpão 13, Vila Ribeiro de Barros, CEP 05.307-000, São Paulo – Capital.<br/>
+<br/>
+2.1.3.1. O Tomador de serviços de transporte pela modalidade Loggi Pro, a transportadora L4B Logística Ltda., e o prestador de serviço de transporte por ela contratado reconhecem e aceitam expressamente que a Loggi não possui nenhuma responsabilidade pela prestação de serviços de transporte entre eles avençados diretamente, sem a interveniência, anuência ou responsabilidade da Loggi, que apenas criou o ambiente de negócios para contratação direta entre eles.<br/>
+<br/>
+2.1.3.2. A precificação deste produto deve ser avençada diretamente com a transportadora L4B Logística Ltda., podendo ser objeto de contrato específico em detrimento dos termos e condições de uso da L4B Logística Ltda. indicadas nos itens seguintes.<br/>
+<br/>
+2.1.3.3. A Loggi não efetuará serviço de transporte, se atendo a seu objeto social e atividades econômicas, sendo que seu objetivo no serviço Loggi Pro é criar um ambiente de negócio entre o tomador do serviço de transporte, a transportadora L4B Logística Ltda. e os Condutores Autônomos para efetivação do serviço de transporte.<br/>
+<br/>
+2.1.3.4. O Tomador de serviços de transporte, a transportadora L4B Logística Ltda. e o prestador de serviço de transporte por ela contratado reconhecem e aceitam expressamente que a Loggi não possui nenhuma responsabilidade pela prestação de serviços de transporte entre eles avençados diretamente, sem a interveniência, anuência ou responsabilidade da Loggi, que apenas criou o ambiente de negócios para contratação direta entre eles.<br/>
+<br/>
+2.1.4. É de ciência do Usuário que a Loggi possui mapas de abrangência distintos por produto, cabendo ao Usuário verificar, por meio de simulação do trajeto pelo site da Loggi, de forma antecipada, se o produto contratado abrange o local de entrega.<br/>
+<br/>
+2.1.5. Os produtos acima referidos possuem precificação variável, sendo sua composiçao formada pelos seguintes fatores: ponto de coleta, ponto(s) de entrega, quilômetro rodado, tarifa mínima e adicional de espera, se houver. A tabela de precificação vigente encontra-se constantemente no endereço eletrônico da Loggi.<br/>
+<br/>
+2.1.6. O adicional de espera mencionado acima ocorre quando o tempo da franquia de espera de cada ponto, coleta ou entrega, for ultrapassado; ocorrido tal situação, a partir do tempo limite estourado, é cobrado um adicional por minuto, a título de adicional de espera.<br/>
+<br/>
+<b>3. ACEITE DOS T&C</b><br/>
+3.1. A utilização da Plataforma implica a mais alta compreensão, aceitação e vinculação automática dos Usuários aos Termos e Condições de Uso da Plataforma Loggi ("T&C"). Ao fazer uso de quaisquer dos Serviços oferecidos, o Usuário concorda em respeitar e seguir todas e quaisquer diretrizes dispostas nestes T&C.<br/>
+<br/>
+3.2. Caso tenha alguma objeção a quaisquer itens, diretrizes ou alterações posteriores destes T&C, ou, ainda, caso fique insatisfeito com os Serviços oferecidos pela Loggi , por qualquer motivo que seja, o Usuário poderá cessar o uso imediatamente, sem ônus.<br/>
+<br/>
+3.3. Estes T&C poderão sofrer alterações periódicas, seja por questões legais ou estratégicas exclusivas da Loggi. O Usuário desde já concorda e reconhece que é de sua única e inteira responsabilidade a verificação periódica destes T&C no domínio Loggi.com. A Loggi poderá, por mera liberalidade e a seu livre critério, informar ao Usuário sobre alterações significativas nos T&C, por meio de avisos na página principal de sua Plataforma. Todavia, esta liberalidade não afasta a responsabilidade do Usuário de verificar periodicamente o T&C.<br/>
+<br/>
+3.3.1. Uma vez realizada qualquer alteração nos T&C e caso o Usuário não efetue o cancelamento do cadastro, restará automaticamente entendido que todos os termos alterados foram devidamente aceitos sem qualquer ressalva, valendo a partir de sua publicação no site da Loggi.<br/>
+<br/>
+3.4. Para utilizarem os produtos, os Usuários deverão ser obrigatoriamente maiores de 18 (dezoito) anos ou, se pessoa jurídica, o fazer por meio da pessoa do seu representante legal, e terão que se cadastrar previamente na Plataforma, fornecendo dados válidos e verdadeiros, necessários à conclusão e efetivação do cadastro, sob as penas da lei. A Loggi se reserva o direito de a qualquer momento requerer documentos e outras comprovações de identidade e de encerrar o cadastro de Usuário caso tenha, a seu exclusivo critério, razões para desconfiar da veracidade dos dados pessoais/cadastrais informados pelo Usuário ou de mau uso da Plataforma.<br/>
+<br/>
+3.5. O Usuário declara ter total ciência de que a Loggi não poderá ser responsabilizada em caso de eventuais problemas de conexão, quando eventualmente o site estiver fora do ar ou mesmo no caso de nenhum Condutor Autônomo aceitar o chamado.<br/>
+<br/>
+<b>4. PROCEDIMENTOS DE USO</b><br/>
+4.1. Ao entrar na Plataforma com seu login e senha, inserir o trajeto desejado e concluir a transação, o Usuário gerará uma solicitação de serviço de Frete.<br/>
+<br/>
+4.2. O Condutor Autônomo é selecionado da seguinte forma: a Plataforma Loggi se utiliza de um sistema de Geodespacho, sendo que os Condutores Autônomos mais próximos do local de início do frete são acionados. Então, um percentual deles aceitará a oferta, sendo que o próprio sistema da Plataforma Loggi elegerá o mais próximo do início do frete dentre os que aceitaram a oferta de frete e, dentro deste cenário, o Frete será atribuído a ele.<br/>
+<br/>
+4.3. O Usuário se compromete a não utilizar o Frete para transportar: dinheiro ou cheque (à exceção das pequenas importâncias conforme definidas nestes T&C); produtos de valor superior a R$ 500,00 (quinhentos reais); produtos ilícitos; animais; armas de fogo ou munições; materiais perigosos, inflamáveis ou combustíveis; drogas e entorpecentes; explosivos; joias; e quaisquer outros materiais cujo transporte seja proibido pela legislação ou atente contra os bons costumes e a moralidade.<br/>
+<br/>
+4.3.1. Resta totalmente ciente o Usuário de que os itens a serem transportados não poderão exceder 20 kg (vinte quilogramas) e as seguintes dimensões: Altura: 46 cm (trinta e dois centímetros) | Comprimento: 50 cm (quarenta e dois centímetros) | Largura: 60 cm (quarenta e quatro centímetros).<br/>
+<br/>
+4.4. O Usuário é o único e integral responsável pelo conteúdo transportado no Frete, respondendo civil, fiscal, ambiental, penalmente e/ou em qualquer outro âmbito por qualquer infração à legislação em vigor, isentando totalmente a Loggi de qualquer responsabilidade quanto ao produto transportado.<br/>
+<br/>
+4.5. Os Condutores Autônomos cadastrados por meio da Plataforma são independentes e não possuem qualquer forma de vínculo empregatício, societário ou de subordinação com a Loggi ; desta forma, a Loggi não se responsabiliza de qualquer forma pelo Frete contratado pelo Usuário , incluindo, mas sem se limitar a: (i) o cumprimento do horário de entrega; (ii) a conclusão e efetivação do Frete sem erros; (iii) os danos causados no produto enviado; (iv) o extravio do produto enviado, entre outros. Assim, o Usuário reconhece neste ato a ausência de responsabilidade da Loggi na prestação do serviço de frete e renuncia a qualquer eventual direito de responsabilização a ser exercido em face da Loggi , ainda que o produto não seja entregue.<br/>
+<br/>
+4.6. A seu único e exclusivo critério, a Loggi poderá conceder limite de crédito para o Usuário em valor a ser apurado pela própria Loggi , restando o Usuário ciente de que tal limite de crédito poderá ser bloqueado também a qualquer momento pela Loggi , novamente conforme seu entendimento próprio e exclusivo.<br/>
+<br/>
+4.6.1. De forma a conceder o mencionado limite de crédito e/ou efetuar o desbloqueio do mesmo, a Loggi se resguarda do direito de solicitar todo e qualquer documento que considerar necessário, tais como constituição e demais alterações contratuais do Usuário , documentos pessoais dos sócios do Usuário e/ou do próprio Usuário , certidões negativas em geral, e demais documentos relacionados ao Usuário.<br/>
+<br/>
+4.7. Uma vez realizada a solicitação do serviço de Frete, as regras para cancelamento são as seguintes:<br/>
+<br/>
+4.7.1. Caso o cancelamento seja realizado quando ainda não houver sido expressamente aceita a contratação por qualquer Condutor Autônomo , não haverá qualquer valor devido em relação a esta contratação.<br/>
+<br/>
+4.7.2. Caso o cancelamento seja realizado após o expresso aceite pelo Condutor Autônomo , o montante devido pelo Usuário levará em consideração o ponto de destino seguinte ao ponto do cancelamento, haja vista que, por segurança, não é possível avisar o Condutor Autônomo sobre o cancelamento quando ele estiver se deslocando entre um ponto e outro. De forma a melhor explicar esta hipótese de cancelamento e suas consequências, seguem breves exemplos: em um pedido de 03 (três) pontos (A, B e C), se a entrega for cancelada entre o ponto A e o B, a cobrança é feita até o ponto B e não será cobrado o deslocamento até o ponto C, que efetivamente não ocorrerá; porém, caso o Condutor Autônomo já tenha se retirado do ponto B em direção ao ponto C, será cobrado o valor total da entrega. Caso a entrega for cancelada antes da chegada no ponto A, será cobrado o valor mínimo da entrega, conforme tabela vigente.<br/>
+<br/>
+4.8. Na hipótese do Condutor Autônomo , por qualquer motivo, não conseguir concluir o frete solicitado pelo Usuário e também não conseguir obter do Usuário informação ou instrução para concluir a entrega, o Usuário desde já autoriza expressamente o Condutor Autônomo a retornar ao ponto de origem (ponto de retirada) para devolver o item transportado, bem como autoriza também a adição automatica deste ponto de retorno na rota realizada para que seja realizada sua cobrança. Caso, por qualquer motivo, não consiga fazer a devolução do item transportado no ponto de origem (ponto de retirada), o Condutor Autônomo ficará com a posse do item transportado e aguardará contato do Usuário com orientação sobre como proceder.<br/>
+<br/>
+4.8.1. O número de indicações é ilimitado e todo cupom promocional gerado diante da indicação tem validade de 60 (sessenta) dias contados da inserção do cupom no painel de controle do Usuário na Plataforma Loggi.<br/>
+<br/>
+4.9. Programa "Indique e Ganhe": Trata-se de programa por meio do qual o Usuário realiza a recomendação da plataforma Loggi , tudo por meio do código gerado após seu cadastramento, e ganha créditos conforme tabela vigente do programa para cada pessoa física ou jurídica que se cadastrar na Plataforma Loggi e for considerada cliente válido, ou seja, mediante confirmação cadastral do indicado feita pela Loggi. Este bônus também se aplica à pessoa indicada.<br/>
+<br/>
+<b>5. PAGAMENTO</b><br/>
+5.1. Ao concluir a solicitação do Frete, o Usuário ficará responsável pelo pagamento do valor total informado antes da efetivação do pedido de frete. A conclusão da solicitação pressupõe a concordância integral do Usuário com relação ao valor determinado e informado na Plataforma.<br/>
+<br/>
+5.1.1. Resta devidamente ciente o Usuário de que o valor do orçamento poderá sofrer alterações depois da prestação do serviço nos casos em que se aplicar o adicional de espera e/ou quando houver a inclusão/alteração de pontos durante o trajeto.<br/>
+<br/>
+5.1.2. Resta ciente o Usuário que existem dois tipos de cadastro, consequentemente, duas formas de pagamento atreladas ao tipo de cadastro, quais sejam:<br/>
+<br/>
+a) Pessoa Física, para a qual somente é disponibilizado exclusivamente o pagamento por meio de cartão de crédito;<br/>
+<br/>
+b) Pessoa Jurídica, para a qual são disponibilizados os pagamentos por meio de cartão de crédito ou faturamento mensal mediante solicitação de aprovação da Loggi ;<br/>
+<br/>
+5.1.3. A Loggi se reserva ao direito de acrescentar o valor mensal de R$ 9,90 (nove Reais e noventa centavos) devido pelo Usuário referente ao prazo concedido para faturamento mensal.<br/>
+<br/>
+5.1.4. O valor acima referido só será aplicado quando houver 1 (uma) ou mais pedidos de frete por meio de faturamento.<br/>
+<br/>
+5.1.5. O pagamento do valor devido pelo Usuário terá vencimento no 15o dia subsequente ao mês do faturamento.<br/>
+<br/>
+5.1.6. Em caso de inadimplemento do boleto até o prazo de seu vencimento por culpa do Usuário , ou seja, desde que tal atraso não decorra de qualquer ação ou omissão da Plataforma Loggi , incidirá sobre o valor devido multa de 02% (dois por cento), acrescidos de juros de mora de 01% (um por cento) ao mês.<br/>
+<br/>
+5.1.7. Em caso de escolha de pagamento por meio de cartão de crédito, a Plataforma Loggi , quando do aceite da confirmação da solicitação do pedido de frete pelo Condutor Autônomo , apenas reserva o valor total do orçamento, sendo que somente após a finalização do serviço a plataforma realiza a captura no valor total do serviço prestado. Caso tenha sido concedido algum cupom de desconto, a correspondente diminuição do preço será realizada no momento da captura da quantia.<br/>
+<br/>
+5.1.8. Resta ciente o Usuário de que, em caso de falha operacional na captura do pagamento por meio de cartão de crédito, a Loggi poderá reprocessar a captura num período máximo de até 5 (cinco) anos ou, na ausência de tal opção, poderá emitir um título de pagamento com o valor devido em nome do Usuário a contar da data da prestação de serviço pela plataforma Loggi.<br/>
+<br/>
+5.2. O Usuário declara restar ciente de que, em razão dos fretes contratados diretamente dos Condutores Autônomos por meio da Plataforma Loggi , receberá um boleto para pagamento que englobará tanto o valor dos fretes devido a tais Condutores Autônomos quanto o valor do serviço de agenciamento de frete prestado pela Loggi. O Usuário declara, ainda, estar ciente de que o valor constante na Nota Fiscal emitida pela Loggi , em razão dos pedidos realizados por meio da Plataforma, englobará unicamente o valor referente ao serviços de agenciamento de frete prestados pela Loggi. As despesa de frete incorridas pelo Usuário poderão ser comprovadas por meio dos Recibos Eletrônicos em nome dos Condutores Autônomos e dos Extratos dos Pedidos de Fretes, ambos disponíveis na Plataforma Loggi e acessíveis por meio de login e senha do Usuário , bem como pela Nota de Débito emitida pela Loggi. Neste contexto, o Usuário resta ciente de que, como parte do pagamento dos fretes realizados é destinado ao Condutor Autônomo , a Loggi receberá tais valores em nome e conta de terceiros, cabendo a esta, sob sua responsabilidade, efetuar o repasse do valor que cabe ao Condutor Autônomo referente ao serviço de transporte por ele realizado diretamente em favor do Usuário e retendo o percentual que lhe cabe.<br/>
+<br/>
+5.2.1. Somente será permitido ao Usuário realizar retenções à título de Imposto de Renda sobre o valor de agenciamento de frete, serviço prestado pela Loggi , quando este for superior a R$ 666,00 (seiscentos e sessenta e seis Reais).<br/>
+<br/>
+5.2.2. Somente será permitido ao Usuário realizar retenções à título Imposto sobre Serviço de Qualquer Natureza sobre o valor de agenciamento de frete, serviço prestado pela Loggi , quando a Loggi não houver inscrição municipal no domícilio do Usuário , e desde que haja permissivo legal para tal retenção.<br/>
+<br/>
+5.3. Ao final de cada pedido concluído, o Usuário receberá um recibo eletrônico em nome do Condutor Autônomo contendo o valor do frete referente à ao pedido realizado, tendo em vista que os Condutores Autônomos , microempreendedores, são isentos de emitirem nota fiscal eletrônica, conforme o § 1o do artigo 97, da Resolução do Comitê Gestor do Simples Nacional – CGSN de no 94/2011, e no artigo 18-A da Lei Complementar Federal 123/2006.<br/>
+<br/>
+5.4. Resta ciente o Usuário que o faturamento feito pela Loggi leva em consideração o mês civil como um todo, de seu primeiro dia até o último dia, não havendo possibilidade de fracionamento durante o mês.<br/>
+<br/>
+5.5. Uma vez que a Plataforma Loggi possibilita que o Usuário tenha pleno acesso a toda e qualquer solicitação de frete realizada em seu favor a qualquer momento, eventuais incongruências ou necessidades de alterações ocorridas dentro do mês da prestação do serviço deverão ser informadas à Loggi pelo Usuário até, necessariamente, o último dia útil do mês do fechamento do faturamento, haja vista a necessidade da Loggi realizar a emissão da nota fiscal pertinente até o 3o dia útil do mês subsequente, conforme legislação municipal vigente.<br/>
+<br/>
+5.6. O silêncio do Usuário quanto ao envio de informação de quaisquer incongruências ou alterações no prazo acima mencionado será considerado como anuência ampla e total quanto às informações constantes em seu faturamento.<br/>
+<br/>
+<b>6. ACESSO, INTERRUPÇÃO, SUSPENSÃO OU CANCELAMENTO DA CONTA</b><br/>
+6.1. Após a efetivação do cadastro do Usuário será criada uma conta na Plataforma Loggi e seu respectivo painel de controle, acessível por meio de login e senha. O Usuário se compromete a não informar seu login e senha a terceiros, responsabilizando-se integralmente pelo uso de sua conta e pelos dados fornecidos.<br/>
+<br/>
+6.2. O Usuário que desejar cancelar imediatamente seu cadastro junto à Loggi e, assim, cessar a utilização dos Serviços, poderá fazê-lo a qualquer momento por meio do e-mail contato@loggi.com, sem qualquer ônus, sem prejuízo do pagamento de eventuais transações já realizadas e não cobradas ou pagas, vencidas ou a vencer, ou seja, como a cobrança realizada pela Loggi é mensal (exceto para cadastros feitos por Pessoas Físicas), ainda que o pedido de cancelamento seja realizado pelo Usuário antes do fechamento do mês, tais valores correspondentes a transações já realizadas e não cobradas ou não pagas permanecem como devidos normalmente.<br/>
+<br/>
+6.3. A Loggi poderá desativar, bloquear ou, de outro modo, encerrar unilateralmente o acesso do Usuário aos Serviços, com rescisão unilateral do presente contrato, sem prejuízo das medidas legais cabíveis, caso: (i) seja identificada qualquer violação legal e/ou às disposições destes T&C; (ii) seja identificada a prática de atos fraudulentos por meio do uso da Plataforma Loggi , seja de forma direta ou indireta; e (iii) se o Usuário causar algum dano direto ou indireto à Loggi , seus Usuários ou a terceiros; (iv) seja verificada a inadimplência do Usuário , que se dá quando este último deixar de efetuar o pagamento de qualquer parcela devida em favor da Loggi nos termos pactuados entre as partes; (v) em outras hipóteses, por critério da Loggi , caso a Loggi entenda necessário, por violação de normas jurídicas, incompatibilidade com a política da Plataforma, entre outras, a critério da Loggi.<br/>
+<br/>
+6.3.1. Em caso de inadimplência por parte do Usuário , além de poder ensejar a rescisão do contrato entre as partes, resta devidamente ciente o Usuário de que a Loggi poderá tomar as medidas cabíveis para protesto do título em aberto em Cartório, além de inscrição do Usuário inadimplente junto a todo e qualquer órgão de restrição ao crédito, a único e exclusivo critério da Loggi , bem como realizar a cobrança extrajudicial e, inclusive, judicial do mesmo, também a seu exclusivo critério.<br/>
+<br/>
+6.4. Em caso de término da utilização dos Serviços por qualquer motivo, a Loggi poderá manter os dados e histórico das transações realizadas pelos Usuários arquivados por tempo indeterminado, o que desde já fica expressamente autorizado pelo Usuário.<br/>
+<br/>
+<b>7. POLÍTICA DE PRIVACIDADE E DIVULGAÇÃO DE INFORMAÇÕES</b><br/>
+7.1. A Loggi se compromete a manter protegidos e em confidencialidade todos os dados cadastrais, incluindo e-mail informado, número de IP de acesso e outras informações pessoais que não sejam necessárias à utilização dos Serviços.<br/>
+<br/>
+7.2. O Usuário desde já autoriza a Loggi a, a seu critério, preservar, armazenar todos os dados e informações enviados à Plataforma, bem como todos os seus dados pessoais, a exemplo de endereços de e-mail, endereços de IP (Internet Protocol), informações de data e horário de acesso, entre outras informações. O Usuário também autoriza neste ato a Loggi a informar e/ou divulgar estes dados em caso de exigência legal ou se razoavelmente necessárias para (i) o devido processo legal; (ii) fazer cumprir estes T&C; (iii) responder a alegações de suposta violação de direitos de terceiros e de divulgação indevida de informações para contato de terceiros, e para proteger os direitos, a propriedade ou a segurança de terceiros ou da própria Loggi e de seus Usuários.<br/>
+<br/>
+7.3. A utilização da Plataforma implica o consentimento do Usuário para coleta, armazenamento e uso das informações pessoais fornecidas e suas atualizações, dados de tráfego, endereços IP, entre outros.<br/>
+<br/>
+7.4. Com o aceite do presente T&C o Usuário concorda em permitir o acesso à sua localização aproximada fornecendo um melhor serviço e melhor experiência.<br/>
+<br/>
+7.4.1. O Usuário declara-se ciente que a Loggi pode coletar e usar dados técnicos de seu dispositivo tais como especificações, configurações, versões de sistema operacional, tipo de conexão à internet e afins para melhor adaptar sua plataforma com a finalidade de proporcionar a melhor experiência possível.<br/>
+<br/>
+7.4.2. A localização geográfica do Usuário não é ininterrupta sendo impossível obter a localização precisa interruptamente e, em consequência disto, podem ocorrer erros que não são de responsabilidade da Loggi.<br/>
+<br/>
+7.4. A Loggi poderá utilizar as informações e/ou dados fornecidos e/ou coletados pelo Usuário , o que fica desde já autorizado, para: (i) aplicar nestes T&C; (ii) acompanhar as atividades do Usuário para administrar mais efetivamente o tráfego na Plataforma; (iii) prestar serviços ao Usuário ; e (iv) criar e administrar Contas de Usuários , (v) em outras hipóteses que se fizerem necessárias para a efetividade e manutenção e segurança da Plataforma.<br/>
+<br/>
+7.5. A Loggi se reserva o direito de reter informações pelo período que entender necessário para o bom cumprimento de seus negócios, mesmo após o encerramento da conta do Usuário , salvo manifestação expressa do Usuário em sentido contrário.<br/>
+<br/>
+<b>8. PROPRIEDADE INTELECTUAL</b><br/>
+8.1. Os elementos e/ou ferramentas encontrados na Plataforma estão sujeitos aos direitos intelectuais de acordo com as leis brasileiras e tratados e convenções internacionais dos quais o Brasil seja signatário. Apenas a título exemplificativo, entendem-se como tais: textos, softwares, scripts, imagens gráficas, fotos, sons, músicas, vídeos, recursos interativos e similares, marcas, marcas de serviços, logotipos e "look and feel", entre outros, pertencendo de forma exclusiva à Loggi.<br/>
+<br/>
+8.2. Os Usuários estão cientes e concordam que a utilização, redistribuição, comercialização e/ou reprodução de conteúdo ou parte de conteúdo disponibilizado na Plataforma deverão seguir as normas concernentes às leis brasileiras de Direitos Autorais, sob pena de caracterização de utilização indevida e/ou infração a direitos intelectuais de terceiros.<br/>
+<br/>
+<b>9. CONSIDERAÇÕES FINAIS</b><br/>
+9.1. A incapacidade ou a mera liberalidade em não fazer cumprir quaisquer disposições destes T&C não constitui renúncia de direitos, podendo ser exigido o seu cumprimento em qualquer momento.<br/>
+<br/>
+9.2. Caso qualquer disposição destes Termos de Uso for considerada inexequível ou inválida, essa disposição será isoladamente invalidada e não atingirá o restante das disposições destes T&C, que continuarão plenamente vigentes e eficazes.<br/>
+<br/>
+9.3. Caso exista Proposta Comercial apresentada pela Loggi ao Usuário , tal proposta será parte integrante das disposições destes Termos e Condições de Uso.<br/>
+<br/>
+9.4. Qualquer Usuário ou terceiro que se sentir lesado com relação aos Serviços poderá entrar em contato por meio do e-mail contato@loggi.com.<br/>
+<br/>
+9.5. Estes T&C e a relação entre a Loggi e o Usuário serão regidos pelas leis da República Federativa do Brasil. As Partes elegem o Foro da Comarca de São Paulo/SP como sendo o único competente para dirimir quaisquer litígios e/ou demandas que venham a envolver as Partes em relação aos Serviços, renunciando a outro foro, por mais privilegiado que seja.<br/>
+<br/>
+9.6. O Usuário se compromete a utilizar as informações e/ou documentos da Loggi obtidos em razão da presente prestação de serviços única e exclusivamente para alcançar seu objeto, com total confidencialidade, sob pena de ser responsabilizado nos termos da lei.<br/>
+<br/>
+9.7. O presente contrato vincula inclusive herdeiros e/ou sucessores das partes, que a este contrato devem observar integralmente.<br/>
+<br/>
+9.8. Resta ciente o Usuário de que a prestação dos serviços ora contratados poderá ser realizada tanto pela Loggi quanto por qualquer outra empresa de seu grupo econômico.<br/>
+<br/>
+9.9. As partes não poderão transferir, ceder ou onerar os direitos e obrigações decorrentes deste instrumento em hipótese alguma sem a anuência escrita da parte contrária.<br/>
+<br/>
+9.10. O presente contrato firmado entre as partes revoga qualquer acordo anterior, verbal ou escrito, tendo como o mesmo objeto, que porventura tenha existido anteriormente entre as partes.<br/>

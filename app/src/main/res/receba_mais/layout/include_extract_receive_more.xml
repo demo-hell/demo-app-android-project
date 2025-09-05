@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_receive_mor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_16dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_title_receive_more"
+            style="@style/styleTextViewItemReceiveMoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/title_receive_more_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_view_status_receive_more"
+            style="@style/styleTextViewItemReceiveMoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_title_receive_more"
+            app:layout_constraintStart_toEndOf="@id/text_title_receive_more"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ellipse_8dp" />
+
+        <ImageView
+            android:id="@+id/image_view_status_installment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_title_installment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title_receive_more"
+            tools:srcCompat="@drawable/ic_next_installment" />
+
+        <TextView
+            android:id="@+id/text_title_installment"
+            style="@style/styleTextViewItemReceiveMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_11dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_status_installment"
+            app:layout_constraintTop_toBottomOf="@id/text_title_receive_more"
+            tools:text="03ª Parcela - Mar - Em aberto" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title_installment" />
+
+        <ImageView
+            android:id="@+id/image_view_status_installment_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_title_installment_second"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_line"
+            tools:srcCompat="@drawable/ic_late_installment" />
+
+        <TextView
+            android:id="@+id/text_title_installment_second"
+            style="@style/styleTextViewItemReceiveMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_11dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_status_installment"
+            app:layout_constraintTop_toBottomOf="@id/view_line"
+            tools:text="02ª Parcela - Fev - Em atraso" />
+
+        <View
+            android:id="@+id/view_line_second"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title_installment_second" />
+
+        <ImageView
+            android:id="@+id/image_view_status_installment_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="@id/text_title_installment_third"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_line_second"
+            tools:srcCompat="@drawable/ic_installment_paid" />
+
+        <TextView
+            android:id="@+id/text_title_installment_third"
+            style="@style/styleTextViewItemReceiveMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_11dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_status_installment"
+            app:layout_constraintTop_toBottomOf="@id/view_line_second"
+            tools:text="01ª Parcela - Jan" />
+
+        <View
+            android:id="@+id/view_line_third"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title_installment_third" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/tv_ver_mais"
+            style="@style/styleTypeFaceItemReceiveMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_line_third" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

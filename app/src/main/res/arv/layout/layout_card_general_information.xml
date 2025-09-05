@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dimen_300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dimen_16dp"
+    android:background="@drawable/background_radius8dp_stroke_gray_204986"
+    android:padding="@dimen/dimen_16dp">
+
+    <TextView
+        android:id="@+id/tvLabelOne"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:importantForAccessibility="no"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tipo de antecipação" />
+
+    <ImageView
+        android:id="@+id/ivIconOne"
+        android:layout_width="@dimen/dimen_16dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/tvValueOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvValueOne"
+        tools:srcCompat="@drawable/ic_money_circle" />
+
+    <TextView
+        android:id="@+id/tvValueOne"
+        style="@style/Label_700_Bold_16"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:importantForAccessibility="no"
+        android:maxLines="1"
+        android:textColor="@color/color_cloud_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIconOne"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelOne"
+        tools:text="Avulsa" />
+
+    <TextView
+        android:id="@+id/tvLabelTwo"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:ellipsize="end"
+        android:importantForAccessibility="no"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvValueOne"
+        tools:text="Agenda" />
+
+    <ImageView
+        android:id="@+id/ivIconTwo"
+        android:layout_width="@dimen/dimen_16dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/tvValueTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvValueTwo"
+        tools:srcCompat="@drawable/ic_machine_new" />
+
+    <TextView
+        android:id="@+id/tvValueTwo"
+        style="@style/Label_700_Bold_16"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:importantForAccessibility="no"
+        android:maxLines="1"
+        android:textColor="@color/color_cloud_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIconTwo"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelTwo"
+        tools:text="Recebíveis Cielo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

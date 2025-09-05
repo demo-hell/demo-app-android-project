@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_to_be_debited_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/value_to_be_debited_text"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_to_be_debited_subtitle"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_money_sign_pix"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/your_account_balance_text"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to_be_debited_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_type_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_transfer_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to_be_debited_subtitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_type"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_receipt_pix_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_summary_transfer_type_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_transfer_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableLeft="@drawable/ic_calendar_pix_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_summary_transfer_date_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date_later"
+        style="@style/label_12_alert_400_ubuntu"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:drawableStart="@drawable/ic_alert_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:text="@string/text_pix_summary_qrcode_date_later"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_billing_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_later"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_due_date_title"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pix_summary_qrcode_due_date_charge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_due_date"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:drawableStart="@drawable/ic_calendar_pix_16dp"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_due_date_title"
+            tools:text="29/06/2022 ás 15:57:11" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_deadline_due_date_title"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/text_pix_summary_qrcode_deadline_due_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_due_date" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_deadline_due_date"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:drawableStart="@drawable/ic_calendar_pix_16dp"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_deadline_due_date_title"
+            tools:text="05/07/2022 ás 15:57:11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_message_title"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_summary_transfer_insert_msg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_billing_date" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_message"
+        style="@style/label_16_brand_400_ubuntu_bold"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:drawableStart="@drawable/ic_chat_balloon_16dp"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:text="@string/text_pix_summary_transfer_insert_msg_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

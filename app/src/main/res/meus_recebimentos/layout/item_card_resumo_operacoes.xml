@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.CardViewClickCustom
+        android:id="@+id/card_view_resumo_operacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_meus_recebimentos_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_meus_recebimentos_lista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/resumo_operacoes_imagem_click"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/resumo_operacoes_lancamentos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColor="@color/purple"
+                        android:textSize="12sp"
+                        app:typeface="MuseoSans-700.ttf" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/item_resumo_operacoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/resumo_operacoes_imagem_click"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_arrow_right_purple" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_meus_recebimentos_card_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/layout_meus_recebimentos_card"
+                android:clickable="true"
+                android:orientation="vertical"></LinearLayout>
+        </RelativeLayout>
+    </br.com.mobicare.cielo.commons.presentation.utils.custom.CardViewClickCustom>
+
+</LinearLayout>
+

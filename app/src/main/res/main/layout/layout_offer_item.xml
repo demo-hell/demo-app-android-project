@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_6dp"
+    app:cardCornerRadius="@dimen/dimen_8dp"
+    app:cardElevation="@dimen/dimen_0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_grey_arround_list_order"
+        android:paddingBottom="@dimen/dimen_16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/select_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:background="@drawable/background_border_gray_display_300"
+            android:padding="@dimen/dimen_15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_tax">
+
+            <TextView
+                android:id="@+id/tv_container_period"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/display_400"
+                android:textSize="@dimen/dimen_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/select_dia_da_semana" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_container_period"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_container_period"
+                app:srcCompat="@drawable/ic_arrow_down_tax" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RadioButton
+            android:id="@+id/rb_period"
+            android:layout_width="@dimen/dimen_25dp"
+            android:layout_height="@dimen/dimen_25dp"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:button="@drawable/custom_radio_buttom"
+            android:theme="@style/RadioButtonStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_tax"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toStartOf="@+id/rb_period"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_party_star"
+                android:layout_width="@dimen/dimen_32dp"
+                android:layout_height="@dimen/dimen_32dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout20"
+                app:srcCompat="@drawable/ic_party_star"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout20"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/iv_party_star"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textColor="@color/black_353A40"
+                    android:textSize="@dimen/dimen_16sp"
+                    tools:text="@string/receber_em_2_dias" />
+
+                <LinearLayout
+                    android:id="@+id/taxesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/layout_offer_tax_item" />
+
+                    <include layout="@layout/layout_offer_tax_item" />
+
+                    <include layout="@layout/layout_offer_tax_item" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

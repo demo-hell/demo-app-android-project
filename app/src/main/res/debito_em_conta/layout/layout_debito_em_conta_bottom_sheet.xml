@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <LinearLayout
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:weightSum="5">
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03"
+            android:background="@drawable/ic_drag_bottom_sheet" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="4.2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_welcome_notification"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_weight=".4"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/text_title_dc_bottom_sheet"
+                    android:textSize="@dimen/dimen_18sp" />
+
+                <TextView
+                    style="@style/Heading_500_Bold_18_display_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_weight=".4"
+                    android:layout_gravity="start"
+                    android:text="@string/text_title_dc_bottom_sheet_01" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_weight="1.7"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    app:srcCompat="@drawable/ic_06" />
+
+                <TextView
+                    android:id="@+id/tv_subtitle_bc"
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:text="@string/text_body_dc_bottom_sheet"
+                    android:textSize="@dimen/dimen_16dp" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <FrameLayout
+            android:id="@+id/validationLatter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_weight=".34"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                style="@style/Label_400_Alternate_brand_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/btn_validar_mais_tarde" />
+        </FrameLayout>
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/followOfTerm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_weight=".34"
+            android:text="@string/btn_continuar" />
+    </LinearLayout>
+</RelativeLayout>

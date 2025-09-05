@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_title_resume_bank_and_cnpj"
+        style="@style/TextViewResumeBankAndCNPJTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title_resume_bank_and_cnpj"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_subtitle_resume_bank_and_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewResumeBankAndCNPJSubtitle"
+        android:text="@string/text_subtitle_resume_bank_and_cnpj"
+        app:layout_constraintTop_toBottomOf="@id/text_title_resume_bank_and_cnpj"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        style="@style/TextViewResumeBankAndCNPJContainer"
+        app:layout_constraintTop_toBottomOf="@id/text_subtitle_resume_bank_and_cnpj">
+
+        <TextView
+            android:id="@+id/text_name_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewResumeBankAndCNPJTitle14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Banco do Brasil"/>
+
+        <TextView
+            android:id="@+id/text_title_agency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewResumeBankAndCNPJTitleDataTop"
+            android:text="@string/text_agency_resume_bank_and_cnpj"
+            app:layout_constraintTop_toBottomOf="@id/text_name_bank"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/text_numb_agency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewResumeBankAndCNPJDataTop"
+            app:layout_constraintTop_toBottomOf="@id/text_name_bank"
+            app:layout_constraintStart_toEndOf="@+id/text_title_agency"
+            tools:text="04132" />
+
+        <TextView
+            android:id="@+id/text_title_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewResumeBankAndCNPJTitleData"
+            android:text="@string/text_account_resume_bank_and_cnpj"
+            app:layout_constraintTop_toBottomOf="@id/text_title_agency"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/text_numb_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewResumeBankAndCNPJData"
+            app:layout_constraintTop_toBottomOf="@id/text_title_agency"
+            app:layout_constraintStart_toEndOf="@+id/text_title_account"
+            tools:text="004132-5" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_C3CFD5"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintTop_toBottomOf="@id/text_numb_account" />
+
+        <TextView
+            android:id="@+id/text_title_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewResumeBankAndCNPJTitle14sp"
+            android:text="@string/text_cnpj_resume_bank_and_cnpj"
+            app:layout_constraintTop_toBottomOf="@id/view"/>
+
+        <TextView
+            android:id="@+id/text_numb_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewResumeBankAndCNPJTitle5dpTop"
+            app:layout_constraintTop_toBottomOf="@id/text_title_cnpj"
+            tools:text="14.463.732/0001-22"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

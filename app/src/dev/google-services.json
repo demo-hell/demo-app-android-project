@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "348069280265",
+    "firebase_url": "https://cielo-app-ece45.firebaseio.com",
+    "project_id": "cielo-app-ece45",
+    "storage_bucket": "cielo-app-ece45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348069280265:android:c3e343604a5079ab",
+        "android_client_info": {
+          "package_name": "br.com.mobicare.cielo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348069280265-qg7k2o7slelrfasa8uhaageo66bmitha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.mobicare.cielo",
+            "certificate_hash": "891b2e38b61c47647b67212b33635ec6de1de87b"
+          }
+        },
+        {
+          "client_id": "348069280265-uoberbug5qaq0pesc1vl5ff10jn0c0um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfqu7Y9ihOwR_iZclRGAOzM-5Tfah-rhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348069280265-uoberbug5qaq0pesc1vl5ff10jn0c0um.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "348069280265-h1d9sltd3qo0o640red8k7spk2dj6a2r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.mobicare.cielo",
+                "app_store_id": "964806345"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348069280265:android:b1c1a092adca9543",
+        "android_client_info": {
+          "package_name": "br.com.mobicare.cielo.homolog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348069280265-uoberbug5qaq0pesc1vl5ff10jn0c0um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfqu7Y9ihOwR_iZclRGAOzM-5Tfah-rhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348069280265-uoberbug5qaq0pesc1vl5ff10jn0c0um.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "348069280265-h1d9sltd3qo0o640red8k7spk2dj6a2r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.mobicare.cielo",
+                "app_store_id": "964806345"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/limitsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_my_limits_monthly"
+        style="@style/bold_montserrat_14_cloud_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:text="@string/text_pix_my_limits_transaction_monthly"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_my_limits_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_limits_monthly"
+        android:background="@drawable/background_stroke_1dp_round_color_c5ced7">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_my_limits_transaction"
+            style="@style/regular_ubuntu_14_cloud_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pix_my_limits_value"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_my_limits_monthly_value"
+            style="@style/regular_ubuntu_20_brand_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:drawableEnd="@drawable/ic_edit_16dp_change_state"
+            android:drawablePadding="@dimen/dimen_8dp"
+            tools:text="R$ 5.000,00"
+            android:textColor="@drawable/text_color_change_state"
+            app:layout_constraintTop_toBottomOf="@+id/tv_my_limits_transaction" />
+
+        <include
+            android:id="@+id/container_pix_my_limits_monthly_transaction_limit"
+            layout="@layout/layout_pix_my_limits_transaction_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_19dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_my_limits_monthly_value" />
+
+        <include
+            android:id="@+id/container_pix_my_limits_monthly_info"
+            layout="@layout/layout_pix_my_limits_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/container_pix_my_limits_monthly_transaction_limit"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

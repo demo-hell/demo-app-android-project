@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_id_onboarding"
+    app:startDestination="@id/idOnboardingUpdateCpfFragment">
+
+    <action
+        android:id="@+id/action_idOnboardingUpdateCpfFragment_to_idOnboardingUpdateEmailFragment"
+        app:destination="@id/idOnboardingUpdateEmailFragment"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingUpdateNameFragment"
+        app:destination="@+id/idOnboardingUpdateNameFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingUpdateEmailFragment"
+        app:destination="@+id/idOnboardingUpdateEmailFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingUpdateEmailValidationFragment"
+        app:destination="@+id/idOnboardingUpdateEmailValidationFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingUpdatePhoneFragment"
+        app:destination="@+id/idOnboardingUpdatePhoneFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingUpdatePhoneValidationFragment"
+        app:destination="@id/idOnboardingUpdatePhoneValidationFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingUpdateForeignPhoneFragment"
+        app:destination="@id/idOnboardingUpdateForeignPhoneFragment"
+        app:launchSingleTop="true"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingValidateP1PolicyFragment"
+        app:destination="@id/idOnboardingValidateP1PolicyFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingPicturesSelfieGuideFragment"
+        app:destination="@+id/idOnboardingPicturesSelfieGuideFragment"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        app:popUpTo="@id/idOnboardingPicturesSelectDocFragment"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingValidateP2PolicyFragment"
+        app:destination="@+id/idOnboardingValidateP2PolicyFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingNewCpfFragment"
+        app:destination="@id/idOnboardingNewCpfFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingFragment"
+        app:destination="@id/idOnboardingFragment"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingP1CompletionStatusFragment"
+        app:destination="@id/idOnboardingP1CompletionStatusFragment"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingUpdateCpfFragment"
+        app:destination="@id/idOnboardingUpdateCpfFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingAdminBenefitsFragment"
+        app:destination="@+id/idOnboardingAdminBenefitsFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingAnalystBenefitsFragment"
+        app:destination="@+id/idOnboardingAnalystBenefitsFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingP2ForeignSuccessFragment"
+        app:destination="@+id/idOnboardingP2ForeignSuccessFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        />
+    <action
+        android:id="@+id/action_to_idOnboardingP2SuccessFragment"
+        app:destination="@+id/idOnboardingP2SuccessFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right" />
+
+    <action
+        android:id="@+id/action_to_idOnboardingTechnicalBenefitsFragment"
+        app:destination="@+id/idOnboardingTechnicalBenefitsFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"/>
+
+    <action
+        android:id="@+id/action_to_idOnboardingCustomBenefitsFragment"
+        app:destination="@+id/idOnboardingCustomBenefitsFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph_id_onboarding"
+        app:popUpToInclusive="true"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"/>
+
+    <fragment
+        android:id="@+id/idOnboardingUpdateCpfFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingUpdateCpfFragment"
+        android:label="UpdateCpfFragment"
+        tools:layout="@layout/fragment_id_onboarding_update_user_data">
+
+        <action
+            android:id="@+id/action_idOnboardingUpdateCpfFragment_to_idOnboardingUpdateNameFragment"
+            app:destination="@id/idOnboardingUpdateNameFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingUpdateCpfFragment_to_idOnboardingNewCpfFragment"
+            app:destination="@id/idOnboardingNewCpfFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingNewCpfFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingNewCpfFragment"
+        android:label="NewCpfFragment"
+        tools:layout="@layout/fragment_id_onboarding_update_user_data">
+
+        <action
+            android:id="@+id/action_idOnboardingNewCpfFragment_to_idOnboardingUpdateNameFragment"
+            app:destination="@id/idOnboardingUpdateNameFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/idOnboardingUpdateCpfFragment" />
+
+        <action
+            android:id="@+id/action_idOnboardingNewCpfFragment_to_idOnboardingUpdateEmailFragment"
+            app:destination="@id/idOnboardingUpdateEmailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingUpdateNameFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingUpdateNameFragment"
+        android:label="UpdateNameFragment"
+        tools:layout="@layout/fragment_id_onboarding_update_user_data">
+
+        <action
+            android:id="@+id/action_idOnboardingUpdateNameFragment_to_idOnboardingUpdateEmailFragment"
+            app:destination="@id/idOnboardingUpdateEmailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingUpdateEmailFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingUpdateEmailFragment"
+        android:label="UpdateEmailFragment"
+        tools:layout="@layout/fragment_id_onboarding_update_user_data">
+
+        <action
+            android:id="@+id/action_idOnboardingUpdateEmailFragment_to_idOnboardingUpdateEmailValidationFragment"
+            app:destination="@id/idOnboardingUpdateEmailValidationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingUpdateEmailValidationFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingUpdateEmailValidationFragment"
+        android:label="UpdateEmailValidationFragment"
+        tools:layout="@layout/fragment_id_onboarding_update_user_data">
+
+        <action
+            android:id="@+id/action_idOnboardingUpdateEmailValidationFragment_to_idOnboardingUpdatePhoneFragment"
+            app:destination="@id/idOnboardingUpdatePhoneFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_idOnboardingUpdateEmailValidationFragment_to_idOnboardingUpdateEmailFragment"
+            app:destination="@id/idOnboardingUpdateEmailFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_from_right"
+            app:popExitAnim="@anim/slide_to_left" />
+        <action
+            android:id="@+id/action_idOnboardingUpdateEmailValidationFragment_to_idOnboardingUpdateForeignPhoneFragment"
+            app:destination="@id/idOnboardingUpdateForeignPhoneFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingUpdatePhoneFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingUpdatePhoneFragment"
+        android:label="UpdatePhoneFragment"
+        tools:layout="@layout/fragment_id_onboarding_update_user_data">
+
+        <action
+            android:id="@+id/action_idOnboardingUpdatePhoneFragment_to_IDOnboardingUpdatePhoneValidationFragment"
+            app:destination="@id/idOnboardingUpdatePhoneValidationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingUpdatePhoneValidationFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingUpdatePhoneValidationFragment"
+        android:label="UpdatePhoneValidationFragment"
+        tools:layout="@layout/fragment_id_onboarding_update_user_data">
+
+        <action
+            android:id="@+id/action_IdOnboardingUpdatePhoneValidationFragment_to_idOnboardingUpdatePhoneFragment"
+            app:destination="@id/idOnboardingUpdatePhoneFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popEnterAnim="@anim/slide_from_right"
+            app:popExitAnim="@anim/slide_to_left">
+            <argument
+                android:name="isTargetSelection"
+                android:defaultValue="true"
+                app:argType="boolean" />
+        </action>
+
+        <action
+            android:id="@+id/action_idOnboardingUpdatePhoneValidationFragment_to_idOnboardingValidateP1PolicyFragment"
+            app:destination="@id/idOnboardingValidateP1PolicyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingValidateP1PolicyFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p1Policy.IDOnboardingValidateP1PolicyFragment"
+        android:label="ValidateP1PolicyFragment"
+        tools:layout="@layout/fragment_id_onboarding_validate_p1_policy">
+
+        <action
+            android:id="@+id/action_idOnboardingValidateP1PolicyFragment_to_idOnboardingDataUpdatedSuccessfullyP1PolicyFragment"
+            app:destination="@id/idOnboardingDataUpdatedSuccessfullyP1PolicyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingDataUpdatedSuccessfullyP1PolicyFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p1Policy.IDOnboardingDataUpdatedSuccessfullyP1PolicyFragment"
+        android:label="DataUpdatedSuccessfullyP1PolicyFragment"
+        tools:layout="@layout/fragment_id_onboarding_successfully_validated_data">
+
+        <argument
+            android:name="ARG_USER_ROLE"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="ARG_USER_CPF_OR_EMAIL_WAS_CHANGED"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_idOnboardingDataUpdatedSuccessfullyP1PolicyFragment_to_idOnboardingReaderBenefitsFragment"
+            app:destination="@id/idOnboardingReaderBenefitsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_idOnboardingDataUpdatedSuccessfullyP1PolicyFragment_to_idOnboardingAnalystBenefitsFragment"
+            app:destination="@id/idOnboardingAnalystBenefitsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_idOnboardingDataUpdatedSuccessfullyP1PolicyFragment_to_idOnboardingAdminBenefitsFragment"
+            app:destination="@id/idOnboardingAdminBenefitsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_idOnboardingDataUpdatedSuccessfullyP1PolicyFragment_to_idOnboardingTechnicalBenefitsFragment"
+            app:destination="@id/idOnboardingTechnicalBenefitsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true"/>
+
+        <action
+            android:id="@+id/action_idOnboardingDataUpdatedSuccessfullyP1PolicyFragment_to_idOnboardingCustomBenefitsFragment"
+            app:destination="@id/idOnboardingCustomBenefitsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingReaderBenefitsFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p1Policy.benefits.reader.IDOnboardingReaderBenefitsInfoP1PolicyFragment"
+        android:label="ViewerReaderBenefitsInfoFragment"
+        tools:layout="@layout/fragment_id_onboarding_reader_access">
+
+        <argument
+            android:name="ARG_USER_CPF_OR_EMAIL_WAS_CHANGED"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingAnalystBenefitsFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p1Policy.benefits.analyst.IDOnboardingAnalystBenefitsInfoP1PolicyFragment"
+        android:label="ViewerReaderBenefitsInfoFragment"
+        tools:layout="@layout/fragment_id_onboarding_reader_access">
+
+        <action
+            android:id="@+id/action_idOnboardingAnalystBenefitsFragment_to_idOnboardingPicturesLaterFragment"
+            app:destination="@id/idOnboardingPicturesLaterFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingAnalystBenefitsFragment_to_idOnboardingPicturesSelectDocFragment"
+            app:destination="@id/idOnboardingPicturesSelectDocFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingAnalystBenefitsFragment_to_idOnboardingPicturesSelfieGuideFragment"
+            app:destination="@id/idOnboardingPicturesSelfieGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingAdminBenefitsFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p1Policy.benefits.admin.IDOnboardingAdminBenefitsInfoP1PolicyFragment"
+        android:label="AdminBenefitsInfoFragment"
+        tools:layout="@layout/fragment_id_onboarding_admin_access">
+
+        <action
+            android:id="@+id/action_idOnboardingAdminBenefitsFragment_to_idOnboardingPicturesLaterFragment"
+            app:destination="@id/idOnboardingPicturesLaterFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingAdminBenefitsFragment_to_idOnboardingPicturesSelectDocFragment"
+            app:destination="@id/idOnboardingPicturesSelectDocFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+
+        <action
+            android:id="@+id/action_idOnboardingAdminBenefitsFragment_to_idOnboardingPicturesSelfieGuideFragment"
+            app:destination="@id/idOnboardingPicturesSelfieGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingPicturesLaterFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.docPictures.IDOnboardingPicturesLaterFragment"
+        android:label="PicturesLaterFragment"
+        tools:layout="@layout/fragment_id_onboarding_pictures_later" >
+
+        <argument
+            android:name="ARG_MAIN_USER_ROLE"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_idOnboardingPicturesLaterFragment_to_idOnboardingPicturesSelectDocFragment"
+            app:destination="@id/idOnboardingPicturesSelectDocFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+
+        <action
+            android:id="@+id/action_idOnboardingPicturesLaterFragment_to_idOnboardingPicturesSelfieGuideFragment"
+            app:destination="@id/idOnboardingPicturesSelfieGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingPicturesSelectDocFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.docPictures.IDOnboardingPicturesSelectDocFragment"
+        android:label="PicturesSelectDocFragment"
+        tools:layout="@layout/fragment_id_onboarding_pictures_select_doc_fragment">
+
+        <action
+            android:id="@+id/action_idOnboardingPicturesSelectDocFragment_to_idOnboardingPicturesDocGuideFragment"
+            app:destination="@id/idOnboardingPicturesDocGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+        <action
+            android:id="@+id/action_idOnboardingPicturesSelectDocFragment_to_idOnboardingSelectDigitalDocFragment"
+            app:destination="@id/idOnboardingSelectDigitalDocFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingSelectDigitalDocFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.docPictures.IDOnboardingSelectDigitalDocFragment"
+        android:label="SelectDigitalDocFragment"
+        tools:layout="@layout/fragment_id_onboarding_select_digital_doc">
+
+        <action
+            android:id="@+id/action_idOnboardingSelectDigitalDocFragment_to_idOnboardingPicturesDocGuideFragment"
+            app:destination="@id/idOnboardingPicturesDocGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false"/>
+
+        <action
+            android:id="@+id/action_idOnboardingSelectDigitalDocFragment_to_idOnboardingDigitalDocGuideFragment"
+            app:destination="@id/idOnboardingDigitalDocGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingDigitalDocGuideFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.docPictures.sendDigitalDocument.IDOnboardingDigitalDocGuideFragment"
+        android:label="digitalDocGuideFragment"
+        tools:layout="@layout/fragment_id_onboarding_digital_doc_guide">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingPicturesDocGuideFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.docPictures.sendDocument.IDOnboardingPicturesDocGuideFragment"
+        android:label="PicturesDocGuideFragment"
+        tools:layout="@layout/fragment_id_onboarding_pictures_doc_guide">
+
+        <action
+            android:id="@+id/action_idOnboardingPicturesDocGuideFragment_to_idOnboardingPicturesDocGuideFragment"
+            app:destination="@id/idOnboardingPicturesDocGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/idOnboardingPicturesDocGuideFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingPicturesSelfieGuideFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.docPictures.sendSelfie.IDOnboardingPicturesSelfieGuideFragment"
+        android:label="PicturesSelfieGuideFragment"
+        tools:layout="@layout/fragment_id_onboarding_pictures_selfie_guide">
+
+        <action
+            android:id="@+id/action_idOnboardingPicturesSelfieGuideFragment_to_idOnboardingValidateP2PolicyFragment"
+            app:destination="@id/idOnboardingValidateP2PolicyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/nav_graph_id_onboarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingValidateP2PolicyFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p2Policy.IDOnboardingValidateP2PolicyFragment"
+        android:label="ValidateP2PolicyFragment"
+        tools:layout="@layout/fragment_id_onboarding_validate_p2_policy" >
+        <action
+            android:id="@+id/action_idOnboardingValidateP2PolicyFragment_to_idOnboardingP2ForeignSuccessFragment"
+            app:destination="@id/idOnboardingP2ForeignSuccessFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_idOnboardingValidateP2PolicyFragment_to_idOnboardingP2SuccessFragment"
+            app:destination="@id/idOnboardingP2SuccessFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.onboarding.IDOnboardingFragment"
+        android:label="IDOnboardingFragment"
+        tools:layout="@layout/fragment_id_onboarding">
+
+        <action
+            android:id="@+id/action_idOnboardingFragment_to_idOnboardingP1CompletionStatusFragment"
+            app:destination="@id/idOnboardingP1CompletionStatusFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/idOnboardingFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingP1CompletionStatusFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.onboarding.status.IDOnboardingP1CompletionStatusFragment"
+        android:label="IDOnboardingP1CompletionStatusFragment"
+        tools:layout="@layout/fragment_id_onboarding_p1_completion_status">
+
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingNewCpfFragment"
+            app:destination="@id/idOnboardingNewCpfFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingUpdateCpfFragment"
+            app:destination="@id/idOnboardingUpdateCpfFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingUpdateEmailFragment"
+            app:destination="@id/idOnboardingUpdateEmailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingUpdateEmailValidationFragment"
+            app:destination="@id/idOnboardingUpdateEmailValidationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingUpdatePhoneFragment"
+            app:destination="@id/idOnboardingUpdatePhoneFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingUpdatePhoneValidationFragment"
+            app:destination="@id/idOnboardingUpdatePhoneValidationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingValidateP1PolicyFragment"
+            app:destination="@id/idOnboardingValidateP1PolicyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_idOnboardingP1CompletionStatusFragment_to_idOnboardingUpdateForeignPhoneFragment"
+            app:destination="@id/idOnboardingUpdateForeignPhoneFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingUpdateForeignPhoneFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.userInfo.IDOnboardingUpdateForeignPhoneFragment"
+        android:label="IDOnboardingUpdateForeignPhoneFragment"
+        tools:layout="@layout/fragment_id_onboarding_foreign_phone_update">
+
+        <action
+            android:id="@+id/action_idOnboardingUpdateForeignPhoneFragment_to_idOnboardingValidateP1PolicyFragment"
+            app:destination="@id/idOnboardingValidateP1PolicyFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingP2ForeignSuccessFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p2Policy.IDOnboardingP2ForeignSuccessFragment"
+        android:label="IDOnboardingP2ForeignSuccessFragment"
+        tools:layout="@layout/fragment_id_onboarding_p2_foreign_success">
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingP2SuccessFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p2Policy.IDOnboardingP2SuccessFragment"
+        android:label="IDOnboardingP2ForeignSuccessFragment"
+        tools:layout="@layout/fragment_id_onboarding_p2_success">
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingTechnicalBenefitsFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p1Policy.benefits.technical.IDOnboardingTechnicalBenefitsInfoP1PolicyFragment"
+        android:label="TechnicalBenefitsInfoFragment"
+        tools:layout="@layout/fragment_id_onboarding_technical_access">
+
+        <action
+            android:id="@+id/action_idOnboardingTechnicalBenefitsFragment_to_idOnboardingPicturesLaterFragment"
+            app:destination="@id/idOnboardingPicturesLaterFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingTechnicalBenefitsFragment_to_idOnboardingPicturesSelectDocFragment"
+            app:destination="@id/idOnboardingPicturesSelectDocFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+
+        <action
+            android:id="@+id/action_idOnboardingTechnicalBenefitsFragment_to_idOnboardingPicturesSelfieGuideFragment"
+            app:destination="@id/idOnboardingPicturesSelfieGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/idOnboardingCustomBenefitsFragment"
+        android:name="br.com.mobicare.cielo.idOnboarding.updateUser.p1Policy.benefits.custom.IDOnboardingCustomBenefitsInfoP1PolicyFragment"
+        android:label="CustomBenefitsInfoFragment"
+        tools:layout="@layout/fragment_id_onboarding_custom_access">
+
+        <action
+            android:id="@+id/action_idOnboardingCustomBenefitsFragment_to_idOnboardingPicturesLaterFragment"
+            app:destination="@id/idOnboardingPicturesLaterFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_idOnboardingCustomBenefitsFragment_to_idOnboardingPicturesSelectDocFragment"
+            app:destination="@id/idOnboardingPicturesSelectDocFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+
+        <action
+            android:id="@+id/action_idOnboardingCustomBenefitsFragment_to_idOnboardingPicturesSelfieGuideFragment"
+            app:destination="@id/idOnboardingPicturesSelfieGuideFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToSaveState="false" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="GoogleAppIndexingWarning" severity="ignore" />
+
+    <issue id="InvalidPackage">
+        <ignore path="**/okio*.jar" />
+        <ignore path="**/retrofit*.jar" />
+    </issue>
+
+    <issue id="ButtonStyle" severity="ignore" />
+    <issue id="SmallSp" severity="ignore" />
+    <issue id="RtlHardcoded" severity="ignore" />
+    <issue id="SetJavaScriptEnabled" severity="informational"/>
+    <issue id="IconLocation" severity="informational" />
+    <issue id="UnusedResources" severity="informational"/>
+</lint>

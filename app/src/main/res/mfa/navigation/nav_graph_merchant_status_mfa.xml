@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_merchant_status_mfa"
+    app:startDestination="@id/mfaMerchantStatusRouterFragment">
+
+    <fragment
+        android:id="@+id/mfaMerchantStatusRouterFragment"
+        android:name="br.com.mobicare.cielo.mfa.merchantstatus.MfaMerchantStatusRouterFragment"
+        android:label="MfaMerchantStatusRouterFragment">
+
+        <argument
+            android:name="MERCHANT_STATUS_MFA"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_mfaMerchantStatusRouterFragment_to_merchantValidateChallengeFragment"
+            app:destination="@id/merchantValidateChallengeFragment" />
+
+        <action
+            android:id="@+id/action_mfaMerchantStatusRouterFragment_to_merchantChallengerActivationFragment"
+            app:destination="@id/merchantChallengerActivationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/merchantValidateChallengeFragment"
+        android:name="br.com.mobicare.cielo.mfa.merchantstatus.challenge.MerchantValidateChallengeFragment"
+        android:label="MerchantValidateChallengeFragment"
+        tools:layout="@layout/fragment_selecione_banco_mfa">
+
+        <argument
+            android:name="MERCHANT_STATUS_MFA"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_merchantValidateChallengeFragment_to_faqQuestionsFragment2"
+            app:destination="@id/faqQuestionsFragment" />
+
+        <action
+            android:id="@+id/action_merchantValidateChallengeFragment_to_resumeBankAndCNPJFragment"
+            app:destination="@id/resumeBankAndCNPJFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/merchantChallengerActivationFragment"
+        android:name="br.com.mobicare.cielo.mfa.merchantActivition.MerchantChallengerActivationFragment"
+        android:label="MerchantChallengerActivationFragment"
+        tools:layout="@layout/fragment_put_value_mfa">
+
+        <action
+            android:id="@+id/action_merchantChallengerActivationFragment_to_faqQuestionsFragment2"
+            app:destination="@id/faqQuestionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/faqQuestionsFragment"
+        android:name="br.com.mobicare.cielo.mfa.faq.FaqQuestionsFragment"
+        android:label="FaqQuestionsFragment"
+        tools:layout="@layout/fragment_faq_questions" />
+
+    <fragment
+        android:id="@+id/resumeBankAndCNPJFragment"
+        android:name="br.com.mobicare.cielo.mfa.resume.FragmentResumeBankAndCNPJ"
+        android:label="SelecioneBancoMfaFragment"
+        tools:layout="@layout/fragment_resume_bank_and_cnpj">
+
+        <action
+            android:id="@+id/action_resumeBankAndCNPJFragment_to_centralAjudaPerguntasFragmentMFA"
+            app:destination="@id/faqQuestionsFragment" />
+
+        <argument
+            android:name="ARG_PARAM_MFA_ACCOUNT_CNPJ"
+            app:argType="br.com.mobicare.cielo.mfa.MfaAccount" />
+
+        <argument
+            android:name="ARG_PARAM_MFA_ACCOUNT_ENROLLMENT"
+            app:argType="boolean" />
+
+    </fragment>
+
+</navigation>

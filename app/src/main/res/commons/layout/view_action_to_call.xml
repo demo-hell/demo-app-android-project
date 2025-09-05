@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/linearCallToActionContent"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_marginHorizontal="@dimen/dimen_16dp"
+android:background="@drawable/bg_flui_rounded_border">
+
+<br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+    android:id="@+id/textCallToActionTitle"
+    style="@style/Paragraph_300_Regular_14_Display_500"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    tools:text="Use links para facilitar os pagamentos das suas vendas" />
+
+<br.com.cielo.libflue.button.CieloRegularBlueButton
+    android:id="@+id/buttonCallToAction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_16dp"
+    android:text="@string/text_new_link_payment_button_label" />
+</LinearLayout>

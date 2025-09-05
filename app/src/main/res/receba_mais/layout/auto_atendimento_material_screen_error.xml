@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:visibility="visible"
+    tools:visibility="visible"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageLoanSimulationErrorSmile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_sad_smile"/>
+
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textLoanSimulationErrorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ops! Houve uma falha na comunicação."
+        style="@style/TextPurple12sp900Bold"/>
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextPurple12sp500"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="Você não tem permissão para pedir materias, pedimos descupas."/>
+
+
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_4dp"
+            android:background="@color/blue_00aeef" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingTop="@dimen/dimen_26dp"
+        android:paddingRight="@dimen/dimen_16dp">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_machine_title_confirm_change_data"
+            android:textColor="@color/color_204986"
+            android:textSize="@dimen/dimen_14sp"
+            app:typeface="Museo700-Regular.ttf" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:cardCornerRadius="@dimen/dimen_6dp"
+            app:cardElevation="@dimen/dimen_0dp"
+            app:strokeColor="@color/color_C5CED7"
+            app:strokeWidth="@dimen/dimen_1dp">
+
+            <LinearLayout
+                android:id="@+id/rentSolicitationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_machine_label_request"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:typeface="Museo700-Regular.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_machine_label_machine"
+                            android:textColor="@color/color_5A646E"
+                            android:textSize="@dimen/dimen_12sp"
+                            app:typeface="Museo500-Regular.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/rentMachineNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:textColor="@color/color_231F20"
+                            android:textSize="@dimen/dimen_14sp"
+                            app:typeface="MuseoSans-500.ttf"
+                            tools:text="LIO" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_machine_label_logical_number"
+                            android:textColor="@color/color_5A646E"
+                            android:textSize="@dimen/dimen_12sp"
+                            app:typeface="Museo500-Regular.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/rentLogicalNumberText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:textColor="@color/color_231F20"
+                            android:textSize="@dimen/dimen_14sp"
+                            app:typeface="MuseoSans-500.ttf"
+                            tools:text="XHH193848848" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_machine_label_version_machine"
+                        android:textColor="@color/color_5A646E"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:typeface="Museo500-Regular.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/rentMatchineVersionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:textColor="@color/color_231F20"
+                        android:textSize="@dimen/dimen_14sp"
+                        app:typeface="MuseoSans-500.ttf"
+                        tools:text="8219281739lala" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/purchaseSolicitationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_machine_label_request"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:typeface="Museo700-Regular.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_machine_label_machine"
+                            android:textColor="@color/color_5A646E"
+                            android:textSize="@dimen/dimen_12sp"
+                            app:typeface="Museo500-Regular.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/purchaseMachineNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:textColor="@color/color_231F20"
+                            android:textSize="@dimen/dimen_14sp"
+                            app:typeface="MuseoSans-500.ttf"
+                            tools:text="LIO" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_machine_label_serial_number"
+                            android:textColor="@color/color_5A646E"
+                            android:textSize="@dimen/dimen_12sp"
+                            app:typeface="Museo500-Regular.ttf" />
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/purchaseSerialNumberText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_8dp"
+                            android:textColor="@color/color_231F20"
+                            android:textSize="@dimen/dimen_14sp"
+                            app:typeface="MuseoSans-500.ttf"
+                            tools:text="8219281739lala" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:orientation="vertical">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_machine_label_request_number"
+                        android:textColor="@color/color_5A646E"
+                        android:textSize="@dimen/dimen_12sp"
+                        app:typeface="Museo500-Regular.ttf" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/purchaseOrderNumberText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:textColor="@color/color_231F20"
+                        android:textSize="@dimen/dimen_14sp"
+                        app:typeface="MuseoSans-500.ttf"
+                        tools:text="8219281739lala" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <include
+            android:id="@+id/includeLayoutDeliveryAddress"
+            layout="@layout/layout_endereco_entrega" />
+
+        <include
+            android:id="@+id/includeLayoutContactData"
+            layout="@layout/layout_dados_contato" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coil_text_coil_bobina_unificada">Bobina Unificada</string>
+    <string name="coil_text_coil_bobina_lio">Bobina LIO</string>
+    <string name="coil_text_coil_unified">A bobina utilizada na maioria das maquininhas</string>
+    <string name="coil_text_coil_unified_complement">(Exceto LIO)</string>
+    <string name="coil_text_coil_lio">Bobina sob medida para a solução mais completa para o seu negócio</string>
+    <string name="coil_text_amount_title">A quantidade de bobinas enviadas serão de acordo com o volume de vendas realizadas na máquina Cielo</string>
+
+    <string name="service_title_confirm_request">Confirmar solicitação</string>
+    <string name="service_conclusion_title_description_parcial">Sua solicitação foi concluída parcialmente, veja os itens selecionados</string>
+    <string name="service_conclusion_title_description_fail">Sua solicitação não foi concluida devido a:</string>
+    <string name="service_conclusion_title_description_completo">Sua solicitação foi concluída com sucesso, veja os itens selecionados</string>
+
+    <string name="coil_button_next">Continuar</string>
+    <string name="not_allowed">Quantidade máxima de itens atingida.</string>
+    <string name="not_allowed_quantity">Quantidade máxima de itens atingida. Número máximo de %d ite%s.</string>
+    <string name="invalid_address">Endereço Inválido</string>
+    <string name="request_in_progress">Existe uma solicitação em andamento para o item selecionado.</string>
+    <string name="material_already_requested">Identificamos que já há um chamado de suprimentos aberto para este estabelecimento</string>
+    <string name="no_material_for_place">Solicitação de suprimentos indisponível para os produtos contratados pelo estabelecimento.</string>
+
+    <string name="coils_title">Bobinas</string>
+    <string name="limit_title">Limite máximo de %s</string>
+    <string name="limit_message">Você já adicionou 10 %s ao seu pedido, esse é o número máximo permitido por solicitação.</string>
+    <string name="important_title">Importante!</string>
+    <string name="important_message">O seu pedido será validado de acordo com a sua média de vendas realizadas na máquina Cielo</string>
+
+</resources>

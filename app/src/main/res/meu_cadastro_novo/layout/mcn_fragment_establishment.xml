@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/updateInfoAlertContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/pistachio_200"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/alertText"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_14sp"
+            style="@style/Paragraph_200_regular_12_display_400"
+            android:layout_marginVertical="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_14dp"
+            android:text="@string/update_info_alert_title"/>
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="@dimen/dimen_28dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:padding="@dimen/dimen_4dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dimen_18dp"
+            app:srcCompat="@drawable/ic_symbol_close_brand_400_24_dp"
+            android:contentDescription="@string/meus_recebimentos_dialog_fechar"
+            app:tint="@color/display_400" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateInfoAlertContainer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_man_estabelecimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/container_establishment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/container_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/container_owner_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/container_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/frameProgress_de"
+                layout="@layout/frame_progress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dimen_200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?android:attr/listPreferredItemHeight"
+        android:visibility="gone"
+        app:cieloErrorButtonLabel="@string/text_try_again_label"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorMessage="@string/text_message_generic_error"
+        app:cieloErrorTitle="@string/text_title_generic_error" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/back"
+        android:paddingVertical="@dimen/dimen_16dp"
+        android:paddingStart="@dimen/dimen_21dp"
+        android:paddingEnd="@dimen/dimen_48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/regular_montserrat_20_brand_600_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/id_onboarding_select_digital_doc_title"
+        android:textColor="@color/brand_600"
+        app:layout_constraintTop_toBottomOf="@id/btBackArrow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubtitle"
+        style="@style/regular_ubuntu_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:text="@string/id_onboarding_select_digital_doc_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDocType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/clPhysicalDocument"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/img_rg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPhysicalDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/background_border_blue"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/clDigitalDocument"
+        app:layout_constraintTop_toBottomOf="@id/ivDocType"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPhysicalDocumentIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_credential_doc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPhysicalDocumentTitle"
+            style="@style/regular_ubuntu_16_display_400_spacing_2"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_select_digital_doc_physical_title"
+            app:layout_constraintBottom_toTopOf="@+id/tvPhysicalDocumentDesc"
+            app:layout_constraintEnd_toStartOf="@+id/rbPhysicalDocument"
+            app:layout_constraintStart_toEndOf="@id/ivPhysicalDocumentIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPhysicalDocumentDesc"
+            style="@style/regular_ubuntu_12_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbPhysicalDocument"
+            app:layout_constraintStart_toStartOf="@id/tvPhysicalDocumentTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvPhysicalDocumentTitle"
+            tools:text="RG (Identidade)" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbPhysicalDocument"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:button="@drawable/selector_radio_button"
+            android:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDigitalDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:background="@drawable/rounded_outline_display_200"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/btNext"
+        app:layout_constraintTop_toBottomOf="@id/clPhysicalDocument"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDigitalDocumentIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_credential_doc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDigitalDocumentTitle"
+            style="@style/regular_ubuntu_16_display_400_spacing_2"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/id_onboarding_select_digital_doc_digital_title"
+            app:layout_constraintBottom_toTopOf="@+id/tvDigitalDocumentDesc"
+            app:layout_constraintEnd_toStartOf="@+id/rbDigitalDocument"
+            app:layout_constraintStart_toEndOf="@id/ivDigitalDocumentIcon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDigitalDocumentDesc"
+            style="@style/regular_ubuntu_12_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rbDigitalDocument"
+            app:layout_constraintStart_toStartOf="@id/tvDigitalDocumentTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvDigitalDocumentTitle"
+            tools:text="RG (Identidade)" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbDigitalDocument"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:button="@drawable/selector_radio_button"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btNext"
+        style="@style/regular_montserrat_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/text_next_label"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

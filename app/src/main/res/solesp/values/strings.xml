@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_title_solesp_start">Solicitação de extrato especial</string>
+    <string name="txt_description_solesp_start">Aqui você pode fazer a solicitação do seu extrato ou faturamento contábil de até 5 anos.</string>
+    <string name="txt_description_two_solesp_start">Mais comodidade para você e o seu negócio:</string>
+    <string name="txt_description_item_one_solesp_start">Seus documentos especiais disponíveis em até 2 dias úteis</string>
+    <string name="txt_description_item_two_solesp_start">Preparados para conciliação financeira em Excel</string>
+    <string name="txt_description_item_three_solesp_start">Entregues na caixa de entrada do e-mail que você preferir</string>
+    <string name="txt_button_solesp_start">Iniciar solicitação especial</string>
+
+    <string name="txt_title_solesp_select_type_info">Que tipo de informação você precisa?</string>
+    <string name="txt_description_one_solesp_select_type_info"><![CDATA[O <b>Extrato completo</b> conta com informações de venda, de recebíveis e respectivos depósitos de cada transação.]]></string>
+    <string name="txt_description_two_solesp_select_type_info"><![CDATA[O <b>Faturamento Contábil</b> possui informações de vendas e capturas do seu estabelecimento de forma mais detalhada.]]></string>
+    <string name="txt_option_full_statement_solesp_select_type_info">Extrato completo</string>
+    <string name="txt_option_accounting_invoicing_solesp_select_type_info">Faturamento contábil</string>
+
+    <string name="txt_title_solesp_select_period">Qual período você gostaria de solicitar?</string>
+    <string name="txt_description_solesp_select_period">É possível fazer a solicitação do seu extrato ou faturamento contábil de até 5 anos.</string>
+    <string name="txt_subtitle_solesp_select_period">Períodos rápidos pré-definidos</string>
+    <string name="txt_subtitle_define_date_solesp_select_period">Defina o período</string>
+    <string name="txt_option_last_year_solesp_select_period">Ano passado</string>
+    <string name="txt_option_last_two_years_solesp_select_period">Últimos 2 anos</string>
+    <string name="txt_option_last_four_years_solesp_select_period">Últimos 4 anos</string>
+    <string name="txt_option_last_five_years_solesp_select_period">Últimos 5 anos</string>
+    <string name="description_check_checked_solesp_select_period">%s, selecionado</string>
+    <string name="description_check_unchecked_solesp_select_period">%s, não selecionado</string>
+
+    <string name="txt_title_solesp_info_send">Quais são as informações para envio?</string>
+    <string name="txt_title_info_section_solesp_info_send">Informações da sua sessão</string>
+    <string name="txt_title_contact_section_solesp_info_send">Informações de contato</string>
+    <string name="txt_label_number_ec_solesp_info_send">Número de EC</string>
+    <string name="txt_label_name_solesp_info_send">Nome do solicitante</string>
+    <string name="txt_information_solesp_info_send">Caso precise alterar as informações, busque um novo estabelecimento ou acesse “Meu cadastro”.</string>
+    <string name="txt_hint_input_email_solesp_info_send">Digite o e-mail de envio</string>
+    <string name="txt_hint_input_number_phone_solesp_info_send">Digite seu telefone</string>
+    <string name="txt_error_input_email_solesp_info_send">E-mail inválido. Revise o e-mail digitado.</string>
+    <string name="txt_error_input_number_phone_solesp_info_send">Telefone inválido. Revise o telefone digitado.</string>
+
+    <string name="txt_loading_solesp_send_request">Enviando solicitação</string>
+    <string name="txt_title_error_bottom_sheet_solesp_send_request">Tivemos um problema para concluir a sua solicitação</string>
+    <string name="txt_message_error_bottom_sheet_solesp_send_request">Ops! No momento, este serviço não está disponível. Por favor, tente novamente mais tarde.</string>
+    <string name="txt_title_success_bottom_sheet_solesp_send_request">Sua solicitação de extrato especial foi enviada com sucesso!</string>
+    <string name="txt_message_success_bottom_sheet_solesp_send_request"><![CDATA[Fique atento à sua caixa de entrada ou lixo eletrônico no e-mail pois enviamos uma confirmação para você e em <b>até 2 dias úteis</b> você deve receber também o documento com o período solicitado no mesmo e-mail!]]></string>
+
+</resources>

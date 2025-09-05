@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tax_title">Taxas</string>
+    <string name="incoming_now_tab">Receba na hora</string>
+    <string name="incoming_current_tax">Taxa atual</string>
+    <string name="incomint_fast_cancellation_reason_title">Antes de cancelar, infome o motivo do cancelamento</string>
+    <string name="incomint_fast_cancellation_reason_info">
+        <![CDATA[Suas taxas e prazo de recebimento serão alteradas em até <b>1 dia útil.</b>
+        ]]>
+    </string>
+    <string name="incomint_fast_cancellation_reason_text1">O prazo de recebimento em 30 dias já é adequado</string>
+    <string name="incomint_fast_cancellation_reason_text2">Preço acima do esperado</string>
+    <string name="incomint_fast_cancellation_reason_text3">O desempenho do produto ficou abaixo das expectativas</string>
+    <string name="incomint_fast_cancellation_reason_text4">Já possuo outras formas para receber em prazo mais curto</string>
+    <string name="incomint_fast_cancellation_requested_title">Cancelamento solicitado</string>
+    <string name="incomint_fast_cancellation_comparation_title">Cancelamento do Recebimento Automático</string>
+    <string name="incomint_fast_cancellation_comparation_info">Deseja cancelar e voltar ao prazo de 30 dias de recebimento?</string>
+    <string name="incomint_fast_cancellation_requested_info">Sua solicitação foi enviada com sucesso. Suas taxas e prazo de recebimento serão alteradas em até<b><font color='black'> 1 dia útil.</font></b></string>
+    <string name="incomint_fast_cancellation_requested_deadline_title">Você receberá suas vendas em:</string>
+    <string name="incomint_fast_cancellation_requested_bottom">Você poderá contratar o Recebimento Automático novamente a qualquer momento</string>
+    <string name="incomint_fast_cancellation_subtitle_item">De acordo com o valor de parcelas</string>
+    <string name="incomint_fast_cancellation_finish_button">Finalizar</string>
+    <string name="incomint_fast_cancellation_back_button">Voltar</string>
+    <string name="incomint_fast_cancellation_done_button">Concluir</string>
+    <string name="incomint_fast_cancellation_yes_cancel">Sim, desejo cancelar</string>
+    <string name="incomint_fast_cancellation_keep_rr">Manter o Recebimento</string>
+    <string name="incomint_fast_cancellation_with_rr_title">Com Recebimento Automático</string>
+    <string name="incomint_fast_cancellation_without_rr_title">Sem Recebimento Automático</string>
+
+    <string name="txt_taxas_bandeira">Ver taxas por bandeira</string>
+</resources>

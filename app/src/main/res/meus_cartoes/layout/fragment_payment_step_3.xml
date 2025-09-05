@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/txtTitle"
+        style="@style/TextBlack24spTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:maxWidth="295dp"
+        android:text="@string/txt_title_step_3"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:theme="@style/TextInputHintPrepago"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/textInputValue"
+            style="@style/TextInputEditPrepago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape_bank_account"
+            android:hint="@string/edt_value_step_3"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="numberDecimal"
+            android:digits="1234567890.,"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:typeface="MuseoSans-500.ttf" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:theme="@style/TextInputHintPrepago"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValue"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/textInputDiscount"
+            style="@style/TextInputEditPrepago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape_bank_account"
+            android:hint="@string/edt_discount_step_3"
+            android:digits="1234567890.,"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:typeface="MuseoSans-500.ttf" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtDatePaymento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:theme="@style/TextInputHintPrepago"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiscount"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/textInputEditInterestTax"
+            style="@style/TextInputEditPrepago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape_bank_account"
+            android:hint="@string/edt_date_paymento_step_3"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:digits="1234567890.,"
+            android:importantForAutofill="noExcludeDescendants"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:typeface="MuseoSans-500.ttf" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPersonOrCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:theme="@style/TextInputHintPrepago"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatePaymento"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+            android:id="@+id/textInputPersonOrCompany"
+            style="@style/TextInputEditPrepago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_shape_bank_account"
+            android:hint="@string/edt_person_or_company_step_3"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="text"
+            android:maxLength="60"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:typeface="MuseoSans-500.ttf" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/buttonPaymentDetailNext"
+        style="@style/ButtonShapedPurpleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:enabled="false"
+        android:visibility="visible"
+        app:fb_text="@string/btn_my_cards_step2_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPersonOrCompany"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/frameTransferProgressP"
+        layout="@layout/frame_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPersonOrCompany"
+        app:layout_constraintVertical_bias="1.0"
+
+        />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>

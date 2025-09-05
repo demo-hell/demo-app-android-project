@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_chargeback.xml"
+    app:startDestination="@id/chargebackInitFragment">
+
+    <fragment
+        android:id="@+id/chargebackInitFragment"
+        android:name="br.com.mobicare.cielo.chargeback.presentation.home.ChargebackHomeFragment"
+        android:label="ChargebackInitFragment"
+        tools:layout="@layout/fragment_chargeback_home">
+
+        <argument
+            android:name="IS_SHOW_TREATED_ARGS"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_chargebackInitFragment_to_chargebackPendingDetailsFragment"
+            app:destination="@id/chargebackPendingDetailsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_chargebackInitFragment_to_chargebackDoneDetailsFragment"
+            app:destination="@id/chargebackDoneDetailsFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chargebackPendingDetailsFragment"
+        android:name="br.com.mobicare.cielo.chargeback.presentation.details.ui.ChargebackPendingDetailsFragment"
+        android:label="ChargebackPendingDetailsFragment"
+        tools:layout="@layout/fragment_chargeback_pending_details" >
+
+        <argument
+            android:name="chargeback"
+            app:argType="br.com.mobicare.cielo.chargeback.domain.model.Chargeback" />
+
+        <action
+            android:id="@+id/action_chargebackPendingDetailsFragment_to_chargebackRefuseFragment"
+            app:destination="@id/chargebackRefuseFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_chargebackPendingDetailsFragment_to_chargebackDocumentSenderFragment"
+            app:destination="@id/chargebackDocumentSenderFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            />
+
+        <action
+            android:id="@+id/action_chargebackPendingDetailsFragment_to_chargebackInitFragment"
+            app:destination="@id/chargebackInitFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/chargebackPendingDetailsFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chargebackDoneDetailsFragment"
+        android:name="br.com.mobicare.cielo.chargeback.presentation.details.ui.ChargebackDoneDetailsFragment"
+        android:label="ChargebackDoneDetailsFragment"
+        tools:layout="@layout/fragment_chargeback_done_details" >
+
+        <argument
+            android:name="chargeback"
+            app:argType="br.com.mobicare.cielo.chargeback.domain.model.Chargeback" />
+
+        <action
+            android:id="@+id/action_chargebackDoneDetailsFragment_to_chargebackDocumentViewFragment"
+            app:destination="@id/chargebackDocumentViewFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_chargebackDoneDetailsFragment_to_chargebackDocumentSenderFragment"
+            app:destination="@id/chargebackDocumentSenderFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chargebackDocumentViewFragment"
+        android:name="br.com.mobicare.cielo.chargeback.presentation.details.ui.ChargebackDocumentViewFragment"
+        android:label="ChargebackDocumentViewFragment"
+        tools:layout="@layout/fragment_chargeback_document_view" >
+
+        <argument
+            android:name="chargeback"
+            app:argType="br.com.mobicare.cielo.chargeback.domain.model.Chargeback" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chargebackRefuseFragment"
+        android:name="br.com.mobicare.cielo.chargeback.presentation.refuse.ChargebackRefuseFragment"
+        android:label="ChargebackRefuseFragment"
+        tools:layout="@layout/fragment_chargeback_refuse">
+
+        <argument
+            android:name="chargeback"
+            app:argType="br.com.mobicare.cielo.chargeback.domain.model.Chargeback" />
+
+        <action
+            android:id="@+id/action_chargebackRefuseFragment_to_chargebackInitFragment"
+            app:destination="@id/chargebackInitFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/chargebackRefuseFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/chargebackDocumentSenderFragment"
+        android:name="br.com.mobicare.cielo.chargeback.presentation.details.ui.ChargebackDocumentSenderFragment"
+        android:label="@layout/fragment_chargeback_document_sender" >
+
+        <argument
+            android:name="chargeback"
+            app:argType="br.com.mobicare.cielo.chargeback.domain.model.Chargeback" />
+    </fragment>
+
+</navigation>

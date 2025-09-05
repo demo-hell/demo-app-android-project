@@ -1,0 +1,20 @@
+<resources>
+
+  <!--   Base application theme.
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
+
+    <style name="progressStyleCircle" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert"></style>
+
+</resources>

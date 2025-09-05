@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_open_finance"
+    app:startDestination="@id/openFinanceHomeFragment">
+    <fragment
+        android:id="@+id/openFinanceHomeFragment"
+        android:name="br.com.mobicare.cielo.openFinance.presentation.home.OpenFinanceHomeFragment"
+        android:label="OpenFinanceHomeFragment"
+        tools:layout="@layout/fragment_open_finance_home">
+        <action
+            android:id="@+id/action_openFinanceHomeFragment_to_resumePaymentHolderFragment"
+            app:destination="@id/resumePaymentHolderFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/resumePaymentHolderFragment"
+        android:name="br.com.mobicare.cielo.openFinance.presentation.resume.ResumePaymentHolderFragment"
+        android:label="ResumePaymentHolderFragment"
+        tools:layout="@layout/fragment_resume_holder">
+        <action
+            android:id="@+id/action_resumePaymentHolderFragment_to_openFinanceHomeFragment"
+            app:destination="@id/openFinanceHomeFragment" />
+    </fragment>
+</navigation>

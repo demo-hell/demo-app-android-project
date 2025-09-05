@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_300dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_drag_bottom_sheet"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_weight="4.8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_welcome_notification"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelSku"
+                    style="@style/Heading_400_Bold_16_display_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_18dp"
+                    android:text="@string/text_input_code_sku"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/inputSku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionDone"
+                    android:maxLength="60"
+                    android:maxLines="1"
+                    app:hint="@string/text_input_code_sku"
+                    app:layout_constraintTop_toBottomOf="@+id/labelSku" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewIntallmentsTitles"
+                    style="@style/Heading_400_Bold_16_display_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:text="@string/text_label_quantity"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputSku" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cardViewIntallmentsTitles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_flui_rounded_border"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewIntallmentsTitles" >
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_arrow_down_tax" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinnerInstallments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/dimen_8dp"
+                        android:paddingVertical="@dimen/dimen_16dp"
+                        android:spinnerMode="dropdown"
+                        android:background="@android:color/transparent"
+                        android:prompt="@string/btn_continuar"
+                        android:entries="@array/pagamento_link_installments_options_array"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelDateExp"
+                    style="@style/Heading_400_Bold_16_display_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_18dp"
+                    android:text="@string/text_label_data_exp"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardViewIntallmentsTitles" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/inputDateExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_flui_rounded_border"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/labelDateExp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_date_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/dimen_8dp"
+                        android:paddingVertical="@dimen/dimen_16dp"
+                        android:gravity="center_vertical"
+                        style="@style/Paragraph_400_Regular_16_display_400"
+                        android:hint="@string/text_input_data_exp"
+                        android:drawableEnd="@drawable/ic_calendar" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelDescClient"
+                    style="@style/Heading_400_Bold_16_display_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_18dp"
+                    android:text="@string/text_label_desc_client"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputDateExp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelSubDescClient"
+                    style="@style/Paragraph_400_regular_16_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:text="@string/text_label_subdesc_client"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/labelDescClient" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/inputDescClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    app:hint="@string/text_label_desc"
+                    app:layout_constraintTop_toBottomOf="@+id/labelSubDescClient" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelPaymentLimits"
+                    style="@style/Heading_400_Bold_16_display_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_18dp"
+                    android:text="@string/text_label_quantity_request"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputDescClient" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/labelSubPaymentLimits"
+                    style="@style/Paragraph_400_regular_16_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:text="@string/text_label_sub_payment_limit"
+                    app:layout_constraintTop_toBottomOf="@+id/labelPaymentLimits" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/inputPaymentLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_16dp"
+                    android:ellipsize="end"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    app:hint="@string/text_label_quantity_request_hint"
+                    app:layout_constraintTop_toBottomOf="@+id/labelSubPaymentLimits" />
+
+                <br.com.cielo.libflue.button.CieloRegularBlueButton
+                    android:id="@+id/btContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dimen_24dp"
+                    android:layout_marginHorizontal="@dimen/dimen_16dp"
+                    android:text="@string/btn_continuar"
+                    app:layout_constraintTop_toBottomOf="@+id/inputPaymentLimit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

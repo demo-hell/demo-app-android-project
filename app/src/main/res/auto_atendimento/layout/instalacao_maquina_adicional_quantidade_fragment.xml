@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/machineImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginTop="41dp"
+        />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/machineNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cielo LIO"
+        android:textColor="@color/black_233038"
+        android:textSize="24sp"
+        app:typeface="Museo300-Regular.ttf"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/rentalAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="R$ 170,70"
+            android:textColor="@color/color_00AFF0"
+            android:textSize="32sp"
+            app:typeface="Museo700-Regular.ttf"
+            />
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/mês"
+            android:textColor="@color/color_00AFF0"
+            android:textSize="24sp"
+            app:typeface="MuseoSans-500.ttf"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="por equipamento"
+        android:textColor="@color/color_00AFF0"
+        android:textSize="16sp"
+        app:typeface="MuseoSans-500.ttf"
+        />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quantidade"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:typeface="Museo500-Regular.ttf"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/minusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/selector_minus_button_state" />
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/amountText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            app:typeface="Museo700-Regular.ttf"
+            />
+
+        <ImageView
+            android:id="@+id/plusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/selector_plus_button_state" />
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/spaceView"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/notificationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:typeface="MuseoSans-500.ttf"
+        tools:text="* Caso já possua o plano Cielo Controle ou Livre, para equipamento adicional será cobrado o valor padrão do aluguel."
+        />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/viewIndicateClose"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/ic_drag_bottom_sheet"
+            android:backgroundTint="@color/green_43B977" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_date_negociation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="24/09/2021"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="16sp" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_type_negociation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="Mercado"
+                    android:textColor="@color/grey_8A99A8"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="match_parent">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/tv_value_negociation"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="R$ 150,00"
+                    android:layout_marginEnd="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:textColor="@color/blue_017CEB"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="22dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:background="@color/grey_EAEEF3"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

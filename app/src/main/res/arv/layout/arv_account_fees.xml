@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/highlightBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@drawable/background_cloud_50_8dp_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/highlightBackground"
+        app:layout_constraintTop_toTopOf="@id/highlightBackground"
+        tools:visibility="gone">
+
+        <include layout="@layout/loading_shimmer_arv_account_fees" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHighlightTitle"
+        style="@style/bold_ubuntu_12_brand_600_spacing_6"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/arv_highlights_period_flow"
+        app:layout_constraintEnd_toEndOf="@id/highlightBackground"
+        app:layout_constraintStart_toStartOf="@id/highlightBackground"
+        app:layout_constraintTop_toTopOf="@id/highlightBackground" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGrossValueLabel"
+        style="@style/Paragraph_300_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/arv_total_gross_value"
+        app:layout_constraintEnd_toEndOf="@id/highlightBackground"
+        app:layout_constraintStart_toStartOf="@id/highlightBackground"
+        app:layout_constraintTop_toBottomOf="@id/tvHighlightTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGrossValue"
+        style="@style/bold_ubuntu_20_cloud_400_spacing_7"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        app:layout_constraintEnd_toEndOf="@id/highlightBackground"
+        app:layout_constraintStart_toStartOf="@id/highlightBackground"
+        app:layout_constraintTop_toBottomOf="@id/tvGrossValueLabel"
+        tools:text="R$ 652.883,57" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFees"
+        style="@style/regular_ubuntu_12_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintEnd_toEndOf="@id/highlightBackground"
+        app:layout_constraintStart_toStartOf="@id/highlightBackground"
+        app:layout_constraintTop_toBottomOf="@id/tvGrossValue"
+        tools:text="Taxa efetiva (8,10%) e nominal (1,35% a.m.)" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDiscountTotal"
+        style="@style/regular_ubuntu_12_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        app:layout_constraintEnd_toEndOf="@id/highlightBackground"
+        app:layout_constraintStart_toStartOf="@id/highlightBackground"
+        app:layout_constraintTop_toBottomOf="@id/tvFees"
+        tools:text="Total de desconto: – R$ 52.883,57" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNetValueLabel"
+        style="@style/regular_ubuntu_14_success_400_spacing_6"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/arv_total_net_to_receive"
+        app:layout_constraintEnd_toEndOf="@id/highlightBackground"
+        app:layout_constraintStart_toStartOf="@id/highlightBackground"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscountTotal" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonBrandsList"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintEnd_toEndOf="@+id/highlightBackground"
+        app:layout_constraintStart_toStartOf="@id/highlightBackground"
+        app:layout_constraintTop_toBottomOf="@id/tvNetValueLabel">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNetValue"
+            style="@style/bold_ubuntu_32_success_400_spacing_16"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:drawableTint="@color/success_400"
+            android:gravity="start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="R$ 652.883,57" />
+
+        <View
+            android:id="@+id/barView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNetValue" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSelectionLabel"
+            style="@style/semi_bold_montserrat_14"
+            android:textColor="@color/neutral_dark"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/arv_selection_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barView1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSelection"
+            style="@style/medium_montserrat_14"
+            android:textColor="@color/neutral_main"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            tools:text="Rede, Safra e Getnet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSelectionLabel" />
+
+        <View
+            android:id="@+id/barView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:visibility="gone"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSelection" />
+
+        <Button
+            android:id="@+id/tvEditBrands"
+            style="@style/label_16_display_400_montserrat_semi_bold"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dimen_48dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:background="@color/transparent"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:drawableTint="@color/brand_400"
+            android:gravity="start|center_vertical"
+            android:text="@string/arv_edit"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/accountFeeContentGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids=" tvHighlightTitle , tvGrossValueLabel, tvGrossValue, tvFees, tvDiscountTotal, tvNetValueLabel,
+    buttonBrandsList"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

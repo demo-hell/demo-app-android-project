@@ -1,0 +1,26 @@
+package br.com.mobicare.cielo.pixMVVM.data.model.response
+
+data class PixSchedulingDetailResponse(
+    val idAccount: Int? = null,
+    val idEndToEnd: String? = null,
+    val payeeName: String? = null,
+    val payeeDocumentNumber: String? = null,
+    val payeeBankName: String? = null,
+    val finalAmount: Double? = null,
+    val message: String? = null,
+    val transactionType: String? = null,
+    val schedulingCreationDate: String? = null,
+    val schedulingCancellationDate: String? = null,
+    val schedulingDate: String? = null,
+    val scheduledEndDate: String? = null,
+    val schedulingCode: String? = null,
+    val merchantNumber: String? = null,
+    val documentNumber: String? = null,
+    val totalScheduled: Int? = null,
+    val totalScheduledProcessed: Int? = null,
+    val totalScheduledErrors: Int? = null,
+    val frequencyTime: String? = null,
+    val status: String? = null,
+    val type: String? = null,
+    val enable: PixEnableResponse? = null,
+)

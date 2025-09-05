@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:id="@+id/gridLayoutButtonHomeAction"
+        android:layout_marginLeft="@dimen/dimen_0dp"
+        android:layout_marginRight="@dimen/dimen_0dp"
+        style="@style/grid">
+
+        <br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView
+            android:id="@+id/cardButtonHomeAction"
+            style="@style/card_servico">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical">
+
+                <LinearLayout style="@style/card_servico_layout">
+
+                    <ImageView
+                        android:id="@+id/imageHomeActionButtonIcon"
+                        style="@style/card_servico_icon"
+                        app:srcCompat="@drawable/ic_menu_vendas" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/buttonActionHomeTextLabel"
+                        style="@style/card_servico_label"
+                        android:text="@string/home_servicos_minhas_vendas" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </br.com.mobicare.cielo.home.presentation.servicos.ui.fragment.CustomCardView>
+    </GridLayout>
+
+</merge>

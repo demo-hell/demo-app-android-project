@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitlePermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/bold_montserrat_16_cloud_400"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvDetailPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/regular_montserrat_16_cloud_400_spacing_4"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_weight="1"
+        android:text="TextView" />
+</LinearLayout>

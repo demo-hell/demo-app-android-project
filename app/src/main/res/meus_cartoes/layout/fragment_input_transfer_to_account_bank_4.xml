@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="17dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textDetailTitleFirst"
+                style="@style/TextBlack24spTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="295dp"
+                android:text="@string/text_my_cards_detail_title"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textDetailTitleSecValue"
+                    style="@style/TextBlack24spTitleValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="295dp"
+                    android:text="@string/text_my_cards_detail_value"
+                    tools:ignore="MissingConstraints" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textDetailTitleSecText"
+                    style="@style/TextBlack24spTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:maxWidth="295dp"
+                    android:text="@string/text_my_cards_detail_title_2"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textDetailUser"
+            style="@style/TextBlack18spTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+
+            android:text="@string/text_my_cards_detail_client"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_title"
+            tools:ignore="MissingConstraints" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/typefaceTextView3"
+            style="@style/TextGrey14spBanck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_detail_cpf_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDetailUser" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textDetailCpforCnpj"
+            style="@style/TextGrey14spBanckBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_detail_cpf_value"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/typefaceTextView3"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toEndOf="@+id/typefaceTextView3"
+            app:layout_constraintTop_toTopOf="@+id/typefaceTextView3"
+            tools:ignore="MissingConstraints" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/typefaceTextView4"
+            style="@style/TextGrey14spBanck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_detail_agencia_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typefaceTextView3" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textDetailAg"
+            style="@style/TextGrey14spBanckBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:paddingLeft="2dp"
+            android:text="@string/text_my_cards_detail_agencia_value"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/typefaceTextView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/typefaceTextView4"
+            app:layout_constraintTop_toTopOf="@+id/typefaceTextView4"
+            tools:ignore="MissingConstraints" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/typefaceTextView5"
+            style="@style/TextGrey14spBanck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_detail_account_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typefaceTextView4" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textDetailACount"
+            style="@style/TextGrey14spBanckBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:paddingLeft="2dp"
+            android:text="@string/text_my_cards_detail_account_value"
+            app:layout_constraintBottom_toBottomOf="@+id/typefaceTextView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/typefaceTextView5"
+            app:layout_constraintTop_toTopOf="@+id/typefaceTextView5"
+            tools:ignore="MissingConstraints" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/typefaceTextView6"
+            style="@style/TextGrey14spBanck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_detail_bank_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typefaceTextView5" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textDetailBank"
+            style="@style/TextGrey14spBanckBold"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:paddingLeft="2dp"
+            android:text="@string/text_my_cards_detail_bank_value"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/typefaceTextView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/typefaceTextView6"
+            app:layout_constraintTop_toTopOf="@+id/typefaceTextView6"
+            tools:ignore="MissingConstraints" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/typefaceTextView7"
+            style="@style/TextGrey14spBanck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_detail_type_account_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typefaceTextView6" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textDetailTypeAcount"
+            style="@style/TextGrey14spBanckBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:paddingLeft="2dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/typefaceTextView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/typefaceTextView7"
+            app:layout_constraintTop_toTopOf="@+id/typefaceTextView7"
+            tools:ignore="MissingConstraints" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/typefaceTextView8"
+            style="@style/TextGrey14spBanck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:text="@string/text_my_cards_detail_date_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typefaceTextView7" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textDetailDate"
+            style="@style/TextGrey14spBanckBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:maxWidth="295dp"
+            android:paddingLeft="2dp"
+            android:text="@string/text_my_cards_detail_date_value"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/typefaceTextView8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/typefaceTextView8"
+            app:layout_constraintTop_toTopOf="@+id/typefaceTextView8"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="72dp"
+                android:layout_weight="0.1"
+                android:background="#f4f4f4"
+                app:srcCompat="@drawable/line" />
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.9"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_cifrao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cifrao" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/text_boss_one_title"
+                        style="@style/TextBlackAcountBoss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        tools:text="@string/text_my_cards_detail_box_title" />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/text_boss_one_subtitle"
+                        style="@style/TextBlack11spNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_my_cards_detail_box_subtitle" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="72dp"
+                android:layout_weight="0.1"
+                android:background="#f4f4f4"
+                app:srcCompat="@drawable/line" />
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.9"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/clock1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+
+
+                        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                            android:id="@+id/text_my_cards_detail_box2_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/text_my_cards_detail_box2_title_1" />
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonBankNext"
+            style="@style/ButtonShapedPurpleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="43dp"
+            android:padding="15dp"
+            app:fb_text="@string/btn_my_cards_step4_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.28"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_white_rounded_borders">
+
+    <br.com.mobicare.cielo.commons.ui.widget.ClosableFullscrenDialog
+        android:id="@+id/closableFullScreenDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <include android:id="@+id/layout_rating" layout="@layout/layout_ratingbar"></include>
+
+            <include android:id="@+id/layout_sorry" android:visibility="gone" layout="@layout/layout_sorry_rating"></include>
+
+
+    </br.com.mobicare.cielo.commons.ui.widget.ClosableFullscrenDialog>
+
+</FrameLayout>

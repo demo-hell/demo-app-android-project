@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="conciliador_title_taxas">Taxas e Auditoria</string>
+    <string name="title_onboarding_items">Olá!\nEsse é o Cielo Unifica</string>
+    <string name="subtitle_onboarding_items">A solução que simplifica a gestão financeira do seu negócio! <b><font color='#000000'>Tudo gratuito e em um único lugar!</font></b></string>
+    <string name="text_view_sales_detail_item_sales_value">Valor da venda</string>
+    <string name="tv_mtv_debito">Débito</string>
+    <string name="alert_error_date_title">Atenção</string>
+    <string name="cielo_facilita_central_de_ajuda_pix">Pix</string>
+
+    <string name="screen_authorize_cielo_facilita_confirmation_alert_title">Concluir solicitação</string>
+    <string name="screen_authorize_cielo_facilita_confirmation_alert_body">As informações que foram preenchidas serão verificadas junto à sua adquirente.\nVocê confirma a solicitação?</string>
+    <string name="screen_authorize_cielo_facilita_confirmation_alert_btn_confirm">Concluir</string>
+
+    <string name="button_bottom_sheet_error_webview">Tentar novamente</string>
+    <string name="tv_mtv_credito_parcelado">Crédito parcelado</string>
+</resources>

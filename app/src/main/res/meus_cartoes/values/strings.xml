@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="text_card_activation_description">Sua documentação foi validada e falta apenas confirmar o número de série do seu cartão.\n\nClique para começar.</string>
+    <string name="text_card_fwd_account">Você será direcionado para o Site da Cielo. Faça o seu login e acesse a opção Meu Cartão.\n\nClique abaixo para acessar.</string>
+    <string name="text_card_fwd_site">Acessar o Site</string>
+    <string name="text_card_check_account">Verificar conta</string>
+    <string name="text_card_problem_account">Enviar novamente</string>
+    <string name="text_card_unlock_label">Desbloquear cartão</string>
+    <string name="text_first_back_card_activation_title">Ativação de cartão</string>
+    <string name="text_first_back_card_activation_description">Digite o número de série que está no verso do cartão, na parte inferior.</string>
+    <string name="text_card_activation_success_title">Cartão desbloqueado com sucesso!</string>
+    <string name="text_card_activation_success_description">Seu cartão já está ativo. Agora você já pode começar a comprar!</string>
+    <string name="text_wrong_activation_number">Ativação de cartão</string>
+    <string name="text_wrong_activation_number_message">Número de série inválido. Por favor tente novamente.</string>
+    <string name="text_card_error_fwd_account_title">Não foi possível validar a sua conta.</string>
+    <string name="text_card_error_fwd_account">Por favor, entre em contato com o Chat ou ligue para a Central de Atendimento.</string>
+    <string name="text_card_error_fwd_account_msg">Para realizar a recuperação da sua senha,\npor favor entre em contato com a nossa \nCentral de Atendimento pelos telefones:\n\n4002 5472 (todas as localidades) ou\n\n0800 570 8472 (exceto capitais)</string>
+    <string name="text_card_error_fwd_account_tel1_msg">4002 5472</string>
+    <string name="text_card_error_fwd_account_tel2_msg">0800 570 8472</string>
+
+    <string name="text_my_cards_access_the_chat">Acesse o Chat</string>
+    <string name="text_my_cards_call_phone">Ligar para Central de Relacionamento</string>
+    <string name="text_my_cards_call_phone_number">40025472</string>
+    <string name="text_photo_decription_title">Nos envie uma foto ou\nimagem dos seus\ndocumentos.</string>
+
+    <string name="text_card_photo_decription">Precisamos de uma foto do seu RG ou CNH, frente e verso, para completar\na validação do seu cadastro.\n\nFique tranquilo! Sua documentação será usada apenas para verificarmos a sua conta.</string>
+    <string name="text_card_take_picture">Tirar foto</string>
+
+    <string name="text_card_photo_confirm">Confirme as imagens abaixo.</string>
+    <string name="text_card_photo_confirm_descriptiion">Clique em enviar ou retorne para a tela anterior para tirar novas fotos.</string>
+
+    <string name="text_card_photo_confirm_front">Frente</string>
+    <string name="text_card_photo_confirm_verse">Verso</string>
+    <string name="button_card_photo_confirm_send">Enviar fotos</string>
+
+    <string name="text_card_processing_warning">Aguardando validação dos documentos</string>
+    <string name="text_message_documentation_send">Documentação enviada!\nEstamos analisando.</string>
+    <string name="text_card_document_sent_success_title">Documentação enviada com sucesso!</string>
+    <string name="text_card_document_sent_success_description">Seus documentos estão sendo analisados. Não se preocupe! Esse processo será concluído em até dois dias úteis.</string>
+    <string name="text_card_document_sent_success_button">Começar a usar</string>
+
+    <string name="text_card_document_read_problem_description">Por favor, envie suas fotos novamente.</string>
+
+    <string name="text_card_document_check_account_description">Não se preocupe! O processo para fazer a sua regularização é rápido e fácil.\n\nClique para começar!</string>
+
+    <string name="title_error_wifi_title">Erro de Conexão</string>
+    <string name="title_error_wifi_subtitle">Por favor, verifique a conexão com a internet e tente novamente.</string>
+
+    <string name="text_bank_account_title">Preencha os dados da\nconta que receberá a\ntransferência</string>
+    <string name="text_agency_number_hint">Agência (sem dígito)</string>
+    <string name="text_account_hint">Conta</string>
+
+    <string name="text_account_digit">Dígito</string>
+    <string name="text_savings_account_type_label">Conta Poupança</string>
+    <string name="text_checking_account_type_label">Conta Corrente</string>
+
+    <string name="text_transfer_error_title">Erro na transferência</string>
+    <string name="text_payment_error_title" tools:ignore="ExtraTranslation">Erro no pagamento</string>
+
+    <string name="text_bank_account_input_next_button_label">Próximo</string>
+
+    <!-- step 2 -->
+    <string name="text_my_cards_pg_title">Dê uma identificação para \nesta transferência</string>
+    <string name="text_my_cards_ed_name">Nome completo da pessoa ou empresa</string>
+    <string name="text_my_cards_ed_cpf_cnpj">CPF ou CNPJ</string>
+    <string name="text_my_cards_ed_description">Descrição (opcional)</string>
+    <string name="btn_my_cards_step2_next">Próximo</string>
+
+    <!-- step 3 -->
+
+    <string name="text_my_cards_title_3">Digite o Valor:</string>
+    <string name="text_my_cards_cifrao">R$</string>
+    <string name="text_my_cards_value">0,00</string>
+    <string name="text_my_cards_card_final">Cartão final</string>
+    <string name="text_my_cards_card_final_min_value_error">O valor mínimo para uma transferência é R$ 10,00</string>
+    <string name="text_my_cards_number_final">6437</string>
+    <string name="text_my_cards_balance_available">Saldo dísponivel: </string>
+    <string name="text_my_cards_balance_available_value">R$6.000,00</string>
+
+
+    <!--step 4-->
+    <string name="text_my_cards_detail_title">Você está transferindo</string>
+    <string name="text_my_cards_detail_client">Carlos Roberto Silva</string>
+    <string name="text_my_cards_detail_value">R$ 100,00</string>
+    <string name="text_my_cards_detail_title_2">para:</string>
+    <string name="text_my_cards_detail_cpf_label">CPF:</string>
+    <string name="text_my_cards_detail_cpf_value"> 722.573.692-20</string>
+    <string name="text_my_cards_detail_agencia_label">Agência:</string>
+    <string name="text_my_cards_detail_agencia_value"> 8271</string>
+    <string name="text_my_cards_detail_account_label">Conta:</string>
+    <string name="text_my_cards_detail_account_value"> 244355</string>
+    <string name="text_my_cards_detail_bank_label">Banco:</string>
+    <string name="text_my_cards_detail_bank_value"> 237 - Banco Bradesco S.A</string>
+    <string name="text_my_cards_detail_type_account_label">Tipo de conta:</string>
+    <string name="text_my_cards_detail_type_account_value"> Corrente</string>
+    <string name="text_my_cards_detail_date_label">Data:</string>
+    <string name="text_my_cards_detail_date_value"> 16/10/2018</string>
+
+    <string name="text_my_cards_detail_box_title">Essa operação tem uma tarifa de %1$s</string>
+    <string name="text_my_cards_detail_box_subtitle">Ao continuar, você estará aceitando \no desconto do valor da tarifa.</string>
+
+    <string name="text_my_cards_detail_box2_title_1"> Transferências realizadas em </string>
+    <string name="text_my_cards_detail_box2_title_1_pay"> Pagamentos realizados em </string>
+    <string name="text_my_cards_detail_box2_title_2"> dias não úteis</string>
+    <string name="text_my_cards_detail_box2_title_3"> ou</string>
+    <string name="text_my_cards_detail_box2_title_4"> fora do horário das </string>
+    <string name="text_my_cards_detail_box2_title_5"> 08h00 às 16h25 </string>
+    <string name="text_my_cards_detail_box2_title_6"> serão</string>
+    <string name="text_my_cards_detail_box2_title_7"> creditadas no próximo dia útil.</string>
+    <string name="text_my_cards_detail_box2_title_7_pay"> efetuados no próximo dia útil.</string>
+
+    <string name="text_my_cards_detail_box2_title_5_ted"> 08h00 às 15h25 </string>
+
+    <string name="btn_my_cards_step4_next">Fazer transferência</string>
+
+    <string name="text_transfer_title">Passo %1$d de %2$d</string>
+
+    <string name="mask_cellphone_step4">## ##### ####</string>
+    <string name="mask_cellphone_step5">(##) ####-####</string>
+    <string name="mask_cpf_step4">###.###.###-##</string>
+    <string name="mask_cnpj_step4">##.###.###/####-##</string>
+    <string name="mask_cpf_step4_text">CPF: </string>
+    <string name="mask_cnpj_step4_text">CNPJ: </string>
+
+
+    <!--bottom sheet-->
+
+    <string name="text_my_cards_bottom_sheet_title">Para finalizar a transferência,  confirme os dados do seu cartão</string>
+    <string name="text_my_cards_bottom_sheet_title_pagamento">Para finalizar o pagamento,  confirme os dados do seu cartão</string>
+    <string name="text_my_cards_bottom_sheet_cvv" tools:ignore="ExtraTranslation">CVV</string>
+    <string name="text_my_cards_bottom_sheet_cvc_alert">O CVV são os 3 números que estão na parte de trás do seu cartão</string>
+
+    <string name="text_my_cards_bottom_sheet_date_01" tools:ignore="ExtraTranslation">Data de Validade</string>
+    <string name="text_my_cards_bottom_sheet_date" tools:ignore="ExtraTranslation">Data de validade (exemplo 11/11) </string>
+    <string name="text_my_cards_bottom_sheet_date_alert" tools:ignore="ExtraTranslation">A data da validade está na parte da frente do seu cartão</string>
+
+
+    <string name="text_card_document_sent_success_title_botton_sheet">Transferência enviada</string>
+    <string name="text_card_document_sent_success_description_botton_sheet">O valor estará disponível na conta em \n%1$s.</string>
+
+
+    <!-- error -->
+    <string name="title_error_server_title">Pedimos desculpas</string>
+    <string name="title_error_server_subtitle">Infelizmente ocorreu algum erro.</string>
+
+
+    <string name="text_accout_checking_label">Corrente</string>
+    <string name="text_account_savings_label">Poupança</string>
+
+    <string name="text_money_br_format">R$ %1$s</string>
+
+    <string name="text_server_error_title">Erro no servidor</string>
+    <string name="text_unavaiable_amount_message">Saldo insuficiente para realizar a transferência.</string>
+
+    <string name="text_transfer_dialog_title">Transferência</string>
+    <string name="text_wrong_expiration_dt">Data de validade inválida.</string>
+    <string name="text_transfer_confirm_label">Confirmar</string>
+
+
+    <!-- payment step 2 -->
+    <string name="txt_title_step_2">Insira o código do boleto que quer pagar</string>
+    <string name="txt_barcode_step_2" tools:ignore="ExtraTranslation">Código de barras</string>
+
+    <!-- payment New Password -->
+    <string name="txt_title_step_new_password">Agora, crie uma senha para seu cartão</string>
+    <string name="txt_description_step_new_password1">Dicas para uma senha forte:</string>
+    <string name="txt_description_step_new_password2">– Sua nova senha deve conter 4 dígitos numéricos</string>
+    <string name="txt_description_step_new_password3">– Não use sequência numérica (ex: 1234);</string>
+
+    <!-- payment step 3 -->
+    <string name="txt_title_step_3">Detalhes do pagamento</string>
+    <string name="edt_value_step_3">Valor do boleto</string>
+    <string name="edt_discount_step_3">Desconto (opcional)</string>
+    <string name="edt_date_paymento_step_3">Juros (opcional)</string>
+    <string name="edt_person_or_company_step_3">Nome da pessoa ou empresa favorecida</string>
+    <string name="error_value_less_than_10">O valor do boleto deve ser igual ou acima de R$ 10,00</string>
+
+
+    <!-- payment step 4 -->
+    <string name="txt_title_step_4">Você está pagando</string>V
+    <string name="txt_company_step_4">AES Eletropaulo</string>
+    <string name="txt_barcode_step_4">Código de barras</string>
+
+    <string name="txt_barcode_value_step_4">07790.00116.12000.000500 00313.622649 5 75470000061000</string>
+
+    <string name="txt_bank_step_4">Favorecido</string>
+    <string name="txt_bank_value_step_4">077-BANCO INTERMEDIUM S.A.</string>
+
+    <string name="txt_dt_maturity_4">Data de vencimento</string>
+    <string name="txt_dt_paymento_4">Data de pagamento</string>
+
+    <string name="txt_dt_maturity_value_4">06/12/2018</string>
+    <string name="txt_dt_paymento_value_4">10/12/2018</string>
+
+    <string name="btn_payment_step4_next">Fazer pagamento</string>
+
+    <string name="txt_title_msg_sucess_payment">Pagamento agendado</string>
+    <string name="txt_subtitle_msg_sucess_payment">Seu pagamento será efetivado em até \num dia útil.</string>
+    <string name="txt_button_msg_sucess_payment">Retornar para Conta Digital</string>
+
+    <string name="text_title_verify_account_pending_status">Para acessar o seu cartão, verifique sua conta.</string>
+
+    <string name="txt_call_central_one">3003 4652 (capitais)</string>
+    <string name="txt_call_central_two">0800 727  4652 (demais localidades)</string>
+
+    <string name="txt_call_central_capital">30034652</string>
+    <string name="txt_call_central_local">08007274652</string>
+
+    <string name="text_conta_digital_pix_title">Recebimentos de transações e movimentações PIX</string>
+    <string name="text_conta_digital_pix_available_balance">Saldo Pix disponível</string>
+    <string name="text_conta_digital_pix_available_balance_info">Valor disponível para transferência automática em sua conta</string>
+
+    <string name="text_conta_digital_enviar_fotos">enviar fotos</string>
+
+    <string name="conta_digital_question">Vamos evoluir para o Cielo Pay? Preparamos um passo a passo dessa novidade</string>
+    <string name="conta_digital_information">Veja como é simples:</string>
+    <string name="conta_digital_step01_title">1. Baixe o app Cielo Pay no seu celular e crie sua conta.</string>
+    <string name="conta_digital_step01_subtitle">O acesso da sua conta digital será via Cielo Pay, crie sua conta com o documento cadastrado aqui no app Cielo Gestão.</string>
+    <string name="conta_digital_cpnj">CNPJ:</string>
+    <string name="conta_digital_step01_button">Baixar app Cielo Pay</string>
+    <string name="conta_digital_step02_title">2. O Cielo Pay identificará que você já é um cliente Cielo.</string>
+    <string name="conta_digital_step02_subtitle">Você precisa confirmar seu email ou celular cadastrados aqui no app Cielo Gestão lá no Cielo Pay.</string>
+    <string name="conta_digital_step03_title">3. Tudo certo! Os dados e valores da conta digital serão migrados.</string>
+    <string name="conta_digital_step03_subtitle_01">Sua conta digital está pronta para ser usada no Cielo Pay! Em caso de dúvidas, acesse nossa </string>
+    <string name="conta_digital_step03_subtitle_02">central de ajuda.</string>
+
+    <string name="text_title_error_access_denied">Novidade, estamos de mudança</string>
+     
+</resources>

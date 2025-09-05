@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_99000000"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_drag_bottom_sheet"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:background="@drawable/background_welcome_notification"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Heading_500_Bold_18_display_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/banner_title_not_knowledge_register"
+                    />
+
+
+                <TextView
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/banner_not_knowledge_register"
+                    android:textSize="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>

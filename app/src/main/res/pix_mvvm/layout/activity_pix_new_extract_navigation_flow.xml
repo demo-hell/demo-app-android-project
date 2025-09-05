@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <br.com.cielo.libflue.collapsingToolbarLayout.CieloCollapsingToolbarLayout
+        android:id="@+id/cieloCollapsingToolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph_pix_new_extract" />
+
+    </br.com.cielo.libflue.collapsingToolbarLayout.CieloCollapsingToolbarLayout>
+
+    <br.com.cielo.libflue.screen.HandlerViewFlui
+        android:id="@+id/customHandlerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:backImage="@drawable/ic_direction_arrow_left"
+        app:backgroundButtonContained="@drawable/button_background_selector_brand_400"
+        app:headerImage="@drawable/ic_symbol_close_brand_400_24_dp"
+        app:isShowContainerButton="true"
+        app:labelColorButtonContained="@color/white"
+        app:labelColorButtonOutlined="@color/brand_400"
+        app:message="@string/commons_generic_error_message"
+        app:messageStyle="@style/medium_montserrat_16_cloud_400"
+        app:title="@string/commons_generic_error_title"
+        app:titleStyle="@style/bold_montserrat_20_cloud_600_spacing_8" />
+
+    <br.com.cielo.libflue.loading.TokenLoadingViewFlui
+        android:id="@+id/animatedProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

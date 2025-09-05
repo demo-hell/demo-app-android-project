@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSeeDetails"
+        style="@style/regular_montserrat_16_cloud_400_spacing_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_18dp"
+        android:text="@string/see_details_opf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/container_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSeeDetails">
+
+        <LinearLayout
+            android:id="@+id/container_new_sharing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/vw_shimmer_line"
+            app:layout_constraintTop_toBottomOf="@+id/tvSeeDetails">
+
+            <TextView
+                android:id="@+id/tvShareYourData"
+                style="@style/bold_montserrat_14_cloud_800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:paddingHorizontal="@dimen/dimen_18dp"
+                android:text="@string/share_your_data_opf" />
+
+            <LinearLayout
+                android:id="@+id/newSharing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44dp"
+                android:layout_marginHorizontal="@dimen/dimen_18dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/background_brand_400_radius_100"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tvShareYourData">
+
+                <ImageView
+                    android:id="@+id/icPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_plus" />
+
+                <TextView
+                    android:id="@+id/tvNewSharing"
+                    style="@style/semi_bold_montserrat_16_cloud_0_spacing_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:text="@string/new_share_opf" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vw_shimmer_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_7dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+            app:layout_constraintTop_toBottomOf="@+id/container_new_sharing"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tvManagerOpf"
+            style="@style/bold_montserrat_14_cloud_800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:paddingHorizontal="@dimen/dimen_18dp"
+            android:text="@string/manager_opf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_shimmer_line" />
+
+        <LinearLayout
+            android:id="@+id/container_data_shared"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvManagerOpf">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_90dp"
+                android:layout_marginHorizontal="@dimen/dimen_18dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icFolderShare"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_folder_share" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/dimen_10dp">
+
+                    <TextView
+                        android:id="@+id/tvSharedData"
+                        style="@style/bold_montserrat_16_cloud_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/data_share_opf" />
+
+                    <TextView
+                        android:id="@+id/tvSharedDataDesc"
+                        style="@style/regular_montserrat_14_cloud_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:text="@string/manager_data_share_opf" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/icArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/thin_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2dp"
+                android:layout_marginHorizontal="@dimen/dimen_18dp"
+                android:background="@drawable/shape_shimmer_chargeback_lifecycle"
+                app:layout_constraintTop_toBottomOf="@+id/container_data_shared"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_payments"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_90dp"
+            android:layout_marginHorizontal="@dimen/dimen_18dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_data_shared">
+
+            <ImageView
+                android:id="@+id/icPayments"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_weight="1"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_money_coin" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dimen_10dp">
+
+                <TextView
+                    android:id="@+id/tvPayments"
+                    style="@style/bold_montserrat_16_cloud_800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payments_opf" />
+
+                <TextView
+                    android:id="@+id/tvPaymentsDesc"
+                    style="@style/regular_montserrat_14_cloud_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="@string/see_your_payments_opf" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icArrowRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLifecycleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSeeDetails"
+        app:shimmer_auto_start="true"
+        app:shimmer_base_alpha="1"
+        app:shimmer_duration="800"
+        app:shimmer_highlight_alpha="0">
+
+        <include layout="@layout/shimmer_open_finance_manager" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_200dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_13_selfie_update" />
+
+    <TextView
+        android:id="@+id/tvTitleWithPrimaryName"
+        style="@style/Heading_600_regular_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dimen_2sp"
+        android:textColor="@color/brand_600"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+        tools:text="Maria, envie suas fotos para concluir a configuração do seu perfil de acesso" />
+
+    <TextView
+        android:id="@+id/tvAccessProfile"
+        style="@style/Paragraph_400_regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleWithPrimaryName"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        tools:text="O seu perfil de acesso no estabelecimento Juno alimentos (CNPJ raíz: 28.208.601/****-**), é do tipo:" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_46dp"
+        android:background="@drawable/background_success_100_radius_24dp"
+        android:paddingHorizontal="@dimen/dimen_28dp"
+        android:paddingVertical="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tvRoleName"
+            style="@style/Heading_500_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_9dp"
+            android:gravity="center"
+            android:text="@string/access_manager_role_group_card_description_admin_title"
+            android:textColor="@color/success_400"
+            app:drawableEndCompat="@drawable/ic_success_new"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

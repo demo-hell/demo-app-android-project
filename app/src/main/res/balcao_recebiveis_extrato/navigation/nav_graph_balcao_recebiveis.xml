@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_balcao_recebiveis"
+    app:startDestination="@id/fluxoInicialExtratoDetail">
+
+    <fragment
+        android:id="@+id/fluxoInicialExtratoDetail"
+        android:name="br.com.mobicare.cielo.balcaoRecebiveisExtrato.fragment.BalcaoRecebiveisExtratoDetailFragment"
+        android:label="FluxoInicialExtratoDetail"
+        tools:layout="@layout/fragment_balcao_recebiveis_extrato_detail">
+        <argument
+            android:name="NegotiationsArgs"
+            app:argType="br.com.mobicare.cielo.balcaoRecebiveisExtrato.data.Negotiations"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_extratoDetail_to_extratoDetailNegotiations"
+            app:destination="@id/balcaoRecebiveisExtratoDetailNegotiationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/balcaoRecebiveisExtratoDetailNegotiationFragment"
+        android:name="br.com.mobicare.cielo.balcaoRecebiveisExtrato.fragment.BalcaoRecebiveisExtratoDetailsNegotiationsFragment"
+        android:label="BalcaoRecebiveisExtratoDetailNegotiationFragment"
+        tools:layout="@layout/fragment_balcao_recebiveis_extrato">
+        <action
+            android:id="@+id/action_balcaoRecebiveisExtratoFragment_to_extratoRecebiveisVendasUnitariasFragment"
+            app:destination="@id/extratoRecebiveisVendasUnitariasFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <argument
+            android:name="NegotiationsArgs"
+            app:argType="br.com.mobicare.cielo.balcaoRecebiveisExtrato.data.Negotiations"
+            app:nullable="true" />
+        <argument
+            android:name="INITIAL_DATE_ARGS"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="FINAL_DATE_ARGS"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="TYPE_NEGOCIATION"
+            android:defaultValue='""'
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/extratoRecebiveisVendasUnitariasFragment"
+        android:name="br.com.mobicare.cielo.balcaoRecebiveisExtrato.unitsales.fragment.ExtratoRecebiveisVendasUnitariasFragment"
+        android:label="ExtratoRecebiveisVendasUnitariasFragment"
+        tools:layout="@layout/fragment_extrato_recebiveis_vendas_unitarias">
+
+        <argument
+            android:name="INITIAL_DATE_ARGS"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="FINAL_DATE_ARGS"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="NegotiationsItemsArgs"
+            app:argType="br.com.mobicare.cielo.balcaoRecebiveisExtrato.data.Item"
+            app:nullable="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment_busca_fidelidade"
+        android:name="br.com.mobicare.cielo.fidelidade.busca.ui.fragment.BuscaFidelidadeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/fragment_saldo_fidelidade"
+                android:name="br.com.mobicare.cielo.fidelidade.saldo.ui.fragment.SaldoFidelidadeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <fragment
+                android:id="@+id/fragment_produtos_fidelidade"
+                android:name="br.com.mobicare.cielo.fidelidade.produtos.ui.fragment.ProdutoFidelidadeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <fragment
+                android:id="@+id/fragment_desconto_aluguel_fidelidade"
+                android:name="br.com.mobicare.cielo.fidelidade.descontoAluguel.ui.fragment.DescontoAluguelFidelidadeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

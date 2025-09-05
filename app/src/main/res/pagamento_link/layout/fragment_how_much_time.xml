@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_16dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTimeYouNeed"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/acceptance_what_time_you_need"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPutTime"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_4sp"
+            android:text="@string/acceptance_description_put_time"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTimeYouNeed" />
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/editTextTimeMinutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:hint="@string/minutes_hint"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:focusableInTouchMode="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewPutTime" />
+
+        <TextView
+            android:id="@+id/textViewDeadlineInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/background_deadline_up_to_hours"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_5sp"
+            android:padding="@dimen/dimen_12dp"
+            android:text="@string/deadline_information"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTimeMinutes" />
+
+        <TextView
+            android:id="@+id/textViewRegionQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:text="@string/region_question"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDeadlineInformation" />
+
+        <TextView
+            android:id="@+id/textViewRegionAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:fontFamily="@font/ubuntu"
+            android:lineSpacingExtra="@dimen/dimen_4sp"
+            android:text="@string/region_answer"
+            android:textColor="@color/black_353A40"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewRegionQuestion" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewRegionAnswer">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/checkbox_selector"/>
+
+            <TextView
+                android:id="@+id/textViewShortTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:fontFamily="@font/ubuntu"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                android:text="@string/acceptance_short_term"
+                android:textColor="@color/color_017CEB"
+                android:textSize="@dimen/dimen_12sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarBackCardActivation"
+        layout="@layout/toolbar_main" />
+
+
+    <LinearLayout
+        android:id="@+id/linearFirstBackActivationContent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textMessageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextBlack24spTitle"
+            android:text="@string/text_first_back_card_activation_title"/>
+
+        <TextView
+            android:id="@+id/textFirstBackCardActivationDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:maxWidth="295dp"
+            style="@style/TextBlack14spNormal"
+            android:text="@string/text_first_back_card_activation_description"/>
+
+
+        <FrameLayout
+            android:id="@+id/frameBackCardContent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/im_back_card"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_height="wrap_content">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editTextCardActivation"
+                    android:layout_width="wrap_content"
+                    android:minWidth="210dp"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/bg_edit_back_card"
+                    android:maxLength="15"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/frameUnlockProgress"
+        android:visibility="gone"
+        layout="@layout/frame_progress" />
+
+    <include layout="@layout/content_error" />
+
+
+</LinearLayout>

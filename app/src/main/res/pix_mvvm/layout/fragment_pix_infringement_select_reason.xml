@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16dp">
+
+    <TextView
+        style="@style/regular_montserrat_16_neutral_600_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_13dp"
+        android:includeFontPadding="false"
+        android:text="@string/pix_infringement_select_reason_description" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSituations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_pix_infringement_reason" />
+
+</LinearLayout>

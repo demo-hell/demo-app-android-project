@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="elo_pat_unavailable_title">A habilitação PAT não está disponível pelo aplicativo</string>
+    <string name="elo_pat_unavailable_text">Para habilitar os benefícios PAT, acesse a área Meu Cadastro pelo site.</string>
+    <string name="elo_pat_back_button">Voltar</string>
+    <string name="elo_pat_go_to_site_button">Ir para o Site</string>
+</resources>

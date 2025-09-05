@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp"
+    tools:context=".commons.warning.PriorityWarningModal">
+
+    <ImageView
+        android:id="@+id/iv_close_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5dp"
+        app:layout_constraintBottom_toTopOf="@+id/container_warning_information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:srcCompat="@drawable/ic_close_gray" />
+
+    <ImageView
+        android:id="@+id/iv_warning"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginHorizontal="@dimen/dimen_30dp"
+        app:layout_constraintBottom_toTopOf="@+id/container_warning_information"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="@dimen/dimen_200dp"
+        app:layout_constraintHeight_min="@dimen/dimen_70dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_close_warning"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_weight="1"
+        tools:srcCompat="@drawable/ic_08" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_warning_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_warning">
+
+        <TextView
+            android:id="@+id/tv_title_warning"
+            style="@style/Label_300_title_warning_18_brand_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Chegou uma nova atualização!" />
+
+        <TextView
+            android:id="@+id/tv_subtitle_warning"
+            style="@style/Label_300_subtitle_warning_16_display_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_warning"
+            tools:text="Seu app está com uma versão antiga e precisa de uma atualga e precisa de uma atualga e precisa de uma atualga e precisa de uma atualião antiga e precisa de uma atualião antiga e precisa de uma atualião antiga e precisa de uma atualião antiga e precisa de uma atualização para sua experiência ficar ainda melhor." />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/btn_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle_warning"
+            tools:text="@string/btn_version_block_update" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

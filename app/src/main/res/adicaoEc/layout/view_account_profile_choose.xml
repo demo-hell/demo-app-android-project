@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/typefaceTextView15"
+        style="@style/Heading_300_bold_14_display_500"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:text="@string/global_account_profile_choose_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typefaceTextView15"
+        app:layout_constraintVertical_bias="0.0">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+            android:id="@+id/radioButtonPessoaFisica"
+            style="@style/Label_400_Alternate_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_tab_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/global_account_profile_choose_physics_hint"
+            android:textAllCaps="false"
+            android:textColor="@drawable/radio_button_color_listener" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceRadioButtonView
+            android:id="@+id/radioButtonPessoaJuridica"
+            style="@style/Label_400_Alternate_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_tab_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/global_account_profile_choose_legal_hint"
+            android:textAllCaps="false"
+            android:textColor="@drawable/radio_button_color_listener" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

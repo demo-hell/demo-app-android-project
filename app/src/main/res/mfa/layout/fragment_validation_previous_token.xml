@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16dp"
+    android:background="@color/color_DEDEDE">
+
+    <TextView
+        style="@style/Heading_400_Bold_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_validacao_do_token_anterior"
+        />
+
+    <TextView
+        style="@style/Paragraph_300_Regular_14_display_500"
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        tools:text="@string/text_message_validation_previous_token"
+        />
+
+    <br.com.cielo.libflue.inputtext.CieloTextInputView
+        android:id="@+id/ctivToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:inputType="number"
+        android:maxLength="6"
+        app:hint="@string/number_token"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_weight="1"
+        />
+    <br.com.cielo.libflue.button.CieloRegularBlueButton
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/esqueci_usuario_button_enviar"
+        />
+
+</LinearLayout>

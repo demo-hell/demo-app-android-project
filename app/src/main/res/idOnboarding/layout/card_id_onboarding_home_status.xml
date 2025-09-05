@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_6dp"
+        app:cardCornerRadius="@dimen/dimen_8dp"
+        app:cardElevation="@dimen/dimen_8dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivOnboardingStatusImage"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1.4"
+                app:layout_constraintHeight_min="@dimen/dimen_72dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_max="@dimen/dimen_150dp"
+                app:srcCompat="@drawable/ic_onboarding_status_send_docs" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOnboardingStatusTitle"
+                style="@style/Paragraph_200_Bold_12_display_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_2dp"
+                android:lineSpacingExtra="@dimen/dimen_6sp"
+                android:textColor="@color/alert_500"
+                app:layout_constraintBottom_toTopOf="@id/tvOnboardingStatusMessage"
+                app:layout_constraintEnd_toStartOf="@id/ivChevron"
+                app:layout_constraintStart_toEndOf="@id/ivOnboardingStatusImage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:lineHeight="@dimen/dimen_18sp"
+                tools:text="@string/id_onboarding_home_status_card_send_docs_title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvOnboardingStatusMessage"
+                style="@style/Paragraph_200_display_300"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:lineSpacingExtra="@dimen/dimen_4sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tvOnboardingStatusTitle"
+                app:layout_constraintStart_toStartOf="@id/tvOnboardingStatusTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvOnboardingStatusTitle"
+                tools:text="@string/id_onboarding_home_status_card_send_docs_message" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivChevron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_chevron_end_gray" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

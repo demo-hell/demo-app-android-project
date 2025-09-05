@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_fingerprint_prompt_error_message_retry">Não foi possível capturar a digital! Tente novamente mais tarde.</string>
+    <string name="menu_security">Segurança</string>
+    <string name="security_enable_disable_text">Entrar utilizando a digital</string>
+    <string name="security_disable_text">Biometria desativada</string>
+    <string name="security_enable_text">Biometria ativada</string>
+    <string name="security_log">"#BM Não foi possivel recuperar os dados: %s</string>
+    <string name="text_fingerprint_notification_title">Agora você pode acessar o aplicativo usando sua digital</string>
+    <string name="text_fingerprint_notification_subtitle">Habilite sua digital para acessar o aplicativo mais facilmente.</string>
+    <string name="text_fingerprint_notification_window_title">Novidades no App</string>
+    <string name="text_fingerprint_prompt_description">Registre sua biometria para facilitar seus acessos futuros.</string>
+    <string name="text_fingerprint_prompt_subtitle">Registre sua digital</string>
+    <string name="text_fingerprint_prompt_title">Registro de digital</string>
+    <string name="text_fingerprint_prompt_title_disable">Biometria para Cielo</string>
+    <string name="text_fingerprint_prompt_description_disable">Autorize para desabilitar a autenticação biométrica.</string>
+    <string name="text_fingerprint_prompt_login_title">Impressão Digital para o aplicativo Cielo</string>
+    <string name="text_fingerprint_prompt_login_subtitle">Faça o login com sua digital</string>
+    <string name="text_fingerprint_prompt_login_description">Toque o leitor de impressão digital do seu celular para acessar o aplicativo</string>
+    <string name="text_fingerprint_prompt_error_message">Não foi possível capturar a digital! Você ainda pode logar com a sua senha.</string>
+    <string name="text_fingerprint_prompt_error_title">Erro na biometria</string>
+    <string name="text_fingerprint_registration_success">Impressão digital registrada com sucesso.</string>
+    <string name="enable_biometric_title">Habilite a sua biometria</string>
+    <string name="enable_biometric_subtitle">Acesse o aplicativo de uma maneira mais rápida e segura com a sua biometria</string>
+    <string name="enable_biometric_message">Use a sua impressão digital para acessar o aplicativo</string>
+    <string name="enable_biometric_message_face_not_detected">Nenhum rosto reconhecido</string>
+    <string name="enable_biometric_message_not_correspound">Nenhuma correspondência</string>
+    <string name="enable_biometric_title_error">Falha ao habilitar a biometria</string>
+    <string name="enable_biometric_subtitle_error">Não foi possível habilitar a sua biometria para login. Tente novamente mais tarde</string>
+    <string name="enable_biometric_now">Habilitar agora</string>
+    <string name="enable_biometric_no">Não habilitar</string>
+    <string name="cielo">Cielo</string>
+    <string name="text_not_enrolled">Dispositivo sem biômetria cadastrada.</string>
+    <string name="text_unavailable">Leitor indisponível ou invalidado permanentemente.</string>
+    <string name="text_fingerprint_registration_title">Registro da biometria</string>
+    <string name="bottom_sheet_title">Atenção</string>
+    <string name="bottom_sheet_description">Confirme sua senha para continuar com a ativação.</string>
+    <string name="bottom_sheet_button">Autenticar</string>
+    <string name="dialog_button">OK</string>
+    <string name="dialog_title">Segurança</string>
+    <string name="hint_senha">Senha</string>
+    <string name="tittle_bottomsheet_permission">Para prosseguir, que tal ativar sua localização?</string>
+    <string name="description_bottomsheet_permission"><![CDATA[Esta medida visa evitar fraudes, identificando mais facilmente tentativas de operações suspeitas.\n
+O rastreamento é opcional para o seu acesso, mas será obrigatório para a realização de algumas atividades dentro do app.]]></string>
+    <string name="tittle_bottomsheet_permission_mandatory">Para prosseguir, precisamos que você ative sua localização</string>
+    <string name="description_bottomsheet_permission_mandatory"><![CDATA[Esta medida é obrigatória e visa evitar fraudes. Com a localização ativada, podemos identificar mais facilmente tentativas de operações suspeitas.]]></string>
+    <string name="button_bottomsheet_permission">Entendi</string>
+    <string name="permission_needed_title">Para continuar, você precisa habilitar o acesso à localização do seu aparelho. Você pode fazer isso alterando as permissões do Cielo Gestão nas configurações do seu aparelho.</string>
+    <string name="permission_needed_button1">Cancelar</string>
+
+    <string name="security_text_clear_cache">Limpar dados do aplicativo</string>
+    <string name="security_text_clear_cache_alert_btn">Limpar dados</string>
+    <string name="security_text_clear_cache_alert_title">Você deseja limpar os dados do aplicativo?</string>
+    <string name="security_text_clear_cache_alert_message">Os dados e histórico de navegação serão limpos no aplicativo. Ao continuar, você será redirecionado para o login para acessar novamente sua conta.</string>
+
+</resources>

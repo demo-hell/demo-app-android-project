@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_splash">Splashscreen</string>
+    <string name="want_deny_notify_permission">Tem certeza que não quer permitir as notificações?</string>
+    <string name="deny_permission">Não permitir</string>
+    <string name="retry_permission">Redefinir Permissão</string>
+    <string name="post_notification_benefits"><![CDATA[O que você perde ao não permitir as notificações:<br><br>
+                         <ul>
+                         <li>&nbsp;&nbsp;Acesso a comunicações importantes da sua conta Cielo.</li>
+                         <li>&nbsp;&nbsp;Facilidade de acesso das comunicações Cielo sem abrir o aplicativo repetidamente.</li>
+                         </ul><br>
+                         Você tem mais uma tentativa para redefinir a permissão.]]></string>
+</resources>

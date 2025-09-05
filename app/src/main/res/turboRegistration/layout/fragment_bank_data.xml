@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppMaterialComponentsNoActionBar"
+    tools:context=".turboRegistration.presentation.bankData.BankDataFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/dimen_16dp"
+            android:paddingTop="@dimen/dimen_16dp"
+            android:paddingBottom="@dimen/dimen_60dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bank_data_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_bank"
+                app:boxBackgroundColor="@color/text_input_bg"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_1.5dp"
+                app:hintTextAppearance="@style/bold_montserrat_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Banco">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_choose_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableStart="@drawable/bank_generic"
+                    android:drawableEnd="@drawable/ic_extract_arrow_down"
+                    android:drawablePadding="@dimen/dimen_16dp"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bank_data_name_helper"
+                style="@style/regular_montserrat_12_cloud_600"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:drawablePadding="@dimen/dimen_3dp"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_symbol_alert_round_info_16_dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bank_data_name"
+                tools:text="Conta selecionada: Conta Corrente - PF"
+                tools:visibility="visible" />
+
+
+            <RadioGroup
+                android:id="@+id/accountTypeRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:checkedButton="@id/checkingAccount"
+                app:layout_constraintTop_toBottomOf="@id/bank_data_name_helper">
+
+                <RadioButton
+                    android:id="@+id/checkingAccount"
+                    style="@style/medium_montserrat_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="@dimen/dimen_8dp"
+                    android:text="@string/label_checking_account"
+                    android:textColor="@color/cloud_800"
+                    app:buttonTint="@color/button_tint" />
+
+                <RadioButton
+                    android:id="@+id/savingsAccount"
+                    style="@style/medium_montserrat_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/dimen_8dp"
+                    android:text="@string/label_savings_account"
+                    android:textColor="@color/cloud_800"
+                    app:buttonTint="@color/button_tint" />
+            </RadioGroup>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bank_data_agency"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:hint="@string/hint_agency"
+                app:boxBackgroundColor="@color/text_input_bg"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_1.5dp"
+                app:hintTextAppearance="@style/bold_montserrat_14"
+                app:layout_constraintEnd_toStartOf="@id/operation_guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accountTypeRadio">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_bank_data_agency"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bank_data_agency_helper"
+                style="@style/regular_montserrat_12_cloud_600"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:drawablePadding="@dimen/dimen_3dp"
+                android:textAppearance="@style/semi_bold_montserrat_12"
+                android:textColor="@color/red_500"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_symbol_warning_red_500_16_dp"
+                app:layout_constraintEnd_toEndOf="@+id/bank_data_agency"
+                app:layout_constraintStart_toStartOf="@id/bank_data_agency"
+                app:layout_constraintTop_toBottomOf="@+id/bank_data_agency"
+                tools:text="insira seu texto aqui"
+                tools:visibility="visible" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bank_data_operation"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:enabled="false"
+                android:hint="@string/hint_operation"
+                app:boxBackgroundColor="@color/text_input_bg"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_1.5dp"
+                app:endIcon="@drawable/ic_arrow_down_input"
+                app:endIconType="custom"
+                app:hintTextAppearance="@style/bold_montserrat_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/operation_guideline"
+                app:layout_constraintTop_toTopOf="@id/bank_data_agency">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_bank_data_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:drawableEnd="@drawable/ic_extract_arrow_down"
+                    android:drawablePadding="@dimen/dimen_16dp"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:longClickable="false"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bank_data_operation_helper"
+                style="@style/regular_montserrat_12_cloud_600"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:drawablePadding="@dimen/dimen_3dp"
+                android:textAppearance="@style/semi_bold_montserrat_12"
+                android:textColor="@color/red_500"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_symbol_warning_red_500_16_dp"
+                app:layout_constraintEnd_toEndOf="@+id/bank_data_operation"
+                app:layout_constraintStart_toStartOf="@id/bank_data_operation"
+                app:layout_constraintTop_toBottomOf="@+id/bank_data_operation"
+                tools:text="insira seu texto aqui"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier_agency_operation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="bank_data_agency_helper, bank_data_operation_helper" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bank_data_account_number"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:hint="@string/hint_account_number"
+                app:boxBackgroundColor="@color/text_input_bg"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_1.5dp"
+                app:hintTextAppearance="@style/bold_montserrat_14"
+                app:layout_constraintEnd_toStartOf="@id/digit_guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/barrier_agency_operation">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_bank_data_account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bank_data_account_number_helper"
+                style="@style/regular_montserrat_12_cloud_600"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:drawablePadding="@dimen/dimen_3dp"
+                android:textAppearance="@style/semi_bold_montserrat_12"
+                android:textColor="@color/red_500"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_symbol_warning_red_500_16_dp"
+                app:layout_constraintEnd_toEndOf="@+id/bank_data_account_number"
+                app:layout_constraintStart_toStartOf="@id/bank_data_account_number"
+                app:layout_constraintTop_toBottomOf="@+id/bank_data_account_number"
+                tools:text="insira seu texto aqui"
+                tools:visibility="visible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bank_data_account_digit"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/account_digit"
+                app:boxBackgroundColor="@color/text_input_bg"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12dp"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12dp"
+                app:boxStrokeWidth="@dimen/dimen_1.5dp"
+                app:hintTextAppearance="@style/bold_montserrat_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/digit_guideline"
+                app:layout_constraintTop_toTopOf="@+id/bank_data_account_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_bank_data_account_digit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:textAppearance="@style/medium_montserrat_16"
+                    android:textSize="@dimen/dimen_16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bank_data_account_digit_helper"
+                style="@style/regular_montserrat_12_cloud_600"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:drawablePadding="@dimen/dimen_3dp"
+                android:textAppearance="@style/semi_bold_montserrat_12"
+                android:textColor="@color/red_500"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_symbol_warning_red_500_16_dp"
+                app:layout_constraintEnd_toEndOf="@+id/bank_data_account_digit"
+                app:layout_constraintStart_toStartOf="@id/bank_data_account_digit"
+                app:layout_constraintTop_toBottomOf="@+id/bank_data_account_digit"
+                tools:text="insira seu texto aqui"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/digit_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.70" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/operation_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.60" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white_80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_16dp">
+
+            <br.com.cielo.libflue.button.v2.CieloButton
+                android:id="@+id/bt_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/finish"
+                android:textSize="@dimen/dimen_16sp"
+                app:buttonEnabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

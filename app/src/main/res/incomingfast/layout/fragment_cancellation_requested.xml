@@ -1,0 +1,35 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dimen_16dp"
+    android:layout_marginRight="@dimen/dimen_16dp"
+    android:layout_marginBottom="@dimen/dimen_16dp"
+    android:orientation="vertical"
+    tools:context="br.com.mobicare.cielo.recebaRapido.cancellation.requested.CancellationRequestedFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextTitleHeading500Bold18spDisplay500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/incomint_fast_cancellation_requested_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewInfoResquested"
+        style="@style/Paragraph_300_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:text="@string/incomint_fast_cancellation_requested_info" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Paragraph_300_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:text="@string/incomint_fast_cancellation_requested_bottom" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

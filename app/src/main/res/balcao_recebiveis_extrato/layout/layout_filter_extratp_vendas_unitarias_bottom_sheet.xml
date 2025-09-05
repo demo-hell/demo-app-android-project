@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_welcome_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/filter_title_topbar"
+            style="@style/TextTitleStyleMontserrat18spBlack353A40"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/color_C5CED7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:tint="@color/color_5A646E"
+            app:layout_constraintBottom_toTopOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_symbol_close_brand_400_24_dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_welcome_notification"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layoutPaymentTypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="@string/filter_title_operations_topbar"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_16sp"
+                    style="@style/TextBlack12spUbuntuRegular_353A40"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_date_filter"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:hint="@string/filter_et_select_date"
+                    style="@style/TextBlack14spUbuntuRegular_353A40"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:background="@drawable/date_white_filter_borde_arround"/>
+
+                <TextView
+                    android:text="@string/filter_title"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    style="@style/TextBlack12spUbuntuRegular_353A40"
+                    android:layout_height="wrap_content" />
+
+                <br.com.cielo.libflue.inputtext.CieloTextInputView
+                    android:id="@+id/ev_cpf_cnpj"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    app:hint="@string/filter_et_cpf_cnpj"
+                    android:digits="1234567890"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:text="@string/filter_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:textColor="@color/color_5A646E"
+                    android:textSize="@dimen/dimen_16sp"
+                    style="@style/TextBlack12spUbuntuRegular_353A40"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/contentFilterBrands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_8dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_brands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        tools:listitem="@layout/item_dados_conta_brand"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_img_something_happened" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Ops, um erro aconteceu"
+            android:textAlignment="center"
+            android:textColor="@color/color_017CEB"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Tivemos um problema técnico para carregar os filtros, tente novamente mais tarde"
+            android:textAlignment="center"
+            android:textColor="@color/color_5A646E"
+            app:layout_constraintBottom_toTopOf="@+id/retryButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/retryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:text="Tentar Novamente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/waitingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutTop"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow_above_view"
+        app:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="visible">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/clearFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:fontFamily="@font/montserrat"
+            fancy:fb_defaultColor="@android:color/white"
+            fancy:fb_text="Limpar filtros"
+            fancy:fb_textColor="@color/color_017CEB"
+            fancy:fb_textSize="16sp" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/applyFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:layout_weight="1"
+            fancy:fb_textSize="16sp"
+            android:enabled="false"
+            android:text="@string/text_apply_filters_label" />
+    </LinearLayout>
+
+</RelativeLayout>

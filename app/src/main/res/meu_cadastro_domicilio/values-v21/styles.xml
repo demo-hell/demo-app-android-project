@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonBottomStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_cancel_selector</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+</resources>

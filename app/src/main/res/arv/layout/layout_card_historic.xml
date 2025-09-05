@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_16dp"
+    android:background="@drawable/background_solid_white_8dp_radius"
+    android:padding="@dimen/dimen_16dp">
+
+    <TextView
+        android:id="@+id/tvTitleCard"
+        style="@style/Label_400_Alternate_regular_14_danger_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/cloud_400"
+        app:layout_constraintEnd_toStartOf="@id/ivIconButtonDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mercado - Antecipação Programada" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        style="@style/Label_100_regular_14_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@id/ivIconButtonDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleCard"
+        tools:text="Valor total antecipado: R$ 1.000,00" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/Label_100_regular_14_cloud_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@id/ivIconButtonDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount"
+        tools:text="Data da contratação: 16/03/2023" />
+
+    <ImageView
+        android:id="@+id/ivIconStatus"
+        android:layout_width="@dimen/dimen_16dp"
+        android:layout_height="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/tvStatus"
+        app:layout_constraintEnd_toStartOf="@id/tvStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvStatus"
+        tools:srcCompat="@drawable/ic_chargeback_lifecycle_check" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        style="@style/Label_100_ubuntu_bold_16_brand_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@id/ivIconButtonDetails"
+        app:layout_constraintStart_toEndOf="@id/ivIconStatus"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        tools:text="Efetivado"
+        tools:textColor="@color/success_400" />
+
+    <ImageView
+        android:id="@+id/ivIconButtonDetails"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_24dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chevron_right_gray" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

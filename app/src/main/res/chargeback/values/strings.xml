@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_values_chargeback_faq_label">Contestações</string>
+    <string name="chargeback_error">Pedimos desculpas mas ocorreu um erro para carregar essa área.</string>
+    <string name="chargeback_error_document">Pedimos desculpas mas ocorreu um erro para carregar o documento.</string>
+    <string name="chargeback_try_again">Por favor, tente recarregar.</string>
+    <string name="chargeback_reload_button">Recarregar</string>
+    <string name="chargeback_sales_dispute">Contestação de vendas</string>
+    <string name="chargeback_explanation">Contestações que não tiverem ação até o prazo de expiração, serão aceitas automaticamente.</string>
+    <string name="your_chargeback_pending_look_here">Olá! Suas contestações pendentes aparecem aqui.</string>
+    <string name="you_not_have_chargeback_pending">Por enquanto, você não possui nenhuma \ncontestação pendente.</string>
+    <string name="your_chargeback_treated_look_here">Olá! Suas contestações aceitas, recusadas e fora do prazo aparecem aqui.</string>
+    <string name="you_not_have_chargeback_treated">Por enquanto, você não possui nenhuma \ncontestação finalizada.</string>
+    <string name="chargeback_process_status_one">1˙ chargeback</string>
+    <string name="chargeback_process_status_two">2˙ chargeback</string>
+    <string name="chargeback_process_status_arbitration">Arbritagem</string>
+    <string name="chargeback_process_status_pre_compliance">Pré-compliance</string>
+    <string name="chargeback_process_status_compliance">Compliance</string>
+    <string name="chargeback_process_status_friendly_billing">Cobrança amigável</string>
+    <string name="chargeback_accept">Aceito</string>
+    <string name="chargeback_refuse">Recusado</string>
+    <string name="chargeback_out_of_date">Fora do prazo</string>
+    <string name="chargeback_days_to_deadline">Prazo de %s dias</string>
+    <string name="chargeback_in_review_with_the_issuer">Em análise com o Emissor</string>
+    <string name="chargeback_in_favor_of_the_issuer">A favor do Emissor</string>
+    <string name="chargeback_in_favor_of_the_establishment">A favor do Estabelecimento</string>
+    <string name="chargeback_accessibility_button_details">Ver detalhes, botão</string>
+    <string name="chargeback_accessibility_transaction_amount">Contestação de %s</string>
+    <string name="chargeback_accessibility_card_brand">Bandeira %s</string>
+    <string name="chargeback_accessibility_shimmer_load">Carregando</string>
+    <string name="chargeback_accessibility_back_button">Voltar</string>
+
+    <string-array name="titles_page_chargeback">
+        <item>Pendentes</item>
+        <item>Tratadas</item>
+    </string-array>
+
+    <string name="chargeback_in_n_days">Em %d dias</string>
+    <string name="chargeback_deadline_today">Vence hoje</string>
+    <string name="chargeback_details_pending_title">Acatar ou recusar essa contestação?</string>
+    <string name="chargeback_details_done_title">Sobre essa contestação</string>
+    <string name="chargeback_details_accept">Aceitar</string>
+    <string name="chargeback_details_decline">Recusar</string>
+    <string name="chargeback_disputed_amount">Valor contestado</string>
+    <string name="chargeback_expiration_date">Prazo de expiração</string>
+    <string name="chargeback_dealing_performed_and_date">Tratativa realizada</string>
+    <string name="chargeback_dealing_date">\u00A0• em %s</string>
+    <string name="chargeback_see_document_attachment">Ver anexo da documentação</string>
+    <string name="chargeback_see_document_attachment_defense">Ver documentação de defesa</string>
+    <string name="chargeback_see_document_attachment_sender">Ver documentação do emissor</string>
+    <string name="chargeback_document_attachment_sender">Documentação do emissor</string>
+    <string name="message_documents_found">%d item(s) encontrado(s)</string>
+    <string name="chargeback_text_choose_document">Escolha abaixo quais documentos gostaria de fazer download</string>
+    <string name="chargeback_documentation">Documentação</string>
+    <string name="chargeback_lifecycle">Ciclo de vida</string>
+    <string name="chargeback_lifecycle_action_date">Data: %s</string>
+    <string name="chargeback_lifecycle_error_message">Não foi possível exibir o ciclo de vida completo.</string>
+    <string name="chargeback_lifecycle_reload">Recarregar</string>
+    <string name="chargeback_expiration_date_tip"><![CDATA[Contestações que <b>não tiverem resposta até o prazo de expiração</b>, serão aceitas automaticamente.]]></string>
+    <string name="chargeback_general_information">Informações gerais</string>
+    <string name="chargeback_label_dispute_date">Data da contestação</string>
+    <string name="chargeback_label_notification_date">Data da notificação</string>
+    <string name="chargeback_label_reason">Razão</string>
+    <string name="chargeback_label_process">Processo</string>
+    <string name="treated_type">Tipo de tratativa</string>
+    <string name="chargeback_label_card_brand">Bandeira</string>
+    <string name="chargeback_label_merchant">Estabelecimento</string>
+    <string name="chargeback_label_case">Case</string>
+    <string name="chargeback_label_reference_number">Número de referência</string>
+    <string name="chargeback_label_message">Mensagem</string>
+    <string name="chargeback_label_message_with_colon">Mensagem:</string>
+    <string name="chargeback_more_info_title">Ver mais informações</string>
+    <string name="chargeback_more_info_content">Data da venda, Código de autorização, Forma de pagamento, Cartão, Terminal, NSU/DOC…</string>
+
+    <string name="chargeback_more_info_bottom_sheet_title">Informações da venda contestada</string>
+    <string name="chargeback_more_info_bottom_sheet_date">Data da venda</string>
+    <string name="chargeback_more_info_bottom_sheet_authorization_code">Código de autorização</string>
+    <string name="chargeback_more_info_bottom_sheet_payment_method">Forma de pagamento</string>
+    <string name="chargeback_more_info_bottom_sheet_bank_card">Cartão</string>
+    <string name="chargeback_more_info_bottom_sheet_terminal">Terminal</string>
+    <string name="chargeback_more_info_bottom_sheet_nsu_doc">NSU/DOC</string>
+    <string name="chargeback_more_info_bottom_sheet_tid">TID</string>
+    <string name="chargeback_more_info_bottom_sheet_card_brand">Bandeira</string>
+    <string name="chargeback_more_info_bottom_sheet_bank_card_end_digits">Final %s</string>
+
+    <string name="chargeback_confirm_refusal">Confirmar recusa</string>
+    <string name="chargeback_refuse_title">Escreva o motivo e anexe um documento</string>
+    <string name="chargeback_refuse_reason">Preencha o motivo da recusa</string>
+    <string name="chargeback_refuse_reason_input_hint">Escreva o motivo aqui</string>
+    <string name="chargeback_refuse_attachment_title">Documentação de defesa</string>
+    <string name="chargeback_refuse_attachment_title_new">Orientações para envio de arquivo</string>
+    <string name="chargeback_refuse_attachment_subtitle">As extensões aceitas para o documento são: .PDF, .JPG, TIF ou TIFF, com até 8 páginas e tamanho máximo de 8mb.</string>
+    <string name="chargeback_refuse_attachment_case">Arquivo deve ter o número do case.</string>
+    <string name="chargeback_refuse_attachment_maximum_size">Tamanho máximo de 8mb.</string>
+    <string name="chargeback_refuse_attachment_format">Formatos aceitos: .TIF, .TIFF, .PDF e .JPEG</string>
+    <string name="chargeback_refuse_attachment_maximum_page">No máximo 10 páginas em cada arquivo</string>
+    <string name="chargeback_refuse_attachment_dimension">As dimensões devem ser menores que um Papel legal (35,56 x 21,59 cm), sendo permitido tamanho A4.</string>
+    <string name="chargeback_refuse_id_case">Case:</string>
+    <string name="chargeback_refuse_attached_file">s%.jpg</string>
+    <string name="chargeback_refuse_attach_document">Anexar documento</string>
+    <string name="chargeback_refuse_attachment_error">O documento possui mais de 8mb. Por favor, reduza o tamanho para até 8mb e anexe novamente.</string>
+    <string name="chargeback_refuse_attachment_remove_content_description">Excluir anexo, botão</string>
+    <string name="chargeback_refuse_file_type_error">Documento com extensão incorreta. Extensões aceitas: .PDF, .JPG, .TIF ou .TIFF.</string>
+    <string name="chargeback_refuse_change_attachment">Alterar anexo</string>
+    <string name="chargeback_refuse_change_attachment_content_description">Alterar anexo, botão</string>
+
+    <string name="chargeback_refuse_delete_attachment">Tem certeza que quer apagar o documento anexado?</string>
+
+    <string name="chargeback_refuse_success_title">Você recusou a contestação</string>
+    <string name="chargeback_refuse_success_message">Acompanhe o andamento da contestação até ser finalizada.</string>
+    <string name="chargeback_refuse_success_label_btn">Acompanhar tratadas</string>
+
+    <string name="chargeback_accept_confirm_title">Quer mesmo confirmar o aceite dessa contestação?</string>
+    <string name="chargeback_accept_confirm_message">Ao aceitar a contestação, você estará autorizando o débito dessa transação na sua agenda financeira.</string>
+    <string name="chargeback_accept_success_title">Você aceitou a contestação</string>
+    <string name="chargeback_accept_success_message">Acompanhe o andamento da contestação até ser finalizada.</string>
+    <string name="chargeback_accept_success_label_btn">Acompanhar tratadas</string>
+
+    <string name="chargeback_status_first_chargeback">1\u00b0 Chargeback</string>
+    <string name="chargeback_status_second_chargeback">2\u00b0 Chargeback</string>
+    <string name="chargeback_status_arbitration">Arbitragem</string>
+    <string name="chargeback_status_chageback_arbitration">Chargeback arbitragem</string>
+    <string name="chargeback_status_friendly_billing">Cobrança Amigável</string>
+    <string name="chargeback_status_compliance">Compliance</string>
+    <string name="chargeback_status_pre_compliance">Pré Compliance</string>
+    <string name="chargeback_status_reversal">Reversão chargeback</string>
+    <string name="chargeback_status_friendly_reverse">Reversão cobrança amigável</string>
+    <string name="chargeback_status_reversal_arbitration">Reversão arbitragem</string>
+    <string name="chargeback_status_fee_collection">Fee collection</string>
+    <string name="chargeback_status_reversal_fee_collection">Reversão fee collection</string>
+    <string name="chargeback_status_debit_claim">Reclamação Débito</string>
+    <string name="chargeback_status_reversal_debit_claim">Reversão reclamação Débito</string>
+    <string name="chargeback_status_voucher">Chargeback voucher</string>
+    <string name="chargeback_status_reversal_voucher">Reversão chargeback voucher</string>
+    <string name="chargeback_status_pre_arbitration">Pré arbitragem</string>
+    <string name="chargeback_date_label_text">\u2022 Data</string>
+    <string name="chargeback_date_in">\u2022 em </string>
+    <string name="chargeback_reason_message_type1">Esta razão significa que o portador do cartão não reconhece e/ou não autorizou a transação. Para maiores informações, acesse a documentação.</string>
+    <string name="chargeback_reason_message_type2">Esta razão significa que o portador alega que ocorreu um desentendimento entre ambas as partes quanto a entrega da mercadoria ou prestação de serviço. Para maiores informações, acesse a documentação.</string>
+    <string name="chargeback_reason_message_type3">Esta razão significa que o portador alega que ocorreu um erro no processamento da transação como por exemplo uma duplicidade. Para maiores informações, acesse a documentação.</string>
+    <string name="chargeback_reason_dialog_title">%s - %s</string>
+
+    <string name="chargeback_rdr_card_label">Resolução Rápida de Disputas (RDR)</string>
+    <string name="chargeback_rdr_card_content">Contestação aceita automaticamente – VISA Rapid Dispute Resolution</string>
+
+    <string name="chargeback_filter_title">Filtros em contestações %s</string>
+    <string name="chargeback_filter_title_pending">Filtros em contestações pendentes</string>
+    <string name="chargeback_filter_title_treated">Filtros em contestações tratadas</string>
+    <string name="chargeback_filter_identifiers_title">Identificadores</string>
+    <string name="chargeback_filter_nsu_doc_hint">NSU/DOC</string>
+    <string name="chargeback_filter_case_hint">Case</string>
+    <string name="chargeback_filter_tid_hint">TID</string>
+    <string name="chargeback_filter_period_title">Período</string>
+    <string name="chargeback_filter_initial_date_hint">Data inicial</string>
+    <string name="chargeback_filter_final_date_hint">Data final </string>
+    <string name="chargeback_filter_clear_filter_button_text">Limpar filtros</string>
+    <string name="chargeback_filter_apply_filter_button_text">Filtrar</string>
+    <string name="chargeback_filter_apply_filters_title">Filtrar contestações: </string>
+    <string name="chargeback_filter_open_filter_screen_text">Filtros (%s)</string>
+    <string name="chargeback_filter_open_filter_screen_text_no_filters">Filtros </string>
+    <string name="chargeback_filter_talkback_selected">%s selecionado</string>
+    <string name="chargeback_filter_talkback_not_selected">%s, não selecionado</string>
+    <string name="chargeback_filter_select_date_error_dialog_title">Data inicial não está preenchida</string>
+    <string name="chargeback_filter_select_date_error_dialog_body">Por favor, preencha os campos com dados válidos</string>
+    <string name="chargeback_filter_select_date_error_dialog_button">Retornar</string>
+    <string name="chargeback_filter_empty_results">Não encontramos nenhuma transação com base no seu filtro, tente outra combinação.</string>
+    <string name="chargeback_filter_selected_accessibility">%s selecionado. Toque outra vez para para remover a seleção</string>
+    <string name="chargeback_filter_non_selected_brands_accessibility">Nenhuma bandeira selecionada</string>
+    <string name="chargeback_filter_non_selected_process_accessibility">Nenhum processo selecionado</string>
+    <string name="chargeback_filter_non_selected_treated_type_accessibility">Nenhum tipo de tratativa selecionado</string>
+    <string name="chargeback_filter_date_selector_hint_error">A data final deve ser posterior à data inicial</string>
+    <string name="chargeback_filter_date_field_mustbe_filled">Este campo precisa estar preenchido</string>
+</resources>

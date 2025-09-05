@@ -1,0 +1,30 @@
+task cieloInitialConfig(){
+    doFirst {
+        println "----- Iniciando Configuração -----"
+    }
+
+    //Remove DEBUG build
+    android.variantFilter { variant ->
+        if (variant.buildType.name == 'debug') {
+            variant.setIgnore(true);
+        }
+    }
+
+//    //Disabilita teste unitários nos builds diferentes do MOCK
+//    tasks.whenTaskAdded { task ->
+//        if (task != null) {
+//            if((task.name.startsWith("test") && !task.name.contains("Mock")) || task.name == ("test")){
+//                task.enabled = false
+//                task.setEnabled(false)
+//            }
+//        }
+//    }
+//    doLast {
+//        println "----- Configuração finalizada -----"
+//    }
+}
+
+configure(cieloInitialConfig) {
+    group = gradle.groupCielo
+    description = 'Configura o gradlew para rodar de acordo com as aconfigurações do Cielo APP'
+}

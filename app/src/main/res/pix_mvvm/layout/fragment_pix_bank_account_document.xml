@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_16dp">
+
+    <br.com.cielo.libflue.inputtext.CieloTextInputField
+        android:id="@+id/tifDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pix_key_bank_account_document_hint"
+        android:inputType="number"
+        android:maxLength="18"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        app:layout_constraintTop_toBottomOf="@id/tifDocument"
+        tools:text="Instituição: Banco Bradesco" />
+
+    <TextView
+        android:id="@+id/tvAccountType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        app:layout_constraintTop_toBottomOf="@id/tvBank"
+        tools:text="Tipo de conta: Conta Corrente" />
+
+    <TextView
+        android:id="@+id/tvAgency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        app:layout_constraintTop_toBottomOf="@id/tvAccountType"
+        tools:text="Agência: 0000" />
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        app:layout_constraintTop_toBottomOf="@id/tvAgency"
+        tools:text="Conta: 000000" />
+
+    <TextView
+        android:id="@+id/tvAccountDigit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/medium_montserrat_16_neutral_800"
+        app:layout_constraintTop_toBottomOf="@id/tvAccount"
+        tools:text="Dígito: 0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

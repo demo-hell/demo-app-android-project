@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutContentPix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            app:layout_constraintBottom_toTopOf="@id/viewLinePixSeparator"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_brand_pix_square"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            style="@style/TextTitleStyleMontserrat16spBlack353A40"
+            android:textColor="@color/color_5A646E"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewPix"
+            app:layout_constraintLeft_toRightOf="@id/imageViewPix"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageViewPix"
+            android:text="@string/text_conta_digital_pix_title"/>
+
+        <View
+            android:id="@+id/viewLinePixSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/grey_EAEEF3"
+            app:layout_constraintTop_toBottomOf="@id/imageViewPix"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutPixBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_18dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:orientation="vertical"
+            android:background="@color/color_blue_DEF5FF"
+            app:layout_constraintTop_toBottomOf="@id/viewLinePixSeparator"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Paragraph_400_bold_16_display_400"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_conta_digital_pix_available_balance"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewBalancePix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Paragraph_600_bold_16_brand_400"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_gravity="center_horizontal"
+                tools:text="R$ 3.000,00"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Paragraph_400_regular_10_display_400"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_conta_digital_pix_available_balance_info"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

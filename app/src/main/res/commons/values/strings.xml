@@ -1,0 +1,380 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="text_server_error_message">Serviço temporariamente indisponível. Tente novamente mais tarde.</string>
+    <string name="text_title_server_generic_error">Erro inesperado</string>
+    <string name="text_title_error_fingerprint_allowme">Falha na autenticação</string>
+    <string name="text_session_timeout_message">Sessão expirada. Logue novamente para continuar.</string>
+    <string name="text_session_timeout_message_short">Sessão Expirada.</string>
+
+    <string name="text_change_password_message">Senha alterada com sucesso.</string>
+
+    <string name="text_try_again_label">Tentar novamente</string>
+    <string name="text_recharge">Recarregar</string>
+    <string name="busca">Busca</string>
+    <string name="continuar">Continuar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ok">OK</string>
+    <string name="entendi">Entendi</string>
+    <string name="back">Voltar</string>
+    <string name="hello">Olá</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="go_to_home">Ir para home</string>
+    <string name="go_to_initial_screen">Ir para tela inicial</string>
+    <string name="share">Compartilhar</string>
+    <string name="concluded">Concluído</string>
+    <string name="help">Ajuda</string>
+    <string name="wait_a_moment" tools:ignore="Typos">Aguarde um momento…</string>
+    <string name="service">Serviço</string>
+    <string name="confer">Conferir</string>
+    <string name="transfer">Transferir</string>
+    <string name="document">Documento</string>
+
+    <string name="text_yes_label">Sim</string>
+    <string name="text_no_label">Não</string>
+
+    <string name="title_rating_google_play">Que tal nos avaliar na Google Play?</string>
+    <string name="message_rating_google_play">Se você está gostando do nosso aplicativo, talvez considere nos avaliar na Google Play.</string>
+    <string name="rating">AVALIAR</string>
+    <string name="rating_not_now">NÃO AGORA</string>
+    <string name="text_invalid_cpf_or_cnpj">CPF ou CNPJ inválido.</string>
+
+    <string name="cpf_hint">000.000.000–00</string>
+
+    <string name="text_next_label">Próximo</string>
+    <string name="text_new_label">Novo</string>
+    <string name="text_close">Fechar</string>
+
+    <string name="text_wrong_input_data_message">Verifique se os dados foram preenchidos corretamente.</string>
+    <string name="text_unavaiable_server_message">Sistema indisponível.\nPor favor, tente novamente mais tarde.</string>
+    <string name="text_obrigatory_field_error">Campo obrigatório.</string>
+
+    <string name="text_unavaiable_transfer_bank">Pedimos desculpas.\nVerifique se os dados foram preenchidos corretamente.</string>
+
+    <!-- Codigo de barras-->
+    <string name="title_barcode" tools:ignore="ExtraTranslation">Leitor de código de barras</string>
+    <string name="text_barcode_1">Posicione a câmera sobre o código de</string>
+    <string name="text_barcode_2">barras e aguarde</string>
+    <string name="text_invalid_barcode">Código inválido.</string>
+
+    <string name="barcode_text_need_access_camera">Para utilizar o leitor de código de barras é necessário dar permissão para acessar a câmera.</string>
+    <string name="barcode_text_need_access_camera_title">Cielo</string>
+    <string name="text_info_title">Sem notificações</string>
+    <string name="text_info_description">Você não tem nenhuma notificação por\n enquanto.</string>
+    <string name="text_prepaid_bank_label">Cartão\nPré-Pago</string>
+
+    <!-- Options Filter-->
+    <string name="filter_hoje">Hoje</string>
+    <string name="text_yesterday_statement_label">Ontem</string>
+    <string name="filter_ultimos_7_dias">Últimos 7 dias</string>
+    <string name="filter_ultimos_15_dias">Últimos 15 dias</string>
+    <string name="filter_ultimos_30_dias">Últimos 30 dias</string>
+    <string name="filter_outros_periodos">Outros períodos</string>
+    <string name="filter_last_days">Últimos %s dias</string>
+
+    <string-array name="array_filter_date">
+        <item name="filter_diario">Diário</item>
+        <item name="filter_ultimos_7_dias">Últimos 7 dias</item>
+        <item name="filter_ultimos_15_dias">Últimos 15 dias</item>
+        <item name="filter_ultimos_30_dias">Últimos 30 dias</item>
+        <item name="filter_outros_periodos">Outros períodos</item>
+    </string-array>
+
+    <string name="text_continue_label">CONTINUAR</string>
+
+    <string name="text_picker_bottom_sheet_calendar_title">O dia refletirá nos vencimentos das outras parcelas</string>
+    <string name="text_error_update">Atualizar</string>
+
+    <string name="text_user_loan_description_template">A Cielo tem o crédito pré-aprovado na medida certa para você.</string>
+
+    <string name="blank_content_description"> </string>
+
+    <string-array name="array_text_steps_titles">
+        <item>Meus dados</item>
+        <item>Confirmação</item>
+    </string-array>
+
+    <string name="text_webview_ssl_warning_title">Certificado inválido</string>
+
+    <string name="text_title_generic_error">Algo deu errado :(</string>
+    <string name="text_message_line_number_unavailable">Número da linha de erro indisponível.</string>
+    <string name="text_firebase_custom_key">Line Number: %s\nClass Name: %s </string>
+    <string name="text_title_service_unavailable">Serviço não disponível :(</string>
+    <string name="text_title_do_not_contract_possible">Não foi possível realizar sua contratação</string>
+    <string name="text_title_contract_in_progress">Já existe uma contratação em andamento</string>
+    <string name="text_message_contract_in_progress">Sua proposta está em aprovação com nosso parceiro. Se aceita, você receberá o dinheiro em sua conta e contrato por e-mail em até 2 dias úteis.</string>
+    <string name="text_message_generic_error">Não foi possível carregar este item agora. Tente de novo em alguns minutos ou reinicie o app. </string>
+    <string name="text_message_generic_error_information_not_loaded">Não foi possível carregar as informações no momento.</string>
+    <string name="text_message_error_mfa">Não foi possível carregar este item agora.\nTente de novo em alguns minutos ou reinicie o app.\n%s</string>
+    <string name="text_message_call_cancellation_center_error">Cancelamento não efetuado. Entre em contato com a Central de Cancelamento</string>
+
+
+    <string name="text_title_generic_error_token">Token expirado</string>
+    <string name="text_subtitle_generic_error_token">A validação do token expirou antes da autenticação, por favor tente novamente.</string>
+
+
+    <string name="text_title_version_block_toolbar_title">Atualização do Cielo Gestão</string>
+    <string name="text_title_version_block">Chegou uma nova atualização</string>
+    <string name="text_message_version_block_error">Olá, seu app está com uma versão antiga e precisa de uma atualização para sua experiência ficar ainda melhor!</string>
+    <string name="text_title_version_block_no_store">Sincronizando uma nova atualização</string>
+    <string name="text_message_version_block_error_no_store">Olá, seu app está com uma versão antiga e estamos sincronizando uma nova versão para sua experiência ficar ainda melhor! Volte depois para ver as novidades.</string>
+    <string name="text_version_block_version">Versão disponível: %s</string>
+    <string name="btn_version_block_update">Ir para a loja</string>
+
+    <string name="text_avancar">Avançar</string>
+
+    <string name="text_message_service_ineligible">Seu estabelecimento não é elegível, por isso você não pode acessar este item.</string>
+    <string name="toolbar_receba_rapido">Recebimento Automático</string>
+    <string name="toolbar_plan_tax">Taxas e Planos</string>
+    <string name="title_receive_fast_success_digital_daily">Agora você recebe suas vendas no mesmo dia</string>
+    <string name="message_receive_fast_success_digital_daily">A partir do próximo dia útil você receberá suas vendas no mesmo dia, simples assim. Vendeu, recebeu!</string>
+    <string name="title_receive_fast_success_daily">Agora você recebe suas vendas em dois dias úteis</string>
+    <string name="message_receive_fast_success_daily">A partir do próximo dia útil você receberá as suas vendas no crédito à vista e parcelado em até dois dias úteis.</string>
+    <string name="title_receive_fast_success_weekly">Agora você recebe suas vendas semanalmente</string>
+    <string name="message_receive_fast_success_weekly">A partir do próximo dia útil você receberá suas vendas no crédito à vista e parcelado toda %s.</string>
+    <string name="title_receive_fast_success_monthly">Agora você recebe suas vendas mensalmente</string>
+    <string name="message_receive_fast_success_monthly">A partir do próximo dia útil você receberá suas vendas no crédito à vista e parcelado todo %s de cada mês.</string>
+    <string name="text_debit_taxes_receba_rapido">Débito:</string>
+    <string name="text_cash_taxes_receba_rapido">À Vista:</string>
+    <string name="text_installment_taxes_receba_rapido">Parcelas em até:</string>
+
+    <string name="detalhes_do_pedido">Detalhes do pedido</string>
+    <string name="data_de_compra">Data de compra</string>
+    <string name="n_do_pedido">Nº do pedido</string>
+    <string name="status">Status</string>
+    <string name="general_information">Informações gerais</string>
+    <string name="ultima_atualizacao">Última atualização</string>
+    <string name="previsao_de_entrega">Previsão de entrega</string>
+    <string name="acompanhar_pedido">Acompanhar pedido</string>
+    <string name="acompanhar_status">Acompanhar status</string>
+    <string name="em_separacao_de_estoque">Em separação de estoque</string>
+    <string name="apos_aprovacao_do_pagamento">*Após aprovação do pagamento</string>
+    <string name="dados_da_venda">Dados da venda</string>
+    <string name="vendido_e_entregue_por">Vendido e entregue por</string>
+    <string name="text_sale_data">A Cielo enviará seu pedido para nosso fornecedor, que será responsável pela emissão da nota fiscal e realizará o processo de entrega.</string>
+    <string name="itens_selecionados">Itens selecionados</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="dados_de_entrega">Dados de entrega</string>
+    <string name="nome">Nome</string>
+    <string name="endereco">Endereço</string>
+    <string name="numero">Número</string>
+    <string name="complemento">Complemento</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+    <string name="cep">CEP</string>
+    <string name="dados_do_pagamento">Dados do pagamento</string>
+    <string name="valor_total">Valor total</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="meio_de_pagamento">Meio de pagamento</string>
+    <string name="disponivel_nas_principais_cidades">Disponível nas principais cidades:</string>
+    <string name="cidades_01">• São Paulo\n• Rio de Janeiro\n• Belo Horizonte\n• Campinas\n• Curitiba\n• Fortaleza\n• São José do Rio\nPreto</string>
+    <string name="no_site_preencha_o_campo_solicitante_com_os_n_meros_exibidos_abaixo">No site, preencha o campo solicitante com os números exibidos abaixo</string>
+
+    <string name="text_token">Token</string>
+    <string name="text_celular_anterior">Celular anterior</string>
+    <string name="text_voc_possui_acesso_ao_seu_aparelho_celular_anterior_com_o_token_validado">Você possui acesso ao seu aparelho celular anterior com o Token validado?</string>
+    <string name="text_nao_possuo_o_celular">Não possuo o celular</string>
+    <string name="text_possuo_o_celular">Possuo o celular</string>
+    <string name="text_validacao_do_token_anterior">Validação do Token anterior</string>
+
+
+    <string name="taxas">Taxas</string>
+    <string name="buscar_por_bandeira">Buscar por bandeira</string>
+
+    <string name="veja_todas_as_bandeiras_que_entram_para_a_meta_de_faturamento_m_nimo_do_cielo_livre">Veja todas as bandeiras que entram para a meta de faturamento mínimo do Cielo Livre.</string>
+    <string name="consulte_as_bandeiras_dispon_veis">Consulte as bandeiras disponíveis</string>
+    <string name="bandeiras_eleg_veis_para_meta_e_a_taxa_fixa_do_cielo_livre">Bandeiras elegíveis para meta e a taxa fixa do Cielo Livre</string>
+    <string name="bandeiras_n_o_eleg_veis_para_o_plano_cielo_livre_n_o_contam_para_a_meta_de_faturamento_e_podem_ter_taxas_diferenciadas">Bandeiras não elegíveis não contam para a meta de faturamento e podem ter taxas diferenciadas.</string>
+
+    <string name="recebimento">Recebimento</string>
+
+    <string name="label_zero_day">no mesmo dia</string>
+    <string name="label_single_day">em %d dia</string>
+    <string name="label_plural_days">em %d dias</string>
+
+    <string name="twenty_four_hours">24 horas</string>
+
+    <string name="text_mfa_inelegible_merchant_message">Seu estabelecimento não é elegível, por isso você não pode acessar este item.</string>
+
+    <string name="text_lgpd_title_toolbar">Termos e condições de uso</string>
+    <string name="text_lgpd_lei_geral_de_prote_o_de_dados">Lei Geral de Proteção de Dados</string>
+    <string name="text_lgpd_eu_aceito">Eu aceito</string>
+    <string name="text_lgpd_termo_de_aceite_de_acordo_com_a_resolu_o_n_4_734_do_banco_central">Termo de aceite de acordo com a Lei Geral de Proteção de Dados (LGPD) 13.709/2018</string>
+    <string name="text_lgpd_esse_documento_um_contrato_acordado">Este documento é um contrato acordado entre você e a Cielo, empresa inscrita no CNPJ/MF sob no. 01.027.058/0001-91, com sede na Alameda Xingu, 512, 21o ao 31o andar, Alphaville, na cidade de Barueri, Estado de São Paulo.\n\nEste “Termo de Condições e Uso” estabelece uma licença para usar esse app. Ao aceitar, você poderá acessar normalmente sua área logada.</string>
+    <string name="text_lgpd_saiba_mais">Saiba mais</string>
+    <string name="text_lgpd_pol_tica_de_privacidade_e_uso_de_dados_pessoais">Política de privacidade e uso de dados pessoais</string>
+    <string name="text_lgpd_termo_de_emiss_o_do_cart_o_pr_pago">Termo de emissão do cartão pré-pago</string>
+    <string name="text_lgpd_contrato_de_credenciamento_cielo">Contrato de credenciamento Cielo</string>
+    <string name="text_lgpd_termos_e_condi_es_de_uso_do_site_cielo">Termos e condições de uso do site Cielo</string>
+    <string name="text_lgpd_declaro_ser_o_propriet_rio_ou_representante_legal_do_estabelecimento">Declaro ser o proprietário ou representante legal do estabelecimento</string>
+    <string name="text_lgpd_declaro_que_li_e_concordo_com_todos_os_instrumentos_citados_acima">Declaro que li e concordo com todos os instrumentos citados acima</string>
+
+    <string name="text_title_arv_toolbar">Antecipe suas vendas</string>
+    <string name="error_open_playstore">Não foi possível abrir a loja de aplicativos PlayStore</string>
+    <string name="text_view_denny_access_title">Acesso negado.</string>
+    <string name="text_view_denny_access_subtitle">O acesso a Conta Digital está disponível somente para o proprietário do estabelecimento.</string>
+    <string name="text_arv_contract">Você realizou a solicitação da antecipação programada.</string>
+
+    <string name="text_error_domicilio">Você não possui nenhuma troca de domicílio bancário registrada.</string>
+
+    <string name="app_unavailable_dialog_title">Olá, estamos em manuntenção.</string>
+    <string name="app_unavailable_dialog_message">Estamos trabalhando para melhorar a sua experiência aqui no app. Essa manutenção pode levar alguns minutinhos, tente novamente mais tarde.</string>
+
+    <string name="message_success_new_deadline"><Data><![CDATA[Sua solicitação foi enviada com sucesso. Pedimos que aguarde o prazo de <b>2 a 5 dias</b> úteis para a inclusão da nova conta.<br/>
+    <b>Importante!</b> A bandeira selecionada será <b>transferida</b> para a nova conta, ou seja, <b>não estará mais habilitada</b> na conta anterior.]]></Data></string>
+    <string name="text_name_internal_user">USUÁRIO INTERNO</string>
+    <string name="text_search_stablishment_title">Digite um estabelecimento</string>
+    <string name="text_search_stablishment_subtitle">Digite na lista abaixo o estabelecimento que você deseja acessar agora.</string>
+    <string name="text_search_stablishment_error">No momento, não foi possível acessar o estabelecimento. Tente de novo em alguns minutos ou reinicie o app.</string>
+    <string name="text_search_empty_list">Não encontramos nenhuma loja com este nome. Digite um número de EC ou estabelecimento novamente.</string>
+    <string name="text_find">Buscar</string>
+
+    <string name="zero">0</string>
+    <string name="pt_br_zero_value">R$0,00</string>
+    <string name="text_select_date">Selecione uma data</string>
+    <string name="x_percent">%d%%</string>
+    <string name="x_percent_text">%s%%</string>
+    <string name="x_dash_y">%1$d/%2$d</string>
+
+    <string name="secret_key_name">biometric_encryption_key</string>
+    <string name="androidkeystore">"AndroidKeyStore"</string>
+
+    <string name="toolbar_pix">"PIX"</string>
+    <string name="error_generic">"Infelizmente ocorreu algum erro. Por favor, tente novamente."</string>
+    <string name="generic_error_title">Ops, algo deu errado</string>
+    <string name="error_title_something_wrong">Algo deu errado</string>
+    <string name="error_title_service_unavailable">Serviço temporariamente indisponível</string>
+    <string name="error_message_cant_proceed_now_try_again"><![CDATA[Infelizmente, não será possível prosseguir no momento.<br/>Por favor, tente novamente mais tarde.]]></string>
+    <string name="cifrao">R$</string>
+    <string name="accept_permission_allowme">"Permission Granted = MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION"</string>
+
+
+    <string name="text_unavailability_message_title">Serviço indisponível</string>
+    <string name="text_cieloalertdialog">CieloAlertDialog</string>
+
+    <string name="text_skip">Pular</string>
+    <string name="permission_needed_package">package</string>
+    <string name="access_permission_button">Acessar as configurações</string>
+
+    <string name="permission_location_title">Habilite a sua localização</string>
+    <string name="permission_location_message">Para maior segurança, habilite o acesso de localização do seu aparelho.</string>
+    <string name="permission_location_allow">Permitir</string>
+    <string name="permission_location_denied_message">Para maior segurança, habilite o acesso de localização do seu aparelho. Você pode fazer isso alterando as permissões do Cielo Gestão nas configurações do seu aparelho.</string>
+    <string name="permission_location_denied_show_config">Ir para configurações</string>
+    <string name="permission_location_denied_config">Configurações</string>
+    <string name="accessibility_button_description_pattern">%s, botão</string>
+
+    <string name="permission_needed_Localization_message">Para maior segurança habilite o acesso de localização do seu aparelho. Você pode fazer isso alterando as permissões do Cielo Gestão nas configurações do seu aparelho.</string>
+    <string name="permission_needed_Localization_title">Habilite a sua localização</string>
+
+    <string name="title_filter_button_topbar">Abrir filtro, botão</string>
+
+    <string name="description_title_toolbar">%s, título</string>
+    <string name="cnpj_mask">****-**</string>
+
+    <string name="description_accessibility_help_center_button">Central de ajuda, botão</string>
+    <string name="description_accessibility_help_button">Ajuda, botão</string>
+    <string name="description_accessibility_wa_button">WhatsApp, botão</string>
+
+    <string name="uri_parse_link_tel">tel: %s</string>
+    <string name="unexpected_error_occurred">Ocorreu um erro inesperado</string>
+    <string name="unexpected_error_occurred_open_browser">Ocorreu um erro inesperado ao abrir o navegador</string>
+
+    <string name="credit_at_once">Crédito à vista:</string>
+    <string name="credit_with_installments">Crédito parcelado:</string>
+    <string name="x_per_cent_string">%s%%</string>
+
+    <string name="mfa_token_finish_p2_title">Precisamos confirmar a sua identidade</string>
+    <string name="mfa_token_finish_p2_message">Para configurar o seu dispositivo e realizar operações com mais segurança, precisamos que você envie fotos do seu documento e do seu rosto. Vamos lá?</string>
+    <string name="mfa_token_finish_p2_first_btn">Configurar depois</string>
+    <string name="mfa_token_finish_p2_second_btn">Configurar dispositivo</string>
+
+    <string name="mfa_token_different_device_title">Identificamos que você está acessando de outro celular</string>
+    <string name="mfa_token_different_device_message">Para configurar o novo dispositivo e realizar operações com mais segurança, precisamos que você envie fotos do seu documento e do seu rosto. Vamos lá?</string>
+
+    <string name="commons_generic_error_title">Parece que tivemos algum problema por aqui</string>
+    <string name="commons_generic_error_message">Vamos resolver isso e você pode voltar para tentar de novo mais tarde, combinado?</string>
+    <string name="mfa_token_generic_error_message">Estamos trabalhando para corrigir este problema. Tente novamente em alguns instantes.</string>
+
+    <string name="mfa_token_success_title">Dispositivo configurado com sucesso</string>
+    <string name="mfa_token_success_message">A partir de agora você pode realizar suas operações com mais segurança.</string>
+
+    <string name="phone_number_capital">4002 5472 (capitais)</string>
+    <string name="phone_number_others">0800 570 8472 (outras localidades)</string>
+
+    <string name="access_manager_name">Gestão de Acessos</string>
+
+    <string name="user_agent_for_akamai">%s/%s (Android %s; Build/%s)</string>
+
+    <string name="content_description_close_button">Fechar, botão</string>
+    <string name="content_description_return_button">Voltar</string>
+
+    <string name="error_not_booting_login_message">Por favor, tente novamente realizar o login da sua conta Cielo.</string>
+    <string name="error_not_booting_forgot_password_message">Por favor, tente novamente a operação de recuperação da sua senha.</string>
+    <string name="error_not_booting_first_access_message">Por favor, tente novamente a operação de criação do seu acesso.</string>
+
+    <string name="description_accessibility_cielo_logo">Cielo, logotipo</string>
+    <string name="description_accessibility_sale_value">Editar valor, botão</string>
+    <string name="description_accessibility_close_button">Fechar, botão</string>
+
+    <string name="storage_permission_request_title">Precisamos do acesso as suas mídias e arquivos</string>
+    <string name="storage_permission_request_message">Para continuar você precisa habilitar o acesso as fotos, mídias e arquivos do seu aparelho. Você pode fazer isso alterando as permissões do Cielo Gestão nas configurações do seu aparelho.</string>
+
+    <string name="text_animation_loading">Validando token de\nsegurança...</string>
+    <string name="text_animation_loading_error">Houve um problema\nna validação.</string>
+    <string name="text_animation_loading_success">Tudo certo!</string>
+
+    <string name="content_description_amount_reais_and_centavos">%d reais e %d centavos</string>
+    <string name="content_description_amount_reais_and_centavo">%d reais e 1 centavo</string>
+    <string name="content_description_amount_real_and_centavos">1 real e %d centavos</string>
+    <string name="content_description_amount_real_and_centavo">1 real e 1 centavo</string>
+    <string name="content_description_amount_reais">%d reais</string>
+    <string name="content_description_amount_real">1 real</string>
+    <string name="content_description_amount_centavos">%d centavos</string>
+    <string name="content_description_amount_centavo">1 centavo</string>
+    <string name="content_description_amount_zero_real">0 real</string>
+    <string name="content_description_amount_negative">menos </string>
+
+    <string name="content_description_list_simple_horizontal">Página %d de %d: %s. Deslize para a direita.</string>
+    <string name="content_description_list_simple_horizontal_end">Página %d de %d: %s.</string>
+
+    <string name="content_description_help_center_button">Central de ajuda, botão</string>
+    <string name="content_description_notification_button">Notificações, botão</string>
+    <string name="text_call_center_action">Ligar para central</string>
+
+    <string name="deny">Negar</string>
+    <string name="aprove">Aprovar</string>
+    <string name="finish">Finalizar</string>
+
+    <string name="txt_error_base_insert_amount_fragment">O valor deve ser maior que R$ 0,00.</string>
+    <string name="content_description_error_base_insert_amount_fragment">O valor da venda deve ser maior que zero real.</string>
+
+    <string name="wait_animated_loading_start_message">Aguarde...</string>
+
+    <string name="txt_lock_for_technical_profile">Você está com o perfil técnico que possui acesso apenas ao gerenciamento de credenciais do e-commerce. Para utilizar essa funcionalidade, acesse a área logada do site Cielo.</string>
+    <string name="txt_lock_for_custom_profile"><![CDATA[Seu <b>perfil de acesso é personalizado</b>, ou seja, que as configurações e permissões foram adaptadas de acordo com as suas responsabilidades. Por enquanto essas configurações e permissões são acessadas somente na área logada do site Cielo.]]></string>
+    <string name="txt_title_dialog_for_technical_profile">O perfil técnico não possui acesso a essa funcionalidade</string>
+    <string name="txt_title_dialog_for_custom_profile">Por enquanto o perfil personalizado não possui acesso a essa área no App Gestão</string>
+    <string name="txt_desc_dialog_for_technical_profile">O perfil técnico é de uso especifico para gerenciamento de segurança das credenciais do e-commerce. Clique no botão para ter acesso a página do e-commerce no site.</string>
+    <string name="txt_desc_dialog_for_custom_profile">Abra a área logada do Site Cielo para acessar as configurações e permissões foram adaptadas de acordo com as suas responsabilidades.</string>
+    <string name="txt_label_button_access_website">Acessar site</string>
+
+    <string name="wait_a_moment_message">Aguarde um momento…</string>
+    <string name="content_description_loading">Carregando informações, aguarde um momento</string>
+
+    <string name="anticipation_error">Pedimos desculpas mas ocorreu um erro no sistema e não conseguimos exibir as informações.</string>
+    <string name="anticipation_error_load_area">Pedimos desculpas mas ocorreu um erro para carregar essa área.</string>
+    <string name="go_to_beginning">Ir para o início</string>
+
+    <plurals name="month_plurals">
+        <item quantity="one">mês</item>
+        <item quantity="other">meses</item>
+    </plurals>
+
+    <string name="enviar_solicitacao">Enviar solicitação</string>
+    <string name="Establishment">Estabelecimento</string>
+    <string name="selecionar">Selecionar</string>
+    <string name="periodo_inicio">Período Início</string>
+    <string name="periodo_fim">Período Fim</string>
+    <string name="pending">Pendente</string>
+</resources>

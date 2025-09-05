@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_superlink"
+    app:startDestination="@id/linkPaymentFragment">
+
+    <fragment
+        android:id="@+id/formaEnvioFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.engine.formaEnvio.FormaEnvioFragment"
+        android:label="FormaEnvioFragment"
+        tools:layout="@layout/fragment_forma_envio">
+        <action
+            android:id="@+id/action_formaEnvioFragment_to_correiosDeliveryFragment"
+            app:destination="@id/correiosDeliveryFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_formaEnvioFragment_to_freightConfigurationFragment"
+            app:destination="@id/freightConfigurationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_formaEnvioFragment_to_collectAddressFragment"
+            app:destination="@id/collectAddressFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_formaEnvioFragment_to_onboardingLoggiStep01"
+            app:destination="@id/onboardingLoggiStep01"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_formaEnvioFragment_to_linkPaymentFragment"
+            app:destination="@id/linkPaymentFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_formaEnvioFragment_to_linkPaymentCreatedFragment"
+            app:destination="@id/linkPaymentCreatedFragment"
+            app:popUpTo="@id/linkPaymentFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/freightConfigurationFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.fragment.FreightConfigurationFragment"
+        android:label="FreightConfigurationFragment"
+        tools:layout="@layout/fragment_configuration_freight">
+        <action
+            android:id="@+id/action_freightConfigurationFragment_to_linkPaymentFragment"
+            app:destination="@id/linkPaymentFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/linkPaymentFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_freightConfigurationFragment_to_linkPaymentCreatedFragment"
+            app:destination="@id/linkPaymentCreatedFragment"
+            app:popUpTo="@id/linkPaymentFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/correiosDeliveryFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.delivery.CorreiosDeliveryFragment"
+        android:label="CorreiosDeliveryFragment"
+        tools:layout="@layout/fragment_correios_delivery">
+        <action
+            android:id="@+id/action_correiosDeliveryFragment_to_linkPaymentFragment"
+            app:destination="@id/linkPaymentFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/linkPaymentFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_correiosDeliveryFragment_to_linkPaymentCreatedFragment"
+            app:destination="@id/linkPaymentCreatedFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/linkPaymentFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/collectAddressFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.delivery.address.CollectAddressFragment"
+        android:label="CollectAddressFragment"
+        tools:layout="@layout/activity_collect_address_fragment">
+        <action
+            android:id="@+id/action_collectAddressFragment_to_deliveryLoggiConfigurationFragment"
+            app:destination="@id/deliveryLoggiConfigurationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/deliveryLoggiConfigurationFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.engine.deliveryLoggi.DeliveryLoggiConfigurationFragment"
+        android:label="DeliveryLoggiConfigurationFragment"
+        tools:layout="@layout/fragment_delivery_loggi_configuration">
+        <action
+            android:id="@+id/action_deliveryLoggiConfigurationFragment_to_linkPaymentFragment"
+            app:destination="@id/linkPaymentFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/linkPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingLoggiStep01"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.engine.onboarding.OnboardingLoggiStep01"
+        android:label="OnboardingLoggiStep01"
+        tools:layout="@layout/onboarding_loggi_step_01">
+        <action
+            android:id="@+id/action_onboardingLoggiStep01_to_onboardingLoggiStep02"
+            app:destination="@id/onboardingLoggiStep02"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingLoggiStep02"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.engine.onboarding.OnboardingLoggiStep02"
+        android:label="OnboardingLoggiStep02"
+        tools:layout="@layout/onboarding_loggi_step_02">
+        <action
+            android:id="@+id/action_onboardingLoggiStep02_to_onboardingLoggiStep03"
+            app:destination="@id/onboardingLoggiStep03"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_onboardingLoggiStep02_to_formaEnvioFragment"
+            app:destination="@id/formaEnvioFragment"
+            app:popUpTo="@id/formaEnvioFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingLoggiStep03"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.engine.onboarding.OnboardingLoggiStep03"
+        android:label="OnboardingLoggiStep03"
+        tools:layout="@layout/onboarding_loggi_step_03">
+        <action
+            android:id="@+id/action_onboardingLoggiStep03_to_collectAddressFragment"
+            app:destination="@id/collectAddressFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/formaEnvioFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_onboardingLoggiStep03_to_formaEnvioFragment"
+            app:destination="@id/formaEnvioFragment"
+            app:popUpTo="@id/formaEnvioFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/linkPaymentFragment"
+        android:name="br.com.mobicare.cielo.superlink.presentation.ui.SuperLinkPaymentFragment"
+        android:label="LinkPaymentFragment"
+        tools:layout="@layout/fragment_super_link_payment">
+        <action
+            android:id="@+id/action_linkPaymentFragment_to_tipoVendaPagamentoPorLinkFragment"
+            app:destination="@id/tipoVendaPagamentoPorLinkFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_linkPaymentFragment_to_pagamentoLinkListAtivosFragment2"
+            app:destination="@id/pagamentoLinkListAtivosFragment2"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_linkPaymentFragment_to_linkOrdersFragment"
+            app:destination="@id/linkOrdersFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipoVendaPagamentoPorLinkFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.engine.tipoVenda.TipoVendaPagamentoPorLinkFragment"
+        android:label="TipoVendaPagamentoPorLinkFragment"
+        tools:layout="@layout/fragment_tipo_venda_pagamento_por_link">
+        <action
+            android:id="@+id/action_tipoVendaPagamentoPorLinkFragment_to_createLinkPaymentFragment"
+            app:destination="@id/createLinkPaymentFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/createLinkPaymentFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.activity.CreateLinkPaymentFragment"
+        android:label="CreateLinkPaymentFragment"
+        tools:layout="@layout/fragment_create_link_payment">
+        <action
+            android:id="@+id/action_createLinkPaymentFragment_to_formaEnvioFragment"
+            app:destination="@id/formaEnvioFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_createLinkPaymentFragment_to_linkPaymentFragment"
+            app:destination="@id/linkPaymentFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right" />
+        <action
+            android:id="@+id/action_createLinkPaymentFragment_to_linkPaymentCreatedFragment"
+            app:destination="@id/linkPaymentCreatedFragment"
+            app:enterAnim="@anim/slide_from_left"
+            app:exitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/linkPaymentFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/linkPaymentCreatedFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.linkPaymentCreated.LinkPaymentCreatedFragment"
+        android:label="LinkPaymentCreatedFragment"
+        tools:layout="@layout/fragment_link_payment_created">
+
+        <action
+            android:id="@+id/action_createLinkPaymentCreated_to_linkPaymentFragment"
+            app:destination="@id/linkPaymentFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <argument
+            android:name="PAYMENT_LINK_ARGS"
+            app:argType="br.com.mobicare.cielo.pagamentoLink.domain.PaymentLink"
+            app:nullable="true"/>
+
+        <argument
+            android:name="PAYMENT_LINK_DTO_ARGS"
+            app:argType="br.com.mobicare.cielo.pagamentoLink.domains.PaymentLinkDTO"
+            app:nullable="true"/>
+
+        <argument
+            android:name="ISCHECK_ARGS"
+            app:argType="string"/>
+
+        <argument
+            android:name="LISTA_RESUMO_ARGS"
+            app:argType="boolean"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pagamentoLinkListAtivosFragment2"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.listAtivos.PagamentoLinkListAtivosFragment"
+        android:label="PagamentoLinkListAtivosFragment"
+        tools:layout="@layout/pagamento_list_fragment_ativos">
+        <action
+            android:id="@+id/action_pagamentoLinkListAtivosFragment2_to_linkOrdersFragment"
+            app:destination="@id/linkOrdersFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/linkOrdersFragment"
+        android:name="br.com.mobicare.cielo.pagamentoLink.orders.LinkOrdersFragment"
+        android:label="LinkOrdersFragment"
+        tools:layout="@layout/fragment_link_orders">
+        <argument
+            android:name="PAYMENTLINK_EXTRAS"
+            app:argType="br.com.mobicare.cielo.pagamentoLink.domain.PaymentLink" />
+        <action
+            android:id="@+id/action_linkOrdersFragment_to_linkOrderDetailFragment2"
+            app:destination="@id/linkOrderDetailFragment2"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/linkOrderDetailFragment2"
+        android:name="br.com.mobicare.cielo.pagamentoLink.orders.orderdetail.LinkOrderDetailFragment"
+        android:label="LinkOrderDetailFragment"
+        tools:layout="@layout/fragment_link_order_detail">
+        <argument
+            android:name="ORDER_DETAIL_EXTRA"
+            app:argType="br.com.mobicare.cielo.pagamentoLink.orders.model.Order" />
+        <argument
+            android:name="PAYMENTLINK_EXTRAS"
+            app:argType="br.com.mobicare.cielo.pagamentoLink.domain.PaymentLink" />
+        <action
+            android:id="@+id/action_linkOrderDetailFragment2_to_solicitationMotoboyStep01Impl"
+            app:destination="@id/solicitationMotoboyStep01Impl"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/solicitationMotoboyStep01Impl"
+        android:name="br.com.mobicare.cielo.pagamentoLink.presentation.ui.solicitationMotoboy.SolicitationMotoboyStep01Impl"
+        android:label="SolicitationMotoboyStep01Impl"
+        tools:layout="@layout/fragment_solicitation_motoboy_step01">
+        <action
+            android:id="@+id/solicitation_motoboy_step_to_link_order_fragment"
+            app:destination="@+id/linkOrdersFragment"
+            app:popUpTo="@+id/linkOrdersFragment" />
+
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+    </fragment>
+</navigation>

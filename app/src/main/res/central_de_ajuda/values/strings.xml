@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_ajuda">Ajuda</string>
+    <string name="ga_ajuda_gestor">Ajuda > Gestor</string>
+    <string name="ga_ajuda_chat_online">Ajuda > Chat Online</string>
+
+    <string name="central_ajuda_meu_gestor">Meu Gestor Comercial</string>
+    <string name="central_ajuda_telefones_uteis">Telefones Úteis</string>
+    <string name="central_ajuda_button_ligar">Ligar</string>
+    <string name="central_ajuda_button_enviar_email">Enviar e-mail</string>
+    <string name="central_ajuda_legenda_gestor">gestor</string>
+    <string name="central_ajuda_main_title">Como podemos te ajudar?</string>
+    <string name="central_ajuda_main_subtitle">Acesse dúvidas mais frequentes, materiais de apoio, tutoriais e muito mais!</string>
+    <string name="central_ajuda_hint_text">Qual é sua dúvida?</string>
+    <string name="sub_categorias_toolbar_title">SubCategorias</string>
+    <string name="central_ajuda_permission_warning">É necessária habilitar a permissão para fazer ligações</string>
+
+    <string name="cl_categories_title">Categorias</string>
+    <string name="cl_common_questions_title">Perguntas frequentes</string>
+    <string name="cl_service_channels_title">Canais de atendimento</string>
+    <string name="cl_contact_title">Entre em contato</string>
+
+    <string name="cl_chat_title">Chat</string>
+    <string name="cl_duvidas_gerais_title">Dúvidas gerais</string>
+    <string name="iv_cd_duvidas_gerais_icon">Ícone dúvidas gerais</string>
+    <string name="cl_virtual_manager_title">Gerente Virtual</string>
+    <string name="iv_cd_virtual_manager_icon">Ícone Gerente Virtual</string>
+    <string name="cl_chat_description">Cique aqui para falar com um de nossos atendentes e seja respondido agora mesmo.</string>
+    <string name="text_frequent_questions_title">Perguntas frequentes</string>
+    <string name="text_question_ask_client_feedback_label">Essa informação foi útil?</string>
+    <string name="text_bad_question_reaction_label">Toque aqui e fale conosco via Chat</string>
+    <string name="text_good_question_reaction_label">Que bom :)</string>
+
+    <string name="text_toolbar_ombudsman">Ouvidoria</string>
+
+    <string name="text_title_question_ombudsman">Você já entrou em contato com a Cielo e possui um número de protocolo?</string>
+    <string name="text_subtitle_question_ombudsman">A ouvidoria é o canal de segunda instância para esclarecimento de dúvidas, sugestões ou críticas. Para continuar, é necessário que você tenha o <b>número de protocolo</b> do seu chamado na nossa central de atendimento.</string>
+    <string name="text_btn_with_protocol">Já entrei em contato</string>
+    <string name="text_btn_no_protocol">Não entrei em contato</string>
+
+    <string name="text_title_dialog_no_protocol">Atenção</string>
+    <string name="text_subtitle_dialog_no_protocol">Direcionaremos você para entrar em contato através do chat com nossa central de atendimento.</string>
+    <string name="text_btn_dialog_no_protocol">Ir para o chat</string>
+
+    <string name="text_title_ombudsman_personal_data">Canal para esclarecimento de dúvidas, sugestões ou críticas.</string>
+    <string name="text_subtitle_ombudsman_personal_data">Para continuar, informe o número de protocolo do seu chamado na nossa Central de atendimento.</string>
+    <string name="text_title_email">Email</string>
+    <string name="text_title_phone">Telefone</string>
+    <string name="text_title_number_ec">Número do estabelecimento</string>
+    <string name="text_title_responsible_for_contact">Responsável pelo contato</string>
+
+    <string name="text_hint_email">Digite seu email</string>
+    <string name="text_hint_phone">Digite seu número de telefone</string>
+    <string name="text_hint_number_ec">Digite o número do estabelecimento</string>
+    <string name="text_hint_responsible_for_contact">Digite o nome do responsável</string>
+
+    <string name="text_title_subject_ombudsman_message">Assunto</string>
+    <string name="text_title_message_ombudsman_message">Mensagem</string>
+    <string name="text_title_protocol_subject_ombudsman_message">Protocolo</string>
+    <string name="text_hin_subject_ombudsman_message">Selecione o assunto</string>
+    <string name="text_hin_protocol_ombudsman_message">Digite o número do protocolo</string>
+    <string name="text_hin_message_ombudsman_message">Escreva um comentário</string>
+
+    <string name="text_error_email_ombudsman_message">Por favor, digite um email válido.</string>
+    <string name="text_error_phone_ombudsman_message">Por favor, digite um telefone válido.</string>
+    <string name="text_error_number_ec_ombudsman_message">Por favor, digite um número de estabelecimento.</string>
+    <string name="text_error_responsible_ombudsman_message">Por favor, digite o nome do responsável.</string>
+    <string name="text_error_protocol_ombudsman_message">Por favor, digite um número do protocolo.</string>
+    <string name="text_error_message_ombudsman_message">Por favor, digite um comentário.</string>
+
+    <string name="text_title_bottom_sheet_success">Mensagem enviada com sucesso!</string>
+    <string name="text_subtitle_bottom_sheet_success">Em breve entraremos em contato.</string>
+    <string name="text_data_bottom_sheet_success">Data e hora do envio: %s às %s.\n</string>
+    <string name="text_btn_bottom_sheet_success">Voltar para tela inicial</string>
+
+    <string name="text_list_subject_suggestion">Sugestão</string>
+    <string name="text_list_subject_praise">Elogio</string>
+    <string name="text_list_subject_complaint">Reclamação</string>
+
+    <string name="text_title_item_type_ombudsman">Não está conseguindo resolver nos outros canais?</string>
+    <string name="text_subtitle_item_type_ombudsman">Abra um chamado</string>
+    <string name="text_number_item_type_ombudsman">ou entre em contato pelo número da ouvidoria: %s</string>
+
+    <string name="help_center">Central de ajuda</string>
+    <string name="help_center_search_found_results"><![CDATA[Encontramos <b>%d %s</b> para a sua busca.]]></string>
+    <string name="help_center_search_found_zero"><![CDATA[Encontramos <b>0 resultados</b> para a sua busca \"%s\".]]></string>
+    <string name="help_center_search_result">resultado</string>
+    <string name="help_center_search_results">resultados</string>
+
+    <string name="text_talk_with_customer_service">Deseja falar com o nosso atendimento?</string>
+    <string name="text_contact_us">Fale conosco</string>
+
+    <string name="title_bottomsheet_have_questions_pix">Ainda está com dúvidas sobre o Pix na Cielo?</string>
+    <string name="label_bottomsheet_have_questions_pix">Fale com a nossa central via Chat ou WhatsApp a qualquer momento, estamos preparados para melhor te atender. Você poderá registrar reclamação no site do <![CDATA[<b><font color=#177de9>Banco Central do Brasil</font></b>]]> caso sua dúvida não seja solucionada.</string>
+</resources>

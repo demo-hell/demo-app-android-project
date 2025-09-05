@@ -1,0 +1,35 @@
+<resources>
+    <string name="ga_esqueci_usuario">Esqueci o usuário</string>
+    <string name="ga_esqueci_ec">Esqueci o nº do estabelecimento</string>
+    <string name="ga_esqueci_ec_pf">Esqueci o nº do estabelecimento - Pessoa Física</string>
+    <string name="ga_esqueci_ec_pj">Esqueci o nº do estabelecimento - Pessoa Jurídica</string>
+
+    <string name="esqueci_ec_cnpj_description">Informe o número do CNPJ da sua empresa</string>
+    <string name="esqueci_ec_cpf_description">Informe o número do CPF cadastrado</string>
+    <string name="esqueci_usuario_ec_description">Informe o número do seu estabelecimento</string>
+
+    <string name="esqueci_ec_cnpj_hint">CNPJ</string>
+    <string name="esqueci_ec_cpf_hint">CPF</string>
+    <string name="esqueci_usuario_ec_hint">Nº do estabelecimento</string>
+
+    <string name="esqueci_cnpj_mask">##.###.###/####-##</string>
+    <string name="esqueci_cpf_mask">###.###.###-##</string>
+
+    <string name="esqueci_usuario_button_enviar">Enviar</string>
+
+    <string name="dialog_error_cnpj">CNPJ inválido. Tente novamente.</string>
+    <string name="dialog_error_cpf">CPF inválido. Tente novamente.</string>
+    <string name="dialog_error_ec">Nº do estabelecimento é obrigatório</string>
+
+    <string name="dialog_btn_continuar">Continuar</string>
+    <string name="dialog_esqueci_ec_title">Número do estabelecimento</string>
+    <string name="dialog_esqueci_ec_error">Nenhum estabelecimento encontrado.</string>
+    <string name="dialog_esqueci_user_error">Nenhum usuário encontrado.</string>
+    <string name="dialog_esqueci_usuario_title">Usuários disponíveis</string>
+    <string name="dialog_esqueci_usar_numero">Usar esse número</string>
+    <string name="dialog_esqueci_usar_usuario">Usar esse usuário</string>
+
+
+    <string name="esqueci_senha_txt_desc_recover">Para recuperar sua senha, é necessário que você confirme os dados da sua conta cadastrada.</string>
+
+</resources>

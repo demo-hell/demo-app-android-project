@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.cielo.libflue.inputtext.CieloTextInputFieldSearch
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/etSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:layout_marginBottom="@dimen/dimen_16dp"
+    android:hint="@string/pix_key_bank_account_search_hint" />
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_my_keys"
+    app:startDestination="@id/pixMyKeysFragment">
+
+    <fragment
+        android:id="@+id/pixMyKeysFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.keys.myKeys.home.PixMyKeysFragment"
+        android:label="PixMyKeysFragment"
+        tools:layout="@layout/fragment_pix_my_keys">
+
+        <action
+            android:id="@+id/action_pixMyKeysFragment_to_pixInsertKeyToRegisterFragment"
+            app:destination="@id/pixInsertKeyToRegisterFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixMyKeysFragment_to_pixKeyRegistrationFragment"
+            app:destination="@id/pixKeyRegistrationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixMyKeysFragment_to_pixValidationCodeFragment"
+            app:destination="@id/pixValidationCodeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <argument
+            android:name="PIX_REDIRECT_RANDOM_KEY"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixInsertKeyToRegisterFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.keys.myKeys.register.insert.PixInsertKeyToRegisterFragment"
+        android:label="PixInsertKeyToRegisterFragment"
+        tools:layout="@layout/fragment_pix_insert_key_to_register">
+
+        <argument
+            android:name="PIX_TYPE_KEY_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.enums.PixKeyTypeEnum" />
+
+        <action
+            android:id="@+id/action_pixInsertKeyToRegisterFragment_to_pixValidationCodeFragment"
+            app:destination="@id/pixValidationCodeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixValidationCodeFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.keys.myKeys.register.validation.PixValidationCodeFragment"
+        android:label="PixValidationCodeFragment"
+        tools:layout="@layout/fragment_pix_validation_code">
+
+        <argument
+            android:name="PIX_TYPE_KEY_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.enums.PixKeyTypeEnum" />
+
+        <argument
+            android:name="PIX_KEY_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_CLAIM_FLOW_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_CLAIM_ID_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_pixValidationCodeFragment_to_pixKeyRegistrationFragment"
+            app:destination="@id/pixKeyRegistrationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+
+        <action
+            android:id="@+id/action_pixValidationCodeFragment_to_pixMyKeysFragment"
+            app:destination="@id/pixMyKeysFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixMyKeysFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixKeyRegistrationFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.keys.myKeys.register.registration.PixKeyRegistrationFragment"
+        android:label="PixKeyRegistrationFragment"
+        tools:layout="@layout/fragment_pix_key_registration">
+
+        <argument
+            android:name="PIX_TYPE_KEY_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.enums.PixKeyTypeEnum" />
+
+        <argument
+            android:name="PIX_TYPE_KEY_VALUE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_VALIDATION_CODE_VALUE_ARGS"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_pixKeyRegistrationFragment_to_pixMyKeysFragment"
+            app:destination="@id/pixMyKeysFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixMyKeysFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:variablePadding="true">
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:right="@dimen/dimen_20dp">
+                <shape android:shape="oval">
+                    <size android:width="@dimen/dimen_24dp" android:height="@dimen/dimen_24dp" />
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+            <item android:right="@dimen/dimen_20dp">
+                <shape android:shape="oval">
+                    <stroke android:width="@dimen/dimen_1dp" android:color="@color/color_C5CED7" />
+                    <size android:width="@dimen/dimen_24dp" android:height="@dimen/dimen_24dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="@dimen/dimen_24dp">
+                <shape android:shape="rectangle">
+                    <size android:width="@dimen/dimen_20dp" android:height="@dimen/dimen_20dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@drawable/ic_resource_default_check" android:right="@dimen/dimen_20dp">
+                <shape android:shape="oval">
+                    <stroke android:width="@dimen/dimen_1dp" android:color="@color/colorPrimary" />
+                    <size android:width="@dimen/dimen_24dp" android:height="@dimen/dimen_24dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="@dimen/dimen_24dp">
+                <shape android:shape="rectangle">
+                    <size android:width="@dimen/dimen_20dp" android:height="@dimen/dimen_20dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

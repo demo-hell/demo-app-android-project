@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearDialogFacilita"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rounded"
+    android:orientation="vertical">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textDialogFacilitaDescription"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:gravity="left"
+        app:layout_constraintWidth_max="@dimen/dimen_303dp"
+        android:textColor="#5A646E"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDialogFacilitaTitle"
+        app:typeface="MuseoSans-300.ttf"
+        tools:text="@string/cielo_facilita_fluxo_automatico_description_dialog" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/buttonDialogFacilitaConfirm"
+        style="@style/ButtonShapedBlueStyle"
+        android:layout_width="@dimen/dimen_298dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_21dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDialogFacilitaNoOption"
+        tools:text="@string/cielo_facilita_fluxo_automatico_button_second_dialog" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textDialogFacilitaNoOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dimen_29dp"
+        android:layout_marginTop="@dimen/dimen_21dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDialogFacilitaDescription"
+        app:typeface="MuseoSans-500.ttf"
+        tools:text="@string/cielo_facilita_fluxo_automatico_button_first_dialog" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textDialogFacilitaTitle"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left"
+        android:textColor="@color/black_000000"
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/closeButtonDialog"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:typeface="MuseoSans-700.ttf"
+        tools:text="@string/cielo_facilita_fluxo_automatico_title_dialog" />
+
+    <ImageView
+        android:id="@+id/closeButtonDialog"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_14sp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textDialogFacilitaTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_icon_close"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

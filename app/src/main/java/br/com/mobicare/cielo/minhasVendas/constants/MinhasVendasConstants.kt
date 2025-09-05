@@ -1,0 +1,21 @@
+package br.com.mobicare.cielo.minhasVendas.constants
+
+const val SALE_DATE = "Data de venda"
+const val AUTHORIZATION_DATE = "Data de autorização"
+const val TID = "TID"
+const val FLAG = "Bandeira"
+const val SALE_VALUE = "Valor da venda"
+const val NET_VALUE = "Valor líquido"
+const val RATE = "Taxa"
+const val PAYMENT_METHODS = "Forma de pagamento"
+const val PAYMENT_FORECAST = "Previsão de pagamento"
+const val SALES_CHANNEL = "Canal da venda"
+const val NOT_FOUND = "NOT_FOUND"
+const val WITHOUT_BALANCE = "WITHOUT_BALANCE"
+const val INELEGIBLE_SALE = "INELEGIBLE_SALE"
+const val ID = "ID"
+const val NSU_DOC = "NSU/DOC"
+const val CAPTURE_TYPE = "Tipo de captura"
+
+const val ITEM_CANCEL_TUTORIAL_ARGS = "ITEM_CANCEL_TUTORIAL_ARGS"
+const val IS_SALE_TODAY_ARGS = "IS_SALE_TODAY_ARGS"

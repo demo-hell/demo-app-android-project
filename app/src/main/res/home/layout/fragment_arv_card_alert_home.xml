@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arvAlert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@id/dividerView3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/dividerView1">
+
+    <View
+        android:id="@+id/dividerView1"
+        style="@style/label_16_montserrat_semi_bold_cloud_0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:background="@color/display_50"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tvArvAlertTitle"
+        style="@style/Heading_400_Bold_14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:text="@string/card_home_arv_alert_title"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvArvAlertDescription"
+        style="@style/Heading_400_Regular_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        android:text="@string/card_home_arv_alert_description"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.cielo.libflue.button.CieloRegularSecondaryButton
+        android:id="@+id/btArvAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_24dp"
+        android:text="@string/card_home_arv_alert_button" />
+
+    <View
+        android:id="@+id/dividerView2"
+        style="@style/label_16_montserrat_semi_bold_cloud_0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:background="@color/display_50"
+        app:layout_constraintTop_toBottomOf="@id/arvAlert" />
+</LinearLayout>
+

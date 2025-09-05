@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".autoAtendimento.presentation.ui.fragment.validationServiceSupply.ValidationServiceSupplyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerUpdateAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivAttention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_90_phone_attention"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/dimen_64dp"
+            android:layout_marginTop="@dimen/dimen_41dp"
+            android:contentDescription="logo_machine"/>
+
+        <TextView
+            android:id="@+id/tvUpdatedAddressTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ivAttention"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/update_address_supply_title"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="@dimen/dimen_20sp"
+            android:textFontWeight="700"
+            android:textColor="@color/neutral_dark"/>
+
+        <TextView
+            android:id="@+id/tvUpdatedAddressSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvUpdatedAddressTitle"
+            app:layout_constraintStart_toStartOf="@id/tvUpdatedAddressTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvUpdatedAddressTitle"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/update_address_subtitle"
+            style="@style/regular_montserrat_16_neutral_600_spacing_4"
+            />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnScreenHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/go_to_initial_screen"
+            app:buttonType="outlined"
+            app:layout_constraintBottom_toTopOf="@id/btnUpdateAddress"
+            tools:layout_editor_absoluteX="@dimen/dimen_16dp" />
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btnUpdateAddress"
+            app:buttonType="filled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/update_address"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/frame_progress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/errorInclude"
+        layout="@layout/layout_generic_error_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</FrameLayout>

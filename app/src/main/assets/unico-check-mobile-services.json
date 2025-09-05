@@ -1,0 +1,17 @@
+{
+  "project_info":{
+    "project_number":"65635378430815246989",
+    "project_id":"cielo gestao",
+    "project_j_apikey":"j_6cb5a6f3-5378-430b-8152-c469c8c9cccc"
+  },
+  "client_info":{
+    "mobilesdk_app_id":"1:638873:android",
+    "android_client_info":{
+      "package_name":"br.com.mobicare.cielo.homolog"
+    }
+  },
+  "host_info":{
+    "host_info":"nRMqSJJeWMZ0K4n9Dxs/Zhb5RslAxes+pmH0gJgmVtZjSWEzKMY5MLDpUMATXWo/",
+    "host_key":"6KE5tpR2UAy3cAnWaB/tz4E1lIaZhimELZhjXTtlLxp1H/SWzSFd55BuGctsNoOP"
+  }
+}

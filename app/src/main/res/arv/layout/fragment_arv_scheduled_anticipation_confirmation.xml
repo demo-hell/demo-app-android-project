@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".arv.presentation.anticipation.ArvAnticipationSimulationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAnticipationTypeLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_anticipation_type"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMoneyCoin"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_money_coin_down"
+            android:tint="@color/cloud_300"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAnticipationType"
+            app:layout_constraintEnd_toStartOf="@id/tvAnticipationType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvAnticipationType" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAnticipationType"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivMoneyCoin"
+            app:layout_constraintTop_toBottomOf="@id/tvAnticipationTypeLabel"
+            android:text="@string/programmed_anticipation" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReceiverEstablishmentLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_receiver_establishment"
+            app:layout_constraintTop_toBottomOf="@+id/tvAnticipationType" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStore"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_store_gray"
+            android:tint="@color/cloud_300"
+            app:layout_constraintBottom_toBottomOf="@+id/tvReceiverEstablishmentCnpj"
+            app:layout_constraintEnd_toStartOf="@id/tvReceiverEstablishmentName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvReceiverEstablishmentName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReceiverEstablishmentName"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivStore"
+            app:layout_constraintTop_toBottomOf="@id/tvReceiverEstablishmentLabel"
+            tools:text="Padaria Jardim Azul {nome fantasia}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReceiverEstablishmentCnpj"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivStore"
+            app:layout_constraintTop_toBottomOf="@id/tvReceiverEstablishmentName"
+            tools:text="34.317.980/****-**" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvScheduleLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_schedule"
+            app:layout_constraintTop_toBottomOf="@+id/tvReceiverEstablishmentCnpj" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMachine"
+            android:layout_width="@dimen/dimen_16dp"
+            android:layout_height="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_cielo_machine"
+            android:tint="@color/cloud_300"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSchedule"
+            app:layout_constraintEnd_toStartOf="@id/tvSchedule"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvSchedule" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSchedule"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivMachine"
+            app:layout_constraintTop_toBottomOf="@id/tvScheduleLabel"
+            tools:text="@string/simulate_detached_schedule_type" />
+
+        <include
+            android:id="@+id/aboutCielo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/tvSchedule"
+            layout="@layout/about_arv_receivable"/>
+
+        <include
+            android:id="@+id/aboutMarket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/aboutCielo"
+            layout="@layout/about_arv_receivable"/>
+
+        <View
+            android:id="@+id/highlightBackgroundAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:background="@drawable/background_success_100_radius_8"
+            app:layout_constraintBottom_toBottomOf="@id/tvBankValue"
+            app:layout_constraintTop_toTopOf="@id/tvBankToReceiveLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBankToReceiveLabel"
+            style="@style/label_12_display_400_ubuntu_base"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_16dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/arv_bank_to_receive"
+            app:layout_constraintEnd_toEndOf="@id/highlightBackgroundAccount"
+            app:layout_constraintStart_toStartOf="@id/highlightBackgroundAccount"
+            app:layout_constraintTop_toBottomOf="@id/aboutMarket" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBankValue"
+            style="@style/Label_400_bold_16_display_400"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:paddingBottom="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@id/highlightBackgroundAccount"
+            app:layout_constraintStart_toStartOf="@id/highlightBackgroundAccount"
+            app:layout_constraintTop_toBottomOf="@id/tvBankToReceiveLabel"
+            tools:text="Banco do Brasil\nAg: 04132 | Conta: 004132-5" />
+
+        <View
+            android:id="@+id/termHighlightBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/background_cloud_50_8dp_radius"
+            app:layout_constraintBottom_toBottomOf="@id/llcheckboxArea"
+            app:layout_constraintTop_toBottomOf="@id/highlightBackgroundAccount" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBranchAnticipationWarning"
+            style="@style/Label_400_bold_16_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@id/termHighlightBackground"
+            app:layout_constraintStart_toStartOf="@id/termHighlightBackground"
+            app:layout_constraintTop_toTopOf="@id/termHighlightBackground"
+            android:text="@string/arv_anticipation_warning" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTermLabel"
+            style="@style/Paragraph_300_display_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@id/termHighlightBackground"
+            app:layout_constraintStart_toStartOf="@id/termHighlightBackground"
+            app:layout_constraintTop_toBottomOf="@id/tvBranchAnticipationWarning"
+            android:text="@string/arv_scheduled_anticipation_read_terms" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTermsLink"
+            android:drawableStart="@drawable/ic_circle_arrow_blue"
+            android:drawablePadding="@dimen/dimen_4dp"
+            style="@style/label_14_display_400_montserrat_bold"
+            android:textColor="@color/brand_400"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:minHeight="@dimen/dimen_48dp"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="@id/termHighlightBackground"
+            app:layout_constraintStart_toStartOf="@id/termHighlightBackground"
+            app:layout_constraintTop_toBottomOf="@id/tvTermLabel"
+            android:text="@string/arv_scheduled_anticipation_terms" />
+
+        <LinearLayout
+            android:id="@+id/llcheckboxArea"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dimen_16dp"
+            app:layout_constraintStart_toStartOf="@id/termHighlightBackground"
+            app:layout_constraintEnd_toEndOf="@id/termHighlightBackground"
+            app:layout_constraintTop_toBottomOf="@id/tvTermsLink">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkBoxTerms"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_marginVertical="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:background="@drawable/checkbox_terms_add_ec"
+                android:button="@null"
+                android:fontFamily="@font/ubuntu"
+                android:textColor="@color/color_353A40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@+id/tvReadAcceptTermAndConditions"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvReadAcceptTermAndConditions"
+                style="@style/label_16_brand_400_ubuntu"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_weight="4.5"
+                android:text="@string/access_manager_read_and_accept"
+                android:textColor="@color/color_5A646E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+        <br.com.cielo.libflue.button.v2.CieloButton
+            android:id="@+id/btConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_48dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            app:buttonEnabled="false"
+            android:text="@string/arv_finish_request"
+            app:layout_constraintTop_toBottomOf="@id/termHighlightBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

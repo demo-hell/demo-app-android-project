@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000">
+
+    <include
+        android:id="@+id/layoutTop"
+        layout="@layout/layout_top_filter" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_welcome_notification"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFilterDescription"
+                style="@style/TextBlack12spUbuntuRegular_353A40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:visibility="gone"
+                tools:text="@string/text_receivables_filter_description" />
+
+            <LinearLayout
+                android:id="@+id/layoutBrands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextBlack16spUbuntu_353A40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_brands_title_filter" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvBrands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPaymentTypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textPaymentTypesLabel"
+                    style="@style/TextBlack16spUbuntu_353A40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_payment_type_title_filter" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPaymentTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_8dp"/>
+
+            </LinearLayout>
+
+
+            <!-- Verificar refactor posteriormente - Inicio do layout_history_sales -->
+            <!-- foi necessario realizar essa adaptacao pois a IDE nao estava conseguindo -->
+            <!-- gerar as classes de viewbinding -->
+            <LinearLayout
+                android:id="@+id/layout_history_sales_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_100dp"
+                android:visibility="gone"
+                >
+
+                <include
+                    android:id="@+id/include_layout_amount"
+                    layout="@layout/layout_amount_min_and_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <include
+                    android:id="@+id/include_layout_other_filters"
+                    layout="@layout/layout_other_filter_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_more_sales_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_100dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/includes">
+
+                    <br.com.cielo.libflue.inputtext.CieloTextInputView
+                        android:id="@+id/editTextSaleCadNumber_new"
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:digits="1234567890.,"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        app:hint="@string/text_outer_card_number_filter"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.cielo.libflue.inputtext.CieloTextInputView
+                        android:id="@+id/editTextSaleOperationSummary_new"
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:digits="1234567890abcdefghijlmnopqrstuvxzwyk"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        app:hint="@string/text_outer_operation_summary_filter"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                    <br.com.cielo.libflue.inputtext.CieloTextInputView
+                        android:id="@+id/editTextSaleTid_new"
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:digits="1234567890.,ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="50"
+                        android:maxLines="2"
+                        app:hint="@string/text_outer_tid_filter"
+                        app:typeface="MuseoSans-500.ttf" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Termino do layout que foi extraido de layout_history_sales -->
+
+            <!-- posteiromrente remover o layout_sales -->
+            <include
+                android:id="@+id/layout_sales"
+                layout="@layout/layout_history_sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_100dp"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_canceled_sales"
+                layout="@layout/layout_canceled_sale_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_100dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTop"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_img_something_happened" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Ops, um erro aconteceu"
+            android:textAlignment="center"
+            android:textColor="@color/color_017CEB"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Tivemos um problema técnico para carregar os filtros, tente novamente mais tarde"
+            android:textAlignment="center"
+            android:textColor="@color/color_5A646E"
+            app:layout_constraintBottom_toTopOf="@+id/retryButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/retryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:text="Tentar Novamente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/waitingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutTop"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow_above_view"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:elevation="5dp">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/clearFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_clear_filter_button"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            fancy:fb_defaultColor="@android:color/white"
+            fancy:fb_text="Limpar filtros"
+            fancy:fb_textColor="@color/color_017CEB"
+            fancy:fb_textSize="16sp" />
+
+        <br.com.cielo.libflue.button.CieloRegularBlueButton
+            android:id="@+id/applyFilterButton"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_apply_filter_button"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/text_apply_filters_label"
+            fancy:fb_textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

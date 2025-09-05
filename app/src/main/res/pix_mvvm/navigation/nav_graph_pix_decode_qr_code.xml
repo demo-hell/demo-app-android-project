@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navGraphPixDecodeQRCode"
+    app:startDestination="@id/pixDecodeQRCodeFragment">
+
+    <fragment
+        android:id="@+id/pixCopyPasteFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.qrCode.validateQRCode.ui.copyPaste.PixCopyPasteFragment"
+        android:label="PixCopyPasteFragment">
+
+        <action
+            android:id="@+id/action_pixCopyPasteFragment_to_pixDecodeQRCodeFragment"
+            app:destination="@id/pixDecodeQRCodeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixCopyPasteFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixCopyPasteFragment_to_pixValidateQRCodeFragment"
+            app:destination="@id/pixValidateQRCodeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixCopyPasteFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixDecodeQRCodeFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.qrCode.validateQRCode.ui.decode.PixDecodeQRCodeFragment"
+        android:label="PixDecodeQRCodeFragment">
+
+        <action
+            android:id="@+id/action_pixDecodeQRCodeFragment_to_pixCopyPasteFragment"
+            app:destination="@id/pixCopyPasteFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixDecodeQRCodeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixDecodeQRCodeFragment_to_pixValidateQRCodeFragment"
+            app:destination="@id/pixValidateQRCodeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixDecodeQRCodeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixValidateQRCodeFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.qrCode.validateQRCode.ui.validate.PixValidateQRCodeFragment"
+        android:label="PixValidateQRCodeFragment">
+
+        <action
+            android:id="@+id/action_pixValidateQRCodeFragment_to_pixQRCodeCopyPasteFragment"
+            app:destination="@id/pixCopyPasteFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixValidateQRCodeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixValidateQRCodeFragment_to_pixQRCodeDecodeFragment"
+            app:destination="@id/pixDecodeQRCodeFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixValidateQRCodeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixValidateQRCodeFragment_to_pixQRCodePaymentInsertAmountFragment"
+            app:destination="@id/pixQRCodePaymentInsertAmountFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixValidateQRCodeFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixValidateQRCodeFragment_to_pixQRCodePaymentSummaryFragment"
+            app:destination="@id/pixQRCodePaymentSummaryFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixValidateQRCodeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixQRCodePaymentInsertAmountFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.qrCode.payment.ui.insertAmount.PixQRCodePaymentInsertAmountFragment"
+        android:label="PixQRCodePaymentInsertAmountFragment">
+
+        <argument
+            android:name="OPENED_FROM_THE_SUMMARY_FRAGMENT_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="IS_TO_CHANGE_THE_CHANGE_AMOUNT_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_DECODE_QR_CODE_MODEL_ARGS"
+            app:argType="br.com.mobicare.cielo.pixMVVM.domain.model.PixDecodeQRCode"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pixQRCodePaymentInsertAmountFragment_to_pixQRCodePaymentSummaryFragment"
+            app:destination="@id/pixQRCodePaymentSummaryFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"
+            app:popUpTo="@id/pixQRCodePaymentInsertAmountFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixQRCodePaymentSummaryFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.qrCode.payment.ui.summary.PixQRCodePaymentSummaryFragment"
+        android:label="PixQRCodePaymentSummaryFragment">
+
+        <argument
+            android:name="PIX_DECODE_QR_CODE_MODEL_ARGS"
+            app:argType="br.com.mobicare.cielo.pixMVVM.domain.model.PixDecodeQRCode"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pixQRCodePaymentSummaryFragment_to_pixQRCodePaymentInsertAmountFragment"
+            app:destination="@id/pixQRCodePaymentInsertAmountFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixQRCodePaymentSummaryFragment_to_pixQRCodeReceiptFragment"
+            app:destination="@id/pixQRCodeReceiptFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixQRCodeReceiptFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.qrCode.receipt.ui.PixQRCodeReceiptFragment"
+        android:label="PixQRCodeReceiptFragment">
+
+        <argument
+            android:name="PIX_QR_CODE_RECEIPT_TRANSFER_RESULT_ARGS"
+            app:argType="br.com.mobicare.cielo.pixMVVM.domain.model.PixTransferResult" />
+
+        <argument
+            android:name="PIX_QR_CODE_RECEIPT_QR_CODE_TYPE_ARGS"
+            app:argType="br.com.mobicare.cielo.pixMVVM.domain.enums.PixQrCodeOperationType" />
+
+    </fragment>
+
+</navigation>

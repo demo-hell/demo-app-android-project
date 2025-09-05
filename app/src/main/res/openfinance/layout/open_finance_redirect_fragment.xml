@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/dimen_272dp"
+        android:layout_height="@dimen/dimen_2dp"
+        android:background="@color/brand_400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/bold_montserrat_14_neutral_800"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/make_acceptance" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/open_finance" />
+
+        <TextView
+            style="@style/regular_montserrat_16_neutral_600"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:text="@string/finally_acceptance" />
+
+        <LinearLayout
+            android:id="@+id/infoExpiredTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:background="@drawable/background_fill_purple_100"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/dimen_10dp"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_24dp"
+                android:layout_gravity="top"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_info_purple_700" />
+
+            <TextView
+                android:id="@+id/tvRedirectInstitution"
+                style="@style/regular_montserrat_14_contrast_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_7dp"
+                android:text="@string/time_expired" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnRedirect"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:background="@drawable/background_fill_color_0774e7"
+            android:gravity="center">
+
+            <TextView
+                style="@style/semi_bold_montserrat_16_cloud_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_go_now_open_finance" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnCloseConsent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:background="@drawable/cielo_button_view_state_disabled_surface_neutral"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/semi_bold_montserrat_16_cloud_800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok_understand" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

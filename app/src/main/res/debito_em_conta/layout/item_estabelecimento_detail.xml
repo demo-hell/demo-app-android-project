@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:background="@drawable/custom_text_input_view_selector"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="start"
+                android:text="@string/txt_estabelecimento_dc"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/txt_document_dc_value"
+                style="@style/Heading_500_Bold_18_display_500"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                tools:text="@string/txt_estabelecimento_dc_value"
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:background="@color/nublado_200" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/Paragraph_300_display_400"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="0.4"
+                android:gravity="start"
+                android:text="@string/txt_status_dc"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                style="@style/Heading_500_Bold_18_display_500"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:gravity="end"
+                android:singleLine="true"
+                android:textColor="@color/red_DC392A"
+                tools:text="@string/txt_status_dc_value"
+                android:textSize="14.5sp"
+                android:textStyle="bold"
+                android:id="@+id/txt_status_dc_value"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:background="@color/nublado_200" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dimen_8dp"
+        android:paddingEnd="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/tvAccountEntries"
+            style="@style/semi_bold_montserrat_14_brand_400_spacing_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:background="@drawable/selector_button_filter_extract_pix"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/dimen_8dp"
+            android:paddingStart="@dimen/dimen_12dp"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:text="@string/pix_extract_filter_item_accounting_entries"
+            app:drawableEndCompat="@drawable/ic_directions_chevron_down_cloud_200_24_dp"
+            app:drawableTint="@color/cielo_accent_500" />
+
+        <TextView
+            android:id="@+id/tvTransactions"
+            style="@style/semi_bold_montserrat_14_brand_400_spacing_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:background="@drawable/selector_button_filter_extract_pix"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/dimen_8dp"
+            android:paddingStart="@dimen/dimen_12dp"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:text="@string/pix_extract_filter_item_transactions"
+            app:drawableEndCompat="@drawable/ic_directions_chevron_down_cloud_200_24_dp"
+            app:drawableTint="@color/cielo_accent_500" />
+
+        <TextView
+            android:id="@+id/tvPeriod"
+            style="@style/semi_bold_montserrat_14_brand_400_spacing_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:background="@drawable/selector_button_filter_extract_pix"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/dimen_8dp"
+            android:paddingStart="@dimen/dimen_12dp"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:text="@string/pix_extract_filter_item_period"
+            app:drawableEndCompat="@drawable/ic_directions_chevron_down_cloud_200_24_dp"
+            app:drawableTint="@color/cielo_accent_500" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/semi_bold_montserrat_14_brand_400_spacing_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:background="@drawable/selector_button_filter_extract_pix"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/dimen_8dp"
+            android:paddingStart="@dimen/dimen_12dp"
+            android:paddingEnd="@dimen/dimen_8dp"
+            android:text="@string/pix_extract_filter_item_status"
+            app:drawableEndCompat="@drawable/ic_directions_chevron_down_cloud_200_24_dp"
+            app:drawableTint="@color/cielo_accent_500" />
+
+    </LinearLayout>
+
+</HorizontalScrollView>

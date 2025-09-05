@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="technical_support_predictive_battery_title_toolbar">Revise as informações abaixo</string>
+    <string name="technical_support_predictive_battery_label_info_problem">Problema</string>
+    <string name="technical_support_predictive_battery_value_info_problem">Bateria</string>
+    <string name="technical_support_predictive_battery_label_info_logical_number">Número lógico da máquina</string>
+    <string name="technical_support_predictive_battery_label_info_action">Ação a ser feita</string>
+    <string name="technical_support_predictive_battery_value_info_action">Abertura de chamado para troca da máquina</string>
+    <string name="technical_support_predictive_battery_label_input_phone_number">Preencha seu número de celular para enviarmos a confirmação do chamado</string>
+    <string name="technical_support_predictive_battery_hint_input_phone_number">Digite o número com DDD</string>
+    <string name="technical_support_predictive_battery_alert_message">Enviaremos via WhatsApp a confirmação do chamado e informações do atendimento.</string>
+    <string name="technical_support_predictive_battery_error_message_input_phone_number">Celular inválido. Por favor, digite novamente.</string>
+    <string name="technical_support_predictive_battery_title_bs_unavailable_service">Serviço indisponível no momento</string>
+    <string name="technical_support_predictive_battery_message_bs_unavailable_service">Este serviço está temporariamente indisponível. Tente acessar novamente mais tarde.</string>
+    <string name="technical_support_predictive_battery_title_bs_success_refuse_exchange">Caso precise, solicite suporte a qualquer momento</string>
+    <string name="technical_support_predictive_battery_message_bs_success_refuse_exchange">Vamos continuar monitorando sua máquina, e caso seja necessário, solicite suporte no site ou aqui no App Cielo Gestão.</string>
+    <string name="technical_support_predictive_battery_title_bs_service_available">Identificamos que sua máquina precisa de atenção</string>
+    <string name="technical_support_predictive_battery_message_bs_service_available"><![CDATA[A <b>bateria</b> da sua máquina de <b>número lógico %s</b> pode estar com problema. Você gostaria de solicitar suporte técnico?]]></string>
+    <string name="technical_support_predictive_battery_label_first_button_bs_service_available">Recusar</string>
+    <string name="technical_support_predictive_battery_label_second_button_bs_service_available">Solicitar troca da máquina</string>
+    <string name="technical_support_predictive_battery_title_bs_success_request_exchange">Sua solicitação foi aberta</string>
+    <string name="technical_support_predictive_battery_message_bs_success_request_exchange"><![CDATA[Em breve, <b>entraremos em contato via WhatsApp</b> com mais informações.<br><br>Para evitar confusões durante a visita técnica, informe todas as pessoas no local sobre o suporte técnico.]]></string>
+
+</resources>

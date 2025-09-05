@@ -1,0 +1,275 @@
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#
+# This file is no longer maintained and is not used by new (2.2+) versions of the
+# Android plugin for Gradle. Instead, the Android plugin for Gradle generates the
+# default rules at build time and stores them in the build directory.2000
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# Optimization is turned off by default. Dex does not like code run
+# through the ProGuard optimize and preverify steps (and performs some
+# of these optimizations on its own).
+-dontoptimize
+-dontpreverify
+# Note that if you want to enable optimization, you cannot just
+# include optimization flags in your own project configuration file;
+# instead you will need to point to the
+# "proguard-android-optimize.txt" file instead of this one from your
+# project.properties file.
+
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+# For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator CREATOR;
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+# The support library contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version.  We know about them, and they are safe.
+-dontwarn android.support.**
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+#Google libs
+-keep class com.google.** { *;}
+-dontwarn com.google.common.**
+-dontwarn com.google.ads.**
+-dontwarn android.support.v4.**
+-dontwarn android.support.v7.**
+-keep class com.google.android.gms.**
+-dontwarn com.google.android.gms.*
+
+#Rx
+-keep class rx.internal.**
+-keep class rx.** { *; }
+-keep interface rx.** { *; }
+-dontwarn rx.**
+-dontwarn rx.internal.util.unsafe.**
+
+-keepattributes Signature
+-keepattributes *Annotation*
+
+-dontwarn java.lang.invoke.*
+
+-keep class rx.schedulers.Schedulers {
+    public static <methods>;
+}
+-keep class rx.schedulers.ImmediateScheduler {
+    public <methods>;
+}
+-keep class rx.schedulers.TestScheduler {
+    public <methods>;
+}
+-keep class rx.schedulers.Schedulers {
+    public static ** test();
+}
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+    long producerIndex;
+    long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+    long producerNode;
+    long consumerNode;
+}
+
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode producerNode;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode consumerNode;
+}
+# Retrofit 2.X
+## https://square.github.io/retrofit/ ##
+-dontwarn retrofit.**
+-keep class retrofit.** { *; }
+-keepclasseswithmembers class * {
+    @retrofit.http.* <methods>;
+}
+
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keep class retrofit2.http.** { *; }
+-dontwarn retrofit2.Platform$Java8
+-keepattributes Signature
+-keepattributes Annotation
+-keepattributes Exceptions
+-keep class okhttp3.* { *; }
+-keep interface okhttp3.* { *; }
+-dontwarn okhttp3.*
+
+-keepclasseswithmembers class * {
+    @retrofit2.http.* <methods>;
+}
+
+# Okio
+-keep class sun.misc.Unsafe { *; }
+-dontwarn java.nio.file.*
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+-dontwarn okio.**
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+-dontwarn com.squareup.okhttp.**
+
+-keep class com.squareup.retrofit2.**
+-dontwarn com.squareup.retrofit2.**
+
+-keep class com.squareup.okhttp3.**
+-dontwarn com.squareup.okhttp3.**
+-keep class okhttp3.** { *; }
+
+#Enable proguard Picasso
+-keep class com.squareup.picasso.**
+-dontwarn com.squareup.picasso.**
+
+#Enable joda
+-dontwarn org.joda.convert.**
+-dontwarn org.joda.time.**
+-keep class org.joda.time.** { *; }
+-keep interface org.joda.time.** { *; }
+
+#Junit
+-dontnote org.junit.**
+
+#AppCompat
+-keep class android.support.design.widget.** { *; }
+-keep interface android.support.design.widget.** { *; }
+-dontwarn android.support.design.**
+
+#Apache org
+-dontnote android.net.http.*
+-dontnote org.apache.commons.codec.**
+-dontnote org.apache.http.**
+
+-dontwarn rx.internal.util.unsafe.**
+
+# Class names are needed in reflection
+-keepnames class com.amazonaws.**
+-keepnames class com.amazon.**
+# Request handlers defined in request.handlers
+-keep class com.amazonaws.services.**.*Handler
+# The following are referenced but aren't required to run
+-dontwarn com.fasterxml.jackson.**
+-dontwarn org.apache.commons.logging.**
+# Android 6.0 release removes support for the Apache HTTP client
+-dontwarn org.apache.http.**
+# The SDK has several references of Apache HTTP client
+-dontwarn com.amazonaws.http.**
+
+#Google zxing
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+
+# ADDED
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# keep setters in Views so that animations can still work.
+# see http://proguard.sourceforge.net/manual/examples.html#beans
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+#Kotlin
+-dontwarn kotlin.**
+
+-assumenosideeffects class kotlin.jvm.internal.Intrinsics {
+    static void checkParameterIsNotNull(java.lang.Object, java.lang.String);
+}
+
+-keepclassmembers class **$WhenMappings {
+    <fields>;
+}
+
+-assumenosideeffects class kotlin.jvm.internal.Intrinsics {
+    static void checkParameterIsNotNull(java.lang.Object, java.lang.String);
+}
+
+#java
+-keepattributes *Annotation*
+-keep class javax.annotation.** { *; }
+
+-dontwarn java.lang.**
+-dontwarn sun.misc.Unsafe
+-dontwarn org.apache.**
+
+#M4U
+-keep public class br.com.mobicare.cielo.login.domain.LoginParams { *; }
+-keep public class br.com.mobicare.cielo.meusRecebimentos.domains.entities.BankMaskVO { *;}
+
+# ReTrace
+
+-keepattributes SourceFile,LineNumberTable
+
+-dontwarn com.google.code.gson.**
+-dontwarn com.google.android.gms.**
+-dontwarn com.discover.**
+-dontwarn io.jsonwebtoken.**
+-dontwarn com.fasterxml.**
+-dontwarn net.danlew.**
+-dontwarn com.symbiotic.**
+-dontwarn com.visa.**
+
+#SalesForce MKTCLOUD
+-keep class com.salesforce.** { *; }
+-dontwarn com.salesforce.**
+-keep enum com.salesforce.** { *; }

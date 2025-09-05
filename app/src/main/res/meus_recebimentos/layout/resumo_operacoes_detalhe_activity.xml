@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/content_principal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:elevation="16dp">
+
+
+            <include android:id="@+id/toolbar_resumo_operacoes_detalhe"
+                layout="@layout/toolbar_main" />
+
+            <RelativeLayout
+                android:id="@+id/container_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/footer_resumo_de_operacoes"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_resumo_operacoes_detalhe_bandeira_produto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        tools:visibility="visible"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meus_recebimentos_detalhes_chave"
+                                android:textColor="@color/gray_light"
+                                android:textSize="12sp"
+                                app:typeface="MuseoSans-500.ttf" />
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                                android:id="@+id/resumo_operacoes_detalhe_bandeira"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meus_recebimentos_detalhes_valor"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:typeface="MuseoSans-500.ttf" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/meus_recebimentos_debitos_item_card_divisioria"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:alpha="0.2"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meus_recebimentos_detalhes_produto"
+                                android:textColor="@color/gray_light"
+                                android:textSize="12sp"
+                                app:typeface="MuseoSans-500.ttf" />
+
+                            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                                android:id="@+id/resumo_operacoes_detalhe_produto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/meus_recebimentos_detalhes_produto_valor"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                app:typeface="MuseoSans-500.ttf" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:alpha="0.2"
+                        android:background="@color/gray_light" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/item_resumo_operacoes_detalhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingTop="8dp" />
+
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/footer_resumo_de_operacoes"
+                    layout="@layout/footer_resumo_de_operacoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/content_error"
+             android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progress_resumo_operacoes_detalhe_loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+

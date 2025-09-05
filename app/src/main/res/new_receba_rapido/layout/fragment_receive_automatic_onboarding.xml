@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".newRecebaRapido.presentation.onboarding.ReceiveAutomaticOnBoardingFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpReceiveAutomaticOnBoarding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/indicatorReceiveAutomaticOnBoarding"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicatorReceiveAutomaticOnBoarding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        app:ci_drawable="@drawable/circle_indicator_tutorial_cancel"
+        app:ci_drawable_unselected="@drawable/circle_indicator_unselected"
+        app:layout_constraintBottom_toTopOf="@id/containerButton"
+        app:layout_constraintTop_toBottomOf="@id/vpReceiveAutomaticOnBoarding"
+         />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/display_0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/indicatorReceiveAutomaticOnBoarding"
+        >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/display_200" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNextOnboarding"
+            style="@style/bold_montserrat_16_brand_400_spacing_0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@color/display_0"
+            android:text="@string/text_pix_next"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLetsGoHome"
+            style="@style/bold_montserrat_16_cloud_0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48dp"
+            android:background="@drawable/button_full_width_brand_selector"
+            android:text="@string/get_start"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

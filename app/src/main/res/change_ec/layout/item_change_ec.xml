@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_item_title"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/nublado_400"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Posto Shell Jabaquara" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrowRightImage"
+        android:layout_width="@dimen/dimen_20dp"
+        android:layout_height="@dimen/dimen_20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_item_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_item_title"
+        app:srcCompat="@drawable/ic_chevron_right_gray" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_item_ec"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/nublado_300"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/text_item_individual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_item_title"
+        tools:text="EC 12342020" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewOtpStatus"
+        style="@style/Paragraph_100_bold_10_display_400"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        app:layout_constraintRight_toLeftOf="@id/text_item_individual"
+        app:layout_constraintTop_toBottomOf="@id/text_item_ec"
+        app:layout_constraintBottom_toTopOf="@id/view_line"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="knksjdncksjnk kjjksddj kjdksdkjdjdj"/>
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/text_item_individual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/nublado_300"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_item_title"
+        tools:text="@string/change_ec_item_text_individual" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray_super_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOtpStatus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Paragraph_300_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_dec_info"
+        android:visibility="gone"
+        android:textColor="@color/grey_8A99A8"
+        android:textSize="@dimen/dimen_14dp" />
+
+    <br.com.cielo.libflue.inputtext.CieloTextInputView
+        android:id="@+id/tv_name_resposable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:hint="@string/ev_name_resposable"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <br.com.cielo.libflue.inputtext.CieloTextInputView
+        android:id="@+id/ev_nome_ra_social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:hint="@string/ev_nome_ra_social"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <br.com.cielo.libflue.inputtext.CieloTextInputView
+        android:id="@+id/ev_dirf_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:hint="@string/ev_dirf_cpf"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1" />
+
+
+    <br.com.cielo.libflue.inputtext.CieloTextInputView
+        android:id="@+id/ev_dirf_cnpj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        app:hint="@string/ev_dirf_cnpj"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1" />
+
+</LinearLayout>

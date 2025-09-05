@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_solid_white_border_display_200"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingVertical="@dimen/dimen_12dp">
+
+    <LinearLayout
+        android:id="@+id/rowSaleDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtSaleDateLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_cancel_date_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtSaleDateValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="21/10/2022" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowSaleTypePayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowSaleDate">
+
+        <TextView
+            android:id="@+id/txtSaleTypePaymentLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_payment_type_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtSaleTypePaymentValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="Crédito à vista" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowSaleAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowSaleTypePayment">
+
+        <TextView
+            android:id="@+id/txtSaleAmountLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_transaction_value_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtSaleAmountValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="R$ 10,10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowSaleRefund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowSaleAmount">
+
+        <TextView
+            android:id="@+id/txtSaleRefundLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_cancel_request_value_accepted_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtSaleRefundValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="R$ -9,90" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowMerchantNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowSaleRefund">
+
+        <TextView
+            android:id="@+id/txtMerchantNumberLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_stablishment_number_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtMerchantNumberValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="1231231231" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowAuthorizationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowMerchantNumber">
+
+        <TextView
+            android:id="@+id/txtAuthorizationCodeLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_authorization_code_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtAuthorizationCodeValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="12345678" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowNSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowAuthorizationCode">
+
+        <TextView
+            android:id="@+id/txtNSULabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_nsu_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtNSUValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="87654" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowCardBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rowNSU">
+
+        <TextView
+            android:id="@+id/txtCardBrandLabel"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:text="@string/text_canceled_sale_brand_type_label"
+            android:textColor="@color/color_cloud_400" />
+
+        <TextView
+            android:id="@+id/txtCardBrandValue"
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/color_cloud_600"
+            tools:text="Visa" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

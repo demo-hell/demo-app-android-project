@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_welcome_notification">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                style="@style/TextBlack24spTitle"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="left|center"
+                android:text="Abrir Solicitação"
+                android:textColor="#2b2f33"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:typeface="Museo300-Regular.ttf" />
+
+            <LinearLayout
+                android:id="@+id/btn_rm_close"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_icon_close" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfe5f5"
+        android:layout_below="@+id/toolbar2"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view2">
+        <LinearLayout
+            android:id="@+id/content_constrant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="234dp"
+                android:layout_height="212dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/ic_icon_elegibility"
+                />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_horizontal"
+                android:text="Esta maquininha não é elegivel"
+                android:textColor="@color/blue_00aeef"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_view"
+                app:typeface="MuseoSans-700.ttf"
+                tools:ignore="MissingConstraints" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_description_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_horizontal"
+                android:text="Para abrir solicitações para essa maquininha é preciso entrar em contato com a central através dos números:"
+                android:textColor="@color/color_5A646E"
+                android:textSize="16sp"
+                app:typeface="MuseoSans-700.ttf"
+                tools:ignore="MissingConstraints" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_call_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/ubuntu_mono_bold"
+                android:textColor="@color/blue_00aeef"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:text="4002 5472"
+                tools:ignore="MissingConstraints" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_description_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="48dp"
+                android:gravity="center_horizontal"
+                android:text="(capitais e regiões metropolitanas)"
+                tools:ignore="MissingConstraints" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_call_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="48dp"
+                android:gravity="center_horizontal"
+                android:text="0800 570 8472"
+                android:fontFamily="@font/ubuntu_mono_bold"
+                android:textColor="@color/blue_00aeef"
+                android:textSize="18sp"
+                android:clickable="true"
+                tools:ignore="MissingConstraints" />
+
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_description_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="(demais localidades)"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/spacerView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/nextButton"
+                style="@style/ButtonShapedPurpleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginBottom="24dp"
+                android:text="OK"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

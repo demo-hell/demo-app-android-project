@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_ra_migration_d2_to_d1"
+    app:startDestination="@id/migrationOfferFragment">
+
+    <fragment
+        android:id="@+id/migrationOfferFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.migration.d2tod1.ui.fragment.MigrationOfferFragment"
+        android:label="MigrationOfferFragment"
+        tools:layout="@layout/fragment_migration_offer">
+        <action
+            android:id="@+id/action_migrationOfferFragment_to_migrationOfferConfirmationFragment"
+            app:destination="@id/migrationOfferConfirmationFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+
+        <action
+            android:id="@+id/action_migrationOfferFragment_to_migrationOfferKeepCurrentPlanFragment"
+            app:destination="@id/migrationOfferKeepCurrentPlanFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/migrationOfferConfirmationFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.migration.d2tod1.ui.fragment.MigrationOfferConfirmationFragment"
+        android:label="MigrationOfferConfirmationFragment"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        tools:layout="@layout/fragment_migration_offer_confirmation"/>
+
+    <fragment
+        android:id="@+id/migrationOfferKeepCurrentPlanFragment"
+        android:name="br.com.mobicare.cielo.newRecebaRapido.migration.d2tod1.ui.fragment.MigrationOfferKeepCurrentPlanFragment"
+        android:label="MigrationOfferKeepCurrentPlanFragment"
+        app:enterAnim="@anim/slide_from_right"
+        app:exitAnim="@anim/slide_to_left"
+        app:popEnterAnim="@anim/slide_from_left"
+        app:popExitAnim="@anim/slide_to_right"
+        tools:layout="@layout/fragment_migration_offer_refuse"/>
+
+</navigation>

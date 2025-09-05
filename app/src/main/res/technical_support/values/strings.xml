@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_technical_suppport_title">Suporte Técnico</string>
+
+    <string name="text_technical_support_v2_title">Suporte técnico</string>
+    <string name="text_technical_suppport_error">Serviço indisponível. Tente novamente mais tarde.</string>
+    <string name="text_ga_technical_support_title">SuporteTecnico</string>
+    <string name="opening_a_ticket_technical_support_title">Suporte técnico de máquina</string>
+    <string name="test_machine_or_open_call">Caso você tenha algum problema com a sua maquininha, ou precise de alguma informação você pode procurar soluções no suporte online ou abrir uma solicitação para suporte técnico.</string>
+    <string name="test_manually">Testar manualmente</string>
+    <string name="support_access">Acessar suporte online</string>
+    <string name="open_ticket">Abrir solicitação</string>
+    <string name="update_address_title">Para abrir uma solicitação de suporte, atualize seu endereço</string>
+    <string name="update_address_supply_title">Para continuar, será necessário atualizar seu endereço</string>
+    <string name="update_address_subtitle">Atualize seu <b>endereço de contrato ou suprimentos</b> em Meu Cadastro. Após atualizar, você já poderá solicitar suporte técnico ou materiais.</string>
+    <string name="update_address">Atualizar endereço</string>
+    <string name="machine_number">N° Lógico: %1$s</string>
+    <string name="title_equipament">Primeiro, selecione para qual máquina deseja suporte"</string>
+    <string name="what_problem">Qual problema a máquina está apresentando?</string>
+    <string name="open_ticket_title">Abra um chamado</string>
+    <string name="open_ticket_description">Será preciso abrir um chamado para resolver seu problema</string>
+    <string name="Capitals_and_Metropolitan_Regions">Capitais e regiões Metropolitana</string>
+    <string name="Other_locations">Demais localidades</string>
+    <string name="PHONE_CALL_CENTER_CAPITAL">4002-9111</string>
+    <string name="PHONE_CALL_CENTER_OTHERS">0800 570 9111</string>
+    <string name="help_logically_number">Precisa de ajuda para localizar o número lógico?</string>
+    <string name="provide_version_number">Informe o número de versão da máquina</string>
+    <string name="dont_know_version_machine">Não sabe a versão da máquina?</string>
+    <string name="version_number">Número da versão</string>
+    <string name="version_number_invalid">Insira um número da versão válido.</string>
+    <string name="business_hours">Horário de funcionamento</string>
+    <string name="select_address">Selecione um endereço</string>
+    <string name="select_business_hour">Selecione um horário</string>
+    <string name="hint_facade">Fachada</string>
+    <string name="address_complete">%s, n°%s, %s, %s, %s, %s - CEP %s</string>
+    <string name="complete_phone_number">(%s)%s</string>
+    <string name="insert_name_error">Por favor, insira seu nome!</string>
+    <string name="insert_phone_empty">O campo está vazio. Revise e digite seu telefone</string>
+    <string name="insert_name_empty">O campo está vazio. Revise e digite seu nome</string>
+    <string name="insert_business_hour_empty">Por favor, selecione um horário</string>
+    <string name="request_successfully_opened">Sua solicitação foi aberta com sucesso</string>
+    <string name="check_information_below">Confira abaixo as informações:</string>
+    <string name="number_protocol"><![CDATA[<b>Número do protocolo</b>: %s]]></string>
+    <string name="period_analysis"><![CDATA[<b>Período da análise:</b> %s %s]]></string>
+
+    <string-array name="hours">
+        <item>Hora</item>
+        <item>Horas</item>
+    </string-array>
+    <string name="text_button_saiba_mais">Saiba mais</string>
+    <string name="review_information_title">Revise as informações:</string>
+    <string name="report_problem">Problema reportado</string>
+    <string name="problem">Problema</string>
+    <string name="number_logic">Número lógico da máquina</string>
+    <string name="logic_number">Número lógico</string>
+    <string name="contact_information">Informações para contato</string>
+    <string name="phone">Telefone</string>
+    <string name="facade_name">Nome da fachada (opcional)</string>
+    <string name="reference_point">Ponto de referência (opcional)</string>
+    <string name="change_address">Trocar endereço</string>
+    <string name="open_request">Abrir chamado</string>
+    <string name="front_machine_title">Versão da sua maquininha</string>
+    <string name="front_machine_message">Aperte a tecla "0" na tela inicial e procure o item "Aplicação Cielo"</string>
+    <string name="back_machine_title">Número de série da sua maquininha</string>
+    <string name="back_machine_message">O número de série da sua maquininha se encontra na parte de trás do seu terminal, na etiqueta "número de serie” ou "serial number”</string>
+    <string name="add_new">Adicionar novo</string>
+    <string name="without_machine_message">Essa sessão é direcionada para resolver problemas das maquininhas, e você não tem nenhuma maquininha atrelada ao seu EC, para prosseguir, vamos te direcionar para a Central de Ajuda.</string>
+    <string name="oops">Ops...</string>
+    <string name="access_help_center">Acessar Central de Ajuda</string>
+    <string name="review_informations">Revise as informações para abrir o chamado</string>
+
+</resources>

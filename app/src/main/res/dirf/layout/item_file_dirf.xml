@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroupDirf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            tools:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radio_button"
+                android:layout_marginTop="@dimen/dimen_16sp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:layoutDirection="rtl"
+                android:textAppearance="@style/TextAppearanceButtonRadio"
+                android:text="@string/item_dirf_pdf"
+                android:textColor="@drawable/selector_text_radio"
+                android:theme="@style/RadioButtonStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/color_C5CED7" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radio_button"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:layoutDirection="rtl"
+                android:textAppearance="@style/TextAppearanceButtonRadio"
+                android:text="@string/item_dirf_excel"
+                android:textColor="@drawable/selector_text_radio"
+                android:theme="@style/RadioButtonStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/color_C5CED7" />
+
+            <!-- por problemas no backend ficará comentado até ser resolvido na api.-->
+           <!-- <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radio_button"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:layoutDirection="rtl"
+                android:textAppearance="@style/TextAppearanceButtonRadio"
+                android:text="@string/item_dirf_dec"
+                android:textColor="@drawable/selector_text_radio"
+                android:theme="@style/RadioButtonStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/color_C5CED7"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                />-->
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

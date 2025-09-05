@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.18">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_text_input_view_selector"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bg_cartao" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:layout_weight="1.8"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name_bank_value_dc"
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_name_bank"
+                    android:textSize="@dimen/dimen_16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_name_agencia"
+                        android:textSize="@dimen/dimen_12dp" />
+
+                    <TextView
+                        android:id="@+id/txt_name_agencia_value_dc"
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_4dp"
+                        android:layout_marginLeft="@dimen/dimen_4dp"
+                        android:text="@string/txt_name_agencia_value"
+                        android:textSize="@dimen/dimen_12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_name_conta"
+                        android:textSize="@dimen/dimen_12dp" />
+
+                    <TextView
+                        android:id="@+id/txt_name_conta_value_dc"
+                        style="@style/Paragraph_300_display_400"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_4dp"
+                        android:layout_marginLeft="@dimen/dimen_4dp"
+                        android:text="@string/txt_name_conta_value"
+                        android:textSize="@dimen/dimen_12dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_status_dc_value"
+                style="@style/Heading_500_Bold_18_display_500"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/txt_status_dc_value"
+                android:textColor="@color/red_DC392A"
+                android:textSize="14.5dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_bank_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:background="@color/nublado_200" />
+</LinearLayout>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_item_produtos_fidelidade"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@color/white" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/fidelidade_legenda_produtos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="@string/fidelidade_legenda_produtos"
+            android:textColor="@color/text_color_263238"
+            android:textSize="12sp"
+            app:typeface="MuseoSans-700.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/fidelidade_loja_produtos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/fidelidade_loja_produtos"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp"
+            app:typeface="MuseoSans-500.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/fidelidade_pontos_necessarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/fidelidade_loja_pontos_necessarios"
+            android:textColor="#00AEEF"
+            android:textSize="14sp"
+            app:typeface="MuseoSans-700.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceButtonView
+            android:id="@+id/fidelidade_loja_pontos_button_resgatar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_shape_purple"
+            android:text="@string/fidelidade_loja_pontos_button_resgatar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:typeface="Museo700-Regular.ttf" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fidelidade_separador_item_produtos"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:alpha="0.2"
+        android:background="@color/gray_light" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="br.com.mobicare.cielo.interactbannersoffers.InteractBannersOffersFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayoutContent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <br.com.mobicare.cielo.interactbannersoffers.view.InteractLeaderboardBannerView
+            android:id="@+id/imageViewLeaderboardBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_90dp"
+        android:padding="@dimen/dimen_16dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</androidx.appcompat.widget.LinearLayoutCompat>

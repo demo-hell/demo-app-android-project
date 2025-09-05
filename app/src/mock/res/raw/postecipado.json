@@ -1,0 +1,40 @@
+{
+  "postecipado": [
+    {
+      "codigoCliente": 2002009583,
+      "valorFaturamento": 10000,
+      "percentualDesconto": 0,
+      "metaFaturamento": 20000,
+      "dataAtualizacaoFaturamento": 1504580400000,
+      "dataAtualizacaoMeta": 1504234800000,
+      "dataInicioVigenciaMeta": null,
+      "dataFimVigenciaMeta": null,
+      "mesAnoRefMeta": 201709,
+      "mesAnoRefFaturamento": 201709,
+      "descontoTotal": "R$ 0,00",
+      "incentivo": "Você não recebeu reembolso em forma de desconto pois não atingiu sua meta de faturamento",
+      "tooltipAtualizacao": "Dados atualizados em 05/09/17 às 12:00",
+      "regraAplicacao": "Desconto a ser aplicado",
+      "resultadoAnterior": null,
+      "msgOfertaExpirado": null
+    },
+    {
+      "codigoCliente": 2002009583,
+      "valorFaturamento": 10000,
+      "percentualDesconto": 0,
+      "metaFaturamento": 20000,
+      "dataAtualizacaoFaturamento": 1506826800000,
+      "dataAtualizacaoMeta": 1506826800000,
+      "dataInicioVigenciaMeta": null,
+      "dataFimVigenciaMeta": null,
+      "mesAnoRefMeta": 201710,
+      "mesAnoRefFaturamento": 201710,
+      "descontoTotal": "a confirmar",
+      "incentivo": "Venda mais R$ 19.800,00 para receber o desconto.",
+      "tooltipAtualizacao": "Dados atualizados em 01/10/17 às 12:00",
+      "regraAplicacao": "Desconto a ser aplicado",
+      "resultadoAnterior": null,
+      "msgOfertaExpirado": null
+    }
+  ]
+}

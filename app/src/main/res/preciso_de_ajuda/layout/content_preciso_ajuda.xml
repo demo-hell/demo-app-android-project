@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="handlers"
+            type="br.com.mobicare.cielo.precisoDeAjuda.presentation.PrecisoAjudaContract.Presenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp">
+
+
+        <!-- Esqueci Estabelecimento -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_ajuda_esqueci_estabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/card_corner"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/preciso_ajuda_esqueci_estabelecimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ajuda_header_background"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageview_ajuda_esqueci_estabelecimento"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_chevron" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_ajuda_esqueci_estabelecimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:layout_toLeftOf="@+id/imageview_ajuda_esqueci_estabelecimento"
+                    android:ellipsize="end"
+                    android:text="@string/ajuda_esqueci_ec"
+                    android:textColor="@color/text_color_263238"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-700.ttf" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Esqueci usuário -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_ajuda_esqueci_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/card_corner"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/preciso_ajuda_esqueci_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ajuda_header_background"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imageview_ajuda_esqueci_usuario"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_chevron" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_ajuda_esqueci_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:layout_toLeftOf="@+id/imageview_ajuda_esqueci_usuario"
+                    android:ellipsize="end"
+                    android:text="@string/ajuda_esqueci_usuario"
+                    android:textColor="@color/text_color_263238"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-700.ttf" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Esqueci senha -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_ajuda_esqueci_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/card_corner"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/preciso_ajuda_esqueci_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ajuda_header_background"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageview_ajuda_esqueci_senha"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/ic_chevron" />
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textview_ajuda_esqueci_senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dp"
+                    android:layout_toLeftOf="@+id/imageview_ajuda_esqueci_senha"
+                    android:ellipsize="end"
+                    android:text="@string/ajuda_esqueci_senha"
+                    android:textColor="@color/text_color_263238"
+                    android:textSize="14sp"
+                    app:typeface="MuseoSans-700.ttf" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</layout>

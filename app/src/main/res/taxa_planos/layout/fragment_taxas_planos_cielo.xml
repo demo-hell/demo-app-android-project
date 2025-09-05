@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedCieloTaxAndPlansFree"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true"
+        android:layout_height="@dimen/dimen_0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearShimmerLoading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerLoading"
+                    app:shimmer_duration="800"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/shimmer_data_your_plan"/>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cardFreeCieloPlan"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                tools:visibility="visible"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_16dp"
+                    android:background="@drawable/background_card_cielo_default"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_current_earnings_plan_label"
+                        style="@style/TextTitleHeading400Bold18spDisplay600"
+                        />
+
+                    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                        android:id="@+id/pbView"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="20dp"
+                        app:rcRadius="@dimen/dimen_24dp"
+                        app:rcAnimationEnable="true"
+                        app:rcBackgroundColor="@color/color_c5ced7"
+                        app:rcProgressColor="@color/color_f98f25"
+                        />
+
+                    <TextView
+                        android:id="@+id/valueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        tools:text="R$ 7.853,41"
+                        android:textColor="@color/color_f98f25"
+                        style="@style/TextParagraph700Bold24spAlert400"
+                        />
+
+                    <TextView
+                        android:id="@+id/infoTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="Caso a meta de faturamento não seja atingida o valor integral da máquina será cobrado"
+                        android:textAlignment="center"
+                        style="@style/TextParagraph200Regular12spUbuntuDisplay500"
+                        />
+
+                </LinearLayout>
+
+
+                <br.com.mobicare.cielo.component.feeandplans.ComponentLayoutFeeAndPlans
+                    android:id="@+id/componentEarningsDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    app:showFooter="false"/>
+
+                <TextView
+                    android:id="@+id/textPlanControlInfo"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:text="@string/text_plan_control_info"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <br.com.mobicare.cielo.component.CieloCardBrandsView
+                    android:id="@+id/cardShowControlAllBrands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        layout="@layout/layout_error_link_list_order" tools:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

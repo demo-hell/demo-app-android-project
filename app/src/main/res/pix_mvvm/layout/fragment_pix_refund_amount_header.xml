@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/dimen_4dp"
+    android:paddingHorizontal="@dimen/dimen_8dp"
+    android:background="@color/cloud_100">
+
+    <TextView
+        android:id="@+id/tvRecipientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/semi_bold_montserrat_14"
+        android:textColor="@color/neutral_800"
+        tools:text="Para: Ana Luisa Amaral" />
+
+    <TextView
+        android:id="@+id/tvRecipientInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAppearance="@style/semi_bold_montserrat_12"
+        android:textColor="@color/neutral_600"
+        tools:text="CPF/CNPJ: ***.123.567-** / Bradesco S.A." />
+
+</LinearLayout>

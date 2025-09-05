@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/dimen_16dp"
+    android:paddingLeft="@dimen/dimen_16dp"
+    android:paddingRight="@dimen/dimen_16dp"
+    android:background="@drawable/sl_background_with_border_grey">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_16sp"
+        android:maxLines="2"
+        android:lines="2"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black_231f20"
+        tools:text="Title"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewFooter"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/dimen_14sp"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/color_353A40"
+        android:text="O valor do plano pode variar por conta de descontos, consulte seu extrato."/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

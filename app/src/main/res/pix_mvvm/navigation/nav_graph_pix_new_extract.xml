@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_new_extract"
+    app:startDestination="@id/pixHomeExtractFragment"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/pixHomeExtractFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.extract.home.ui.PixHomeExtractFragment"
+        android:label="PixHomeExtract"
+        tools:layout="@layout/fragment_pix_home_extract">
+
+        <action
+            android:id="@+id/action_pixHomeExtractFragment_to_pixNewExtractDetailFragment"
+            app:destination="@id/pixNewExtractDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_out"
+            app:popExitAnim="@anim/fade_in" />
+
+        <action
+            android:id="@+id/action_pixHomeExtractFragment_to_pixFreeMovementAccountManagementFragment"
+            app:destination="@id/pixFreeMovementAccountManagementFragmentFromExtract"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixNewExtractDetailFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.extract.detail.PixNewExtractDetailFragment"
+        android:label="PixNewExtractDetail"
+        tools:layout="@layout/fragment_pix_new_extract_detail">
+
+        <argument
+            android:name="PIX_IS_A_REVERSAL_TRANSACTION_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_EXTRACT_HOME_ARGS"
+            app:argType="br.com.mobicare.cielo.pixMVVM.presentation.extract.home.model.PixExtractHomeArgs"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_pixNewExtractDetailFragment_to_pixNewExtractDetailFragment"
+            app:destination="@id/pixNewExtractDetailFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+        <action
+            android:id="@+id/action_pixNewExtractDetailFragment_to_pixReversalFragment"
+            app:destination="@id/pixNewReversalFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixNewReversalFragment"
+        android:name="br.com.mobicare.cielo.pix.ui.extract.reversal.PixReversalFragment"
+        android:label="PixReversalFragment"
+        tools:layout="@layout/fragment_pix_reversal">
+
+        <argument
+            android:name="PIX_BACK_TO_HOME_ARGS"
+            app:argType="boolean" />
+
+        <argument
+            android:name="PIX_TRANSACTION_CODE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_ID_END_TO_END_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_BALANCE_ARGS"
+            app:argType="string" />
+
+        <argument
+            android:name="PIX_TRANSFER_DETAILS_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.TransferDetailsResponse" />
+
+        <argument
+            android:name="PIX_REVERSAL_RECEIPTS_RESPONSE_ARGS"
+            app:argType="br.com.mobicare.cielo.pix.domain.ReversalReceiptsResponse" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixFreeMovementAccountManagementFragmentFromExtract"
+        android:name="br.com.mobicare.cielo.pix.ui.home.account.PixFreeMovementAccountManagementFragment"
+        android:label="PixFreeMovementAccountManagementFragment"
+        tools:layout="@layout/fragment_free_movement_account_management" />
+
+</navigation>

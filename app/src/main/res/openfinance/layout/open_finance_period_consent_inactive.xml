@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="@dimen/dimen_44dp"
+    android:layout_marginHorizontal="@dimen/dimen_16dp"
+    android:background="@drawable/background_transparent_border_neutral_radius_12">
+
+    <TextView
+        android:id="@+id/tvSpinnerValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/regular_montserrat_16_neutral_600_spacing_4"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_weight="0.9"
+        android:textSize="18sp" />
+    <ImageView
+        android:layout_width="@dimen/dimen_22dp"
+        android:layout_height="@dimen/dimen_10dp"
+        android:layout_weight="0.3"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:rotationY="180"
+        android:contentDescription="@string/acessibility_desc_period"
+        android:background="@drawable/ic_chevron_down"/>
+</LinearLayout>

@@ -1,0 +1,232 @@
+{
+  "ec": "2000149000",
+  "name": "Ckz F Lae",
+  "documentNumber": "78.104.754/0001-89",
+  "corporateName": "Cmd H Rsi 176",
+  "businessSegment": "Mercearias E Superm.",
+  "openingDate": "08/07/2015",
+  "owner": "Robson L S Soares",
+  "phone": "23456-7895",
+  "addresses": [
+    {
+      "type": "fisico",
+      "street": "ALAMEDA GRAJAU 219",
+      "complement": "APTO17A",
+      "city": "SAO PAULO",
+      "state": "SP",
+      "postalCode": "02311-110"
+    },
+    {
+      "type": "contato",
+      "street": "ALAMEDA GRAJAU 219",
+      "complement": "APTO17A",
+      "city": "SAO PAULO",
+      "state": "SP",
+      "postalCode": "02311-110"
+    }
+  ],
+  "bankDatas": [
+    {
+      "name": "Banco do Brasil S.A.",
+      "code": "0001",
+      "branch": "02017",
+      "account": "*******9-X",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/bank_0001.png"
+    },
+    {
+      "name": "Banco Bradesco S.A.",
+      "code": "0237",
+      "branch": "01515",
+      "account": "******9-X",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/bank_0237.png"
+    },
+    {
+      "name": "",
+      "code": "0033",
+      "branch": "01234",
+      "account": "********9-9",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/bank_0033.png"
+    }
+  ],
+  "hiredSolutions": [
+    {
+      "name": "POS FIXO WNB",
+      "quantity": "00001",
+      "price": "R$ 103,90",
+      "description": "R$ 103,90"
+    },
+    {
+      "name": "TEF DEDICADO",
+      "quantity": "00001",
+      "price": "R$ 27,16",
+      "description": "R$ 27,16"
+    },
+    {
+      "name": "TEF DEDICADO",
+      "quantity": "00001",
+      "price": "R$ 0,00",
+      "description": "R$ 0,00"
+    }
+  ],
+  "enabledBrands": [
+    {
+      "name": "TICKET",
+      "debito": "0,00 %",
+      "credito": "-",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "http://is2.mzstatic.com/image/thumb/Purple118/v4/5c/44/24/5c4424b7-0dca-58b4-b43f-67e285c2ebb7/source/1200x630bb.jpg"
+    },
+    {
+      "name": "DINERS",
+      "debito": "-",
+      "credito": "7,24 %",
+      "installments1x3": "-",
+      "installments4x6": "7,24 %",
+      "installments7x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_diners.png"
+    },
+    {
+      "name": "SOROCRED",
+      "debito": "-",
+      "credito": "7,24 %",
+      "installments1x3": "-",
+      "installments4x6": "7,24 %",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_sorocred.png"
+    },
+    {
+      "name": "BANESCARD",
+      "debito": "3,44 %",
+      "credito": "7,24 %",
+      "installments1x3": "-",
+      "installments4x6": "7,24 %",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_banescard.png"
+    },
+    {
+      "name": "JCB",
+      "debito": "-",
+      "credito": "8,25 %",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_jcb.png"
+    },
+    {
+      "name": "CABAL",
+      "debito": "2,25 %",
+      "credito": "2,25 %",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "2,25 %",
+      "installments10x12": "2,25 %",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_cabal.png"
+    },
+    {
+      "name": "POLICARD",
+      "debito": "0,00 %",
+      "credito": "-",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_policard.png"
+    },
+    {
+      "name": "MASTERCARD",
+      "debito": "3,44 %",
+      "credito": "7,24 %",
+      "installments1x3": "-",
+      "installments4x6": "7,24 %",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_mastercard.png"
+    },
+    {
+      "name": "VISA",
+      "debito": "1,85 %",
+      "credito": "7,24 %",
+      "installments1x3": "-",
+      "installments4x6": "7,24 %",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_visa.png"
+    },
+    {
+      "name": "CREDSYSTEM",
+      "debito": "-",
+      "credito": "7,24 %",
+      "installments1x3": "-",
+      "installments4x6": "7,24 %",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_credsystem.png"
+    },
+    {
+      "name": "VISA/ELO-C",
+      "debito": "2,00 %",
+      "credito": "-",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_visa/elo-c.png"
+    },
+    {
+      "name": "ELO-CBVS",
+      "debito": "2,00 %",
+      "credito": "-",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_elo-cbvs.png"
+    },
+    {
+      "name": "ELO",
+      "debito": "3,44 %",
+      "credito": "7,24 %",
+      "installments1x3": "-",
+      "installments4x6": "7,24 %",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_elo.png"
+    },
+    {
+      "name": "AMEX",
+      "debito": "0,00 %",
+      "credito": "-",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_amex.png"
+    },
+    {
+      "name": "AGIPLAN",
+      "debito": "-",
+      "credito": "2,25 %",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "2,25 %",
+      "installments10x12": "2,25 %",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_agiplan.png"
+    },
+    {
+      "name": "CREDZ",
+      "debito": "-",
+      "credito": "2,25 %",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "2,25 %",
+      "installments10x12": "2,25 %",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_credz.png"
+    }
+  ]
+}

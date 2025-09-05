@@ -1,0 +1,228 @@
+{
+  "banks": [
+    {
+      "code": "0",
+      "name": "Mocking Bank",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "99999999",
+      "accountDigitMask": "X"
+    },
+    {
+      "code": "1",
+      "name": "Banco do Brasil S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "99999999",
+      "accountDigitMask": "X"
+    },
+    {
+      "code": "3",
+      "name": "Banco da Amazônia S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "21",
+      "name": "BANESTES S.A. Banco do Estado do Espírito Santo",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "25",
+      "name": "Banco Alfa S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "33",
+      "name": "Banco Santander (Brasil) S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "41",
+      "name": "Banco do Estado do Rio Grande do Sul S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "70",
+      "name": "BRB - Banco de Brasília S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "84",
+      "name": "Banco Uniprime",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "104",
+      "name": "Caixa Econômica Federal",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "99999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "218",
+      "name": "Banco Bonsucesso S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "237",
+      "name": "Banco Bradesco S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999",
+      "accountDigitMask": "X"
+    },
+    {
+      "code": "246",
+      "name": "Banco ABC Brasil S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "341",
+      "name": "Itau",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "99999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "389",
+      "name": "Banco Mercantil do Brasil S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "399",
+      "name": "HSBC Bank Brasil S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "999999",
+      "accountDigitMask": "99"
+    },
+    {
+      "code": "422",
+      "name": "Banco Safra S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "604",
+      "name": "Banco Industrial do Brasil S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "623",
+      "name": "Banco Panamericano S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "634",
+      "name": "BANCO TRIANGULO SA",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "655",
+      "name": "Banco Votorantim S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "707",
+      "name": "Banco Daycoval S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "743",
+      "name": "Banco Semear",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "745",
+      "name": "Banco Citibank S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "748",
+      "name": "Banco Cooperativo Sicredi S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "755",
+      "name": "Bank Of America S.A.",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "756",
+      "name": "Banco Cooperativo do Brasil S.A. - BANCOOB",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999999999",
+      "accountDigitMask": "9"
+    },
+    {
+      "code": "995",
+      "name": "Banco internacional",
+      "branchMask": "9999",
+      "branchDigitMask": "9",
+      "accountMask": "9999999",
+      "accountDigitMask": "9"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAccountCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_52dp"
+        app:layout_constraintBottom_toTopOf="@id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_light_22" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/Heading_500_Bold_18_display_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:gravity="center"
+        android:text="@string/access_manager_welcome_title"
+        android:textAlignment="center"
+        android:textColor="@color/brand_600"
+        app:layout_constraintTop_toBottomOf="@id/ivAccountCreate" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        style="@style/Paragraph_400_Regular_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:lineSpacingExtra="@dimen/dimen_8sp"
+        android:gravity="center"
+        android:text="@string/access_manager_welcome_message"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAcceptLater"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="@string/access_manager_welcome_do_later"
+        android:visibility="gone"
+        android:textColor="@drawable/text_color_brand_400_selector"
+        app:layout_constraintBottom_toTopOf="@id/btnAcceptNow" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAcceptNow"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/access_manager_go"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="utility_button_16" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/brand_400</item>
+        <item name="android:textFontWeight">600</item>
+    </style>
+
+</resources>

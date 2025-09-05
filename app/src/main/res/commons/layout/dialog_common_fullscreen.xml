@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar2"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    tools:showIn="@layout/fragment_sheet_bottom_tutorial_cancel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textCommonDialogToolbarTitle"
+            style="@style/TextBlack24spTitle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="left|center"
+            android:text="@string/rm_title_modal"
+            android:textColor="#2b2f33"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:typeface="Museo300-Regular.ttf" />
+
+        <LinearLayout
+            android:id="@+id/btn_rm_close"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_icon_close" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

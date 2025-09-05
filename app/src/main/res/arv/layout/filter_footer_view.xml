@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/accent_100">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/totalValueTextView"
+        style="@style/semi_bold_montserrat_16"
+        android:textColor="@color/neutral_600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/total_value_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/discountsTextView"
+        style="@style/medium_montserrat_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:text="@string/discounts_text"
+        android:textColor="@color/neutral_soft"
+        app:layout_constraintStart_toStartOf="@id/totalValueTextView"
+        app:layout_constraintTop_toBottomOf="@id/totalValueTextView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/infoButton"
+        android:layout_width="@dimen/dimen_24dp"
+        android:layout_height="@dimen/dimen_32dp"
+        android:padding="@dimen/dimen_2dp"
+        android:layout_gravity="center_vertical"
+        android:tint="@color/brand_400"
+        app:layout_constraintBottom_toBottomOf="@id/discountsTextView"
+        app:layout_constraintStart_toEndOf="@id/discountsTextView"
+        app:layout_constraintTop_toTopOf="@id/discountsTextView"
+        app:srcCompat="@drawable/ic_info" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/grossValue"
+        style="@style/bold_montserrat_14"
+        android:textColor="@color/neutral_soft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="R$ 652.883,57" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/discountValue"
+        style="@style/medium_montserrat_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:textColor="@color/neutral_soft"
+        app:layout_constraintEnd_toEndOf="@id/grossValue"
+        app:layout_constraintTop_toTopOf="@id/discountsTextView"
+        tools:text="– R$ 52.883,57" />
+
+    <View
+        android:id="@+id/barView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:background="@color/border_neutral"
+        app:layout_constraintTop_toBottomOf="@id/discountValue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/netAmountReceivableTextView"
+        style="@style/semi_bold_montserrat_12"
+        android:textColor="@color/neutral_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:text="@string/net_amount_receivable"
+        app:layout_constraintBottom_toTopOf="@id/tvValuesWarn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/netAmountReceivableValue"
+        style="@style/bold_montserrat_16"
+        android:textColor="@color/neutral_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="@id/netAmountReceivableTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/netAmountReceivableTextView"
+        tools:text="R$ 600.000,00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvValuesWarn"
+        style="@style/regular_ubuntu_12_cloud_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="@string/arv_values_warn"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

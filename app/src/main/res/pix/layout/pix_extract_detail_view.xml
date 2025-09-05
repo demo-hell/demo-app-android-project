@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:background="@drawable/background_status_my_keys_pix_alert_100"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvBannerTitle"
+            style="@style/label_14_alert_600_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            tools:text="Em processamento" />
+
+        <TextView
+            android:id="@+id/tvBannerContent"
+            style="@style/label_12_display_500_ubuntu_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:padding="@dimen/dimen_8dp"
+            android:textAlignment="center"
+            app:lineHeight="@dimen/dimen_18sp"
+            tools:text="@string/text_pix_extract_detail_processing_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTransactionStatus"
+        style="@style/Paragraph_400_bold_16_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/bannerContainer"
+        tools:text="Transferência recebida - Pix" />
+
+    <TextView
+        android:id="@+id/tvTransactionDatetime"
+        style="@style/label_12_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionStatus"
+        tools:text="em 25/03/2022 às 21:53:04" />
+
+    <LinearLayout
+        android:id="@+id/container_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionDatetime">
+
+        <TextView
+            android:id="@+id/tvTransactionReceivedFrom"
+            style="@style/label_12_display_300_ubuntu_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pix_extract_detail_received_from"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvTransactionSender"
+            style="@style/label_16_display_500_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textAlignment="center"
+            tools:text="Livia Silva" />
+
+        <TextView
+            android:id="@+id/tvTransactionBankAndDocument"
+            style="@style/label_12_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:textAlignment="center"
+            tools:text="Caixa Econômica • CPF: ***.282.123-**" />
+
+        <TextView
+            android:id="@+id/tvTransactionValue"
+            style="@style/label_12_display_300_ubuntu_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_8dp"
+            android:text="@string/text_pix_extract_detail_transaction_receipt_amount"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/amountContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:background="@drawable/background_success_100_radius_8"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dimen_10dp">
+
+            <TextView
+                android:id="@+id/tvTransactionAmount"
+                style="@style/label_12_display_400_ubuntu_success_100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/dimen_24sp"
+                tools:text="R$500,00" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingBottom="@dimen/dimen_6dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvSale"
+                    style="@style/label_12_display_400_ubuntu_base"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_value_sale_pix"
+                    app:layout_constraintEnd_toStartOf="@id/tvSaleValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvSaleValue"
+                    style="@style/label_12_display_400_ubuntu_base"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvSale"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="R$ 500,00" />
+
+                <TextView
+                    android:id="@+id/tvChange"
+                    style="@style/label_12_display_400_ubuntu_base"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/tv_value_change_pix"
+                    app:layout_constraintEnd_toStartOf="@id/tvChangeValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSale" />
+
+                <TextView
+                    android:id="@+id/tvChangeValue"
+                    style="@style/label_12_display_400_ubuntu_base"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textAlignment="viewEnd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvChange"
+                    app:layout_constraintTop_toBottomOf="@id/tvSale"
+                    tools:text="R$ 500,00" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTransactionMessageReceivedSent"
+            style="@style/label_12_display_300_ubuntu_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pix_extract_detail_message_received"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvTransactionMessage"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:paddingHorizontal="@dimen/dimen_24dp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:text="”action figure Han Solo”"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/showReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:text="@string/text_pix_summary_transfer_show_receipt"
+            android:textAlignment="center"
+            android:textColor="@color/blue_0774E7"
+            android:textSize="@dimen/dimen_16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_8dp"
+        android:layout_marginVertical="@dimen/dimen_24dp"
+        android:background="@color/display_50"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/container_information"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/transactionLink"
+        style="@style/label_14_brand_400_ubuntu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:text="@string/text_pix_extract_detail_transaction_link"
+        android:visibility="gone"
+        app:drawableEndCompat="@drawable/ic_arrow"
+        app:drawableTint="@color/brand_400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separator"
+        app:layout_constraintVertical_bias="0"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_reversal_data"
+        style="@style/label_16_brand_600_montserrat_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_reversal_receipt_reversal_data"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_amount_title_receipt_reversal"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:text="@string/text_pix_transfer_receipt_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reversal_data" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_reversal_data_amount"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_amount_title_receipt_reversal"
+        tools:text="R$ 150,00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_transfer_type_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/text_pix_summary_transfer_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reversal_data_amount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_transfer_type_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/text_pix_reversal_type_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transfer_type_title_receipt" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_reason_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        tools:visibility="visible"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transfer_type_receipt">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_reason_title_receipt"
+            style="@style/label_16_display_300_montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_reason_title_receipt_reversal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_reason_receipt"
+            style="@style/label_16_display_400_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_reason_title_receipt"
+            tools:text="Jogo de PS4 do homem-aranha. Seminovo." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_reversal_amount_available_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:visibility="gone"
+        android:text="@string/tv_available_amount_title_receipt_reversal"
+        app:layout_constraintTop_toBottomOf="@id/container_reason_receipt"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_reversal_amount_available_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="R$450,00"
+        android:visibility="gone"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reversal_amount_available_title_receipt" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_reversal_auth_code_title_receipt"
+        style="@style/label_16_display_300_montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/tv_auth_code_title_receipt_reversal"
+        app:layout_constraintTop_toBottomOf="@id/tv_reversal_amount_available_receipt"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_reversal_auth_code_receipt"
+        style="@style/label_16_display_400_ubuntu_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="5463737282383838"
+        android:fontFamily="@font/ubuntu_bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reversal_auth_code_title_receipt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:background="@drawable/custom_text_input_view_selector"
+    android:orientation="vertical"
+    android:id="@+id/layout_not_knowledge"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="Suspicious0dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_help_button"
+                tools:ignore="VectorDrawableCompat"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="225dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/Paragraph_300_display_400"
+            android:id="@+id/textView"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.4"
+            android:text="@string/txt_br_not_register"
+            android:textSize="16dp"
+            android:textColor="@color/color_5A646E"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_setinha_right"
+                tools:ignore="VectorDrawableCompat"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="225dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+

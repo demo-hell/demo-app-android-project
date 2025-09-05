@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_99000000"
+    >
+
+    <LinearLayout
+        android:id="@+id/content_constrant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_welcome_notification"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+
+        <include layout="@layout/dialog_common_fullscreen" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="0.01"
+            android:background="#dfe5f5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- step 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="4.6"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.9"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/logo_receba_mais"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_body_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/txt_welcome_title"
+                    style="@style/TextBlack24spTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/rm_title"
+                    android:textColor="#00aeef"
+                    android:textSize="20sp"
+                    app:typeface="MuseoSans-900.ttf"
+                    />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/txt_welcome_subtitle"
+                    style="@style/TextBlack24spTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/rm_subtitle"
+                    android:textColor="#838383"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:typeface="MuseoSans-500.ttf" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1.4"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="77dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/txt_welcome_subtitle"
+                tools:ignore="MissingConstraints">
+
+                <CheckBox
+                    android:id="@+id/cb_dinheiro_uteis"
+                    style="@style/RMcheckbox16spTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:button="@drawable/checkbox_receba_mais"
+                    android:gravity="left"
+                    android:text="@string/cb_dinheiro_uteis"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_welcome_subtitle"
+                    app:layout_constraintStart_toStartOf="@+id/txt_welcome_subtitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_welcome_subtitle"
+                    tools:ignore="MissingConstraints" />
+
+                <CheckBox
+                    android:id="@+id/cb_pagamento_recebiveis"
+                    style="@style/RMcheckbox16spTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:button="@drawable/checkbox_receba_mais"
+                    android:gravity="left"
+                    android:text="@string/cb_pagamento_recebiveis"
+                    app:layout_constraintEnd_toEndOf="@+id/cb_dinheiro_uteis"
+                    app:layout_constraintStart_toStartOf="@+id/cb_dinheiro_uteis"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_dinheiro_uteis"
+                    tools:ignore="MissingConstraints" />
+
+                <CheckBox
+                    android:id="@+id/cb_taxas_diferenciados"
+                    style="@style/RMcheckbox16spTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:button="@drawable/checkbox_receba_mais"
+                    android:gravity="left"
+                    android:text="@string/cb_taxas_diferenciadas"
+                    app:layout_constraintEnd_toEndOf="@+id/cb_pagamento_recebiveis"
+                    app:layout_constraintStart_toStartOf="@+id/cb_pagamento_recebiveis"
+                    app:layout_constraintTop_toBottomOf="@+id/cb_pagamento_recebiveis"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginRight="49dp"
+                android:layout_weight="0.5">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_rm_ok"
+                    style="@style/ButtonShapedPurpleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    app:fb_text="Simular Agora"
+                    app:typeface="Museo700-Regular.ttf"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

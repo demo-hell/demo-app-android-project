@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="put_values_toolbar_title">Validação de depósito</string>
+    <string name="put_values_validate_button">Validar</string>
+    <string name="put_values_title">Preencha os campos com os valores depositados na sua conta</string>
+    <string name="put_values_content">
+    <![CDATA[
+        Veja no seu extrato bancário se consta 2 valores depositados para ativar o token e preencha os campos abaixo..
+        ]]>
+    </string>
+    <string name="merchant_put_values_content">
+    <![CDATA[
+        Veja no seu extrato bancário se consta 2 valores depositados para ativar o token e preencha os campos abaixo..
+        ]]>
+    </string>
+    <string name="text_onboarding_success_text">
+        <![CDATA[
+        Consulte o extrato de sua conta selecionada em até <b>3 hora</b> e identifique o depósito para ativar o token.
+        ]]>
+    </string>
+    <string name="text_onboarding_success_text_subtitle">
+        O tempo estimado para o depósito pode levar até 2 dias úteis caso a solicitação seja feita na sexta-feira ou em feriados.
+    </string>
+    <string name="text_merchant_status_mfa_pending">
+        <![CDATA[
+        Consulte o extrato de sua conta selecionada em até <b>3 horas</b> e identifique o depósito para validar o estabelecimento.
+        ]]>
+    </string>
+    <string name="text_status_mfa_pending">
+        <![CDATA[
+        Consulte o extrato de sua conta selecionada em até <b>3 horas</b> e identifique o depósito para ativar o token.
+        ]]>
+    </string>
+    <string name="put_values">R$ 0,00</string>
+    <string name="number_token">Número do Token</string>
+    <string name="number_token_ga">numero do token</string>
+    <string name="put_values_one">Valor 1</string>
+    <string name="put_values_tow">Valor 2</string>
+    <string name="incorrect_values_alert_title">Valores incorretos</string>
+    <string name="incorrect_values_alert_message">Algum dos valores inseridos está incorreto, verifique o extrato da sua conta e tente novamente</string>
+    <string name="incorrect_values_alert_button">Retornar</string>
+    <string name="business_error">Não foi possível carregar este item agora. Estamos trabalhando para corrigir este problema, tente de novo em alguns minutos ou reinicie o app.</string>
+
+    <string name="bottom_sheet_sucess_put_value_label">Sucesso!</string>
+    <string name="bottom_sheet_sucess_put_value_title">Dispositivo registrado</string>
+    <string name="bottom_sheet_sucess_put_value_subtitle">Parabéns! A partir de agora você pode realizar suas transações e solicitações com muito mais segurança</string>
+
+    <string name="bottom_sheet_error_third_put_value_label">Múltiplas tentativas inválidas</string>
+    <string name="bottom_sheet_error_third_put_value_title">Validação bloqueada</string>
+    <string name="bottom_sheet_error_third_put_value_subtitle">Tentativas de validação excedidas, estamos bloqueando esta funcionalidade durante 24 horas, após este período tente novamente</string>
+    <string name="bottom_sheet_error_third_unavailable_put_value_label">Indisponível temporariamente</string>
+    <string name="bottom_sheet_error_third_unavailable_put_value_title">Serviço Indisponível</string>
+    <string name="bottom_sheet_error_third_unavailable_put_value_subtitle">Tentativas de validação excedidas, estamos bloqueando esta funcionalidade durante 24 horas, após este período tente novamente</string>
+    <string name="multiple_attempt_error_opt_transfer_account">Devido múltiplas tentativas de validação, o token estará disponível após 30 minutos desde a última tentativa</string>
+    <string name="multiple_attempt_error_opt_transfer_account_title">Serviço Indisponível</string>
+    <string name="error_maintenance_title">Estamos em manutenção</string>
+    <string name="error_maintenance_content">Pedimos desculpas por qualquer inconveniente causado, em breve voltaremos ;)</string>
+    <string name="text_mfa_lost_token_warning_title">Deseja sobrescrever o token?</string>
+    <string name="text_mfa_lost_token_warning_message">Já existe um token cadastrado nesse dispositivo, ao realizar uma nova solicitação será apagado o token atual.</string>
+    <string name="text_error_token_miss_seed">Não foi possível carregar este item, por favor entre em contato com a central de atendimento.</string>
+
+    <string name="title_primeiro_acesso_mfa">Configure o seu Token de segurança</string>
+    <string name="text_primeiro_acesso_mfa">Ele é necessário para realizar operações mais sensíveis no app, como alterações cadastrais e de dados bancários, adição de estabelecimentos e acesso ao Pix.</string>
+
+    <string name="text_title_token_reconfiguration">Configure o token neste aparelho</string>
+    <string name="text_message_token_reconfiguration">Para realizar operações mais sensíveis, como alterações cadastrais, adição de estabelecimentos e acesso ao Pix, você precisa configurar essa nova funcionalidade.\n\nCaso você ja tenha configurado o Token em outro aparelho, o mesmo será invalidado.</string>
+    
+    <string name="text_message_validation_previous_token">
+    <![CDATA[
+        Em seu celular anterior, acesse a sessão <b>Token</b> na tela de Login ou no menu Serviços e digite o valor apresentado.<br/>
+        <br/>
+        O acesso ao Token no celular anterior será <b>invalidado</b>.
+        ]]>
+    </string>
+    <string name="text_message_incorrect_values">"O número do Token inserido está incorreto, verifique seu aparelho anterior e tente novamente."</string>
+    <string name="toolbar_text_bank_challenge_mfa">Validar estabelecimento</string>
+    <string name="text_bank_challenge_mfa_toolbar_success">Estabelecimento adicionado</string>
+    <string name="text_bank_challenge_mfa_title_success">Você validou o estabelecimento</string>
+    <string name="text_bank_challenge_mfa_subtitle_success">A partir de agora você poderá acessá-lo a qualquer momento e realizar operações sensíveis</string>
+    <string name="text_bank_mfa_status_blocked_toolbar">Estabelecimento bloqueado</string>
+    <string name="text_bank_mfa_status_blocked_title">Tentativas de validação excedidas, estamos bloqueando esta funcionalidade durante 24 horas, após este período tente novamente</string>
+    <string name="text_bank_challenge_mfa_info">Para validar este estabelecimento, enviaremos um valor na conta que você selecionar</string>
+    <string name="text_bank_mfa_status_blocked_subtitle">Tente novamente em 24 <horas class=""></horas></string>
+    <string name="text_merchant_challenger_activation_message">Para acessar algumas funcionalidades deste estabelecimento, é necessário que você valide os dados abaixo para completar a ativação.\n\nVeja no seu extrato bancário se consta 2 valores depositados para validar o estabelecimento e preencha os campos abaixo.</string>
+    <string name="text_merchant_challange_activation_sucesso">Você validou o estabelecimento</string>
+    <string name="text_merchant_challange_activation_sucesso_message">A partir de agora você poderá acessá-lo a qualquer momento e realizar operações sensíveis</string>
+    <string name="text_merchant_challange_activation_text_button">Acessar estabelecimento</string>
+    <string name="text_funcionality_dont_free_title">A funcionalidade não está liberada</string>
+    <string name="text_funcionality_dont_free_subtitle">No momento, essa funcionalidade não está ativa para uso no seu estabelecimento</string>
+    <string name="text_mfa_status_pending_title">Sua solicitação está em análise</string>
+    <string name="text_mfa_status_pending_subtitle">A sua liberação de acesso ao token está em análise. Por favor, aguarde e tente novamente em outro momento.</string>
+    <string name="text_mfa_status_error_penny_drop_title">Token não liberado.</string>
+    <string name="text_mfa_status_error_penny_drop_subtitle">O token não foi validado devido a uma inconsistência em sua conta bancaria. Verifique os dados da sua conta e tente novamente.</string>
+
+    <string name="ec_value_x">EC: %s</string>
+
+    <string name="text_title_resume_bank_and_cnpj">Confirmação</string>
+    <string name="text_subtitle_resume_bank_and_cnpj">Revise com atenção as informações do domicílio bancário selecionado e CNPJ para enviar.</string>
+    <string name="text_agency_resume_bank_and_cnpj">Agência:</string>
+    <string name="text_account_resume_bank_and_cnpj">Conta:</string>
+    <string name="text_cnpj_resume_bank_and_cnpj">CNPJ cadastrado no domicílio bancário</string>
+
+    <string name="text_title_insert_cnpj">Atenção</string>
+    <string name="text_subtitle_insert_cnpj">Verifique o início do seu CNPJ cadastrado na conta selecionada e complete o final.</string>
+    <string name="btn_chat_insert_cnpj">Essa não é a raíz do seu CNPJ?</string>
+    <string name="btn_send_insert_cnpj">Enviar</string>
+    <string name="hint_root_cnpj">0000-00</string>
+    <string name="text_error_cnpj_mfa_bank">Nº de CNPJ incorreto.</string>
+    <string name="text_token_title_screen">Token</string>
+
+    <string name="text_pix_transfer_bs_error_title">Houve um erro de processamento</string>
+    <string name="text_pix_transfer_bs_error_subtitle">Por favor, verifique o seu extrato e, caso a transação não tenha sido realizada, tente novamente.</string>
+</resources>

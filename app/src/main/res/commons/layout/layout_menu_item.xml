@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeMenuContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/ajuda_header_background"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imageMenuMore"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_chevron"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textMenuContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:layout_toLeftOf="@+id/imageMenuMore"
+        android:ellipsize="end"
+        android:textColor="@color/text_color_263238"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:typeface="MuseoSans-700.ttf"
+        android:layout_toStartOf="@+id/imageMenuMore"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

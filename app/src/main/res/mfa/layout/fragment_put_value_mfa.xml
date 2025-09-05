@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutValues"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Heading_400_Bold_16_display_500"
+            android:id="@+id/textViewValueTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/put_values_title"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph_300_Regular_14_display_500"
+            android:id="@+id/textViewValueContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:lineSpacingExtra="@dimen/dimen_6sp"
+            tools:text="@string/put_values_content" />
+
+        <LinearLayout
+            android:id="@+id/linearDepositedBankInfo"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_grey_arround_list_order"
+            android:layout_height="wrap_content" />
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/textViewNumberOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="1"
+            app:hint="@string/put_values_one" />
+
+        <br.com.cielo.libflue.inputtext.CieloTextInputView
+            android:id="@+id/textViewNumberTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="1"
+            app:hint="@string/put_values_tow" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

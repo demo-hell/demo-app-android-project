@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Label_16_display_400_facilita" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/display_400</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Label_18_display_500_facilita" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/display_500</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="Label_20_brand_600_plan" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">@dimen/dimen_20sp</item>
+        <item name="android:textColor">@color/brand_600</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="Label_16_cloud_400_plan" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/cloud_400</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="Label_14_brand_400_plan" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/brand_400</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_4dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,142 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_017CEB</item>
+        <item name="colorPrimaryDark">@color/color_145EB3</item>
+        <item name="colorAccent">@color/gray_light</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.LightStatusBar" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="Purple.AppTheme.NoActionBar" parent="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.FullScreenNoActionBar" parent="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.White" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/color_017CEB</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/gray_light</item>
+    </style>
+
+    <style name="NewTheme.AppTheme.NoActionBar" parent="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/color_017CEB</item>
+        <item name="colorPrimaryDark">@color/color_145EB3</item>
+        <item name="colorAccent">@color/gray_light</item>
+    </style>
+
+    <style name="AppMaterialComponentsNoActionBar" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue_dark</item>
+        <item name="colorAccent">@color/gray_light</item>
+        <item name="textFieldStyle">@style/TextField</item>
+    </style>
+
+    <style name="AppMaterialTheme.CieloAccent500" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/cielo_accent_500</item>
+        <item name="colorPrimaryDark">@color/cielo_accent_500</item>
+        <item name="colorAccent">@color/display_200</item>
+    </style>
+
+    <style name="AppTheme.SplashScreen" parent="AppMaterialComponentsNoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:windowTitleBackgroundStyle">@style/DialogThemeWindowTitleBackground
+        </item>
+        <item name="android:windowTitleStyle">@style/DialogThemeWindowTitle</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:duration">500</item>
+
+    </style>
+
+    <style name="DialogThemeMeusRecebimentos" parent="DialogTheme">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogThemeMinhasVendas" parent="DialogTheme">
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="DialogThemeArvCalendar" parent="DialogTheme">
+        <item name="colorAccent">@color/brand_400</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="DialogThemeWindowTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="DialogThemeWindowTitleBackground"></style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarWhite" parent="AppTheme.AppBarOverlay">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="titleTextColor">@color/brand_600</item>
+    </style>
+
+    <style name="textHintStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+
+    <style name="ErrorAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearanceButtonRadio" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/black_5A646E</item>
+        <item name="fontFamily">@font/ubuntu</item>
+    </style>
+
+    <style name="TextAppearanceButtonRadio_display_500" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_500</item>
+        <item name="fontFamily">@font/ubuntu</item>
+    </style>
+
+    <style name="Label_14_display_500_receba_rapido" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/display_500</item>
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_13dp</item>
+    </style>
+
+    <style name="Label_12_display_400_receba_rapido" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/display_400</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_13dp</item>
+    </style>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/display_50"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/fragment_chargeback_home_scene"
+    tools:context=".chargeback.presentation.home.ChargebackHomeFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/cl_container_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_sales_dispute_title"
+            style="@style/Heading_600_20_display_brand_600"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/chargeback_sales_dispute"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_chargeback_title"
+            style="@style/Label_100_ubuntu_regular_16_cloud_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:text="@string/chargeback_explanation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_sales_dispute_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_sales_dispute_title" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_chargeback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/cl_container_header"
+        app:tabBackground="@drawable/view_pager_tab_indicator_selector"
+        app:tabGravity="fill"
+        app:tabIndicator="@android:color/transparent"
+        app:tabIndicatorFullWidth="true"
+        app:tabSelectedTextColor="@color/brand_400"
+        app:tabTextAppearance="@style/Tab_Appearance_Chargeback"
+        app:tabTextColor="@color/color_cloud_400" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_chargeback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_chargeback" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,298 @@
+{
+  "totalAmount": 13720,
+  "roNumber": "",
+  "postingsDetails": [
+    {
+      "title": "Lançamento 1",
+      "details": [
+        {
+          "key": "Data de pagamento",
+          "value": "24/10/2017"
+        },
+        {
+          "key": "Data da venda",
+          "value": "23/05/2017"
+        },
+        {
+          "key": "Resumo de operação",
+          "value": "4170523"
+        },
+        {
+          "key": "Número do cartão",
+          "value": "**** 7972"
+        },
+        {
+          "key": "TID",
+          "value": ""
+        },
+        {
+          "key": "Código de autorização",
+          "value": "563775"
+        },
+        {
+          "key": "Valor bruto dos lançamentos",
+          "value": "R$ 2.000,00"
+        },
+        {
+          "key": "Valor líquido dos lançamentos",
+          "value": "R$ 1.960,00"
+        },
+        {
+          "key": "Status",
+          "value": "Depositado"
+        }
+      ]
+    },
+    {
+      "title": "Lançamento 2",
+      "details": [
+        {
+          "key": "Data de pagamento",
+          "value": "24/10/2017"
+        },
+        {
+          "key": "Data da venda",
+          "value": "23/05/2017"
+        },
+        {
+          "key": "Resumo de operação",
+          "value": "4170523"
+        },
+        {
+          "key": "Número do cartão",
+          "value": "**** 7972"
+        },
+        {
+          "key": "TID",
+          "value": ""
+        },
+        {
+          "key": "Código de autorização",
+          "value": "453829"
+        },
+        {
+          "key": "Valor bruto dos lançamentos",
+          "value": "R$ 2.000,00"
+        },
+        {
+          "key": "Valor líquido dos lançamentos",
+          "value": "R$ 1.960,00"
+        },
+        {
+          "key": "Status",
+          "value": "Depositado"
+        }
+      ]
+    },
+    {
+      "title": "Lançamento 3",
+      "details": [
+        {
+          "key": "Data de pagamento",
+          "value": "24/10/2017"
+        },
+        {
+          "key": "Data da venda",
+          "value": "23/05/2017"
+        },
+        {
+          "key": "Resumo de operação",
+          "value": "4170523"
+        },
+        {
+          "key": "Número do cartão",
+          "value": "**** 7972"
+        },
+        {
+          "key": "TID",
+          "value": ""
+        },
+        {
+          "key": "Código de autorização",
+          "value": "714045"
+        },
+        {
+          "key": "Valor bruto dos lançamentos",
+          "value": "R$ 2.000,00"
+        },
+        {
+          "key": "Valor líquido dos lançamentos",
+          "value": "R$ 1.960,00"
+        },
+        {
+          "key": "Status",
+          "value": "Depositado"
+        }
+      ]
+    },
+    {
+      "title": "Lançamento 4",
+      "details": [
+        {
+          "key": "Data de pagamento",
+          "value": "24/10/2017"
+        },
+        {
+          "key": "Data da venda",
+          "value": "23/05/2017"
+        },
+        {
+          "key": "Resumo de operação",
+          "value": "4170523"
+        },
+        {
+          "key": "Número do cartão",
+          "value": "**** 7972"
+        },
+        {
+          "key": "TID",
+          "value": ""
+        },
+        {
+          "key": "Código de autorização",
+          "value": "627099"
+        },
+        {
+          "key": "Valor bruto dos lançamentos",
+          "value": "R$ 2.000,00"
+        },
+        {
+          "key": "Valor líquido dos lançamentos",
+          "value": "R$ 1.960,00"
+        },
+        {
+          "key": "Status",
+          "value": "Depositado"
+        }
+      ]
+    },
+    {
+      "title": "Lançamento 5",
+      "details": [
+        {
+          "key": "Data de pagamento",
+          "value": "24/10/2017"
+        },
+        {
+          "key": "Data da venda",
+          "value": "23/05/2017"
+        },
+        {
+          "key": "Resumo de operação",
+          "value": "4170523"
+        },
+        {
+          "key": "Número do cartão",
+          "value": "**** 7972"
+        },
+        {
+          "key": "TID",
+          "value": ""
+        },
+        {
+          "key": "Código de autorização",
+          "value": "295388"
+        },
+        {
+          "key": "Valor bruto dos lançamentos",
+          "value": "R$ 2.000,00"
+        },
+        {
+          "key": "Valor líquido dos lançamentos",
+          "value": "R$ 1.960,00"
+        },
+        {
+          "key": "Status",
+          "value": "Depositado"
+        }
+      ]
+    },
+    {
+      "title": "Lançamento 6",
+      "details": [
+        {
+          "key": "Data de pagamento",
+          "value": "24/10/2017"
+        },
+        {
+          "key": "Data da venda",
+          "value": "23/05/2017"
+        },
+        {
+          "key": "Resumo de operação",
+          "value": "4170523"
+        },
+        {
+          "key": "Número do cartão",
+          "value": "**** 7972"
+        },
+        {
+          "key": "TID",
+          "value": ""
+        },
+        {
+          "key": "Código de autorização",
+          "value": "956833"
+        },
+        {
+          "key": "Valor bruto dos lançamentos",
+          "value": "R$ 2.000,00"
+        },
+        {
+          "key": "Valor líquido dos lançamentos",
+          "value": "R$ 1.960,00"
+        },
+        {
+          "key": "Status",
+          "value": "Depositado"
+        }
+      ]
+    },
+    {
+      "title": "Lançamento 7",
+      "details": [
+        {
+          "key": "Data de pagamento",
+          "value": "24/10/2017"
+        },
+        {
+          "key": "Data da venda",
+          "value": "23/05/2017"
+        },
+        {
+          "key": "Resumo de operação",
+          "value": "4170523"
+        },
+        {
+          "key": "Número do cartão",
+          "value": "**** 7972"
+        },
+        {
+          "key": "TID",
+          "value": ""
+        },
+        {
+          "key": "Código de autorização",
+          "value": "644626"
+        },
+        {
+          "key": "Valor bruto dos lançamentos",
+          "value": "R$ 2.000,00"
+        },
+        {
+          "key": "Valor líquido dos lançamentos",
+          "value": "R$ 1.960,00"
+        },
+        {
+          "key": "Status",
+          "value": "Depositado"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "pageNumber": 1,
+    "pageSize": 25,
+    "numPages": 1
+  }
+}

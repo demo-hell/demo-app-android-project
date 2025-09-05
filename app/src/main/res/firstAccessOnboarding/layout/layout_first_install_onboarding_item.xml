@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/iv_onboarding_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title_onboarding_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="@dimen/dimen_272dp"
+        app:layout_constraintHeight_min="@dimen/dimen_40dp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:srcCompat="@drawable/ic_gestao_de_acesso_seguro" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_onboarding_item"
+        style="@style/bold_montserrat_20_cloud_800"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle_onboarding_item"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@+id/iv_onboarding_item"
+        app:layout_constraintVertical_bias="0"
+        tools:text="@string/id_onboarding_experience_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_subtitle_onboarding_item"
+        style="@style/regular_montserrat_16_neutral_600_spacing_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_onboarding_item"
+        app:layout_constraintVertical_bias="0"
+        tools:text="@string/id_onboarding_experience_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

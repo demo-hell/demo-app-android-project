@@ -1,0 +1,221 @@
+{
+  "configuration": [
+    {
+      "key": "SOS_PHONE_TO_CALL",
+      "value": "+5521987420150"
+    },
+    {
+      "key": "NOT_A_CUSTOMER_URL",
+      "value": "http://www.cielo.com.br/portal/cielo/seja-um-cliente-cielo.html"
+    },
+    {
+      "key": "TECH_SUPPORT_CAPITALS_PHONE",
+      "value": "4002-9111"
+    },
+    {
+      "key": "TECH_SUPPORT_OTHER_CITIES_PHONE",
+      "value": "0800-570-0111"
+    },
+    {
+      "key": "SALES_ANTICIPATION_CAPITALS_PHONE",
+      "value": "3003-8472"
+    },
+    {
+      "key": "SALES_ANTICIPATION_OTHER_CITIES_PHONE",
+      "value": "0800-727-8472"
+    },
+    {
+      "key": "CUSTOMER_SUPPORT_CAPITALS_PHONE",
+      "value": "4003-6662"
+    },
+    {
+      "key": "CUSTOMER_SUPPORT_OTHER_CITIES_PHONE",
+      "value": "0(XX)11 4999-6260"
+    },
+    {
+      "key": "BE_A_CUSTOMER_CAPITALS_PHONE",
+      "value": "4002-5472"
+    },
+    {
+      "key": "BE_A_CUSTOMER_OTHER_CITIES_PHONE",
+      "value": "0800-570-8472"
+    },
+    {
+      "key": "INSECURE_PASSWORD_ERROR_MESSAGE",
+      "value": "Senha fora dos padrões de segurança."
+    },
+    {
+      "key": "URL_ME_CUSTOMER_FIRST_ACCESS",
+      "value": "http://www.cielofidelidade.com.br/PrimeiroAcesso"
+    },
+    {
+      "key": "URL_ME_CUSTOMER_REGULAR",
+      "value": "http://www.cielofidelidade.com.br/login"
+    },
+    {
+      "key": "BAU_QUANTITY_POINTS_TO_BIDS",
+      "value": "285"
+    },
+    {
+      "key": "ME_QUANTITY_POINTS_TO_BIDS",
+      "value": "1"
+    },
+    {
+      "key": "CLIENT_CONTACT_CENTER_CAPITALS",
+      "value": "4002 5472"
+    },
+    {
+      "key": "CLIENT_CONTACT_CENTER_OTHER_CITIES",
+      "value": "0800 570 8472"
+    },
+    {
+      "key": "CLIENT_TECH_SUPPORT_CAPITALS",
+      "value": "4002 9111"
+    },
+    {
+      "key": "CLIENT_TECH_SUPPORT_OTHER_CITIES",
+      "value": "0800 570 0111"
+    },
+    {
+      "key": "FIDELIDADE_NOTIFICATION_APP_ID",
+      "value": "17"
+    },
+    {
+      "key": "CLIENT_NOTIFICATION_APP_ID",
+      "value": "25"
+    },
+    {
+      "key": "URL_HUB_QUERO_SER_CLIENTE",
+      "value": "https://www.cielo.com.br/home/index.html?utm_campaign=app_cliente_cielo-cielo&utm_medium=display&utm_source=app-home&utm_content=rodape-roxo&utm_term=iddqFq0G"
+    },
+    {
+      "key": "URL_HELP_ACESSE_SITE",
+      "value": "https://www.cielo.com.br"
+    },
+    {
+      "key": "URL_LOGIN_ESQUECI_SENHA",
+      "value": "https://www.cielo.com.br/sitecielo/auto-cadastramento/esqueci-minha-senha.html?utm_campaign=app_cliente_cielo-cielo&utm_medium=display&utm_source=app-login&utm_content=link_texto-esqueci_a_senha&utm_term=iddqFqeL"
+    },
+    {
+      "key": "URL_LOGIN_ESQUECI_USUARIO",
+      "value": "https://www.cielo.com.br/portal/recuperacao-de-login-usuario.html?utm_campaign=app_cliente_cielo-cielo&utm_medium=display&utm_source=app-login&utm_content=link_texto-esqueci_o_usuario&utm_term=iddqFqee"
+    },
+    {
+      "key": "URL_LOGIN_CRIAR_USUARIO",
+      "value": "https://www.cielo.com.br/sitecielo/auto-cadastramento/auto-cadastro.html?utm_campaign=app_cliente_cielo-cielo&utm_medium=display&utm_source=app-login&utm_content=rodape-auto_cadastro&utm_term=iddqFF10"
+    },
+    {
+      "key": "URL_LOGIN_QUERO_SER_CLIENTE",
+      "value": "https://qasnew.cielo.com.br/sitecielo/afiliacao/credenciamentoafiliacaonaologado.html?utm_campaign=app_cliente_cielo-cielo&utm_medium=display&utm_source=app-home&utm_content=rodape-roxo&utm_term=iddqFF1T&utm_codprod=027393"
+    },
+    {
+      "key": "APP_CLIENTE_SESSION_TIME",
+      "value": "60"
+    },
+    {
+      "key": "VALIDATE_PASS_CHARS",
+      "value": "true"
+    },
+    {
+      "key": "URL_CIELO_MOBILE_IOS",
+      "value": "https://itunes.apple.com/br/app/cielo-mobile/id387244876"
+    },
+    {
+      "key": "AUCTIONS_LONG_REFRESH_TIME_IN_MILLIS",
+      "value": "30000"
+    },
+    {
+      "key": "AUCTIONS_SHORT_REFRESH_TIME_IN_MILLIS",
+      "value": "1100"
+    },
+    {
+      "key": "AUCTIONS_MINIMUM_TIME_FOR_TIMER_IN_SECONDS",
+      "value": "3600"
+    },
+    {
+      "key": "LOGIN_INTEGRADO_APP_ID",
+      "value": "25"
+    },
+    {
+      "key": "URL_HELP_CENTRAL_ATENDIMENTO",
+      "value": "http://cielo.neoassist.com/?th=central-mobile"
+    },
+    {
+      "key": "URL_HELP_DUVIDAS_TECNICAS",
+      "value": "https://www.cielo.com.br/suportetecnico"
+    },
+    {
+      "key": "URL_HELP_CONSULTOR_ONLINE",
+      "value": "https://apa3.xgen.com.br/cielo1/ivr_app.html"
+    },
+    {
+      "key": "URL_HELP_MANUAL_MAQUINA",
+      "value": "https://www.cielo.com.br/lib/sitecielo2/app/manual-da-maquina.pdf"
+    },
+    {
+      "key": "SALE_RECEIPT_RECEIVED_CREDIT_MESSAGE",
+      "value": "Você recebeu o valor líquido da venda acima descontadas as taxas de administração da Cielo."
+    },
+    {
+      "key": "SALE_RECEIPT_RECEIVED_DEBIT_MESSAGE",
+      "value": "Você recebeu o valor líquido da venda acima descontadas as taxas de administração da Cielo."
+    },
+    {
+      "key": "SALE_RECEIPT_RECEIVED_INSTALLMENT_MESSAGE",
+      "value": "Você recebeu o valor líquido da venda acima (descontadas as taxas de administração da Cielo) conforme parcelamento e prazo contratados."
+    },
+    {
+      "key": "SALE_RECEIPT_WILL_RECEIVE_CREDIT_MESSAGE",
+      "value": "Você receberá o valor líquido da venda acima descontadas as taxas de administração da Cielo."
+    },
+    {
+      "key": "SALE_RECEIPT_WILL_RECEIVE_DEBIT_MESSAGE",
+      "value": "Você receberá o valor líquido da venda acima descontadas as taxas de administração da Cielo."
+    },
+    {
+      "key": "SALE_RECEIPT_WILL_RECEIVE_INSTALLMENT_MESSAGE",
+      "value": "Você receberá o valor líquido da venda acima (descontadas as taxas de administração da Cielo) conforme parcelamento e prazo contratados."
+    },
+    {
+      "key": "SALE_RECEIPT_SOLD_CREDIT_MESSAGE",
+      "value": "Você receberá o valor líquido da venda acima descontadas as taxas de administração da Cielo."
+    },
+    {
+      "key": "SALE_RECEIPT_SOLD_DEBIT_MESSAGE",
+      "value": "Você receberá o valor líquido da venda acima descontadas as taxas de administração da Cielo."
+    },
+    {
+      "key": "SALE_RECEIPT_SOLD_INSTALLMENT_MESSAGE",
+      "value": "Você receberá o valor líquido da venda acima (descontadas as taxas de administração da Cielo) conforme parcelamento e prazo contratados."
+    },
+    {
+      "key": "SALE_RECEIPT_SOLD_PAYMENT_DATE_INSTALLMENT_MESSAGE",
+      "value": "Esta data refere-se à primeira parcela da sua venda."
+    },
+    {
+      "key": "ANTICIPATION_SCHEDULE_TEXT",
+      "value": "Agende agora as suas próximas antecipações e garanta a taxa promocional de antecipação no próximo mês!"
+    },
+    {
+      "key": "ANTICIPATION_SCHEDULE_TAX_PROMOTIONAL",
+      "value": "Taxa promocional por 1 mês"
+    },
+    {
+      "key": "ANTICIPATION_AUTOMATIC_UNDERWAY_PHONE_1",
+      "value": "+5511111111111"
+    },
+    {
+      "key": "ANTICIPATION_AUTOMATIC_UNDERWAY_PHONE_2",
+      "value": "+5511111111111"
+    },
+    {
+      "key": "OMBUDSMAN_PHONE",
+      "value": "0800 570 2288"
+    },
+    {
+      "key": "EMAIL_DE_SUA_OPINIAO",
+      "value": "aplicativo@cielo.com.br"
+    }
+  ],
+  "systemMessage": []
+}

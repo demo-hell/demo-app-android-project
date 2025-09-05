@@ -1,0 +1,172 @@
+{
+  "aggregatedTransactions": [
+    {
+      "date": "27 MAI",
+      "formattedDate": "27/05/2017",
+      "quantity": 5,
+      "amount": "R$ 600,00",
+      "hasSales":true
+    },
+    {
+      "date": "30 MAI",
+      "formattedDate": "30/05/2017",
+      "quantity": 0,
+      "amount": "R$ 300,00",
+      "hasSales":false
+    },
+    {
+      "date": "30 MAI",
+      "formattedDate": "30/05/2017",
+      "quantity": 2,
+      "amount": "R$ 1350,00",
+      "hasSales":true
+    },
+    {
+      "date": "29 MAI",
+      "formattedDate": "29/05/2017",
+      "quantity": 1,
+      "amount": "R$ 30,00",
+      "hasSales":true
+    },
+    {
+      "date": "28 MAI",
+      "formattedDate": "28/05/2017",
+      "quantity": 100,
+      "amount": "R$ 60.000,00",
+      "hasSales":true
+    },
+    {
+      "date": "27 MAI",
+      "formattedDate": "27/05/2017",
+      "quantity": 5,
+      "amount": "R$ 600,00",
+      "hasSales":true
+    },
+    {
+      "date": "26 MAI",
+      "formattedDate": "26/05/2017",
+      "quantity": 0,
+      "amount": "R$ 300,00",
+      "hasSales":false
+    },
+    {
+      "date": "25 MAI",
+      "formattedDate": "25/05/2017",
+      "quantity": 2,
+      "amount": "R$ 1350,00",
+      "hasSales":true
+    },
+    {
+      "date": "24 MAI",
+      "formattedDate": "24/05/2017",
+      "quantity": 1,
+      "amount": "R$ 30,00",
+      "hasSales":true
+    },
+    {
+      "date": "23 MAI",
+      "formattedDate": "23/05/2017",
+      "quantity": 100,
+      "amount": "R$ 60.000,00",
+      "hasSales":true
+    },
+    {
+      "date": "22 MAI",
+      "formattedDate": "22/05/2017",
+      "quantity": 10,
+      "amount": "R$ 70,00",
+      "hasSales":true
+    },
+    {
+      "date": "21 MAI",
+      "formattedDate": "21/05/2017",
+      "quantity": 5,
+      "amount": "R$ 600,00",
+      "hasSales":true
+    },
+    {
+      "date": "20 MAI",
+      "formattedDate": "20/05/2017",
+      "quantity": 0,
+      "amount": "R$ 300,00",
+      "hasSales":false
+    },
+    {
+      "date": "18 MAI",
+      "formattedDate": "18/05/2017",
+      "quantity": 2,
+      "amount": "R$ 1350,00",
+      "hasSales":true
+    },
+    {
+      "date": "17 MAI",
+      "formattedDate": "17/05/2017",
+      "quantity": 1,
+      "amount": "R$ 30,00",
+      "hasSales":true
+    },
+    {
+      "date": "15 MAI",
+      "formattedDate": "15/05/2017",
+      "quantity": 100,
+      "amount": "R$ 60.000,00",
+      "hasSales":true
+    },
+    {
+      "date": "10 MAI",
+      "formattedDate": "10/05/2017",
+      "quantity": 10,
+      "amount": "R$ 70,00",
+      "hasSales":true
+    },
+    {
+      "date": "09 MAI",
+      "formattedDate": "09/05/2017",
+      "quantity": 5,
+      "amount": "R$ 600,00",
+      "hasSales":true
+    },
+    {
+      "date": "08 MAI",
+      "formattedDate": "08/05/2017",
+      "quantity": 0,
+      "amount": "R$ 300,00",
+      "hasSales":false
+    },
+    {
+      "date": "07 MAI",
+      "formattedDate": "07/05/2017",
+      "quantity": 2,
+      "amount": "R$ 1350,00",
+      "hasSales":true
+    },
+    {
+      "date": "06 MAI",
+      "formattedDate": "06/05/2017",
+      "quantity": 1,
+      "amount": "R$ 30,00",
+      "hasSales":true
+    },
+    {
+      "date": "05 MAI",
+      "formattedDate": "05/05/2017",
+      "quantity": 100,
+      "amount": "R$ 60.000,00",
+      "hasSales":true
+    },
+    {
+      "date": "04 MAI",
+      "formattedDate": "04/05/2017",
+      "quantity": 10,
+      "amount": "R$ 70,00",
+      "hasSales":true
+    }
+  ],
+  "quantity": 122,
+  "totalAmount": "R$ 62.350,00",
+  "pagination": {
+    "pageNumber": 2,
+    "pageSize": 20,
+    "numPages": 3
+  }
+}

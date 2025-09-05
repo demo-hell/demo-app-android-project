@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_close"
+        android:contentDescription="@string/content_description_close_button"
+        android:icon="@drawable/ic_close_blue_top"
+        android:title="@string/rm_cc_credit_close_menu_item"
+        app:showAsAction="ifRoom" />
+
+</menu>

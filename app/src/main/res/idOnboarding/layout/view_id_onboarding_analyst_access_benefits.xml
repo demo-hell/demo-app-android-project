@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_20dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="@dimen/dimen_6dp"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:text="@string/id_onboarding_p1_viewer_access_can_see_extract"
+        app:drawableStartCompat="@drawable/ic_documents_new"
+        android:layout_marginBottom="@dimen/dimen_24dp" />
+
+    <TextView
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_17dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:lineSpacingExtra="@dimen/dimen_6sp"
+        android:text="@string/id_onboarding_p1_analyst_access_can_see_establishment_data"
+        app:drawableStartCompat="@drawable/ic_people_feedback_new"
+        android:layout_marginBottom="@dimen/dimen_24dp" />
+    <TextView
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_19dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:lineSpacingExtra="@dimen/dimen_6dp"
+        android:text="@string/id_onboarding_p1_analyst_cancel"
+        app:drawableStartCompat="@drawable/ic_credit_card_sell_cancel"
+        android:layout_marginBottom="@dimen/dimen_24dp" />
+    <TextView
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_19dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:lineSpacingExtra="@dimen/dimen_6dp"
+        android:text="@string/id_onboarding_p1_viewer_access_can_create_payment_links"
+        app:drawableStartCompat="@drawable/ic_super_link_new"
+        android:layout_marginBottom="@dimen/dimen_24dp" />
+
+    <TextView
+        style="@style/Paragraph_300_bold_14_display_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dimen_25dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/dimen_4dp"
+        android:lineSpacingExtra="@dimen/dimen_6dp"
+        android:text="@string/id_onboarding_p1_viewer_access_can_ask_for_materials"
+        app:drawableStartCompat="@drawable/ic_machine_new" />
+</LinearLayout>

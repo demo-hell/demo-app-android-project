@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/display_50"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Heading_500_Bold_18_display_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/text_lgpd_lei_geral_de_prote_o_de_dados" />
+
+                <TextView
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lgpd_termo_de_aceite_de_acordo_com_a_resolu_o_n_4_734_do_banco_central" />
+
+                <TextView
+                    style="@style/Paragraph_300_display_400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/text_lgpd_esse_documento_um_contrato_acordado" />
+
+                <TextView
+                    style="@style/Heading_400_Bold_16_display_500"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/text_lgpd_saiba_mais" />
+
+                <br.com.cielo.libflue.actionslist.CieloTextArrowActionListView
+                    android:id="@+id/privatePolicyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lgpd_pol_tica_de_privacidade_e_uso_de_dados_pessoais" />
+
+                <br.com.cielo.libflue.actionslist.CieloTextArrowActionListView
+                    android:id="@+id/prepaidIssueButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lgpd_termo_de_emiss_o_do_cart_o_pr_pago" />
+
+                <br.com.cielo.libflue.actionslist.CieloTextArrowActionListView
+                    android:id="@+id/cieloAccreditationAgreementButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lgpd_contrato_de_credenciamento_cielo" />
+
+                <br.com.cielo.libflue.actionslist.CieloTextArrowActionListView
+                    android:id="@+id/websiteTermsAndConditionsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_lgpd_termos_e_condi_es_de_uso_do_site_cielo" />
+
+                <br.com.cielo.libflue.horizontal.CieloHorizontalRegularTextCheckbox
+                    android:id="@+id/ownerCheckbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/text_lgpd_declaro_ser_o_propriet_rio_ou_representante_legal_do_estabelecimento" />
+
+                <br.com.cielo.libflue.horizontal.CieloHorizontalRegularTextCheckbox
+                    android:id="@+id/agreeCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/text_lgpd_declaro_que_li_e_concordo_com_todos_os_instrumentos_citados_acima" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_16dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="#29231F20"
+                android:elevation="@dimen/dimen_4dp"
+                />
+
+            <br.com.cielo.libflue.button.CieloRegularBlueButton
+                android:id="@+id/agreeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:text="@string/text_lgpd_eu_aceito"
+                android:enabled="false"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressView"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.mobicare.cielo.commons.ui.widget.AlertHandlerCieloView
+        android:id="@+id/errorView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:visibility="gone"
+        app:cieloErrorButtonLabel="@string/text_try_again_label"
+        app:cieloErrorContentImage="@drawable/ic_generic_error_image"
+        app:cieloErrorMessage="@string/text_message_generic_error"
+        app:cieloErrorTitle="@string/text_title_generic_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

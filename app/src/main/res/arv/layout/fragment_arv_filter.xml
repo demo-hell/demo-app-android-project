@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".arv.presentation.anticipation.ArvFilterSelectionBrandFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dimen_8dp"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/netAndTotalValuesTextView"
+            style="@style/semi_bold_montserrat_16"
+            android:layout_width="@dimen/dimen_144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_12dp"
+            android:text="@string/query_by_card_header_net_and_total_text"
+            android:textColor="@color/cloud_500"
+            app:layout_constraintBottom_toBottomOf="@+id/selectAllCheckbox"
+            app:layout_constraintEnd_toStartOf="@id/selectAllCheckbox"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/selectAllCheckbox"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:background="@drawable/checkbox_terms_add_ec"
+            android:button="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:checked="true"
+            android:contentDescription="@string/arv_select_all_button_description"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/barView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:background="@color/color_C5CED7"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_filter_selection" />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/filter_footer_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnSaveChanges" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveChanges"
+        style="@style/Heading_500_18"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@drawable/button_full_width_brand_selector"
+        android:text="@string/arv_save_changes"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+{
+  "ec": "2000154802",
+  "name": "TESTE 001",
+  "documentNumber": "15.550.561/0001-31",
+  "corporateName": "TESTE 0011",
+  "businessSegment": "PADARIAS",
+  "openingDate": "21/07/2015",
+  "owner": "ERIC",
+  "phone": "3672-5400",
+  "addresses": [
+    {
+      "type": "fisico",
+      "street": "R.  CLELIA 520",
+      "complement": "AGUA BRANCA",
+      "city": "SAO PAULO",
+      "state": "SP",
+      "postalCode": "05042-000"
+    }
+  ],
+  "bankDatas": [
+    {
+      "name": "Banco Bradesco S.A.",
+      "code": "0237",
+      "branch": "01202",
+      "account": "9999999-X",
+      "blockedDomicile": false,
+      "blockedAnticipation": false,
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/bank_0237.png"
+    }
+  ],
+  "hiredSolutions": [],
+  "enabledBrands": [
+    {
+      "name": "ELO",
+      "debito": "3,00 %",
+      "credito": "4,40 %",
+      "installments1x3": "-",
+      "installments4x6": "-",
+      "installments7x9": "-",
+      "installments10x12": "-",
+      "imgUrl": "https://s3.amazonaws.com/cieloapp-stg-images/flag_elo.png"
+    }
+  ]
+}

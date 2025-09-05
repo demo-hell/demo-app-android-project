@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_order_machine_selector_title">Meus Pedidos</string>
+    <string name="text_ordered_equipments_label">Pedidos realizados</string>
+    <string name="text_order_machine_empty_error_message">Não foi possível encontrar nenhum pedido realizado.</string>
+    <string name="text_order_machine_empty_title">Nenhum pedido encontrado</string>
+    <string name="text_ordered_machine_date_labels">Data da compra:</string>
+    <string name="text_ordered_machine_id_label">Nº do pedido:</string>
+
+    <string name="tracking_order_title">Acompanhamento de pedido</string>
+    <string name="order_status_error">O pedido foi cancelado devido o vencimento do boleto bancário.</string>
+</resources>

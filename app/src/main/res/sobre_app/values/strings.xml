@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ga_sobre_app">Sobre o APP</string>
+    <string name="sobre_app_versao">Versão %1$s (%2$d)</string>
+
+    <string name="sobre_app_texto">Um aplicativo gratuito para você acessar os principais serviços da Cielo na palma da sua mão.\n\nNele, você confere seus dados cadastrais, taxas e soluções contratadas, além de consultar suas vendas e recebimentos em tempo real e realizar antecipação de forma rápida e segura.\n\nTudo isso em qualquer lugar e hora, com toda a segurança da Cielo. Mais agilidade e conveniência para você gerenciar o seu negócio diariamente.\n\nPara eventuais dúvidas, acesse o chat online ou entre em contato com o telefone da central de ajuda.</string>
+
+</resources>

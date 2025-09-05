@@ -1,0 +1,288 @@
+{
+    "cardBrands": [
+        {
+            "name": "AGIPLAN",
+            "products": [
+                {
+                    "name": "Crédito a vista",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "BANESCARD",
+            "products": [
+                {
+                    "name": "Débito",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "CREDZ",
+            "products": [
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "Mastercard",
+            "products": [
+                {
+                    "name": "Débito",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crédito",
+                    "fee": "3,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "4,00 %",
+                    "paymentInstallments": "3",
+                    "installmentsText": "2x a 3x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "5,00 %",
+                    "paymentInstallments": "12",
+                    "installmentsText": "4x a 12x"
+                }
+            ]
+        },
+        {
+            "name": "DINERS",
+            "products": [
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Discover",
+                    "fee": "2,00 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "3,00 %",
+                    "paymentInstallments": "3",
+                    "installmentsText": "2x a 3x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "4,00 %",
+                    "paymentInstallments": "5",
+                    "installmentsText": "4x a 5x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "5,00 %",
+                    "paymentInstallments": "7",
+                    "installmentsText": "6x a 7x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "6,00 %",
+                    "paymentInstallments": "9",
+                    "installmentsText": "8x a 9x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "7,00 %",
+                    "paymentInstallments": "11",
+                    "installmentsText": "10x a 11x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "7,99 %",
+                    "paymentInstallments": "12",
+                    "installmentsText": "12x"
+                }
+            ]
+        },
+        {
+            "name": "CREDSYSTEM",
+            "products": [
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "VISA",
+            "products": [
+                {
+                    "name": "Débito",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crediário",
+                    "fee": "5,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crédito",
+                    "fee": "3,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "3,00 %",
+                    "paymentInstallments": "3",
+                    "installmentsText": "2x a 3x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "4,00 %",
+                    "paymentInstallments": "5",
+                    "installmentsText": "4x a 5x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "5,00 %",
+                    "paymentInstallments": "7",
+                    "installmentsText": "6x a 7x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "6,00 %",
+                    "paymentInstallments": "9",
+                    "installmentsText": "8x a 9x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "7,00 %",
+                    "paymentInstallments": "11",
+                    "installmentsText": "10x a 11x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "7,99 %",
+                    "paymentInstallments": "12",
+                    "installmentsText": "12x"
+                }
+            ]
+        },
+        {
+            "name": "SOROCRED",
+            "products": [
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        },
+        {
+            "name": "ELO",
+            "products": [
+                {
+                    "name": "Débito",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "3,00 %",
+                    "paymentInstallments": "3",
+                    "installmentsText": "2x a 3x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "4,00 %",
+                    "paymentInstallments": "5",
+                    "installmentsText": "4x a 5x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "5,00 %",
+                    "paymentInstallments": "7",
+                    "installmentsText": "6x a 7x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "6,00 %",
+                    "paymentInstallments": "9",
+                    "installmentsText": "8x a 9x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "7,00 %",
+                    "paymentInstallments": "11",
+                    "installmentsText": "10x a 11x"
+                },
+                {
+                    "name": "Parcelado",
+                    "fee": "7,99 %",
+                    "paymentInstallments": "12",
+                    "installmentsText": "12x"
+                }
+            ]
+        },
+        {
+            "name": "CABAL",
+            "products": [
+                {
+                    "name": "Débito",
+                    "fee": "2,40 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                },
+                {
+                    "name": "Crédito",
+                    "fee": "3,90 %",
+                    "paymentInstallments": "0",
+                    "installmentsText": "none"
+                }
+            ]
+        }
+    ]
+}

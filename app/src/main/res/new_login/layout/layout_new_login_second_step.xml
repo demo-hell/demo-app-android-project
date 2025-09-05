@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/secondStepContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/frameDiscoverButtonsProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/purple" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearUserLoginInputBottomContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/textInputEditLoginUsername"
+                style="@style/regular_montserrat_16_neutral_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                app:endIconType="none"
+                android:maxLines="1"
+                app:hint="Usuário" />
+
+            <br.com.cielo.libflue.inputtext.CieloTextInputField
+                android:id="@+id/textInputEditLoginPassword"
+                style="@style/regular_montserrat_16_neutral_600"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:focusable="false"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                app:disableCopyToClipboard="true"
+                app:endIconType="password_toggle"
+                app:hint="@string/hint_senha" />
+
+            <TextView
+                android:id="@+id/textForgottenUsernameOrPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/semi_bold_montserrat_12_accent_600"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="@string/text_info_forgotten_username_or_password" />
+
+            <br.com.cielo.libflue.check.CieloCheckBox
+                android:id="@+id/checkBoxSaveUserData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                style="@style/regular_montserrat_16_cloud_800" />
+
+            <br.com.cielo.libflue.button.CieloRegularBlueButton
+                android:id="@+id/buttonNewLoginUserEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_34dp"
+                android:text="@string/login_button_entrar" />
+
+            <br.com.cielo.libflue.button.v2.CieloButton
+                android:id="@+id/firstTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:contentDescription="@string/action_first"
+                android:text="@string/action_first"
+                app:buttonType="outlined" />
+
+            <TextView
+                android:id="@+id/btnToken"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/dimen_12dp"
+                android:layout_marginTop="@dimen/dimen_24dp"
+                android:gravity="center"
+                style="@style/semi_bold_montserrat_center_16_brand_400_spacing_4"
+                android:layout_gravity="center"
+                app:drawableStartCompat="@drawable/ic_mfa_token"
+                android:contentDescription="@string/button_token"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:text="@string/button_token"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/frameProgressButtonEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:visibility="gone">
+
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                    style="@style/Widget.MaterialProgressBar.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    app:mpb_indeterminateTint="@color/purple_status_bar"
+                    app:mpb_progressBackgroundTint="@color/purple_status_bar"
+                    app:mpb_progressTint="@color/purple_status_bar" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

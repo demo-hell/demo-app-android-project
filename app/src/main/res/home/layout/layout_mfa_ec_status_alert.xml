@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMFAStatusAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_E9ED8A"
+        android:paddingLeft="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_12dp"
+        android:paddingRight="@dimen/dimen_20dp"
+        android:paddingBottom="@dimen/dimen_12dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewStatusAlert"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/textViewStatusAlert"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_circle_alert" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStatusAlert"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            style="@style/Paragraph_200_display_400"
+            android:lineSpacingExtra="@dimen/dimen_4sp"
+            android:text="@string/mfa_status_home_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imageViewStatusAlert"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressMFAStatusAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:paddingBottom="@dimen/dimen_8dp"
+        android:visibility="gone" />
+</merge>

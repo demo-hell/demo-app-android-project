@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:paddingVertical="@dimen/dimen_10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="@dimen/dimen_32dp"
+            android:layout_height="@dimen/dimen_32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/container_bank_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/container_bank_account"
+            app:srcCompat="@drawable/ic_generic_brand" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_bank_account"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_flag"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bank_name"
+                style="@style/label_14_display_400_montserrat_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Banco do Brasil" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bank_Agency"
+                style="@style/label_12_display_400_ubuntu_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pix_bank_account_agency" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bank_account"
+                style="@style/label_12_display_400_ubuntu_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pix_bank_account_account" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/include_try_again"
+        layout="@layout/layout_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_bank"
+        android:layout_width="@dimen/dimen_33dp"
+        android:layout_height="@dimen/dimen_33dp"
+        android:layout_marginVertical="@dimen/dimen_10dp"
+        android:theme="@style/progress_bar_blue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

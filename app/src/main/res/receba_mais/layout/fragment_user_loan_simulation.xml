@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearUserLoanSimulationContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/textSimulationConditions"
+            style="@style/Text14sp500Black263238"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Seu crédito pré-aprovado é de R$ 10.000,00 com taxa fixa de 4,00% a.m."
+            tools:text="Seu crédito pré-aprovado é de R$ 10.000,00 com taxa fixa de 4,00% a.m." />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/textSimulationInputLoanValueLabel"
+                style="@style/Text12sp500Black263238"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Valor desejado:"
+                tools:text="Valor desejado:" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    style="@style/TextMoneySymbolStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$" />
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceEditTextView
+                    android:id="@+id/editSimulationLoanValue"
+                    style="@style/EditTextLoanValueStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:gravity="center"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/grey_10_838383" />
+
+        <LinearLayout
+            android:id="@+id/linearLoanSimulationParams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            tools:visibility="gone"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textSimulationLoanPaymentDayLabel"
+                    style="@style/Text12sp500Black263238"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia do pagamento das parcelas: "
+                    tools:text="Dia do pagamento das parcelas:" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearSimulationLoanSelectedPaymentDay"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textSimulationLoanPaymentDaySelected"
+                        style="@style/Text28sp500Blue00AEEF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="08"
+                        tools:text="08" />
+
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_chevron_up"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearTextSimulationLoanPaymentDayInfo"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textSimulationLoanPaymentFirstLabelPart"
+                        style="@style/Text12sp500Grey707070"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1ª parcela em: "
+                        tools:text="1ª parcela em: " />
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textSimulationLoanPaymentDayResult"
+                        style="@style/Text12sp900Grey707070"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08/06/2018"
+                        tools:text="08/06/2018" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/grey_10_838383" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                tools:visibility="visible"
+                android:orientation="vertical">
+
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textSimulationLoanPlotsLabel"
+                    style="@style/Text12sp500Black263238"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parcelas:"
+                    tools:text="Parcelas:" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearPlotsArrowUp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textSimulationLoanPlotsSelected"
+                        style="@style/Text28sp500Blue00AEEF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="24x"
+                        tools:text="24x" />
+
+                    <ImageView
+                        android:id="@+id/imageChevronArrowUp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_chevron_up"/>
+
+                </LinearLayout>
+
+                <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                    android:id="@+id/textSimulationLoanPlotsResult"
+                    style="@style/Text12sp900Grey707070"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24x de R$ 260,00 (4,00% de juros a.m.)"
+                    tools:text="24x de R$ 260,00 (4,00% de juros a.m.)" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearTotalLoanSimulation"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textSimulationLoanTotal"
+                        style="@style/Text12sp500Grey707070"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total a pagar: "
+                        tools:text="Total a pagar: " />
+
+
+                    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                        android:id="@+id/textSimulationLoanTotalResult"
+                        style="@style/Text12sp900Grey707070"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 6800,00"
+                        tools:text="R$ 6800,00" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <include android:id="@+id/linearLoanSimulationError"
+            layout="@layout/linear_loan_simulation_error"
+            tools:visibility="gone"/>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/buttonUserLoanSimulationNext"
+            style="@style/ButtonShapedPurpleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginEnd="12dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            app:fb_disabledTextColor="@color/transparent_50"
+            tools:visibility="gone"
+            app:fb_text="@string/text_next_label" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

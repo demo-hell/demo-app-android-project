@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:background="@drawable/background_stroke_1dp_round_color_c5ced7">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_brand_item"
+        android:layout_width="@dimen/dimen_32dp"
+        android:layout_height="@dimen/dimen_32dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/container_contact_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/container_contact_item"
+        tool:srcCompat="@drawable/bank_000" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_contact_item"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:paddingVertical="@dimen/dimen_20dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivArrow"
+        app:layout_constraintStart_toEndOf="@+id/iv_brand_item"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_contact_item"
+            style="@style/Label_400_Regular_16_Display_500_ubuntu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="Casa do Silencioso" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_document_contact_item"
+            style="@style/label_12_ubuntu_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/display_300"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_contact_item"
+            tool:text="CNPJ: 21.111.222/0001-22" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_contact_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_flui_display_200" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

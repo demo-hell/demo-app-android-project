@@ -1,0 +1,791 @@
+{
+  "transactions": [
+    {
+      "time": "19:35",
+      "description": "Débito",
+      "amount": "R$ 500,00",
+      "status": "Aprovada",
+      "statusCode": "AP",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 19:35"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 500,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "18:49",
+      "description": "Débito",
+      "amount": "R$ 0,53",
+      "status": "Atualizar",
+      "statusCode": "AT",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 18:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 0,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "17:49",
+      "description": "Débito",
+      "amount": "R$ 4.499,99",
+      "status": "Cancelada",
+      "statusCode": "CA",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 17:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 4.499,99"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "16:49",
+      "description": "Débito",
+      "amount": "R$ 8.000,53",
+      "status": "Desfeita",
+      "statusCode": "DE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 16:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "8.000,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "15:49",
+      "description": "Débito",
+      "amount": "R$ 15.750,00",
+      "status": "Negada",
+      "statusCode": "NE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 15:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "15.750,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "19:35",
+      "description": "Débito",
+      "amount": "R$ 500,00",
+      "status": "Aprovada",
+      "statusCode": "AP",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 19:35"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 500,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "18:49",
+      "description": "Débito",
+      "amount": "R$ 0,53",
+      "status": "Aprovada",
+      "statusCode": "AP",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 18:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 0,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "17:49",
+      "description": "Débito",
+      "amount": "R$ 4.499,99",
+      "status": "Cancelada",
+      "statusCode": "CA",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 17:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 4.499,99"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "16:49",
+      "description": "Débito",
+      "amount": "R$ 8.000,53",
+      "status": "Desfeita",
+      "statusCode": "DE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 16:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "8.000,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "15:49",
+      "description": "Débito",
+      "amount": "R$ 15.750,00",
+      "status": "Negada",
+      "statusCode": "NE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 15:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "15.750,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "19:35",
+      "description": "Débito",
+      "amount": "R$ 500,00",
+      "status": "Aprovada",
+      "statusCode": "AP",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 19:35"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 500,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "18:49",
+      "description": "Débito",
+      "amount": "R$ 0,53",
+      "status": "Aprovada",
+      "statusCode": "AP",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 18:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 0,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "17:49",
+      "description": "Débito",
+      "amount": "R$ 4.499,99",
+      "status": "Cancelada",
+      "statusCode": "CA",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 17:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 4.499,99"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "16:49",
+      "description": "Débito",
+      "amount": "R$ 8.000,53",
+      "status": "Desfeita",
+      "statusCode": "DE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 16:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "8.000,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "15:49",
+      "description": "Débito",
+      "amount": "R$ 15.750,00",
+      "status": "Negada",
+      "statusCode": "NE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 15:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "15.750,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "19:35",
+      "description": "Débito",
+      "amount": "R$ 500,00",
+      "status": "Aprovada",
+      "statusCode": "AP",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 19:35"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 500,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "18:49",
+      "description": "Débito",
+      "amount": "R$ 0,53",
+      "status": "Aprovada",
+      "statusCode": "AP",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 18:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 0,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "17:49",
+      "description": "Débito",
+      "amount": "R$ 4.499,99",
+      "status": "Cancelada",
+      "statusCode": "CA",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 17:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "R$ 4.499,99"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "16:49",
+      "description": "Débito",
+      "amount": "R$ 8.000,53",
+      "status": "Desfeita",
+      "statusCode": "DE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 16:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "8.000,53"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    },
+    {
+      "time": "15:49",
+      "description": "Débito",
+      "amount": "R$ 15.750,00",
+      "status": "Negada",
+      "statusCode": "NE",
+      "details": [
+        {
+          "key": "Data",
+          "value": "Hoje - 07/06/2017 - 15:49"
+        },
+        {
+          "key": "Bandeira",
+          "value": "Master"
+        },
+        {
+          "key": "Forma de pagamento",
+          "value": "Débito"
+        },
+        {
+          "key": "Valor da venda",
+          "value": "15.750,00"
+        }
+      ],
+      "receipt": {
+        "brand": "VISA",
+        "paymentType": "Crédito à vista",
+        "creditCardNumber": "************1234",
+        "terminalNumber": "12345678",
+        "establishment": {
+          "name": "Nome do Estabelecimento",
+          "documentNumber": "12.345.678/0001-23",
+          "address": "R Venceslau 141 Centro São Paulo SP"
+        },
+        "authorizationCode": "12345",
+        "date": "01/07/2016 14:00",
+        "amount": "R$ 10.000,00"
+      }
+    }
+  ],
+  "quantity": 5,
+  "totalAmount": "R$ 450.011,00",
+  "pagination": {
+    "pageNumber": 2,
+    "pageSize": 20,
+    "numPages": 3
+  }
+}

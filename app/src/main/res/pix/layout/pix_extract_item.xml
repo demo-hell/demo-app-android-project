@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_16dp"
+    android:background="@drawable/background_grouping_canceled_sales"
+    android:paddingVertical="@dimen/dimen_12dp">
+
+    <ImageView
+        android:id="@+id/img_extract_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:background="@drawable/ic_pix_extract_transferencia_recebida"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/type_of_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:theme="@style/Paragraph_200_regular_12_display_400"
+        app:layout_constraintStart_toEndOf="@id/img_extract_status"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Devolução recebida • Pix" />
+
+    <TextView
+        android:id="@+id/value_of_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:theme="@style/Label_300_Regular_14_display_400"
+        app:layout_constraintStart_toEndOf="@id/img_extract_status"
+        app:layout_constraintTop_toBottomOf="@id/type_of_transaction"
+        app:layout_constraintBottom_toTopOf="@id/name_of_operator"
+        tools:text="– R$ 50,00" />
+
+    <TextView
+        android:id="@+id/name_of_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:theme="@style/label_14_display_400_ubuntu_pix_home"
+        app:layout_constraintStart_toEndOf="@id/img_extract_status"
+        app:layout_constraintBottom_toBottomOf="@id/img_extract_status"
+        tools:text="Dr. Steven Strange" />
+
+    <TextView
+        android:id="@+id/date_of_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:theme="@style/Paragraph_200_regular_12_display_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/type_of_transaction"
+        tools:text="02/03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+{
+	"faq": {
+		"title": "Dúvidas Gerais",
+		"description": "Confira as respostas para as suas principais dúvidas",
+		"value": "https://cielo.com.br/atendimento"
+	},
+	"manager": {
+		"name": "Polyana Reis",
+		"email": "polyana.reis@cielo.com.br",
+		"phone": "(11) 98765-4321"
+	},
+	"technicalQuestions": {
+		"title": "Dúvidas Técnicas",
+		"description": "Conheça as soluções para as suas principais dúvidas.",
+		"value": "https://www.cielo.com.br/suportetecnico"
+	},
+	"onlineConsultant": {
+		"title": "Assistente Cielo",
+		"description": "Fale agora com um consultor via chat direto no seu celular.",
+		"value": "https://apa3.xgen.com.br/cielo1/ivr_app.html"
+	},
+	"technicalSupport" : {
+		"title": "Suporte Técnico",
+		"description": "Fale com o suporte técnico em caso de dúvidas.",
+		"value": "cieloapp://suporteTecnico"
+	},
+	"phonesSupport": [
+		{
+			"title": "Central de relacionamento",
+			"description": "Fale com a gente para solicitar algum produto ou serviço da Cielo:",
+			"storeHours": "De segunda a sábado, das 8h às 22h.",
+			"phones": [
+				{
+					"description": "Capitais e regiões metropolitanas",
+					"value": "4002 5472"
+				},
+				{
+					"description": "Demais localidades",
+					"value": "0800 570 8472"
+				}
+			]
+		},
+		{
+			"title": "Suporte técnico",
+			"description": "A Cielo oferece o melhor suporte técnico a seus clientes:",
+			"storeHours": "De segunda a sábado, das 8h às 22h.",
+			"phones": [
+				{
+					"description": "Capitais e regiões metropolitanas",
+					"value": "4002 9111"
+				},
+				{
+					"description": "Demais localidades",
+					"value": "0800 570 0111"
+				}
+			]
+		},
+		{
+			"title": "Programa Cielo Fidelidade",
+			"description": "Informações sobre o programa Cielo Fidelidade:",
+			"storeHours": "De segunda a sábado, das 8h às 22h.",
+			"phones": [
+				{
+					"description": "Capitais e regiões metropolitanas",
+					"value": "4002 5472"
+				},
+				{
+					"description": "Demais localidades",
+					"value": "0800 570 8472"
+				}
+			]
+		},
+		{
+			"title": "Ouvidoria",
+			"description": "Antes de acionar a ouvidoria, tenha sempre o protocolo do seu atendimento em mãos.",
+			"storeHours": "De segunda a sábado, das 8h às 22h.",
+			"phones": [
+				{
+					"description": "Todas as localidades",
+					"value": "0800 570 2288"
+				}
+			]
+		}
+	]
+}

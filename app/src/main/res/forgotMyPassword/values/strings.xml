@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_title_forgot_my_password_insert_info">Redefinir senha</string>
+    <string name="txt_description_forgot_my_password_insert_info">Fique tranquilo, vamos ajudá-lo a recuperar sua senha. É simples e rápido!</string>
+    <string name="txt_hint_input_default_forgot_my_password_insert_info">E-mail ou CPF</string>
+    <string name="txt_label_button_forgot_my_password_insert_info">Redefinir senha</string>
+    <string name="txt_label_button_forgot_my_password_insert_info_message">Crie uma nova senha com seis números, para acesso ao App e site</string>
+
+    <string name="txt_title_success_forgot_my_password">Confirmação por e-mail</string>
+    <string name="txt_message_success_forgot_my_password">Enviamos um link para o seu e-mail com as instruções para redefinir a senha.</string>
+    <string name="txt_label_button_success_forgot_my_password">Fazer login</string>
+    <string name="txt_message_error_forgot_my_password"><![CDATA[Dados de requisição inválido.<br>Tente novamente]]></string>
+    <string name="txt_message_error_not_booting_forgot_my_password">Por favor, tente novamente solicitar uma nova senha.</string>
+
+    <string name="txt_message_error_invalid_data_title">Dados inválidos</string>
+    <string name="txt_message_error_invalid_data_message">Os dados informados não foram encontrados. Por favor, revise e tente novamente.</string>
+
+    <string name="txt_title_dialog_password_expired">Senha expirada</string>
+    <string name="txt_message_dialog_password_expired">A sua senha expirou, para continuar tendo acesso aos canais digitais da Cielo crie uma senha nova.</string>
+    <string name="txt_button_dialog_password_expired">Redefinir senha</string>
+
+    <string name="try_again">Tentar novamente</string>
+    <string name="loading_text_message">Aguarde...</string>
+    <string name="input_error_email">E-mail inválido</string>
+</resources>

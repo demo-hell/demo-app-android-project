@@ -1,0 +1,22 @@
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView"
+    style="@style/Paragraph_300_display_400"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_48dp"
+    android:visibility="gone"
+    android:layout_marginTop="16dp"
+    android:padding="@dimen/dimen_8sp"
+    android:layout_weight="1.7"
+    android:background="@drawable/custom_text_input_view_selector"
+    android:drawableRight="@drawable/ic_search_br"
+    android:hint="@string/txt_br_search"
+    android:textColor="@color/color_5A646E"
+    android:textSize="16dp"
+    />
+
+
+
+
+

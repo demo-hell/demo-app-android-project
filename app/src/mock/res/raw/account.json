@@ -1,0 +1,72 @@
+{
+  "token": "tpyL0vyk7pqOjbS3jh9AJBbsUodimgi/Hl9BLyjqOkCJ3kaOcpY/oY71olobN0y9",
+  "user": {
+    "nameLogin": "CASAFORX",
+    "birthdayDate": 368766000000,
+    "cpf": "22329871830",
+    "rg": "271521236",
+    "name": "ADRIANA SOUZA DOS SANTOS",
+    "email": "laugusto@visanet.com.br",
+    "registerDate": 1157857200000,
+    "inactive": 1,
+    "lastAccessDate": 1489421968000,
+    "QuantityAttemptReset": 0,
+    "entity": 37925,
+    "ec": "0011079967"
+  },
+  "establishment": {
+    "ec": "11079967",
+    "matrix": "0011079967",
+    "cnpj": "002766352000188",
+    "tradeName": "SICREDI C. 1",
+    "status": "O",
+    "antecipationCategory": "A"
+  },
+  "branches": [
+    {
+      "ec": "11080094",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC  RKL"
+    },
+    {
+      "ec": "11080183",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC"
+    },
+    {
+      "ec": "11080205",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC  RKL"
+    },
+    {
+      "ec": "11083220",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC  RKL"
+    },
+    {
+      "ec": "1000044715",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC"
+    },
+    {
+      "ec": "1003716277",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC  KHYI"
+    },
+    {
+      "ec": "2455005",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC  RKL"
+    },
+    {
+      "ec": "11079975",
+      "matrix": "0011079967",
+      "tradeName": "CM C  KZTIPKBC  RKL"
+    }
+  ],
+  "looseAntecipationStatus": "ELIGIBLE",
+  "scheduledAnticipationStatus": "ELIGIBLE",
+  "hasLoyalty": true,
+  "hasOffer": true,
+  "isConvivenciaUser": true
+}

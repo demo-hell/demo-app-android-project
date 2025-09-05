@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_8dp"
+    android:background="@drawable/background_8dp_radius_stroke_cloud_200"
+    android:paddingVertical="@dimen/dimen_16dp">
+
+    <ImageView
+        android:id="@+id/ivBrand"
+        android:layout_width="@dimen/dimen_32dp"
+        android:layout_height="@dimen/dimen_32dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_generic_brand" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBrandName"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:textAppearance="@style/regular_ubuntu_16_cloud_500"
+        app:layout_constraintStart_toEndOf="@id/ivBrand"
+        app:layout_constraintEnd_toStartOf="@id/ivSeeMore"
+        app:layout_constraintTop_toTopOf="@id/ivBrand"
+        app:layout_constraintBottom_toBottomOf="@id/ivBrand"
+        tools:text="Mastercard" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:contentDescription="@string/content_description_fee_container_to_close"
+        android:importantForAccessibility="yes"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBrandName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvBrandName"
+        app:srcCompat="@drawable/ic_arrow_right_gray"
+        app:tint="@color/color_cloud_200" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_14dp"
+        android:scrollbars="none"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvBrandName"
+        tools:itemCount="2"
+        tools:listitem="@layout/layout_tap_on_phone_brands_detail_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/dimen_16dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_extrato_detalhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_16dp"
+                android:clipToPadding="false"
+                android:background="@color/colorPrimary">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/text_view_extrato_detalhe_status"
+                style="@style/Paragraph_300_bold_14_display_500"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42dp"
+                android:background="@color/success_400"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10dp"
+                android:text="@string/text_transaction_approved"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <include android:id="@+id/content_comprovante" layout="@layout/content_comprovante" />
+
+            <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+                android:id="@+id/txtDetailsSaleObs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:layout_marginBottom="@dimen/dimen_24dp"
+                android:gravity="center"
+                android:text="@string/text_details_sale_obs"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/dimen_11sp"
+                android:visibility="gone"
+                app:typeface="MuseoSans-500.ttf" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/alertMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_16dp"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:background="@drawable/background_rounded_cloud_100"
+                android:padding="@dimen/dimen_16dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivIconAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_info"
+                    app:tint="@color/color_cloud_600" />
+
+                <TextView
+                    android:id="@+id/tvAlertTitle"
+                    style="@style/label_14_display_400_ubuntu_bold"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_8dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:lineSpacingExtra="@dimen/dimen_4sp"
+                    android:text="@string/text_details_sale_alert_title"
+                    android:textColor="@color/color_cloud_600"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivIconAlert"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvAlertDescription"
+                    style="@style/label_14_brand_400_ubuntu"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dimen_4sp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:text="@string/text_details_sale_alert_description"
+                    android:textColor="@color/color_cloud_600"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivIconAlert"
+                    app:layout_constraintTop_toBottomOf="@id/tvAlertTitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnCancelSale"
+                style="@style/Label_400_Alternate_16_display_400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_32dp"
+                android:background="@drawable/border_rounded_danger_400"
+                android:paddingHorizontal="@dimen/dimen_24dp"
+                android:paddingVertical="@dimen/dimen_12dp"
+                android:text="@string/btn_cancel_detalhes"
+                android:textColor="@color/danger_400"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/loadingCancelSale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_90"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/brand_400" />
+    </FrameLayout>
+
+</RelativeLayout>

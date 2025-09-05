@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="meus_recebimentos_depositado">Depositado</string>
+    <string name="meus_recebimentos_previsto">Previsto</string>
+    <string name="meus_recebimentos_pendente">Pendente</string>
+    <string name="meus_recebimentos_valor_depositado">R$ 00.000,00</string>
+    <string name="meus_recebimentos_valor_pendente">R$ 00.000,00</string>
+    <string name="meus_recebimentos_legenda_explicativa">Veja aqui o descritivo do que você vai receber em sua conta bancária</string>
+    <string name="meus_recebimentos_recebiveis_de_venda">Liberação de saldo retido/pendente</string>
+    <string name="meus_recebimentos_credito_de_antecipacao">Crédito de antecipação</string>
+    <string name="meus_recebimentos_outros_valores_recebidos">Outros valores recebidos</string>
+    <string name="meus_recebimentos_valores_ja_antecipados">Valores já antecipados</string>
+    <string name="meus_recebimentos_cancelamentos">Cancelamentos</string>
+    <string name="meus_recebimentos_contestacoes">Contestações</string>
+    <string name="meus_recebimentos_cobrancas_de_alugueis">Cobranças de alugueis</string>
+    <string name="meus_recebimentos_outras_cobrancas">Outras cobranças</string>
+    <string name="meus_recebimentos_valor_generico_positivo">R$ 0.000,00</string>
+    <string name="meus_recebimentos_valor_generico_negativo">- R$ 000,00</string>
+    <string name="meus_recebimentos_help_text">Este relatório apresenta o detalhamento dos valores referentes aos seus recebimentos no período selecionado. Os depósitos estão divididos entre as contas bancárias que estão cadastradas no sistema Cielo.</string>
+
+    <!--card bancos-->
+    <string name="meus_recebimentos_nome_banco">Bradesco</string>
+    <string name="meus_recebimentos_agencia">Agência: </string>
+    <string name="meus_recebimentos_conta">Conta: </string>
+    <string name="meus_recebimentos_lancamentos">10 lançamentos</string>
+    <string name="meus_recebimentos_status">Depositado</string>
+    <string name="meus_recebimentos_instituicao">Instituição origem</string>
+
+    <!--card débitos-->
+    <string name="meus_recebimentos_debitos_descricao">Você possui débitos pendentes no valor de </string>
+    <string name="meus_recebimentos_debitos_descricao_de">de </string>
+    <string name="meus_recebimentos_debitos_valor_generico">R$ 000,00</string>
+    <string name="meus_recebimentos_regularize">Regularize ligando para:</string>
+    <string name="meus_recebimentos_chave">São Paulo</string>
+    <string name="meus_recebimentos_valor">(11) 3304 1056</string>
+    <string name="meus_recebimentos_msg_ligar">Ligar para o número</string>
+
+    <!-- dialog -->
+    <string name="meus_recebimentos_dialog_lacamento">Lançamentos</string>
+    <string name="meus_recebimentos_dialog_fechar">Fechar</string>
+    <string name="meus_recebimentos_dialog_data_invalida_final_semana">Por favor, escolha um dia útil.</string>
+
+    <!--detalhes-->
+    <string name="meus_recebimentos_detalhe_data_periodo">Período</string>
+    <string name="meus_recebimentos_detalhe_data_recebimento">Detalhes do dia:</string>
+    <string name="meus_recebimentos_detalhe_data_venda">Previsão de pagamento:</string>
+    <string name="meus_recebimentos_detalhe_data_venda_outras_cobrancas">Data de pagamento:</string>
+    <string name="meus_recebimentos_detalhe_valor_liquido_total">Valor líquido total</string>
+    <string name="meus_recebimentos_detalhe_total_lancamentos">Total de lançamentos</string>
+    <string name="meus_recebimentos_detalhe_lancamentos">lançamentos</string>
+    <string name="meus_recebimentos_valores_lancamentos">R$ 000.000,00</string>
+    <string name="meus_recebimentos_detalhe_detalhe_total_lancamentos">Valor líquido total</string>
+    <string name="meus_recebimentos_detalhe_detalhe_valor_total">00</string>
+    <string name="meus_recebimentos_detalhes_data_lancamentos">Data da venda: 00/00/00 - 0 lançamentos</string>
+    <string name="meus_recebimentos_data_da_antecipacao">Data da antecipação: </string>
+    <string name="meus_recebimentos_detalhes_chave">Bandeira</string>
+    <string name="meus_recebimentos_detalhes_valor">Banesacard</string>
+    <string name="meus_recebimentos_detalhes_produto">Produto</string>
+    <string name="meus_recebimentos_detalhes_produto_valor">Banesacard débito</string>
+    <string name="meus_recebimentos_detalhes_title_header">Tipo de Lançamento</string>
+    <string name="meus_recebimentos_detalhes_title">1 Lancamento</string>
+    <string name="meus_recebimentos_detalhes_subtitle">Data da venda:</string>
+
+    <!---detalhe da detalhe-->
+    <string name="meus_recebimentos_detalhes_de_detalhe_numero_operacao">Nº de Operação: </string>
+    <string name="meus_recebimentos_empty">Nenhum valor encontrado.</string>
+
+    <string name="meus_recebimentos_filtro_periodo">Período</string>
+    <string name="meus_recebimentos_filtro_periodo_fechado">Período:</string>
+    <string name="meus_recebimentos_filtro_periodo_diario_">Diário</string>
+    <string name="meus_recebimentos_filtro_periodo_diario">Por dia</string>
+    <string name="meus_recebimentos_filtro_periodo_7">Últimos 7 dias</string>
+    <string name="meus_recebimentos_filtro_periodo_15">Últimos 15 dias</string>
+    <string name="meus_recebimentos_filtro_periodo_30">Últimos 30 dias</string>
+    <string name="meus_recebimentos_filtro_periodo_outros">Outros períodos</string>
+    <string name="meus_recebimentos_filtro_data_inicio">Data inicial</string>
+    <string name="meus_recebimentos_filtro_data_fim">Data final</string>
+    <string name="meus_recebimentos_filtro_botao_cancelar">Cancelar</string>
+    <string name="meus_recebimentos_filtro_botao_confirmar">Confirmar</string>
+    <string name="meus_recebimentos_filtro_consolidado">Consolidado</string>
+    <string name="meus_recebimentos_filtro_descricao">A navegação pelo gráfico só está disponível na visualização diária.</string>
+    <string name="meus_recebimentos_filtro_ga">Meus Recebimentos > Filtro</string>
+    <string name="meus_recebimentos_ga">Meus Recebimentos</string>
+    <string name="text_receivables_filter_description">Os filtros exibidos correspondem ao período de transações selecionado</string>
+    <string name="text_receivables_filter_label">Filtros</string>
+
+    <string name="tv_extrato_title">Negociação de recebíveis</string>
+    <string name="tv_extrato_subtitle">Valores negociados no período.</string>
+    <string name="tv_extrato_empity">Você ainda não efetuou nenhuma negociação no período selecionado</string>
+
+    <string name="start_date">Data inicial</string>
+    <string name="end_date">Data final</string>
+    <string name="tv_deposited_yesterday">Depositado ontem:</string>
+    <string name="tv_deposited_today">Valor a receber hoje:</string>
+    <string name="anticipate_receivables">Antecipar recebíveis</string>
+    <string name="tv_error_title">Não foi possível exibir seus recebíveis</string>
+    <string name="item_summary_items_link">%ssite-cielo/v1/sales/receivables/pendings/summary</string>
+</resources>

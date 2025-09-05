@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="address_type_list">
+        <item>Rua</item>
+        <item>Avenida</item>
+        <item>Rodovia</item>
+        <item>Estrada</item>
+        <item>Praça</item>
+        <item>Alameda</item>
+        <item>Travesssa</item>
+        <item>Outros</item>
+    </string-array>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp">
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/meus_recebimentos_detalhe_chave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/meus_recebimentos_detalhe_valor"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp"
+            app:typeface="MuseoSans-500.ttf" />
+
+        <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+            android:id="@+id/meus_recebimentos_detalhe_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:typeface="MuseoSans-700.ttf" />
+    </RelativeLayout>
+</LinearLayout>

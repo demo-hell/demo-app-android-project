@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/medium_montserrat_16_neutral_600"
+        android:lineSpacingExtra="@dimen/dimen_4dp"
+        android:text="@string/pix_account_receipt_method_description" />
+
+    <TextView
+        android:id="@+id/tvDisplayingInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:padding="@dimen/dimen_16dp"
+        android:background="@color/cloud_100"
+        android:textAppearance="@style/medium_montserrat_14"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        tools:text="Você está visualizando informações do CNPJ: 999.999.999/0001-99" />
+
+    <LinearLayout
+        android:id="@+id/llReceiptMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

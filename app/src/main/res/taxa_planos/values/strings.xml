@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txp_header">Taxas e Planos</string>
+    <string name="txp_meu_plano_title">MEU PLANO</string>
+    <string name="txp_acompanhe_plano_title">ACOMPANHE SEU PLANO</string>
+    <string name="txp_taxas_title">TAXAS</string>
+
+    <string name="txp_seu_jeito_title">Cielo do seu jeito</string>
+    <string name="txp_seu_jeito_description">O plano que se adapta ao seu negócio</string>
+
+    <string name="txp_controle_title">Cielo Controle</string>
+    <string name="txp_controle_description">O que você vende é o que você recebe</string>
+
+    <string name="txp_livre_title">Cielo Livre</string>
+    <string name="txp_livre_description">Fique livre do aluguel atingindo o valor combinado</string>
+    <string name="txp_livre_min_billing">Faturamento mínimo com oferta</string>
+
+    <string-array name="tab_titles_fee_and_plans">
+        <item>Meu Plano</item>
+        <item>Acompanhe seu plano</item>
+        <item>Taxas</item>
+    </string-array>
+
+    <string name="plan_title_cielo_controle">Cielo Controle</string>
+    <string name="plan_sub_title_cielo_controle">O que você vende é o que você recebe</string>
+    <string name="text_view_overview_info_fee_and_plans">Para visualizar o valor do desconto,\nconsulte seu extrato.</string>
+    <string name="text_view_franchise_label">Valor da franquia</string>
+    <string name="text_view_fee_plan_rent">Aluguel</string>
+    <string name="text_view_fee_plan_rent_value">Grátis</string>
+    <string name="text_view_fee_plan_fee_label">Taxa</string>
+    <string name="text_view_fee_plan_fee_value">0%</string>
+    <string name="text_view_fee_plan_incoming_button">Alterar recebimento de vendas</string>
+    <string name="text_view_fee_plan_incoming_way_label">Recebimento</string>
+    <string name="text_view_fee_plan_incoming_cancellation">
+        <![CDATA[Você poderá <font color=#017CEB>cancelar o Recebimento Automático</font> a qualquer momento.
+        ]]>
+    </string>
+    <string name="text_view_fee_plan_incoming_way">Automático</string>
+    <string name="text_view_more_machines">Maquininhas</string>
+    <string name="text_view_plan_data">Dados do Plano</string>
+    <string name="text_view_value_label">Valor</string>
+    <string name="text_view_item_logical_number">Nº lógico</string>
+    <string name="text_view_debit_label">Débito</string>
+    <string name="text_view_credit_label">Crédito</string>
+    <string name="text_view_instalment_label">Parcelado</string>
+    <string name="text_view_credit_on_cash_label">Crédito à vista</string>
+    <string name="text_view_instalment_with_artherisc_label">Parcelado*</string>
+    <string name="text_view_fee_plan_taxes_title">Taxas</string>
+    <string name="text_view_incoming_day_label">Dias de recebimento</string>
+    <string name="text_view_plan_name_label">Valor do plano</string>
+    <string name="text_plan_goal_reached">Meta Atingida!</string>
+    <string name="text_earnings_detail_plan_label">Detalhes do faturamento</string>
+    <string name="text_earnings_detail_plan_minimum">Faturamento mínimo</string>
+    <string name="text_earnings_detail_plan_difference_to_absent">Valor faltante para isenção</string>
+    <string name="text_cielo_control_plan_label">Franquia contratada</string>
+    <string name="text_cielo_control_excedent_label">Faturamento excedente</string>
+    <string name="text_cielo_control_tax_excedent_label">Tarifa do excedente*</string>
+    <string name="text_plan_control_info">*O valor demonstrado é referente ao mês anterior</string>
+
+    <string name="text_default_image_values">/merchant/solutions/static/assets/img/brands/brand_1.png,/merchant/solutions/static/assets/img/brands/brand_2.png,/merchant/solutions/static/assets/img/brands/brand_7.png,/merchant/solutions/static/assets/img/brands/brand_9.png,/merchant/solutions/static/assets/img/brands/brand_3.png,/merchant/solutions/static/assets/img/brands/brand_40.png,/merchant/solutions/static/assets/img/brands/brand_15.png,/merchant/solutions/static/assets/img/brands/flag_aura.png,/merchant/solutions/static/assets/img/brands/brand_6.png,/merchant/solutions/static/assets/img/brands/flag_mais.png,/merchant/solutions/static/assets/img/brands/brand_23.png,/merchant/solutions/static/assets/img/brands/brand_64.png,/merchant/solutions/static/assets/img/brands/flag_discover.png,/merchant/solutions/static/assets/img/brands/brand_60.png</string>
+    <string name="tax_label_debit">Débito</string>
+    <string name="tax_label_installment">Parcelado em 2x</string>
+    <string name="tax_label_in_cash">À vista</string>
+
+    <string-array name="tab_titles_fee_and_plans_your_way">
+        <item>Meu plano</item>
+        <item>Meu aluguel</item>
+    </string-array>
+
+    <string name="unavailable_service_plan_information_title">Serviço indisponível!</string>
+    <string name="unavailable_service_plan_information_subtitle">Esta visualização está indisponível no momento. Fique tranquilo, todas as suas informações continuam salvas!</string>
+    <string name="bottom_sheet_plan_information_title">Não há visualização no momento!</string>
+    <string name="bottom_sheet_plan_information_subtitle">Sua negociação de aluguel não está disponível nessa visualização.</string>
+
+    <string name="receive_discount_on_rent">Receba um desconto no aluguel atingindo o faturamento combinado.</string>
+    <string name="follow_equipment_details_text">Acompanhe os detalhes de faturamento dos seus equipamentos.</string>
+    <string name="updated_x">Última atualização: %s às %s.</string>
+    <string name="you_reached_your_goal">Você atingiu sua meta! Esse mês o valor do seu aluguel será de R$ %s.</string>
+    <string name="you_havent_reached_your_goal">Você ainda não atingiu sua meta. Esse mês o valor do seu aluguel será de R$ %s.</string>
+    <string name="billing_details">Detalhes do faturamento</string>
+    <string name="referring_month">Mês referente</string>
+    <string name="rent_contracted">Valor do aluguel por equipamento</string>
+    <string name="total_discount_amount_text">Desconto total</string>
+    <string name="value_missing_discount">Falta para desconto</string>
+    <string name="negotiation_date">Data da negociação</string>
+    <string name="billing_history">Histórico recente</string>
+    <string name="equipment_trade">Equipamentos negociados</string>
+    <string name="equipment_model_x">Modelo de equipamento %d</string>
+    <string name="see_all_equipments">Ver todos os equipamentos</string>
+    <string name="consult_yout_manager">Consulte seu gestor de negócio para informar as principais bandeiras consideradas.</string>
+    <string name="discount_per_equipment">Desconto por equipamento</string>
+    <string name="discount_partial_per_equipment">Desconto parcial do aluguel por equipamento</string>
+    <string name="equipment_negotiated">Equipamentos negociados</string>
+    <string name="text_reached_the_goal">Você atingiu sua meta!</string>
+    <string name="text_did_not_reach_the_goal">Você ainda não atingiu sua meta.</string>
+    <string name="goal_achieved">Meta alcançada</string>
+    <string name="unreached_goal">Meta não alcançada</string>
+    <string name="last_update"><![CDATA[<b>Última atualização:</b> %s às %s.]]></string>
+    <string name="mask_rs_value"><b>%s.</b></string>
+    <string name="mask_percentual_value"><b>%s%%</b></string>
+    <string name="negotiated_rent">Aluguel negociado</string>
+    <string name="partial_discount">Desconto parcial</string>
+    <string name="discounted_rent">Aluguel com desconto por equipamento</string>
+    <string name="end_of_term_plan">Fim da vigência do plano</string>
+    <string name="rs_value_null">R$ —</string>
+
+    <plurals name="x_equipments">
+        <item quantity="one">%s equipamento</item>
+        <item quantity="other">%s equipamentos</item>
+    </plurals>
+
+    <string name="value_progress_view_default_title">Faturamento atual</string>
+    <string name="value_progress_view_default_value">R$ ––</string>
+    <string name="value_progress_view_zero_percentage">0%</string>
+    <string name="value_progress_view_zero_value">R$ 0,00</string>
+    <string name="value_progress_view_default_footer">Meta de faturamento</string>
+
+    <string name="receive_fast_cancel_dialog_title">Tem certeza que gostaria de cancelar o Recebimento Automático?</string>
+    <string name="receive_fast_cancel_dialog_text"><![CDATA[Você não receberá mais no prazo de dois dias úteis as vendas no crédito, seu novo prazo será:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Crédito à vista - 30 dias<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Crédito parcelado - 30 dias (por parcela)<br><br>Suas taxas poderão ser alteradas.]]></string>
+    <string name="ra_cancel_whatsapp_dialog_title">Tem certeza que gostaria de cancelar o Recebimento Automático?</string>
+    <string name="ra_cancel_whatsapp_dialog_message">Você pode obter ofertas com <b>descontos especiais</b> e continuar com o Recebimento Automático.\n\n<b>Se desejar seguir com o cancelamento</b>, clique abaixo para ser redirecionado para falar com nossos especialistas no WhatsApp.</string>
+    <string name="ra_cancel_whatsapp_dialog_phone">0800 570 8472\n(Exceto capitais e ligações de celulares)</string>
+    <string name="ra_cancel_whatsapp_dialog_phone_capitals">4002 5472\n(Capitais e regiões metropolitanas)</string>
+    <string name="ra_cancel_whatsapp_dialog_talk_to_specialist">Falar com especialista</string>
+    <string name="ra_cancel_whatsapp_dialog_contact_center">Central de Atendimento</string>
+
+    <string name="txt_label_mdr_bottomsheet"><![CDATA[<b>Taxa administrativa (MDR):</b> Taxa administrativa do plano de recebimento atual.]]></string>
+    <string name="txt_label_rr_bottomsheet"><![CDATA[<b>Taxa RA:</b> Taxa do Receba Automático.]]></string>
+    <string name="txt_label_pix_bottomsheet"><![CDATA[<b>Sobre venda Pix:</b> Nas suas vendas utilizando o Pix, o valor da tarifa em reais será aplicado. Se a transação realizada for menor ou igual ao valor da tarifa, o percentual da taxa cadastrada será aplicado.]]></string>
+
+</resources>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/icReadQRCode"
+        android:contentDescription="@string/pix_qr_code_copy_paste_toolbar_content_description_read_qr_code_button"
+        android:icon="@drawable/ic_qr_code_scan_accent_500_24_dp"
+        android:title="@string/screen_toolbar_text_read_qr_code"
+        app:showAsAction="ifRoom" />
+
+</menu>

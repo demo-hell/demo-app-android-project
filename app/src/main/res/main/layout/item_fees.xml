@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:paddingBottom="10dp">
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/feeDescription"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_weight="1.3"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:maxLines="3"
+        android:text=""
+        android:textColor="@color/text_color_263238"
+        tools:text="Crédito a vista"
+        android:textSize="8.5sp"
+        app:typeface="MuseoSans-500.ttf" />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/textInstallments"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_weight=".7"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_263238"
+        android:textSize="9sp"
+        android:singleLine="true"
+        app:typeface="MuseoSans-500.ttf"
+        tools:text="1x a 3x"
+        />
+
+    <br.com.mobicare.cielo.commons.presentation.utils.custom.TypefaceTextView
+        android:id="@+id/feeValue"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:singleLine="true"
+        android:gravity="right"
+        android:textColor="@color/text_color_263238"
+        android:textSize="9sp"
+        app:typeface="MuseoSans-500.ttf"
+        tools:text="5%" />
+
+
+
+
+
+</LinearLayout>

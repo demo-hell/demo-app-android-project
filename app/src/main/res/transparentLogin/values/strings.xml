@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transparent_login_error_title">Ocorreu um problema ao entrar no App</string>
+    <string name="transparent_login_error_subtitle">Mas não se preocupe. Você pode entrar realizando seu login.</string>
+    <string name="go_to_login">Ir para o login</string>
+    <string name="loading_message">Aguarde…</string>
+    <string name="text_animation_loading_finish">Finalizando…</string>
+</resources>

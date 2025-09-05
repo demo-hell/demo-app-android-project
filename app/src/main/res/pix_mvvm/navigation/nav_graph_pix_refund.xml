@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pix_refund"
+    app:startDestination="@id/pixRefundRouterFragment">
+
+    <fragment
+        android:id="@+id/pixRefundRouterFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.refund.ui.PixRefundRouterFragment"
+        android:label="PixRefundRouterFragment"
+        tools:layout="@layout/fragment_pix_refund_router">
+
+        <action
+            android:id="@+id/action_pixRefundRouterFragment_to_pixRefundAmountFragment"
+            app:destination="@id/pixRefundAmountFragment"
+            app:popUpTo="@+id/nav_graph_pix_refund"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixRefundRouterFragment_to_pixFullyRefundedFragment"
+            app:destination="@id/pixFullyRefundedFragment"
+            app:popUpTo="@+id/nav_graph_pix_refund"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixRefundRouterFragment_to_pixRefundExpiredFragment"
+            app:destination="@id/pixRefundExpiredFragment"
+            app:popUpTo="@+id/nav_graph_pix_refund"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_pixRefundRouterFragment_to_pixPartiallyRefundedFragment"
+            app:destination="@id/pixPartiallyRefundedFragment"
+            app:popUpTo="@+id/nav_graph_pix_refund"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixFullyRefundedFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.refund.ui.refundReceipts.PixFullyRefundedFragment"
+        android:label="PixFullyRefundedFragment"
+        tools:layout="@layout/fragment_pix_refund_receipts" />
+
+    <fragment
+        android:id="@+id/pixRefundExpiredFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.refund.ui.refundReceipts.PixRefundExpiredFragment"
+        android:label="PixRefundExpiredFragment"
+        tools:layout="@layout/fragment_pix_refund_receipts" />
+
+    <fragment
+        android:id="@+id/pixPartiallyRefundedFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.refund.ui.refundReceipts.PixPartiallyRefundedFragment"
+        android:label="PixPartiallyRefundedFragment"
+        tools:layout="@layout/fragment_pix_refund_receipts">
+
+        <action
+            android:id="@+id/action_pixPartiallyRefundedFragment_to_pixRefundAmountFragment"
+            app:destination="@id/pixRefundAmountFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixRefundAmountFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.refund.ui.PixRefundAmountFragment"
+        android:label="PixRefundAmountFragment"
+        tools:layout="@layout/fragment_base_insert_amount_v2">
+
+        <action
+            android:id="@+id/action_pixRefundAmountFragment_to_pixRefundReviewFragment"
+            app:destination="@id/pixRefundReviewFragment"
+            app:enterAnim="@anim/slide_from_right"
+            app:exitAnim="@anim/slide_to_left"
+            app:popEnterAnim="@anim/slide_from_left"
+            app:popExitAnim="@anim/slide_to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixRefundReviewFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.refund.ui.PixRefundReviewFragment"
+        android:label="PixRefundReviewFragment"
+        tools:layout="@layout/fragment_pix_refund_review">
+
+        <action
+            android:id="@+id/action_pixRefundReviewFragment_to_pixRefundDetailReceiptFragment"
+            app:destination="@id/pixRefundDetailReceiptFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pixRefundDetailReceiptFragment"
+        android:name="br.com.mobicare.cielo.pixMVVM.presentation.refund.ui.PixRefundDetailReceiptFragment"
+        android:label="PixRefundDetailReceiptFragment"
+        tools:layout="@layout/fragment_pix_refund_detail_receipt" />
+
+</navigation>

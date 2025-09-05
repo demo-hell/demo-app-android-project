@@ -1,0 +1,24 @@
+package br.com.mobicare.cielo.balcaoRecebiveisExtrato.analytics
+
+object ReceivablesAnalyticsGA4Constants {
+
+    const val CIELO_NEGOTIATION = "negociacoes_cielo"
+    const val OPERATION_DETAILS = "detalhes_operacao"
+    const val DETAILS_OF_OPERATION = "detalhes_da_operacao"
+    const val RECEIVABLES = "recebiveis"
+    const val NEGOTIATION = "negociacao"
+    const val CIELO = "cielo"
+    const val SEE_MORE = "ver_mais"
+    const val MARKET = "mercado"
+
+    const val SCREEN_VIEW_RECEIVABLES_NEGOTIATION_CIELO = "/$RECEIVABLES/$NEGOTIATION/$CIELO"
+    const val SCREEN_VIEW_RECEIVABLES_NEGOTIATION_CIELO_SEE_MORE =
+        "/$RECEIVABLES/$NEGOTIATION/$CIELO/$SEE_MORE"
+    const val SCREEN_VIEW_RECEIVABLES_NEGOTIATION_CIELO_SEE_MORE_OPERATION_DETAILS =
+        "/$RECEIVABLES/$NEGOTIATION/$CIELO/$SEE_MORE/$OPERATION_DETAILS"
+    const val SCREEN_VIEW_RECEIVABLES_NEGOTIATION_MARKET = "/$RECEIVABLES/$NEGOTIATION/$MARKET"
+    const val SCREEN_VIEW_RECEIVABLES_NEGOTIATION_MARKET_SEE_MORE =
+        "/$RECEIVABLES/$NEGOTIATION/$MARKET/$SEE_MORE"
+    const val SCREEN_VIEW_RECEIVABLES_NEGOTIATION_MARKET_SEE_MORE_OPERATION_DETAILS =
+        "/$RECEIVABLES/$NEGOTIATION/$MARKET/$SEE_MORE/$OPERATION_DETAILS"
+}

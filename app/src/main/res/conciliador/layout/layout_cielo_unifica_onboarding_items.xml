@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen_16dp"
+        app:layout_constraintVertical_bias="0.30">
+
+        <ImageView
+            android:id="@+id/iv_onboarding_unifica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/dimen_216dp"
+            tools:srcCompat="@drawable/ic_unifica_welcome" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/giv_onboarding_unifica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:maxHeight="@dimen/dimen_371dp"
+            android:adjustViewBounds="true"
+            app:loopCount="0"
+            tools:srcCompat="@drawable/unifica_home" />
+
+        <TextView
+            android:id="@+id/tv_title_onboarding_unifica"
+            style="@style/label_16_brand_400_ubuntu_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_8dp"
+            tools:text="@string/conciliador_title_taxas" />
+
+        <TextView
+            android:id="@+id/tv_subtitle_onboarding_unifica"
+            style="@style/label_14_display_400_ubuntu_pix_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:lineHeight="@dimen/dimen_22dp"
+            tools:text="@string/onboarding_unifica_welcome_subtitle" />
+
+    </LinearLayout>
+
+</ScrollView>
